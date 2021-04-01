@@ -19,7 +19,7 @@ CFLAGS=$(OPTIONS)
 
 #########################################################################
 
-all: prereq mince
+all: mince
 	@printf '\r%s\n' "" || true
 	@test -x mince 2>/dev/null && size mince 2>/dev/null || true
 	@test -x mince 2>/dev/null && \
@@ -97,23 +97,5 @@ mince80/mince.swp: ccom
 clean:
 	rm -f -- ccom *.[soL] *.s1 a.out core *~ *.map benchmark \
 		mince mince_com.* mince_swp.* mince80/mince.swp
-
-#########################################################################
-
-prereq:
-	@if [ -z "$(shell command -v env)" ]; then \
-		printf '%s\n' "Error: env is required but not available."; exit 1; fi
-	@if [ -z "$(shell command -v sed)" ]; then \
-		printf '%s\n' "Error: sed is required but not available."; exit 1; fi
-	@if [ -z "$(shell command -v sh)" ]; then \
-		printf '%s\n' "Error: sh is required but not available."; exit 1; fi
-	@if [ -z "$(shell command -v $(CC))" ]; then \
-		printf '%s\n' "Error: \"$(CC)\" could not be found."; exit 1; fi
-	@if [ -z "$(shell command -v $(CPP))" ]; then \
-		printf '%s\n' "Error: \"$(CPP)\" could not be found."; exit 1; fi
-	@if [ -z "$(shell command -v rm)" ]; then \
-		printf '%s\n' "Error: rm is required but not available."; exit 1; fi
-	@if [ -z "$(shell command -v expect)" ]; then \
-		printf '%s\n' "Error: expect is required but not available."; exit 1; fi
 
 #########################################################################
