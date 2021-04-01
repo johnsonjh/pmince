@@ -1,0 +1,112 @@
+
+
+
+
+                         Lesson 4: Searching
+
+
+
+
+
+      For this lesson, you will be reading from your terminal
+rather than from this paper.  Get into Mince as usual, and type:
+
+      Control X Control R  lesson4.doc
+
+followed by a carriage-return.  You should see this text appear
+on your screen.  If it does not, and Mince says "New File" in the
+echo line at the bottom of the screen, first make sure that you
+had typed the name correctly.  If not, just try again; if so,
+stop and get help finding the file.
+
+      We will be playing around with some new commands on this
+text.  In order to keep reading from your terminal, you will have
+to type Control V's (View next page) every time you reach the
+bottom of the scren.  Do that now.  Type a "Control V" and forget
+about the paper copy of this lesson.
+
+      The first command we will learn this time is the "search"
+command, "Control S".  Suppose someone has given you a draft for
+corrections, and somewhere in the middle has marked a phrase to
+be changed.  It's easy enough to see it on paper, because the
+place is marked in red ink or the like.  But it requires extra
+work to find it on the computer.  It's almost as though you had
+been handed the same report, unmarked, and been told that some
+phrase should be deleted!
+
+      Certainly we could scan through the file looking for the
+marked place using Control V's, but it might take a while.
+Instead, we can use the computer to search through the file,
+looking for the proper place.
+
+      Try that now.  Type:
+
+      Control S
+
+(You might want to look back at the paper copy of this lesson for
+just a little while now, since Control V's won't work while we're
+in the middle of a search.)  Mince will respond to the Control S
+by printing "Forward Search <ESC>:" in the echo line at the
+bottom of the screen.  Now type in the word:
+
+      search
+
+You will see it echoed at the bottom of the screen.  If you make
+a mistake while typing this, you can use the DELETE key, just as
+you would normally.  After you've entered the string to search
+for, type the ESCAPE key.  This tells Mince to begin searching.
+
+      A forward search begins at the character the cursor is on,
+continues until the searched-for item is found, and when it is,
+positions the cursor just after it.  So, when you hit the ESCAPE
+key, you should have seen the cursor jump to one of the
+occurrences of the word "search" in this lesson.  It should still
+be there now, unless you've had to type Control V's to read more.
+If so, try it again.  Type:
+
+      Control S   search  ESCAPE
+
+      Now just try typing:
+
+      Control S  ESCAPE
+
+That is, do not type in any character string to be search for;
+just hit the ESCAPE key right after the Control S.  You should
+notice the cursor jump to the next occurrence of the word
+"search".  When you do not give the Control S command a new
+character string to look for, it searches for whatever you told
+it last time.  This can be quite a timesaver, especially when
+working with technical papers, where long, hard-to-type phrases
+are commonly used several times, and you want to find, say, the
+sixth occurrence.
+
+      What happens if there is no character string exactly like
+the one you type for Control S?  Try it and see.  Do a search for
+a nonsense word.  If there is no such word between the cursor and
+the end of the text, as you see, Mince will cause the terminal to
+beep and will print the phrase "Not Found" at the right of the
+echo line.
+
+      As you may have guessed by the message that Mince printed
+in the echo line earlier, "Forward Search", there is a "backward"
+search as well.  It is used to search backwards in the text from
+the current cursor position.  The command is called "Reverse
+search", and is performed by Control R.  All of the features of
+Control R are identical to Control S, except that, since it
+searches through the text in reverse, it leaves the cursor before
+the closest item that matches the string, rather than after it.
+Notice that the character string to be searched for is saved and
+is the same one for both Control R and Control S.  So, you may
+find yourself typing "Control S", a string, and the ESCAPE, and
+then, if you hear a beep, typing "Control R ESCAPE" because you
+know the string is in the text somewhere.
+
+      Play around with these a little bit, then type Control X
+Control C to leave the editor.  The next lesson, Lesson 5, should
+be read off the printed page, but for Lesson 6 we'll be working
+exclusively on the terminal again.
+
+
+ message that Mince printed
+in the echo line earlier, "Forward Search", there is a "backward"
+search as well.  It is 

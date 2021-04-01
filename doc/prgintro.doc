@@ -1,0 +1,365 @@
+You are looking at the Mince tutorial.  While you can read this in
+hardcopy form, it is more helpful to sit down at a video terminal and
+use Mince to read it.  Just type the command "mince prgintro.doc".
+
+Mince commands are generally shifted by the CONTROL key (sometimes
+labelled CTRL or CTL) or prefixed by the ESCAPE key (sometimes
+labelled ESC or ALT). Rather than write out ESCAPE or CONTROL each
+time we want you to prefix a character, we'll use the following
+abbreviations:
+
+ C-<char>      means hold the CONTROL key down and type a character.
+ M-<char>      means type the ESCAPE key, release it, then type the
+               character. (The "M" stands for "Meta-command"; ESC is a
+               substitute for another type of shift key, the imaginary
+               "meta-shift" key.)
+
+Thus, C-F would be hold the control key and type F.  You will often be
+asked to type characters to see how they work; don't actually do this,
+however, until you see >> at the left of the screen. For instance:
+
+>> Now type C-V (View next screen) to move to the next screen. (go
+   ahead, do it by depressing the control key and V together). From
+   now on, you'll be expected to do this whenever you finish reading
+   the screen.
+
+Note that there is an overlap when going from screen to screen; this
+   provides some continuity when moving through the file.
+
+The first thing that you need to know is how to move around from place
+   to place in the file.  You already know how to move forward a
+   screen, with C-V.  To move backwards a screen, type M-V (depress
+   and release the <ESC> key, then type V.)
+
+>> Try typing M-V and then C-V to move back and forth a few times.
+
+SUMMARY
+-------
+The following commands are useful for viewing screenfuls:
+
+        C-V     Move forward one screenful
+        M-V     Move backward one screenful
+        C-L     'Refresh' the current screen.
+
+>> Try C-L now.  (You'll notice that it centers the screen where the
+   cursor currently is.)
+
+BASIC CURSOR CONTROL
+--------------------
+
+Getting from screenful to screenful is useful, but how do you
+reposition yourself within a given screen to a specific place? There
+are several ways you can do this.  One way (not the best, but the most
+basic) is to use the commands Previous, Backward, Forward and Next. As
+you can imagine, these commands (which are given to Mince as C-P, C-B,
+C-F, and C-N  respectively) move the cursor from where it currently is
+to a new place in the given direction.  Here in a more graphical form
+are the commands:
+
+                       Previous line, C-P
+                                :
+                                :
+  Backward, C-B .... Current cursor position .... Forward, C-F
+                                :
+                                :
+                         Next line, C-N
+
+You'll probably find it easy to think of these by letter.  P for
+previous, N for next, B for backward and F for forward.  These are the
+basic cursor positioning commands and you'll be using them ALL the
+time so it would be of great benefit if you learn them now.
+
+>> Try doing a few C-N's to bring the cursor down to this line. Move
+   into the line with C-F's and up with C-P's. Now use these four
+   commands to play around a little. Try moving off the top of this
+   screen and see what happens.
+
+When you go off the top or bottom of the screen, the text beyond the
+edge is shifted onto the screen so that your instructions can be
+carried out while keeping the cursor on the screen.
+
+>> Try to C-B at the beginning of a line.  Do a few more C-B's. Then
+   do C-F's back to the end of the line and beyond.
+
+If moving by characters is too slow, you can move by words.  M-F
+(remember, type <ESC> F) moves forward a word and M-B moves back a
+word.
+
+>> Type a few M-F's and M-B's.  Intersperse them with C-F's and C-B's.
+
+You will notice the parallel between C-F and C-B on the one hand, and
+M-F and M-B on the other hand.  Very often Meta characters are used
+for operations related to English text whereas Control characters
+operate on the basic textual units that are independent of what you
+are editing (characters, lines, etc). There is a similar parallel
+between lines and sentences: C-A and C-E move to the beginning or end
+of a line, and M-A and M-E move to the beginning or end of a sentence.
+
+>> Try a couple of C-A's, and then a couple of C-E's.
+   Try a couple of M-A's, and then a couple of M-E's.
+
+See how repeated C-A's do nothing, but repeated M-A's keep moving
+farther.  Do you think that this is right?
+
+Here is a summary of simple moving operations including the word and
+sentence moving commands:
+
+        C-F     Move forward a character
+        C-B     Move backward a character
+
+        M-F     Move forward a word
+        M-B     Move backward a word
+
+        C-N     Move to next line
+        C-P     Move to previous line
+
+        C-A     Move to beginning of line
+        C-E     Move to end of line
+
+        M-A     Move back to beginning of sentence
+        M-E     Move forward to end of sentence
+
+        M-<     Go to beginning of file
+        M->     Go to end of file
+
+>> Try all of these commands now a few times for practice. Since the
+   last two will take you away from this screen, you can come back
+   here with M-V's and C-V's.
+
+These are the most often used commands.  Like all other commands in
+Mince, they can be given arguments which cause them to be executed
+repeatedly.  The way you give a command a repeat count is by typing
+C-U and then the digits before you type the command. (C-U stands for
+"Universal argument".) The digits are echoed at the bottom of the
+screen slowly, just after you type them. Notice that just after you
+type C-U, the message "Arg: 4" appears there.  If no numbers are typed
+after the C-U, it executes the following command 4 times. For now,
+though, just type in numbers.
+
+For instance, C-U 8 C-F moves forward eight characters.
+
+>> Try giving a suitable argument to C-N or C-P to come as close
+   as you can to this line in one jump.
+
+
+INSERTING AND DELETING
+----------------------
+
+If you want to type text, just do it.  Characters which you can see,
+such as A, 7, *, etc. are taken by Mince as text and inserted
+immediately.  You can delete the last character you typed by doing
+<DEL> (sometimes labelled "DELETE" or "DEL" or even "RUBOUT"). More
+generally, <DEL> will delete the character immediately before the
+current cursor position.
+
+>> Do this now, type a few characters and then delete them by typing
+   <DEL> a few times.  Don't worry about this file being changed; you
+   won't affect the master tutorial, because this is just a copy of it
+   in your Mince editing buffer.
+
+Notice that a "*" appeared in the line at the bottom of the screen.
+This means that the text on your screen is different that the text you
+read in, and hasn't been written out to a file.
+
+Remember that most Mince commands can be given a repeat count; Note
+that this includes characters which insert themselves.
+
+>>  Try that now -- type C-U 8 * and see what happens.
+
+You've now learned the most basic way of typing something in Mince and
+correcting errors.  You can delete by words or lines just as you can
+move by words or lines.  Here are some of the delete operations:
+
+        <DEL>        delete the character just before the cursor
+        C-D          delete the character that the cursor is
+                     positioned on
+
+        M-<DEL>      delete the word before the cursor
+        M-D          delete the word after the cursor
+
+        C-K          delete (kill) from the cursor position to
+                     the end of line
+        M-K          delete (kill) to the end of the current
+                     sentence
+
+Notice that <DEL> and C-D vs M-<DEL> and M-D extend the parallel
+started by C-F and M-F.  C-K and C-E are similar to M-K and M-E.
+
+Now suppose you delete something, and then you decide that you want to
+get it back?  Well, whenever you delete something bigger than a
+character, Mince saves it for you.  To yank it back, use C-Y.  Note
+that you don't have to be in the same place to do C-Y; this is a good
+way to move text around.  Generally, the commands that can destroy a
+lot of text will save it, while the ones that attack only one
+character, or nothing but blank lines and spaces, will not save them.
+
+For instance, type C-N a couple times to position the cursor at some
+line on this screen.
+
+>> Do this now, move the cursor and kill that line with C-K.
+
+Note that a single C-K will kill the contents of the line, and a
+second C-K will delete the line itself, and make all the other lines
+move up.  The text that has just disappeared is saved so that you can
+retrieve it.  To retrieve the last killed text and put it where the
+cursor currently is, type C-Y.
+
+>> Try it; type C-Y to yank the text back.
+
+Think of C-Y as if you were yanking something back that someone took
+away from you.  Notice that if you do several C-K's in a row the text
+that is killed is all saved together so that one C-Y will yank all of
+the lines.  A way to tell if this is going to happen or not is the "+"
+which will appear on the line at the bottom of the screen.  If it is
+present, whatever text is killed will be appended to whatever is
+already there.
+
+>> Do this now, type C-K several times.
+
+Now to retrieve that killed text:
+
+>> Type C-Y.  Then move the cursor down a few lines and type C-Y
+   again.  You now see how to copy some text.
+
+
+FILES
+-----
+
+In order to make the text you edit permanent, you must put it in a
+file.  You put your editing in a file by writing or saving the file.
+If you look near the botton of the screen you will see a line that
+starts with "Mince Version 2.3 (Normal) prgintro:" and continues with
+the filename PRGINTRO.DOC.  This is the name of the permanent file in
+which the Mince tutorial is stored.  This is the file you are now
+editing.  Whatever file you edit, its name will appear in the same
+spot.
+
+The commands for reading and saving files are unlike the other
+commands you have learned in that they consist of two control
+characters.  They both start with the character Control-X.  There is a
+whole series of commands that start with Control-X; many of them have
+to do with files, buffers, and related things, and all of them consist
+of Control-X followed by some other character.
+
+      C-X C-W     writes out the editing buffer
+      C-X C-R     reads a file into the editing buffer
+
+In addition, each of these commands asks for a filename to use. Enter
+the name, and finish it by typing a carriage-return (<CR>).
+
+>> Go ahead and try that now; type C-X C-W, and when Mince asks for a
+   filename, type GARBAGE.TXT, then type a <CR>.  Note that the mode
+   line has now changed to reflect the new file name. (Don't forget to
+   ERAse the file after you're done sometime.)
+
+If you forget to write out your work and try to read another file,
+Mince will remind you that you made changes and ask you whether to
+clobber them.  (If you don't save them, they will be thrown away. That
+might be what you want!)  You should answer with a "N" to keep your
+editing buffer intact or a "Y" to clobber it and read in the new file
+anyway.
+
+To make a new file, just C-X C-R it "as if" it already existed. Mince
+will echo "New File" at the bottom of the screen.  Then start typing
+in the text.  When you ask to write the file, Mince will really create
+the file with the text that you have inserted. From then on, you can
+consider yourself to be editing an already existing file.
+
+Another command is available to prevent retyping filenames all the
+time.
+
+      C-X C-S    saves the file
+
+This command just rewrites the editing buffer to whatever file name is
+in the mode line at the bottom of the screen.  It may save some
+typing.
+
+It is not easy for you to try out making a file and continue with the
+tutorial.  But you can always come back into the tutorial by starting
+it over and skipping forward.  So, when you feel ready, you should try
+reading a file named "FOO", putting some text in it, and writing it;
+then exit from Mince and look at the file to be sure that it worked.
+
+One more immediately useful command is C-X C-C, which tells Mince
+you'd like to stop editing.  (Think of it as an augmented C-C, which
+usually works in the operating system to get you out of programs.)
+This does NOT save your file.  It will ask if you really want to quit
+if you have not written out the editing buffer, however.
+
+MODE LINE
+---------
+
+If Mince sees that you have typed an <ESC> or C-U or C-Q or a C-X and
+have not typed the following character in the command sequence, it
+will show you the prefix you have typed in an area at the bottom of
+the screen.  This line is called the "echo line"; it echoes numbers
+typed after a C-U, characters to be included in search strings, and
+some progress information when file I/O is going on. This is just the
+last line at the bottom. The line immediately above this is called the
+MODE LINE.  You may notice that it begins
+
+     Mince Version 2.3 (Normal) buffer: DRIVE:FILENAME -nn%- *
+
+This is a very useful "information" line.  You already know what the
+filename means -- it is the file you have read.  What the -nn%- means
+is that nn percent of the file is above the cursor. The "*" means that
+the editing buffer has been changed since the file was last written.
+You also know what the "+" means in relation to the C-K command.
+
+
+SEARCHING
+---------
+
+Mince can do searches for strings (these are groups of contiguous
+characters or words) either forward through the file or backward
+through it. To search for the string means that you are trying to
+locate it somewhere in the file and have Mince show you where the
+occurrences of the string exist.  The command to start a search is
+C-S.  Down in the echo area, you will notice "Forward Search: <ESC>:"
+appear.  Type in the string you want to search for (which will appear
+in the echo area also).  When you finish, type the ESCAPE key and
+Mince will try to find the next occurrence of the string in your text.
+
+If no such occurrence exists Mince beeps and tells you that the string
+was not found.  In addition, if you decide you really don't want to
+search after all, type C-G and Mince will erase the search string and
+cancel the C-S command.  (More generally, C-G cancels any command; for
+example, if you mistakenly type <ESC> or C-U when you didn't mean to,
+type C-G to flush the prefixes.)  If you are in the middle of an
+search and type the DELETE key, you'll notice that the last character
+in the search string is erased.
+
+>> Now type C-S to start a search.  Type the word "search" followed by
+   an <ESC>.  Notice where the cursor is positioned to.  Now type C-S
+   again, immediately followed by <ESC>.  Mince will search for
+   whatever it searched for last time if no new string is given.
+
+The C-S starts a search that looks for any occurrence of the search
+string AFTER the current cursor position.  But what if you want to
+search for something earlier in the text?  To do this one should type
+C-R for Reverse search.  Everything that applies to C-S applies to C-R
+except that the direction of the search is reversed.
+
+
+GETTING MORE HELP
+-----------------
+
+In this tutorial we have tried to supply just enough information to
+get you started using Mince.  There is so much available in Mince that
+it would be impossible to explain it all here. However, you may want
+to learn more about Mince since it has numerous desirable features
+that you don't know about yet. Documentation is available online and
+in hardcopy form.  The Mince User's Manual completely describes the
+commands presented in this tutorial, as well as the more sophisticated
+commands, modes, and editing features.
+
+
+CONCLUSION
+----------
+
+You'll probably find that if you use Mince for a few days you won't be
+able to give it up.  Initially it may give you trouble. But remember
+that this is the case with any editor, especially one that can do many
+things.
+earch for something earlier in the text?  To do this one should type
+C-R for Reverse search.                                                                                                                                 

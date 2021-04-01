@@ -1,0 +1,173 @@
+
+
+
+
+                Lesson 6: Killing and Moving Text
+
+
+
+
+
+      During Lesson 6, you should be reading from your terminal
+again, rather than from this manual.  Type to the operating
+system:
+
+      mince lesson6.doc
+
+and wait for Mince to get started.  By putting a file name on the
+command line, you cause the file to be automatically read in when
+Mince starts up.  As with Lesson 4, if Mince says "New File", and
+this text does not appear, something is wrong.  Determine the
+cause and use the C-X C-R command to read in the file, if you
+need to.
+
+      In this lesson, we are going to learn how to delete whole
+bunches of text, rather than characters or words at a time.  The
+command to delete lines is C-K.  (Control K stands for "Kill
+line".)  Move the cursor to the first line of this paragraph with
+C-P or C-N.  Now type a C-K.  Whatever was on that line has
+disappeared.  Now type another C-K.  The line itself has
+disappeared and all the other lines of text have been moved up.
+
+      Now move the cursor to the first line of this paragraph,
+and move halfway into the line with C-F's or M-F's.  Again, type
+a C-K.  You will notice that only the part of the line to the
+right of the cursor was killed.  C-K kills text starting with the
+character which the cursor is resting on until it reaches a
+newline, or the newline itself, if the line is blank.
+
+      You see that in order to physically remove an entire line
+AND its contents, you must type two C-K's.  Similarly, C-U C-K
+removes two entire lines and their contents, rather than four.
+You will find this command useful for retyping previously
+existing lines of text, where you want to remove what the line
+(or the "rest" of the line, starting at the cursor) says, but
+want to fill it with something else.
+
+      Typing many C-K's in a row could get to be a drag,
+especially if you intend to delete an entire paragraph or
+chapter.  You could count the lines to be deleted and type C-U,
+twice the number, C-K; this would still be pretty time-consuming.
+(Counting lines is even more annoying than typing C-K many
+times!)  Instead, Mince has a command to kill an entire region of
+text.  It is called C-W (for "Wipe region").
+
+      You must define the region of text to be killed first.  One
+end of the region which C-W will wipe out is shown by where the
+cursor is in the text.  The other end of the region is given by a
+"mark", which we will now learn how to set.  The command which
+sets the invisible mark is C-@ (for "set the mark AT this
+position").  Move the cursor to the beginning of some line in the
+middle of this paragraph.  Type C-@.  (Note that on some
+terminals you may have to hold down the Shift key and the Control
+key to get a C-@.)  Down in the echo line you should see the
+message "Mark Set."  If it does not appear, you may have a poor
+terminal whose C-@ doesn't send the command.  Try typing C-@
+again, and if it doesn't work this time, type a Control SPACE
+now, and use it from now on if it works, rather than the Control
+at-sign.
+
+      Having figured that out, move to the end of the same line
+and type a C-W.  Look at the text; the portion of it between the
+cursor (at the end of the line) and the invisible mark (at the
+beginning of the line) should have disappeared.
+
+      Let's wipe something slightly bigger than a line.  Move the
+cursor to the beginning of this paragraph, and set the mark there
+by typing C-@.  Now move the cursor to the end of this paragraph
+and type a C-W.  You shouldn't be able to read this sentence any
+more!
+
+      What if we make a mistake and wipe out a huge block of text
+unintentionally?  There is a command to retrieve the text which
+was just killed, C-Y (for "Yank back killed text").  Do that now:
+type a C-Y and the paragraph we just deleted should appear back
+where the cursor is now.
+
+      Now move the cursor down a few lines and type C-Y again.
+Another copy of that text appears at the cursor.  Type the C-Y
+again; the text should be replicated one more time.  You've just
+learned how to copy or move text, all with one command, C-Y!  To
+make a copy of some text, wipe it out (using C-@ and C-W) and
+immediately yank it back with a C-Y in that spot (i.e., without
+moving the cursor).  Then, move the cursor to the spot where you
+would like the copy to appear, and type another C-Y.  If you want
+to move a block of text rather than copy it, just don't type the
+C-Y at the original position.  (If deleting text and then yanking
+it back in the same place in order to do a copy of some text
+makes you nervous, you might want to look at the description of
+the M-W command in the Mince User's Manual.  It works similarly
+to C-W, but it does the first C-Y automatically for you.)
+
+      C-W is not the only command which saves text in case you
+want to yank it back.  C-K, M-D, and M-<DEL> all save text as
+well.  In general, if you delete anything larger than a
+character, Mince will save it for you in case you want to move or
+copy it (or undo a mistake!).
+
+      As an example, move the cursor to the beginning of this
+paragraph, and type a couple of C-K's.  Notice that a "plus" sign
+has come on at the right edge of the mode line.  This means that
+if you continue to type C-K's, the text killed will be added on
+to whatever killed text is already being stored.  So, you can
+kill a region of text, with either a C-@/C-W or with a bunch of
+C-K's (or even M-D's or some combination of all of these), and a
+C-Y will still yank the entire region back.
+
+      Mince will only store your "most recent" bunch of text
+kills, however.  What determines what is "recent" and what is
+not?  The plus-sign at the right of the mode line.  If you are
+about to delete something larger than a character and the plus is
+not there, you will be throwing away whatever previous bunch of
+kills you did.  In general, all this amounts to is that, if you
+give any movement commands or insert anything after killing some
+text, you will "close off" the current group of kills.  (You will
+also see the plus-sign go away.)  Any C-Y's you type after this
+will retrieve that group.  Any C-K's, M-D's, M-<DEL>'s, or C-W's
+you do after this will throw away that group of kills and start a
+brand new one.
+
+      There is a command to "turn on the plus sign".  This is
+used if you want to move groups of lines from several different
+places all to one place.  Certainly you could do this manually,
+doing a few C-K's, moving to the right place, doing a C-Y, going
+somewhere else and doing some C-K's or a C-W, moving back to the
+right place, doing another C-Y, etc.  It would be much easier to
+do C-K's or C-W's in all the various places and then yank the
+whole thing back with a single C-Y.  But we said earlier that
+movement away from the place of the text killing or wiping causes
+the plus-sign to go off and the current bunch of kills to be
+"closed off".  The command to turn the plus sign back on is
+M-C-W.  (This is your first "M-C-" command.  Remember that you
+just type ESC Control W.)  You can remember this command by its
+intimate relation with C-W (and M-W, if you use it).
+
+      As M-C-W is sort of hard to think about, there is no
+substitute for practice.  Move to the beginning of this paragraph
+and kill the text on the first line, in whatever manner is
+convenient.  Then move to the last line.  Notice that the plus in
+the mode line has gone off.  Type a M-C-W to turn it on, then
+kill off the text on the last line.  Now move into the middle of
+what's left and type a C-Y.  You will see both the first and last
+lines appear there at once.
+
+      Play around with all these commands a little bit.  Try
+deleting the last five words of this sentence and yanking them
+back at the beginning of the sentence.  Then, move this paragraph
+so that it is the first paragraph in the lesson.  Try doing C-W's
+with the cursor both before and after the invisible mark you set,
+and observe the results.  Killing and yanking text is one of the
+most complicated, confusing, and hard-to-explain features of
+Mince.  Take your time and experiment enough to make sure that
+you understand these commands.
+
+      When you're all done type a C-X C-C and answer "Y" for
+"yes" when Mince asks you if you want to abandon the text buffer
+without saving it.  You wouldn't want to destroy the file
+"lesson6.doc" for the next person, after all.  We'll learn more
+about text buffers and neat tricks you can do with C-Y and lots
+of different buffers in Lesson 8.
+
+to the middle of
+what's left and type a C-Y.  You will see both the first and last
+lines appear t

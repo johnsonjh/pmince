@@ -1,0 +1,183 @@
+				  USASCII Character Set
+
+				as modified for printing
+		    and the inclusion of Meta characters
+
+
+Decimal  Octal Hex Graphic    Name (Meaning) <English Text Reference>
+
+  0.		000	00	^@		NUL (used for padding) <NULL>
+  1.		001	01	^A		SOH (start of header)
+  2.		002	02	^B		STX (start of text)
+  3.		003	03	^C		ETX (end of text)
+  4.		004	04	^D		EOT (end of transmission)
+  5.		005	05	^E		ENQ (enquiry)
+  6.		006	06	^F		ACK (acknowledge)
+  7.		007	07	^G		BEL (bell or alarm) <BELL>
+  8.		010	08	^H		BS  (backspace) <BS>
+  9.		011	09	^I		HT  (horizontal tab) <TAB>
+ 10.		012	0A	^J		LF  (line feed) <LF>
+ 11.		013	0B	^K		VT  (vertical tab)
+ 12.		014	0C	^L		FF  (form feed, new page) <FF>
+ 13.		015	0D	^M		CR  (carriage return) <CR>
+ 14.		016	0E	^N		SO  (shift out)
+ 15.		017	0F	^O		SI  (shift in)
+
+ 16.		020	10	^P		DLE (data link escape)
+ 17.		021	11	^Q		DC1 (device control 1, XON)
+ 18.		022	12	^R		DC2 (device control 2)
+ 19.		023	13	^S		DC3 (device control 3, XOFF)
+ 20.		024	14	^T		DC4 (device control 4)
+ 21.		025	15	^U		NAK (negative acknowledge)
+ 22.		026	16	^V		SYN (synchronous idle)
+ 23.		027	17	^W		ETB (end transmission block)
+ 24.		030	18	^X		CAN (cancel)
+ 25.		031	19	^Y		EM  (end of medium)
+ 26.		032	1A	^Z		SUB (substitute)
+ 27.		033	1B	^[		ESC (escape, alter mode, SEL) <ESC>
+ 28.		034	1C	^\		FS  (file separator)
+ 29.		035	1D	^]		GS  (group separator)
+ 30.		036	1E	^^		RS  (record separator)
+ 31.		037	1F	^_		US  (unit separator)
+
+ 32.		040	20	 		space or blank <SP>
+ 33.		041	21	!		exclamation mark
+ 34.		042	22	"		double quote
+ 35.		043	23	#		number sign (hash mark)
+ 36.		044	24	$		dollar sign
+ 37.		045	25	%		percent sign
+ 38.		046	26	&		ampersand sign
+ 39.		047	27	'		single quote (apostrophe)
+ 40.		050	28	(		left parenthesis
+ 41.		051	29	)		right parenthesis
+ 42.		052	2A	*		asterisk (star)
+ 43.		053	2B	+		plus sign
+ 44.		054	2C	,		comma
+ 45.		055	2D	-		minus sign (dash)
+ 46.		056	2E	.		period (decimal point, dot)
+ 47.		057	2F	/		(right) slash
+                     
+ 48.		060	30	0		numeral zero
+ 49.		061	31	1		numeral one
+ 50.		062	32	2		numeral two
+ 51.		063	33	3		numeral three
+ 52.		064	34	4		numeral four
+ 53.		065	35	5		numeral five
+ 54.		066	36	6		numeral six
+ 55.		067	37	7		numeral seven
+ 56.		070	38	8		numeral eight
+ 57.		071	39	9		numeral nine
+ 58.		072	3A	:		colon
+ 59.		073	3B	;		semi-colon
+ 60.		074	3C	<		less-than sign
+ 61.		075	3D	=		equal sign
+ 62.		076	3E	>		greater-than sign
+ 63.		077	3F	?		question mark
+
+ 64.		100	40	@		atsign
+ 65.		101	41	A		upper-case letter ALPHA
+ 66.		102	42	B		upper-case letter BRAVO
+ 67.		103	43	C		upper-case letter CHARLIE
+ 68.		104	44	D		upper-case letter DELTA
+ 69.		105	45	E		upper-case letter ECHO
+ 70.		106	46	F		upper-case letter FOXTROT
+ 71.		107	47	G		upper-case letter GOLF
+ 72.		110	48	H		upper-case letter HOTEL
+ 73.		111	49	I		upper-case letter INDIA
+ 74.		112	4A	J		upper-case letter JERICHO
+ 75.		113	4B	K		upper-case letter KAPPA
+ 76.		114	4C	L		upper-case letter LIMA
+ 77.		115	4D	M		upper-case letter MIKE
+ 78.		116	4E	N		upper-case letter NOVEMBER
+ 79.		117	4F	O		upper-case letter OSCAR
+
+ 80.		120	50	P		upper-case letter PAPPA
+ 81.		121	51	Q		upper-case letter QUEBEC
+ 82.		122	52	R		upper-case letter ROMEO
+ 83.		123	53	S		upper-case letter SIERRA
+ 84.		124	54	T		upper-case letter TANGO
+ 85.		125	55	U		upper-case letter UNICORN
+ 86.		126	56	V		upper-case letter VICTOR
+ 87.		127	57	W		upper-case letter WHISKEY
+ 88.		130	58	X		upper-case letter XRAY
+ 89.		131	59	Y		upper-case letter YANKEE
+ 90.		132	5A	Z		upper-case letter ZEBRA
+ 91.		133	5B	[		left square bracket
+ 92.		134	5C	\		left slash (backslash)
+ 93.		135	5D	]		right square bracket
+ 94.		136	5E	^		uparrow (carat)
+ 95.		137	5F	_		underscore
+
+ 96.		140	60	`		(single) back quote (grave accent)
+ 97.		141	61	a		lower-case letter alpha
+ 98.		142	62	b		lower-case letter bravo
+ 99.		143	63	c		lower-case letter charlie
+100.		144	64	d		lower-case letter delta
+101.		145	65	e		lower-case letter echo
+102.		146	66	f		lower-case letter foxtrot
+103.		147	67	g		lower-case letter golf
+104.		150	68	h		lower-case letter hotel
+105.		151	69	i		lower-case letter india
+106.		152	6A	j		lower-case letter jericho
+107.		153	6B	k		lower-case letter kappa
+108.		154	6C	l		lower-case letter lima
+109.		155	6D	m		lower-case letter mike
+110.		156	6E	n		lower-case letter november
+111.		157	6F	o		lower-case letter oscar
+
+112.		160	70	p		lower-case letter pappa
+113.		161	71	q		lower-case letter quebec
+114.		162	72	r		lower-case letter romeo
+115.		163	73	s		lower-case letter sierra
+116.		164	74	t		lower-case letter tango
+117.		165	75	u		lower-case letter unicorn
+118.		166	76	v		lower-case letter victor
+119.		167	77	w		lower-case letter whiskey
+120.		170	78	x		lower-case letter xray
+121.		171	79	y		lower-case letter yankee
+122.		172	7A	z		lower-case letter zebra
+123.		173	7B	{		left curly brace
+124.		174	7C	|		vertical bar
+125.		175	7D	}		right curly brace
+126.		176	7E	~		tilde
+127.		177	7F	^?		DEL (delete, rub out) <DEL>
+
+
+
+128.		200	80	~^@		Meta NUL
+129.		201	81	~^A		Meta SOH
+130.		202	82	~^B		Meta STX
+131.		203	83	~^C		Meta ETX
+132.		204	84	~^D		Meta EOT
+133.		205	85	~^E		Meta ENQ
+134.		206	86	~^F		Meta ACK
+135.		207	87	~^G		Meta BEL
+
+	...
+
+159.		237	9F	~^_		Meta US
+160.		240	A0	~ 		Meta space
+161.		241	A1	~!		Meta exclamation mark
+
+	...
+
+253.		375	FD	~}		Meta right curly brace
+254.		376	FE	~~		Meta tilde
+255.		377	FF	~^?		Meta DEL
+
+-----------------------------------------------------------------
+
+Notes:
+
+	The "Meta" form of each character is created by adding 128
+(decimal) to that character's ASCII value.
+
+	To prevent ambiguity, the following alternate forms can be
+used for printing:
+
+	 94.		136	5E	^	can be printed as	^=
+	126.		176	7E	~	can be printed as	^~
+	222.		336	DE	~^	can be printed as	~^=
+	254.		376	FE	~~	can be printed as	~^~
+left curly brace
+124.		174	7

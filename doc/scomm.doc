@@ -1,0 +1,162 @@
+                    Short Mince Command List
+
+
+All printing characters  (a-z, A-Z, 0-9, or one of
+	!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~ Space)
+		Self Insert
+<BS> (Back Space, BS)
+		same as <DEL>
+<TAB> (Tab)
+		Tab Insert
+<CR> (Return, Carriage Return, CR, Ret, Enter)
+		Newline Insert
+<ESC> (Escape, Esc, Alt, Alt Mode)
+		Meta Command Prefix
+<DEL> (Delete, Del, Rubout)
+		Delete Character Backward
+
+
+                       Control Characters
+
+
+C-@		Set Mark
+C-A		Beginning Of Line
+C-B		Backward Character
+C-D		Delete Character Forward
+C-E		End Of Line
+C-F		Forward Character
+C-G		Abort/Cancel Prefix
+C-H		same as <DEL>
+C-I		same as <TAB>
+C-J		Newline Insert, Indent same
+C-K		Kill Line
+C-L		Redisplay Screen
+C-M		same as <CR>
+C-N		Next Line
+C-O		Open line
+C-P		Previous line
+C-Q		Quote Next Character
+C-R		Reverse String Search
+C-S		Forward String Search
+C-T		Transpose Characters
+C-U		Universal Argument
+C-V		View Next Screen
+C-W		Wipe Region
+C-X		Control-X Command Prefix
+C-Y		Yank Killed Text
+C-[		same as <ESC>
+C-\		Delete Indentation
+
+
+                       Control-X Commands
+
+
+C-X <TAB>	Set Tab Spacing
+C-X C-B	List Buffers
+C-X C-C	Exit to Command Level
+C-X C-F	Find File
+C-X C-I	same as C-X <TAB>
+C-X C-M	Delete Mode
+C-X C-R	Read File
+C-X C-S	Save File
+C-X C-V	View Other Window's Next Screen
+C-X C-W	Write File
+C-X C-X	Exchange Point And Mark
+C-X C-Z	View Other Window's Previous Screen
+C-X 1	One Window
+C-X 2	Two Windows
+C-X .	Set Indent Column
+C-X =	Where Am I
+C-X B	Select Buffer
+C-X F	Set Fill Column
+C-X K	Kill Buffer
+C-X M	Add Mode
+C-X O	Switch Window
+C-X ^	Grow Current Window
+C-X b	same as C-X B
+C-X f	same as C-X F
+C-X k	same as C-X K
+C-X m	same as C-X M
+C-X o	same as C-X O
+
+
+                          Meta Commands
+
+
+M-<DEL>	Delete Word Backward
+M-C-H	same as M-<DEL>
+M-C-K	Kill Entire Line
+M-C-R	Query Replace String
+	C-G		Abort
+	Space	Same as Y
+	!		Replace Rest
+	.		Exit
+	,		Replace And Request Confirmation
+	Y		Replace And Find Next
+	y		Same as Y
+	<anything else>	Don't Replace, And Find Next
+M-C-W	Make previous delete
+M-<		Beginning Of Buffer
+M->		End Of Buffer
+M-A		Backward Sentence
+M-B		Backward Word
+M-C		Capitalize Word
+M-D		Delete Word Forward
+M-E		Forward Sentence
+M-F		Forward Word
+M-H		Mark Whole Paragraph
+M-K		Kill Sentence Forward
+M-L		Lowercase Word
+M-Q		Fill Paragraph
+M-R		Replace String
+M-S		Center Line
+M-T		Transpose Words
+M-U		Uppercase Word
+M-V		View Previous Screen
+M-W		Copy Region
+M-[		Backward Paragraph
+M-\		Delete Surrounding Whitespace
+M-]		Forward Paragraph
+M-a		same as M-A
+M-b		same as M-B
+M-c		same as M-C
+M-d		same as M-D
+M-e		same as M-E
+M-f		same as M-F
+M-h		same as M-H
+M-k		same as M-K
+M-l		same as M-L
+M-q		same as M-Q
+M-r		same as M-R
+M-s		same as M-S
+M-t		same as M-T
+M-u		same as M-U
+M-v		same as M-V
+M-w		same as M-W
+
+
+                            Fill Mode
+
+
+Space	Auto Fill Space
+
+
+                            Page Mode
+
+
+All Printing Characters
+		Self Overwrite
+<BS>		Overwrite Character Backward
+Space	Overwrite/Delete Character Forward
+C-A		To First Non-White
+C-B		Backward Character On Line
+C-E		To Last Non-White
+C-F		Forward Character On Line
+C-H		same as <BS>
+C-N		Next Line Forced
+C-P		Previous Line Forced
+C-Q		Insert Next Character
+C-X \	Delete Trailing Whitespace
+L		Lowercase Word
+M-Q		Fill Paragraph
+M-R		Replace Strin
