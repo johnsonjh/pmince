@@ -56,7 +56,7 @@
 * User-configurable key bindings and remapping.
   * Allow user configuration *without* requiring full recompilation.
   * Normalize key bindings and mappings between **MINCE** flavors.
-* Support for *DEC* **RSX-11**, *DEC*/*Compaq*/*HPe*/*VMSI* _(*Open*)_**VMS**, and *Microsoft* **Windows** operating systems.
+* Support building and operation on **RSX-11**, (**Open**)**VMS**, and **Windows** operating systems.
 
 ## Original Authors
 
