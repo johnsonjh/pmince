@@ -60,9 +60,9 @@
 
 ## Original Authors
 
-* Portable MINCE by [Jeffrey H. Johnson](https://github.com/johnsonjh/pmince) \<[trnsz@pobox.com](mailto:trnsz@pobox.com)\>
-* MINCE 2.6: Copyright (C) 1980-1982 by Mark of the Unicorn, Inc.
-* DIFF 1.1: Copyright (C) 1981 Mark of the Unicorn, Inc.
-* Scribble, Pencil, Crayon 1.3: Copyright (C) 1981 by Mark of the Unicorn, Inc.
-  * MINCE/DIFF/Scribble/Pencil/Crayon: Authored by Jason T. Linhart, Scott ("*Gyro*") Layson Burson, Craig A. Finseth, Brian N. Hess, and Bill Spitzak.
-* CCOM80 (_Derived from **COM** 3.0_): Copyright (C) 1984-2006 by Jim Cathey, Edmund Ramm, Charlie Gibbs, and Willi Kusche.
+* **Portable MINCE** by [*Jeffrey H. Johnson*](https://github.com/johnsonjh/pmince) \<[trnsz@pobox.com](mailto:trnsz@pobox.com)\>
+* **MINCE** *2.6*: Copyright (C) 1980-1982 by **Mark of the Unicorn, Inc.**
+* **DIFF** *1.1*: Copyright (C) 1981 by **Mark of the Unicorn, Inc.**
+* **Scribble**, **Pencil**, **Crayon** *1.3*: Copyright (C) 1981 by **Mark of the Unicorn, Inc.**
+  * **MINCE**/**DIFF**/**Scribble**/**Pencil**/**Crayon**: Authored by *Jason* *T.* *Linhart*, *Scott* ("*Gyro*") *Layson* *Burson*, *Craig* *A.* *Finseth*, *Brian* *N.* *Hess*, and *Bill* *Spitzak*.
+* **CCOM80** (_Derived from **COM** 3.0_): Copyright (C) 1984-2006 by *Jim* *Cathey*, *Edmund* *Ramm*, *Charlie* *Gibbs*, and *Willi* *Kusche*.
