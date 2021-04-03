@@ -179,5 +179,4 @@ used for printing:
 	126.		176	7E	~	can be printed as	^~
 	222.		336	DE	~^	can be printed as	~^=
 	254.		376	FE	~~	can be printed as	~^~
-left curly brace
-124.		174	7
+

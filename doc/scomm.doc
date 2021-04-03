@@ -157,6 +157,4 @@ C-N		Next Line Forced
 C-P		Previous Line Forced
 C-Q		Insert Next Character
 C-X \	Delete Trailing Whitespace
-L		Lowercase Word
-M-Q		Fill Paragraph
-M-R		Replace Strin
+

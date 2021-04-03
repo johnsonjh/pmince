@@ -168,6 +168,4 @@ without saving it.  You wouldn't want to destroy the file
 about text buffers and neat tricks you can do with C-Y and lots
 of different buffers in Lesson 8.
 
-to the middle of
-what's left and type a C-Y.  You will see both the first and last
-lines appear t
+
