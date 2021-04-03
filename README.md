@@ -45,13 +45,14 @@
 * Translation for `PgUp`/`PgDn`/`Home`/`End`/cursor control (*arrow*) keys.
 * Support for automatic terminal resizing (_by catching and handling **SIGWINCH**_).
 * Build and support MOTU **Scribble**, **Pencil**, and **Crayon** in similar fashion.
-  * Automatic setup for _*ANSI*/*ASME* *Y14.1*_ (*US*) and _*ISO*-*216*_ (*EU*) paper types.
-  * Run time switching between different printer defintions.
+  * Automatic setup for **ANSI**/**ASME** _**Y14.1**_ (*US*) and *ISO*-_**216**_ (*EU*) paper types.
+  * End-user run time switching between different printer defintions.
   * Support for rendering of proportional (*NEC*, *Epson*, *Diablo*, etc.) printer output.
-  * Leverage *Ghostscript*/*ImageMagick* for printer output conversions (*PDF/PS/PCL/XPS/PNG/etc.*)
-* Add Motorola **68000** CPU core to suport **MINCE-68K**.
-  * Automatically invoke **68K** version for large input files.
-  * Allow the user configuration/override of default **MINCE** flavor (**MINCE-80** or **MINCE-68K**).
+  * **Ghostscript**/**ImageMagick** for printer output conversion to *PDF*/*PostScript*/*PCL*/*XPS*/*PNG*/*etc*.
+* Add Motorola **68000** CPU core, to support **MINCE-68K**.
+  * Automatically invoke **MINCE-68K** version for large input files.
+  * End-user configuration of default **MINCE** flavor (**MINCE-80** or **MINCE-68K**).
+    * Native execution (*translation*) for **MINCE-68K** for **M68000** systems.
 * User-configurable key bindings and remapping.
   * Allow user configuration without requiring full recompilation.
   * Normalize key bindings and mappings between **MINCE** flavors.
