@@ -161,7 +161,7 @@ char *argv[];
             }
         } else {
 #ifdef NOBUFF
-			regp->miscflags |= NOBUFFER;
+            regp->miscflags |= NOBUFFER;
 #endif
 #ifdef EMBED
             if (filename = strrchr(argp, '/')) {
