@@ -1,0 +1,94 @@
+13-Jan-84 09:13:32-MST,900;000000000000
+Return-Path: <@MIT-MC:CAL%MIT-OZ@MIT-MC>
+Received: from MIT-MC by SIMTEL20.ARPA with TCP; Fri 13 Jan 84 09:13:16-MST
+Date: Fri, 13 Jan 1984  01:30 EST
+Message-ID: <CAL.11983197687.BABYL@MIT-OZ>
+From: Cliff Lasser <CAL%MIT-OZ@MIT-MC.ARPA>
+To:   Info-Cpm@SIMTEL20.ARPA, Amethyst-Users@SIMTEL20.ARPA
+Subject: Mince keyboard macros
+
+   A major feature of Emacs that is missing in Mince is keyboard macros.
+Since I tend to use them a lot, I finally got sufficiently frustrated with
+Mince that I added the feature.  If you would like the sources for the
+modifications (they're not that long), I would be glad to send you a copy.
+
+   It seems to me that it should not be too hard to add in overlays and
+restarting with old swap file contents and other things.  All I would need
+is a complete set of sources to Mince and a couple of days of work.  Anyone
+at MOTU listening?
+		-CAL@MIT-OZ
+
+13-Jan-84 16:27:28-MST,463;000000000000
+Return-Path: <Edl@SRI-TSC>
+Received: from sri-tsc by SIMTEL20.ARPA with TCP; Fri 13 Jan 84 16:27:15-MST
+Date: 13 Jan 1984 at 1455-PST
+To: Cliff Lasser <CAL%MIT-OZ at MIT-MC.ARPA>
+cc: Amethyst-Users at SIMTEL20.ARPA
+Subject: Re: Mince keyboard macros
+In-reply-to: Your message of Fri, 13 Jan 1984  01:30 EST.
+             <CAL.11983197687.BABYL@MIT-OZ>
+From: edl at SRI-TSC
+
+
+Goodness!  Please send me those changes.
+Thanks alot.
+
+jan (edl@sri-tsc)
+13-Jan-84 16:57:14-MST,628;000000000000
+Return-Path: <@MIT-MC:DCB.TECH%MIT-OZ@MIT-MC>
+Received: from MIT-MC by SIMTEL20.ARPA with TCP; Fri 13 Jan 84 16:56:56-MST
+Date: Fri, 13 Jan 1984  18:52 EST
+Message-ID: <DCB.TECH.11983387383.BABYL@MIT-OZ>
+From: Rich $alz <DCB.TECH%MIT-OZ@MIT-MC.ARPA>
+To:   Cliff Lasser <CAL%MIT-OZ@MIT-MC.ARPA>
+Cc:   Amethyst-Users@SIMTEL20.ARPA
+Subject: Mince keyboard macros
+In-reply-to: Msg of 13 Jan 1984  01:30-EST from Cliff Lasser <CAL%MIT-OZ at MIT-MC.ARPA>
+
+I'd like the sources very much.  Are they on-line?  If not, just drop
+a copy in an interdep envelop to Rich $alz, c/o Bill Giuffre East
+Campus. tnx much,
+		rich$
+
+16-Jan-84 11:01:55-MST,699;000000000000
+Return-Path: <@MIT-MC:CAL%MIT-OZ@MIT-MC>
+Received: from MIT-MC by SIMTEL20.ARPA with TCP; Mon 16 Jan 84 11:01:35-MST
+Date: Sun, 15 Jan 1984  15:08 EST
+Message-ID: <CAL.11983870893.BABYL@MIT-OZ>
+From: Cliff Lasser <CAL%MIT-OZ@MIT-MC.ARPA>
+To:   Info-cpm @SIMTEL20.ARPA
+Cc:   Amethyst-Users@SIMTEL20.ARPA, Cliff Lasser <CAL%MIT-OZ@MIT-MC.ARPA>
+Subject: Mince keyboard macros
+In-reply-to: Msg of 13 Jan 1984  18:52-EST from Rich $alz <DCB.TECH%MIT-OZ at MIT-MC.ARPA>
+
+I have put the sources for my mince keyboard macros in MIT-MC:FJW;MMODS
+TXT.  They will be there until FJW moves the file over to the Simtel20.  If
+you have any problems with it, don't hesitate to let me know.
+	-Cliff
+
+16-Jan-84 14:37:01-MST,416;000000000000
+Return-Path: <BEC.SHAPIN@USC-ECL>
+Received: from USC-ECL by SIMTEL20.ARPA with TCP; Mon 16 Jan 84 14:36:44-MST
+Date: 16 Jan 1984 1332-PST
+From: Ted Shapin <BEC.SHAPIN@USC-ECL>
+Subject: Double column Query
+To: amethyst-users@SIMTEL20
+Postal-address: Beckman Instruments, Inc.
+Postal-address: 2500 Harbor X-11, Fullerton, CA 92634
+Phone: (714)961-3393
+
+Has anyone written double column formatting?
+-------
+16-Jan-84 19:53:50-MST,439;000000000000
+Mail-From: WANCHO created at 16-Jan-84 19:49:22
+Date: 16 Jan 1984  19:49 MST (Mon)
+Message-ID: <WANCHO.11984205929.BABYL@SIMTEL20>
+From: "Frank J. Wancho" <WANCHO@SIMTEL20>
+To:   AMETHYST-USERS@SIMTEL20
+Subject: AMETHYST UG files
+
+The collection of the AMETHYST User Group files, Volume 1 (the only
+volume I know of) is now in MICRO:<CPM.AMETHYST> here.  To that I will
+add CAL's mod file as KBDMACRO.TXT in a minute.
+
+--Frank

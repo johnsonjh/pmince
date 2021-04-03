@@ -1,0 +1,65 @@
+10-May-84 19:10:44-MDT,2121;000000000000
+Return-Path: <milazzo@rice.ARPA>
+Received: from rice.ARPA by SIMTEL20.ARPA with TCP; Thu 10 May 84 19:10:17-MDT
+Received: by rice.ARPA (AA11922); Thu, 10 May 84 20:09:10 CDT
+Date:     Thu, 10 May 84 19:25:32 CDT
+From: Paul Milazzo <milazzo@rice.ARPA>
+Subject:  MINCE under CP/M 3.0
+To: Amethyst-Users@SIMTEL20.ARPA
+Message-Id:  <1984.05.10.19.25.32.283.11733@Dione.ARPA>
+
+I recently converted my H89 to CP/M 3.0 (banked).  Most of my CP/M 2.2
+software continued to work, but I've had some trouble with MINCE.  The
+.COM file I made a couple of years ago mostly worked, but occasionally
+exhibited odd behavior such as altering the definition of a "word",
+such that word-motion and word-deletion commands would suddenly begin
+operating on an entire line.
+
+I recompiled everything with my v1.44 BDS `C', and the above behavior
+went away, but instead MINCE now seems incapable of displaying certain
+prompts (such as "Abandon modified buffers?").  My attempts to make a
+v1.2 L2 from the sources on SIMTEL20 have also failed.  The resulting
+L2 simply announces there are too many functions and exits *before
+processing any files*.
+
+Does anyone know what's going on here, or how I might go about finding
+out?  Would upgrading my admittedly ancient version of BDS `C' help?
+
+On a related topic, has anyone modified the BDS library to take
+advantage of some of the features of CP/M 3?  For example, the I/O
+functions could trap BDOS errors rather than allowing the program to be
+blown away, the built-in filename parsing could be used (thus passwords
+could be supported), the UNIX stat, time, and stime calls could be
+supported, as well as certain terminal ioctls, etc.  Something tells me
+that this sort of thing has been done somewhere, but I haven't done any
+CP/M hacking for several years now, so please forgive my ignorance.
+
+I'll be happy to summarize replies if there is any interest.
+
+				Thanks,
+				Paul G. Milazzo
+				Dept. of Computer Science
+				Rice University, Houston, TX
+
+ARPANET/CSNet: Milazzo@RICE.ARPA
+UUCP:          {convex,cornell,hp-pcd,sun,ut-sally}!rice!milazzo
+10-May-84 22:02:16-MDT,865;000000000000
+Return-Path: <@MIT-MC:RG.JMTURN@MIT-OZ>
+Received: from MIT-MC by SIMTEL20.ARPA with TCP; Thu 10 May 84 22:02:00-MDT
+Date: Thu, 10 May 1984  23:55 EDT
+Message-ID: <RG.JMTURN.12014364516.BABYL@MIT-OZ>
+From: RG.JMTURN%MIT-OZ@MIT-MC.ARPA
+To:   Paul Milazzo <milazzo@RICE.ARPA>
+Cc:   Amethyst-Users@SIMTEL20.ARPA
+Subject: MINCE under CP/M 3.0
+In-reply-to: Msg of 10 May 1984  20:25-EDT from Paul Milazzo <milazzo at rice.ARPA>
+
+The problem with certain messages not appearing may be due to the two
+ways messages are displayed under MINCE. Some stuff is sent out directly
+through BIOS calls, while some stuff is written using standard C printf.
+Some versions of printf (for example, the one under Unix) don't send out
+that stuff until they see a linefeed, so if you only send prompts without
+linefeeds it will never see the light of day.
+
+						James
+

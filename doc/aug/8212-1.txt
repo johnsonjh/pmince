@@ -1,0 +1,117 @@
+ 2-Dec-82 22:52:00,495;000000000000
+Date: 3 December 1982 00:52-EST
+From: Frank J. Wancho <FJW at MIT-MC>
+Subject:  Hack/patch Wanted!
+To: AMETHYST-USERS at MIT-MC
+
+Anybody have a patch to MINCE 2.6 that will allow it to find and use
+the MINCE.SWP file located in A0: while you're in some other User
+area?  I know I can try using DUPUSR2 to copy the directory entries to
+all the User areas I use, but that tends to destroy the directory
+rather quickly.  PIPing copies is not feasible - no room...
+
+Any ideas?
+
+-Frank
+ 3-Dec-82 05:55:38,399;000000000000
+From: BANDY@MIT-ML
+Date: 12/03/82 05:55:38
+Re: hack to allow mince to use the swap file in different user areas
+To: fjw at MIT-MC
+CC: amethyst-users at MIT-MC
+
+the easiest (and poerhaps most kludgy way) is to load up
+DU, and duplicate the entry for mince.swp. just changes the
+user number (the first byte) to whatever user number that you want
+the swap file to show up in.
+					-andy
+		
+ 3-Dec-82 09:29:00,274;000000000000
+Date:  3 Dec 1982 1129-EST
+From: PGA at MIT-OZ
+Subject: Re: hack to allow mince to use the swap file in different user areas
+To: amethyst-users at MIT-MC
+In-Reply-To: Your message of 3-Dec-82 0555-EST
+
+There's a program called dupuser which does it for you.
+-------
+ 9-Dec-82 06:34:00,313;000000000000
+Date: 9 December 1982 08:34-EST
+From: Devon S. McCullough <DEVON at MIT-MC>
+Subject:  [JERRYB: forwarded]
+To: FJW at MIT-MC
+cc: AMETHYST-USERS at MIT-MC
+
+Does anybody have any code modifying mince to edit C code?  I'd write some
+if only I knew how to hack mince, and do it for LISP too while I was at it.
+18-Dec-82 22:34:00,666;000000000000
+Date: 19 December 1982 00:34-EST
+From: Frank J. Wancho <FJW at MIT-MC>
+Subject:  Installation help wanted
+To: AMETHYST-USERS at MIT-MC
+
+Date: 12/18/82 20:30:43
+From: JURGEN
+To:   AMETHYST-USERS-REQUEST
+
+Please add me to you list of mince/scribble users and to any
+applicable mailing lists.  Thank you.  Also, I am having a certain
+amount of trouble getting mince and scribble to run.  If there is a
+patient person who wouldn't mind listening to my ravings,would you
+have this person contact me?
+
+	Jurgen at MC
+--------------------
+
+He's been added - now, can anyone volunteer to help?  If so, please
+contact JURGEN@MC directly.
+
+Thanks,
+Frank
+18-Dec-82 22:42:00,651;000000000000
+Date: 19 December 1982 00:42-EST
+From: Frank J. Wancho <FJW at MIT-MC>
+Subject:  Final Word vs. Perfect Writer vs. Mince 2.6
+To: AMETHYST-USERS at MIT-MC
+
+Is there any user of all three or any two of the subject products
+willing to give us a comparison of these products?  I'm looking to
+find out not so much as what they do the same (as compared to MINCE
+2.6 as a base), but what they do different.
+
+I would also prefer that the principals, who may be listening, NOT
+reply unless there is either a gross piece of misinformation or
+misunderstanding involved, and only then when all user replies appear
+to have come in.
+
+Thanks,
+Frank
+23-Dec-82 19:58:00,367;000000000000
+Date: Thursday, 23 December 1982  21:58-EST
+Sender: DANIEL @ MIT-OZ
+From: DANIEL @ MIT-MC
+To:   Frank J. Wancho <FJW @ MIT-MC>
+Cc:   AMETHYST-USERS @ MIT-MC
+Subject: Final Word vs. Perfect Writer vs. Mince 2.6
+In-reply-to: The message of 19 Dec 1982  00:42-EST from Frank J. Wancho <FJW at MIT-MC>
+
+Did you get any bits on this?  What prompted the question?
+30-Dec-82 04:57:00,881;000000000000
+Date: 30 December 1982 06:57-EST
+From: Frank J. Wancho <FJW @ MIT-MC>
+Subject:  Final Word vs. Perfect Writer vs. Mince 2.6
+To: DANIEL @ MIT-MC
+cc: AMETHYST-USERS @ MIT-MC, FJW @ MIT-MC
+In-reply-to: The message of 23 Dec 1982  21:58-EST from DANIEL
+
+Still wading thru accumulated mail...  What prompted the question is
+that I use Mince 2.6 exclusively for writing a very large program
+(which I have conveniently broken into reasonable chunks), and we
+recently received the other two which I have yet to install or even
+read the manuals.  Since it doesn't appear that there will be a Mince
+2.7 (or 3.0 or 4.0 or whatever), I really wanted to know if I should
+jump to one of the other two, or simply be content with what I have
+(and maybe take the plunge and start incorporating some of those
+changes others have made, and, eventually, a few of my own)...
+
+--Frank

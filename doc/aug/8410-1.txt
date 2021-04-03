@@ -1,0 +1,23 @@
+31-Oct-84 14:13:31-MST,963;000000000000
+Return-Path: <@MIT-MC:SEILER@MIT-XX.ARPA>
+Received: from MIT-MC by SIMTEL20.ARPA with TCP; Wed 31 Oct 84 14:12:39-MST
+Date: Wed 31 Oct 84 13:15:11-EST
+From: Larry Seiler <Seiler@MIT-XX.ARPA>
+Subject: Bad news from Mark of the Unicorn
+To: amethyst-users@MIT-MC.ARPA
+cc: Seiler@MIT-XX.ARPA
+
+A friend just called them and was told that they have quit distributing
+Mince and Scribble.  He is looking for a copy to buy - does anyone know
+of a distributor that still has them in stock?  The stated reason for
+stopping distribution is that "no one is interested in them anymore".
+How can we convince MotU of the idiocy of this idea?  For a program that
+hasn't been advertised in a couple of years, I was under the impression
+that it sold rather well.  Anyway, I would really appreciate pointers to
+sources for Mince and Scribble - my fried can accept a variety of formats,
+including standard 8" single sided.
+
+	Larry Seiler
+	Seiler@MIT-XX
+-------
+

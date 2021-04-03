@@ -1,0 +1,28 @@
+18-Nov-84 10:32:01-MST,1039;000000000000
+Return-Path: <@MIT-MC:Hess.Unicorn@MIT-MULTICS.ARPA>
+Received: from MIT-MC by SIMTEL20.ARPA with TCP; Sun 18 Nov 84 10:31:45-MST
+Date:  Sun, 18 Nov 84 12:24 EST
+From:  Hess@MIT-MULTICS.ARPA
+Subject:  Quit distributing what?
+To:  Seiler@MIT-XX.ARPA
+cc:  amethyst-users@MIT-MC.ARPA, bnh@MIT-MULTICS.ARPA
+Message-ID:  <841118172427.019515@MIT-MULTICS.ARPA>
+
+Larry -- MotU still distributes Mince.  It has stopped distributing
+Scribble.
+
+You would almost certainly be better off with The FinalWord, because the
+keys can be rebound to look like Mince by the user.
+
+Scribble distribution was halted because of source code update problems,
+keeping users current, and a complete re-write which was done two years
+ago.
+
+The current version of The FinalWord for CP/M systems is 1.15.  The
+current version of Mince is still 2.6.  The current version of Scribble
+is 1.4, although I hope you can't find anybody selling it anymore.  I
+believe that CMU still sells it via a distribution license through their
+Comp.Ctr.
+
+Brian
+

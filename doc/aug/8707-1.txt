@@ -1,0 +1,42 @@
+ 1-Jul-87 10:02:24-MDT,2036;000000000000
+Return-Path: <howell%community-chest.mitre.org@gateway.mitre.org>
+Received: from gateway.mitre.org by SIMTEL20.ARPA with TCP; Wed, 1 Jul 87 10:02:09 MDT
+Received: by gateway.mitre.org (5.54/SMI-2.2)
+	id AA03414; Wed, 1 Jul 87 11:39:09 EDT
+Return-Path: <howell%community-chest.mitre.org@gateway.mitre.org>
+Received: from localhost by boardwalk.mitre.org (1.1/SMI-2.2)
+	id AA01199; Wed, 1 Jul 87 11:38:52 EDT
+Message-Id: <8707011538.AA01199@boardwalk.mitre.org>
+To: info-unix@brl.arpa, info-ada@ada20.isi.edu, amethyst-users@simtel20.arpa,
+        editor-people@score.stanford.edu, info-amiga@red.rutgers.edu,
+        info-apple@brl.arpa, info-dec-micro@score.stanford.arpa,
+        info-ibmpc@usc-isib.arpa, info-vax@sri-kl.arpa,
+        opsys%ucf1vm.bitnet@wiscvm.wisc.edu, soft-eng@xx.lcs.mit.edu,
+        std-unix@sally.utexas.edu, unix-emacs@bbncc5.arpa
+Cc: howell@mitre.ARPA
+Subject: Widely used tools on various hosts
+Date: Wed, 01 Jul 87 11:38:49 -0400
+From: howell%community-chest.mitre.org@gateway.mitre.org
+
+I am interested in information on widely used tools that are
+available on a variety of hosts.  For example, EMACS-based editors
+are available for a wide range of UNIX hosts, for micros running
+MS/DOS, and I believe for VAX VMS.  Scribe is also available for
+several different operating systems.  What other machines/OSes does
+Scribe or EMACS run on?  What are other examples of tools that run on
+various operating systems?  I imagine there are a number of examples
+from the microcomputer world (e.g. Lotus on a variety of OSes).
+I'm interested in a wide definition of "tools"; for example, I
+would consider the availability of TCP/IP on UNIX and VMS, or the
+availability of NFS on UNIX and PCs, to be good examples.
+
+Please send to me; I'm not on all of the lists I've mailed to.
+I'll summarize all responses received by 10 July and redistribute 
+to all mailing lists.
+
+Thanks,
+
+Chuck Howell
+ARPA: howell@mwultrix.arpa or
+    howell%community-chest.mitre.org@gateway.mitre.org
+

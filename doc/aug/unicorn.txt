@@ -1,0 +1,70 @@
+                                     The Unicorn Fable
+
+  Mince and Scribble
+
+   Once upon a time there was a software company called "Mark of the Unicorn," named
+   after something that was in "Lord of the Rings." This company was created, back in
+   the early 1980s, by students who turned one of their school projects into a
+   commercial product.
+
+   The product that they marketed was a package of Mince, a text editor, and Scribble a
+   text formatter. (Mince is an acronym for Mince Is Not Emacs. Mince was patterned
+   after the text editor Emacs, but, because of the limitations of the 64k memory CP/M
+   machines of the day, did not contain all of Emacs.) Scribble was patterned after
+   Scribe, a large text formatting program that ran on (expensive) mini computers. (As
+   did Emacs.)
+
+  Why it was so neat
+
+   One of the really neat things that Mark of the Unicorn did was supply the program
+   with partial source code. Because this was a commercial program, they did not want to
+   release the all of the source code. But, being hackers themselves (in the good sense
+   of the word), they wanted to make it possible for motivated end users to extend the
+   program.
+
+   What they released was the program in two versions. The first was a "ready to run"
+   version that could be immediately used, just like commercial software is released
+   today.
+
+   The second version (that everybody also got) was comprised of partial source code and
+   libraries. What this was was the source code to the parts of the program that they
+   deemed as being most susceptible to being a "hook" for extension, along with
+   pre-compiled libraries containing the parts of the program that they didn't want to
+   release in source code.
+
+   They also included all the "make" files designed for a popular "C" compilier, such
+   that you could re-compile your own vesion of the program, just by starting the first
+   make file. (Assuming that you also had installed the "C" compilier.)
+
+  What you could do with it
+
+   What you could do with all this is use it to learn programming with the very neat
+   added attraction that you were starting with a working commercial product. After you
+   installed everything on your hard disk, you would test the installation by compiling
+   the program into a new directory. You would keep the original executable in its own
+   directory.
+
+   After doing the first compile, you would then test the freshly created version to see
+   if it worked just like the commercial release. If it did, well then good, you would
+   THEN start looking over the source code, making little tweaks and then compiling the
+   program and testing it.
+
+   If the program didn't do what you wanted, well go back and fix it. This is the same
+   procedure that you use when you are writing HTML code for a web page.
+
+  The end of the story?
+
+   Well, there isn't an end. Mark of the Unicorn wisely realized that Mince and Scribble
+   were no match compared with the, then reigning, "Monster of the Marketplace" Office
+   Suite (WordStar, DataStar, ReportStar), so they moved to a niche that was out of the
+   monster's reach. (MIDI Musical Software.) The company is still alive and thriving.
+
+   And as for the Monster of the Marketplace? Well, the fact that you probably do not
+   recognize any of his program's names should tell you what happened to him.
+
+   And that I'm a much richer person for having been exposed to this source code. Thank
+   you, Mark of the Unicorn.
+
+   End of fable. (Or is it beginning again?)
+
+  - Wayne Larmon 

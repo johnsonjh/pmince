@@ -1,0 +1,103 @@
+10-Jun-82 21:08:00,1797;000000000000
+Date:     10 June 1982 2308-edt
+From:     Brian N. Hess              <Hess.Unicorn at MIT-MULTICS>
+Subject:  Perfect Writer
+To:       info-cpm at MIT-MC
+Cc:       Amethyst-Users at MIT-AI
+
+For those of you who want reassurance about Perfect Writer, here's
+another useful piece of information:
+
+Perfect Writer is substantially the same as Mark of the Unicorn's Mince
+and Scribble package.  Therefore, if you know someone who swears up and
+down that Mince and Scribble are good Emacs and Scribe clones, then you
+can rest assured that so is Perfect Writer.  It has had a menu system
+put on front of it, has (as Barry said) USER-redefinable (rather than
+programmer-redefinable) key bindings, and in my opinion, the year of
+work that was put into Perfect Writer after their (Perfect Software)
+initial purchase of Mince and Scribble has been well-spent in producing
+a VERY good word-processing-style manual, and that (even more than the
+technical improvements) makes it a winner!
+
+However, if you are a hacker type, you will probably still want to buy
+Mince and Scribble ($275) instead, because you get the C source code to
+play with!  Alas, the manual is written more for the technical type than
+the secretary.  Perhaps Unicorn's FinalWord product will turn out to fill the
+business word processing category, but there have been no reviews on it
+to date.
+
+As I understand it, the $389 price includes only Perfect Writer, and
+Perfect Speller is extra?  The ads aren't clear on that point, and we
+(Mark of the Unicorn) have only a version 1.01 Perfect Writer to hack
+with.  Since the price just went up from $289, perhaps they are
+including "spell mode" and Perfect Speller in with it now?  Anybody have
+a recently purchased model?
+
+                              Brian
+13-Jun-82 11:51:00,2152;000000000000
+Date: 13 Jun 1982 at 1251-CDT
+From: awd at UTEXAS-11 (BADOB@AI)
+Subject: Perfect Writer
+To: info-cpm at ai,amethyst-users at mc
+
+
+	As BNH and PGA noted, PW is Mince and Scirbbel warmed over. 
+However, Source code is not avaailable for any part of PW or PS at all.
+What this means ia that in some cases, which are ever decreasing, PW may
+prove to be inadaquate. eg:
+
+	1. Apples without an 80 column board can actually be supported,
+	however it is not reccommended since most screens of text are 
+	trimmed for a 79 column terminal. This means that the menu system is 
+	difficult if not impossible to use on an apple with 40 columns, 
+	and the configuration process is hard.
+
+	2. Without the source to Crayon, The MotU printer driver, new printer
+	drivers are impossible to add. This is not all bad: PW and Crayon will
+	indeed support any printer in monospaced modes of operation. Only
+	those printers which can proportional space and are not currently 
+	supported lose.
+
+	3. The PW editor is roughly 4K bigger than Mince, and all the config
+	programs are significantly more verbose... This means that PW MUST HAVE
+	a genuine 56K to run in. Many Morrow systems have a CP/M which proclaims
+	56K, but indeed has less.
+
+	4. In rebuttal to the InfoWorld article - PW is now being shipped with
+	inch and a half binders instead of one-inch ones. We may also include 
+	Hardcopy of the lessons, but did not do so for two reasons:
+
+		a. We felt that the lessons are meant to be learned off disk
+		and having hardcopy would encourage thair use in an improper
+		manner.
+
+		b. The lessons are constantly being revised. Sigh. We would
+		have spent as much typesetting the lessons as the rest of the
+		wntire manual.
+
+	this policy on the lessons may change in the future...
+
+	5. Obviously, all of PW is in BDS C. All of the other products in the
+	Perfect (frob) line are also in C, and we are working on ports to other
+	machines and operating systems which support C. Expect to see at least
+	a few ??nix versions of PW and the other programs in the PSI stable by
+	years' end
+
+	-Barry A. Dobyns
+	<BADOB @ AI>
+
+-------
+18-Jun-82 15:17:03,557;000000000000
+Date: Fri Jun 18 17:17:03 1982
+From: decvax!duke!alr at Berkeley
+
+I have been told that I might be able to get an evaluation by
+you of the Mince screen editor for the IBM pc.  My main
+interest is in an editor that can handle large (>60K) text
+files, do all the necessary buffering, etc, and, perhaps even
+allow editing of multiple files.  I currently use vi on UNIX,
+and it's ok; I found IBM's spf even better when I was there.
+I'd really appreciate any info you're willing to share.
+	Arny Rosenberg
+	Duke University Computer Science
+	duke!alr

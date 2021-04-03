@@ -1,0 +1,23 @@
+13-Oct-83 14:58:29-MDT,663;000000000000
+Mail-From: WANCHO created at 13-Oct-83 14:55:24
+Date: 13 Oct 1983  14:55 MDT (Thu)
+From: Frank J. Wancho <WANCHO@SIMTEL20.ARPA>
+To:   AMETHYST-USERS@SIMTEL20.ARPA
+Cc:   Zellich@OFFICE-3.ARPA
+Subject: List moved!
+
+AMETHYST-USERS is now relocated to AMETHYST-USERS@SIMTEL20.
+Change requests now go to AMETHYST-USERS-REQUEST@SIMTEL20.
+
+Current archives are in:
+
+[SIMTEL20]MICRO:<CPM.ARCHIVES>AMETHYST-ARCHIV.TXT
+
+and the old archives are in:
+
+[SIMTEL20]MICRO:<CPM.ARCHIVES>AMETHYST.ARCHIV.31013
+
+SIMTEL20 supports ANONYMOUS FTP (with any non-null password), and is
+currently up between 08:30am to 07:30pm Mountain Time, weekdays only.
+
+--Frank

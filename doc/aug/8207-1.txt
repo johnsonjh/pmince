@@ -1,0 +1,202 @@
+ 8-Jul-82 00:22:08,676;000000000000
+From: DAN@MIT-ML
+Date: 07/08/82 00:22:08
+Re: C Code for ModeLine(), etc.
+To: Amethyst-Users at MIT-MC
+
+Does anyone have the C code for the ModeLine() procedure?  I'd like to
+modify it so that:
+
+	1.  It is highlighted, to easily distinguish it from the text, and
+	2.  Add the EMACS-like -TOP- and -BOT- to the percentage statistic.
+
+
+Btw, it seems that this list is rather inactive.  Are many people out there
+actually running Mince, or just curious about Mince?  What kind of mods or
+projects are people working on for Mince and Scribble?  Perhaps some sort of
+poll or questionnaire would be helpful in making this a successful Users-Group.
+Any ideas?
+
+Dan
+10-Jul-82 21:07:00,547;000000000000
+Date: 10 July 1982 23:07-EDT
+From: Andrew Scott Beals <BANDY at MIT-AI>
+Subject:  mince, of course
+To: DAN at MIT-ML
+cc: Amethyst-Users at MIT-MC
+
+I don't use mince for the following reasons:
+	a) (the major reason) You can't edit files bigger than your
+	   screen file allows, and I have an osborne (90k disks!).
+	b) It's slower than WordStar (esp when ws is running memory mapped
+	   video).
+	c) ws was the first screen editor that I used, and I'm still in
+	   love with it.
+	d) ws has a document processor built in.
+
+					- Andy
+11-Jul-82 12:27:00,1232;000000000000
+Date: 11 Jul 1982 1127-PDT
+From: STERNLIGHT <STERNLIGHT at USC-ECL>
+Subject: Re: mince, of course
+To: BANDY at MIT-AI, DAN at MIT-ML
+cc: Amethyst-Users at MIT-MC, STERNLIGHT at USC-ECL
+In-Reply-To: Your message of 10-Jul-82 2007-PDT
+
+Well, here we go again, but I have some empirical data
+from a sample size of one (me).  I edit about every other day.  I have
+mince/scribble, wordstar and vedit.  I don't use m/s either; I use
+wordstar for documents (right justification, proportional space printer
+support, and handy menu), and vedit for programs (simple set of
+commands, very small .com file so it can be on more than one disk if
+desired without taking too much space, and a memory mapped install
+option with trivially easy keyboard customization).
+Neither uses a swap file.  Vedit allows abort at anytime, restoring
+conditions to those before editing began, as does
+wordstar.  I also have a new screen editor from the C user's group,
+but too early to evaluate.
+Mince's main advantage, which I need only rarely,
+is split screen.  Perhaps if Mince could support right justification,
+proportional spacing (at the same time), and handle larger
+files it would be a bigger winner.  Comments?
+--david--
+-------
+11-Jul-82 14:24:00,690;000000000000
+Date: 11 Jul 1982 1324-PDT
+From: Bill White <WHITE at SUMEX-AIM>
+Subject: Re: mince, of course
+To: STERNLIGHT at USC-ECL, amethyst-users at MIT-MC
+cc: WHITE at SUMEX-AIM
+In-Reply-To: Your message of 11-Jul-82 1127-PDT
+
+I use Mince because of it's compatibility with emacs and multiple file/
+buffer capabilities. The swap file is a definite drawback even on
+my 1.2Meg floppies  It's a real pain to have to wait to read the
+entire file simply to change a few parameters at the beginning of the
+file when the file is very large.
+
+I don't use scribble because Magic Wand gives me better ability to control
+my Qume printer and produce personalized letters.
+
+Bill White
+-------
+12-Jul-82 04:08:00,367;000000000000
+Date: 12 July 1982 06:08-EDT
+From: Steven T. Kirsch <SK at MIT-MC>
+Subject:  mince, of course
+To: AMETHYST-USERS at MIT-MC, BANDY at MIT-AI, DAN at MIT-ML
+
+Well, I used to use mince, but my computer is on loan to the company 
+I used to work for.
+
+Never got around to trying Scribble.
+
+Things are really tough on an H-89 with just the built-in mini-floppy!
+12-Jul-82 06:09:00,422;000000000000
+Date: 12 July 1982 08:09-EDT
+From: Andrew Scott Beals <BANDY at MIT-AI>
+Subject:  mince, of course
+To: STERNLIGHT at USC-ECL
+cc: DAN at MIT-ML, Amethyst-Users at MIT-MC
+
+Actually, ws (and vedit) /does/ use a swap file -- it's
+<filename-you're-editing>.$$$ I think that this is a
+better way to do it. If mince would do this, I would use it
+for program editing, and leave ws for just text processing.
+					- Andy
+12-Jul-82 08:00:00,1753;000000000000
+Mail-From: PCO-MULTICS received by MIT-MULTICS at 12-Jul-1982 11:02:17-edt
+Date:  12 July 1982 08:00 mst
+From:  Heiby.Micro at PCO-MULTICS
+Subject:  I use 'em!
+Reply-To:  Heiby at HI-MULTICS
+To:  Amethyst-Users at MIT-MC
+cc:  Heiby at HI-MULTICS
+
+One reason I chose (and use) Mince is specifically because it is a *text
+editor*, not a *word processor*.  If I want right justification and
+proportional spacing, I use Scribble.  My CRT doesn't know how to
+proportional space, anyway.
+
+The other main reasons I chose Mince are 1) Extensible in C with source
+supplied, and 2) similarity to Multics Emacs I use at work.
+
+As to ease of configuration:  I run on an Apple II (gasp!) with about as
+odd a configuration as you could want.  I use a Mountain Computer CPS
+card and A Bit-3 Computer Full-View 80 for I/O.  Both are very nice
+boards, but neither gets much software written for it.  I configured
+Mince with little time and no trouble.  I configured Scribble as well,
+but it took me a bit more time and a call to Unicorn, because I hadn't
+read the manual carefully enough.  Once I knew what I was looking for,
+it jumped off the page of the manual and bit my hand!
+
+Also, I don't like to edit a file in place.  I'd much rather read it
+into a buffer.  That way, I can write back out the changed file to a
+different file name and also have some protection against destroying a
+file I don't want to change.
+
+I haven't seen any other editor for a micro that beats Mince for 2
+window, multiple buffer operation.  How easy is it in Wordstar to move a
+block of text from one file to another?  (That's a real question.  I
+don't know all that much about it.  Just enough to know it wasn't for
+me.)
+
+Ron.  (Heiby at HI-Multics)
+13-Jul-82 23:55:00,984;000000000000
+Date:     14 July 1982 0155-edt
+From:     Brian N. Hess              <Hess.Unicorn at MIT-MULTICS>
+Subject:  Amethyst Users Group
+To:       Amethyst-Users at MIT-AI
+
+Quite a few people have asked about what ever happened to the Amethyst
+Users Group and the AUGment newsletter.  Well, after a long hiatus, they
+are about to be resurrected again.  For the time being, you can address
+AUG mail to Mark of the Unicorn rather than to the Texas address which
+you may have come to know and love.  Since the group should really be
+run by someone who's not a MotU person, are there any volunteers out
+there who have modified Mince a lot and have free time to devote to this?
+We're looking for a replacement for me...  If you've written to the
+Texas address, patience is the keyword -- we're going to revive the
+group somehow, but how quickly or what it will look like when
+reincarnated we don't know!
+                              Cheers,
+                              Brian
+16-Jul-82 07:35:00,999;000000000000
+Date: Fri 16-Jul-1982 09:35-EDT
+From: Richard Kenner <KENNER at NYU>
+To:   amethyst-users at MIT-MC
+Subject: Mince on MP/M-II
+
+I am having a problem with Mince on MP/M-II that I can't figure out how to fix
+and I wonder if anyone else has any idea (I may have fixed this at one point
+but can't remember how or if I, in fact, did).
+
+I am running MP/M-II on an H89 with Magnolia's 128K board.  I have half of
+the Z67 as my A disk.  I have a MINCE.SWP in user 0, SYS, RW.  All works
+fine in CP/M.  In MP/M, when I try to run from (e.g.) user 12, when swapping
+gets done, I get the BDOS error message that a write is being attempted to
+a file opened R/O.  Reading the MP/M documentation, it appears that doing
+a default open on a file in user 0, even if the file is RW, the open is done
+R/O.
+
+I tried all four compatibility attributes even though the documentation didn't
+make it sound as though they were the problem and, in fact, they didn't do
+the trick.
+
+Anyone have any ideas?
+17-Jul-82 06:20:58,572;000000000000
+Date: 17 Jul 1982 05:20:58-PDT
+From: decvax!duke!uok!uokvax!mwm at Berkeley
+Date-Sent: Sat Jul 10 20:16:20 1982
+Subject: Mode line for Mince and Scribble
+To: uok!duke!decvax!ucbvax!dan@Mit-ml
+Cc: uok!duke!decvax!ucbvax!amethyst-users@mit-ai
+
+I just looked at your letter again, and realized that I had missed part
+of it. Namely, the query 'bout the Mode line on Mince.
+
+I haven't tried munging the mode line itself, but I have played with
+the error messages. I have a version which prints them in inverse
+video. If you are intersted, drop me a line.
+
+	mike

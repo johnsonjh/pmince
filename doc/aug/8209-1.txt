@@ -1,0 +1,115 @@
+ 2-Sep-82 10:26:00,3244;000000000000
+Date:     2 September 1982 1226-edt
+From:     Brian N. Hess              <Hess.Unicorn at MIT-MULTICS>
+Subject:  Mince globals
+To:       amethyst-users at MIT-MC
+
+Mike --
+
+A quote from the Amethyst Users Group newsletter, September, 1981:
+There is one question I would like to answer that everyone keeps asking.
+There are in fact several ways for people to get more global space in
+Mince for use with personal extensions.
+
+First a little background.  We use the "-e" option in the C compiler to
+save space in the resulting programs.  This forces the global address to
+appear at the specified address regardless of the size of the code.  L2
+and CLINK both get this address, along with the size of the global data
+area from the first .CRL file linked.  Mince does dynamic storage
+allocation in the region between the global data and the stack, thus the
+size of the global data must be accurate.  Further, there is more global
+data than there might appear to be -- MINCE.CRL is compiled with a
+different version of MINCE.GBL than is distributed, and has extra global
+data for the buffer abstraction.
+
+The simplest way to add storage is to have this storage be in the form
+of string constants.  The compiler allocates string constants in such a
+way that you can write over them so long as you don't exceed their
+allocated length.  This is a fair although uncomfortable programming
+practice which all of the compilers I know of (...) support.  This can
+be done as follows:
+
+Create a function such as:
+
+          Storage()
+          {
+          return("This returns a string of exactly fifty characters    ");
+          }
+
+This function can now be used in another place to get a pointer to use
+for storage as in:
+
+          Munge(arg)                    /* Store arg in storage */
+          char *arg
+          {
+          if (strlen(arg) > 50) Error("String too long");
+          else strcpy(Storage(),arg);
+          Echo("String now is: ");
+          TNLPrnt(Storage());
+          }
+
+Another way to get extra storage is to create some room between the end
+of the code and the start of the global data area by elimination of some
+code or use of the L*.CRL files.  The routines can simply KNOW that this
+space is there and use it.  This can get tricky to maintain since the
+end of the code is likely to change every time you work on the program.
+One good thing to do is to have your routine check the location of the
+end of the code with the BDS-C function codend().
+
+The final way to ge more storage is a little-known feature of L2.  L2,
+unlike CLINK, does not require the first function linked to be the main
+function.  Thus, you can compile BINDINGS.C with extra global
+definitions and link BINDINGS first and then MINCE.  The trick is that
+you have to leave extra space (more than 1000 and less than 1100 bytes;
+1100 works [and I counted once and got 1086 -- bnh]) for the globals
+that you cannot see.  The only way to know this number exactly is to put
+a function in Mince that prints the address of the last visible global
+and also the value returned by the BDS-C function that gives the address
+of the end of the global area.
+                            
+Good luck,
+Brian
+14-Sep-82 11:04:00,849;000000000000
+Date: Tuesday, 14 Sep 1982 10:04-PDT
+To: Amethyst-Users at MIT-MC
+From: bridger at RAND-UNIX
+Cc: bridger at RAND-UNIX
+Subject: Some Window commands
+
+Here are several commands I've come to enjoy:
+
+	1. M-, ==> point to start-of-window
+
+	2. M-. ==> point to end-of-window
+	
+	The bindings follow the Gosling EMACS; M-, and M-. conveniently
+	mimic the start-of-buffer, end-of buffer pair:  M-< and M->.
+
+	3. M-! ==> line-to-start-of-window & point to beginning-of-line
+
+	The trick here is to temporarily reset the preferred row to the top
+	row.
+
+
+MBeginWind()	/* on  M-, */	
+{
+	BPntToMrk(sstart);
+	TForce();
+	}
+MEndWind()	/* on M-. */
+{
+	BPntToMrk(send);
+	BMove(-1);
+	TForce();
+	}
+MMoveToTop()	/* 'M-!' ==> line to top of buffer */
+{
+ 	tmp=prefrow;
+	prefrow=0;
+	ScrnRange();
+	prefrow=tmp;
+	ToBegLine();
+	}
+
+	
+	

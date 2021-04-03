@@ -1,0 +1,60 @@
+21-Mar-82 19:24:00,502;000000000000
+Date: 21 March 1982 21:24-EST
+From: Frank J. Wancho <FJW at MIT-MC>
+Subject:  [klotz: forwarded]
+To: AMETHYST-USERS at MIT-MC
+
+Date: 03/21/82 20:08:47
+From: klotz at AI
+
+We have a Videx 80-col card and a KBD-enhancer card for our Apple II.
+It seems that the 80-col card is eating ^A and ^K and using them for
+its own purposes.  Can anybody help?  Maybe we could fix it by making
+the input routine not go through the videx card.  Anybody know how
+this is normally fixed?
+
+Thanks,
+Leigh.
+30-Mar-82 16:46:00,1082;000000000000
+Date: 30 March 1982 18:46-EST
+From: Glenn A. Iba <GAI at MIT-AI>
+Subject: Configuring Mince for Apple CPM with Videx Videoterm
+To: AMETHYST-USERS at MIT-AI, INFO-APPLE at MIT-AI
+cc: GAI at MIT-AI
+
+Now that I got my Softcard working properly I set out to configure
+my MINCE system, but I had a real rough time trying to define
+a new terminal type for the videx 80 column board. Then I decided
+to try out each of the standard terminal types offered, and what do
+you know, but 2 of them seemed to work perfectly!! The two were:
+the SOROC IQ120 and the ADM31 (not the ADM3A). What I'm wondering
+is:
+   1. Are there any differences between these two (particularly
+effeciency) that would recommend one over the other?
+   2. Are there any hidden incompatibilities between either of these
+terminal types and the videx videoterm?
+   3. What was I doing wrong when I tried to specify new terminal
+type (I copied the character sequences right out of the videx manual)??
+Alternatively, what are the sequences used by Mince when either of 
+those terminal types is selected?
+30-Mar-82 23:43:00,833;000000000000
+Date: 31 March 1982 01:43-EST
+From: William E. Blue <BLUE at MIT-MC>
+Subject:  Configuring Mince for Apple CPM with Videx Videoterm
+To: GAI at MIT-AI
+cc: AMETHYST-USERS at MIT-AI
+
+The only reason the selection of IQ-120 works on your Videx is because
+the emulation table (set up by CONFIGIO.BAS) is already converting from
+SOROC to DATAMEDIA (the Videx).  There is actually no similarity between
+actual Soroc codes and those of the Videx.
+
+If you were to NUL out the emulation table, you could then install the
+exact Videx codes and expect them to work..  There would be no real
+advantage to doing this that I know of except possibly a small improvement
+in display speed.
+
+There are, I believe, some minor differences in the handling of inverse
+between the Soroc and Datamedia, but I can't be specific.
+
+		--Bill

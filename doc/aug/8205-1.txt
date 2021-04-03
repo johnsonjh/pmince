@@ -1,0 +1,15 @@
+18-May-82 15:48:00,639;000000000000
+Date:     18 May 1982 1748-edt
+From:     Brian N. Hess              <Hess.Unicorn at MIT-MULTICS>
+Subject:  Technical note re IBM P.C.
+To:       Amethyst-Users at MIT-MC
+
+A version of Mince 2.6 runs just fine on the IBM with monochrome display.
+
+And this time it's really totally free of assembler!  (We'll be putting
+some in to do searches when we get a chance -- the compiler is a little
+flakey right now, so we aren't going to put in the effort just yet.  For
+the same reason, no source code is available now either, because of all
+the programming-around-compiler-bugs that was done.)
+
+                              Brian

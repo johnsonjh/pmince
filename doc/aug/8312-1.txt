@@ -1,0 +1,144 @@
+ 1-Dec-83 18:09:29-MST,888;000000000000
+Return-Path: <bridger@rand-unix>
+Received: from rand-unix by SIMTEL20.ARPA with TCP; Thu 1 Dec 83 18:08:59-MST
+Date: Thursday,  1 Dec 1983 16:52-PST
+To: kevinw@SU-DSN, amethyst-users @SIMTEL20
+CC: bridger@rand-unix
+Subject: MINCE with user numbers
+In-reply-to: Your message of Monday, 28 Nov 1983 13:37-PST.
+From: bridger@rand-unix
+
+	Kevin @SU-DSN recently noted the limitation of using the
+Mince editor in different user areas.  I think Leor's new compiler
+could do the trick:
+	Mince would be helped a lot if it were re-compiled in bds c 1.5,
+which supports user-number file references.  By putting the swap file
+in user 0 and using ZCPR or a similar command processor that uses
+a search path to user 0, you could invoke mince from any user/drive
+and also read/write files from any user/drive.
+	Perhaps MOTU would consider issuing this much of an update?
+--bridger.
+
+ 2-Dec-83 16:37:13-MST,954;000000000000
+Mail-From: WANCHO created at  2-Dec-83 16:32:31
+Date: 2 Dec 1983  16:32 MST (Fri)
+Message-ID: <WANCHO.11972373613.BABYL@SIMTEL20>
+From: "Frank J. Wancho" <WANCHO@SIMTEL20>
+To:   AMETHYST-USERS@SIMTEL20
+Subject: Mince/BDSC-1.50a/User areas
+
+Apparently the new copies of Mince are compiled with BDSC 1.50a.  But,
+they have no plans to update existing users with the newly compiled
+version, because of the paucity of users of CP/M Mince today, even
+fewer who have user number areas, and the fact that nobody at MotU is
+willing to pick a price for the update that is so minor.  Word is that
+they don't object to people trading disks with each other to get the
+latest stuff, but they don't think distributors and dealers should be
+obligated to provide such a service without a profit.  So MotU quietly
+released it internally and is not offering its usual free updates, nor
+any at all for that matter, this time around... (sigh...)
+
+--Frank
+15-Dec-83 16:28:54-MST,795;000000000000
+Return-Path: <iam@cmu-cs-g>
+Received: from CMU-CS-G by SIMTEL20.ARPA with TCP; Thu 15 Dec 83 16:28:34-MST
+Date: 15 Dec 1983 18:01-EST
+From: Ira.Monarch@CMU-CS-G.ARPA
+Subject: Mince and Scribble on CPM-Apple
+To: Amethyst-Users@Simtel20
+Message-Id: <440377269/iam@CMU-CS-G>
+
+I am leaning toward acquiring Mince and Scribble to use on an Apple equiped
+with a Microsoft Z-80 softcard and 16k Ram card, a Sup-r-term 80 column
+board, and an Epson MX-80 printer with graftrax - all of which are 1 or more
+years old.  Is there anyone out there with a similar configuration using
+these programs?  Are you satisfied?  Are there any problems?
+
+What is the least expensive way of acquiring them?  Are any earlier versions
+or similar versions in the public domain?
+
+Thanks
+
+--Ira Monarch
+16-Dec-83 11:51:01-MST,1482;000000000000
+Return-Path: <iam@cmu-cs-g>
+Received: from CMU-CS-G by SIMTEL20.ARPA with TCP; Fri 16 Dec 83 11:50:41-MST
+Date: 16 Dec 1983 13:42-EST
+From: Ira.Monarch@CMU-CS-G.ARPA
+Subject: Mince and Scribble on CPM-Apple
+To: Amethyst-Users@Simtel20
+Message-Id: <440448129/iam@CMU-CS-G>
+
+I am leaning toward acquiring Mince and Scribble to use on an Apple equiped
+with a Microsoft Z-80 softcard and 16k Ram card, a Sup-r-term 80 column
+board, and an Epson MX-80 printer with graftrax - all of which are 1 or more
+years old.  Is there anyone out there with a similar configuration using
+these programs?  Are you satisfied?  Are there any problems?
+
+What is the least expensive way of acquiring them?  Are any earlier versions
+or similar versions in the public domain?
+
+Thanks
+
+--Ira Monarch
+
+_________________________________
+>Date: 15 Dec 1983 18:01-EST
+From: Ira.Monarch@CMU-CS-G.ARPA
+Subject: Mince and Scribble on CPM-Apple
+To: Amethyst-Users@Simtel20
+
+I am leaning toward acquiring Mince and Scribble to use on an Apple equiped
+with a Microsoft Z-80 softcard and 16k Ram card, a Sup-r-term 80 column
+board, and an Epson MX-80 printer with graftrax - all of which are 1 or more
+years old.  Is there anyone out there with a similar configuration using
+these programs?  Are you satisfied?  Are there any problems?
+
+What is the least expensive way of acquiring them?  Are any earlier versions
+or similar versions in the public domain?
+
+Thanks
+
+--Ira Monarch
+19-Dec-83 15:58:38-MST,568;000000000000
+Return-Path: <DEVON@MIT-MC>
+Received: from MIT-MC by SIMTEL20.ARPA with TCP; Mon 19 Dec 83 15:58:21-MST
+Date: 19 December 1983 17:58 EST
+From: Devon S. McCullough <DEVON @ MIT-MC>
+Subject:  Mince and Scribble on CPM-Apple
+To: Ira.Monarch @ CMU-CS-G
+cc: Amethyst-Users @ SIMTEL20
+In-reply-to: Msg of 15 Dec 1983 18:01-EST from Ira.Monarch@CMU-CS-G.ARPA
+
+At Terrapin we use MINCE on an Apple//e with a z80 card and MX-80,
+works fine.  We don't use the Sup-R-Term (echhh!) of course since
+//e's have 80 columns standard, so you may have to frob the CONFIG.
+
+28-Dec-83 12:16:17-MST,1376;000000000000
+Return-Path: <JURGEN@MIT-MC>
+Received: from MIT-MC by SIMTEL20.ARPA with TCP; Wed 28 Dec 83 12:15:59-MST
+Date: 27 December 1983 20:38 EST
+From: Jonathan David Callas <JURGEN @ MIT-MC>
+Subject: Mince and Scribble on CPM-Apple
+To: Ira.Monarch @ CMU-CS-G
+cc: Amethyst-Users @ SIMTEL20
+
+
+I have used Mince and Scribble on a similar configuration. I used a VT100
+connected via a CCS serial card, but I used an Epson with Graftrax.
+I had problems with mince in that the apple doesn't process the interrupts
+correctly from the vt100 and it tended to garbage keypad escape sequences
+while auto-repeating. Scribble doesn't know how to use an Epson with Graftrax.
+The microfeeding setup for an "Epson MX-80" must be for the earliest Epsons
+without any extra roms. It flat doesn't work with a new Epson. However, the
+workaround is to use the initialization sequence with the epson to put it into
+a strange mode (like a line-feed of 1/2 a normal line feed) and use SCONFIG
+with an ordinary printer setup to get it to work properly. I am now using it
+on a DEC VT180 and use the Apple as a game/SoundChaser-synthisizer machine 
+only. I still use the Epson. I hope the Superterm is a more civilized piece
+of hardware under CP/M than the CCS board is. I would have had any problems 
+if the BIOS had handled the interrupts from the card properly.
+
+	Good Luck,
+	Jon
+

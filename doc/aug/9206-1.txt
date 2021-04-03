@@ -1,0 +1,28 @@
+ 4-Jun-92 03:00:33-MDT,1268;000000000000
+Return-Path: <amethyst-users-request@wsmr-simtel20.army.mil>
+Received: from ucbvax.Berkeley.EDU by WSMR-SIMTEL20.ARMY.MIL with TCP; Thu, 4 Jun 92 03:00:28 MDT
+Received: by ucbvax.Berkeley.EDU (5.63/1.43)
+	id AA10823; Thu, 4 Jun 92 01:50:25 -0700
+Received: from USENET by ucbvax.Berkeley.EDU with netnews
+	for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
+	(contact usenet@ucbvax.Berkeley.EDU if you have questions)
+Date: 1 Jun 92 23:22:46 GMT
+From: van-bc!ubc-cs!destroyer!sol.ctr.columbia.edu!usc!cs.utexas.edu!uwm.edu!ux1.cso.uiuc.edu!rs6000.cmp.ilstu.edu!ejhupper@ucbvax.Berkeley.EDU  (Eric Huppertz)
+Organization: Wild Bill's Unicycle Repair and Cajun Cuisine
+Subject: Re: cpm>dos
+Message-Id: <1992Jun01.232246.14078@rs6000.cmp.ilstu.edu>
+References: <1992Jun1.222548.2293@murdoch.acc.Virginia.EDU>
+Sender: amethyst-users-request@wsmr-simtel20.army.mil
+To: amethyst-users@wsmr-simtel20.army.mil
+
+In article <1992Jun1.222548.2293@murdoch.acc.Virginia.EDU> flp2m@galen.med.Virginia.EDU (Frederick L. Pauly) writes:
+>
+
+You know, I was just thinking that...!
+(But I think it's spelled with a hyphen.) 
+
+-E.
+ 
+-- 
+Eric J. Huppertz                               OS/2: Just Say No
+ejhupper@rs6000.cmp.ilstu.edu 

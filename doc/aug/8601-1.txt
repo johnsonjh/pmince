@@ -1,0 +1,18 @@
+29-Jan-86 23:07:46-MST,558;000000000000
+Mail-From: WANCHO created at 29-Jan-86 23:07:15
+Date: Wed, 29 Jan 1986  23:07 MST
+Message-ID: <WANCHO.12179277091.BABYL@SIMTEL20.ARPA>
+From: "Frank J. Wancho" <WANCHO@SIMTEL20.ARPA>
+To:   AMETHYST-USERS@SIMTEL20.ARPA
+Subject: Mail archives moved
+
+The mail archives on SIMTEL20 for this list have been moved to:
+
+<ARCHIVES.AMETHYST>AMETHYST-ARCHIV.TXT  for the current messages
+
+<ARCHIVES.AMETHYST>AMETHYST.ARCHIV.ymmdd  for the older messages
+
+The files are available via ANONYMOUS FTP for those with TCP/IP access
+to the Internet.
+
+--Frank

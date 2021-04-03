@@ -1,0 +1,25 @@
+ 6-Jun-84 21:05:46-MDT,1059;000000000000
+Return-Path: <Hess.Unicorn@MIT-MULTICS.ARPA>
+Received: from MIT-MULTICS.ARPA by SIMTEL20.ARPA with TCP; Wed 6 Jun 84 21:05:34-MDT
+Date:  Wed, 6 Jun 84 22:55 EDT
+From:  Hess@MIT-MULTICS.ARPA
+Subject:  Mince under CP/M 3.0
+To:  amethyst-users@SIMTEL20.ARPA
+Message-ID:  <840607025556.446512@MIT-MULTICS.ARPA>
+
+We use BDS C 1.5 and L2 1.3 internally; I'll check with L2's author to
+see if 1.3 is distributed, and if so or not, why so or not...  You can
+use 1.45 or 1.45a to compile your old source code, andif you want to use
+1.5, you can get an update from Mark of the Unicorn for your old disk
+and $25.
+
+Mince's author says that the distributed Mince works properly under CP/M
+3.0, and can't think of any good things that might be wrong to cause
+intermittent deviation in some COMMn.C routines.
+
+He also said that on CP/M, the printf does indeed send stuff out right
+away, and that TERM.C doesn't use printf (at least not the standard
+large version) anyway; therefore, that can't be the problem with some
+messages not appearing.
+
+Brian

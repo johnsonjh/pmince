@@ -1,0 +1,10 @@
+ 4-Apr-88 05:43:57-MDT,484;000000000000
+Return-Path: <@CORNELLC.CCS.CORNELL.EDU:#YEUN14@Uofmcc.Bitnet>
+Received: from CORNELLC.CCS.CORNELL.EDU by SIMTEL20.ARPA with TCP; Mon, 4 Apr 88 05:43:51 MDT
+Received: from Uofmcc.Bitnet by CORNELLC.CCS.CORNELL.EDU ; Sun, 03 Apr 88 22:31:29 EDT
+Date:    Sun, 03 Apr 88 21:30 cdt
+From:    #YEUN14%UOFMCC.BITNET@CORNELLC.CCS.CORNELL.EDU
+To:       serve <amethyst-users@simtel20.arpa>,  serve <apollo@yale.BITNET>
+Subject: mailing list
+
+I want to subscribe to your mailing list.

@@ -1,0 +1,10 @@
+ 1-Mar-89 10:44:17-MST,481;000000000000
+Return-Path: <CWHELESS@UA1VM.ua.edu>
+Received: from UA1VM.ua.edu by WSMR-SIMTEL20.ARMY.MIL with TCP; Wed, 1 Mar 89 10:43:49 MST
+Received: from UA1VM.UA.EDU by UA1VM.ua.edu (IBM VM SMTP R1.2) with BSMTP id 0168; Wed, 01 Mar 89 11:43:13 CST
+Received: by UA1VM (Mailer R2.02A) id 7737; Wed, 01 Mar 89 11:43:10 CST
+Date:         Wed, 01 Mar 89 11:42:57 CST
+From:         "Carolyn S. Wheless" <CWHELESS@UA1VM.ua.edu>
+To:           amethyst-users@simtel20.arpa
+
+this is a test.

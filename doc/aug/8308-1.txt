@@ -1,0 +1,118 @@
+14-Aug-83 23:33:00,432;000000000000
+Date: 14 August 1983 23:33 EDT
+From: Herb Lin <LIN @ MIT-MC>
+Subject: is this list still alive?
+To: ANETHYST-USERS @ MIT-MC, AMETHYST-USERS @ MIT-MC
+
+and other questions..
+
+anyone know how much a MINCE source license costs?  also, anyone have any
+experience in adapting the MINCE system to serve as the editor within other 
+programs (e.g., I have a lot of WP to do, but I want to do it within
+another program.)
+
+tnx...
+20-Aug-83 20:18:00,626;000000000000
+Date: Sat, 20 Aug 1983  20:18 EDT
+Message-ID: <[MIT-OZ].DCB.TECH.20-Aug-83 20:18:42>
+From: DCB.TECH@MIT-OZ
+To:   Herb Lin <LIN@MIT-MC>
+Cc:   AMETHYST-USERS@MIT-MC, ANETHYST-USERS@MIT-MC
+Subject: is this list still alive?
+In-reply-to: Msg of 14 Aug 1983  23:33-EDT from Herb Lin <LIN at MIT-MC>
+
+You've probably got all the answers you need/want, but...  you normally get
+full source code when you but mince (well, 80% of the code) and are free to
+do what you want except make a profit from it.  contact mark of the
+unicorn folks -- i know they've had a problem getting ibm-pc sources out
+at first...
+	-rich $alz
+23-Aug-83 03:07:00,555;000000000000
+Date: Tue, 23 Aug 1983  03:07 EDT
+Message-ID: <[MIT-OZ].RG.JMTURN.23-Aug-83 03:07:51>
+From: RG.JMTURN@MIT-OZ
+To:   AMETHYST-USERS@MIT-MC, ANETHYST-USERS@MIT-MC
+Subject: FW Update
+In-reply-to: Msg of 20 Aug 1983  20:18-EDT from DCB.TECH
+
+Was talking to a Unicorn marker who showed up at work today.
+There is evidently a brand-new FW version which implements
+(tah dah!) control-K! Just though you might like to know.
+He also stated that multi-font (fixed and variable width)
+capabilties will have to wait for the next major release.
+					James
+26-Aug-83 22:38:00,772;000000000000
+Date: 26 August 1983 22:38 EDT
+From: Michael C. Adler <MADLER @ MIT-MC>
+Subject: Dired
+To: AMETHYST-USERS @ MIT-MC
+
+I'm writing a routine to read a directory into a buffer and have a couple
+questions about Mince internals:
+
+1.  If I set the DMA address to some random location, will it be set
+to something valid when Mince attempts to do I/O?  Experiments seem to
+indicate yes.  I use my own DMA buffer (not 80H) to be safe in case
+the buffer routines start swapping while I'm creating the directory
+buffer.
+
+2.  Can I set the modified flag to false after writing to it?  It would
+be nice to have Mince think that the directory buffer was never changed
+(avoiding the flush changed buffers questin on ^X^C).
+
+Anybody interested in the routine?
+-Michael
+27-Aug-83 01:10:00,373;000000000000
+Date: 27 August 1983 01:10 EDT
+From: Herb Lin <LIN @ MIT-MC>
+Subject:  making new MINCE commands?
+To: AMETHYST-USERS @ MIT-MC
+In-reply-to: Msg of 26 Aug 1983 22:38 EDT from Michael C. Adler <MADLER>
+
+can someone give me a one paragraph overview of how one can string together
+different mince commands into one "macro" command?  than I can hack the
+manual.
+
+tnx.
+29-Aug-83 08:59:00,269;000000000000
+Date: Monday, 29 August 1983, 10:59-EDT
+From: Cliff Lasser <CAL@MIT-OZ>
+Subject: Dired
+To: MADLER@MIT-MC, AMETHYST-USERS@MIT-MC
+In-reply-to: The message of 26 Aug 83 22:38-EDT from Michael C. Adler <MADLER at MIT-MC>
+
+Yes, I would be interested in such a thing.
+29-Aug-83 13:42:00,1015;000000000000
+Date: Monday, 29 Aug 1983 12:42-PDT
+To: Herb Lin <LIN @ MIT-MC>
+Cc: AMETHYST-USERS @ MIT-MC, bridger@rand-unix
+Subject: MINCE macro commands
+From: bridger@rand-unix
+
+	A "keystroke macro" facility can be added to mince by intercepting
+the routine that retrieves input from the keyboard input queue and
+diverting it to read from a queue containing the macro.  To make this
+repeatable (with ^U) requires careful attention to the mince console-status
+routine also.
+
+	I've been working on a different approach that's now being tested
+on the KayPro--adding a shellto CP/M that supports downloadable strings
+for the keypad/function keys that are redefinable within the user program.  
+This feature, optionally bound
+to BeginMacro/EndMacro commands added to the editor, works nicely and
+gives the editor a "stored macro" capability--definitions can be saved
+and reloaded for specific editing tasks.
+
+Because it's in the shell,  this keystroke macro capability is available for
+any program.
+--bridger
+30-Aug-83 00:29:00,365;000000000000
+Date: 30 August 1983 00:29 EDT
+From: Herb Lin <LIN @ MIT-MC>
+Subject:  MINCE macro commands
+To: bridger @ RAND-UNIX
+cc: AMETHYST-USERS @ MIT-MC
+In-reply-to: Msg of 29 Aug 1983 12:42-PDT from bridger at rand-unix
+
+hmmmm.  i should have thought of that.  in fact, the config file should help
+be able to help with the downloading of programmed function keys.

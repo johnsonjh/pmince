@@ -1,0 +1,678 @@
+ 5-Jan-91 05:41:26-MST,883;000000000000
+Return-Path: <amethyst-users-request@wsmr-simtel20.army.mil>
+Received: from ucbvax.Berkeley.EDU by WSMR-SIMTEL20.ARMY.MIL with TCP; Sat, 5 Jan 91 05:41:03 MST
+Received: by ucbvax.Berkeley.EDU (5.63/1.42)
+	id AA00516; Fri, 4 Jan 91 17:22:14 -0800
+Received: from USENET by ucbvax.Berkeley.EDU with netnews
+	for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
+	(contact usenet@ucbvax.Berkeley.EDU if you have questions)
+Date: 5 Jan 91 01:13:02 GMT
+From: magnus.ircc.ohio-state.edu!news@tut.cis.ohio-state.edu  (Ann M. Chozinski)
+Organization: The Ohio State University (IRCC)
+Subject: Define
+Message-Id: <1991Jan5.011302.17081@magnus.ircc.ohio-state.edu>
+Sender: amethyst-users-request@wsmr-simtel20.army.mil
+To: amethyst-users@wsmr-simtel20.army.mil
+
+What is this newsgroup all about???   Curious Annie
+
+achozi@hpuxa.ircc.ohio-state.edu
+ 7-Jan-91 18:46:11-MST,2620;000000000000
+Return-Path: <amethyst-users-request@wsmr-simtel20.army.mil>
+Received: from ucbvax.Berkeley.EDU by WSMR-SIMTEL20.ARMY.MIL with TCP; Mon, 7 Jan 91 18:45:32 MST
+Received: by ucbvax.Berkeley.EDU (5.63/1.42)
+	id AA18132; Mon, 7 Jan 91 17:31:59 -0800
+Received: from USENET by ucbvax.Berkeley.EDU with netnews
+	for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
+	(contact usenet@ucbvax.Berkeley.EDU if you have questions)
+Date: 8 Jan 91 00:40:13 GMT
+From: mcdchg!heiby@rutgers.edu  (Ron Heiby)
+Organization: Motorola Computer Group, Schaumburg, IL
+Subject: Re: Define
+Message-Id: <54002@mcdchg.chg.mcd.mot.com>
+References: <1991Jan5.011302.17081@magnus.ircc.ohio-state.edu>
+Sender: amethyst-users-request@wsmr-simtel20.army.mil
+To: amethyst-users@wsmr-simtel20.army.mil
+
+Way back in the "Golden Age" of personal computing, there was an
+operating system called CP/M, which later was renamed CP/M-80 (to
+avoid confusion with CP/M-86 and CP/M-68K).  On CP/M-80, were
+available three wonderful software packages.  One was a C compiler
+called "BDS C" (from BD Software).  One was a text editor called
+"MINCE" (MINCE Is Not Complete Emacs).  The third was a text formatter
+called "Scribble" (a subset of Scribe).  The latter two programs were
+from "Mark of the Unicorn".  All three were available seperately.  All
+three were available bundled (with much of the source for
+Mince/Scribble in BDS-C) into package called "Amethyst".  As the
+"Golden Age" was ending, and IBM came out with their "PC",
+Mince/Scribble were combined and enhanced into a package called
+"FinalWord".  An even more enhanced version called "FinalWord II" came
+out a while later.  A year or two after that, the rights to the
+program were sold to Borland, who turned it into their product called
+"Sprint".  Now, Borland has announced that they have no plans to
+continue to upgrade, enhance, or fix Sprint any further.  Some
+discussion has been taking place on CompuServe about what should be
+done.  It would be truly sad to see such a fine and powerful package
+finally die for lack of interest.
+
+As to this newsgroup - there probably is no longer any point.  I doubt
+that there are many Amethyst users still actively using CP/M-80.  I
+file transferred all of my Mince/Scribble/BDS-C software to MS-DOS
+floppies just before de-commissioning my CP/M-80 system, just in case.
+In another 5-10 years, I'll probably stop bothering to keep even
+those.
+-- 
+Ron Heiby, heiby@chg.mcd.mot.com	Moderator: comp.newprod
+"Give me voice mail or give me drugs!"/"Mandatory Drug Testing? Just Say NO!!!"
+12-Jan-91 09:37:05-MST,855;000000000000
+Return-Path: <minsky@media-lab.media.mit.edu>
+Received: from media-lab.media.mit.edu by WSMR-SIMTEL20.ARMY.MIL with TCP; Sat, 12 Jan 91 09:35:55 MST
+Received: by media-lab.media.mit.edu (5.57/DA1.0.2)
+	id AA17900; Sat, 12 Jan 91 00:18:38 EST
+Date: Sat, 12 Jan 91 00:18:38 EST
+From: Marvin Minsky <minsky@media-lab.media.mit.edu>
+Message-Id: <9101120518.AA17900@media-lab.media.mit.edu>
+To: mcdchg!heiby@rutgers.edu, minsky@media-lab.media.mit.edu
+Cc: amethyst-users@wsmr-simtel20.army.mil
+In-Reply-To: Ron Heiby's message of 8 Jan 91 00:40:13 GMT <54002@mcdchg.chg.mcd.mot.com>
+Subject: Define
+
+Sob.  I did not know about the existence of Sprint.  How can one get a
+copy.  I used Final Word for a long time, and most of "The Society of
+Mind" was written in it.  When I switched to Macs, I switched to Word.
+Does Borland still sell Sprint?
+17-Jan-91 12:13:18-MST,1594;000000000000
+Return-Path: <amethyst-users-request@wsmr-simtel20.army.mil>
+Received: from ucbvax.Berkeley.EDU by WSMR-SIMTEL20.ARMY.MIL with TCP; Thu, 17 Jan 91 12:12:53 MST
+Received: by ucbvax.Berkeley.EDU (5.63/1.42)
+	id AA11589; Thu, 17 Jan 91 11:05:57 -0800
+Received: from USENET by ucbvax.Berkeley.EDU with netnews
+	for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
+	(contact usenet@ucbvax.Berkeley.EDU if you have questions)
+Date: 17 Jan 91 17:24:50 GMT
+From: amdahl!netcom!aahz@sun.com  (Dan Bernstein)
+Organization: Netcom- The Bay Area's Public Access Unix System {408 241-9760 guest}
+Subject: Re: Define
+Message-Id: <21183@netcom.UUCP>
+References: <54002@mcdchg.chg.mcd.mot.com>, <9101120518.AA17900@media-lab.media.mit.edu>
+Sender: amethyst-users-request@wsmr-simtel20.army.mil
+To: amethyst-users@wsmr-simtel20.army.mil
+
+In article <9101120518.AA17900@media-lab.media.mit.edu> minsky@MEDIA-LAB.MEDIA.MIT.EDU (Marvin Minsky) writes:
+>Sob.  I did not know about the existence of Sprint.  How can one get a
+>copy.  I used Final Word for a long time, and most of "The Society of
+>Mind" was written in it.  When I switched to Macs, I switched to Word.
+>Does Borland still sell Sprint?
+
+Yes.  We even support it.
+-- 
+
+                           --- Aahz
+                               @netcom.uucp  (or apple!netcom!aahz)
+
+	"This is the third stage of human social evolution.  First we had 
+the legs race.  Then we had the arms race.  Now we're going to have the
+brain race.
+	"And, if we're lucky, the final stage will be the human race."
+23-Jan-91 17:13:15-MST,1861;000000000000
+Return-Path: <amethyst-users-request@wsmr-simtel20.army.mil>
+Received: from ucbvax.Berkeley.EDU by WSMR-SIMTEL20.ARMY.MIL with TCP; Wed, 23 Jan 91 17:12:58 MST
+Received: by ucbvax.Berkeley.EDU (5.63/1.42)
+	id AA20443; Wed, 23 Jan 91 15:48:57 -0800
+Received: from USENET by ucbvax.Berkeley.EDU with netnews
+	for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
+	(contact usenet@ucbvax.Berkeley.EDU if you have questions)
+Date: 23 Jan 91 22:10:56 GMT
+From: mcdchg!heiby@rutgers.edu  (Ron Heiby)
+Organization: Motorola Computer Group, Schaumburg, IL
+Subject: Re: Define
+Message-Id: <55000@mcdchg.chg.mcd.mot.com>
+References: <54002@mcdchg.chg.mcd.mot.com>, <9101120518.AA17900@media-lab.media.mit.edu>, <21183@netcom.UUCP>
+Sender: amethyst-users-request@wsmr-simtel20.army.mil
+To: amethyst-users@wsmr-simtel20.army.mil
+
+aahz@netcom.UUCP (Dan Bernstein) writes:
+
+>>Does Borland still sell Sprint?
+
+>Yes.  We even support it.
+
+Ahem!  According to what I've read on the BORAPP Forum on CompuServe,
+Borland has decided that the finest text editor / text formatter
+available for personal computers is not part of their "strategic
+direction" (or words to that effect), and that there is *NO* ongoing
+work being done on Sprint.
+
+My father is writing a book.  I recommended that he buy a cheap PC and
+Sprint and let me train his typist to use the basic features.  I would
+come in later and fix up the formatting.  (An easy process, since
+Sprint is not (yuck!) WYSIWYG.)  Instead, he decided to hire someone
+who already owned a PC.  She is using Word Perfect.  I continually
+hear horrer stories from him about "things she says cannot be done"
+which I know are like "falling off a log" in Sprint.
+-- 
+Ron Heiby, heiby@chg.mcd.mot.com	Moderator: comp.newprod
+"Wrong is wrong, even when it helps you." Popeye
+24-Jan-91 08:09:33-MST,2777;000000000000
+Return-Path: <amethyst-users-request@wsmr-simtel20.army.mil>
+Received: from ucbvax.Berkeley.EDU by WSMR-SIMTEL20.ARMY.MIL with TCP; Thu, 24 Jan 91 08:09:24 MST
+Received: by ucbvax.Berkeley.EDU (5.63/1.42)
+	id AA11077; Thu, 24 Jan 91 06:52:25 -0800
+Received: from USENET by ucbvax.Berkeley.EDU with netnews
+	for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
+	(contact usenet@ucbvax.Berkeley.EDU if you have questions)
+Date: 24 Jan 91 11:36:09 GMT
+From: olivea!oliveb!amdahl!netcom!aahz@uunet.uu.net  (Dan Bernstein)
+Organization: Perv
+Subject: Re: Define
+Message-Id: <21798@netcom.UUCP>
+References: <9101120518.AA17900@media-lab.media.mit.edu>, <21183@netcom.UUCP>, <55000@mcdchg.chg.mcd.mot.com>
+Sender: amethyst-users-request@wsmr-simtel20.army.mil
+To: amethyst-users@wsmr-simtel20.army.mil
+
+In article <55000@mcdchg.chg.mcd.mot.com> heiby@mcdchg.chg.mcd.mot.com (Ron Heiby) writes:
+>aahz@netcom.UUCP (Dan Bernstein) writes:
+>
+>>>Does Borland still sell Sprint?
+>
+>>Yes.  We even support it.
+>
+>Ahem!  According to what I've read on the BORAPP Forum on CompuServe,
+>Borland has decided that the finest text editor / text formatter
+>available for personal computers is not part of their "strategic
+>direction" (or words to that effect), and that there is *NO* ongoing
+>work being done on Sprint.
+
+I won't comment publically on development of Sprint, since I have nothing
+to do with that.  However, as far as I know, we *are* still selling and
+supporting it.  The main problem with Sprint -- from my point of view --
+is that it is exactly what you say it is: an editor and formatter.  I
+believe that had Borland decided to sell it as that rather than as a word
+processor, it would have had more success.  But that's in the past.
+
+>My father is writing a book.  I recommended that he buy a cheap PC and
+>Sprint and let me train his typist to use the basic features.  I would
+>come in later and fix up the formatting.  (An easy process, since
+>Sprint is not (yuck!) WYSIWYG.)  Instead, he decided to hire someone
+>who already owned a PC.  She is using Word Perfect.  I continually
+>hear horrer stories from him about "things she says cannot be done"
+>which I know are like "falling off a log" in Sprint.
+
+Hmmmmm.....sounds like she doesn't know WordPerfect very well..... of course,
+it would be dead simple to write a Sprint macro......
+-- 
+
+                           --- Aahz
+                               @netcom.uucp  (or apple!netcom!aahz)
+
+"The meek shall inherit the earth -- 6'x6'x3'"
+"Violence is the last refuge of the incompetent."
+"You can have peace.  Or you can have freedom.  Don't ever count on having
+	both at once."
+"I'm not stupid, I'm not expendable, and I'm not going."
+26-Jan-91 07:11:45-MST,1457;000000000000
+Return-Path: <amethyst-users-request@wsmr-simtel20.army.mil>
+Received: from ucbvax.Berkeley.EDU by WSMR-SIMTEL20.ARMY.MIL with TCP; Sat, 26 Jan 91 07:11:28 MST
+Received: by ucbvax.Berkeley.EDU (5.63/1.42)
+	id AA13959; Sat, 26 Jan 91 06:06:28 -0800
+Received: from USENET by ucbvax.Berkeley.EDU with netnews
+	for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
+	(contact usenet@ucbvax.Berkeley.EDU if you have questions)
+Date: 25 Jan 91 21:27:02 GMT
+From: ncis.tis.llnl.gov!dog.ee.lbl.gov!hellgate.utah.edu!fcom.cc.utah.edu!cc.utah.edu!cc.usu.edu!slsw2@lll-winken.llnl.gov
+Subject: Sprint
+Message-Id: <1991Jan25.152703.46742@cc.usu.edu>
+Sender: amethyst-users-request@wsmr-simtel20.army.mil
+To: amethyst-users@wsmr-simtel20.army.mil
+
+Since I noticed a discussion of Sprint going on here, I thought I would
+jump in with a question.
+
+A long time ago I bought a copy of Sprint to play with and, noticing that
+it claimed to support a VT100, I attempted to install it to run on my
+DEC Rainbow. It seemed to run fine on a PC that was driving a VT100, but
+I could never get the thing to come up on the Rainbow; it just printed a
+row of H's or something like that and died.
+
+Comments?
+-- 
+===============================================================================
+Roger Ivie
+
+35 S 300 W
+Logan, Ut.  84321
+(801) 752-8633
+===============================================================================
+28-Jan-91 00:15:18-MST,2015;000000000000
+Return-Path: <amethyst-users-request@wsmr-simtel20.army.mil>
+Received: from ucbvax.Berkeley.EDU by WSMR-SIMTEL20.ARMY.MIL with TCP; Mon, 28 Jan 91 00:14:05 MST
+Received: by ucbvax.Berkeley.EDU (5.63/1.42)
+	id AA28577; Sun, 27 Jan 91 23:03:47 -0800
+Received: from USENET by ucbvax.Berkeley.EDU with netnews
+	for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
+	(contact usenet@ucbvax.Berkeley.EDU if you have questions)
+Date: 28 Jan 91 05:51:08 GMT
+From: magnus.ircc.ohio-state.edu!zaphod.mps.ohio-state.edu!think.com!mintaka!ogicse!plains!person@tut.cis.ohio-state.edu  (Brett G. Person)
+Organization: North Dakota State University, Fargo
+Subject: Re: Sprint
+Message-Id: <7800@plains.NoDak.edu>
+References: <1991Jan25.152703.46742@cc.usu.edu>
+Sender: amethyst-users-request@wsmr-simtel20.army.mil
+To: amethyst-users@wsmr-simtel20.army.mil
+
+In article <1991Jan25.152703.46742@cc.usu.edu> slsw2@cc.usu.edu writes:
+
+>A long time ago I bought a copy of Sprint to play with and, noticing that
+>it claimed to support a VT100, I attempted to install it to run on my
+>DEC Rainbow. It seemed to run fine on a PC that was driving a VT100, but
+>I could never get the thing to come up on the Rainbow; it just printed a
+>row of H's or something like that and died.
+>
+>Comments?
+>-- 
+  Never noticed anything about vt100 compatibility, and dont have my manuals
+here, but...
+   My guess is that there would have been a vt100 user interface file for
+it.  Sprint is full of undocumented "features" like this, so it could be
+some secret command hidden somewhere. 
+   You've got me curious, I may need to shuffle through the distribution
+disks tonight...
+   My other quick guess would be that there is a command somewhere in the
+sprint macro language for this purpose.  Don't ask me where to look for it
+though.
+
+If you find out, let me know.
+-- 
+Brett G. Person
+North Dakota State University
+uunet!plains!person | person@plains.bitnet | person@plains.nodak.edu
+30-Jan-91 06:32:55-MST,2595;000000000000
+Return-Path: <amethyst-users-request@wsmr-simtel20.army.mil>
+Received: from ucbvax.Berkeley.EDU by WSMR-SIMTEL20.ARMY.MIL with TCP; Wed, 30 Jan 91 06:32:21 MST
+Received: by ucbvax.Berkeley.EDU (5.63/1.42)
+	id AA15345; Wed, 30 Jan 91 05:27:15 -0800
+Received: from USENET by ucbvax.Berkeley.EDU with netnews
+	for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
+	(contact usenet@ucbvax.Berkeley.EDU if you have questions)
+Date: 29 Jan 91 15:25:58 GMT
+From: usc!cs.utexas.edu!hellgate.utah.edu!fcom.cc.utah.edu!cc.utah.edu!cc.usu.edu!slsw2@ucsd.edu
+Subject: Re: Sprint
+Message-Id: <1991Jan29.092559.46767@cc.usu.edu>
+References: <1991Jan25.152703.46742@cc.usu.edu>, <7800@plains.NoDak.edu>
+Sender: amethyst-users-request@wsmr-simtel20.army.mil
+To: amethyst-users@wsmr-simtel20.army.mil
+
+In article <7800@plains.NoDak.edu>, person@plains.NoDak.edu (Brett G. Person) writes:
+> In article <1991Jan25.152703.46742@cc.usu.edu> slsw2@cc.usu.edu writes:
+> 
+>>A long time ago I bought a copy of Sprint to play with and, noticing that
+>>it claimed to support a VT100, I attempted to install it to run on my
+>>DEC Rainbow. It seemed to run fine on a PC that was driving a VT100, but
+>>I could never get the thing to come up on the Rainbow; it just printed a
+>>row of H's or something like that and died.
+>    My guess is that there would have been a vt100 user interface file for
+> it.  Sprint is full of undocumented "features" like this, so it could be
+> some secret command hidden somewhere. 
+
+There is a VT100 entry in the screen part of the installation; I used that.
+That's not the problem. Like I said, it works just fine if I have a PC clone
+that I've got a VT100 hung off, or running something like ANSI.SYS or
+FANSI-console.
+
+Silly me presumed, however, that if I fixed the screen thing it would be able
+to run on a non-clone like the Rainbow. The Rainbow's about as non-clone as
+you can get--the floppy controller is managed by a Z80, for instance. The
+screen on a Rainbow is a VT100-compatible terminal emulation; since the
+Rainbow is a DEC machine, the terminal emulation is very VT100-compatible.
+Since the thing works on a VT100 hung off a PC, I assumed it would work on
+the Rainbow.
+
+Nope! There is apparently some other PC-specific thing in Sprint. I'm looking
+for hints on what it might be.
+-- 
+===============================================================================
+Roger Ivie
+
+35 S 300 W
+Logan, Ut.  84321
+(801) 752-8633
+===============================================================================
+ 5-Jan-91 05:41:26-MST,883;000000000000
+Return-Path: <amethyst-users-request@wsmr-simtel20.army.mil>
+Received: from ucbvax.Berkeley.EDU by WSMR-SIMTEL20.ARMY.MIL with TCP; Sat, 5 Jan 91 05:41:03 MST
+Received: by ucbvax.Berkeley.EDU (5.63/1.42)
+	id AA00516; Fri, 4 Jan 91 17:22:14 -0800
+Received: from USENET by ucbvax.Berkeley.EDU with netnews
+	for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
+	(contact usenet@ucbvax.Berkeley.EDU if you have questions)
+Date: 5 Jan 91 01:13:02 GMT
+From: magnus.ircc.ohio-state.edu!news@tut.cis.ohio-state.edu  (Ann M. Chozinski)
+Organization: The Ohio State University (IRCC)
+Subject: Define
+Message-Id: <1991Jan5.011302.17081@magnus.ircc.ohio-state.edu>
+Sender: amethyst-users-request@wsmr-simtel20.army.mil
+To: amethyst-users@wsmr-simtel20.army.mil
+
+What is this newsgroup all about???   Curious Annie
+
+achozi@hpuxa.ircc.ohio-state.edu
+ 7-Jan-91 18:46:11-MST,2620;000000000000
+Return-Path: <amethyst-users-request@wsmr-simtel20.army.mil>
+Received: from ucbvax.Berkeley.EDU by WSMR-SIMTEL20.ARMY.MIL with TCP; Mon, 7 Jan 91 18:45:32 MST
+Received: by ucbvax.Berkeley.EDU (5.63/1.42)
+	id AA18132; Mon, 7 Jan 91 17:31:59 -0800
+Received: from USENET by ucbvax.Berkeley.EDU with netnews
+	for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
+	(contact usenet@ucbvax.Berkeley.EDU if you have questions)
+Date: 8 Jan 91 00:40:13 GMT
+From: mcdchg!heiby@rutgers.edu  (Ron Heiby)
+Organization: Motorola Computer Group, Schaumburg, IL
+Subject: Re: Define
+Message-Id: <54002@mcdchg.chg.mcd.mot.com>
+References: <1991Jan5.011302.17081@magnus.ircc.ohio-state.edu>
+Sender: amethyst-users-request@wsmr-simtel20.army.mil
+To: amethyst-users@wsmr-simtel20.army.mil
+
+Way back in the "Golden Age" of personal computing, there was an
+operating system called CP/M, which later was renamed CP/M-80 (to
+avoid confusion with CP/M-86 and CP/M-68K).  On CP/M-80, were
+available three wonderful software packages.  One was a C compiler
+called "BDS C" (from BD Software).  One was a text editor called
+"MINCE" (MINCE Is Not Complete Emacs).  The third was a text formatter
+called "Scribble" (a subset of Scribe).  The latter two programs were
+from "Mark of the Unicorn".  All three were available seperately.  All
+three were available bundled (with much of the source for
+Mince/Scribble in BDS-C) into package called "Amethyst".  As the
+"Golden Age" was ending, and IBM came out with their "PC",
+Mince/Scribble were combined and enhanced into a package called
+"FinalWord".  An even more enhanced version called "FinalWord II" came
+out a while later.  A year or two after that, the rights to the
+program were sold to Borland, who turned it into their product called
+"Sprint".  Now, Borland has announced that they have no plans to
+continue to upgrade, enhance, or fix Sprint any further.  Some
+discussion has been taking place on CompuServe about what should be
+done.  It would be truly sad to see such a fine and powerful package
+finally die for lack of interest.
+
+As to this newsgroup - there probably is no longer any point.  I doubt
+that there are many Amethyst users still actively using CP/M-80.  I
+file transferred all of my Mince/Scribble/BDS-C software to MS-DOS
+floppies just before de-commissioning my CP/M-80 system, just in case.
+In another 5-10 years, I'll probably stop bothering to keep even
+those.
+-- 
+Ron Heiby, heiby@chg.mcd.mot.com	Moderator: comp.newprod
+"Give me voice mail or give me drugs!"/"Mandatory Drug Testing? Just Say NO!!!"
+12-Jan-91 09:37:05-MST,855;000000000000
+Return-Path: <minsky@media-lab.media.mit.edu>
+Received: from media-lab.media.mit.edu by WSMR-SIMTEL20.ARMY.MIL with TCP; Sat, 12 Jan 91 09:35:55 MST
+Received: by media-lab.media.mit.edu (5.57/DA1.0.2)
+	id AA17900; Sat, 12 Jan 91 00:18:38 EST
+Date: Sat, 12 Jan 91 00:18:38 EST
+From: Marvin Minsky <minsky@media-lab.media.mit.edu>
+Message-Id: <9101120518.AA17900@media-lab.media.mit.edu>
+To: mcdchg!heiby@rutgers.edu, minsky@media-lab.media.mit.edu
+Cc: amethyst-users@wsmr-simtel20.army.mil
+In-Reply-To: Ron Heiby's message of 8 Jan 91 00:40:13 GMT <54002@mcdchg.chg.mcd.mot.com>
+Subject: Define
+
+Sob.  I did not know about the existence of Sprint.  How can one get a
+copy.  I used Final Word for a long time, and most of "The Society of
+Mind" was written in it.  When I switched to Macs, I switched to Word.
+Does Borland still sell Sprint?
+17-Jan-91 12:13:18-MST,1594;000000000000
+Return-Path: <amethyst-users-request@wsmr-simtel20.army.mil>
+Received: from ucbvax.Berkeley.EDU by WSMR-SIMTEL20.ARMY.MIL with TCP; Thu, 17 Jan 91 12:12:53 MST
+Received: by ucbvax.Berkeley.EDU (5.63/1.42)
+	id AA11589; Thu, 17 Jan 91 11:05:57 -0800
+Received: from USENET by ucbvax.Berkeley.EDU with netnews
+	for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
+	(contact usenet@ucbvax.Berkeley.EDU if you have questions)
+Date: 17 Jan 91 17:24:50 GMT
+From: amdahl!netcom!aahz@sun.com  (Dan Bernstein)
+Organization: Netcom- The Bay Area's Public Access Unix System {408 241-9760 guest}
+Subject: Re: Define
+Message-Id: <21183@netcom.UUCP>
+References: <54002@mcdchg.chg.mcd.mot.com>, <9101120518.AA17900@media-lab.media.mit.edu>
+Sender: amethyst-users-request@wsmr-simtel20.army.mil
+To: amethyst-users@wsmr-simtel20.army.mil
+
+In article <9101120518.AA17900@media-lab.media.mit.edu> minsky@MEDIA-LAB.MEDIA.MIT.EDU (Marvin Minsky) writes:
+>Sob.  I did not know about the existence of Sprint.  How can one get a
+>copy.  I used Final Word for a long time, and most of "The Society of
+>Mind" was written in it.  When I switched to Macs, I switched to Word.
+>Does Borland still sell Sprint?
+
+Yes.  We even support it.
+-- 
+
+                           --- Aahz
+                               @netcom.uucp  (or apple!netcom!aahz)
+
+	"This is the third stage of human social evolution.  First we had 
+the legs race.  Then we had the arms race.  Now we're going to have the
+brain race.
+	"And, if we're lucky, the final stage will be the human race."
+23-Jan-91 17:13:15-MST,1861;000000000000
+Return-Path: <amethyst-users-request@wsmr-simtel20.army.mil>
+Received: from ucbvax.Berkeley.EDU by WSMR-SIMTEL20.ARMY.MIL with TCP; Wed, 23 Jan 91 17:12:58 MST
+Received: by ucbvax.Berkeley.EDU (5.63/1.42)
+	id AA20443; Wed, 23 Jan 91 15:48:57 -0800
+Received: from USENET by ucbvax.Berkeley.EDU with netnews
+	for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
+	(contact usenet@ucbvax.Berkeley.EDU if you have questions)
+Date: 23 Jan 91 22:10:56 GMT
+From: mcdchg!heiby@rutgers.edu  (Ron Heiby)
+Organization: Motorola Computer Group, Schaumburg, IL
+Subject: Re: Define
+Message-Id: <55000@mcdchg.chg.mcd.mot.com>
+References: <54002@mcdchg.chg.mcd.mot.com>, <9101120518.AA17900@media-lab.media.mit.edu>, <21183@netcom.UUCP>
+Sender: amethyst-users-request@wsmr-simtel20.army.mil
+To: amethyst-users@wsmr-simtel20.army.mil
+
+aahz@netcom.UUCP (Dan Bernstein) writes:
+
+>>Does Borland still sell Sprint?
+
+>Yes.  We even support it.
+
+Ahem!  According to what I've read on the BORAPP Forum on CompuServe,
+Borland has decided that the finest text editor / text formatter
+available for personal computers is not part of their "strategic
+direction" (or words to that effect), and that there is *NO* ongoing
+work being done on Sprint.
+
+My father is writing a book.  I recommended that he buy a cheap PC and
+Sprint and let me train his typist to use the basic features.  I would
+come in later and fix up the formatting.  (An easy process, since
+Sprint is not (yuck!) WYSIWYG.)  Instead, he decided to hire someone
+who already owned a PC.  She is using Word Perfect.  I continually
+hear horrer stories from him about "things she says cannot be done"
+which I know are like "falling off a log" in Sprint.
+-- 
+Ron Heiby, heiby@chg.mcd.mot.com	Moderator: comp.newprod
+"Wrong is wrong, even when it helps you." Popeye
+24-Jan-91 08:09:33-MST,2777;000000000000
+Return-Path: <amethyst-users-request@wsmr-simtel20.army.mil>
+Received: from ucbvax.Berkeley.EDU by WSMR-SIMTEL20.ARMY.MIL with TCP; Thu, 24 Jan 91 08:09:24 MST
+Received: by ucbvax.Berkeley.EDU (5.63/1.42)
+	id AA11077; Thu, 24 Jan 91 06:52:25 -0800
+Received: from USENET by ucbvax.Berkeley.EDU with netnews
+	for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
+	(contact usenet@ucbvax.Berkeley.EDU if you have questions)
+Date: 24 Jan 91 11:36:09 GMT
+From: olivea!oliveb!amdahl!netcom!aahz@uunet.uu.net  (Dan Bernstein)
+Organization: Perv
+Subject: Re: Define
+Message-Id: <21798@netcom.UUCP>
+References: <9101120518.AA17900@media-lab.media.mit.edu>, <21183@netcom.UUCP>, <55000@mcdchg.chg.mcd.mot.com>
+Sender: amethyst-users-request@wsmr-simtel20.army.mil
+To: amethyst-users@wsmr-simtel20.army.mil
+
+In article <55000@mcdchg.chg.mcd.mot.com> heiby@mcdchg.chg.mcd.mot.com (Ron Heiby) writes:
+>aahz@netcom.UUCP (Dan Bernstein) writes:
+>
+>>>Does Borland still sell Sprint?
+>
+>>Yes.  We even support it.
+>
+>Ahem!  According to what I've read on the BORAPP Forum on CompuServe,
+>Borland has decided that the finest text editor / text formatter
+>available for personal computers is not part of their "strategic
+>direction" (or words to that effect), and that there is *NO* ongoing
+>work being done on Sprint.
+
+I won't comment publically on development of Sprint, since I have nothing
+to do with that.  However, as far as I know, we *are* still selling and
+supporting it.  The main problem with Sprint -- from my point of view --
+is that it is exactly what you say it is: an editor and formatter.  I
+believe that had Borland decided to sell it as that rather than as a word
+processor, it would have had more success.  But that's in the past.
+
+>My father is writing a book.  I recommended that he buy a cheap PC and
+>Sprint and let me train his typist to use the basic features.  I would
+>come in later and fix up the formatting.  (An easy process, since
+>Sprint is not (yuck!) WYSIWYG.)  Instead, he decided to hire someone
+>who already owned a PC.  She is using Word Perfect.  I continually
+>hear horrer stories from him about "things she says cannot be done"
+>which I know are like "falling off a log" in Sprint.
+
+Hmmmmm.....sounds like she doesn't know WordPerfect very well..... of course,
+it would be dead simple to write a Sprint macro......
+-- 
+
+                           --- Aahz
+                               @netcom.uucp  (or apple!netcom!aahz)
+
+"The meek shall inherit the earth -- 6'x6'x3'"
+"Violence is the last refuge of the incompetent."
+"You can have peace.  Or you can have freedom.  Don't ever count on having
+	both at once."
+"I'm not stupid, I'm not expendable, and I'm not going."
+26-Jan-91 07:11:45-MST,1457;000000000000
+Return-Path: <amethyst-users-request@wsmr-simtel20.army.mil>
+Received: from ucbvax.Berkeley.EDU by WSMR-SIMTEL20.ARMY.MIL with TCP; Sat, 26 Jan 91 07:11:28 MST
+Received: by ucbvax.Berkeley.EDU (5.63/1.42)
+	id AA13959; Sat, 26 Jan 91 06:06:28 -0800
+Received: from USENET by ucbvax.Berkeley.EDU with netnews
+	for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
+	(contact usenet@ucbvax.Berkeley.EDU if you have questions)
+Date: 25 Jan 91 21:27:02 GMT
+From: ncis.tis.llnl.gov!dog.ee.lbl.gov!hellgate.utah.edu!fcom.cc.utah.edu!cc.utah.edu!cc.usu.edu!slsw2@lll-winken.llnl.gov
+Subject: Sprint
+Message-Id: <1991Jan25.152703.46742@cc.usu.edu>
+Sender: amethyst-users-request@wsmr-simtel20.army.mil
+To: amethyst-users@wsmr-simtel20.army.mil
+
+Since I noticed a discussion of Sprint going on here, I thought I would
+jump in with a question.
+
+A long time ago I bought a copy of Sprint to play with and, noticing that
+it claimed to support a VT100, I attempted to install it to run on my
+DEC Rainbow. It seemed to run fine on a PC that was driving a VT100, but
+I could never get the thing to come up on the Rainbow; it just printed a
+row of H's or something like that and died.
+
+Comments?
+-- 
+===============================================================================
+Roger Ivie
+
+35 S 300 W
+Logan, Ut.  84321
+(801) 752-8633
+===============================================================================
+28-Jan-91 00:15:18-MST,2015;000000000000
+Return-Path: <amethyst-users-request@wsmr-simtel20.army.mil>
+Received: from ucbvax.Berkeley.EDU by WSMR-SIMTEL20.ARMY.MIL with TCP; Mon, 28 Jan 91 00:14:05 MST
+Received: by ucbvax.Berkeley.EDU (5.63/1.42)
+	id AA28577; Sun, 27 Jan 91 23:03:47 -0800
+Received: from USENET by ucbvax.Berkeley.EDU with netnews
+	for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
+	(contact usenet@ucbvax.Berkeley.EDU if you have questions)
+Date: 28 Jan 91 05:51:08 GMT
+From: magnus.ircc.ohio-state.edu!zaphod.mps.ohio-state.edu!think.com!mintaka!ogicse!plains!person@tut.cis.ohio-state.edu  (Brett G. Person)
+Organization: North Dakota State University, Fargo
+Subject: Re: Sprint
+Message-Id: <7800@plains.NoDak.edu>
+References: <1991Jan25.152703.46742@cc.usu.edu>
+Sender: amethyst-users-request@wsmr-simtel20.army.mil
+To: amethyst-users@wsmr-simtel20.army.mil
+
+In article <1991Jan25.152703.46742@cc.usu.edu> slsw2@cc.usu.edu writes:
+
+>A long time ago I bought a copy of Sprint to play with and, noticing that
+>it claimed to support a VT100, I attempted to install it to run on my
+>DEC Rainbow. It seemed to run fine on a PC that was driving a VT100, but
+>I could never get the thing to come up on the Rainbow; it just printed a
+>row of H's or something like that and died.
+>
+>Comments?
+>-- 
+  Never noticed anything about vt100 compatibility, and dont have my manuals
+here, but...
+   My guess is that there would have been a vt100 user interface file for
+it.  Sprint is full of undocumented "features" like this, so it could be
+some secret command hidden somewhere. 
+   You've got me curious, I may need to shuffle through the distribution
+disks tonight...
+   My other quick guess would be that there is a command somewhere in the
+sprint macro language for this purpose.  Don't ask me where to look for it
+though.
+
+If you find out, let me know.
+-- 
+Brett G. Person
+North Dakota State University
+uunet!plains!person | person@plains.bitnet | person@plains.nodak.edu
+30-Jan-91 06:32:55-MST,2595;000000000000
+Return-Path: <amethyst-users-request@wsmr-simtel20.army.mil>
+Received: from ucbvax.Berkeley.EDU by WSMR-SIMTEL20.ARMY.MIL with TCP; Wed, 30 Jan 91 06:32:21 MST
+Received: by ucbvax.Berkeley.EDU (5.63/1.42)
+	id AA15345; Wed, 30 Jan 91 05:27:15 -0800
+Received: from USENET by ucbvax.Berkeley.EDU with netnews
+	for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
+	(contact usenet@ucbvax.Berkeley.EDU if you have questions)
+Date: 29 Jan 91 15:25:58 GMT
+From: usc!cs.utexas.edu!hellgate.utah.edu!fcom.cc.utah.edu!cc.utah.edu!cc.usu.edu!slsw2@ucsd.edu
+Subject: Re: Sprint
+Message-Id: <1991Jan29.092559.46767@cc.usu.edu>
+References: <1991Jan25.152703.46742@cc.usu.edu>, <7800@plains.NoDak.edu>
+Sender: amethyst-users-request@wsmr-simtel20.army.mil
+To: amethyst-users@wsmr-simtel20.army.mil
+
+In article <7800@plains.NoDak.edu>, person@plains.NoDak.edu (Brett G. Person) writes:
+> In article <1991Jan25.152703.46742@cc.usu.edu> slsw2@cc.usu.edu writes:
+> 
+>>A long time ago I bought a copy of Sprint to play with and, noticing that
+>>it claimed to support a VT100, I attempted to install it to run on my
+>>DEC Rainbow. It seemed to run fine on a PC that was driving a VT100, but
+>>I could never get the thing to come up on the Rainbow; it just printed a
+>>row of H's or something like that and died.
+>    My guess is that there would have been a vt100 user interface file for
+> it.  Sprint is full of undocumented "features" like this, so it could be
+> some secret command hidden somewhere. 
+
+There is a VT100 entry in the screen part of the installation; I used that.
+That's not the problem. Like I said, it works just fine if I have a PC clone
+that I've got a VT100 hung off, or running something like ANSI.SYS or
+FANSI-console.
+
+Silly me presumed, however, that if I fixed the screen thing it would be able
+to run on a non-clone like the Rainbow. The Rainbow's about as non-clone as
+you can get--the floppy controller is managed by a Z80, for instance. The
+screen on a Rainbow is a VT100-compatible terminal emulation; since the
+Rainbow is a DEC machine, the terminal emulation is very VT100-compatible.
+Since the thing works on a VT100 hung off a PC, I assumed it would work on
+the Rainbow.
+
+Nope! There is apparently some other PC-specific thing in Sprint. I'm looking
+for hints on what it might be.
+-- 
+===============================================================================
+Roger Ivie
+
+35 S 300 W
+Logan, Ut.  84321
+(801) 752-8633
+===============================================================================

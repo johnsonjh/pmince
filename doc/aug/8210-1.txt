@@ -1,0 +1,82 @@
+ 6-Oct-82 15:45:00,250;000000000000
+Date: Wednesday,  6 Oct 1982 14:45-PDT
+To: Amethyst-USERS at MIT-MC
+Subject: horizontal scrolling
+From: bridger at RAND-UNIX
+
+	Does anyone have any experience or suggestions for installing
+horizontal scrolling in mince?		
+				Thanks. bridger
+11-Oct-82 12:37:00,532;000000000000
+Date: 11 October 1982 14:37-EDT
+From: Frank J. Wancho <FJW at MIT-MC>
+Subject:  MINCE for PC
+To: AMETHYST-USERS at MIT-MC
+
+Date: 10 Oct 1982 1006-PDT
+From: Pearson at SUMEX-AIM
+Subject: MINCE for PC
+To:   amethyst-users-request at MIT-MC
+
+	As an avid user of mince on CPM, and having gotten a Zenith 8/16
+bit machine, I would like to join the mailing list and also learn about
+the availability of MINCE for MS-DOS.  I need to be able to customize
+MINCE, so I am also curious about the C-compiler used.
+
+Bill Pearson
+11-Oct-82 18:29:11,540;000000000000
+From: BNH@MIT-ML
+Date: 10/11/82 18:29:11
+Re: MINCE for PC
+To: Amethyst-Users at MIT-MC
+
+The current version of Mince is probably not yet quite what you want...
+   There is a DOS version, which uses the Lattice C compiler.
+   However, there is no source code out yet, and the version that is 
+   available has been customized for the IBM P.C. display.  Soon, there
+   will be CP/M-86 and generalized MSDOS versions, we hope...  Or at least
+   source code so that you can remove the IBM terminal driver and insert yours.
+			Brian
+17-Oct-82 07:22:00,645;000000000000
+Date: Sunday, 17 October 1982  09:22-EDT
+Sender: X.GYRO at MIT-OZ
+From: X.GYRO at MIT-MC
+To:   Pearson at sumex-aim
+cc:   AMETHYST-USERS at MIT-MC
+Subject: MINCE for Zenith Z-100, IBM PC
+In-reply-to: The message of 11 Oct 1982  14:37-EDT from Frank J. Wancho <FJW at MIT-MC>
+
+Mince is available for the IBM PC.  We need to know a couple of things
+about the Zenith before we can make a version for it:
+
+ -- are the screen control codes the same as an H-19?  If not, what
+    are they?
+
+ -- does it read IBM PC disks?
+
+We use the Lattice C compiler from Lifeboat.  Expensive ($500) but a
+very good compiler.
+
+-- Scott
+-------
+19-Oct-82 12:03:00,342;000000000000
+Date: 19 Oct 1982 1103-PDT
+From: Jim Celoni S.J. <CSL.JLH.Celoni at SU-SCORE>
+Subject: AUG newsletters
+To: Amethyst-Users at MIT-MC
+
+Do you have the newsletters published by the Amethyst Users Group (when it
+existed)?  I'm looking for a copy of them.  (I'm not speaking of the
+Amethyst-Users archives on MC.)  Thanks.  --Jim
+-------
+31-Oct-82 18:49:00,261;000000000000
+Date: 31 October 1982 20:49-EST
+From: Paul L. Kelley <PLK at MIT-MC>
+Subject:  AUG newsletters
+To: CSL.JLH.Celoni at SU-SCORE
+cc: AMETHYST-USERS at MIT-MC
+
+
+	Dear Father Celoni,
+			The AUG users group disk is in AR0:JCAF; on MIT-MC
+if that is a help.

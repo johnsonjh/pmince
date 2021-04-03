@@ -1,0 +1,577 @@
+ 3-Nov-83 14:34:00-MST,957;000000000000
+Return-Path: <@MIT-MC:KENNER@NYU-CMCL1.ARPA>
+Received: from MIT-MC by SIMTEL20.ARPA with TCP; Thu 3 Nov 83 14:33:39-MST
+Date: 3 Nov 83 16:32 EST
+From: Richard Kenner <KENNER@NYU-CMCL1.ARPA>
+To: amethyst-users@MIT-MC.ARPA
+Subject: Mince & Z-100
+Message-ID: <3075ADBDD.00300019.1983@CMCL1.NYU-CMCL1.ARPA>
+
+Does anyone know if there is a version of MINCE which runs on a Z-100 under
+either CP/M-86 (preferable) or Z-DOS (MS-DOS)?   I know I can run the 8-bit
+version under either CP/M-85 or CP/M-86 but I am looking for a 16-bit version.
+If no such version exists, is there enough provided with other versions to
+make such a version of MINCE.
+
+Also, is the same amount of the partial source released as in the 8-bit
+versions?  What C compiler is expected to be used?
+
+I have tried to call Mark of the Unicorn and have gotten absolutely nowhere.
+There does not seem to be anyone who can be reached by phone who knows
+anything.
+ 
+-------
+
+ 3-Nov-83 15:36:08-MST,541;000000000000
+Return-Path: <@MIT-MC:KENNER@NYU-CMCL1.ARPA>
+Received: from MIT-MC by SIMTEL20.ARPA with TCP; Thu 3 Nov 83 15:35:51-MST
+Date: 3 Nov 83 17:36 EST
+From: Richard Kenner <KENNER@NYU-CMCL1.ARPA>
+To: AMETHYST-USERS@MIT-MC.ARPA
+Subject: MINCE & Z100, contd.
+Message-ID: <30760BB05.00300019.1983@CMCL1.NYU-CMCL1.ARPA>
+
+Please reply to me directly.  I am on the list but incorrectly.
+
+List maintainer:  You have me as KENNER.CMCLI@NYU which is wrong.
+(It should have been .CMCL1).  But please change it to KENNER@NYU-CMCL1.
+ 
+-------
+
+ 3-Nov-83 19:24:57-MST,969;000000000000
+Return-Path: <BNH@MIT-ML>
+Received: from MIT-ML by SIMTEL20.ARPA with TCP; Thu 3 Nov 83 19:24:39-MST
+Date: 3 November 1983 21:27 EDT
+From: Brian N. Hess <BNH @ MIT-ML>
+Subject: Mince & Z-100
+To: KENNER @ NYU-CMCL1
+cc: Hess.Unicorn @ MIT-MULTICS, Amethyst-Users @ SIMTEL20
+
+
+Truly suggest you use CP/M-80 version.  However, if you want
+to re-program it, you can get the IBM P.C. version, which won't
+run on your machine, but will be on disks you can read, rewrite
+TERM.C, and compile/link it with Lattice C.  The source code
+files are the same, although I think that MotU no longer gives
+the utility source code out (DIFF.C and (?)others).
+
+The reason you are finding it hard to get answers on the phone
+with MotU is that it is becoming more of a consumer products
+company and less of a hacker tools company.  I believe this to
+be a good sign, not a bad one.  And I will try to answer any
+questions of a technical nature which you may have, here.
+
+ 4-Nov-83 08:35:41-MST,408;000000000000
+Return-Path: <@MIT-MC:LIN@MIT-ML>
+Received: from MIT-MC by SIMTEL20.ARPA with TCP; Fri 4 Nov 83 08:35:23-MST
+Date: 3 November 1983 22:47 EDT
+From: Herb Lin <LIN @ MIT-ML>
+Subject:  Mince & Z-100
+To: KENNER @ NYU-CMCL1
+cc: amethyst-users @ MIT-MC
+In-reply-to: Msg of 3 Nov 83 16:32 EST from Richard Kenner <KENNER at NYU-CMCL1.ARPA>
+
+unicorn does make a mince for the IBM PC, thus it is 16 bit.
+
+
+ 4-Nov-83 08:38:08-MST,531;000000000000
+Return-Path: <LIN@MIT-ML>
+Received: from MIT-ML by SIMTEL20.ARPA with TCP; Fri 4 Nov 83 08:37:49-MST
+Date: 3 November 1983 22:58 EDT
+From: Herb Lin <LIN @ MIT-ML>
+Subject:  Scribble question..
+To: BNH @ MIT-ML
+cc: Hess.Unicorn @ MIT-MULTICS, Amethyst-Users @ SIMTEL20
+In-reply-to: Msg of 3 Nov 1983 21:27 EDT from Brian N. Hess <BNH>
+
+Does anyone out there have a SCRIBBLE SCONFIG entry for an Epson FX-80
+printer, which supports all the nifty proportional spacing, and the
+microfeed features ofthe FX model?
+
+tnx.
+
+ 4-Nov-83 08:40:22-MST,615;000000000000
+Return-Path: <@MIT-MC:PEARSON@SUMEX-AIM.ARPA>
+Received: from MIT-MC by SIMTEL20.ARPA with TCP; Fri 4 Nov 83 08:40:05-MST
+Date: Fri 4 Nov 83 06:58:17-PST
+From: William Pearson <PEARSON@SUMEX-AIM.ARPA>
+Subject: Mince for Z-100 ZDOS
+To: amethyst-users@MIT-MC.ARPA
+
+
+	I adapted a version of mince for the Z-100.  It was very
+easy, but requires the Lattice 'C' compiler.  I will be happy to
+make you a copy if we can do something to keep Brian Hess happy
+(i.e. you buy the IBM-PC version).
+
+	I am replying to the net because my machine does not
+recognize nyu-cmcl1 as a host.
+
+Bill Pearson
+
+-------
+
+ 4-Nov-83 17:55:13-MST,770;000000000000
+Return-Path: <LMTRA@SRI-KL.ARPA>
+Received: from SRI-KL.ARPA by SIMTEL20.ARPA with TCP; Fri 4 Nov 83 17:54:49-MST
+Date:  4 Nov 1983 1127-PST
+From: Lmtra at SRI-KL
+Subject: Linking Mince 2.6
+To:   BNH at MIT-ML
+cc:   ROODE at SRI-AI, AMETHYST-USERS at SIMTEL20
+
+
+Brian,
+I caught a message of yours about Mince and since I've had nothing but
+exasperation getting anything technical out of M of the U, I thought I'd
+give you (and the rest of the group) a try.
+
+I've tried to link Mince 2.6 (using the L2 submit supplied that includes
+the new VBUFF3) and the resulting module just hangs.  I've made no source
+changes as yet, so I'm a bit discouraged.  Any advice?
+
+I'm running under CP/M-80 on a Heath 89.
+
+Thanks,
+Leon Traister (LMTRA@SRI-KL)
+-------
+15-Nov-83 18:20:09-MST,1018;000000000000
+Return-Path: <Hess.Unicorn@MIT-MULTICS.ARPA>
+Received: from MIT-MULTICS.ARPA by SIMTEL20.ARPA with TCP; Tue 15 Nov 83 18:19:30-MST
+Date:  15 November 1983 20:15 est
+From:  Hess.Unicorn at MIT-MULTICS
+Subject:  Linking Mince 2.6
+To:  amethyst-users at SIMTEL20
+cc:  Lmtra at SRI-KL
+
+The usual flake is:  Is L2 going into 2-pass mode?  If so, you have two
+choices: (1) Run your CP/M with a bigger TPA so it only takes one pass,
+or (2) Change your L2 line so that it reads:
+
+l2 mince bndings comm1 comm2 comm3 vbuff1 vbuff3 vbuff2 -l support aterm
+term util
+
+i.e., move the "aterm" to the right-hand side of the "-l".
+
+what used to be happening is that L2 found duplicate symbols in term and
+aterm on its first pass, choose one of the files to use them from
+(aterm, since it passed across it first), but then the second pass never
+knew where the routine really came from, so it just took whatever it
+could get, sometimes from the second one, and if they were different
+sizes, it got all messed up.
+15-Nov-83 18:39:56-MST,916;000000000000
+Mail-From: WANCHO created at 15-Nov-83 18:36:21
+Date: 15 Nov 1983  18:36 MST (Tue)
+Message-ID: <WANCHO.11967939712.BABYL@SIMTEL20>
+From: "Frank J. Wancho" <WANCHO@SIMTEL20>
+To:   Hess.Unicorn@MIT-MULTICS
+Cc:   AMETHYST-USERS@SIMTEL20
+Subject: Linking Mince 2.6
+In-reply-to: Msg of 15 Nov 1983  18:15-MST from Hess.Unicorn at MIT-MULTICS
+
+Any chance for a Mince "3.0" - with all the neat features of FW, the
+supposed bug fixes in PW and its successors, etc.?  I sure could use
+more buffers and more marks, and *especially* the capability of
+returning to the complete set of buffers for a faster
+edit/compile/debug cycle.  I could live without sources...
+
+FW may be nice, but it's the one more editor to learn that's past my
+ability to cope... i.e., I'd rather switch between EMACS and MINCE
+than EMACS and FW...
+
+--Frank
+
+P.S. Should we really all be using L2 2.2.4 that comes with BDS-C 1.50a?
+15-Nov-83 19:05:37-MST,1003;000000000000
+Return-Path: <Hess.Unicorn@MIT-MULTICS.ARPA>
+Received: from MIT-MULTICS.ARPA by SIMTEL20.ARPA with TCP; Tue 15 Nov 83 19:05:07-MST
+Date:  15 November 1983 21:01 est
+From:  Hess.Unicorn at MIT-MULTICS
+Subject:  Mince & Z-100
+To:  kenner at NYU-CMCL1, Pearson at SUMEX-AIM, 
+     amethyst-users at SIMTEL20
+
+Hope Bill Pearson's offer solves your dilemma.  Thanks, Bill.  If
+Westico doesn't have the source code, I'm sure MotU will give it to you
+for mailing them a blank disk and a photocopy of your Westico
+distribution disk.
+
+The usual things people recommend for Mince-replacement are:
+		The FinalWord
+		PMATE
+		VEDIT
+ All have semi-customizable keyboard interfaces, none is entirely
+satisfactory EMACS when you're all done (FW mis-implements a few
+functions, as does VEDIT, and you can write your own macros with PMATE
+but it runs slowly if you macro-ize every single key to work like EMACS,
+not to mention that the PMATE 2-window macro is a vile hack), and all
+run on CP/M-86.
+15-Nov-83 19:14:22-MST,1187;000000000000
+Return-Path: <Hess.Unicorn@MIT-MULTICS.ARPA>
+Received: from MIT-MULTICS.ARPA by SIMTEL20.ARPA with TCP; Tue 15 Nov 83 19:13:58-MST
+Date:  15 November 1983 21:09 est
+From:  Hess.Unicorn at MIT-MULTICS
+Subject:  Scribble FX80 driver
+To:  lin at MIT-ML
+cc:  amethyst-users at SIMTEL20
+
+Herb --
+ I'm sorry to say that MotU does not offer the FX80 drivers.  You need
+more than just SCONFIG-ing; you'll have to write a printer driver for
+inclusion in CRAYON.  The current Crayon doesn't understand how to
+microspace on the FX-80, which is necessary if you want to place a PS
+character so that its right edge is at the right margin of justified
+text.  (BTW, you'd be surprised at how many people don't understand the
+previous sentence and what it really means.  Took me about a minute to
+see the obvious...)  If you don't care about justification, go ahead and
+enter the width table (I can supply you with that, or you can figure it
+out pretty easily) and change the init string to put the FX-80 in PS
+mode.  Given the width table, Scribble is able to do filling OK with
+@Style(Justification=No).  As I recall, Crayon does do microfeeding on
+Epsons, but not microspacing.
+15-Nov-83 19:22:09-MST,591;000000000000
+Return-Path: <LIN@MIT-ML>
+Received: from MIT-ML by SIMTEL20.ARPA with TCP; Tue 15 Nov 83 19:21:49-MST
+Date: 15 November 1983 21:24 EST
+From: Herb Lin <LIN @ MIT-ML>
+Subject:  Scribble FX80 driver
+To: Hess.Unicorn @ MIT-MULTICS
+cc: amethyst-users @ SIMTEL20
+In-reply-to: Msg of 15 Nov 1983 21:09 est from Hess.Unicorn at MIT-MULTICS
+
+thanks.  What I really need is the micro-feed part (actually, all I
+want to be ableto do is to do half-spacing for sub/superscripts).
+Still, if it is easy for you to contribute the width table, I wouldn't
+mind.  maybe you can post it?
+
+tnx.
+
+15-Nov-83 19:29:54-MST,1263;000000000000
+Return-Path: <Hess.Unicorn@MIT-MULTICS.ARPA>
+Received: from MIT-MULTICS.ARPA by SIMTEL20.ARPA with TCP; Tue 15 Nov 83 19:29:36-MST
+Date:  15 November 1983 21:28 est
+From:  Hess.Unicorn at MIT-MULTICS
+Subject:  Re: Scribble FX80 driver
+To:  Herb Lin <LIN at MIT-ML>
+cc:  amethyst-users at SIMTEL20
+In-Reply-To:  Message of 15 November 1983 21:24 est from Herb Lin
+
+I will post the width table.  Oh, dear.  I seem to have said that the
+Crayon driver for Epsons did microfeeding.  Oops.  I thought it did.
+Well, just in case it doesn't, or you need to know this hack for another
+printer, here goes:
+
+To get half-line-feeding on a hackish basis, just do three things: (1)
+Insert a sequence into the Init string which sets the default line feed
+distance on the Epson printer to 1/2 line.  (2) Put an @Style[spacing 2
+lines] into your .MSS file (3) Use an @verbatim whenever you need
+superscripts.
+
+Alas, this isn't universally useful, e.g. it doesn't help out footnotes
+or anything, and can cause other grief.  But a math professor told me
+that was how he did equation formatting with it, so he could do
+on-screen equation layout and end up with super/sub equations without
+interspersing a lot of @+/@- commands into his neatly-lined-up text.
+15-Nov-83 19:42:37-MST,772;000000000000
+Return-Path: <LIN@MIT-ML>
+Received: from MIT-ML by SIMTEL20.ARPA with TCP; Tue 15 Nov 83 19:42:19-MST
+Date: 15 November 1983 21:45 EST
+From: Herb Lin <LIN @ MIT-ML>
+Subject:  Scribble FX80 driver
+To: Hess.Unicorn @ MIT-MULTICS
+cc: amethyst-users @ SIMTEL20
+
+
+    I will post the width table.  Oh, dear.  I seem to have said that the
+    Crayon driver for Epsons did microfeeding.  Oops.  I thought it did.
+
+You didn't. your msg talked about microspacing.  So i take it that
+CRAYON doesn't recognize commands for half space (which I presume is
+what @+ and @- use)?  would it be possible to use verbatim mode and
+set the style parameter to say @style(spacing n micas) for n = 1/2
+line and put the style command just before the verbatim command?
+
+
+tnx.
+
+18-Nov-83 10:21:35-MST,544;000000000000
+Return-Path: <Hess.Unicorn@MIT-MULTICS.ARPA>
+Received: from MIT-MULTICS.ARPA by SIMTEL20.ARPA with TCP; Fri 18 Nov 83 10:21:14-MST
+Date:  17 November 1983 22:52 est
+From:  Hess.Unicorn at MIT-MULTICS
+Subject:  Re: Scribble FX80 driver
+To:  Herb Lin <LIN at MIT-ML>
+cc:  amethyst-users at SIMTEL20, bnh at MIT-MULTICS
+In-Reply-To:  Message of 15 November 1983 21:45 est from Herb Lin
+
+Yeah.  So I didn't.  So this is a hobby, not a company customer support
+business.  I do this because I enjoy it, most of the time.  I'll get to
+it.
+18-Nov-83 10:24:58-MST,886;000000000000
+Return-Path: <LIN@MIT-ML>
+Received: from MIT-ML by SIMTEL20.ARPA with TCP; Fri 18 Nov 83 10:24:39-MST
+Date: 18 November 1983 00:46 EST
+From: Herb Lin <LIN @ MIT-ML>
+Subject:  Scribble FX80 driver
+To: Hess.Unicorn @ MIT-MULTICS
+cc: bnh @ MIT-MULTICS, amethyst-users @ SIMTEL20
+
+Mea culpa!!  I'm really sorry about the obnoxious overtones in my last
+message to you.  In re-reading my message, I can see how it might have
+sounded crass.  To clarify (I hope), your message to which I responded
+said that you thought you had mentioned microfeeding; my "You didn't"
+was referring to that part of your message, not to your posting the
+width table.
+
+I for one would like you to know that I very much appreciate the time
+you take in making your comments, and that if I gave you the
+impression that I treat you like a customer service rep, I am truly
+apologetic.
+
+herb lin
+
+21-Nov-83 08:12:56-MST,1438;000000000000
+Return-Path: <Hess.Unicorn@MIT-MULTICS.ARPA>
+Received: from MIT-MULTICS.ARPA by SIMTEL20.ARPA with TCP; Mon 21 Nov 83 08:12:04-MST
+Date:  19 November 1983 00:55 est
+From:  Hess.Unicorn at MIT-MULTICS
+Subject:  Dired
+To:  madler at MIT-MC
+cc:  amethyst-users at SIMTEL20
+In-Reply-To:  Your message of 8/26/83 to AMETHYST-USERS @ MIT-MC
+
+Took a long time to answer, but...
+
+The wizard of Mince tells me that yes, if you set the DMA address to
+something random, it will be valid when Mince attempts to do I/O.  And
+that you have chosen the only way to get Dired to work.  However, he
+says "if you must" to your question about setting the modified flag to
+false after writing to the buffer.  Being a purist, he feels that the
+changes to the directory should not be made until you exit from Dired
+mode, which should delete the buffer so that the question about modified
+buffers on exiting Mince would never appear.  (Of course, when
+confronted with the fact that it's a drag keeping around the information
+until Dired is exited and that The FinalWord doesn't even go to such
+great lengths, he relented, but only in view that there is so little
+free memory for storing linked lists of files to rename/delete or code
+for reparsing the buffer to catch all the deleted files upon exiting
+Dired.)
+
+I hope that somebody said that they were interested in the routine;
+someone once asked for such a thing about a year ago.
+21-Nov-83 08:28:34-MST,396;000000000000
+Return-Path: <DEVON@MIT-MC>
+Received: from MIT-MC by SIMTEL20.ARPA with TCP; Mon 21 Nov 83 08:28:16-MST
+Date: 21 November 1983 10:27 EST
+From: Devon S. McCullough <DEVON @ MIT-MC>
+Subject:  Dired
+To: Hess.Unicorn @ MIT-MULTICS
+cc: MADLER @ MIT-MC, amethyst-users @ SIMTEL20
+In-reply-to: Msg of 19 Nov 1983 00:55 est from Hess.Unicorn at MIT-MULTICS
+
+I certainly want DIRED for Mince.
+
+21-Nov-83 08:36:08-MST,785;000000000000
+Return-Path: <SEILER@MIT-XX.ARPA>
+Received: from MIT-XX.ARPA by SIMTEL20.ARPA with TCP; Mon 21 Nov 83 08:35:53-MST
+Date: Sat 19 Nov 83 18:01:35-EST
+From: Larry Seiler <Seiler@MIT-XX.ARPA>
+Subject: Restarting Mince after a crash
+To: amethyst-users@SIMTEL20.ARPA
+cc: Seiler@MIT-XX.ARPA
+
+After carefully reading the manuals, I conclude that one of the 
+important advantages of FinalWord over Mince is that the former can 
+be restarted from the swap file, say if your machine dies or if you
+simply want to re-edit your last file without the delay of copying
+it into the swap file (some of us don't have hard disks - yet).
+Does anyone know of a way to restart Mince from the swap file?
+Could Mark of the Unicorn be convinced to offer this feature?
+	Thanks,
+	Larry
+-------
+21-Nov-83 08:41:45-MST,788;000000000000
+Return-Path: <@MIT-MC:SEILER@MIT-XX.ARPA>
+Received: from MIT-MC by SIMTEL20.ARPA with TCP; Mon 21 Nov 83 08:41:23-MST
+Date: Sun 20 Nov 83 21:16:36-EST
+From: Larry Seiler <Seiler@MIT-XX.ARPA>
+Subject: Restarting Mince after a crash
+To: amethyst-users@MIT-MC.ARPA
+cc: Seiler@MIT-XX.ARPA
+
+After carefully reading the manuals, I conclude that one of the 
+important advantages of FinalWord over Mince is that the former can 
+be restarted from the swap file, say if your machine dies or if you
+simply want to re-edit your last file without the delay of copying
+it into the swap file (some of us don't have hard disks - yet).
+Does anyone know of a way to restart Mince from the swap file?
+Could Mark of the Unicorn be convinced to offer this feature?
+	Thanks,
+	Larry
+-------
+
+25-Nov-83 08:40:32-MST,1071;000000000000
+Return-Path: <Hess.Unicorn@MIT-MULTICS.ARPA>
+Received: from MIT-MULTICS.ARPA by SIMTEL20.ARPA with TCP; Fri 25 Nov 83 08:39:52-MST
+Redistributed-Date:  24 November 1983 14:36 est
+Redistributed-By:  Hess.Unicorn at MIT-MULTICS
+Redistributed-To:  amethyst-users at SIMTEL20
+Return-Path: <@MIT-MULTICS.ARPA,@UCB-VAX.ARPA:ihnp4!utcsrgv!utai!mts@Berkeley>
+Received: from UCB-VAX.ARPA by MIT-MULTICS.ARPA TCP; 23-Nov-1983 23:58:46-est
+Received: by UCB-VAX.ARPA (4.21/4.15)
+          id AA04060; Wed, 23 Nov 83 20:57:22 pst
+From: ihnp4!utcsrgv!utai!mts@Berkeley
+Date: 23 Nov 83 21:36:47 CST (Wed)
+Subject: Dired for Mince
+Message-Id: <8311240336.AA11379@ihnp4.att.UUCP>
+Received: by ihnp4.att.UUCP (sendmail 3.320/12-Nov-83)
+          id AA11379; 23 Nov 83 21:36:47 CST (Wed)
+To: Hess.Unicorn@MIT-MULTICS.ARPA
+
+How do I get more information (source, etc) for
+Dired for Mince.
+Thanks.
+
+
+
+ Martin Stanley
+ Department of Computer Science
+ University of Toronto
+ Toronto, ON
+ M5S 1A4
+
+ {cornell,decvax,ihnp4,linus,utzoo,uw-beaver}!utcsrgv!utai!mts
+
+
+28-Nov-83 08:38:00-MST,2173;000000000000
+Return-Path: <@MIT-MULTICS.ARPA:Hess@MIT-MULTICS>
+Received: from MIT-MULTICS.ARPA by SIMTEL20.ARPA with TCP; Mon 28 Nov 83 08:37:00-MST
+Date:     27 November 1983 0940-est
+From:     Brian N. Hess    <Hess @ MIT-MULTICS>
+Subject:  Epson FX PS width table
+To:       Amethyst-Users @ SIMTEL20
+
+
+Epson FX built-in settings:
+
+SP        254       0         254       @         254       P         254       `         107       p         234
+!         107       1         169       A         254       Q         254       a         254       q         234
+"         169       2         254       B         254       R         254       b         234       r         234
+#         254       3         254       C         254       S         254       c         234       s         254
+$         254       4         254       D         254       T         254       d         234       t         234
+%         254       5         254       E         254       U         254       e         254       u         254
+&         254       6         254       F         254       V         254       f         212       v         254
+'         107       7         254       G         254       W         254       g         234       w         254
+(         127       8         254       H         254       X         212       h         234       x         212
+)         127       9         254       I         169       Y         254       i         169       y         254
+*         254       :         127       J         234       Z         212       j         185       z         212
++         254       ;         127       K         254       [         169       k         212       {         185
+,         147       <         212       L         254       \         212       l         169       |         107
+-         254       =         254       M         254       ]         169       m         254       }         185
+.         127       >         212       N         254       ^         254       n         234       ~         254
+/         212       ?         254       O         254       _         254       o         254       ^?        254
+
+28-Nov-83 08:39:51-MST,3010;000000000000
+Return-Path: <MADLER@MIT-ML>
+Received: from MIT-ML by SIMTEL20.ARPA with TCP; Mon 28 Nov 83 08:38:45-MST
+Date: 25 November 1983 20:24 EST
+From: Michael C. Adler <MADLER @ MIT-ML>
+Subject:  Dired for Mince
+To: ihnp4!utcsrgv!utai!mts @ UCB-VAX
+cc: Hess.Unicorn @ MIT-MULTICS, amethyst-users @ SIMTEL20
+
+Thanks to Brian Hess for answering my questions.  A while ago, I asked
+about interest in Dired routines for mince.  I wrote a minimal routine
+that reads the directory into a buffer and does no more.  I didn't have
+the time or interest in writing a more complete Dired (I'm also not
+convinced its worth the memory either).  The following is the routine I
+wrote.  If anyone decides to modify it, please tell me.
+
+/* DIRED.C - A directory reader.  This really shouldn't be called dired,
+since it just reads in a directory buffer.  I suppose it can be viewed
+as the beginning of a dired mode.
+
+If you bind this routine to ^X^D it will read in the directory of the
+current disk.  Binding to anything else will cause it to prompt for disk.
+I have it bound to ^X^D and ^XD.
+
+-Michael Adler (MADLER@MIT-ML) */
+
+#include "mince.gbl"
+
+MDired()		/* Read directory to buffer */
+{
+	int cnt, done, a;
+	char *fcb, *dma, drive;
+
+	arg=0;
+	if ((cmnd & 0x7F) == 4) {
+		*namearg = (bdos(25,0) & 0xFF) + 'a';
+		}
+	else {
+		if (!GetArg("Drive <CR>: ",CR,namearg,BUFNAMMAX)) return;
+		LowCase(namearg);
+		if (*namearg < 'a' || *namearg > 'n') {
+			error("Illegal Drive");
+			return;
+			}
+		}
+	if ((cnt=CFindBuff("-dired"))>0) {
+		BSwitchTo(buffs[cnt].bbuff);
+		BToStart();
+		BMrkToPnt(mark);
+		BToEnd();
+		BDelToMrk(mark);
+		}
+	else {
+		if ((cnt=CMakeBuff("-dired","DIR.DIR"))<0) return;
+		*(buffs[cnt].bmodes)='\0';
+		strcpy(buffs[cnt].fname,"DIR.DIR");
+		BSwitchTo(buffs[cnt].bbuff);
+		}
+
+	fcb = "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0";
+       	dma = "01234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567";
+					/* 128 bytes */
+	*fcb = *namearg - '`';		/* Disk drive */
+	drive = *namearg & 0x0DF;
+	strcpy(&fcb[1], "???????????");
+	done = 0;
+	CSwitchTo(cnt);
+	bdos(0x1A, dma);		/* Set the dma address */
+	a = 0x0FF & bdos(0x11, fcb);		/* Search for first */
+	bdos(0x1A, 0x80);		/* DMA back to 80H for swap file */
+	while (a != 0x0FF) {
+		if ((dma[(a <<= 5)] != 0x0E5) && !(dma[a+10] & 0x80)) {
+			if (done++ & 3) {
+				BInsert(' '); BInsert(' ');
+				BInsert('|');
+				BInsert(' '); BInsert(' ');
+				}
+			else {
+				BInsert(NL); BInsert(drive);
+				BInsert(':'); BInsert(' ');
+				}
+			FNameIns(&dma[a+1]);
+			}
+		bdos(0x1A, dma);		/* Set the dma address */
+		a = 0x0FF & bdos(0x12, fcb);
+		bdos(0x1A, 0x80);	/* DMA back to 80H for swap file */
+		}
+	BToStart();
+	BMrkToPnt(mark);
+	ScrnRange();
+	}
+
+FNameIns(s)
+	char s[10];
+{
+	int i;
+
+	for (i=0; i<11; ) {
+		BInsert(s[i] & 0x7F);
+		if (i++ == 7) BInsert('.');
+		}
+	}
+
+

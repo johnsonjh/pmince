@@ -1,0 +1,22 @@
+20-Jul-84 18:34:57-MDT,681;000000000000
+Mail-From: WANCHO created at 20-Jul-84 18:34:23
+Date: 20 Jul 1984  18:34 MDT (Fri)
+Message-ID: <WANCHO.12032940142.BABYL@SIMTEL20>
+From: "Frank J. Wancho" <WANCHO@SIMTEL20>
+To:   AMETHYST-USERS@SIMTEL20
+Subject: Archives Moved
+
+In order to free up a considerable amount of space on our MICRO:
+device, all the mailing-list archives formerly kept in
+MICRO:<CPM.ARCHIVES> have been moved to PS:<MAIL.ARCHIVES>.
+
+Here are the particulars for AMETHYST-USERS at this moment:
+
+Filename			Type	 Bytes	 Sectors     CRC
+
+Directory PS:<MAIL.ARCHIVES>
+
+AMETHYST.ARCHIV.31013		ASCII	 44105  345 = 159H  3D81H
+AMETHYST-ARCHIV.TXT.1		ASCII	 51857  406 = 196H  9D1EH
+
+--Frank

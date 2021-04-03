@@ -1,0 +1,68 @@
+ 1-Apr-82 20:41:30,770;000000000000
+From: GYRO@MIT-AI
+Date: 04/01/82 20:41:30
+Re:  Mince on the Videx
+To: GAI at MIT-AI
+CC: AMETHYST-USERS at MIT-AI
+
+I hope someone with an Apple will reply to your message, but in case
+no one does, here's what I know:
+
+I don't think there are any "hidden incompatibilities" with either the
+SOROC or the ADM definition.  The chances of there being any that were
+not found by the "test terminal" routine in Config are quite small.
+
+You can see what the sequences are by selecting the "edit definitions"
+entry in the Config main menu.
+
+The only possible source of an efficiency difference is if one
+terminal provides built-in clear-to-end-of-line, which will be a
+little faster than letting Mince do its own clearing by drawing
+spaces.
+
+-- Scott Layson
+ 3-Apr-82 15:08:17,1245;000000000000
+From: GAI@MIT-AI
+Date: 04/03/82 15:08:17
+Re: Disabling ctrl-A and ctrl-K on Videoterm 80 col. board
+To: AMETHYST-USERS at MIT-AI
+CC: GAI at MIT-AI
+
+  Now that I have a keyboard enhancer to add to my Apple cpm system
+I find it a great inconvenience that the Videx videoterm 80 col.
+board swallows ctrl-A and ctrl-K characters (especially since these
+are 2 of my favorite commands in Mince).
+  I called Videx and their only suggestion was to modify my
+Videoterm Firmware (supposedly they are sending me the description
+of how to do that). This seems like the cleanest solution, but it
+is non-trivial for me to implement since I don't know the first
+thing about writing proms, but it might be fun to learn. Does anyone
+have a device for writing 2708 eproms that I might obtain access to
+(I'm in central Mass. but make trips into Boston periodically)?
+Is this the kind of thing you can get a dealer to do for you?
+  What alternatives are there for solving the ctrl-A/ctrl-K problem?
+In CPM is there some way to separate input and output functions so
+that output goes to the 80 column board but input bypasses it (going
+directly from Keyboard enhancer to CPM)?? 
+  Any suggestions or comments greatly appreciated,
+      Glenn
+12-Apr-82 17:09:00,401;000000000000
+Date: Monday, 12 Apr 1982 16:09-PST
+To: AMETHYST-USERS at MIT-MC
+Subject: Users' group info
+From: bridger at RAND-UNIX
+Message-ID: <245.387504595@RAND-UNIX>
+
+	Where is archived information on mince & scribble modifications
+to be found?  I'm in search of experience with adding basic macro capabilities
+A letter to the Texas users' group address has brought no reply.
+			bridger at RAND-UNIX
+18-Apr-82 16:07:05,169;000000000000
+From: AK@MIT-AI
+Date: 04/18/82 16:07:05
+To: AMETHYST-USERS at MIT-AI
+
+please add me to the list.
+i am looking in general for mc68000 software.
+thanks.
+	-andrew-

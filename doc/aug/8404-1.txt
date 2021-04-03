@@ -1,0 +1,29 @@
+23-Apr-84 05:48:49-MST,839;000000000000
+Mail-From: WANCHO created at 23-Apr-84 05:48:31
+Date: Sunday, 22 April 1984  20:41-MST
+Message-ID: <WANCHO.12009742971.BABYL@SIMTEL20>
+Sender: "George R. Cross" <cross%lsu.csnet@csnet-relay.arpa>
+From: "George R. Cross" <cross%lsu.csnet@csnet-relay.arpa>
+To: AMETHYST-USERS-REQUEST@simtel20.arpa
+Subject:   getting mince
+ReSent-From: WANCHO@SIMTEL20
+ReSent-To: AMETHYST-USERS
+ReSent-Date: Mon 23 Apr 1984 05:48-MST
+
+I am interested in the mince/scribble software for the IBM-PC.   I need
+to know :
+
+     1.If it is available for the IBM-PC under PC-DOS.
+
+     2.the approximate cost.
+
+     3.a contact for obtaining a copy.
+
+         Thanks,
+
+        George Cross
+        Department of Computer Science
+        Louisiana State University
+        Baton Rouge, LA  70803
+
+        CSNET:   <cross.lsu@csnet-relay>

@@ -1,0 +1,238 @@
+ 8-Apr-85 18:32:59-MST,383;000000000000
+Return-Path: <LIN@MIT-MC>
+Received: from MIT-MC by SIMTEL20.ARPA with TCP; Mon 8 Apr 85 18:32:43-MST
+Date: Mon, 8 Apr 85 20:02:11 EST
+From: Herb Lin <LIN@MIT-MC>
+Subject:  question out of curiosity
+To: AMETHYST-USERS@MIT-MC
+cc: LIN@MIT-MC
+Message-ID: <[MIT-MC].447566.850408203250.LIN>
+
+anyone know how many source statement make up MINCE?
+
+approximiate size will do..
+
+10-Apr-85 23:04:28-MST,853;000000000000
+Return-Path: <@MIT-MC:uucp@MIT-CCC>
+Received: from MIT-MC by SIMTEL20.ARPA with TCP; Wed 10 Apr 85 23:04:12-MST
+Received: from MIT-CCC by MIT-MC via Chaosnet; 10 APR 85  21:41:07 EST
+Date: 10 Apr 1985 21:36:15-EST
+From: uucp at MIT-CCC
+
+From jmturn@LMI-CAPRICORN Wed Apr 10 17:06:34 1985 remote from LMI-CAPRICORN
+Received: from LMI-EARNEST by LMI-LAMBDA-3 with CHAOS-MAIL; Wed 10-Apr-1985 16:29:11-EST
+Date: Wednesday, 10 April 1985, 17:10-EST
+From: James M Turner <jmturn at LMI-CAPRICORN>
+Subject: question out of curiosity
+To: mitccc!LIN%MIT-MC at LMI-CAPRICORN
+CC: mitccc!AMETHYST-USERS%MIT-MC at LMI-CAPRICORN
+In-reply-to: <[MIT-MC].447566.850408203250.LIN>
+Message-ID: <[LMI-EARNEST].4/10/85 17:10:17.JMTurn>
+
+The sources for MINCE run 320 VMS blocks, which is about 160K bytes.
+No idea what that is in lines.
+
+					James
+
+
+22-Apr-85 08:05:44-MST,1382;000000000000
+Return-Path: <@MIT-MC:Hess.Unicorn@MIT-MULTICS.ARPA>
+Received: from MIT-MC by SIMTEL20.ARPA with TCP; Mon 22 Apr 85 08:05:28-MST
+Received: from MIT-MULTICS.ARPA by MIT-MC.ARPA; 22 APR 85 10:05:16 EST
+Posted-Date:  22 Apr 85 10:00 EST
+Date:  Mon, 22 Apr 85 09:59 EST
+From:  Hess@MIT-MULTICS.ARPA
+Subject:  MINCE program size
+To:  amethyst-users@MIT-MC.ARPA
+Message-ID:  <850422145902.782947@MIT-MULTICS.ARPA>
+
+[Here's a word count from the IBM PC version.  (Note: Your mileage may vary.)]
+
+% cd /u3/M/IBMDIST
+% ls
+READ.ME         bindings.c      comm1.c         comm2.c         comm3.c
+config.gbl      conv.com        mc.asm          mc.bat          mc.obj
+mcc.bat         mconfig         mconfig.c       mince           mince.c
+mince.gbl       mlib.asm        mlib.lib        support.c       term.c
+util.c          vbuff1.c        vbuff2.c
+% wc *.c *.gbl
+    226   1085    7822 bindings.c
+    371    923    6840 comm1.c
+    325    774    6013 comm2.c
+    388   1021    8501 comm3.c
+    597   1802   12209 mconfig.c
+    356   1017    8371 mince.c
+    658   1715   13167 support.c
+    361   1264    7989 term.c
+    188    631    4413 util.c
+    466   1094   11020 vbuff1.c
+    509   1167   10542 vbuff2.c
+     38    148    1071 config.gbl
+    194    753    4998 mince.gbl
+   4677  13394  102956 total
+%
+[ lines  words   chars file name]
+[--BNH]
+
+22-Apr-85 13:06:35-MST,2402;000000000000
+Return-Path: <@MIT-MC:cybvax0!cci-bdc!motu-11!bnh@MIT-EDDIE>
+Received: from MIT-MC by SIMTEL20.ARPA with TCP; Mon 22 Apr 85 13:06:12-MST
+Received: from MIT-EDDIE by MIT-MC via Chaosnet; 22 APR 85  15:05:05 EST
+Received: by mit-eddie.ARPA (4.12/4.8)  id AA10384; Mon, 22 Apr 85 15:02:12 est
+From: cybvax0!cci-bdc!motu-11!bnh@mit-eddie
+Received: by cybvax0.UUCP (4.12/1.0)
+	id AA01690; Mon, 22 Apr 85 15:02:51 est
+Received: by cci-bdc.UUCP (4.12/1.0)
+	id AA00348; Mon, 22 Apr 85 13:13:10 est
+Date: Mon, 22 Apr 85 13:13:10 est
+Message-Id: <8504221813.AA00348@cci-bdc.UUCP>
+Reply-To: 	Hess@MIT-Multics.ARPA
+Apparently-To: cybvax0!mit-eddie!amethyst-users@mit-mc.ARPA
+
+Several people have asked about the possibility of Scribble being
+released into the public domain, and I have recently received
+more than one call from someone asking if they may duplicate
+their copy of Scribble for a friend.  Scribble is NOT public
+property, regardless of the fact that it is not being sold by
+Mark of the Unicorn any longer.  The code is still covered by
+copyright, the name is a registered trade mark, many of the trade
+secrets and techniques embodied in Scribble are still in use, and
+your single-CPU licenses are still in force and effect.
+
+So much for the fascist paragraph.  If you want to get a text
+formatter like Scribble for a friend, by all means consider The
+FinalWord.  It is a great improvement, and is well supported (in
+my admittedly biased opinion; I work for MotU).  If you really
+want to have Scribble as a teaching tool or whatever, to hack on
+the partial source code, most ARPAnet- and university-attached
+people can probably purchase it from the CMU computer store,
+which has some sort of continuing redistribution agreement with
+MotU!  There are probably other places to get one from (like
+perhaps Softeam in California?), but CMU is almost certainly the
+cheapest.  Alas, they must do their own support, and I have been
+told that it's as difficult to get source code help from them as
+it is from MotU.
+
+In answer to the other question I get asked from time to time,
+MotU has no plans to discontinue selling MINCE in the face of
+competitors like Gosling Emacs and Epsilon.  My personal belief
+is that the educational value of the product is important enough
+to keep it around for people to hack on for a long time to come.
+
+Brian (Hess@MIT-Multics)
+
+
+23-Apr-85 14:02:57-MST,630;000000000000
+Return-Path: <@MIT-MC:Hess.Unicorn@MIT-MULTICS.ARPA>
+Received: from MIT-MC by SIMTEL20.ARPA with TCP; Tue 23 Apr 85 14:02:29-MST
+Received: from MIT-MULTICS.ARPA by MIT-MC.ARPA; 23 APR 85 15:54:40 EST
+Date:  Mon, 22 Apr 85 20:47 EST
+From:  Hess@MIT-MULTICS.ARPA
+Subject:  Oops...
+To:  amethyst-users@MIT-MC.ARPA
+Message-ID:  <850423014711.113316@MIT-MULTICS.ARPA>
+
+I forgot to tell you all that MINCE is up and running on the Atari ST
+series under Gem DOS.  We have tested it on the 520 but not the smaller
+one (130?)  yet.  Usual price, but source won't be supplied until the
+compiler/library/ROMs settle.
+
+Brian
+
+24-Apr-85 08:05:31-MST,1199;000000000000
+Return-Path: <@MIT-MC:Hess.Unicorn@MIT-MULTICS.ARPA>
+Received: from MIT-MC by SIMTEL20.ARPA with TCP; Wed 24 Apr 85 08:04:56-MST
+Received: from MIT-MULTICS.ARPA by MIT-MC.ARPA; 24 APR 85 09:44:51 EST
+Date:  Wed, 24 Apr 85 08:38 EST
+From:  Hess@MIT-MULTICS.ARPA
+Subject:  Oops again!
+To:  amethyst-users@MIT-MC.ARPA
+Message-ID:  <850424133805.669185@MIT-MULTICS.ARPA>
+
+Someone at the CMU Comp.Ctr. reminded me:
+1) they aren't really allowed to sell Scribble outside the CMU community
+2) (more importantly) they don't distribute the partial source.
+
+I'm sorry to have mentioned it, because, if you don't want the product for
+educational purposes of hacking on C program source code (or writing your own
+very customized printer driver), then there's no reason to choose Scribble
+over The FinalWord formatter.  Mea culpa.
+
+I just called Softeam and got an order-taker who was "not sure" about the
+availability of Scribble for either CP/M or IBM DOS, but offered to take the
+order and ship it if they had it.  *sigh* Of course I don't want another one,
+so I said "no" so as not to pay for getting it.  I hope they call me back
+and tell me whether or not it's available.
+
+Brian
+
+30-Apr-85 02:46:09-MDT,1684;000000000000
+Mail-From: WANCHO created at 30-Apr-85 02:45:55
+Date: Tue, 30 Apr 1985  02:45 MDT
+Message-ID: <WANCHO.12107216376.BABYL@SIMTEL20.ARPA>
+From: "Frank J. Wancho" <WANCHO@SIMTEL20.ARPA>
+To:   AMETHYST-USERS@SIMTEL20.ARPA
+Subject: FW rebindings ~= EMACS/MINCE
+
+While SIMTEL20 was down this past weekend, I managed to get an 8"
+controller to half-work (read!) on my N*, and copied my FinalWord 1.15
+update disks onto N* format.
+
+After wading through CONFIG and verifying that everything worked
+(sorta - IDSPS is another story), I proceeded to tackle the rebinding
+of the keys to more closely approximate EMACS/MINCE.  Now, I didn't
+rebind *every* action, and I wish I could have rebound some to action
+combinations, but the result is in MICRO:<CPM.AMETHYST>FW-EMACS.DEF
+for those of you who want to have a place to start.  There is a handy
+menu option in CONFIG that lets you read in previously created
+bindings, such as this one.  The file is binary and contains only
+three sectors.
+
+Here are the gotchas: ^Z is bound to Pre Special and they ONLY way to
+unbind it is by the range of keys menu option, or DDT.  I still
+haven't figured out what Pre Special is supposed to do.  I bound ^G to
+abort, but ^Z seems to still be hardwired in some places, such as
+clearing the error message display before you can go on...
+
+In any event, if you pick up the file, be sure to write out your
+current bindings before reading this one in so you can fall back if
+you don't like the way I did it.
+
+I'll tell you one thing: it *sure* is nice to drop out of FW, do
+something else, then come back and pick up where you left off... just
+like certain mainframes...
+
+--Frank
+30-Apr-85 21:12:52-MDT,1628;000000000000
+Return-Path: <@MIT-MC:Hess.Unicorn@MIT-MULTICS.ARPA>
+Received: from MIT-MC by SIMTEL20.ARPA with TCP; Tue 30 Apr 85 21:12:16-MDT
+Received: from MIT-MULTICS.ARPA by MIT-MC.ARPA; 30 APR 85 23:06:41 EDT
+Date:  Tue, 30 Apr 85 23:03 EDT
+From:  Hess@MIT-MULTICS.ARPA
+Subject:  FW rebindings ~= EMACS/MINCE
+To:  Wancho@SIMTEL20.ARPA
+cc:  amethyst-users@MIT-MC.ARPA
+Message-ID:  <850501030341.579675@MIT-MULTICS.ARPA>
+
+Frank --
+
+You cannot get around the ^Z to get out of error messages in the current
+version.  Prefix special is designed for use only with DEC Rainbow and
+Televideo terminals, where the last character of an escape sequence
+cannot be used to make a choice in a command, because the last character
+is always the same.  But the preceding characters are ESC-[-decimal
+number, and the decimal number is always different.  Prefix Special
+parses that decimal number which immediately precedes the last character
+of the sequence and pretends that that's actually an ASCII character
+which followed a Prefix Two instead.  In other words, Prefix Special is
+another way of getting Prefix Two, with some weird keyboards.  As you
+noted, the key binding file is only 3 sectors: the first 128 bytes are
+control and standard ASCII characters, the second 128 bytes are Prefix
+One + the 128, and the third 128 bytes are Prefix Two + the 128.  Prefix
+Special overlays the third group.  (BTW, you must have called the
+customer support line sometime recently because they asked me the same
+question.  Expect to be called back sometime soon...) I don't know
+how/why your ^Z got set to Prefix Special.
+
+Brian
+

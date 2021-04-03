@@ -1,0 +1,71 @@
+ 2-Sep-83 17:23:00,421;000000000000
+Date: 2 September 1983 17:23 EDT
+From: Herb Lin <LIN @ MIT-MC>
+Subject:    [LIN: making new MINCE commands?]
+To: AMETHYST-USERS @ MIT-MC
+
+
+actually, i'm not thinking of a keyboard macro.  i'm just thinking of
+say adding a command , e.g., c-I, which will simply be the sequence 
+C-U C-U C-F.  the question is, how can i modify the source that i do have
+to add this command.  (as i said, it was a dumb question).
+10-Sep-83 23:04:10,1664;000000000000
+Return-path: <info-cpm-request@BRL-VGR>
+Received: from BRL-VGR by MIT-XX; Sat 17 Sep 83 00:49:22-EDT
+Received: From Brl.ARPA by BRL-VGR via smtp;  16 Sep 83 23:11 EDT
+Received: From Sri-Unix.ARPA by BRL via smtp;  16 Sep 83 23:04 EDT
+Received: from Usenet.uucp by SRI-Unix.uucp with rs232; 16 Sep 83 4:01-PDT
+Date: 10 Sep 83 22:04:10-PDT (Sat)
+To: info-cpm@brl
+From: ihnp4!houxm!mel@ucb-vax
+Subject: How do you recover a MINCE file ??
+Article-I.D.: houxm.538
+Remailed-date: 17 Sep 1983 1100-EDT
+Remailed-from: Larry Seiler <Seiler@MIT-XX>
+Remailed-to: amethyst-users@MIT-MC
+
+Every so often MINCE gets a BIOS I/O error and drops back to CP/M, and I lose
+whatever had been typed (very painful).  The information is on the swap file,
+but the instructions don't tell how to get it back.  Is there a trick that
+will allow a restart with the text from the swap file?
+
+Or is there a modification that can be made with the source that comes with
+MINCE that will allow graceful recovery from I/O errors?  The problem is that
+the DEC Rainbow I use has a mechanical switch that senses the write protect
+slot and occasionally it tells lies (it is on a chincy tab of metal that
+catches on the slot as you pull out the disk and bends - a real bear to fix,
+so I don't until it lies all the time).  You MINCE along swapping nicely, then
+at the worst moment the BIOS thinks the disk is read only and you notice that
+the last few words you type is to a A> prompt, and a "BIOS Error, Disk A R/O"
+message showing.  I don't know why DEC doesn't know about LED's and photo
+diodes, or why they sense that damn switch continuously.
+   Mel Haas  ,  houxm!mel
+12-Sep-83 00:59:00,298;000000000000
+Date: 12 September 1983 00:59 EDT
+From: Herb Lin <LIN @ MIT-ML>
+Subject:  scribble changes
+To: amethyst-users @ MIT-MC
+cc: LIN @ MIT-ML
+
+anyone know how to patch CRAYON so that a ^-D will detach it while
+running under MPM 8-16?  (^-D is the standard control character for
+detach).
+
+tnx.
+13-Sep-83 11:11:00,458;000000000000
+Date: 13 Sep 1983 1011-PDT
+From: Lmtra at SRI-KL
+Subject: New User
+To:   AMETHYST-USERS at MIT-MC
+
+
+I've just started with MINCE and would like to be on AMETHYST bulletin 
+distribution.
+
+I would also like to define keys for my H/Z-89 so that it will be as close
+as possible to the EMACS keys that I have defined on my office H19.  Does 
+anyone have any hints or examples?  They would be helpful...
+
+Thanks,
+L. Traister (LMTRA@SRI-KL)
+-------

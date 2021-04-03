@@ -1,0 +1,13 @@
+18-Mar-84 12:10:34-MST,512;000000000000
+Return-Path: <@MIT-MC:MINSKY@MIT-OZ>
+Received: from MIT-MC by SIMTEL20.ARPA with TCP; Sun 18 Mar 84 12:10:22-MST
+Date: Sun, 18 Mar 1984  14:10 EST
+Message-ID: <MINSKY.12000375302.BABYL@MIT-OZ>
+From: MINSKY%MIT-OZ@MIT-MC.ARPA
+To:   Cliff Lasser <CAL%MIT-OZ@MIT-MC.ARPA>
+Cc:   Amethyst-Users@SIMTEL20.ARPA
+Subject: Mince keyboard macros
+In-reply-to: Msg of 13 Jan 1984  01:30-EST from Cliff Lasser <CAL%MIT-OZ at MIT-MC.ARPA>
+
+ I'd like to try your keyboard macros.  Can they just load in with CLINK?
+

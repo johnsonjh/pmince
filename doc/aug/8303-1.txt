@@ -1,0 +1,37 @@
+27-Mar-83 14:21:00,1846;000000000000
+Return-Path: <@MIT-MULTICS.ARPA:Hess@MIT-MULTICS>
+Date:     27 March 1983 1621-est
+From:     Brian N. Hess    <Hess.Unicorn @ MIT-MULTICS>
+Subject:  Mince, The FinalWord, WordStar, top bits, etc.
+To:       RG.JMTURN @ MIT-OZ, BHUBER @ USC-ECL, Boebert.SCOMP @ MIT-MULTICS,
+     amethyst-users @ MIT-MC
+
+Just thought I'd try to clear up confusion on what Mince & The FinalWord
+are looking for in a file:
+
+1) "Read Error or No EOF" almost never means that Mince&TFW truly got a
+read error.  It is always just complaining that there was no ^Z at the
+end of the file.  If you just type a command, the screen will be updated
+and your text should be intact.  The IBM version of TFW has also shown a
+propensity for stopping input at ^@'s too...  I believe that the editor
+can read them just fine, but some part of string input in formatter
+treats these NUL's as "end of a C string" and thus end of file.
+
+2) Why are you seeing ^M's?  Well, Mince&TFW expect ^M^J combinations in
+the file.  If there are just ^M's, Mince&TFW won't see that as a new
+line.  Also, a ~^J (a linefeed with its top bit on) is used to signify
+a new line in Mince&TFW, so if they read that character, you get a new
+line there.  The easiest way around this is to do a global replace of ^M
+with <NL>.
+
+3) If you're using TFW, don't bother turning off top bits using your own
+program or "PIP [Z]" -- just use the little-known (and mis-named)
+"Capitalization Menu" to clear highlighting on the entire buffer.
+
+4) ^@'s are the worst.  Mince&TFW can't replace them or search for them
+or anything.  All you can do is examine for them by hand or write a
+utility program to strip them away.  We ran into a lot of these when
+converting Easywriter files for TFW.
+
+                    Hope this is more helpful than obfuscatory,
+                    Brian

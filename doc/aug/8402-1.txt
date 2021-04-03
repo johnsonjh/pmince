@@ -1,0 +1,269 @@
+ 3-Feb-84 14:57:02-MST,411;000000000000
+Return-Path: <@MIT-MC:BEC.SHAPIN@USC-ECL.ARPA>
+Received: from MIT-MC by SIMTEL20.ARPA with TCP; Fri 3 Feb 84 14:56:50-MST
+Date:  3 Feb 1984 1348-PST
+From: Ted Shapin <BEC.SHAPIN@USC-ECL.ARPA>
+Subject: please add me
+To: amethyst-users@MIT-MC.ARPA
+Postal-address: Beckman Instruments, Inc.
+Postal-address: 2500 Harbor X-11, Fullerton, CA 92634
+Phone: (714)961-3393
+
+pls add me to your list.
+-------
+
+13-Feb-84 08:49:49-MST,957;000000000000
+Return-Path: <jww@cmu-cs-g>
+Received: from CMU-CS-G by SIMTEL20.ARPA with TCP; Mon 13 Feb 84 08:49:27-MST
+Date: Sunday, 12 February 1984 11:30:53 EST
+From: James.Wendorf@cmu-cs-g
+To: H19-People@mit-mc, Amethyst-Users@simtel20
+Subject: Amethyst System Requirements
+Message-ID: <1984.2.12.16.14.17.James.Wendorf@cmu-cs-g>
+
+I am considering purchasing Mince and Scribble to run on my H89.  I have a
+48K system with one internal 100K floppy and two external 200K floppies.
+Will these programs run reasonably on such a configuration?  In particular,
+how painful would it be to run Mince, i.e. is Mince very slow at swapping
+and keeping the screen updated?  Would increasing the RAM to 64K help much?
+Also, do you have any suggestions about the best place to purchase Mince and
+Scribble?  What is the best price available, both separately and as a
+package?  Finally, could I use C/80 to make modifications to the programs,
+or is BDS C essential?
+14-Feb-84 10:22:32-MST,837;000000000000
+Return-Path: <Hess.Unicorn@MIT-MULTICS.ARPA>
+Received: from MIT-MULTICS.ARPA by SIMTEL20.ARPA with TCP; Tue 14 Feb 84 10:22:19-MST
+Date:  Mon, 13 Feb 84 23:43 EST
+From:  Hess@MIT-MULTICS.ARPA
+Subject:  Re: Amethyst System Requirements
+To:  James.Wendorf@CMU-CS-G.ARPA
+cc:  amethyst-users@SIMTEL20.ARPA
+In-Reply-To:  Message of 12 Feb 84 11:30 EST from "James.Wendorf at CMU-CS-G"
+Message-ID:  <840214044350.410146@MIT-MULTICS.ARPA>
+
+Scribble is hopeless on 48K systems.  Mince is OK.  Mince alwyas does
+data swapping, so it'll be as slow as your floppies on files greater
+than about 16K.  It used to run in 32K, but grew a little.  Since you're
+at CMU, try asking the Comp[.Ctr.  people for high-bandwidth advice.
+They have a large license to distribute the stuff, although they might
+not support yourmachine internally.
+14-Feb-84 16:17:19-MST,1941;000000000000
+Return-Path: <milazzo@rice>
+Received: from RICE by SIMTEL20.ARPA with TCP; Tue 14 Feb 84 16:16:48-MST
+Received: by RICE (AA00185); Tue, 14 Feb 84 17:08:20 cst
+Received: by RICE-JANUS (AA06951); Tue, 14 Feb 84 16:27:46 cst
+Date:     Tue, 14 Feb 84 16:07:55 CST
+From: Paul Milazzo <milazzo@rice>
+Subject:  Re: Amethyst System Requirements
+To: James.Wendorf@cmu-cs-g
+Cc: Amethyst-Users@simtel20
+Message-Id: <1984.02.14.16.07.56.430.06819@Rice-Janus.rice>
+In-Reply-To: a message from James.Wendorf dated Sunday, 12 February 1984 11:30:53 EST
+
+I currently use Mince and Scribble on my H89, with 64k RAM and two 640k
+floppies (Tandon TM100-4).  I'm very happy with the arrangement,
+although swapping is sometimes very annoying.  On your system, I would
+strongly recommend expanding to 64k, or you'll find the system
+unuseable.  If you are using your 100k floppy as your `A' disk, you may
+also wish to patch Mince's default swap drive, since it looks for the
+swap file first on the current disk, then on the `A' disk.  A 100k
+floppy doesn't allow much of a swap file.
+
+If you plan to bind things to function keys, you'll have to run a BIOS
+with interrupt-driven console I/O (such as Heath 2.2.03 or later) and
+configure Mince to do BIOS input, otherwise you'll lose some of the
+characters.  I also recommend configuring for direct port output, since
+it is markedly faster.
+
+I can't help you much with price because it's been a long time since I
+got my copy.  You will have to use BDS `C' for your modifications,
+since only part of the distribution is in source form.  The remaining
+modules are only distributed as BDS .CRL (relocatable object) files.
+You must recompile to change key bindings, and since you're at CMU I
+suspect you'll want to change Mince's "MIT-like" bindings to
+"Gosling-like" bindings.
+
+				Paul G. Milazzo <milazzo@rice>
+				Dept. of Mathematical Sciences
+				Rice University, Houston, TX
+15-Feb-84 08:10:55-MST,1326;000000000000
+Return-Path: <PLK@MIT-MC>
+Received: from MIT-MC by SIMTEL20.ARPA with TCP; Wed 15 Feb 84 08:10:38-MST
+Date: 14 February 1984 21:56 EST
+From: Paul L. Kelley <PLK @ MIT-MC>
+Subject:  Amethyst System Requirements
+To: James.Wendorf @ CMU-CS-G
+cc: H19-PEOPLE @ MIT-MC, Amethyst-Users @ SIMTEL20
+In-reply-to: Msg of 12 Feb 1984 11:30:53 EST from James.Wendorf at cmu-cs-g
+
+
+	I use MINCE on the H89 and am very happy with the results. I
+run my CPU and terminal at 4 MHz. Speeding up the CPU had the biggest
+effect on speed by cutting the floppy I/O times considerably. I also
+use extended density (1K sectors) to cut down the floppy I/O time
+further.  Recently I added a hard disk, it's faster again by a factor
+of 2. I started out with a 30 second load time for MINCE and am now
+down to under two seconds.
+
+	I have never run 48K, because when I got my H89 kit I
+piggybacked the last 16K on one of the other banks. I used wirewrap
+sockets with all leads soldered on the lower 4116s except for the chip
+select line. You could probably just piggyback the chips directly,
+4116s are so cheap now that you can experiment with little cost if you
+make a mistake.
+
+	Currently I am contemplating switching to 4164s and running
+a ramdisk system. This should speed up the old H89 even further.
+
+	regards,
+		Paul
+
+21-Feb-84 08:41:40-MST,1155;000000000000
+Return-Path: <JURGEN@MIT-MC>
+Received: from MIT-MC by SIMTEL20.ARPA with TCP; Tue 21 Feb 84 08:41:22-MST
+Date: 20 February 1984 22:05-EST
+From: Jonathan David Callas <JURGEN @ MIT-MC>
+Subject: "Dead Keys" in Scribble
+To: AMETHYST-USERS @ MIT-MC
+cc: JURGEN @ MIT-MC
+
+I have been helping my mother-out-law, an ABD musicologist, prepare her
+dissertation with Mince & Scribble. I have been successful in modifying
+Mince for her requests, but I am having a problem with Scribble. This
+is with the use of "Dead keys," which are like the keys on a European
+typewriter. On these, it is a key that type a special character (like an
+accent grave (`)), but doesn't advance the carriage. This way, by typing,
+"`a" one gets an "a" with an accent grave. The question is, how to deliver
+this via Scribble. I envision it as an in-line environment that allows 
+overstriking. Sort of like typing "a@o(`)" to get the a-accent-grave.
+Has anyone done anything like this? Any mechanism that allows overstriking
+would probably suffice, or be enough of a help for me to modify Scribble.
+Even an in-line environment of any sort would help.
+
+	Thanks,
+	Jon
+
+22-Feb-84 10:29:11-MST,1384;000000000000
+Return-Path: <Hess.Unicorn@MIT-MULTICS.ARPA>
+Received: from MIT-MULTICS.ARPA by SIMTEL20.ARPA with TCP; Wed 22 Feb 84 10:28:30-MST
+Date:  Wed, 22 Feb 84 11:12 EST
+From:  Hess@MIT-MULTICS.ARPA
+Subject:  Re: "Dead Keys" in Scribble
+To:  Jonathan David Callas <JURGEN@MIT-MC.ARPA>
+cc:  amethyst-users@SIMTEL20.ARPA, bnh@MIT-MULTICS.ARPA
+In-Reply-To:  Message of 20 Feb 84 22:05 EST from "Jonathan David Callas"
+Message-ID:  <840222161206.803024@MIT-MULTICS.ARPA>
+
+The easiest way to get dead keys is to (1) use a letter-quality printer
+(2) define a width table even if you are using a fixed-width print wheel
+(3) make the dead key spacings be zero (4) make an @ @# command which
+forces a white space (for use when you want the dead keys not to be
+dead).
+
+This is close to what you want, and requires little or no work (if you
+don't want to make the @# command, just find an unused key and use
+translation tables to turn that into a space on output).  You can do
+this with no source code modification at all.
+
+If you want a better solution and want to do the work, I suggest a NEW
+code for the .FIN format file which tells the program to do overstrike
+of two characters, then modifying the driver(s) to pay attention to it.
+I don't have the manual here right now, so I don't remember if there is
+enough source code provided to modify the .FIN format...
+
+Brian
+23-Feb-84 09:44:39-MST,381;000000000000
+Return-Path: <LIN@MIT-MC>
+Received: from MIT-MC by SIMTEL20.ARPA with TCP; Thu 23 Feb 84 09:44:15-MST
+Date: 23 February 1984 11:44-EST
+From: Herb Lin <LIN @ MIT-MC>
+Subject:  "Dead Keys" in Scribble
+To: JURGEN @ MIT-MC
+cc: AMETHYST-USERS @ MIT-MC
+In-reply-to: Msg of 20 Feb 1984 22:05-EST from Jonathan David Callas <JURGEN>
+
+if you get a response, pls share it.  tnx.
+
+27-Feb-84 08:31:16-MST,2720;000000000000
+Return-Path: <@USC-ISID:lejm%edxa@Ucl-Cs.ARPA>
+Received: from USC-ISID.ARPA by SIMTEL20.ARPA with TCP; Mon 27 Feb 84 08:30:59-MST
+Received: FROM UCL-CS BY USC-ISID.ARPA WITH TCP ; 26 Feb 84 04:04:24 PST
+Received: from edxa.ac.uk by 44d.Ucl-Cs.AC.UK   via Sercnet with NIFTP; 
+          26 Feb 84 11:55 GMT
+From:        LUIS HPS (on ERCC DEC-10) <lejm%edxa@ucl-cs.arpa>
+Date:        Sunday, 26-Feb-84 11:28:50-GMT
+Message-ID:  <131274364730@EDXA>
+To:          amethyst-users <amethyst-users%simtel20.arpa@ucl-cs.arpa>
+Office-No:   + 44 (031) 667-1011 ext 6445/6468
+Home-No:       + 44 (031) 665-2633 
+Snail-Mail:  74 Newhailes Crescent, Musselburgh, Edinburgh EH21 6EG, Scotland
+POM:         LQ+2D.15H.49M.29S.
+Subject:     Amethyst - Request for Light
+
+--------
+
+Hello. I am not in this list, but I am seeking info on what
+sort of software I  can get to run on a CP/M or CDOS/CROMIX
+(Cromemco) machine, or MSDOS. 
+
+You see, after a couple of years of VAXen and DEC-10 use, 
+with (mostly) immensely pleasurable use of an EMACS-like (very)
+extensible editor (TOP, written in POP-2) and SCRIBE, I am
+dismayed at the thought of having to use something else. I can't
+face the prospect of parting.  And yet ...  I will have to endure
+a Burroughs B6900 and maybe even an IBM 43xx for the next year. So
+I *must* buy a micro in order to survive the ordeal and be able to 
+do some useful work. 
+
+I am seeking eagerly anything which can, even remotely, resemble
+the environment that I am using. Ideally I would have a 68000 with
+4.1bsd and 4Meg and a hard disk and ... But in practice I will have
+to use whatever I can afford. 
+
+So, in a nutshell (finally):
+
+	- How much EMACS-like, SCRIBE-like are MINCE/SCRIBBLE? 
+	- What are they written in? 
+	- Is source code available? 
+	- Is the documentation excelent? Good? Acceptable? Ghastly? 
+	- How much do they cost with/without source code? 
+	- Is MINCE extensible/customizable? 
+	- Are you satisfied with this products? How much do you use them? 
+	- Do you switch between VAXen/DEC-10/DEC-20 EMACS/SCRIBE and
+	  MINCE/SCRIBBLE a lot? Find it easy? Troublesome? 
+	- What kind of support does the vendor give? 
+	- Under what OS do they run? 
+	- Can you write Environments/Fonts/DeviceDrivers for SCRIBBLE? 
+	  Easily? 
+	- Is this the best one can get when trying to preserve the
+	  EMACS/SCRIBE environment on a micro? 
+	- Finally, do they run under any of the UN*X-like OS floating
+	  around? 
+
+
+Thanks a lot for your patience and please reply to me directly as
+I am not in the list. 
+
+
+	Luis Jenkins
+	Dept.  of AI
+	Edinburgh Univ. 
+
+	<lejm%edxa%ucl-cs@isid> or perhaps just
+	<lejm%edxa@ucl-cs>
+
+	
+	
+
+--------
+
+27-Feb-84 09:28:18-MST,338;000000000000
+Return-Path: <Cargo.PD@HI-MULTICS.ARPA>
+Received: from HI-MULTICS.ARPA by SIMTEL20.ARPA with TCP; Mon 27 Feb 84 09:28:03-MST
+Date:  27 February 1984 10:15 cst
+From:  Cargo.PD at HI-MULTICS
+Subject:  Request for light
+To:  amethyst-users at SIMTEL20
+
+Anybody responding to Luis Jenkins please copy amethyst-users also.
+Thank you.

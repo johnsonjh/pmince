@@ -1,0 +1,16 @@
+17-Aug-82 10:37:17,519;000000000000
+Date: 17-Aug-82 09:37:17-PDT (Tue)
+From: decvax!duke!uok!uokvax!mwm
+Subject: Code?
+Message-Id: <60852.1097.ucbvax@Berkeley>
+Via: ucbvax.EtherNet (V3.147 [7/22/82]); 17-Aug-82 09:37:18-PDT (Tue)
+Date-Sent: Fri Aug 13 12:50:36 1982
+To: uok!duke!decvax!ucbvax!amethyst-users@mit-mc
+Reply-To: decvax!duke!uok!uokvax!mwm@ucb 
+
+I have seen references to something (from JTL?) that allows people to
+modify the global variables Mince uses. Could someone tell me an easy
+way to get a hold of them?
+
+	thanx,
+	mike

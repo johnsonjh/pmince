@@ -1,0 +1,29 @@
+29-Jan-83 11:11:36,963;000000000000
+From: BNH@MIT-ML
+Date: 01/29/83 11:11:36
+Re:  Forwarded Mail
+To: amethyst-users at MIT-MC
+
+    Date: 28 Jan 1983 12:52:10-EST
+    From: mp at mit-vax
+    To: bnh@mit-ml
+    Subject: request for info from "eagle!wb2!houxz!houxm!5123mec"@mit-vax
+
+    >From eagle!wb2!houxz!houxm!5123mec (M.CAIN) Thu Jan 27 21:21:28 1983
+    Subject: Looking for info on MINCE
+    Newsgroups: net.micro,net.emacs
+
+       I will be acquiring a Z80, CP/M system in the near future,
+    and am looking for a good (and familiar) screen editor for it.
+    Could anyone who has experience with MINCE drop me a line?  In
+    particular, I'm interested in:
+
+       - How close to EMACS is the editor interface, barring
+	 fancy macros, multiple buffers, and more exotic features?
+
+       - What exactly comes with the package?  (Some old ads
+	 indicate you got source code and a C compiler.)
+
+    Thanks in advance!
+				    Michael Cain
+				    ...!houxm!5123mec

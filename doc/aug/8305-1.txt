@@ -1,0 +1,65 @@
+15-May-83 14:07:00,289;000000000000
+Date: 15 May 1983 14:07 EDT
+From: Michael C. Adler <MADLER @ MIT-MC>
+Subject: Directory
+To: AMETHYST-USERS @ MIT-MC
+
+Has anybody written a hack to read the directory of a disk into a mince
+buffer?  I don't even care if its sorted...just something small, quick
+and dirty.
+-Michael
+23-May-83 22:19:00,468;000000000000
+Date: 23 May 1983 2119-PDT
+Subject: Re: Directory
+From: Billy <BRACKENRIDGE@USC-ISIB>
+To: Devon S. McCullough <DEVON@MIT-MC>, MADLER@MIT-MC
+cc: AMETHYST-USERS@MIT-MC, gillmann@USC-ISIB
+In-Reply-To: Your message of 23 May 1983 23:38 EDT
+
+If anyone has such hacked sources I would be glad to store them in INFO-IBMPC
+if such is alright with the MOTU folks. Just don't expect any patience with
+any special hacks unique to CPM or non 8086/8 processors.
+-------
+23-May-83 23:38:00,528;000000000000
+Date: 23 May 1983 23:38 EDT
+From: Devon S. McCullough <DEVON @ MIT-MC>
+Subject:  Directory
+To: MADLER @ MIT-MC
+cc: AMETHYST-USERS @ MIT-MC
+In-reply-to: Msg of 15 May 1983 14:07 EDT from Michael C. Adler <MADLER @ MIT-MC>
+
+What?  You mean c-X c-D does NOT create a directory buffer?
+What a loss!  By the way, someone once sent me a pointer to
+a hacked-up Mince which supported c-m-F and related commands
+that understand parentheses and other programming syntax,
+but I lost the pointer.  Where can I get such a Mince?
+24-May-83 00:40:00,547;000000000000
+Date: 24 May 1983  00:40 EDT (Tue)
+From: David Vinayak Wallace <GUMBY@MIT-OZ>
+To:   Devon S. McCullough <DEVON@MIT-MC>
+Cc:   AMETHYST-USERS@MIT-MC, MADLER@MIT-MC
+Subject: Creating a directory buffer
+
+    Date: 23 May 1983 23:38 EDT
+    From: Devon S. McCullough <DEVON at MIT-MC>
+
+    What?  You mean c-X c-D does NOT create a directory buffer?
+    What a loss!
+
+C-x C-d is just list directory in EMACS; it quickly displays the
+directory.  C-x D is DIRED, the full editor (which I don't have in my
+admittedly old version).
+
+david
+24-May-83 21:19:00,316;000000000000
+Date: 24 May 1983 21:19 EDT
+From: Michael C. Adler <MADLER @ MIT-ML>
+Subject:  Directory
+To: DEVON @ MIT-MC
+cc: AMETHYST-USERS @ MIT-MC
+In-reply-to: Msg of 23 May 1983 23:38 EDT from Devon S. McCullough <DEVON at MIT-MC>
+
+I agree.
+
+Part/all of some users group disk appears to be on MC:JCAF;AR0:
+-Michael

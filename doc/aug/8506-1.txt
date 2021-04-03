@@ -1,0 +1,11 @@
+28-Jun-85 01:08:17-MDT,388;000000000000
+Return-Path: <ESTEFFERUD@USC-ECL.ARPA>
+Received: from USC-ECL.ARPA by SIMTEL20.ARPA with TCP; Fri 28 Jun 85 01:03:11-MDT
+Date: Thu 27 Jun 85 23:29:15-PDT
+From: Stef <ESTEFFERUD@USC-ECL.ARPA>
+Subject: Re: MINCE under CP/M 3.0
+To: milazzo@RICE.ARPA, Amethyst-Users@SIMTEL20.ARPA
+In-Reply-To: Message from "Paul Milazzo <milazzo@rice.ARPA>" of Thu 10 May 84 18:27:56-PDT
+
+
+-------
