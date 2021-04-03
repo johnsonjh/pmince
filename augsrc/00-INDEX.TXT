@@ -1,0 +1,40 @@
+=============================================================================
+Filename   Type  Length   Description
+=============================================================================
+aug.let       A    3848   Information about the Amethyst User Group
+augarch.txt   A   71628   Archive from the Amethyst User Group mail list
+aumotu.mss    A    7349   Amethyst info. from Mark of the Unicorn
+auxil.dif     A    2393   Scribble auxiliary routines
+badnts.mss    A    4383   Description of Amethyst User Group Disk 1
+cat.ag1       B    6129   Catalog of Amethyst User Group Disk #1
+cbind.c       A    9194   Customized bindings by MOTU for MINCE
+cbind.sub     A     437   Submit file to compile MINCE bindings
+comm4.c       A    5317   MINCE extensions by MOTU
+comm5.c       A    7218   MINCE extensions by MOTU
+commws.c      A    2020   Dave W. Smith's MINCE extensions
+comtoo.dif    A    6070   More Jeffrey D. Stone MINCE extensions
+craynh.dif    A     473   Jeffrey D. Stone's MINCE extensions
+crayon.dif    A    4345   Jeffrey D. Stone's MINCE extensions
+curler.sub    A     687   Submit file to compile all MINCE sources
+demo.c        A    7701   Creates a MOTU demo disk
+driver.dif    A     759   Jeffrey D. Stone's MINCE extensions
+dwsmith.mss   A    2011   David W. Smith's notes on his MINCE extensions
+fw-emacs.def  A     384   No description available
+jdstone.mss   A    2051   Jeffrey D. Stone's extension documentation
+kbdmacro.txt  A    6432   MINCE EMACS-like keyboard macros
+lcbind.sub    A     443   Submit file to compile a large bindings file
+lcurler.sub   A     758   Submit file to compile all MINCE sources
+macbind.c     A   14095   Macros by Barry A. Dobyns
+mlist.c       A     671   A mailing list manager
+mptab.c       A     316   Page mode tab
+ogoldman.mss  A    1783   Oscar Goldman's Crayon 1.0 page pause fix
+quartz.c      A    3744   MOTU's Quartz Mode code
+scrbtest.mss  A   14759   Barry Dobyns' Scribble/Crayon exerciser
+sepmotu.mss   A    5992   September 1981 MOTU bug report/fix statement
+subform.mss   A    3092   Optional program/extension submittal form
+tabs.c        A    9379   MOTU code for randomly spaced tab stops
+ugform.mss    A    4469   Amethyst User's Group membership form
+view.c        A    2903   MOTU code for non-destructive 'view' mode
+=============================================================================
+ * NOTE: Type B is Binary; Type A is ASCII
+=============================================================================

@@ -1,0 +1,21 @@
+/* CRAYON.H		Global declarations for CRAYON.C and drivers
+
+	Copyright (C) 1981 Mark of the Unicorn
+	Created 81.3.12 Gyro
+
+This file contains the global declarations for the Scribble printer
+driver.  
+
+Modifications Schedule:
+08/03/81		-page option by Jeffrey D. Stone
+
+*/
+
+
+/* the following added by jds */
+
+FLAG stflag;		/* false means we are waiting to reach 
+			   first page to print                 */
+
+
+/* End of CRAYON.H  --  globals for Scribble print program */

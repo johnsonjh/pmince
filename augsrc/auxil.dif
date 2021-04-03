@@ -1,0 +1,121 @@
+/* AUXIL.C -- Scribble auxilliary routines
+
+	written January 1981 by Craig A. Finseth
+	Copyright (c) 1981 by Mark of the Unicorn Inc.
+
+Modifications Record:
+	8/3/81	Table of contents Hacks by Jsffrey D. Stone.
+*/
+	
+#include "scribble.gbl"
+
+TableOfContents()			/* generate the table of contents */
+{
+	int app, chap, sec, sub, para;
+	char type, oldtype;
+	TITLELIST *tptr;
+	MICA LGetCol();
+
+	if (!titlehead->entnextptr) return;
+
+	TNL();
+	TNL();
+	TPuts("Table of Contents");
+	TNL();
+	TNL();
+	TPuts("     ");
+
+	PNewPage();
+	PPutVert(4*LINEHEIGHT);
+
+	EPush();
+	env.name="contents";
+	env.howclose=NUL;
+	env.iswhiteintact=FALSE;
+	env.isfill=FALSE;
+	env.iswrap=TRUE;
+	env.justifytype='c';
+	env.preveleft=env.eleft=pag.pleft;
+	env.cureleft=env.preveleft+3*INCH/2;
+	env.eright=pag.pright-INCH;
+	env.linespacing=LINEHEIGHT;
+	PutStr("Table of Contents");
+	BreakLine();
+
+	PPutVert(2*LINEHEIGHT);
+	env.justifytype='l';
+	app=0;
+	chap=0;
+	sec=0;
+	sub=0;
+	para=0;
+
+	tptr=titlehead->entnextptr;
+	oldtype='c';
+	repeat {
+		type=tptr->enttype;
+		if (oldtype!=type || type=='c' || type=='a') {
+			BreakLine();
+			PPutVert(LINEHEIGHT);
+			}
+		oldtype=type;
+		env.eleft=env.preveleft;
+		if (type=='c') {
+			PutNum("Chapter ",++chap,":");
+			sec=0;
+			sub=0;
+			para=0;
+			}		
+		else if (type=='s') {
+			LPutWhite(3*CHARWIDTH);
+			if (chap != 0)	PutNum(NULL,chap,"."); /* jds */
+			PutNum(NULL,++sec, (chap==0)? "." : NULL); /* jds */
+			sub=0;
+			para=0;
+			}
+		else if (type=='b') {
+			LPutWhite(6*CHARWIDTH);
+			if (chap != 0) PutNum(NULL,chap,"."); /* jds */
+			PutNum(NULL,sec,NULL); /* jds */
+			PutNum(".",++sub,NULL);
+			para=0;
+			}
+		else if (type=='p') {
+			LPutWhite(9*CHARWIDTH);
+			if (chap != 0)	PutNum(NULL,chap,"."); /* jds */
+			PutNum(NULL,sec,NULL); /* jds */
+			PutNum(".",sub,NULL);
+			PutNum(".",++para,NULL);
+			}
+		else if (type=='a') {
+			PutInit();
+			PutStr("Appendix ");
+			PutChr('A'-1+(++app));
+			PutFini();
+			sec=0;
+			sub=0;
+			para=0;
+			}
+		else {
+			LPutWhite(3*CHARWIDTH);
+			PutInit();
+			PutChr('A'-1+app);
+			PutNum(".",++sec,NULL);
+			PutFini();
+			sub=0;
+			para=0;
+			}
+		BreakTok();
+		PutStr(SSToC(tptr->entptr));
+		BreakTok();
+		if (LGetCol()>env.eright-HALFINCH) BreakLine();
+		LPutWhite(env.eright+HALFINCH-LGetCol());
+		env.iswrap=FALSE;
+		PutNum(NULL,tptr->entpage,NULL);
+		BreakLine();
+		env.iswrap=TRUE;
+		tptr=tptr->entnextptr;
+		if (!tptr) break;
+		}
+	EPop();
+	}

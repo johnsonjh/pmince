@@ -1,0 +1,218 @@
+	This file contains the necessary modifications to Mince in order to
+add Emacs like keyboard macros.  A keyboard macro is a sequence of
+keystokes that may be stored away and replayed as often as the user wishes.
+To define a macro, type "control-X (".  An 'M' will show up in the modeline
+as long as you are defining the macro.  Then start typing in a sequence of
+keystrokes to be stored away.  Notice that these keys are executed as well
+as stored away.  When you are finished defining the macro, type 
+"control-X )".  When you wish to repeat that sequence of keystrokes, hit
+"control-X E".  You may cause a macro invocation to be repeated a specified
+number of times by preceeding the "control-X E" by an argument.
+
+	If there is an error during the macro execution, or if the user hits
+any key at all, the macro is immediately aborted.  The macro system will
+detect an error if normal execution of the command gives off a beep.  If in
+the middle of defining a macro, an error occurs, the definition is aborted.
+
+	Note that the extra code to make this all work requires the
+compilation of LMINCE instead of MINCE.  The difference is about 2k less
+main memory swap space.
+
+	What follows is a list of files and the modifications to be made in
+those files.  If you have any problems, I might be able to help.
+
+		Cliff Lasser			Arpanet: (CAL@MIT-OZ)
+		155 Bay State Rd
+		Boston MA 02215
+		(617) 235-1515
+
+------------------------------------------------------------ 
+file: LMC.SUB  (note that the line with L2 cannot be made any longer)
+
+cc1 m.c -e8100
+cc1 bindings.c -e8100
+cc1 comm1.c -e8100
+cc1 comm2.c -e8100
+cc1 comm3.c -e8100
+cc1 support.c -r10 -e8100
+cc1 term.c -e8100
+l2 lmince bindings comm1 comm2 comm3 lvbuff1 lvbuff3 lvbuff2 m -l support laterm term lutil
+
+------------------------------------------------------------
+file:MINCE.GBL 
+
+#define macrdy	1	/* Is there a macro char ready? */
+#define macgetc 2	/* Get the next macro char */
+#define macputc 3	/* store a macro char maybe (returns input) */
+#define macdef 4	/* start defining a macro */
+#define macedef 5	/* end defining the macro */
+#define macdefp 6	/* are we in the middle of defining a macro? */
+#define macabort 7	/* quit this macro invocation */
+#define macinv	8	/* start invoking the macro */
+#define macinit 9	/* init the macro stuff */
+#define mackbhit 10	/* whenever the user hits a key */
+
+---------------------------------------------------------------------
+file: BINDINGS.C
+function finit3:
+	int MMacDef(), MMacEDef(), MMacInv();
+	functs[256+'('] = MMacDef;				/* C-X ( */
+	functs[256+')'] = MMacEDef;				/* C-X ) */
+	functs[256+'E']=functs[256+'e'] = MMacInv;	/* C-X E */
+
+function UInit:
+	macro(macinit);		/* init the macro system */
+
+------------------------------------------------------------
+File: TERM.C
+TBell()				/* Ring the terminal bell */
+{
+	macro(macabort);
+	put_string(&terminal.bell);
+	}
+
+TKbRdy()				/* Returns TRUE if input available */
+{
+	TKbChk();
+	return (macro(macrdy) || (!QEmpty(&kbdq)));
+	}
+
+TGetKb()				/* Returns an input character */
+{
+	unsigned c;
+	while (!TKbRdy());
+	if (!QEmpty(&kbdq)) macro(mackbhit);  /* inform macro about user char */
+	if (macro(macrdy)) return (macro(macgetc));	/* get macro char */
+	c=QGrab(&kbdq);
+	macro(macputc,c);
+	return (c);
+	}
+
+------------------------------------------------------------
+file: SUPPORT.C
+ModeFlags()			/* Display the mode flags */
+{
+#ifdef CPM
+	unsigned loc, len;
+#else
+	long loc, len;
+#endif
+
+	if (TKbRdy()) return;
+	TDisStr(TMaxRow()-2,stat_col," -");
+	loc=BLocation();
+	len=BLength(buffs[cbuff].bbuff);
+#ifdef CPM
+	if (loc<655) itot((loc*100)/len);
+	else if (loc<6550) itot((loc*10)/(len/10+1));
+	else itot(loc/(len/100+1));
+#else
+	if (len==0) len=1;
+	itot((int)((loc*100)/len));
+#endif
+	TPrntStr("%- ");
+	if (TKbRdy()) return;
+	TPrntChar(BModp(buffs[cbuff].bbuff) ? '*' : ' ');
+	TPrntChar(DelCmnd(lfunct) ? '+' : ' ');
+	TPrntChar(macro(macdefp) ? 'M' : ' ');	/* Are we defining a macro? */
+	TCLEOL();
+	}
+
+------------------------------------------------------------
+New file: M.C
+#include "mince.gbl"
+
+/*
+	The functions in this file define a keyboard macro facility very
+	similar to that in EMACS.  At the moment only one macro can be stored
+	at a time.
+			Cliff Lasser 		1/10/84    (CAL@MIT-OZ)
+*/
+
+macro(fnum,c)
+unsigned fnum,c;
+{
+	unsigned *buffer;	/* points to the macro definition (static) */
+	unsigned *ebuffer;	/* points to the last char of macro buffer */
+	unsigned *cpoint;	/* points the the current character in the def */
+	unsigned *epoint;	/* points to last char in current def */
+	unsigned *count;	/* how many times left to do this macro */
+	char *definingp;	/* are we currently defining a macro */
+	char *tpoint;
+
+	/* here is some static storage since I can't change mince.gbl */
+	buffer="12345678901234567890123456789012345678901234567890";
+	cpoint="12"; epoint="12";
+	count="\0\0";
+	definingp="\0";
+	ebuffer=buffer+25;
+
+/*	printf(" macro (%d,%d) ",fnum,c); */
+	switch (fnum) {
+	case macinit:
+		*cpoint=buffer; *count=0; *definingp=0;
+		strcpy(buffer,"\023\033"); *epoint=buffer+1;	/* control-s, escape */
+		return;
+	case macrdy:	/* is there a macro char? */
+		return (*count);
+	case macabort:
+		if (*definingp) {
+			*cpoint=*epoint=buffer; *definingp=0; modeline();
+			return;
+			}
+		if (*count) { *cpoint=buffer; *count=0; }
+		return;	/* do nothing if not invoking or defining */
+	case mackbhit:
+		if (!*definingp) macro(macabort);	/* only if invoking, abort */
+		return;
+	case macdefp:
+		return (*definingp);
+	case macdef:
+		*definingp=1; *cpoint=*epoint=buffer; modeline();
+		return;
+	case macedef:
+		*definingp=0; modeline();
+		return;
+	case macinv:
+/*		printf(" (arg=%d) ",arg);  */
+		if (*epoint == buffer) return;	/* null macro does nothing */
+		*count=arg;		/* do this one time */
+		*cpoint=buffer;
+		return;
+	case macputc:
+		if (!*definingp) return (c);	/* not defining. do nothing */
+		if (*epoint >= ebuffer) {		/* too many chars */
+			macro(macinit);
+			error("Macro too big");
+			modeline();
+			return (7);
+			}
+		tpoint=*epoint; *tpoint=c; *epoint+=1;
+		return (c);
+	case macgetc:
+		tpoint=*cpoint; c=*tpoint; *cpoint+=1;
+		if (*cpoint == *epoint) { *cpoint=buffer; *count -=1; }
+		return (c);
+	default:
+		error("macro sys err");
+	}
+}
+
+
+MMacDef()		/* start a macro definition */
+{
+	macro(macdef);
+	}
+
+MMacEDef()	/* end a macro definition */
+{
+	macro(macedef);
+	}
+
+MMacInv()		/* start a macro invocation */
+{
+	macro(macinv);
+	arg=0;
+	}
+
+

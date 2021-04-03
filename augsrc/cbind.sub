@@ -1,0 +1,13 @@
+; this links a mince together with a new bindings file named
+; $1.c and calls the new mince $1.com
+; 	$1.c must be on a:
+;	everything else must be on b:
+;	make sure that $1 is compiled with a mince.gbl that has the 
+;	reserved externals declared in it.
+;10-3-81 BAD.
+;
+era $1.com
+cc $1.c -e7900
+l2 $1 b:mince b:comm1 b:comm2 b:comm3 b:vbuff1 b:vbuff3 b:vbuff2 -l b:comm4 b:comm5 b:comm6 b:supp b:aterm b:term b:util 
+era $1.crl
+;the end

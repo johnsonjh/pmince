@@ -1,0 +1,32 @@
+;this creates the large.crl files for mince and pips them to the b: device
+;meant to accompany lcbind.sub
+;i could name these lmumble.crl &c. but they won't fit on the l2 line
+cc bindings.c -e8100
+pip b:=bindings.crl[ov]
+era bindings.crl
+cc comm1.c -e8100
+pip b:=comm1.crl[ov]
+era comm1.crl
+cc comm2.c -e8100
+pip b:=comm2.crl[ov]
+era comm2.crl
+cc comm3.c -e8100
+pip b:=comm3.crl[ov]
+era comm3.crl
+cc comm4.c -e8100
+pip b:=comm4.crl[ov]
+era comm4.crl
+cc comm5.c -e8100
+pip b:=comm5.crl[ov]
+era comm5.crl
+cc comm6.c -e8100
+pip b:=comm6.crl[ov]
+era comm6.crl
+cc support.c -r10 -e8100
+pip b:supp.c=support.crl[ov]
+;note that i have changed it's name here so it fits on the l2 line later
+era support.crl
+cc term.c -e8100
+pip b:=term.crl[ov]
+era term.crl
+;the end

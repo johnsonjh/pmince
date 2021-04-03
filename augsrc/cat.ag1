@@ -1,0 +1,111 @@
+VOLUME AG1
+
+DESCRIPTION: Miscellaneous Mince and Scribble extensions.
+
+NUMBER	SIZE	NAME		COMMENTS
+
+		CATALOG.AG1	Contents of Amethyst User's Group VOL. AG1
+AG1.1	8K	AUGMOTU.MSS	The August 1981 Mark of the Unicorn
+                                statement of known bugs/fixes.
+AG1.2	4K	AUXIL.DIF	Part of Jeffrey D. Stone's Scribble
+                                and Crayon hacks. These are for 1.0
+                                only, and are provided as 'difference'
+                                files between the  factory source, and
+                                Jeffrey's result. AUGment 1.4 
+AG1.3	2K	BDOSUSER.ASM	A patch to make USER 0 public on CP/M
+                                2.2 systems. AUGment 1.2
+AG1.4	2K	BIOSMEMR.ASM	A Patch to run a non-destructive
+                                memory test on CP/M 1.4 and up systems
+                                when the system is 'idle'. AUGment 1.2
+AG1.5	10K	CBIND.C		A Customized bindings by Mark of the
+                                Unicorn. Includes a new command
+                                MInsRgn() which inserts a file at the
+                                point (along with some other things).
+                                Can be made to look like the EMACS 
+				^R Insert File$ with little problem.
+AG1.6	2K	CBIND.SUB	A Submit file to compile a new
+                                bindings source and link it into a
+                                Mince from .CRL files on the B: device.
+AG1.7  	2K	CURLER.SUB	A Submit file to compile all the Mince
+                                sources and pip them to the B: device
+                                for use with CBIND.SUB
+AG1.8	1K	CCPPAT.ASM	A CP/M 2.2 patch to force a search of
+                                A: for a .COM if the logged drive
+                                fails (shades of CDOS!). AUGment 1.2
+AG1.9	4K	COMM4.C		An example of what i moved out of my
+                                COMM(1-3) and put after the -l on the
+                                L2 command line.
+AG1.10	8K	COMM5.C		Lots of Mince commands and extensions
+                                by the Unicorns themselves.
+AG1.11  3K	COMMDWS.C	David W. Smith's Mince extensions and
+                                commentary. AUGment 1.4
+AG1.12	8K	COMMTOO.DIF	More of Jeffrey D. Stone's stuff.
+                                AUGment 1.4
+AG1.13	1K	COPYRIGH.MSS	The letter that authorizes the
+                                Amethyst User's Group to distribute
+                                Mark of the Unicorn stuff (limited).
+                                AUGment 1.4
+AG1.14	6K	CRAYON.DIF	More of Jeffrey D. Stone's stuff.
+                                AUGment 1.4
+AG1.15	2K	CRAYONH.DIF	More of Jeffrey D. Stone's stuff.
+                                AUGment 1.4
+AG1.16	8K	DEMO.C		This is how Mark of the Unicorn
+                                creates a Demo disk.
+AG1.17	2K	DRIVER.DIF	More of Jeffrey D. Stone's stuff.
+                                AUGment 1.4
+AG1.18	3K	DWSMITH.MSS	David W. Smith's notes on the Mince
+                                extensions he has done. AUGment 1.4
+AG1.19	8K	FORMAT91.ASM	A single density format program for
+                                IBM 3740 8" disks using a 1771 FDC chip.
+				This writes (different) gap information that 
+                                can be successfully read with a 1791, 1793
+                                and uPD765 FDC chips. Viva la incompatabilite!
+				Nominally written for a Tarbell single
+                                density controller, this should work
+                                as is for a VersaFloppy I.  AUGment 1.1
+AG1.20	3K	JDSTONE.MSS	Jeffrey D. Stone's explanations for
+                                what he did to Scribble and Crayon.
+                                AUGment 1.4
+AG1.21	2K	LCBIND.SUB	A Submit file to compile a new (Large)
+                                bindings source and link it into a
+                                Mince from .CRL files on the B: device.
+AG1.22	2K	LCURLER.SUB	A Submit file to compile all the Mince
+                                sources and pip them to the B: device
+                                for use with LCBIND.SUB.
+AG1.23	15K	MACBIND.C	Barry A. Dobyns' broken macros,
+                                incremental search and scroll-redisplay
+				in a Bindings file.
+AG1.24	1K	MLIST.C		A poor excuse for a mailing list
+                                manager. AUGment 1.1
+AG1.25	1K	MPTAB.C		Page mode tab, works in conjunction
+                                with TABS.C.
+AG1.26	4K	NOTES.MSS	Barry A. Dobyns takes the opportunity
+                                to ramble on and on ...
+AG1.27	2K	OGOLDMAN.MSS	Oscar Goldman's fix to the Crayon 1.0
+                                Page pause problem.
+AG1.28	4K	QUARTZ.C	Mark of the Unicorn's Quartz Mode code.
+                                Intended to make life easier for the
+                                folk who have never had EMACS experience.
+AG1.29	21K	SCRBTEST.MSS	Barry A. Dobyns' Scribble/Crayon
+                                exerciser. Build strong muscles on
+                                that Scribble! Don't let your Crayon
+                                be a mere 63K weakling!
+AG1.30	2K	SD.COM		A public domain 'Super Directory'.
+AG1.31	20K	SD-22.ASM	With source code.
+AG1.32	7K	SEPTMOTU.MSS	The September 1981 Mark of the Unicorn
+                                statement of known bugs/fixes.
+AG1.33	6K	SUBFORM.MSS	The OPTIONAL program/extension
+                                submittal form. (Similar to the CP/M UG
+				one, but not geared to W*.)
+AG1.34	10K	TABS.C		Mark of the Unicorn's code for
+                                randomly spaced tabstops. (Like your
+                                typewriter used to do.)
+AG1.35	4K	UGFORM.MSS	The AUG membership form. Pass it out
+                                to your friends and make them join AUG.
+AG1.36	3K	VIEW.C		Mark of the Unicorn's code for a
+                                non-destructive 'View-only' mode.
+
+-------------
+MODIFICATIONS:
+	assembled by Barry A. Dobyns 09/22/81
+	Cleaned up on 10/04/81 by BAD.

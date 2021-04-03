@@ -1,0 +1,33 @@
+/* DRIVER.C		Low-level print driver
+
+	Copyright (C) 1981 by Mark of the Unicorn, Inc.
+	Created 81.3.18 Gyro
+
+This driver implements the calls that CRAYON.C uses, on several printers. 
+
+Modifications Schedule:
+08/03/81		-page option by Jeffrey D. Stone
+
+*/
+
+#include "crayon.h"
+
+ORdy()					/* printer ready for character */
+{
+	if (!stflag) return(TRUE); /* jds */
+	if (!oport.statport) return (TRUE);
+	return (((oport.sbiosp ? bios (oport.statport) : inp (oport.statport))
+		    & oport.readymask) == oport.polarity);
+	}
+
+
+OSend (c)					/* send char to printer */
+	char c;
+{
+	if (!stflag) return; /* jds */
+	c &= oport.datamask;
+	if (oport.dbiosp) bios (oport.dataport, c);
+	else outp (oport.dataport, c);
+	}
+
+/* End of DRIVER.C  --  vanilla printer driver */

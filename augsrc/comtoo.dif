@@ -1,0 +1,290 @@
+/* COMMTOO.C -- Scribble command interpeter, continued
+
+	written March 1981 by Craig A. Finseth
+	Copyright (c) 1981 by Mark of the Unicorn
+
+Modifications Record:
+	8/3/81		Indent mode and Table of contents by Jeffrey D. Stone.
+
+*/
+
+#include "scribble.gbl"
+
+FLAG
+CheckEnv(tkn)				/* deal with environments */
+	char *tkn;
+{
+	char which;
+	int ParaOut(), ParaStan(), ParaEnum(), ParaItem();
+
+	if (Test(tkn,"indent")) { /* jds */
+		env.eleft=env.cureleft+=HALFINCH;
+		StartEnv();
+		return(TRUE);
+			}
+
+	if (which=MulTest(tkn,"address","flushleft")) {
+		env.isfill=FALSE;
+		env.iswrap=FALSE;
+		if (which==1) env.preveleft=env.eleft=
+			env.cureleft= (pag.pright+pag.pleft)/2;
+		env.justifytype='l';
+		env.paraproc=NULL;
+		StartEnv();
+		return(TRUE);
+		}
+	if (which=MulTest(tkn,"center","flushright")) {
+		env.isfill=FALSE;
+		env.iswrap=FALSE;
+		env.justifytype= (which==1)? 'c' : 'r';
+		env.paraproc=NULL;
+		StartEnv();
+		return(TRUE);
+		}
+	if (Test(tkn,"description")) {
+		env.eleft=env.cureleft+=(env.eright-env.cureleft)/4;
+		env.linespacing=LINEHEIGHT;
+		env.paraproc= &ParaOut;
+		StartEnv();
+		return(TRUE);
+		}
+	if (MulTest(tkn,"display","example")) {
+		env.eleft=env.cureleft+=HALFINCH;
+		env.eright-=HALFINCH/2;
+		env.isfill=FALSE;
+		env.iswrap=TRUE;
+		env.justifytype='l';
+		env.iswhiteintact=TRUE;
+		env.paraproc=NULL;
+		StartEnv();
+		return(TRUE);
+		}
+	if (Test(tkn,"enumerate")) {
+		env.preveleft=env.cureleft+2*CHARWIDTH;
+		env.eleft=env.cureleft+=6*CHARWIDTH;
+		env.enumcount=1;
+		env.paraproc= &ParaEnum;
+		StartEnv();
+		return(TRUE);
+		}
+	if (MulTest(tkn,"format","verbatim")) {
+		env.linespacing=LINEHEIGHT;
+		env.isfill=FALSE;
+		env.iswrap=FALSE;
+		env.justifytype='l';
+		env.iswhiteintact=TRUE;
+		env.paraproc=NULL;
+		StartEnv();
+		return(TRUE);
+		}
+	if (Test(tkn,"itemize")) {
+		env.preveleft=env.cureleft+2*CHARWIDTH;
+		env.eleft=env.cureleft+=HALFINCH;
+		env.paraproc= &ParaItem;
+		env.itemlevel++;
+		StartEnv();
+		return(TRUE);
+		}
+	if (Test(tkn,"quotation")) {
+		env.eleft=env.cureleft+=HALFINCH;
+		env.eright-=HALFINCH;
+		env.linespacing=LINEHEIGHT;
+		StartEnv();
+		return(TRUE);
+		}
+	if (Test(tkn,"text")) {
+		env.linespacing=sty.spacing;
+		StartEnv();
+		return(TRUE);
+		}
+	if (Test(tkn,"verse")) {
+		env.eleft=env.preveleft+=3*CHARWIDTH;
+		env.cureleft=env.preveleft+2*CHARWIDTH;
+		env.eright-=10*CHARWIDTH;
+		env.linespacing=LINEHEIGHT;
+		env.isfill=FALSE;
+		env.justifytype='l';
+		env.paraproc= &ParaOut;
+		StartEnv();
+		return(TRUE);
+		}
+	return(FALSE);
+	}
+	
+FLAG
+CheckSec(tkn)			/* deal with sectioning commands */
+	char *tkn;
+{
+	TITLELIST *tptr;
+	STRING *token;
+	char which;
+
+	if (which=MulComp(tkn,"chapter","appendix")) {
+		tptr=GetMem(sizeof(*tptr));
+		titletail->entnextptr=tptr;
+		titletail=tptr;
+		if (which==1) tptr->enttype='c';
+		else {
+			tptr->enttype='a';
+			num.chapnum= ++num.appnum;
+			}
+		num.chaptitle=tptr->entptr=GetOneArg('r');
+		tptr->entnextptr=NULL;
+		num.secnum=0;
+		num.subnum=0;
+		num.paranum=0;
+		++num.chapnum;
+
+		BreakLine();
+		PNewPage();
+		PPutVert(6*LINEHEIGHT);
+
+		tptr->entpage=num.pagenum;
+
+		TPuts(" (");
+		if (which==1) TPutn(num.chapnum);
+		else TPut('A'-1+num.chapnum);
+		TPut(')');
+
+		EPush();
+		env.isfill=FALSE;
+		env.justifytype='c';
+		PutInit();
+		PutChr(BOLDON);
+		if (which==1) PutNum("Chapter ",num.chapnum,NULL);
+		else {
+			PutStr("Appendix ");
+			PutChr('A'-1+num.chapnum);
+			}
+		PutFini();
+		BreakLine();
+		PPutVert(LINEHEIGHT);
+		PutInit();
+		PutStr(SSToC(tptr->entptr));
+		PutChr(BOLDOFF);
+		PutFini();
+		BreakLine();
+		PPutVert(3*LINEHEIGHT);
+		EPop();
+		return(TRUE);
+		}
+	if (which=MulComp(tkn,"section","appendixsection")) {
+		tptr=GetMem(sizeof(*tptr));
+		titletail->entnextptr=tptr;
+		titletail=tptr;
+		tptr->enttype= (which==1)? 's' : 'n';
+		num.sectitle=tptr->entptr=GetOneArg('r');
+		tptr->entnextptr=NULL;
+		num.subnum=0;
+		num.paranum=0;
+		++num.secnum;
+
+		BreakLine();
+		PPutVert(4*LINEHEIGHT);
+		EPush();
+		env.isfill=FALSE;
+		env.justifytype='l';
+		PutInit();
+		if (num.chapnum != 0) {  /* jds */
+			if (which==1) PutNum(NULL,num.chapnum,NULL);
+			else PutChr('A'-1+num.chapnum);
+			PutNum(".",num.secnum," ");
+					}
+		else	{  /* jds */
+			PutNum(NULL,num.secnum,".");
+			PutChr(' ');
+			}
+		PutStr(SSToc(tptr->entptr));
+		PutFini();
+		BreakLine();
+
+		tptr->entpage=num.pagenum;
+
+		TPuts(" (");
+		if (num.chapnum != 0) {  /* jds */
+			if (which==1) TPutn(num.chapnum);
+			else TPut('A'-1+num.chapnum);
+			TPut('.');
+					}
+		TPutn(num.secnum);
+		TPut(')');
+
+		PPutVert(2*LINEHEIGHT);
+		EPop();
+		return(TRUE);
+		}
+	if (which=MulComp(tkn,"subsection","paragraph")) {
+		tptr=GetMem(sizeof(*tptr));
+		titletail->entnextptr=tptr;
+		titletail=tptr;
+		tptr->enttype= (which==1)? 'b' : 'p';
+		tptr->entptr=GetOneArg('r');
+		if (which==1) {
+			num.subtitle=tptr->entptr;
+			num.paranum=0;
+			++num.subnum;
+			}
+		else {
+			num.paratitle=tptr->entptr;
+			++num.paranum;
+			}
+		tptr->entnextptr=NULL;
+
+		BreakLine();
+		PPutVert(2*LINEHEIGHT);
+		EPush();
+		env.isfill=FALSE;
+		env.justifytype='l';
+		if (num.chapnum != 0) PutNum(NULL,num.chapnum,".");  /* jds */
+		PutNum(NULL,num.secnum,".");
+		if (which==1) PutNum(NULL,num.subnum," ");
+		else {
+			PutNum(NULL,num.subnum,".");
+			PutNum(NULL,num.paranum," ");
+			}
+		PutStr(SSToC(tptr->entptr));
+		BreakLine();
+
+		tptr->entpage=num.pagenum;
+
+		PPutVert(LINEHEIGHT);
+		EPop();
+		return(TRUE);
+		}
+	if ((which=MulComp(tkn,"unnumbered","majorheading")) ||
+		 SCComp(tkn,"heading")) {
+		BreakLine();
+		if (which==1) PNewPage();
+		PPutVert((which?6:4)*LINEHEIGHT);
+
+		EPush();
+		env.isfill=FALSE;
+		env.justifytype='c';
+		PutInit();
+		PutChr(BOLDON);
+		PutStr(SSToC(token=GetOneArg('r')));
+		SFree(token);
+		PutChr(BOLDOFF);
+		PutFini();
+		BreakLine();
+		PPutVert(3*LINEHEIGHT);
+		EPop();
+		return(TRUE);
+		}
+	if (which=MulComp(tkn,"prefacesection","subheading")) {
+		BreakLine();
+		PPutVert(4*LINEHEIGHT);
+		EPush();
+		env.isfill=FALSE;
+		env.justifytype='l';
+		PutStr(SSToC(token=GetOneArg('r')));
+		SFree(token);
+		BreakLine();
+		PPutVert(2*LINEHEIGHT);
+		EPop();
+		return(TRUE);
+		}
+	return(FALSE);
+	}
+
+/* end of modified COMMTOO.C */
