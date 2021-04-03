@@ -47,8 +47,8 @@
 * Build and support MOTU **Scribble**, **Pencil**, and **Crayon** in similar fashion.
   * Automatic setup for **ANSI**/**ASME** _**Y14.1**_ (*US*) and *ISO*-_**216**_ (*EU*) paper types.
   * End-user run time switching between different printer defintions.
-  * Support for rendering of proportional (*NEC*, *Epson*, *Diablo*, etc.) printer output.
-  * **Ghostscript**/**ImageMagick** for printer output conversion to *PDF*/*PostScript*/*PCL*/*XPS*/*PNG*/*etc*.
+  * Support for rendering (*NEC*, *Epson*, *Diablo*, etc.) proportional font printer output.
+  * **Ghostscript**/**ImageMagick** for printer output conversion to *PDF*, *PostScript*, etc.
 * Add Motorola **68000** CPU core, to support **MINCE-68K**.
   * Automatically invoke **MINCE-68K** version for large input files.
   * End-user configuration of default **MINCE** flavor (**MINCE-80** or **MINCE-68K**).
@@ -56,7 +56,8 @@
 * User-configurable key bindings and remapping.
   * Allow user configuration *without* requiring full recompilation.
   * Normalize key bindings and mappings between **MINCE** flavors.
-* Support building and operation on **RSX-11**, (**Open**)**VMS**, and **Windows** operating systems.
+* Support for **RSX-11**, (**Open**)**VMS**, and **Windows** operating systems.
+  * Investigate supporting **OS/2** (*ArcaOS*).
 
 ## Original Authors
 
