@@ -1,0 +1,22 @@
+0a 0
+/* Changed by H.Schulz 7/31/82. See the MC-CMODE.DOC file for more info. */
+
+.
+35c 30496
+#include "mince.gbl"	/* this better be the "new" one */
+.
+101,102c 7134
+#ifdef CMODE
+	if (!strcmp(tmname,"c")) return('c');
+#endif
+#ifdef SAVEMODE
+.
+108c 52096
+/*
+	if (!strcmp(tmname,"page")) return('p');
+*/
+	if (!strcmp(tmname,"over")) return('o');
+.
+$a 47273
+.
+

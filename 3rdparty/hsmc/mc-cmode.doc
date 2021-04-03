@@ -1,0 +1,142 @@
+
+                        A nicer 'C' mode in MINCE (V2.6)
+                                       by
+                                   Herb Schulz
+                                     8/1/82
+
+            The following changes are made to MINCE:
+
+            1.  Separate 'C' mode and 'SAVE' mode activation equates. 
+                This allows 'C' mode activation without 'SAVE' mode. 
+
+            2.  Activated 'C' mode to get auto-indent after '{', etc. 
+                The  original version (embedded in the  code  but  not
+                activated in MINCE.COM) left the '}' line indented and
+                only  "un-indented" the following lines.  I hate  that
+                style so I also
+
+            3.  changed 'C' mode  to "un-indent" the line with the '}'
+                as well as the following lines.  This gives rise to  a
+                style that looks like
+
+				  if (foobar) {
+        	                          dothis();
+                                          andthis();
+                                  }
+
+                rather than
+
+                                  if (foobar) {
+                                          dothis();
+                                          andthis();
+                                          } .
+
+            4.  Added  M_(  and  M_{  commands which produce () and {}
+                pairs respectively,  placing  the  point  between  the
+                characters.   This  will  ensure  that  one always has
+                matching parenthesis and curly braces.  When you  want
+                to enter the ')' or '}' you need only C-F over it. 
+
+            5.  Added a C-Z  command  that  duplicates  M_V  (previous
+                page).  This gives a duplicate for the present  screen
+                of C-X_Z for the "other" screen.   It  also makes it a
+                bit  easier  to  go back and forth to Perfect  Writer,
+                which doesn't implement M_V at  all  (that can also be
+                added there). 
+
+            6.  Page mode is  thoroughly  destroyed.   The  only thing
+                left  is  the   ability   to  overwrite  (rather  than
+                insert).  I've even changed the name of  the  mode  to
+                "Over" rather than "Page".
+
+
+          The changes require the files:
+
+          BINDINGS.DIF   - dif file for BINDINGS.C (change 1, 4, 5 & 6
+                         above)
+
+          COMM1.DIF      - dif file for COMM1.C  (changes 1, 2, 3, 4 &
+                         6 above)
+
+          COMM3.DIF      - dif file for COMM3.C (change 6 only)
+
+          SUPPORT.DIF    - dif file for SUPPORT.C (change 1 & 6 above)
+
+          MC-GBL.DIF     - dif  file  for  MINCE.GBL (separate #define
+                         for CMODE added)
+
+            After running SSED  on  the  appropriate  files it is only
+          necessary to  recompile  and link the files as prescribed in
+          the  MC.SUB  file supplied with MINCE (with the  appropriate
+          file name changes for the new changed file of course). 
+
+            NOTES:
+
+            1.  The only compiling change from the MC.SUB file was the
+                necessity to make more room for the symbol  table when
+                compiling  the new version of  support.c  (-r10  fixed
+                that). 
+
+            2.  I used Version 1.46 of BDS C to  compile the code.   I
+                know  version 1.44 also works but  you  shouldn't  use
+                anything before 1.44.
+
+            3.  There are two warnings when linking:
+
+                  1.  Make sure that the code doesn't go past the 7900
+                      base  for  the  externals.   I'm working with  a
+                      slighly  hacked  up version of C.CCC  which  has
+                      eliminated all  the  initialization,  etc.   for
+                      memory mapped video.   Using  this C.CCC my code
+                      ends at 7811. A friend using an Apple  (the code
+                      for initializing  port  i/o as well as inp() and
+                      outp() have  also  been  hacked by him) has even
+                      more room.  If you are going to use the standard
+                      C.CCC  look   carefully   at  the  end  of  code
+                      information given to you by L2.
+
+                  2.  If you are using the new CCP substitute, ZCPR or
+                      equivalents, you  can  only  enter  an 80 column
+                      command  line.  You will have to enter the  TERM
+                      and   UTIL   libraries   separately   (when   L2
+                      complains) and then also re-enter the  DEFF  and
+		      DEFF2 library names (in that order).
+
+            4.  This is NOT  (sigh...) a very fancy 'C' mode.  It will
+                not take a line like
+
+		if (itistrue()) { do1(); do2();} else { do3(); do4();}
+
+                and  magically transform it  into  "acceptable"  style
+                like
+
+                                     if (itistrue()) {
+                                             do1();
+                                             do2();
+                                     }
+                                     else {
+                                             do3();
+                                             do4();
+                                     } .
+
+                The necessary magic to do something  like  that  takes
+                too  much space (space is limited by the start of  the
+                external  variables)  and  might  make MINCE miss some
+                characters  (not  too  likely  - the space  limitation
+                seems to me to be paramount).  You would also have  to
+                look  out  for "do { .. } while ();" syntax since  <my
+                feeling is that> the "while ();" should be on the SAME
+                line as the '}'; that can get to be tedious. 
+
+            I use 'C' mode  mainly  to  make sure I have matching '{'s
+          and '}'s and to let me see  my block delimiters clearly; not
+          to do ALL the work for me. 
+
+            These  changes may give rise to some other quirky behavior
+          so I'd like feedback on any problems.  I can be  reached  at
+          (312-968-6927)  or you can leave a message on the Hyde  Park
+          RCP/M System for me. 
+
+                                        Hope you enjoy the changes,
+                                        Herb Schulz.
+

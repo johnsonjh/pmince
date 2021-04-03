@@ -1,0 +1,72 @@
+0a 0
+/* Changed by H.Schulz 7/31/82. See the MC-CMODE.DOC file for more info. */
+
+.
+36c 12444
+#include "mince.gbl"	/* this better be the "new" one */
+.
+282,295d 61695
+286a 42271
+/*
+MPBegLine()			/* move to the first non-white character */
+{
+	int IsWhite();
+
+	ToBegLine();
+	MovePast(IsWhite,FORWARD);
+	if (IsNL()) MDelWhite();
+	}
+
+MPBChar()				/* move to the left one character */
+{
+	ForceCol(BGetCol()-1,BACKWARD);
+	}
+
+.
+337,338c 55841
+*/
+
+#ifdef CMODE
+.
+343c 16667
+	int IsWhite(), wid, owid;
+.
+349,352c 1434
+	owid=wid=BGetCol();
+	while (BIsBefore(tmark)) {
+		if (Buff()=='{') 
+			wid += indentcol;
+		else if (Buff()=='}')
+			wid -= indentcol;
+.
+357a 57625
+	if (wid < owid) {
+		ToBegLine();
+		MDelWhite();
+		TIndent(wid);
+		}		
+.
+365c 6193
+	MNewLin();
+.
+368a 4322
+MCParen()
+{
+	BInsert('(');
+	BInsert(')');
+	BMove(-1);
+}
+
+MCBrace()
+{
+	BInsert('{');
+	BInsert('}');
+	BMove(-1);
+}
+
+#endif
+#ifdef SAVEMODE
+.
+$a 21593
+.
+

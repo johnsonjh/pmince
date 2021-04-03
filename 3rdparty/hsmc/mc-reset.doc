@@ -1,0 +1,210 @@
+		    Log-In A New Disk For R/W Within MINCE
+				By Herb Schulz
+				   10/14/82
+
+Introduction:
+------------
+
+  How many time have you said to yourself "Gosh oh golly, I guess I'll just
+have to throw away 1.5 hours of editing because this file just won't fit on any
+of the disks I have logged in for R/W"? If you've got lots of room on a disk
+and are reasonably careful this doesn't happen often. However, users of Apple
+][ or /// computers running CP/M (without a hard disk), Osborn owners, etc.
+have probably said it quite a few times. These modifications and additions to
+MINCE will allow the user to log in a new disk to R/W mode from within the
+program. 
+
+  You also lose something: Page mode is completely wiped out. This is necessary
+to make room for the changes we are about to make and still maintain the start
+of external variables at 0x7900. Since I use MINCE for program editing (I've
+used WordStar and now Perfect Writer for word processing) this is no great loss
+to me.
+
+  As a matter of fact I removed most of Page mode a while ago when I put an
+improved 'C' mode (See the file MC-CMODE.DQC for more information) into my
+version of MINCE. The instructions below refer to MINCE files which already
+have all the 'C' mode mods. You'll have to eliminate all of the Page mode
+and related functions on your own and then make the additions below that only
+have to do with the disk reset if you don't want the previous mods.
+
+  The only WARNING I give is that the function will not allow a reset of the
+drive which contains the .SWP file but it, naturally, won't prevent you from
+removing that disk by mistake. Don't blame me if your work goes down the drain
+if you do that.
+
+Theory:
+------
+
+  A general reset of all the drives (BDOS function 13) would close all the
+files (including the .SWP file) and lead to disaster. Fortunately D.R. supplies
+an undocumented (i.e. it isn't in the manuals) BDOS function (37) in CP/M 2.XX
+that allows a reset of specified drives only. To use this function you need
+only specify which drives are to be reset in a bit map (bit 0 = A:, bit 1 = B:,
+etc.) placed in the DE register and then do the BDOS call.
+
+  You must still be careful and not allow a reset of the drive which contains
+the .SWP file (the only file open at all times!). To keep this from happening
+the swapfile drive and the default drive are found at the begining of the
+program and stored in the newly defined global variables dswp and dflt. Any
+attempt to reset the swapfile drive is then trapped. An entry of a illegal
+drive (i.e. anything other than a [or A] through p [or P]) will give an
+"Illegal Drive" message. If you enter a drive that you don't have on line (e.g.
+C: with only A: and B: drives present) you will have no problems; just don't
+try to write to it (NOTE: all my comments are related to my bios/bdos; you'll
+have to try this stuff out yourself.
+
+Eliminating Page Mode (or its remnants):
+----------- ---- ---- -----------------
+
+  The following instructions assume that you have my version of 'C' mode in
+your files. If you don't, you're on your own in this section. Just remember to
+get rid of all functions or sections of functions that involve Page mode. These
+functions are found in the files BINDINGS.C, COMM1.C, COMM3.C and SUPPORT.C.
+For those using my 'C' mode the changes are simpler:
+
+	BINDINGS.C:	Comment out the lines
+
+				case 'o':
+					Rebind(MInsert,MOverwrite);
+
+			from the SetModes() function towards the end of the
+			file. In addition, comment out the MOverwrite() 
+			function declaration in SetModes(). That
+			declaration will only give trouble if L2 has to go
+			into "fixup" mode to link on your machine.
+
+	COMM1.C:	Comment out the two remaining functions associated
+			with Page (i.e. Over) mode: 
+				     MOverwrite() and MPFChar().
+
+	COMM3.C:	All the Page mode functions in COMM3.C should already
+			be commented out.
+
+	SUPPORT.C:	Comment out the line
+
+				if (!strcmp(tmname,"over")) return('o');
+
+			in the function CheckMode().
+
+Adding The Reset Function:
+------ --- ----- --------
+
+  The additions/changes involve the files MINCE.GBL, BINDING.C and COMM1.C.
+
+	MINCE.GBL:	Comment out the line
+
+				int spare[10];
+
+			found near the end of the file and add the lines
+
+				int dswp, dflt;
+				char drv[2];
+				int spare[7];
+
+			to define the new global variables.
+
+	BINDINGS.C:	The UInit() function found at the end of this file is
+			presently empty. Enter the following code into that
+			function:
+
+			  char fcb[36];	/* dummy fcb to find the .SWP file */
+
+			  *drv = '\0';	/* null the string initially */
+			  dflt = bdos(25);
+			  setfcb(fcb, SWAPFNAME);
+			  dswp = (bdos(17, fcb) == 0xff) ? 0 : dflt;
+
+			to have dflt and dswp initialized.
+
+			In addition add code to bind the log-in function
+			to ^X^L. This is done by adding the lines
+
+				int MResetOne();
+			and
+
+				functs[256+12] = MResetOne;
+
+			into the "variable" declaration list and the function
+			bindings respectively in the function finit3().
+
+
+	COMM1.C:	Add the following function to this file:
+
+	MResetOne()
+	{
+		int dreq;		/* requested drive */
+	
+		if (!GetArg("Log Which Drive <CR>: ", CR, drv, 2))
+			goto out;
+		
+		if ((dreq = toupper(*drv) - 'A') < 0 || dreq > 15) {
+			Error("Illegal Drive");
+			goto out;
+		}
+		
+		if (dreq == dswp) {
+			Error(".SWP Is There!");
+			goto out;
+		}
+		
+		/*
+		** if dflt == 0 (i.e. A:) .SWP MUST be on A: and dreq = 0 is
+		** already weeded out by previous if (). This will only execute
+		** if dflt != 0 and dreq == dflt. In that case we will
+		** temporarily make A: the default since the bdos(37..) call
+		** will not reset the default drive.
+		*/
+		if (dreq == dflt)
+			bdos(14, 0);
+		
+		/* here's the trick! The undocumented CP/M 2.xx BDOS call */
+		bdos(37, 1 << dreq);
+		
+		bdos(14, dflt);
+	out:	arg = 0;
+	}
+
+Compiling And Linking:
+--------- --- -------
+
+  Compile the changed files (you don't have to re-compile any files that
+haven't been changed even though you changed MINCE.GBL since you only replaced
+three of the int variables in the array spare[] by other ints that aren't being
+called in those files {i.e. they'll never know}) as in the MINCE documentation.
+
+  Linking is exactly as in the MINCE documentation.
+
+Notes:
+-----
+
+  If the end of the code generated using your version C.CCC, etc. is greater
+than the beginning of the external variables you can do one of two things: 1)
+(not recommended) go through MINCE and delete more functions - or - 2)go into
+CCC.ASM (the source file for C.CCC) and delete any functions that are worthless
+to you (e.g. the video board functions) as well as any reserved storage for
+those functions. If you choose the second way to increase space you'll also
+have to change the BDS.LIB file, reassemble the DEFF2/DEFF2A files and
+recombine them into the DEFF2.CRL library. This is highly recommended because
+all the programs you write will be smaller.
+
+  WARNING: Don't pull out the disk with the .SWP file on it (MINCE first looks
+for the .SWP file on the default drive and then on A: so a .SWP file on the
+default will always be used over one on the A: drive). First of all this mod
+won't allow that drive to be reset anyway. Second, if MINCE decides to do a
+swap you'll be in real trouble. Don't blame me, I warned you.
+
+  As noted above, this mod uses a BDOS function found only in CP/M 2.XX. I have
+no idea what it'll do to your system if you're using CP/M 1.4, etc.
+
+  Finally, if you have any problems with the mod (not its installation, IF you
+haven't put in my 'C' mode mods) let me know. I'll try to figure out what's
+happening and fix it up. You may contact me through CBBS in Chicago
+(1-312-545-8086, 24 Hr.) or write/call
+
+				  Herb Schulz
+			    6008 Forest View Rd, 3C
+			       Lisle, Il. 60532
+				1-312-968-6927 .
+
+						     Hope you can use it,
+							    Herb.

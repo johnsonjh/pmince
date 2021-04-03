@@ -1,0 +1,51 @@
+0a 0
+/* Changed by H.Schulz 7/31/82. See the MC-CMODE.DOC file for more info. */
+
+.
+35c 8486
+#include "mince.gbl" /* it better be the "new" one */
+.
+45c 65505
+	int MPrevPage(), MNextPage(), MDelRgn(), MCtrlX(), MYank();
+.
+77c 2923
+	functs[26] = MPrevPage;		/* C-Z */
+.
+174,178c 15177
+	int MFillChk(), MInsert(), MOverwrite();
+/*
+	int MPBegLine(), MPBChar(), MPEndLine(), MPFChar(), MPBackSpace();
+	int MPNextLine(), MPPrevLine(), MTrimWhite(), MPTab();
+*/
+#ifdef CMODE
+	int MNewLin(), MCIndent(), MCParen(), MCBrace();
+#endif
+#ifdef SAVEMODE
+	int MSInsert();
+.
+193c 37390
+#ifdef CMODE
+.
+195a 17535
+			functs[128 + '('] = MCParen;
+			functs[128 + '{'] = MCBrace;
+.
+199a 24579
+#endif
+#ifdef SAVEMODE
+.
+211,212c 22180
+/*
+		case 'p':
+*/
+		case 'o':
+			Rebind(MInsert,MOverwrite);
+/*
+.
+226a 54652
+*/
+			strcat(mode, "Over ");
+.
+$a 52019
+.
+

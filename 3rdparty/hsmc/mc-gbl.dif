@@ -1,0 +1,14 @@
+0a 0
+/* Changed by H.Schulz 7/31/82. See the MC-CMODE.DOC file for more info. */
+
+.
+99a 36652
+#define CMODE		/* defines the use of 'C' mode - {, } detection */
+/*
+#define SAVEMODE	/* defines the use of 'SAVE' mode - auto save each 256 bytes */
+*/
+
+.
+$a 47275
+.
+
