@@ -54,9 +54,9 @@
   * End-user configuration of default **MINCE** flavor (**MINCE-80** or **MINCE-68K**).
     * Native execution (*translation*) for **MINCE-68K** for **M68000** systems.
 * User-configurable key bindings and remapping.
-  * Allow user configuration without requiring full recompilation.
+  * Allow user configuration *without* requiring full recompilation.
   * Normalize key bindings and mappings between **MINCE** flavors.
-* Support for RSX-11, (Open)VMS, and Microsoft Windows operating systems.
+* Support for *DEC* **RSX-11**, *DEC*/*Compaq*/*HPe*/*VMSI* _(*Open*)_**VMS**, and *Microsoft* **Windows** operating systems.
 
 ## Original Authors
 
