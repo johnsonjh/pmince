@@ -142,12 +142,12 @@ char *argv[];
               case 'V':         /* Version printout. */
 				linebuf[0]='\0';
                 strcat(linebuf,
-						"\r\nPortable MINCE ");
+						"\rPortable MINCE ");
 				strcat(linebuf,
 						VERSION
 					  );
 				strcat(linebuf,
-						" by Jeffrey H. Johnson <trnsz@pobox.com>\r\n\nMINCE 2.6: Copyright (C) 1980-1982 Mark of the Unicorn, Inc\r\n\nCCOM80 3.01: Adapted from COM 3.0, Copyright (C) 1984-2006\r\n    Jim Cathey, Edmund Ramm, Charlie Gibbs, & Willi Kusche\r\n\n");
+						" by Jeffrey H. Johnson <trnsz@pobox.com>\r\n\nMINCE 2.6: Copyright (C) 1980-1982 Mark of the Unicorn, Inc.\r\n\nCCOM80 3.01: Adapted from COM 3.0, Copyright (C) 1984-2006\r\n    Jim Cathey, Edmund Ramm, Charlie Gibbs, & Willi Kusche.\r\n");
                 write(1, linebuf, strlen(linebuf));
                 exit(0);
                 break;

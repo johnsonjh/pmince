@@ -1,16 +1,21 @@
 #!/usr/bin/env sh
+set -e > /dev/null || true
 test -f "$1" || { printf '%s\n' "Error: Input file missing."; exit 1; };
-printf '%s\n' "char $2_name[13] = {\"$(basename $1)\"};"
+printf '%s\n' "char $2_name[13] = {\"$(basename "$1")\"};"
 if [ -x "/bin/coffwrap" ] || [ -x "/usr/bin/coffwrap" ]; then
-	coffwrap -t -n _$2 $1 $2.o
+	coffwrap -t -n _"$2" "$1" "$2".o
 	printf '%s\n' "extern unsigned char $2[];"
-	ls -l $1 | read -u a b c d size rest
-	printf '%s\n' "int $2_size = $size;"
+	# shellcheck disable=SC2012,SC2039
+	ls -l "$1" | { read -r -u a b c d size rest; \
+	export a b c d size rest 2> /dev/null || true; \
+	printf '%s\n' "int $2_size = ${size:?};"; };
+	unset a b c d size rest 2> /dev/null || true
 else
 	printf '%s\n' "unsigned char $2[] = {"
-	(od -bv || od -ab) < $1 2> /dev/null |
-		tr  '\011' '\040' |
-		sed  -e 's/^[0-7]*//' -e '/^$/d' -e 's/^[ ]*/0/' -e 's/[ ]*$//' |
+	(od -bv 2> /dev/null || \
+		od -ab 2> /dev/null) < "$1" 2> /dev/null | \
+		tr  '\011' '\040' | \
+		sed  -e 's/^[0-7]*//' -e '/^$/d' -e 's/^[ ]*/0/' -e 's/[ ]*$//' | \
 		sed  -e 's/ /, 0/g' -e 's/$/,/' -e '$s/,$//' -e 's/^/	/'
 	printf '%s\n' "};"
 	printf '%s\n' "int $2_size = sizeof $2;"

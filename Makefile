@@ -2,7 +2,9 @@
 #                         Portable MINCE Makefile                       #
 #########################################################################
 
-.SUFFIXES: .o
+#########################################################################
+#                         Detect Operating System                       #
+#########################################################################
 
 ifndef $(OS)
  OS=$(shell uname -s 2>/dev/null | \
@@ -14,37 +16,60 @@ endif
 #                              Configuration                            #
 #########################################################################
 
+PREFIX=/usr/local
+PBIN=bin
+CFEXTRA=-pipe
+CFEXTRA+=-Ofast -fomit-frame-pointer -march=native \
+		-fstack-protector-strong -D_FORTIFY_SOURCE=2
+
+#########################################################################
+
 ifeq ($(OS), darwin)
-	COLS=80
-	ROWS=24
-	CFL=-O2 -fcommon
-	CC=clang $(CFL)
+	COLS?=80
+	ROWS?=24
+	CFL=-O2 -fcommon $(CFEXTRA)
+	CC?=clang
 	SYSTYPE=BSD
 	OPTIONS=-D$(SYSTYPE)=1 -DZ80=1 -DRUNOPTS=1 -DUSEDIRENT=1 -DNOBUFF=1
-	CFLAGS=$(OPTIONS)
+	CFLAGS+=$(CFL) $(OPTIONS)
 	RM=rm -f
 	TEST=test
 	SIZE=size
-	MINCE_CONFIGURED=1
-endif
-
-ifeq ($(OS), linux)
-	COLS=80
-	ROWS=24
-	CFL=-O2 -fcommon
-	CC=gcc $(CFL)
-	SYSTYPE=SYSV
-	OPTIONS=-D$(SYSTYPE)=1 -DZ80=1 -DRUNOPTS=1 -DUSEDIRENT=1
-	CFLAGS=$(OPTIONS)
-	RM=rm -f --
-	TEST=test
-	SIZE=size
+	STRIP=strip
+	MKDIR=mkdir -p
+	CP=cp -f
+	OBJE=.o
 	MINCE_CONFIGURED=1
 endif
 
 #########################################################################
 
-all: osconf depend mince$(OEXT)
+ifeq ($(OS), linux)
+	COLS?=80
+	ROWS?=24
+	CFL=-O2 -fcommon $(CFEXTRA)
+	CC?=gcc
+	SYSTYPE=SYSV
+	OPTIONS=-D$(SYSTYPE)=1 -DZ80=1 -DRUNOPTS=1 -DUSEDIRENT=1
+	CFLAGS+=$(CFL) $(OPTIONS)
+	RM=rm -f --
+	TEST=test
+	SIZE=size --
+	STRIP=strip --
+	MKDIR=mkdir -p --
+	CP=cp -f --
+	OBJE=.o
+	MINCE_CONFIGURED=1
+endif
+
+#########################################################################
+
+.SUFFIXES: $(OBJE)
+.PHONY: all clean osconf dep depend strip install
+
+#########################################################################
+
+all: osconf depend mince$(OEXT) strip
 	@printf '\r%s\n' "" || true
 	@$(TEST) -x ./mince$(OEXT) 2>/dev/null && \
 		$(SIZE) ./mince$(OEXT) 2>/dev/null || true
@@ -54,21 +79,21 @@ all: osconf depend mince$(OEXT)
 
 #########################################################################
 
-ccpu.o: ccpu.c com.h Makefile
+ccpu$(OBJE): ccpu.c com.h Makefile
 	$(CC) $(CFLAGS) -c ccpu.c -o $@
 
 #########################################################################
 
-com.o: com.c com.h Makefile
+com$(OBJE): com.c com.h Makefile
 	$(CC) $(CFLAGS) -c com.c -o $@
 
 #########################################################################
 
-console.o: com.h console.c Makefile
+console$(OBJE): com.h console.c Makefile
 
 #########################################################################
 
-dir.o: com.h dir.c Makefile
+dir$(OBJE): com.h dir.c Makefile
 
 #########################################################################
 
@@ -86,45 +111,52 @@ mince_swp.c: mince80/mince.swp
 
 #########################################################################
 
-fakefs_mince.o: fakefs.c mince_com.o mince_swp.o Makefile
+fakefs_mince$(OBJE): fakefs.c mince_com$(OBJE) mince_swp$(OBJE) Makefile
 	$(CC) $(CFLAGS) -DMINCE -c fakefs.c -o $@
 
 #########################################################################
 
-embed.o: com.c com.h Makefile
+embed$(OBJE): com.c com.h Makefile
 	$(CC) $(CFLAGS) -DEMBED -c com.c -o $@
 
 #########################################################################
 
-ccom$(OEXT): ccpu.o com.o console.o dir.o disass.o fakefs.o Makefile
-	$(CC) $(CFLAGS) ccpu.o com.o console.o dir.o disass.o fakefs.o -o $@
+ccom$(OEXT): ccpu$(OBJE) com$(OBJE) console$(OBJE) dir$(OBJE) \
+	disass$(OBJE) fakefs$(OBJE) Makefile
+	$(CC) $(CFLAGS) ccpu$(OBJE) com$(OBJE) console$(OBJE) dir$(OBJE) \
+		disass$(OBJE) fakefs$(OBJE) -o $@
 
 #########################################################################
 
-mince$(OEXT): ccpu.o console.o dir.o disass.o fakefs_mince.o \
-	embed.o mince_com.o mince_swp.o Makefile
-	$(CC) $(CFLAGS) ccpu.o console.o dir.o disass.o fakefs_mince.o \
-		embed.o mince_com.o mince_swp.o -o $@
+mince$(OEXT): ccpu$(OBJE) console$(OBJE) dir$(OBJE) disass$(OBJE) \
+	fakefs_mince$(OBJE) embed$(OBJE) mince_com$(OBJE) \
+	mince_swp$(OBJE) Makefile
+	$(CC) $(CFLAGS) ccpu$(OBJE) console$(OBJE) dir$(OBJE) \
+		disass$(OBJE) fakefs_mince$(OBJE) embed$(OBJE) \
+		mince_com$(OBJE) mince_swp$(OBJE) -o $@
 
 #########################################################################
 
 mince80/mince.swp: ccom$(OEXT)
 	@$(TEST) -x ./termset
-	@$(shell printf '%s\n' "export ROWS=$(ROWS) && \
+	@$(shell printf '%s\n' "export RM=\"$(RM)\" && \
+		export ROWS=$(ROWS) && \
 		export COLS=$(COLS) && \
 		./termset" "$(OEXT)")
 	@$(TEST) -f mince80/mince.swp
 
-#########################################################################
-
-.PHONY: all clean osconf com.h dep depend version.h
 
 #########################################################################
 
 clean:
 	$(RM) ccom$(OEXT) *.[soL] *.s1 a.out *.bak core *~ *.map benchmark \
 		mince$(OEXT) mince_com.* *.exe mince_swp.* mince80/mince.swp \
-		mince68k/mince.swp mince_68k.* *.core
+		mince68k/mince.swp mince_68k.* *.core *.cob *.obj *.ovr *.alm
+
+#########################################################################
+
+strip:
+	$(STRIP) mince$(OEXT) || true
 
 #########################################################################
 
@@ -151,5 +183,12 @@ version.h: Makefile
 dep: depend
 
 depend:
+
+#########################################################################
+
+install: depend mince$(OEXT) strip
+	$(MKDIR) $(PREFIX) || true
+	$(MKDIR) $(PREFIX)/$(PBIN) || true
+	$(CP) mince$(OEXT) $(PREFIX)/$(PBIN)/mince$(OEXT)
 
 #########################################################################

@@ -1,21 +1,18 @@
 /*
-** Some support modules for console I/O and list output.
+** Some support modules for (buffered) console I/O and list (printer) output.
 **
 ** Does buffering (for efficiency), and (optionally) converts H19 terminal to
 ** VT100 terminal sequences on the console, since some CP/M software doesn't
-** know what a VT100 is, but they all seem to know what a H19 is.  Also
-** optionally converts ASCII DEL to BS, because the CP/M world generally
-** doesn't use DEL.
+** know what a VT100 is, but they all seem to know what a H19 is. Optionally
+** converts ASCII DEL to BS, because the CP/M world generally doesn't use DEL.
 **
-** Buffers are flushed upon input, buffer full, or timeout.  There are
-** two levels of timeout, a 'fast' one based upon the tick count returned
-** by times(), and a gross catch-all based upon alarm(1).  The fast timeout
-** is only used by the CP/M polling routines.  The routines that block
-** don't bother.  No timeouts are enabled unless there is buffered output.
-** For some reason, on the NeXT only the gross timeout is functioning.
-** The times() call there seems to always return 0.
-**
-** Buffering can be disabled.
+** Buffers are flushed upon input, buffer full, or timeout. There are two
+** levels of timeout, a 'fast' one based upon the tick count returned by
+** times(), and a gross catch-all based upon alarm(1). The fast timeout is
+** only used by the CP/M polling routines. The routines that block don't
+** bother. No timeouts are enabled unless there is buffered output. For some
+** reason, on the NeXT only the gross timeout is functioning. The times() call
+** there seems to always return 0. Finally, all buffering can be disabled.
 */
 
 #include "com.h"
