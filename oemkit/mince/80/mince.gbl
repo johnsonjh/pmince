@@ -1,0 +1,99 @@
+/* MINCE.GBL - This is the global variables and constants for
+	MINCE, to be included in each source file. */
+
+#define	CPM			1		/* CP/M only */
+#define	TYPE_AHEAD	1		/* type ahead is detectable */
+#define	SUSER		1		/* single user systems (paging messages) */
+
+	/* Universal global declarations */
+#define	TRUE		(-1)
+#define	FALSE	0
+#define	NULL		0
+#define	INPUT	0
+#define	OUTPUT	1
+#define	UPDATE	2
+#define	HOME		0,0
+#define	FORWARD	(-1)
+#define	BACKWARD	0
+
+	/* MINCE globals */
+#define	MODEMAX	20
+#define	STRMAX	40
+#define	MAXMODES	4
+#define	BUFFSMAX	7
+#define	BUFNAMMAX	9
+
+#define	FILMAX	15
+#define	SWAPFNAM	"mince.swp"
+#define	SWAP1FNAM	"a:mince.swp"
+
+	int mark, arg, argp, lcol, psstart, sstart, send, cnt, tmp;
+	int altpnt, altstart, sendp, topp, divide, altbuff;
+	int (*functs[3*128])(), (*lfunct)(), fillwidth, indentcol;
+	char strarg[STRMAX], mode[MODEMAX], namearg[BUFNAMMAX];
+	int stat_col, abort, cmnd, cbuff, del_buff, tmark;
+	struct cbuffer {
+		int bbuff, bmark;
+		char bname[BUFNAMMAX], fname[FILMAX], bmodes[MAXMODES];
+		} buffs[BUFFSMAX];
+	int pnt_row;
+
+	/* TTY globals */
+#define	NUL	'\0'
+#define	BELL	'\7'
+#define	BS	'\10'
+#define	TAB	'\11'
+#define	LF	'\12'
+#define	CR	'\15'
+#define	ESC	'\33'
+#define	DEL	'\177'
+
+#define	NL	'\212'
+#define	ROWMAX	60
+#define	COLMAX	132
+#define	KBBUFMAX	80
+
+	int prow, pcol, srow, scol, tabincr, tlrow;
+	char clrcol[ROWMAX], tline[COLMAX+1];
+	char *lindex;
+	struct {
+		char *head, *tail, *bottom, *top, space[KBBUFMAX];
+		} kbdq;
+
+	/* special swap file header terminal globals */
+#define	NOPAD	0				/* values for padp */
+#define	CHARPAD	1				/* pad with characters */
+#define	DELAYPAD	2				/* pad with wait loop */
+#define	FIRST	255
+#define	SECOND	0
+	struct termdesc {				/* 128 byte terminal descriptor */
+		char ctrlz;
+		char nrows, ncols, rowbias, colbias;
+		char rowfirstp, compp, binaryp;
+		char padp, padchar;
+		char nhclpad, ncleolpad, ncpospad, ncleowpad;
+		struct str {
+			char idx;					/* index into space */
+			char len;					/* length */
+			} hcl, cleol, cleow, cpos1, cpos2, cpos3, bell, init, deinit;
+		char strspc[73];
+		} terminal;
+
+	struct portdesc {
+		char biosp, dataport, statport, datamask, readymask, polarity;
+		} inport, outport;
+
+	char prefrow, fillinit, tabinit, indentinit, mhz;
+	int delaycnt, npages, swapbase;
+
+	/* spare area - patches */
+int spare[10];
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!! WARNING: You may not change the size or order of ANYTHING.		!!!!!
+!!!!! The spare array directly above may be used freely but it MUST	!!!!!
+!!!!! remain the SAME SIZE. You may not add any globals after this	!!!!!
+!!!!! point!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* END OF MINCE.GBL - Global variable definitions for Mince. */
+

@@ -1,0 +1,8 @@
+cc bindings.c -e7900
+cc comm1.c -e7900
+cc comm2.c -e7900
+cc comm3.c -e7900
+cc support.c -r10 -e7900
+cc term.c -e7900
+l2 mince bindings comm1 comm2 comm3 vbuff1 vbuff3 vbuff2 -l support aterm term util
+

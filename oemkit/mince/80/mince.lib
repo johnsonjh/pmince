@@ -1,0 +1,38 @@
+; MINCE.LIB		Global equates for Mince assembly code
+;
+;		Copyright 1981 by Mark of the Unicorn Inc.
+;		Created from MINCE.GBL
+
+
+TRUE		equ 01h
+MAXMARK	equ 018h
+NL		equ 08Ah
+
+extorg	equ 07900h		; *** change this line for -e change ***
+prow		equ extorg + 0457h
+pcol		equ extorg + 0459h
+scol		equ extorg + 045Dh
+tabincr	equ extorg + 045Fh
+outport	equ extorg + 05EDh
+tlrow	equ extorg + 0461h
+clrcol	equ extorg + 0463h
+tline	equ extorg + 049Fh
+lindex	equ extorg + 0524h
+kbdq		equ extorg + 0526h
+terminal	equ extorg + 057Eh
+inport	equ extorg + 05E7h
+curbuff	equ extorg + 0612h
+curpage	equ extorg + 0614h
+curchar	equ extorg + 0616h
+curplen	equ extorg + 0618h
+curcptr	equ extorg + 061Ah
+cpstart	equ extorg + 061Ch
+cgstart	equ extorg + 061Eh
+cgend	equ extorg + 0620h
+savecol	equ extorg + 0629h
+scrnmarks	equ extorg + 0801h
+marks	equ extorg + 099Eh
+
+
+;		End of MINCE.LIB  --  global equates for Mince assembly code
+

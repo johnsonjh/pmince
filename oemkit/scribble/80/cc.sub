@@ -1,0 +1,7 @@
+cc crayon.c -e6100
+cc printer.c -e6100
+cc driver.c -e6100
+l2 crayon printer driver -l queue
+cc pencil.c -e6100
+l2 pencil printer driver -l crayon queue
+

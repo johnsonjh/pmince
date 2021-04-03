@@ -1,0 +1,6 @@
+cc auxil.c -e8900
+cc auxiltoo.c -e8900
+cc commands.c -e8900
+cc commtoo.c -e8900
+l2 scribble auxil auxiltoo commands commtoo input output -l alloc
+

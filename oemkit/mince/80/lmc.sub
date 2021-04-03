@@ -1,0 +1,8 @@
+cc bindings.c -e8100
+cc comm1.c -e8100
+cc comm2.c -e8100
+cc comm3.c -e8100
+cc support.c -r10 -e8100
+cc term.c -e8100
+l2 lmince bindings comm1 comm2 comm3 lvbuff1 lvbuff3 lvbuff2 -l support laterm term lutil
+

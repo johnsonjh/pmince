@@ -1,0 +1,4 @@
+cc l2.c -e3800
+cc chario.c
+l2 l2 chario -wa
+

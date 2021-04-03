@@ -1,0 +1,426 @@
+/* SCRIBBLE.GBL -- Global Definitions for Scribble
+
+	written January 1981 by Craig A. Finseth
+	Copyright (c) 1981 by Mark of the Unicorn
+*/
+
+/* compilation flags */
+
+#define CPM				/* CP/M only */
+/*	#define UNIX		*/	/* UNIX only */
+#define LARGE
+
+/* -------------------------------------------------- */
+
+/* program constants */
+
+#define MAXLINES	100		/* max # of lines/page */
+#define MAXTOKENS	50		/* max # of tokens/line */
+#define MAXMESSAGE	150		/* max # of chars in error message */
+#define STACKSIZE	2048		/* amount of stack space to reserve */
+#ifdef CPM
+#define BUFFRECS 	8		/* i/o buffer size in records */
+#define BUFFSIZE 	(128*8)	/* i/o buffer size in bytes */
+#define RECSIZE 	128		/* i/o record size in bytes */
+#define LENFILENAME	20		/* length of a file name */
+#endif
+#ifdef UNIX
+#define BUFFRECS	1024		/* I/O buffer size in bytes */
+#define BUFFSIZE	1024		/* I/O buffer size in bytes */
+#define RECSIZE	1		/* I/O record size */
+#define LENFILENAME	30		/* length of a file name */
+#endif
+
+/* -------------------------------------------------- */
+
+/* programming conventions */
+
+#define repeat		while (TRUE)
+#define TRUE		1
+#define FALSE		0
+#define NULL		0
+#define MICA		unsigned
+#define FLAG		char
+#define STRING		char
+#define LINEHEIGHT	dev.stdvert
+#define CHARRES	dev.micahoriz
+#define CHARWIDTH	dev.stdhoriz
+
+/* ASCII characters */
+
+#define NUL	0
+#define BELL	'\7'
+#define BS	'\8'
+#define TAB	'\t'
+#define LF	'\12'
+#define FF	'\14'
+#define CR	'\15'
+#define SP	' '
+#define DEL	'\177'
+#define NL	'\n'
+#define EOF	'\32'
+
+/* -------------------------------------------------- */
+
+/* output file description */
+
+#define SENTENCEBREAK	0177		/* ^? */
+
+#define BOLDON			0302		/* ~B */
+#define BOLDOFF		0342		/* ~b */
+#define ROMANON		0322		/* ~R */
+#define ROMANOFF		0362		/* ~r */
+#define UNNBON			0325		/* ~U underscore tokens */
+#define UNNBOFF		0365		/* ~u */
+#define UNALLON		0301		/* ~A underscore everything */
+#define UNALLOFF		0341		/* ~a */
+#define UNANON			0316		/* ~N underscore alphanumeric */
+#define UNANOFF		0356		/* ~n */
+#define ITALON			0311		/* ~I italics */
+#define ITALOFF		0351		/* ~i */
+#define BITALON		0320		/* ~P bold italics */
+#define BITALOFF		0360		/* ~p */
+#define SUPERON		0323		/* ~S superscripts */
+#define SUPEROFF		0363		/* ~s */
+#define SUBON			0324		/* ~T subscripts (why not?) */
+#define SUBOFF			0364		/* ~t */
+#define EXITON			0330		/* ~X eXit unusual attributes */
+#define EXITOFF		0370		/* ~x */
+
+#define JUSTIFY		0212		/* ~^J */
+#define HORIZSPACE		0210		/* ~^H */
+#define VERTSPACE		0226		/* ~^V */
+#define TOKBREAK		0240		/* ~SP */
+
+/* -------------------------------------------------- */
+
+/* token types */
+
+#define EOFT			'\32'
+#define WHITESPACE		' '
+#define NEWLINE		'\n'
+#define TOKEN			'A'
+#define TOKENBREAK		'B'
+#define FLUSH			'F'
+#define DELIM			'('
+#define COMMAND		'@'
+#define HEADERCENTER	0203		/* ~^C */
+#define HEADERRIGHT		0222		/* ~^R */
+#define HEADERLINE		0214		/* ~^L */
+
+/* options for argument routines */
+
+#define ARGFLUSH		'f'
+#define RETURN			'r'
+#define PRINT			'p'
+#define HOLD			'h'
+#define SAMPLE			'd'
+
+/* measurement */
+
+#define INCH		2540		/* 2540 mica/inch (2540 = 2 x 2 x 5 x 127) */
+#define HALFINCH	1270		/* 1/2" */
+#define CENTIMETER	1000		/* 1000 mica/cm */
+#define PICA		423 /* 1/3 */	/* 1/6" */
+#define POINT		35 /* 5/18 */	/* 1/12 pica or 1/72" */
+
+#ifdef CPM
+#define MAXMICA	48000	/* largest possible mica measurement */
+#else
+#define MAXMICA ((unsigned)48000)	/* largest legal mica mesurment */
+#endif
+
+/* -------------------------------------------------- */
+
+/* allocator */
+
+int *Acap, *Abegin, *Aend, Asize;
+#define SPACE int
+
+SPACE *PageSpace, *EndSpace, *DefSpace;
+
+/* -------------------------------------------------- */
+
+/* line structures */
+
+#define LINEDATA struct linestruct
+
+struct linestruct {		/* buffered line and ancillary info. */
+	int numtoks;			/* number of token used */
+	MICA lleft;			/* left margin */
+	MICA lright;			/* right margin */
+	MICA lspace;			/* line spacing */
+	FLAG howjustify;		/* how is the line justified? */
+	MICA column;			/* column that you were in */
+	struct buftok {		/* for each token, its length and a */
+		MICA length;		/*     ptr to it */
+		STRING *line;
+		} toks[MAXTOKENS];
+	} lin, linsave;
+
+struct {				/* page information */
+	MICA ptop;			/* margins */
+	MICA pleft;
+	MICA pright;
+	MICA pbottom;
+	LINEDATA *page[MAXLINES];/* each line */
+	MICA vertical[MAXLINES];	/* its height */
+	int numlines;			/* number of lines */
+	MICA cumvert;			/* how much space we've used up */
+	int footerline;		/* where footnotes start */
+	MICA footerplace;		/* where on the page footnotes starts */
+	int endline;			/* where the footer starts */
+	FLAG isfootnote;		/* in footnote mode? */
+	LINEDATA **lastline;	/* ptr to the last line loaded */
+	int lastindex;			/* index of the last line loaded */
+	} pag;
+
+/* -------------------------------------------------- */
+
+/* input tokenizer stuff */
+
+#define MAXINPLEN 300
+#define MAXINPNUM 2
+char inpnum;			/* stack ptr */
+
+struct {				/* input token buffer */
+	int ibuflen;			/* number of characters in the buffer */
+	char ibuffer[MAXINPLEN+1];
+	} inp, inpsave[MAXINPNUM];
+
+#define TOKMAXLEN 100
+struct {				/* current input token */
+	int tbuflen;
+	char tbuffer[TOKMAXLEN+1];	
+	} tok;
+
+#define INBUFFER struct inbuffer
+
+INBUFFER {		/* input buffer descriptor */
+	int fd;				/* file descriptor or -1 for string */
+	char *curchar;			/* ptr to current character */
+	unsigned blocknum;
+	unsigned linenum;
+	char filedesc[LENFILENAME];	/* descriptive name of thingie */
+	INBUFFER *fileprev;
+	} file;
+
+char inputbuffer[BUFFSIZE];
+#ifdef CPM
+char tokentype;			/* type of the current token */
+char typearray[256];		/* types for each character */
+#else
+int tokentype;				/* type of the current token */
+int typearray[256];			/* types for each character */
+#endif
+FLAG unget;				/* TRUE if you are ungetting */
+
+/* -------------------------------------------------- */
+
+/* defaults and personal style */
+
+#define MAXTABS	32		/* max # of tabs */
+struct {
+	MICA tabcolumns[MAXTABS];/* where tabs are */
+	MICA headerspace;		/* vertical space to leave after header */
+	MICA footerspace;		/* and before footer */
+	char prefjust;			/* preferred justification style
+							'b' both  or  'l' left */
+	char footstyle;		/* where footnotes go:  'i' inline,
+							'b' bottom, 'e' end */
+	MICA indent;			/* amount to indent paragraphs */
+	MICA spread;			/* number of lines between paragraphs */
+	MICA spacing;			/* line spacing */	
+	FLAG footpush;			/* are refs superscripts or bracketed? */
+	FLAG scriptpush;		/* do sub and superscripts get extra space? */
+	FLAG ischapter;		/* does @chapter command exist? */
+	MICA stop;			/* margins */
+	MICA sleft;
+	MICA sright;
+	MICA sbottom;
+	MICA above;			/* space to leave before an environment */
+	MICA below;			/* space to leave after an environment */
+	FLAG levindent;		/* do nested Level environments indent? */
+	FLAG levhang;			/* are Level paragraphs outdented? */
+	int endsize;			/* amount to leave for end space */
+	} sty;
+
+/* -------------------------------------------------- */
+
+/* device structures */
+
+
+#define SSPACE	128-54
+struct printdesc {		/* describes the output device */
+	char dname[16];		/* name of the device */
+	MICA dwidth;			/* width of the printing surface */
+	MICA dheight;			/* height of the print surface */
+	MICA micahoriz;		/* size of smallest horizontal increment */
+	MICA micavert;			/* size of smallest vertical incrment */
+	FLAG isprop;			/* does it have a proportial width font? */
+	char fontnum;			/* if isprop, which width table to use */
+	MICA stdhoriz;			/* width of a canonical character */
+	MICA stdvert;			/* height of a single spaced line */
+	FLAG isfile;			/* do plain file output? */
+	char prtcode;			/* printer type code for crayon */
+	MICA paperoffset;		/* height paper is assumed to start at */
+	FLAG backspace;		/* Does backspace work */
+	FLAG barecr;			/* does bare CR work */
+	FLAG formfeed;			/* does form feed work */
+	char synctype;			/* Type of waiting to do: NONE, ETX/ACK, ^S^Q */
+	FLAG needtran;			/* Do character translation on output? */
+	char trannum;			/* Translation table number */
+	struct comstr {		/* Various strings to send */
+		char idx;					/* index into space */
+		char len;					/* length */
+		} initstr,			/* ... set things up */
+			finistr,			/* ... clean up after */
+			donewline,		/* ... do a newline */
+			boldon,			/* ... turn on boldface */
+			boldoff,			/* turn off boldface */
+			italon,			/* turn on italiacs */
+			italoff;			/* turn off italiacs */
+	char strspc[SSPACE];	/* where strings are stored */
+	} dev;
+
+FLAG devinited;		/* have the -dev, -p, or -c options been used? */
+
+MICA widthtable[128];	/* size of each char.  non-printing=0 */
+
+/* -------------------------------------------------- */
+
+char whereto;				/* output goes: c=console, p=printer, f=file */
+FLAG outnotinited;			/* output file needs initilization */
+int outfd;
+char *outchar;				/* ptr to current character */
+char outputbuffer[BUFFSIZE];
+
+/* -------------------------------------------------- */
+
+/* environment */
+
+#define ENVIRON struct envrn
+struct envrn {
+	char *name;			/* name of current enviornment */
+	char howclose;			/* how to close it {),],},>, or 'e') */
+	MICA preveleft;		/* left margin of enclosing environment */
+	MICA cureleft;			/* left margin for middle of paragraph */
+	MICA eleft;			/* one of the two previous */
+	MICA eright;			/* right margin */
+	MICA linespacing;		/* height of the line */
+	FLAG isfill;			/* do we fill lines? */
+	FLAG iswrap;			/* do we wrap long lines? */
+	char justifytype;		/* 'b', 'l', 'r', or 'c' */
+	FLAG iswhiteintact;		/* do we pass whitespace through unscathed? */
+	int (*paraproc)();		/* procedure to execute on paragraph break */
+	int (*closeproc)();		/* procedure to execute on exit from environ. */
+	int itemlevel;			/* nesting depth for @itemize */
+	int enumcount;			/* paragraph number for @enumerate */
+	char closechar;		/* character to append for in-line environ.s */
+	ENVIRON *envprev;		/* previous environment */
+	} env;
+
+/* -------------------------------------------------- */
+
+/* list structures */
+
+/* titles for Table of Contents */
+
+#define TITLELIST struct titlelist
+struct titlelist {
+	char		enttype;		/* type: 'c' chap, 's' sec, 'b' subsec,
+		'a' appendix, 'n' appendix section, 'p' paragraph */
+	int		entpage;		/* page number */
+	int		entnum;		/* the section, chapter, etc. number */
+	STRING	*entname;
+	TITLELIST	*entnextptr;
+	} *titlehead, *titletail;
+
+/* variables */
+
+#define VALLIST struct vallist
+struct vallist {
+	STRING	*valname;		/* ptr to name of variable */
+	char		valtype;		/* type: 's' string, 'n' number */
+	int		value;
+	VALLIST	*valnextptr;
+	} *valhead, *valtail;
+
+/* end notes */
+
+#define NOTELIST struct notelist
+struct notelist {
+	int		notenum;		/* the note number */
+	STRING	*noteptr;		/* the text of the note */
+	NOTELIST	*notenextptr;
+	} *notehead, *notetail;
+
+/* index entries */
+
+#define INDLIST struct indlist
+struct indlist {
+	STRING	*indname;		/* the name of the entry */
+	int		indpage;		/* the page number */
+	INDLIST	*indnextptr;
+	} *indhead;
+
+/* -------------------------------------------------- */
+
+/* storage and scratch struct */
+
+FLAG newl;			/* was the last thing a Newline? */
+FLAG nofootnotes;		/* no footnotes on this page yet */
+int footnum;			/* current footnote number */
+int blankpages;		/* number of blank pages to leave */
+
+					/* sectioning variables */
+VALLIST *chapter, *section, *subsection, *paragraph, *appendix, *asection;
+VALLIST *chaptitle, *sectitle, *subtitle, *paratitle, *apptitle, *asectitle;
+
+VALLIST *pagevar;		/* current page number */
+int pagenum;
+
+FLAG headermode;		/* are we accumulating a header? */
+MICA heacumlen;		/* its accumulated length */
+int heacumnum;			/* its accumulated number of entries */
+FLAG openneeded;		/* are we waiting for an open delimiter to
+						begin an environment? */
+FLAG argquoted;		/* was the argument in quotes? */
+FLAG getarginitialized;	/* in the middle of an argument? */
+char getargclose;		/* how the argument is terminated */
+char saveclose;		/* saves GetArg's state */
+FLAG curscript;		/* NUL=neither, `p`=in super, `b`=in sub */
+FLAG issuper;			/* superscript on line? */
+FLAG issub;			/* subscript on line? */
+
+STRING *headeven;		/* headers */
+STRING *headodd;
+STRING *footeven;
+STRING *footodd;
+
+/* used for accumulating a literal string to insert in the output file */
+
+#define PUTMAXLEN 200
+struct {
+	int plevel;			/* for deciding when to write the buffer */
+	char *pptr;
+	char pbuffer[PUTMAXLEN];	
+	} put;
+
+int minpage;			/* minimum room left (for accumulating statistics) */
+int pagesize;			/* sizes of the space */
+
+#define LEVELMAX 10
+int level[LEVELMAX];
+
+#ifdef UNIX
+#define isupper(tchar) (tchar>='A' && tchar<='Z')
+#define islower(tchar) (tchar>='a' && tchar<='z')
+#define isdigit(tchar) (tchar>='0' && tchar<='9')
+#define isalpha(tchar) (isupper(tchar) || islower(tchar))
+#define tolower(tchar) (isupper(tchar)?tchar-'A'+'a':tchar)
+#define toupper(tchar) (islower(tchar)?tchar-'a'+'A':tchar)
+#endif
+
+/* END OF SCRIBBLE.GBL */
+
