@@ -60,7 +60,7 @@
 
 ## Original Authors
 
-* **Portable MINCE** by [*Jeffrey H. Johnson*](https://github.com/johnsonjh/pmince) \<[trnsz@pobox.com](mailto:trnsz@pobox.com)\>
+* **Portable MINCE** by *[Jeffrey H. Johnson](https://github.com/johnsonjh/pmince)* *\<[trnsz@pobox.com](mailto:trnsz@pobox.com)\>*
 * **MINCE** *2.6*: Copyright (C) 1980-1982 by **Mark of the Unicorn, Inc.**
 * **DIFF** *1.1*: Copyright (C) 1981 by **Mark of the Unicorn, Inc.**
 * **Scribble**, **Pencil**, **Crayon** *1.3*: Copyright (C) 1981 by **Mark of the Unicorn, Inc.**
