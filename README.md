@@ -22,10 +22,10 @@
   * `coffwrap` *or* POSIX `od`
 
 * Tested on:
-  * Linux/x86_64, GNU C
-  * Linux/armv7h, GNU C
-  * Linux/arm64, GNU C
-  * Darwin x86_64, Apple clang
+  * GNU/Linux x86_64, Fedora 33 (2020-11-29), GNU C 10.2.1 (Red Hat 10.2.1-9)
+  * GNU/Linux armv7h, Raspbian Buster 10 (2021-03-04), GNU C 8.3 (Raspbian 8.3.0-6+rpi1)
+  * GNU/Linux arm64, Debian Bullseye 11 (2021-04-03), GNU C 10.2.1 (Debian 10.2.1-6)
+  * Darwin x86_64, macOS Big Sur 11.3 DP 6 (2021-03-29), Xcode 12.4, Apple clang 12 (clang-1200.0.32.29)
 
 ## TODO
 
