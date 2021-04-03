@@ -13,7 +13,7 @@
 
 ## Building
 
-* Building from source requires:
+* Build requirements:
   * Bourne/POSIX shell as `sh`
   * C (*C89*) compiler (`gcc` *and* `clang` *regularly* *tested*)
   * GNU `make`
@@ -22,17 +22,19 @@
   * POSIX `sed`
   * POSIX `od` (*or `coffwrap`*)
 
-* Tested on:
-  * GNU/**Linux**
-   * x86\_64 (AMD64)
+Tested on:
+
+* GNU/**Linux**
+  * x86\_64 (AMD64)
     * **Fedora** 33, **GNU C 10.2.1** (*Red Hat 10.2.1-9*)
     * **Fedora** 33, **Intel(R) oneAPI DPC++ Compiler 2021.2.0** (*2021.2.0.20210317*)
-   * ARMv7HF (ARM32-GNUEABI)
+  * ARMv7HF (ARM32-GNUEABI)
     * **Raspbian** (Buster) 10, **GNU C 8.3.0** (*Raspbian 8.3.0-6+rpi1*)
-   * ARM64 (AArch64)
+  * ARM64 (AArch64)
     * **Debian** (Bullseye) 11, **GNU C 10.2.1** (*Debian 10.2.1-6*)
-  * Apple/**Darwin**
-   * x86\64 (AMD64)
+
+* Apple/**Darwin**
+  * x86\64 (AMD64)
     * **macOS** (Big Sur) 11.3 Beta 6, **Xcode 12.4** (*clang-1200.0.32.29*)
 
 ## TODO
@@ -62,4 +64,3 @@
 * Scribble, Pencil, Crayon 1.3: Copyright (C) 1981 by Mark of the Unicorn, Inc.
   * MINCE/DIFF/Scribble/Pencil/Crayon: Authored by Jason T. Linhart, Scott ("*Gyro*") Layson Burson, Craig A. Finseth, Brian N. Hess, and Bill Spitzak.
 * CCOM80 (_Derived from **COM** 3.0_): Copyright (C) 1984-2006 by Jim Cathey, Edmund Ramm, Charlie Gibbs, and Willi Kusche.
-
