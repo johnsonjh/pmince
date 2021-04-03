@@ -1,11 +1,11 @@
-# MINCE 
+# MINCE
 
 * MINCE Is Not Completely EMACS
 
 ## Overview
 
 * **MINCE** is an Emacs-like text editor from **Mark of the Unicorn**
- * Originally available for *CP/M-80*, *CP/M-68K*, *PDP/RSX-11*, and *UNIX* systems
+* Originally available for *CP/M-80*, *CP/M-68K*, *PDP/RSX-11*, and *UNIX* systems
 
 ## Portable MINCE
 
@@ -16,13 +16,10 @@
 ## Building
 
 * Build requirements:
-  * Bourne/POSIX shell as `sh`
   * C (*C89*) compiler (`gcc` *and* `clang` *regularly* *tested*)
   * GNU `make`
   * Tcl `expect`
-  * POSIX `env`
-  * POSIX `sed`
-  * POSIX `od` (*or `coffwrap`*)
+  * POSIX `env`, `sh`, `sed`, and `od` (*or `coffwrap`*)
 
 ## Tested configurations
 
