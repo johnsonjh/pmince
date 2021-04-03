@@ -40,10 +40,12 @@
 ## Roadmap / TODO
 
 * End-user configuration system, customizable via file or environment variables.
-* Avoid main input busy-wait/spin loop to reduce idle CPU usage.
-* Translation of line-endings at run time (*for* *now* `dos2unix` *may* *be* (*ab*)*used*).
-* Translation for `PgUp`/`PgDn`/`Home`/`End`/cursor control/arrow keys.
+* Avoid main input busywait/spin-loop to reduce idle CPU usage.
+* Translation of line-endings at run time (*use* `dos2unix` *as* *a* *workaround*).
+* Translation of `PgUp`/`PgDn`/`Home`/`End`/cursor control/arrow keys.
+* Build with GCC `-fno-common` and reduce `-Wall` warnings.
 * Support for automatic terminal resizing (_by catching and handling **SIGWINCH**_).
+* Allow building **MINCE** binaries with various extensions; produce verified/tested configurations.
 * Build and support MOTU **Scribble**, **Pencil**, and **Crayon** in similar fashion.
   * Automatic setup for **ANSI**/**ASME** _**Y14.1**_ (*US*) and *ISO*-_**216**_ (*EU*) paper types.
   * End-user run time switching between different printer defintions.
@@ -56,8 +58,7 @@
 * User-configurable key bindings and remapping.
   * Allow user configuration *without* requiring full recompilation.
   * Normalize key bindings and mappings between **MINCE** flavors.
-* Support for **RSX-11**, (**Open**)**VMS**, and **Windows** operating systems.
-  * Investigate supporting **OS/2** (*ArcaOS*).
+* Support for **RSX-11**, (**Open**)**VMS**, **Windows**, and **OS/2** operating systems.
 
 ## Original Authors
 
