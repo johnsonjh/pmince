@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 test -f "$1" || { printf '%s\n' "Error: Input file missing."; exit 1; };
 printf '%s\n' "char $2_name[13] = {\"$(basename $1)\"};"
-if [ -x /bin/coffwrap ]; then
+if [ -x "/bin/coffwrap" ] || [ -x "/usr/bin/coffwrap" ]; then
 	coffwrap -t -n _$2 $1 $2.o
 	printf '%s\n' "extern unsigned char $2[];"
 	ls -l $1 | read -u a b c d size rest

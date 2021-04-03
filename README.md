@@ -15,13 +15,20 @@
 ## Building
 
 * Building from source requires:
-  * C89 C compiler
-  * GNU Make
-  * POSIX sed
-  * Expect
+  * C89 C compiler (*`gcc` and `clang` tested*)
+  * GNU `make`
+  * POSIX `sed`
+  * Tcl `expect`
+  * `coffwrap` *or* POSIX `od`
 
 ## TODO
 
-* Transparent translation of *UNIX* and *DOS* line-endings at runtime (*for now `dos2unix` can be used*).
-* Transparent translation of `PgUp`, `PgDn`, `Home`, `End`, `Insert`, and cursor control (*arrow*) keys.
+* Configuration system, customizable by a file or environment variables.
+* Translation of line-endings at runtime (*for now `dos2unix` can be used*).
+* Translation for `PgUp`/`PgDn`/`Home`/`End`/cursor control (*arrow*) keys.
 * Support for automatic terminal resizing (_by catching and handling **SIGWINCH**_).
+* Build and support MOTU Scribble and Crayon in similar fashion.
+* Include 68000 CPU core and include MINCE-68K & SCRIBBLE-68K.
+  * Automatically invoke 68K versions for large input files.
+  * Allow the user to default to MINCE-80 or MINCE-68K via configuration.
+* User-configurable key bindings without requiring recompilation.

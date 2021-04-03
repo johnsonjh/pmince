@@ -1,30 +1,58 @@
 #########################################################################
-#                       Portable MINCE-80 Makefile                      #
+#                         Portable MINCE Makefile                       #
 #########################################################################
 
 .SUFFIXES: .o
 
-#########################################################################
-#                                Settings                               #
-#########################################################################
-
-COLS=80
-ROWS=24
-CFL=-O2 -fcommon -fno-strength-reduce -s -static
-CC=gcc $(CFL)
-CPP=cpp
-SYSTYPE=SYSV
-OPTIONS=-D$(SYSTYPE)=1 -DZ80 -DRUNOPTS -DUSEDIRENT
-CFLAGS=$(OPTIONS)
+ifndef $(OS)
+ OS=$(shell uname -s 2>/dev/null |\
+	tr '[:upper:]' '[:lower:]' 2>/dev/null || \
+	true)
+endif
 
 #########################################################################
+#                              Configuration                            #
+#########################################################################
 
-all: mince
+ifeq ($(OS), darwin)
+	COLS=80
+	ROWS=24
+	CFL=-O3 -fcommon
+	CC=clang $(CFL)
+	CPP=clang
+	SYSTYPE=BSD
+	OPTIONS=-D$(SYSTYPE)=1 -DZ80 -DRUNOPTS -DUSEDIRENT
+	CFLAGS=$(OPTIONS)
+	RM=rm -f
+	TEST=test
+	SIZE=size
+	MINCE_CONFIGURED=1
+endif
+
+ifeq ($(OS), linux)
+	COLS=80
+	ROWS=24
+	CFL=-O2 -fcommon
+	CC=gcc $(CFL)
+	CPP=cpp
+	SYSTYPE=SYSV
+	OPTIONS=-D$(SYSTYPE)=1 -DZ80 -DRUNOPTS -DUSEDIRENT
+	CFLAGS=$(OPTIONS)
+	RM=rm -f --
+	TEST=test
+	SIZE=size
+	MINCE_CONFIGURED=1
+endif
+
+#########################################################################
+
+all: osconf depend mince$(OEXT)
 	@printf '\r%s\n' "" || true
-	@test -x mince 2>/dev/null && size mince 2>/dev/null || true
-	@test -x mince 2>/dev/null && \
-		printf '\n%s\n\n' \
-		" **** MINCE ($(ROWS) rows, cols $(COLS)) build successful. ****"
+	@$(TEST) -x ./mince$(OEXT) 2>/dev/null && \
+		$(SIZE) ./mince$(OEXT) 2>/dev/null || true
+	@$(TEST) -x ./mince$(OEXT) 2>/dev/null && \
+		printf '\n%s\n' \
+		" **** MINCE ($(ROWS) rows, cols $(COLS)) build successful ****"
 
 #########################################################################
 
@@ -47,16 +75,16 @@ dir.o: com.h dir.c Makefile
 #########################################################################
 
 mince_com.c: mince80/mince.com
-	@test -x ./bintoc
+	@$(TEST) -x ./bintoc
 	@./bintoc $? mince_com >$@
-	@test -f $@
+	@$(TEST) -f $@
 
 #########################################################################
 
 mince_swp.c: mince80/mince.swp
-	@test -x ./bintoc
+	@$(TEST) -x ./bintoc
 	@./bintoc $? mince_swp >$@
-	@test -f $@
+	@$(TEST) -f $@
 
 #########################################################################
 
@@ -70,32 +98,51 @@ embed.o: com.c com.h Makefile
 
 #########################################################################
 
-ccom: ccpu.o com.o console.o dir.o disass.o fakefs.o Makefile
+ccom$(OEXT): ccpu.o com.o console.o dir.o disass.o fakefs.o Makefile
 	$(CC) $(CFLAGS) ccpu.o com.o console.o dir.o disass.o fakefs.o -o $@
 
 #########################################################################
 
-mince: ccpu.o console.o dir.o disass.o fakefs_mince.o \
+mince$(OEXT): ccpu.o console.o dir.o disass.o fakefs_mince.o \
 	embed.o mince_com.o mince_swp.o Makefile
-	$(CC) ccpu.o console.o dir.o disass.o fakefs_mince.o \
+	$(CC) $(CFLAGS) ccpu.o console.o dir.o disass.o fakefs_mince.o \
 		embed.o mince_com.o mince_swp.o -o $@
 
 #########################################################################
 
-mince80/mince.swp: ccom
-	@test -x ./termset
+mince80/mince.swp: ccom$(OEXT)
+	@$(TEST) -x ./termset
 	@$(shell printf '%s\n' "export ROWS=$(ROWS) && \
-		export COLS=$(COLS) && ./termset")
-	@test -f mince80/mince.swp
+		export COLS=$(COLS) && \
+		./termset" "$(OEXT)")
+	@$(TEST) -f mince80/mince.swp
 
 #########################################################################
 
-.PHONY: all clean prereq
+.PHONY: all clean osconf com.h dep depend version.h
 
 #########################################################################
 
 clean:
-	rm -f -- ccom *.[soL] *.s1 a.out core *~ *.map benchmark \
-		mince mince_com.* mince_swp.* mince80/mince.swp
+	$(RM) ccom$(OEXT) *.[soL] *.s1 a.out *.bak core *~ *.map benchmark \
+		mince$(OEXT) mince_com.* *.exe mince_swp.* mince80/mince.swp
+
+osconf:
+ifeq ($(MINCE_CONFIGURED), 1)
+	$(info Configured for $(OS))
+else
+ifeq ($(OS),)
+	$(error Error: OS detection failed; review Makefile)
+endif
+	$(error Error: No configuration for OS $(OS); review Makefile)
+endif
+
+com.h: version.h Makefile
+
+version.h: Makefile
+
+dep: depend
+
+depend:
 
 #########################################################################

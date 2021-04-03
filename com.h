@@ -36,6 +36,8 @@
 #include <time.h>
 #include <sys/times.h>
 
+#include "version.h"
+
 /*
 ** Some interesting CP/M constants.
 */
