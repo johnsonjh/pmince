@@ -1,44 +1,46 @@
 # MINCE
 
-* MINCE Is Not Completely EMACS
+* ***MINCE Is Not Completely EMACS***
 
 ## Overview
 
-* **MINCE** is an Emacs-like text editor from **Mark of the Unicorn**
-* Originally available for *CP/M-80*, *CP/M-68K*, *PDP/RSX-11*, and *UNIX* systems
+* **MINCE** is an Emacs-like text editor from **Mark of the Unicorn, Inc.**
+* Originally available for **CP/M-80**, **CP/M-68K**, **PDP/RSX-11**, and **UNIX** systems
 
 ## Portable MINCE
 
-* "**Portable MINCE**" is based on the last release of **MINCE** (2.6), plus:
-  * **CP/M 2.2** system call translation
+* "**Portable MINCE**" is based on the last release of **MINCE** (*2.6*), plus:
+  * **CP/M** system call translation
   * **8080/Z80** CPU emulation
 
 ## Building
 
 * Build requirements:
-  * C (*C89*) compiler (`gcc` *and* `clang` *regularly* *tested*)
+  * C compiler (`gcc`, `clang`, etc.)
   * GNU `make`
   * Tcl `expect`
-  * POSIX `env`, `sh`, `sed`, and `od` (*or `coffwrap`*)
+  * POSIX `env`, `sh`, `sed`, and `od` (*or* `coffwrap`)
 
 ## Tested configurations
 
 * GNU/**Linux**
   * x86\_64 (AMD64)
+    * **RHEL** 8.3, **GNU C 8.4.1** (*Red Hat 8.4.1-1*)
+	* **CentOS** 8 (Stream), **GNU C 10.2.1** (*Red Hat SCL 10.2.1-7*)
     * **Fedora** 33, **GNU C 10.2.1** (*Red Hat 10.2.1-9*)
-    * **Fedora** 33, **Intel(R) oneAPI DPC++ Compiler 2021.2.0** (*2021.2.0.20210317*)
+    * **Fedora** 33, **Intel oneAPI DPC++ 2021.2.0** (*2021.2.0.20210317*)
   * ARMv7HF (ARM32-GNUEABI)
     * **Raspbian** (Buster) 10, **GNU C 8.3.0** (*Raspbian 8.3.0-6+rpi1*)
   * ARM64 (AArch64)
     * **Debian** (Bullseye) 11, **GNU C 10.2.1** (*Debian 10.2.1-6*)
-
 * Apple/**Darwin**
-  * x86\64 (AMD64)
+  * x86\_64 (AMD64)
     * **macOS** (Big Sur) 11.3 Beta 6, **Xcode 12.4** (*clang-1200.0.32.29*)
 
 ## Roadmap / TODO
 
 * End-user configuration system, customizable via file or environment variables.
+* Avoid main input busy-wait/spin loop to reduce idle CPU usage.
 * Translation of line-endings at run time (*for now `dos2unix` can be (ab)used*).
 * Translation for `PgUp`/`PgDn`/`Home`/`End`/cursor control (*arrow*) keys.
 * Support for automatic terminal resizing (_by catching and handling **SIGWINCH**_).
