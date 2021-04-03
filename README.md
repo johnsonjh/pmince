@@ -1,9 +1,11 @@
-# MINCE (MINCE Is Not Completely EMACS)
+# MINCE 
+
+* MINCE Is Not Completely EMACS
 
 ## Overview
 
 * **MINCE** is an Emacs-like text editor from **Mark of the Unicorn**
-* It was produced for *CP/M-80*, *CP/M-68K*, *PDP/RSX-11*, and *UNIX* operating systems
+ * Originally available for *CP/M-80*, *CP/M-68K*, *PDP/RSX-11*, and *UNIX* systems
 
 ## Portable MINCE
 
@@ -22,7 +24,7 @@
   * POSIX `sed`
   * POSIX `od` (*or `coffwrap`*)
 
-Tested on:
+## Tested configurations
 
 * GNU/**Linux**
   * x86\_64 (AMD64)
@@ -37,7 +39,7 @@ Tested on:
   * x86\64 (AMD64)
     * **macOS** (Big Sur) 11.3 Beta 6, **Xcode 12.4** (*clang-1200.0.32.29*)
 
-## TODO
+## Roadmap / TODO
 
 * End-user configuration system, customizable via file or environment variables.
 * Translation of line-endings at run time (*for now `dos2unix` can be (ab)used*).
@@ -56,7 +58,7 @@ Tested on:
   * Normalize key bindings and mappings between **MINCE** flavors.
 * Support for RSX-11, (Open)VMS, and Microsoft Windows operating systems.
 
-## Authors
+## Original Authors
 
 * Portable MINCE by [Jeffrey H. Johnson](https://github.com/johnsonjh/pmince) \<[trnsz@pobox.com](mailto:trnsz@pobox.com)\>
 * MINCE 2.6: Copyright (C) 1980-1982 by Mark of the Unicorn, Inc.
