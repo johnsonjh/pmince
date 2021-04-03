@@ -23,14 +23,14 @@
 
 * Tested on:
   * GNU/**Linux**, x86\_64
-    * **Fedora 33** (*2020-11-29*), **GNU C 10.2.1** (*Red Hat 10.2.1-9*), glibc 2.32
-    * **Fedora 33** (*2020-11-29*), **Intel(R) oneAPI DPC++ Compiler 2021.2.0** (*2021.2.0.20210317*), **glibc 2.32**
+    * **Fedora** 33 (*2020-11-29*), **GNU C 10.2.1** (*Red Hat 10.2.1-9*), glibc 2.32
+    * **Fedora** 33 (*2020-11-29*), **Intel(R) oneAPI DPC++ Compiler 2021.2.0** (*2021.2.0.20210317*), **glibc 2.32**
   * GNU/**Linux**, armv7hf
-    * **Raspbian Buster 10** (*2021-03-04*), **GNU C 8.3.0** (*Raspbian 8.3.0-6+rpi1*), **glibc 2.28**
+    * **Raspbian** (Buster) 10 (*2021-03-04*), **GNU C 8.3.0** (*Raspbian 8.3.0-6+rpi1*), **glibc 2.28**
   * GNU/**Linux**, arm64
-    * **Debian Bullseye 11** (*2021-04-03*), **GNU C 10.2.1** (*Debian 10.2.1-6*), **glibc 2.31**
-  * **Darwin**/macOS, x86\_64
-    * **Big Sur 11.3 DP 6** (*2021-03-29*), **Xcode 12.4, Apple clang 12** (*clang-1200.0.32.29*), **cctools-977.1**
+    * **Debian** (Bullseye) 11 (*2021-04-03*), **GNU C 10.2.1** (*Debian 10.2.1-6*), **glibc 2.31**
+  * Apple/**Darwin**, x86\_64
+    * **macOS** (Big Sur) 11.3 Beta 6 (*2021-03-25*) 20.4.0 (*XNU 7195.101.1~26*), **Xcode 12.4** (*clang-1200.0.32.29*), **cctools 977.1**
 
 ## TODO
 
