@@ -41,8 +41,8 @@
 
 * End-user configuration system, customizable via file or environment variables.
 * Avoid main input busy-wait/spin loop to reduce idle CPU usage.
-* Translation of line-endings at run time (*for now `dos2unix` can be (ab)used*).
-* Translation for `PgUp`/`PgDn`/`Home`/`End`/cursor control (*arrow*) keys.
+* Translation of line-endings at run time (*for* *now* `dos2unix` *may* *be* (*ab*)*used*).
+* Translation for `PgUp`/`PgDn`/`Home`/`End`/cursor control/arrow keys.
 * Support for automatic terminal resizing (_by catching and handling **SIGWINCH**_).
 * Build and support MOTU **Scribble**, **Pencil**, and **Crayon** in similar fashion.
   * Automatic setup for **ANSI**/**ASME** _**Y14.1**_ (*US*) and *ISO*-_**216**_ (*EU*) paper types.
