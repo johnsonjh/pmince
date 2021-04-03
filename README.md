@@ -21,6 +21,12 @@
   * Tcl `expect`
   * `coffwrap` *or* POSIX `od`
 
+* Tested on:
+  * Linux/x86_64, GNU C
+  * Linux/armv7h, GNU C
+  * Linux/arm64, GNU C
+  * Darwin x86_64, Apple clang
+
 ## TODO
 
 * Configuration system, customizable by a file or environment variables.

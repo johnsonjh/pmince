@@ -110,6 +110,7 @@ char *argv[];
                 regp->trcoptions |= ZILOG;
                 break;
 #endif
+
               case 'b':         /* No buffering. */
                 regp->miscflags |= NOBUFFER;
                 break;
@@ -159,6 +160,9 @@ char *argv[];
                 goto usage;
             }
         } else {
+#ifdef NOBUFF
+			regp->miscflags |= NOBUFFER;
+#endif
 #ifdef EMBED
             if (filename = strrchr(argp, '/')) {
                 *filename++ = 0;
