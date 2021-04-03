@@ -26,7 +26,7 @@
 * GNU/**Linux**
   * x86\_64 (AMD64)
     * **RHEL** 8.3, **GNU C 8.4.1** (*Red Hat 8.4.1-1*)
-	* **CentOS** 8 (Stream), **GNU C 10.2.1** (*Red Hat SCL 10.2.1-7*)
+    * **CentOS** 8 (Stream), **GNU C 10.2.1** (*Red Hat SCL 10.2.1-7*)
     * **Fedora** 33, **GNU C 10.2.1** (*Red Hat 10.2.1-9*)
     * **Fedora** 33, **Intel oneAPI DPC++ 2021.2.0** (*2021.2.0.20210317*)
   * ARMv7HF (ARM32-GNUEABI)
@@ -45,10 +45,10 @@
 * Translation for `PgUp`/`PgDn`/`Home`/`End`/cursor control (*arrow*) keys.
 * Support for automatic terminal resizing (_by catching and handling **SIGWINCH**_).
 * Build and support MOTU **Scribble**, **Pencil**, and **Crayon** in similar fashion.
-  * Automatic setup for *ANSI*/*ASME* *Y14.1* and *ISO*-*216* paper types.
+  * Automatic setup for _*ANSI*/*ASME* *Y14.1*_ (*US*) and _*ISO*-*216*_ (*EU*) paper types.
   * Run time switching between different printer defintions.
   * Support for rendering of proportional (*NEC*, *Epson*, *Diablo*, etc.) printer output.
-  * Conversion of printer output to **PDF** or **PostScript** (using *Ghostscript* and/or *ImageMagick*)
+  * Leverage *Ghostscript*/*ImageMagick* for printer output conversions (*PDF/PS/PCL/XPS/PNG/etc.*)
 * Add Motorola **68000** CPU core to suport **MINCE-68K**.
   * Automatically invoke **68K** version for large input files.
   * Allow the user configuration/override of default **MINCE** flavor (**MINCE-80** or **MINCE-68K**).
