@@ -1,5 +1,5 @@
 /*
-**  Portable MINCE-80 by Jeffrey H. Johnson <trnsz@pobox.com>
+**  "Portable" MINCE by Jeffrey H. Johnson <trnsz@pobox.com>
 ** 
 **  Based on the CP/M 2.2 (8080/Z-80) simulator for UNIX systems
 **   by Jim Cathey, Edmund Ramm, Charlie Gibbs, and Willi Kusche
