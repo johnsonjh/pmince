@@ -39,6 +39,7 @@
 
 ## Roadmap / TODO
 
+* Eliminate `expect` from the build requirements.
 * End-user configuration system, customizable via file or environment variables.
 * Avoid main input busywait/spin-loop to reduce idle CPU usage.
 * Translation of line-endings at run time (*use* `dos2unix` *as* *a* *workaround*).
