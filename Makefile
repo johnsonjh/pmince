@@ -19,8 +19,8 @@ endif
 PREFIX=/usr/local
 PBIN=bin
 CFEXTRA=-pipe
-CFEXTRA+=-Ofast -fomit-frame-pointer -march=native \
-		-fstack-protector-strong -D_FORTIFY_SOURCE=2
+#CFEXTRA+=-Ofast -fomit-frame-pointer -march=native \
+#		-fstack-protector-strong -D_FORTIFY_SOURCE=2
 
 #########################################################################
 
