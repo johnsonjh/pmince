@@ -69,13 +69,18 @@ endif
 
 #########################################################################
 
-all: osconf depend mince$(OEXT) strip
+all: osconf depend coffwrap$(OEXT) mince$(OEXT) strip
 	@printf '\r%s\n' "" || true
 	@$(TEST) -x ./mince$(OEXT) 2>/dev/null && \
 		$(SIZE) ./mince$(OEXT) 2>/dev/null || true
 	@$(TEST) -x ./mince$(OEXT) 2>/dev/null && \
 		printf '\n%s\n' \
 		" **** MINCE ($(ROWS) rows, cols $(COLS)) build successful ****"
+
+#########################################################################
+
+coffwrap$(OEXT): coffwrap.c version.h
+	$(CC) $(COFFWRAP) $? -o $@
 
 #########################################################################
 
@@ -98,16 +103,12 @@ dir$(OBJE): com.h dir.c Makefile
 #########################################################################
 
 mince_com.c: mince80/mince.com
-	@$(TEST) -x ./bintoc
-	@./bintoc $? mince_com >$@
-	@$(TEST) -f $@
+	./coffwrap$(OEXT) $? mince_com mince.com >./$@
 
 #########################################################################
 
 mince_swp.c: mince80/mince.swp
-	@$(TEST) -x ./bintoc
-	@./bintoc $? mince_swp >$@
-	@$(TEST) -f $@
+	./coffwrap$(OEXT) $? mince_swp mince.swp >./$@
 
 #########################################################################
 
@@ -149,7 +150,7 @@ mince80/mince.swp: ccom$(OEXT)
 #########################################################################
 
 clean:
-	$(RM) ccom$(OEXT) *.[soL] *.s1 a.out *.bak core *~ *.map benchmark \
+	$(RM) ccom$(OEXT) *.[soL] a.out *.bak core *~ *.map coffwrap$(OEXT) \
 		mince$(OEXT) mince_com.* *.exe mince_swp.* mince80/mince.swp \
 		mince68k/mince.swp mince_68k.* *.core *.cob *.obj *.ovr *.alm
 

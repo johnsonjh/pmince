@@ -19,7 +19,7 @@
   * C compiler (`gcc`, `clang`, etc.)
   * GNU `make`
   * Tcl `expect`
-  * POSIX `env`, `sh`, `sed`, and `od` (*or* `coffwrap`)
+  * POSIX `env`, `sh`, and `sed`
 
 ## Tested configurations
 
@@ -68,3 +68,4 @@
 * **Scribble**, **Pencil**, **Crayon** *1.3*: Copyright (C) 1981 by **Mark of the Unicorn, Inc.**
   * **MINCE**/**DIFF**/**Scribble**/**Pencil**/**Crayon**: Authored by *Jason* *T.* *Linhart*, *Scott* ("*Gyro*") *Layson* *Burson*, *Craig* *A.* *Finseth*, *Brian* *N.* *Hess*, and *Bill* *Spitzak*.
 * **CCOM80** (_Derived from **COM** 3.0_): Copyright (C) 1984-2006 by *Jim* *Cathey*, *Edmund* *Ramm*, *Charlie* *Gibbs*, and *Willi* *Kusche*.
+* **coffwrap** (_Derived from bin2c_): Copyright (C) 2015 by *Ondrej* *Novak*
