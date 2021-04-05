@@ -91,7 +91,7 @@ all: osconf depend mince$(OEXT) strip
 		true :
 	@$(TEST) -x ./mince$(OEXT) 2>/dev/null && \
 		printf '\n%s\n' \
-		" $(MAKE) ** MINCE ($(ROWS) rows, cols $(COLS)) build successful **" \
+		" ** MINCE ($(ROWS) rows, cols $(COLS)) build successful **" \
 		" ** Run \"$(MAKE) compress\" or \"$(MAKE) install\" now **"
 
 #########################################################################
@@ -101,21 +101,21 @@ coffwrap$(OEXT): coffwrap.c version.h
 
 #########################################################################
 
-ccpu$(OBJE): ccpu.c com.h Makefile
+ccpu$(OBJE): ccpu.c com.h
 	$(CC) $(CFLAGS) -c ccpu.c -o $@
 
 #########################################################################
 
-com$(OBJE): com.c com.h Makefile
+com$(OBJE): com.c com.h
 	$(CC) $(CFLAGS) -c com.c -o $@
 
 #########################################################################
 
-console$(OBJE): com.h console.c Makefile
+console$(OBJE): com.h console.c
 
 #########################################################################
 
-dir$(OBJE): com.h dir.c Makefile
+dir$(OBJE): com.h dir.c
 
 #########################################################################
 
@@ -134,13 +134,13 @@ fakefs_mince$(OBJE): fakefs.c mince_com$(OBJE) mince_swp$(OBJE)
 
 #########################################################################
 
-embed$(OBJE): com.c com.h Makefile
+embed$(OBJE): com.c com.h
 	$(CC) $(CFLAGS) -DEMBED -c com.c -o $@
 
 #########################################################################
 
 ccom$(OEXT): ccpu$(OBJE) com$(OBJE) console$(OBJE) dir$(OBJE) \
-	disass$(OBJE) fakefs$(OBJE) Makefile
+	disass$(OBJE) fakefs$(OBJE)
 	$(CC) $(CFLAGS) ccpu$(OBJE) com$(OBJE) console$(OBJE) dir$(OBJE) \
 		disass$(OBJE) fakefs$(OBJE) -o $@
 
@@ -148,7 +148,7 @@ ccom$(OEXT): ccpu$(OBJE) com$(OBJE) console$(OBJE) dir$(OBJE) \
 
 mince$(OEXT): ccpu$(OBJE) console$(OBJE) dir$(OBJE) disass$(OBJE) \
 	fakefs_mince$(OBJE) embed$(OBJE) mince_com$(OBJE) \
-	mince_swp$(OBJE) Makefile
+	mince_swp$(OBJE)
 	$(CC) $(CFLAGS) ccpu$(OBJE) console$(OBJE) dir$(OBJE) \
 		disass$(OBJE) fakefs_mince$(OBJE) embed$(OBJE) \
 		mince_com$(OBJE) mince_swp$(OBJE) -o $@
@@ -204,18 +204,14 @@ ifeq ($(MINCE_CONFIGURED), 1)
 	$(info Configured for $(OS))
 else
 ifeq ($(OS),)
-		$(error Error: OS detection failed; review Makefile)
+		$(error Error: OS detection failed; review GNUmakefile)
 endif
-	$(error Error: No configuration for OS $(OS); review Makefile)
+	$(error Error: No configuration for OS $(OS); review GNUmakefile)
 endif
 
 #########################################################################
 
-com.h: version.h Makefile
-
-#########################################################################
-
-version.h: Makefile
+com.h: version.h
 
 #########################################################################
 
