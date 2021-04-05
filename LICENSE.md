@@ -105,7 +105,7 @@ Leor Zolman
 
 ## L2 Linker
 
-**Portable MINCE** includes the **L2 (New) Linker** for **BDS C**, written in 1980, and improved through at least 1981, by Scott W. Layson.
+**Portable MINCE** includes the **L2 (New) Linker** for **BDS C**, by *Scott* *W.* *Layson*.
 
 The **L2 (New) Linker** is **public domain software**.
 
