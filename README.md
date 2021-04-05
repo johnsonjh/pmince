@@ -37,7 +37,7 @@
   * x86\_64 (AMD64)
     * **macOS** (Big Sur) 11.3 Beta 6, **Xcode 12.4** (*clang-1200.0.32.29*)
 
-## Roadmap / TODO
+## Roadmap
 
 * Eliminate `expect` from the build requirements.
 * End-user configuration system, customizable via file or environment variables.
