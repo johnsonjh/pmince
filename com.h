@@ -133,7 +133,7 @@ struct regs {
 };
 
 #if SVR4 || SYSV || DNIX
-#ifdef __FreeBSD__
+#if defined(__FreeBSD__) || defined(__OpenBSD__)
 struct termios old, new;
 #else
 struct termio old, new; /* Terminal control structures. */
