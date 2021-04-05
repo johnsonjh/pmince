@@ -10,7 +10,7 @@ The **Portable MINCE** authors could find no evidence of the trademark being act
 
 # MINCE, DIFF, Scribble, Pencil, Crayon
 
-**MINCE** (version 2.6), **DIFF** (version 1.1), **Scribble** (version 1.3), **Pencil** (version 1.3), and **Crayon** (version 1.3), along with associated documentation (the "Materials"), are Copyright © 1980-1982 by **Mark of the Unicorn, Inc.** These Materials are provided in accordance with Title 17 U.S.C. Section 107, and distributed without profit, in original and unmodified form, for non-commercial research and educational purposes, for use by those who have expressed a prior general interest in receiving the Materials.
+**MINCE** (version 2.6), **DIFF** (version 1.1), **Scribble** (version 1.3), **Pencil** (version 1.3), and **Crayon** (version 1.3), along with any associated documentation (the "Materials"), are Copyright © 1980-1982 by **Mark of the Unicorn, Inc.** These Materials are provided in accordance with Title 17 U.S.C. Section 107, and distributed without profit, in original and unmodified form, for non-commercial research and educational purposes, for use by those who have expressed a prior general interest in receiving the Materials.
 
 The **Portable MINCE** authors claim **no** affiliation, endorsement, or sponsorship whatsoever by the originators of the Materials. 
 
