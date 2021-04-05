@@ -9,7 +9,7 @@
 ifndef $(OS)
  OS=$(shell uname -s 2>/dev/null | \
 	tr '[:upper:]' '[:lower:]' 2>/dev/null || \
-	true)
+	true :)
 endif
 
 #########################################################################
@@ -63,19 +63,20 @@ endif
 #########################################################################
 
 .SUFFIXES: $(OBJE)
-.PHONY: all clean osconf dep depend strip install
+.PHONY: all clean osconf dep depend strip compress upx install
 
 #########################################################################
 
 all: osconf depend mince$(OEXT) strip
 	@printf '\r%s\n' "" || \
-		true
+		true :
 	@$(TEST) -x ./mince$(OEXT) 2>/dev/null && \
 		$(SIZE) ./mince$(OEXT) 2>/dev/null || \
-		true
+		true :
 	@$(TEST) -x ./mince$(OEXT) 2>/dev/null && \
 		printf '\n%s\n' \
-		" **** MINCE ($(ROWS) rows, cols $(COLS)) build successful ****"
+		" ** MINCE ($(ROWS) rows, cols $(COLS)) build successful **" \
+		" ** Run \"make compress\" or \"make install\" now **"
 
 #########################################################################
 
@@ -157,21 +158,25 @@ clean:
 strip: mince$(OEXT)
 	$(STRIP) \
 		mince$(OEXT) \
-		|| \
-			true
+		2>/dev/null \
+		|| true :
 	$(STRIP) \
 		mince$(OEXT) \
 		--remove-section=.note.gnu.build-id \
-		--remove-section=.note.ABI-tag \
 		--remove-section=.gnu.hash \
-		--remove-section=.gnu.version \
-		--remove-section=.gnu.version_r \
-		--remove-section=.eh_frame_hdr \
-		--remove-section=.eh_frame \
 		--remove-section=.comment \
 		--remove-section=.gnu.build.attributes \
-		|| \
-			true
+		2>/dev/null \
+		|| true :
+
+#########################################################################
+
+upx: compress
+
+compress: strip mince$(OEXT)
+	upx -q -q --exact --strip-relocs=0 --overlay=copy --ultra-brute \
+		mince$(OEXT) || true :
+	@printf '\n%s\n' " ** You may now procced with \"make install\" **"
 
 #########################################################################
 
@@ -202,8 +207,17 @@ depend:
 #########################################################################
 
 install: depend mince$(OEXT) strip
-	$(MKDIR) $(PREFIX) || true
-	$(MKDIR) $(PREFIX)/$(PBIN) || true
+	$(TEST) -d $(PREFIX) || \
+		$(MKDIR) $(PREFIX)
+	$(TEST) -d $(PREFIX)/$(PBIN) || \
+		$(MKDIR) $(PREFIX)/$(PBIN)
+	$(TEST) -f $(PREFIX)/$(PBIN)/mince$(OEXT) && \
+		$(RM) $(PREFIX)/$(PBIN)/mince$(OEXT)
 	$(CP) mince$(OEXT) $(PREFIX)/$(PBIN)/mince$(OEXT)
+	@$(TEST) -x $(PREFIX)/$(PBIN)/mince$(OEXT) && \
+		printf '\n%s\n' " ** Installation successful! **" || true :
+	@$(TEST) -x $(PREFIX)/$(PBIN)/mince$(OEXT) || { \
+		printf '\n%s\n' " ** Installation failed, try manually!"; \
+		false :; };
 
 #########################################################################
