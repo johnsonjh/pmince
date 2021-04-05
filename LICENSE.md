@@ -113,7 +113,7 @@ Leor Zolman
 9/20/2002
 ```
 
-## L2 Linker
+## L2 (New) Linker
 
 **Portable MINCE** includes the **L2 (New) Linker** for **BDS C**, by *Scott* *W.* *Layson*.
 

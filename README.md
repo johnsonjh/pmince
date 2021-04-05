@@ -72,7 +72,7 @@
 * **MINCE** *2.6*: Copyright © 1980-1982 by **Mark of the Unicorn, Inc.**
 * **DIFF** *1.1*: Copyright © 1981 by **Mark of the Unicorn, Inc.**
 * **Scribble**, **Pencil**, **Crayon** *1.3*: Copyright © 1981 by **Mark of the Unicorn, Inc.**
-  * **MINCE**/**DIFF**/**Scribble**/**Pencil**/**Crayon**: Authored by *Jason* *T.* *Linhart*, *Scott* ("*Gyro*") *Layson* *Burson*, *Craig* *A.* *Finseth*, *Brian* *N.* *Hess*, and *Bill* *Spitzak*.
+  * **MINCE** / **DIFF** / **Scribble** / **Pencil** / **Crayon**: Authored by *Jason* *T.* *Linhart*, *Scott* ("*Gyro*") *Layson* *Burson*, *Craig* *A.* *Finseth*, *Brian* *N.* *Hess*, and *Bill* *Spitzak*.
 * **CCOM80** (_Derived from **COM** 3.0_): Copyright © 1984-2008 by *Jim* *Cathey*, *Edmund* *Ramm*, *Charlie* *Gibbs*, and *Willi* *Kusche*.
 * **coffwrap** (_Derived from **bin2c**_): Copyright © 2015 by *Ondrej* *Novak*.
 
