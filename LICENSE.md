@@ -23,9 +23,9 @@ If you wish to use these copyrighted Materials for any purposes beyond "*fair us
 The majority of **COM** is **public domain software**, however,
 
 * **CCOM80** may incorporate or adapt some *Z-80* simulation routines by *Charlie* *Gibbs* and *Willi* *Kusche*.
- * These routines are **freely redistributable, but may not be sold**.
+  * These routines are **freely redistributable, but may not be sold**.
 * **CCOM80** may incorporate or adapt some **CP/M** simulation routines from *RunCPM* by *Mockba the Borg*
- * These routines are Copyright © 2017 by *Mockba the Borg*, and released under the **MIT license**.
+  * These routines are Copyright © 2017 by *Mockba the Borg*, and released under the **MIT license**.
 
 ```text
 MIT License
