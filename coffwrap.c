@@ -3,10 +3,16 @@
 #include <string.h>
 #include "version.h"
 
-int main(int argc, char **argv) {
+int main(
+  int argc,
+  char **argv
+) {
 
-  if (argc != 4) {
-    fputs("Convert binary file to C.\n"
+  if (
+    argc != 4
+) {
+    fputs(
+      "Convert binary file to C.\n"
           /*
 
              The MIT License (MIT)
@@ -35,67 +41,152 @@ int main(int argc, char **argv) {
 			*/
           "\nUsage:\n"
           "        coffwrap <file> <identifier> <name>\n\n",
-          stderr);
+          stderr
+    );
     return 1;
   } else {
-    FILE *f = strcmp(argv[1], "-") == 0 ? stdin : fopen(argv[1], "rb");
+    FILE *f = strcmp(
+      argv[1], "-"
+	) == 0 ? stdin : fopen(
+	  argv[1], "rb"
+	);
 
-	if (f == NULL) {
-      fprintf(stderr, "Can't open input file '%s'\n", argv[1]);
+	if (
+	  f == NULL
+	) {
+      fprintf(
+	    stderr, "Can't open input file '%s'\n",
+		argv[1]
+	);
       return errno;
     }
 
-    if (strlen(argv[2]) > 13) {
-      fprintf(stderr, "Error: filename too long.\n");
+    if (
+	  strlen(
+		argv[2]
+	) > 13
+	  ) {
+      fprintf(
+	    stderr, "Error: filename too long.\n"
+	  );
       return 1;
     }
-    printf("/* coffwrap %s: %s (%s) */\n", VERSION, argv[3], argv[2]);
-    printf("char %s_name[13] = {\"%s\"};\n", argv[2], argv[3]);
-    printf("unsigned char %s[] = {\"", argv[2]);
+    printf(
+	  "/* coffwrap %s: %s (%s) */\n",
+	  VERSION,
+	  argv[3], 
+	  argv[2]
+	);
+    printf(
+	  "char %s_name[13] = {\"%s\"};\n",
+	  argv[2],
+	  argv[3]
+	);
+    printf(
+	  "unsigned char %s[] = {\"",
+	  argv[2]
+	);
 
-	int i = fgetc(f);
+	int i = fgetc(
+	  f
+	);
     int cnt = 0;
     unsigned int size = 0;
 
-	while (i != -1) {
+	while (
+	  i != -1
+	) {
       size++;
 
-      if (i >= 32 && i != '"' && i != '\\' && i < 128) {
-        putchar(i);
+      if (
+	    i >= 32 && i != '"' && \
+		i != '\\' && \
+		i < 128
+	  ) {
+        putchar(
+		i
+	  );
         cnt++;
-      } else if (i == '"') {
-        putchar('\\');
-        putchar('"');
+      } else if (
+		i == '"'
+	  ) {
+        putchar(
+		  '\\'
+		);
+        putchar(
+		  '"'
+		);
         cnt += 2;
-      } else if (i == '\\') {
-        putchar('\\');
-        putchar('\\');
+      } else if (
+		i == '\\'
+	  ) {
+        putchar(
+		'\\'
+	  );
+        putchar(
+		'\\'
+	  );
         cnt += 2;
-      } else if (i == '\n') {
-        putchar('\\');
-        putchar('n');
+      } else if (
+		i == '\n'
+	  ) {
+        putchar(
+		'\\'
+	  );
+        putchar(
+		'n'
+	  );
         cnt += 2;
-      } else if (i == '\r') {
-        putchar('\\');
-        putchar('r');
+      } else if (
+		i == '\r'
+	  ) {
+        putchar(
+		'\\'
+	  );
+        putchar(
+		'r'
+	  );
         cnt += 2;
-      } else if (i == '\t') {
-        putchar('\\');
-        putchar('t');
+      } else if (
+		i == '\t'
+	  ) {
+        putchar(
+		'\\'
+	  );
+        putchar(
+		't'
+	  );
         cnt += 2;
       } else {
-        printf("\\%03o", i);
+        printf(
+		"\\%03o",
+		i
+	  );
         cnt += 4;
       }
 
-      if (cnt >= 80) {
-        printf("\"\n\"");
+      if (
+		cnt >= 80
+	  ) {
+        printf(
+		"\"\n\""
+	  );
         cnt = 0;
       }
-      i = fgetc(f);
+      i = fgetc(
+	    f
+	  );
     }
-    fclose(f);
-    printf("\\032\\000\"};\n");
-    printf("int %s_size = %u;\n", argv[2], size+2);
+    fclose(
+	  f
+	);
+    printf(
+	  "\\032\\000\"};\n"
+	);
+    printf(
+	  "int %s_size = %u;\n",
+	  argv[2],
+	  size+2
+	);
   }
 }
