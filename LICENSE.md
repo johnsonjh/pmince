@@ -22,8 +22,10 @@ If you wish to use these copyrighted Materials for any purposes beyond "*fair us
 
 The majority of **COM** is **public domain software**, however,
 
-* **CCOM80** may incorporate or adapt some *Z-80* simulation routines by Charlie Gibbs and Willi Kusche. These routines are **freely redistributable, but may not be sold**.
-* **CCOM80** may incorporate or adapt some **CP/M** simulation routines from *RunCPM*, Copyright © 2017 by Mockba the Borg, released under the **MIT license**.
+* **CCOM80** may incorporate or adapt some *Z-80* simulation routines by *Charlie* *Gibbs* and *Willi* *Kusche*.
+ * These routines are **freely redistributable, but may not be sold**.
+* **CCOM80** may incorporate or adapt some **CP/M** simulation routines from *RunCPM* by *Mockba the Borg*
+ * These routines are Copyright © 2017 by *Mockba the Borg*, and released under the **MIT license**.
 
 ```text
 MIT License
@@ -51,7 +53,9 @@ SOFTWARE.
 
 ## coffwrap
 
-The included `coffwrap` tool is an approximation of a tool by the same name by *Sequent Computer Systems* and distributed with their **DYNIX** and **DYNIX/ptx** operating systems. This reimplementation is similar only in name and purpose, and contains no *Sequent Computer Systems* source code.
+The included `coffwrap` tool is an approximation of a tool by the same name by *Sequent Computer Systems*, and distributed with their **DYNIX** and **DYNIX/ptx** operating systems.
+
+This reimplementation is similar only in name and purpose, and contains no *Sequent Computer Systems* source code.
 
 * `coffwrap` is derived from `bin2c`, Copyright © 2015 by *Ondrej* *Novak*, released under the **MIT license**.
 
@@ -82,7 +86,9 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ## BD Software C
 
-**Portable MINCE** includes libraries and other materials from **BDS C**, by *Leor Zolman* of *BD Software*. **BDS C** is **public domain software**.
+**Portable MINCE** includes libraries and other materials from **BDS C**, by *Leor Zolman* of *BD Software*.
+
+**BDS C** is **public domain software**.
 
 ```text
 I, Leor Zolman, hereby release all rights to BDS C (all
@@ -99,16 +105,18 @@ Leor Zolman
 
 ## L2 Linker
 
-**Portable MINCE** includes the **L2 (New) Linker** for **BDS C**, written between 1980 and 1981, by Scott W. Layson.  The **L2 (New) Linker** is **public domain software**.
+**Portable MINCE** includes the **L2 (New) Linker** for **BDS C**, written in 1980, and improved through at least 1981, by Scott W. Layson.
+
+The **L2 (New) Linker** is **public domain software**.
 
 ```text
 L2 New Linker for BDS C
 
-This is an improved linker for BDS C CRL format.
-It eliminates the jump table at the beginning of
-each function in the object code, thus saving up
-to 10% or so in code space with a slight
-improvement in speed.  
+This is an improved linker for BDS C CRL format.  
+
+It eliminates the jump table at the beginning of each
+function in the object code, thus saving up to 10% or
+so in code space with a slight improvement in speed.  
 
 Written 1980 by Scott W. Layson
 
@@ -117,4 +125,10 @@ This code is in the public domain.
 
 ## AUG (Amethyst Users Group) data
 
-The **Portable MINCE** distribution contains files collected and distributed by "**AUG**", the *Amethyst Users Group*. When the **AUG** was an active organization, membership was restricted to Amethyst, MINCE, and Scribble license holders, per an agreement between **MOTU** and the **AUG**. However, **AUG** is now defunct (since at least 1994), and the **AUG** archives have been publicly available and openly distributed (since at least 1985) by many organizations, including the *Massachusetts Institute of Technology* *CPMUG Repository* via *MIT-MC*, *SIMTEL-20*, *SIG/M*, *PC/Blue*, *Walnut Creek CD-ROM*, *Software Tools of Australia*, the *Oakland University* *Oak Repository*, *Demon Internet*, and others.
+The **Portable MINCE** distribution contains files collected and distributed by "**AUG**", the *Amethyst Users Group*. 
+
+When the **AUG** was an active organization, membership was restricted to Amethyst, MINCE, and Scribble license holders, per an agreement between **Mark of the Unicorn, Inc.** and the **Amethyst Users Group**.
+
+However, **AUG** is now defunct (since at least 1994), and the **AUG** archives have been made publicly available and openly distributed (since at least 1985) by many organizations, including the *Massachusetts Institute of Technology* *CPMUG Repository* via *MIT-MC*, *SIMTEL-20*, *SIG/M*, *PC/Blue*, *Walnut Creek CD-ROM*, *Software Tools of Australia*, *Oakland University* via the *Oak Repository*, *Demon Internet* FTP, and many others.
+
+The **AUG** archives included in the **Portable MINCE** distribution contains **only** data that was historically publicly available and openly distributed.
