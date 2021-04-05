@@ -17,7 +17,7 @@
 #include <sys/poll.h>
 #endif
 #if SYSV || DNIX
-#ifdef __FreeBSD__
+#if defined(__FreeBSD__) || defined(__OpenBSD__)
 #include <termios.h>
 #include <sys/param.h>
 #include <sys/ioctl.h>

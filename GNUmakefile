@@ -26,6 +26,22 @@ CFEXTRA=-pipe
 
 #########################################################################
 
+ifeq ($(OS), openbsd)
+	CFL=-O2 -fcommon $(CFEXTRA)
+	CC?=clang
+	SYSTYPE=SYSV
+	OPTIONS=-D$(SYSTYPE)=1 -DRUNOPTS=1 -DUSEDIRENT=1
+	CFLAGS+=$(CFL) $(OPTIONS)
+	RM=rm -f
+	TEST=test
+	SIZE=size
+	STRIP=strip
+	MKDIR=mkdir -p
+	CP=cp -f
+	OBJE=.o
+	MINCE_CONFIGURED=1
+endif
+
 ifeq ($(OS), freebsd)
 	CFL=-O2 -fcommon $(CFEXTRA)
 	CC?=clang
