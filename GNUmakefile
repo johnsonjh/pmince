@@ -79,7 +79,7 @@ endif
 #########################################################################
 
 .SUFFIXES: $(OBJE)
-.PHONY: all clean osconf dep depend strip compress upx install
+.PHONY: all clean osconf dep depend strip compress upx install cf.LF
 
 #########################################################################
 
@@ -96,7 +96,17 @@ all: osconf depend mince$(OEXT) strip
 
 #########################################################################
 
-coffwrap$(OEXT): coffwrap.c version.h
+cf.Lf:
+	printf '%s\n' \
+		"$(CFLAGS) $(ROWS) $(COLS)" | \
+		cmp -s - cf.L || \
+		printf '%s\n' \
+		"$(CFLAGS) $(ROWS) $(COLS)" \
+		> cf.L
+
+#########################################################################
+
+coffwrap$(OEXT): coffwrap.c version.h cf.L
 	$(CC) $(CFLAGS) coffwrap.c -o $@
 
 #########################################################################
@@ -140,7 +150,7 @@ embed$(OBJE): com.c com.h
 #########################################################################
 
 ccom$(OEXT): ccpu$(OBJE) com$(OBJE) console$(OBJE) dir$(OBJE) \
-	disass$(OBJE) fakefs$(OBJE)
+	disass$(OBJE) fakefs$(OBJE) cf.L
 	$(CC) $(CFLAGS) ccpu$(OBJE) com$(OBJE) console$(OBJE) dir$(OBJE) \
 		disass$(OBJE) fakefs$(OBJE) -o $@
 
@@ -148,14 +158,14 @@ ccom$(OEXT): ccpu$(OBJE) com$(OBJE) console$(OBJE) dir$(OBJE) \
 
 mince$(OEXT): ccpu$(OBJE) console$(OBJE) dir$(OBJE) disass$(OBJE) \
 	fakefs_mince$(OBJE) embed$(OBJE) mince_com$(OBJE) \
-	mince_swp$(OBJE)
+	mince_swp$(OBJE) cf.L
 	$(CC) $(CFLAGS) ccpu$(OBJE) console$(OBJE) dir$(OBJE) \
 		disass$(OBJE) fakefs_mince$(OBJE) embed$(OBJE) \
 		mince_com$(OBJE) mince_swp$(OBJE) -o $@
 
 #########################################################################
 
-mince80/mince.swp: termset ccom$(OEXT)
+mince80/mince.swp: cf.L termset ccom$(OEXT)
 	@$(shell printf '%s\n' "export RM=\"$(RM)\" && \
 		export ROWS=$(ROWS) && \
 		export COLS=$(COLS) && \
@@ -196,7 +206,7 @@ compress: strip mince$(OEXT)
 
 #########################################################################
 
-osconf:
+osconf: cf.Lf
 ifeq ($(MAKE),)
 	$(error Error: MAKE variable is not set)
 endif
