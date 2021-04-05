@@ -1,0 +1,2741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="stylesheet" href="/css/u8.css" /><meta charset="utf-8" />
+<title>UNXCPM.MMD[UP,DOC]2 - www.SailDart.org</title>
+</head>
+<body id="u8body">
+<div id="tagline">perm filename UNXCPM.MMD[UP,DOC]2  blob <a href="UNXCPM.MMD[UP,DOC]2_blob">sn#600281</a> filedate 1981-07-20 generic text, type C, neo UTF8</div>
+<pre id="u8lump">COMMENT ⊗   VALID 00025 PAGES
+C REC  PAGE   DESCRIPTION
+C00001 00001
+C00004 00002	This is an archive of the unix-cpm@udel mailing list.
+C00016 00003	Subject: CP/M vs **NIX in the Office Environment
+C00018 00004	Re:   Communicating WP Equipment
+C00021 00005	Re:   FYI:  [Dave Farber &lt;farber@udel>:  Xerox "worms into Apple?"]
+C00025 00006			       A Comparison of CP/M and UNIX  (by Conn)
+C00073 00007	Subject: CPM vs **NIX--Re: More on the CP/M vs Unix talk
+C00084 00008	Subject: More on the CP/M vs Unix talk  [for small micros???]
+C00109 00009	Subject: Re: "UNIX" on a micro
+C00114 00010	Subject: MARC  [pseudo UNIX-CP/M]
+C00127 00011	Subject: AFITGORDEN@BBNB's comparison of CP/M and UNIX
+C00150 00012	Subject: The Promised Commentary  ( AFITGORDON )
+C00156 00013	Subject:   Reasons for use of cpm
+C00160 00014	Subject: [ners: Software Functionality and Portability - The "C" lan...]
+C00178 00015	Subject: UNIX TOOLS
+C00183 00016	Subject: Ada, ALE, ALICE, and MARC?
+C00188 00017	Subject: Xerox, IBM, and CP/M for Office Automation
+C00191 00018	Subject: More on the Xerox 820 and its Target
+C00195 00019	Subject: SIGPLAN/SIGOA and WWB/UNIX
+C00198 00020	Subject: C Dialects in UNIX?
+C00207 00021	Subject:  Costs of implementing UNIX
+C00218 00022	Subject:  [WMACGREGOR: The Economics of Workstations]
+C00234 00023	Subject:  [BENSON: Tools for personal workstations]
+C00238 00024	Subject: EMACS -vs- UNIX
+C00250 00025	Subject:   [The Moderator:  Software tools - EMACS and UNIX]
+C00253 ENDMK
+C⊗;
+This is an archive of the unix-cpm@udel mailing list.
+Info from other sources will be added...
+
+**********
+
+Subject:   new mailing list
+∂20-Jun-81  1251	Dave Farber &lt;farber@udel> 	new mailing list  
+Date:      20 Jun 81 15:34:11-EDT (Sat)
+From:      Dave Farber &lt;farber@udel>
+To:        unix-cpm at Udel
+
+A new mailing list has been established . Initially it contains:
+
+DAG at Mit-Ai, HX at Usc-Ecl, Gray at Ucla-Security,
+White at Sumex-Aim, MMD at Su-Ai, TBowerman at Darcom-Ka,
+news.unix-cpm at Rand-Unix, Llayten at Udel, GeoffM at Rand-Ai,
+JSWAIN at Bbna, FONER at Mit-Ai, NERS at Usc-Isi,
+Farber at UDel, Stef at Darcom-Ka, JMCKINNEY at Usc-Isi,
+W8SDZ at Mit-Mc, CSL.SUN.GMO at Su-Score, Schauble.Multics at Mit-Multics,
+Conn at Mit-Mc, rsm at Brl, mike at Brl, FJW at Mit-Mc
+
+
+**********
+
+Subject: UNIX-CPM "proceedings" and "master address list"
+ ∂23-Jun-81  1649	STEF at DARCOM-KA 	UNIX-CPM ''proceedings'' and ''master address list''    
+Date: 23 Jun 1981 1606-PDT
+Sender: STEF at DARCOM-KA
+From: STEF at DARCOM-KA
+Reply-To: unix-cpm at UDEL
+To: unix-cpm at UDEL
+Message-ID: &lt;[DARCOM-KA]23-Jun-81 16:06:29.STEF>
+Via:  Darcom-Ka; 23 Jun 81 19:04-EDT
+
+To get us off on a clean start, I have compiled and edited the traffic
+to date into an open readable TENEX MSG file in [KA]&lt;MICRO>UNIX-CPM.MSG
+and have placed a copy in [ECL]&lt;HX>UNIX-CPM.MSG --- Other repositories
+on non-TENEX HOSTS may be established if sponsors will volunteer disk
+space.
+
+The master address file will be maintained in [KA]&lt;MICRO>UNIX-CPM.LST;*
+and a copy will be placed at UDEL to drive the remailing process there.
+
+           [Due to a temporary access difficulty with [ka]&lt;micro>,
+           copies will be available in [ka]&lt;stef>unix-cpm.msg;1 and
+           [ka]&lt;stef>unix-cpm.lst;* until the difficulty is resolved.]
+
+The master files will be maintained on [KA] and copies will be placed
+elsewhere.
+
+The proceedings are not digestified.  They are maintained in single
+message format so they may be processed with regular message systems.
+
+Survey listings of the proceedings will be mailed on a regular basis if
+you want them.  The Survey below is to give you a chance to see if you
+have received all the substantial items so far, and to give you an
+example of what might be sent out later.  If only a few of you want
+surveys, I will personally send them out to a separate list on request.
+
+Specific items can be remailed on request, but we would obviously prefer
+that you use FTP to access the proceedings files.
+
+I hope that we can avoid excessive administrivia in the main list.
+Please send administrative requests to Stef@DARCOM-KA.
+
+Enjoy!  Stef
+
+Subject: CP/M vs **NIX in the Office Environment
+ ∂10-Jun-81  2246	Frank J. Wancho &lt;WANCHO at DARCOM-KA>	CP/M vs **NIX in the Office Environment
+Date: 10 June 1981  22:29-PDT (Wednesday)
+From: Frank J. Wancho &lt;WANCHO at DARCOM-KA>
+To:   INFO-CPM at MIT-MC
+Cc:   Stef at DARCOM-KA, IME-TECOM at OFFICE-2, Labhart at OFFICE-2,
+      Hewitt at OFFICE-2, SAD at OFFICE-2, EBoyd at OFFICE-2,
+      Christina at OFFICE-2, TECOM-HQ at OFFICE-2,
+      TBowerman at DARCOM-KA, TECOM-C3I at OFFICE-2, Farber at UDEL
+
+The following edited exchange came about when Bob Bloom
+(IME-TECOM@OFFICE-2) solicited comments about a "spec" for a
+CP/M-based communicating Word Processor for an office environment...
+
+I believe there are several statements made herein which should not go
+unchallenged by those of us on this list who use tools which run in
+the CP/M environment in the office.
+
+I present this as only a temporary diversion from our otherwise highly
+technical discussion.  Please limit any responses to factual and
+well-founded comments and information, as has been the norm for this
+list.
+
+Also, please be sure to include the above CC: list in your replies, as
+most of these people are not on INFO-CPM.
+
+--Frank
+Re:   Communicating WP Equipment
+Date: Tuesday, 9 June 1981  13:46-PDT
+From: STEF
+
+[...]
+
+CP/M is an operating system environment for very small machines, which
+will not grow up to run on larger machines when they become as
+inexpensive as the CP/M machines are today.  I am speaking
+specifically of the 16 bit micros of the ONYX class, which will begin
+to displace the CP/M "price-range" machines in about one year from
+now.
+
+If you go the CP/M route, you will invest lots of money in building
+systems to run in an environment that will be very hard to maintain in
+the face of the obviously better quality of the UNIX/XENIX environment
+which is just around the corner.
+
+The trend is toward larger machines becoming cheap, and able to run
+the software implemented on the larger machines.  This means that you
+should be building your applications software now on the currently
+available UNIX systems, with intention to later run that same software
+on equivalent sized but cheaper machines next year, and the year
+after, etc.  .....
+
+In short, your MicroComputer with CP/M development strategy is running
+directly counter to the main driving forces of the industry and the
+economics of technology advances.
+
+You should be targeting for full capability Message handlers such as
+XMSG and MMDF plus SCRIBE and EMACS equivalent tools, which are much
+more easily built now for the larger machines, than can be implemented
+in the limited capability CP/M machines.
+
+[...]
+
+May I suggest that you take full advantage of the work that has been
+done, by opening up the options by replacing CP/M with UNIX, and
+adding mail handling capabilities with "message data base" software,
+ala INFOMAIL.
+
+I think you will find that more of the software has already been built
+for the UNIX environment than you plan to implement for the CP/M
+environment.
+Re:   FYI:  [Dave Farber &lt;farber@udel>:  Xerox "worms into Apple?"]
+Date: Wednesday, 10 June 1981  17:46-PDT
+From: STEF
+
+Dave Farber originated this item, which relates to the CP/M proposal.
+
+    Today's Wall Street Journal has a product announcement for the
+    Xerox 820, a low cost information processor that can be used as a
+    desktop computer or word-processing system.  The basic system
+    costs 2,995 and comes with a display, a microprocessor, a keyboard
+    unit, and dual floppies.  The article hints that it can be
+    connected to the Ethernet.
+
+    If I remember correctly it uses an 8086 with CP/M.	Interesting
+    recognition of the dominence of CP/M is the micro marketplace.
+
+    Dave
+
+
+....  I would comment that several aspects of the Xerox strategy seem
+strange to me, so I am not convinced that their plans to "worm their
+way into the APPLE market" with the 820 should offset my basic
+analysis that says large scale users, such as TECOM, should more
+likely consider UNIX/XENIX as a preferred "Domain for software
+accumulation."
+
+Cheers - Stef
+
+************
+
+Date: 10 Jun 81 21:01:17-EDT (Wed)
+From: Dave Farber &lt;farber at udel>
+Re:   FYI: [Dave Farber &lt;farber@udel>: Xerox "worms into Apple?"]
+
+I also agree that the 820 should in no way impact plans for Unix.
+CP/M is just not Unix.	It does not grow the way Unix does.  It is
+strictly a Micro system, while Unix is much much wider in
+applicability.
+
+Dave
+
+
+************
+
+Date: 10 Jun 81 21:23:29-EDT (Wed)
+From: Dave Farber &lt;farber at udel>
+Re:   FYI: [Dave Farber &lt;farber@udel>: Xerox "worms into App...
+
+I just want to restate clearly my view.  CP/M is competitive with Unix
+ONLY in small systems like the Z80, 8086 etc class machines.  There is
+NOwhere to grow and no chance from my view of any growth for CP/M.
+That still makes CP/M a good candidate for the small marketplace and
+the home market but as a basis for office systems in places that will
+grow, I think not.
+
+Dave
+		       A Comparison of CP/M and UNIX  (by Conn)
+			     A Matter of Choice
+
+********************************************************************************
+
+Subject: Re: CP/M vs **NIX in the Office Environment
+Date: 15 Jun 1981 1231-EDT
+From: AFITGORDON at BBNB
+To:   WANCHO at DARCOM-KA, INFO-CPM at MIT-MC
+cc:   [Zwiterion]:, Stef at DARCOM-KA, IME-TECOM at OFFICE-2,
+cc:   Labhart at OFFICE-2, Hewitt at OFFICE-2, SAD at OFFICE-2,
+cc:   EBoyd at OFFICE-2, Christina at OFFICE-2,
+cc:   TECOM-HQ at OFFICE-2, TBowerman at DARCOM-KA,
+cc:   TECOM-C3I at OFFICE-2, Farber at UDEL, AFITGORDON
+
+In response to the message sent  10 June 1981  22:29-PDT (Wednesday) from WANCHO@DARCOM-KA
+
+Greetings, Gentlemen,
+
+	I  have  recently  noted  your	conversations  regarding   the
+adoption  of  an  operating  system for microcomputers in an automated
+office environment.  I would like to offer my opinions and comments in
+the following document for your review.
+
+	Your work is interesting and related to what  I  have  already
+been  doing  with  CP/M.   The	following  document,  for example, was
+composed on  my  personal  microcomputer  using  the  Word  Star  text
+editor/formatter  under CP/M and automatically transmitted to the ARPA
+Net, where it was further transmitted to you via electronic mail.
+
+	The following, then, are my opinions, for what they are worth,
+and they are submitted in the interest of  information	exchange  with
+your community.
+
+					Richard Conn
+
+
+********************************************************************************
+
+	     An  interesting  discussion and controversy  concerning
+	the  selection	of  an Operating System (OS)  for  a  micro-
+	computer-based	office automation system has recently  taken
+	place between and within members of DARCOM (Dept of the Army
+	Readiness Command) and others on the ARPA Network.   Central
+	to  the  controversy are two basic groups -- those  for  the
+	CP/M OS and those for UNIX/UNIX-like OS's.
+
+	     This is the first such controversy I have observed that
+	has taken any significant proportions,	and with the  advent
+	of  the new 16-bit microprocessors such as the 8086,  Z8000,
+	and  68000  and the "UNIX-like" operating  systems  such  as
+	OMNYX and XENIX,  the question of staying with CP/M or going
+	to the UNIX environment is going to arise with more and more
+	frequency.   UNIX  (first released by Bell Labs in 1969) has
+	recently  been hailed as the "Operating System of the  80'S"
+	by several people, and I feel that now may be a good time to
+	outline  a  comparison	of  CP/M 2.2  and  UNIX  for  future
+	reference.   Note that this comparison involves  traditional
+	UNIX  (NOT  necessarily identical to the  yet-to-be-released
+	XENIX).
+
+	     Having  done  some research on and used both  types  of
+	operating  systems,  I	offer the following  discussion  for
+	general dissemination.	 This discussion is divided into two
+	parts  -- (1) a brief comparison of Bell's UNIX and CP/M 2.2
+	and (2) a brief discussion of the criteria for selection  of
+	the OS and my recommendation.
+
+
+Part 1	A Comparison of UNIX and CP/M 2.2
+
+	     The  following  is  a basic comparison of	several  key
+	points of the UNIX and CP/M 2.2 Operating Systems.  Data for
+	the UNIX part of the comparison was extracted from "The Bell
+	System Technical Journal",  July-Aug 78,  Vol 57, No 6, Part
+	2, ISSN0005-8580 (Articles:  "A Retrospective" by DM Ritchie
+	and "The UNIX Shell" by SR Bourne primarily).	Data for the
+	CP/M 2.2 part of the comparison was extracted from  "Digital
+	Research  CP/M 1.4 & 2.0 Documentation" reprinted by  Morrow
+	Designs,  Inc.	(Section II:   CP/M 2.0 User's Guide).	 The
+	data  presented is edited and augmented by comments from  my
+	personal experiences.
+
+
+
+			      Basic features
+
+		  UNIX		      !		CP/M 2.2
+	------------------------------!----------------------------
+	o No Unique Version	      ! o Unique Version
+	  At least 5 versions exist:  !   Version 2.2 (Precisely
+	     1.  "Standard" maintained!    Defined)
+	by the UNIX Support Group at  !
+	Bell Labs		      !
+	     2.  PWB/UNIX (Programmers!
+	Work Bench)		      !
+	     3.  Version 6 (distrib.  !
+	by Western Electric)	      !
+	     4.  Version 7	      !
+	     5.  The version currently!
+	in use by the Computing       !
+	Science Research System at    !
+	Bell Labs		      !
+				      !
+	o Multi-user/process	      ! o Single-user/process
+				      !
+	o File Size Limit	      ! o File Size Limit
+	  ==  1e9 bytes (depends on   !   == 8e6 bytes
+	version); e=10 to power       !
+				      !
+	o Supports Random Access Files! o Supports RA Files also
+				      !
+	o Targeted to the PDP-11 Fam  ! o Targeted to 8080/Z80
+				      !
+	o Tree Directory Structures   ! o Dual-Level Directory
+	  (Indefinite number of levels!   Structure (USER/DIR or
+	and Path Names)		      ! SYS) and Limited Path (A:FN)
+				      !
+	o Links Allowed		      ! o Links Permitted (Extension)
+	  (Different dir entries pt to!
+	same file for disk space save)!
+				      !
+	o Device Transparency and Re- ! o Device Transparency and Re-
+	  directability Complete      !   directability limited to
+	  (I/O routed to/from files   !   terminal I/O
+	and terminals with equal ease)!
+
+
+
+
+			 User Interface Comparisons
+		  UNIX		      !		CP/M 2.2
+	------------------------------!--------------------------
+	o Command Interpreter	      ! o Command Interpreter
+	  "Shell"		      !   "CCP"
+				      !
+	o Shell Easily Replaced       ! o CCP Replaced with
+				      !   difficulty
+				      !
+	o Not Part of Kernal	      ! o Not Part of Kernal
+				      !
+	o Full Command Language is    ! o Full Command Language is
+	  relatively complicated      !   simple
+				      !
+	o All commands have redirect- ! o Only terminal I/O is
+	  able I/O (&lt;,&lt;&lt;,>,>>)	      !   redirectable
+				      !
+	o More extensive wild cards   ! o Simple wild cards
+	  (?,*,[c1-c2],[c1...cn])     !   (?,*)
+				      !
+	o Interprocess information    ! o No equivalent
+	  transfer (pipes); coroutines!
+				      !
+	o Type-Ahead		      ! o Type-Ahead possible
+				      !   via BIOS
+				      !
+	o Parallel processes	      ! o No equivalent
+				      !
+	o Indirect command files; no  ! o Indirect cmnd files; 20
+	  limit to arguments	      !   argument limit
+	  (sh file arg1 arg2 ...)     !   (submit file arg1 ...)
+				      !
+	o Conditional Execution       ! o No equivalent
+	  (ANDF - &&, ORF - !!)       !
+				      !
+	o Construct Execution	      ! o No equivalent
+	     if ... then ... else     !
+	     case ... in ...	      !
+	     while ... do ...	      !
+	     for ... do ...	      !
+	     until ... do ...	      !
+				      !
+	o Shell Variables (Param sub) ! o No equivalent
+	  ex:  user=myfile	      !
+	       print $user	      !
+				      !
+	o Command Substitution	      ! o No equivalent
+	  ex:  d='pwd'		      !
+
+
+
+
+
+				Other Items
+
+		  UNIX		      !		CP/M 2.2
+	------------------------------!----------------------------
+	o Reliability - Good	      ! o Reliability - Good
+				      !
+	o Security - Fair	      ! o Security - Poor
+				      !
+	o Use of HOL		      ! o Use of HOL
+	  90-95% in C - OS	      !   Mainly Assem - OS
+	  95-100% in C - Utilities    !   90% in PL/M - Std Utils
+				      !
+	o ARPANET Interface (NCP)     ! o No Equivalent
+	  currently available	      !   (except for terminal pgms)
+				      !
+	o Extensive document prepara- ! o Extensive document prep
+	  tion facilities	      !   facilities
+	     ed - simple char-oriented!    ED - simple char-oriented
+	       editor		      !      editor
+	     Are there any screen-    !    WM, EP - screen-oriented
+	       oriented editors or    !      editors
+	       formatters?	      !    WS, MW - s-o edit/format
+	     troff, nroff - formatters!    TFS - formatter
+	       with macro expansion   !      with macro expansion
+	     eqn - mathematical expr  !    No known equivalent
+	       preprocessor	      !
+	     tbl - table preprocessor !    No known equivalent
+	     spell - spelling check   !    SPELLGUARD - spell chk
+	     speak - voice output     !    No known equivalent
+	     diff - file comparator   !    FILCOM - file comparator
+				      !
+	o Online instruction	      ! o Online instruction
+	     learn -- tutor	      !    PILOT - CAI language
+	     online help?	      !    HELP - online doc
+				      !
+	o Exotic applications	      ! o Exotic applications
+	     yacc - compiler-compilers!    MUMATH - symbolic
+	     others?		      !      algebra
+				      !
+	o Languages		      ! o Languages
+	     C, FORTRAN 77, BASIC,    !    C, FORTRAN IV, BASICs,
+	SNOBOL, APL, ALGOL 68, PASCAL ! APL, ALGOL 60, PASCALs,
+	others?			      ! LISP, MUMATH, MUSIMP,
+				      ! PILOT, PL/I, COBOL
+				      ! others?
+
+
+
+Part 1 Commentary
+
+
+	     From  the point of view of a hacker (such as I consider
+	myself to be),	both CP/M and UNIX are outstanding operating
+	systems to experiment with and study.	Systems  programming
+	on  each is relatively easy to do,  and both exhibit an  ex-
+	treme  level of extensibility which may be utilized by	sys-
+	tems  programmers.   By  this I mean that both OS's  can  be
+	modified,  tailored to a specific application,	with a great
+	deal  of  ease at the systems programming  level.   Each  is
+	flexible  enough to be used to create a "virtual machine" of
+	the system programmer's design which can react in almost any
+	way desired (e.g.,  text processing environments and program
+	development  environments  can be easily created  which  are
+	tailored to a user's particular needs).
+
+	     The particularly intriguing aspects of UNIX to me are:
+		  1.   the  tree directory structures;	using these,
+	each user's projects and files can be logically grouped  and
+	organized as the user and/or his manager desires and special
+	work environments,  each with their own set of commands, can
+	be easily created
+		  2.   the Shell (command interpreter) can be easily
+	replaced,  so specialized shells or even menu-driven command
+	environments may be created with ease
+		  3.   device transparency and redirectability is an
+	outstanding  concept!	This  allows  instances  such  as  a
+	program  which	by default sends its output to the  terminal
+	(such  as a directory program) to be forced to	channel  its
+	output	to  a  different device,  a file,  or  even  another
+	process;  the potential for applications of this facility is
+	enormous!
+		  4.  parallel processing and coroutines are common-
+	place;	this  provides the very nice ability of a  user  to,
+	say,  initiate	the printing of a file while he goes off and
+	does  something  else  -- better yet,  one  user  may  issue
+	several  commands to be executed concurrently while he	does
+	something else
+		  5.   conditional executions (ANDF,  ORF), language
+	constructions in the command language (IF, WHILE, FOR, CASE,
+	etc.),	 and  parameter  and  command  substitutions  (Shell
+	variables) are novel and interesting concepts
+
+	     On the other hand, the intriguing aspects of CP/M to me
+	are:
+		  1.   the  ability to divide logical  projects  and
+	work  files into user areas,  with each user area having its
+	own  set of files and commands (any number of which  may  be
+	hidden	[transparent]  to  the	user);	 in  a	single	user
+	environment,  this seems to be just as reasonable and useful
+	as the tree structure of UNIX
+		  2.	the   ability  to  replace  the  CCP   (with
+	difficulty);  this can be done easier in UNIX, but it is not
+	outside  the  scope of a system programmer to do  this	with
+	CP/M  (I  have done it,  making a major  modification  which
+	greatly  enhances  CP/M's power -- command execution of  COM
+	files under my new CCP searches the current user area on the
+	current  disk,	falls to user 0 of the current disk  if  not
+	found, finally falls to user 0 or drive A: if not found, and
+	finally   issues   an	error  message).    This   new	 CCP
+	significantly places CP/M in a competative mode with UNIX in
+	command  execution  (UNIX  traces up the  tree	for  command
+	execution).
+		  3.   CP/M's terminal I/O is redirectable, and this
+	buys a lot of flexibility for the user;  UNIX,	however,  is
+	equally redirectable and even more so
+		  4.   CP/M  is  very small,  leaving  much  of  the
+	microcomputer's  memory  for the transcients and  utilities;
+	size   is   sometimes	a  problem,   but   with   the	 new
+	microprocessors and their megabyte addressing  capabilities,
+	it should no longer pose such a problem
+		  5.   finally, and perhaps most importantly, a wide
+	variety of relatively high-quality software (screen-oriented
+	editors,  language systems,  communications systems, etc) is
+	currently  available  for  CP/M,  and I have not  seen	such
+	quality  systems yet being prepared for systems  like  XENIX
+	(whose specs are not even out yet); there will be a definite
+	lag  before (and IF) XENIX and other such systems obtain the
+	software base currently in existence for CP/M!!!!!
+
+
+
+
+
+Part 2	A Commentary -- Criteria for Selection and Recommendation
+
+	     In making such a selection of operating systems, I feel
+	that   there  are  five  basic	questions  which  should  be
+	considered in the evaluation.  In short, these questions are
+	the following:
+
+		  1.   Is  the OS adequate to meet the needs of  the
+	user?  Is there enough memory for the required utilities and
+	applications  programs	to  run in (considering  the  memory
+	management schemes employed by the OS)?   VERY IMPORTANT  --
+	Is  the OS responsive (In the microcomputer age,  I consider
+	the  time  of the user/programmer to be much  more  valuable
+	than the time of the machine, and an OS/machine which in any
+	way  slows the user/programmer down due to its lack  of  re-
+	sponsiveness should be reevaluated!!!!)
+		  2.   Is  the OS extensible (user-customizable  for
+	his  particular application)?	If I don't like the form  of
+	the  command language or the commands of the editor,  can  I
+	change these to meet my tastes?  If I want a menu-based user
+	interface, can I create one?
+		  3.  Is software produced under the OS on machine A
+	easily	transportable to the same OS on machine B (allowing,
+	of course,  media compatability)?   Source code generally is
+	transportable provided the language is standardized (like  C
+	on UNIX),  but is the binary (including the OS "hooks") also
+	transportable (like on CP/M)?
+		  4.   Are software tools (editors,  compilers,  de-
+	buggers,  etc.) available AND effective for the target class
+	of users?   For instance, I would much rather give my secre-
+	tary  a screen-oriented editor which is easy to use  as  op-
+	posed  to  a character-oriented editor in which she  has  to
+	worry  about the position of an imaginary cursor.   The tool
+	should be easy to use, people should be quickly and inexpen-
+	sively trained to use it,  and it should be efficient (fast,
+	capable,  and  requiring  as little overhead  as  possible).
+	Also,  if  I currently have an existing tool base  which  my
+	people are already trained to use,  I should think carefully
+	about  moving  to  a new OS just because it is new  or	pro-
+	mising.
+		  5.   Finally,  is the software easily maintainable
+	and reliable?	Tools are seldom perfect,  and	improvements
+	are constantly coming out.   I would like to see the ability
+	to modify my tools if I desire (I own them, don't I?) and be
+	supported  by the vendor as new releases  emerge.   Also,  I
+	want  to use proven,  time-tested tools which I can rely  on
+	extensively.
+
+	     Hence, reader, from my point of view, presented are the
+	primary attributes of UNIX and CP/M 2.2 and my basic set  of
+	criteria to judge these systems by.   Coming from a largely-
+	CP/M environment (I already have CP/M as a base), UNIX would
+	win hands down (looking through the eyes of a hacker).	UNIX
+	is a fantastic software tool which supports many interesting
+	and exciting features,	and, regardless of the use I put the
+	UNIX  system  to,  I still have my CP/M base to  support  my
+	current applications and interests (also including hacking).
+	     The  above statement,  however,  was from the point  of
+	view  of  a hacker with a CP/M base.   The  question  posed,
+	however, was from the point of view of the creation of a new
+	system	to support office automation.	This is a management
+	system in a manager's environment,  not a hacker system in a
+	programmer's environment.  To make a choice for the manager,
+	let's fall back to the five criteria outline above.
+	     In  my opinion,  both operating systems come out  about
+	even in the first three items.	 Both UNIX (XENIX?) and CP/M
+	are   generally   adequate,    extensible,    and    support
+	transportable software for the automated office environment.
+	In  both cases,  tools may have to be designed for  specific
+	needs  (like  XMSG for UNIX mail and CBBS software for	CP/M
+	mail).	 Software  support  from  systems  programmers	will
+	probably  be  required	to design and  integrate  the  tools
+	necessary for an automated office system.
+	     Item  4 is perhaps a key point in the  decision.	CP/M
+	already has a relatively-large base of quality tools for the
+	target	class  (secretarial/managerial) of  user.   From  my
+	observation of automated office environments such as my  own
+	CP/M environment,  AUGMENT of Tymshare,  and NLS under TENEX
+	and TOPS-20,  I note that the majority of the time (at least
+	in  my	case,  and  I suspect most others) is spent  in  the
+	electronic mail system and the editors.  Consequently, tools
+	for these environments must be most effective,	allowing the
+	user to get his job done in a minimum amount of time with  a
+	minimum  amount of effort.   I am currently employing  menu-
+	driven	mail  systems and fast screen-oriented	editors  for
+	these  functions,  and	I feel	that  (design-dependent,  of
+	course),  these  are the most productive alternatives avail-
+	able today.  Specialized terminals designed with the editors
+	in  mind  (e.g.,  DNLS Workstations) are a  good  goal,  but
+	general CP/M screen editors such as Word Master,  Word Star,
+	and Magic Wand are already available, reliable, field-proven
+	and  tested,  and reasonably effective (I spend little	time
+	waiting on them/giving commands and more time composing than
+	I  do  with  more conventional editors).   I have  not	seen
+	comparable  field-proven software for the new  UNIX  systems
+	(they are not even out yet).
+	     Finally,	 the   fifth   item,	that   of   software
+	maintainability and support, is concentrated on support from
+	this (office automation) level.   Your environment  probably
+	will not have systems programmers readily available,  so you
+	will  probably	be  largely  dependent	on  vendor  support.
+	Again, reliable, field-proven software is a big plus.
+
+	     Two  additional  points should be brought out  at	this
+	time  as well:	 (1) the philosophy question of the state of
+	the  art and (2) the philosophy question of the use  of  the
+	new microcomputers (microprocessors).
+	     Concerning  the  state  of the art,  UNIX	(XENIX?)  is
+	definitely closer to it than CP/M,  but the operating system
+	is just the RESOURCE MANAGER of the computer system, not the
+	KEY to the computer system.   The KEY to the system lies  in
+	the  TOOLS (utilities) which run under the operating system!
+	These tools must be reliable,  easy to use, and efficient in
+	human  terms.	From my observations,  EDITORS are the	most
+	instrumental   of   tools,   and   the	 Word	Master	 and
+	(particularly)	Word Star are the most	powerful,  reliable,
+	and  efficient	editors  I  have  seen	(with  the  possible
+	exception  of EMACS on MIT and the DNLS editor).   Such  are
+	already  available under CP/M,	and I know of no  comparable
+	editor (Such could exist,  of course) under XENIX (will  the
+	UNIX editors work on XENIX?).
+	     Concerning the philosophy question,  many people  still
+	look  at computer systems and operating systems from a "con-
+	ventional" point of view.   The computer is typically viewed
+	as  an expensive resource which must be used as  efficiently
+	(in terms of computer thruput) as possible,  but the  micro-
+	processor  has	changed that.	Under CP/M,  I am  currently
+	running  two  microcomputers (total cost is  under  $15,000)
+	quite  effectively.   These machines and their software  are
+	designed to serve me,  and to obtain a maximum of effective-
+	ness for the user (measured in terms of minimum wait on  the
+	computer),  operations such as number crunching programs and
+	print  spooling  are sent to the second machine.   Too	many
+	times  I have working in environments such as a dual  CYBER,
+	DEC-10,  or  VAX where the machine's thruput was  considered
+	above the individual's effectiveness, and the responsiveness
+	of  these  machines to me was far less than that of  my  own
+	microcomputer!	 I hope you consider this point;  individual
+	effectiveness and usefulness should be of prime concern, and
+	consider  the idea of supplying the single  individual	with
+	more than one processor/machine.  Many of the pro-UNIX types
+	may  cling  to the old (machine-thruput) school of  thought,
+	but much is to be said for the user-effective (made possible
+	by  the  inexpensiveness  of the  microcomputer)  school  of
+	thought.   The	multiprocess capabilities of UNIX are  nice,
+	but I consider multiprocessor capability to be nicer still!
+
+	     In  sum,  my recommendation is to go with CP/M if	your
+	need is immediate.   If not, wait and see what the UNIX-like
+	systems  have to offer in reliability,	tools,	and competa-
+	tively-marketed (competition is very important for quaility)
+	software.   "Something	better" is always  coming  out,  but
+	buying	"the best" (=most recent?) software at a given	time
+	is  not necessarily the best decision in the long run.	 New
+	software  is  frequently  field-debugged  (not	always,   of
+	course),  and you should be leary of opening yourself up  to
+	do the debugging when you are trying to get a job done.
+
+
+**********
+
+Subject: one of the most important but overlooked differences
+∂15-Jun-81  1719	CSVAX.dmu at Berkeley 	one of the most important but overlooked differences
+Date: 15 Jun 1981 16:31:01-PDT
+From: CSVAX.dmu at Berkeley
+To: info-cpm@mit-ai
+
+The recent document comparing UNIX and CP/M is difficult
+to answer objectively.  I have used both, although have
+used UNIX MUCH more.  Anyway, the problem in these comparisons
+don't convey the flavor of the system:
+the underlying world-view of the original design that no
+amount of fancy user-level sofware can completely mask.
+
+FLAME ON:
+
+UNIX has a `delete' key that aborts a user program
+WITHOUT any special code in the user program.
+CPM has this polling philosophy towards I/O (just look at
+the BDOS interface) that makes it hard to poke programs in standard ways.
+
+Berkeley UNIX has a job control facility that permits
+the user to take any job (a pipeline of processes)
+and suspend it, restart it in the background,
+or move it into the foreground.  Thus, from any interactive
+program, one can stop it, and enter commands to the command interpreter
+WITHOUT any code in the interactive program.
+
+UNIX has ``toolbox'' facilities that let one combine programs
+in unexpected (by the applications programmers) ways.
+Pipes, the absence of OS-supported file formats (this is a FEATURE),
+redirection, tools that support applicative programming
+(sort, uniq, awk especially) provide the user with a friendly,
+powerfull environment that allows one to shape the software
+to the human's needs, rather than vice-versa.
+
+Finally, UNIX may not have thousands of cottage programmers
+out there plugging away with applications,
+but instead it has hundreds of researchers (e.g. Aho) building tools:
+There are many screen editors, vi (Berkely editor), EMACS versions,
+edtv, syntax-directed editors, take your choice.  There are
+several PASCAL's.  There are word-processing programs that are
+simply amazing (e.g. awk, an interpreter with both regular-expression
+matching and procedural language).  Troff and TEX
+are just two of the formatters available.  Software control tools
+allow you to change any file and recompile everything that depends on it
+(and no more) with just one command.
+
+UNIX is not the be-all and end-all of Operating Systems, but it is the
+only reasonable choice for a 16-bit machine.  If you can afford
+it, (and memory prices are going down all the time), you should
+get it.
+
+P.S. UNIX has LISP and MACSYMA running on it.
+FLAME OFF
+David Ungar
+
+
+
+**********
+
+Subject: Re: CP/M vs UNIX
+ ∂16-Jun-81  0112	Dave-Yost at RAND-UNIX 	Re: CP/M vs UNIX
+Date: Tuesday, 16 Jun 1981 00:57-PDT
+From: Dave-Yost at RAND-UNIX
+To: AFITGORDON at BBNB
+Cc: INFO-CPM at MIT-MC
+Sender: day at RAND-UNIX
+
+
+You forgot to mention the obvious.
+High on my list of the top ten dumbest
+things about CP/M is the fact that it
+doesn't maintain file modification times.
+UNIX, of course, does.
+
+--dave
+
+Subject: CPM vs **NIX--Re: More on the CP/M vs Unix talk
+∂16-Jun-81  1411	STEF at DARCOM-KA 	CPM vs **NIX--Re: More on the CP/M vs Unix talk    
+Date: 16 Jun 1981 1302-PDT
+Sender: STEF at DARCOM-KA
+From: STEF at DARCOM-KA
+To: Farber at UDEL-EE
+Cc: INFO-CPM at MIT-MC, AFITGORDON at BBNB, POURNE at MIT-MC, 
+Cc: WANCHO, IME-TECOM at OFFICE-2, Labhart at OFFICE-2, 
+Cc: Hewitt at OFFICE-2, SAD at SRI-KL, EBoyd at OFFICE-2, 
+Cc: Christina at OFFICE-2, TECOM-HQ at OFFICE-2, TBowerman, 
+Cc: TECOM-C3I at OFFICE-2, 
+Cc: "[KA]&lt;STEF>ADDR.OA-DRDAR;2":, 
+Cc: "[KA]&lt;STEF>ADDR.ADPSC;9":
+Message-ID: &lt;[DARCOM-KA]16-Jun-81 13:02:31.STEF>
+In-Reply-To: &lt;81166.32320.230 @ UDel-EE>
+
+Hi All ---
+
+I think we are talking in two different contexts, and maybe even more.
+So, here is an effort to refine our understanding of the context of the
+original question so we can sort the answers given so far, and those
+that are in the pipe for later.
+
+As I see it, the context of the TECOM "Draft Requirements" was that of a
+major institution with 5-10 "Computer Centers" serving several thousands
+of users in several thousand offices spread across the continental US,
+if not beyond.
+
+The annual budget for each of the 5-10 centers might range from 0.5 to 3
+million dollars per year, and the overall software development budget
+for the next five years might range between 1 and 10 million dollars per
+year for "capital" investment in applications software.
+
+This is not an accurate description of TECOM per se, but it identifies a
+class of organizations like TECOM.  For those who do not recognize the
+acronym, TECOM is the US Army Test and Evaluation COMmand which is a
+subordinate command within DARCOM.  TECOM sub-elements include White
+Sands Missile Range, Aberdeen Proving Ground, Yuma Proving Ground, and
+others, both large and small.  It is important to perceive the scale of
+the target institution and its user population.
+
+Now then, comes the question:  What operating systems environment should
+be selected to "house" the applications to be developed?  What
+"operating systems environment" might provide the richest vein of
+software from "outside" sources.  In short, what is the preferred
+"domain of software accumulation" for office automation (or workplace
+automation, to be a bit more accurate) on which to focus the spending of
+millions of dollars each year for applications software to be installed
+and maintained in a network environment through some kind of central
+software management arrangement?
+
+In this context, the issues do not turn on a feature comparison as much
+as they turn on assessment of the attractiveness of the alternative
+environments to the total collection of software development
+entrepreneurs, both in and out of captive institutions.
+
+In short, view the alternative operating systems environments as
+"marketplaces" and ask yourself which one you would risk your investment
+dollars in with a new applications software product.  Among the things
+you must consider are the size of your market exposure for sales.  Is
+the CP/M system the richest market, or is the UNIX environment richer?
+
+As a test of my idea here, I suggest the that CP/M community put
+together a paper to show how CP/M provides an environment to compare
+with the one described in BYTE magazine:  June 1981; "The UNIX Operating
+System and the XENIX Standard Operating Environment."
+
+My conclusion at this point in time is that UNIX provides the better
+domain of accumulation for the next five years, and that is where I
+would focus my development funds if I were a TECOM.
+
+Please note that I am not a TECOM.  My firm is a one man company with
+"offices" at home.  I work like many of you in the net, using the net as
+my "electronic automated office."  Like Dave Farber, I want to get my
+hands on the larger set of tools being built for the UNIX environment,
+and I can hardly wait till a year from now when the economics will let
+me get a personal UNIX based system for my private office; one that will
+work comfortably in the network marketplace that is surely coming down
+the pike.
+
+Best - Stef
+
+
+**********
+
+∂16-Jun-81  1904	Ime-Tecom at OFFICE-2 	Re: CPM vs **NIX--Re: More on the CP/M vs Unix talk 
+Date: 16 Jun 1981 1855-PDT
+From: Ime-Tecom at OFFICE-2
+Subject: Re: CPM vs **NIX--Re: More on the CP/M vs Unix talk
+To:   STEF at DARCOM-KA, Farber at UDEL-EE
+cc:   INFO-CPM at MIT-MC, AFITGORDON at BBNB, POURNE at MIT-MC,
+cc:   WANCHO at DARCOM-KA, IME-TECOM at OFFICE-2,
+cc:   Labhart at OFFICE-2, Hewitt at OFFICE-2, SAD at SRI-KL,
+cc:   EBoyd at OFFICE-2, Christina at OFFICE-2,
+cc:   TECOM-HQ at OFFICE-2, TBowerman at DARCOM-KA,
+cc:   TECOM-C3I at OFFICE-2, STEFADDR.OA-DRDAR at DARCOM-KA,
+cc:   STEFADDR.ADPSC at DARCOM-KA, IME-TECOM
+
+In response to the message sent 16 Jun 1981 1302-PDT from STEF@DARCOM-KA
+
+Whoa Steff-----------
+
+I'm NOT talking about the TECOM cluster machine at all -- My entire
+office is 4 engineers plus 3 support persons.  The entire budget for ADP
+is in the range of $10K.  Harry's office (TECOM-C3I) is about 7
+engineers, 4 support.  We want to be able to be independant of the large
+mainframes if we want, but still retain full connect capability.
+
+AFITGORDON's answer has come closest to what we wanted in regards to
+comments.
+
+If you know of it, TECOM's DMIS standalone Northstar-based system looks
+nearly what we want (I've got some specific objections to that machine
+but I really don't know enough about it to see if they can be gotten
+around.)
+
+Yes, the answers are going in two different directions, but your view is
+not necessary the place I and Harry want to go for our individual office
+machines.
+
+I am NOT talking as part of TECOM's DMIS, and in fact have be taken to
+task for sending out the requirement list in the first place.  They are
+the ones that have all the $$$ and are going for the large main-frame.
+I believe there is a place for both macro- and mini's in TECOM and right
+now I'm concerned only with "MY" machine.
+
+Although I suspect I'm be doing hacker like stuff on it (per my nature)
+the primary use of the IME (International Materiel Evaluation - now
+everyone knows where my address line came from!)  machine will be in
+production work - messages to other TECOM offices, writting letters,
+DF's, briefings, etc.  Primary users will be secretaries, clerks,
+support persons who I suspect I'll have to teach after I learn it
+myself.  (Sorry, but my wife won't let me but my own home computer until
+I get "a couple" more promotions.)
+
+I hope this clears up any misconceptions that I might of coused with the
+first message.
+
+Bob Bloom (IME-TECOM@Office-2, BBLOOM@BRL)
+-------
+
+
+Subject: More on the CP/M vs Unix talk  [for small micros???]
+ ∂16-Jun-81  0628	Dave Farber &lt;Farber@UDel-EE>	More on the CP/M vs Unix talk
+Date: 16 Jun 81 08:58-EDT (Tue)
+From: Dave Farber &lt;Farber@UDel-EE>
+To: INFO-CPM at Mit-Mc, AFITGORDON at Bbnb, POURNE at Mit-Mc,
+To: WANCHO at Darcom-Ka, Stef at Darcom-Ka, IME-TECOM at Office-2,
+To: Labhart at Office-2, Hewitt at Office-2, SAD at Sri-Kl,
+To: EBoyd at Office-2, Christina at Office-2, TECOM-HQ at Office-2,
+To: TBowerman at Darcom-Ka, TECOM-C3I at Office-2, Farber at Udel
+Message-ID: &lt;81166.32320.230 @ UDel-EE>
+Via:  UDel-EE; 16 Jun 81 9:03-EDT
+
+It is very important to remember is that CP/M is a system created
+for  processors  with  small  memory (8080s &lt; 64k) and for single
+processor  configerations.   Systems  based  on   such	 starting
+assumptions, in general, have had severe difficulties adapting as
+the memory size available  grew  and  the  systems  aimed  toward
+inherently multiprocessor systems.
+
+CP/M is an 'old fashion system'. Unix, while full of problems, is
+a  system  that  is  much more in the spirit of forthcoming micro
+based software systems. Note also that because	Unix  is  in  the
+main  a system for larger mainframes, the micros that use it will
+inherit the software that is being  produced  on  and  for  these
+large  system  -- not those produced for limited size old fashion
+micros.  I for one (and I am sure this will create screams) would
+be  happy  to  use  MVS or VMS on a microsystem I had (if it were
+available) because of the hugh variety of software that has  been
+produced and will be produced for these systems.
+
+So CP/M is fine for what it is. It will live (at least as long as
+systems  it  is useful for live). But as a long term system it is
+no more viable that was FMS on the 7090.
+
+Dave
+
+**********
+
+∂16-Jun-81  2224	AFITGORDON at BBNB	Re: CPM vs **NIX--Re: More on the CP/M vs Unix talk
+Date: 17 Jun 1981 0053-EDT
+From: AFITGORDON at BBNB
+Subject: Re: CPM vs **NIX--Re: More on the CP/M vs Unix talk
+To:   Ime-Tecom at OFFICE-2, STEF at DARCOM-KA, Farber at UDEL
+cc:   [Zwiterion]:, INFO-CPM at MIT-MC, POURNE at MIT-MC,
+cc:   WANCHO at DARCOM-KA, Labhart at OFFICE-2, Hewitt at OFFICE-2,
+cc:   SAD at SRI-KL, EBoyd at OFFICE-2, Christina at OFFICE-2,
+cc:   TECOM-HQ at OFFICE-2, TBowerman at DARCOM-KA,
+cc:   TECOM-C3I at OFFICE-2, STEFADDR.OA-DRDAR at DARCOM-KA,
+cc:   STEFADDR.ADPSC at DARCOM-KA, AFITGORDON
+
+In response to the message sent  16 Jun 1981 1855-PDT from Ime-Tecom@OFFICE-2
+
+Hello, Everyone,
+
+	Before I get started, I want to say that I think this exchange
+is  FANTASTIC!	 I'm  learning	much  from it (and doing much research
+because of it), and such a wide diversity of  views  is  enlightening,
+entertaining, and enjoyable.
+
+	I hope the following comments are useful, and I hope  I'm  not
+deviating  too	much  from  the  original question.  As I view it, the
+original question concerned  the  creation  of	a  microcomputer-based
+office automation system and which OS should host it.
+
+					Richard Conn
+
+-------- Comments Follow --------
+
+				Part 1
+
+	First,	I wish to take issue to the extreme with Dave Farber's
+comments; I disagree with them almost  completely  (sorry,  Dave,  and
+please	don't  take  offense, but I feel the following data speaks for
+itself)!
+
+	I  refer  to Dave's message (Farber@Udel-EE, sent 16 Jun 81 at
+8:58 EDT).
+
+	In  his first paragraph, Dave states that CP/M was created for
+processors  with  small  memory  (8080's,  &lt;=64K),  single   processor
+configurations,  and  that "Systems based on such ...  assumptions ...
+have had severe difficulties adapting as ...  [memory size  grew]  ...
+and  ...  [multiprocessor configurations were created]."  I agree with
+his statement about CP/M, but I disagree with the  material  I	quoted
+and view it an an unsubstantiated value judgement.
+
+	Dave goes on to imply that CP/M is "old fashioned" and	should
+be discredited because of its age.  From my point of view (and this is
+how I believe he intended us to believe), Dave is saying that UNIX  is
+newer  than CP/M and was intended from the beginning to run on "larger
+mainframes".  This is not true!
+
+	When I first began work on my Master's at U of Illinois in 76,
+I heard about UNIX long  before  I  heard  about  CP/M.   This	memory
+prompted  me to do a little research, and the following summarizes the
+results of this evenings research --
+
+
+	UNIX				CP/M
+
+o  1st Version:  1969		o  1st Version (1.0?):	1974
+
+o  1st machine implemented on:
+	PDP 7 & PDP 9			Intel Intellec? (8080)
+
+o  2nd Version:  1971		o  2nd Version (2.0):  1979
+
+o  2nd machines implemented on:
+	PDP 11/20			Many 8080's, Z80's
+	  1st released 1970
+	  1 processor
+	  32K words max memory
+	  16-bit words
+
+o  Upward-compatable OS Family:
+	Compatability lies is in	Excellent upward-compatability
+	C source code; OS "hooks"	on the binary (OS "hooks") level;
+	at binary level show no		ASM assembler and PL/M source
+	inter-version compatability	compatability maintained
+	at all! (this is inferred,
+	does anyone dispute with data?)
+   Compatability Synopsis:
+	-None-				CP/M 1.3 -> CP/M 1.4 ->
+					CP/M 2.0 -> CP/M 2.1 ->
+					CP/M 2.2 -> MP/M 1.0 ->
+					MP/M 1.1 -> CP/NET (MP/M-based)
+					[CP/M 3.0 and CP/M-86 - no data]
+
+o  Number of systems running OS:
+	"over 600 installations"	over 200,000 installations
+	(1978) on HW costing		(1979) on HW costing
+	"as little as $40,000"		as little as $3,000 (my experience)
+
+
+
+	The  above  information  came from the following sources:  (A)
+UNIX info from (A1) "The UNIX Time-Sharing System" (Apr 78), The  Bell
+System	Technical Journal, JUL-AUG 78, Vol 57, No 6, Part 2, ISSN0005-
+8580 and [for PDP 11/20 info]  (A2)  "PDP  11/20,  15,	R20  Processor
+Handbook",  Digital  Equipment	Corporation,  1971; (B) CP/M info from
+"CP/M:	A Family of 8- and 16-Bit Operating Systems", Byte  Mag,  June
+81, Pg 216, by Gary Kildall [creator of CP/M].
+
+	From the above, the following information is not  documentably
+substantiated:	 (1)  binary-level  inter-version  UNIX  compatability
+[these statements were made based on personal conversations], (2)  the
+200,000  installation figure for CP/M [this statement made based on an
+ad from Digital Research that I couldn't find  this  evening;  I  have
+heard  later rumors as high as 400,000+!, but these are almost totally
+undocumented], and  (3)  the  CP/M  $3,000  cost  [based  on  personal
+experience with 5 1/4" floppies and 32K bytes memory].
+
+	The compatability I mentioned above should be stressed on  the
+binary level!  To my knowledge (based on conversation), the historical
+versions of UNIX do not support the  same  hooks  (binary  level),  so
+binary	written on one version cannot be transferred to another!  With
+CP/M, however, I have written programs in assembly language which have
+run  without modification (!!!)  on CP/M 1.3, CP/M 1.4, CP/M 2.0, CP/M
+2.2, MP/M, 1.0, and MP/M 1.1!!!!  And  the  machines  that  this  CP/M
+program  ran  on were Intel Multibus, IEEE S-100 (Z80), Cromemco S-100
+(Z80), Ithaca Intersystems IEEE S-100 (Z80),  and  Electronic  Control
+Technology IEEE S-100 (California Computer Systems Z80).  UNIX, on the
+other hand, runs only on PDP 7, PDP 9, PDP 11, and  VAX  11  (All  DEC
+UNIBUS except for the VAX with is DEC MASSBUS and UNIBUS).
+
+	Another  complaint  was  the  lack  of	multiprogramming   and
+multiprocessing  capabilities  with  CP/M.  To dispell these comments,
+MP/M 1.1 can support up to 16 users, each having 64K (48K  work  area)
+of  memory  and  running  on  a  single processor system.  CP/NET is a
+network support system which runs under MP/M (required for  host)  and
+CP/M  or  MP/M	(remotes)  which  allows  sharing  of  common data and
+programs on each of the satellites (separate processors with their own
+terminals,  printers,  and  disks)  with  the  host (also with its own
+terminals, printers, and disks).  AND THIS IS  ALL  UPWARD  COMPATABLE
+WITH  CP/M  2.2,  WHICH MEANS THAT PROGRAMS WRITTEN ON CP/M 2.2 CAN BE
+MADE (SOMETIMES WITH NO MODIFICATION AT ALL!)	TO  RUN  ON  MP/M  AND
+CP/NET!!!
+
+	Now that I have issued all of these pro-CP/M arguments, I wish
+to conclude by saying that --
+
+		1.  Just because software has  been  around  for
+		    some   time  does  not  mean  its  value  is
+		    degraded with time; software is good or  bad
+		    in	the eyes of the user only, regardless of
+		    how long ago it was written
+
+		2.  Although  I sound pro-CP/M, I do not view it
+		    as a panacea!  My experience with  UNIX  has
+		    been  pleasurable,	and  I	feel it has many
+		    concepts which are interesting and of  value
+		    (re my first message).
+
+		3.  The OS, again, is just the RESOURCE  MANAGER
+		    of	the computer system, and I feel that the
+		    real value of the system lies in  the  tools
+		    (editors, languages, DBMS's, debuggers, etc)
+		    that run under the OS.   Transporability  of
+		    software  under  CP/M  is  on the binary AND
+		    source level, while  transportability  under
+		    UNIX  is  ONLY  on the source level (Is this
+		    correct?),	usually  in  C.   If  the   user
+		    selects  UNIX, he could very well be burning
+		    his bridges to the excellent  CP/M	programs
+		    marketed  in  binary  (like MDBS, Word Star)
+		    while he who selects CP/M  is  open  to  the
+		    CP/M  programs  marketed in binary AND still
+		    has the UNIX world open  since  C  compilers
+		    run   under   CP/M	and  UNIX  transportable
+		    programs are written in C (true?).	 If  you
+		    could  find a UNIX-like OS with can also run
+		    CP/M binaries (OS-1 claims to  do  this),  I
+		    feel   that   this	would  be  the	ultimate
+		    solution to our discussions.
+
+					Richard Conn
+
+-------
+
+
+**********
+
+∂16-Jun-81  2340	DAG@MIT-AI	CP/M and UNIX
+From: DAG@MIT-AI
+Date: 06/17/81 02:35:43
+Subject: CP/M and UNIX
+
+DAG@MIT-AI 06/17/81 02:35:43 Re: CP/M and UNIX
+To: info-cpm at MIT-MC
+
+In reading your commentary, it strikes me that there is one consideration
+that is conspicously missing, that of upgradeability.  Although I have
+found UNIX to be a whole lot of fun to use (as a systems type), it
+is not practicle for some folks to consider.  To reitterate
+some of the other comparisions of UNIX and CP/M-80 (note the suffix),
+CP/M was designed for a single user small computer on 8080 level,
+with at most 64k of memory.  UNIX was designed for an eleven.  It
+is very difficult to consider the reletive merits of the two on
+the smaller machines, as (for the moment, and discounting rumors about
+the Decision-1) UNIX is not available for the small CP/M machines.
+For the larger machines, UNIX is great (but does not have loads of
+business type software).  I should think that for people on small
+budgets, who already own an 8000 dollar CP/M type machine,
+it would be near to immpossible to upgrade to UNIX on 16 bit
+without a major expense.
+
+What I would REALLY (underline that) would like to see would be
+a form of UNIX (real live UNIX, not some thing claiming to have a
+tree structure) that would run on the Z80 machine and would also
+allow CP/M programs to run as well (say in a subdirectory).  If
+this could be done with a minimum of hardware (maybe a $500 board
+to do some form of management) and a reasonable priced software
+package, it would be really neat and highly useful.  There
+are rumors (I have a not quite working version) of a UNIX
+like OS being developed by Ed Ziemba (who had a fatal diving
+accident recently, and whom many will miss) and Leor Zolman,
+that is based on BDS C.  Also, the ONYX system is very nice,
+provideing multi user UNIX on a Z8000 and hard disk for arround
+18000 dollars end user.
+
+So much for putting my two cents in.
+
+				Dave
+
+**********
+
+∂16-Jun-81  2358	STEF at DARCOM-KA	Re: CPM vs **NIX--Re: More on the CP/M vs Unix talk
+Date: 16 Jun 1981 2325-PDT
+Sender: STEF at DARCOM-KA
+Subject: Re: CPM vs **NIX--Re: More on the CP/M vs Unix talk
+From: STEF at DARCOM-KA
+To: AFITGORDON at BBNB
+Cc: Ime-Tecom at OFFICE-2, Farber at UDEL, INFO-CPM at MIT-MC,
+Cc: POURNE at MIT-MC, WANCHO, Labhart at OFFICE-2,
+Cc: Hewitt at OFFICE-2, SAD at SRI-KL, EBoyd at OFFICE-2,
+Cc: Christina at OFFICE-2, TECOM-HQ at OFFICE-2, TBowerman,
+Cc: TECOM-C3I at OFFICE-2
+Message-ID: &lt;[DARCOM-KA]16-Jun-81 23:25:52.STEF>
+In-Reply-To: Your message of 17 Jun 1981 0053-EDT
+
+Not hearing any screams of pain, requests for removal from the list, or
+requests to cease and desist, I will assume everyone else is enjoying
+this more or less.
+
+I want to note that I am more interested in the prospects for the future
+attractiveness of UNIX vs CP/M (MP/M & CPNet too) than with the history
+of either of them.  This is not to say that I do not enjoy knowing the
+history.  My point is that my evaluation is based on future potentials
+rather than historical facts.
+
+Also, my evaluation is based on an institutional perspective for finding
+the best way for an institution to provide personal computing for the
+mass of individual employees, rather than in finding ways for individual
+employees to do their own thing, whether it be system hacking or not.
+
+I have no disagreement with those who, as individuals, wish to choose
+CP/M for themselves.  Indeed, if you are in a position to afford the
+luxury of a non-institutional solution, more power to you.  In my own
+case, I have this freedom, and I choose CP/M for now because of costs
+and availablility.  But I plan to migrate to UNIX/XENIX in about one
+year, and I will retain the right to change my mind when I see the real
+alternatives when that time comes.
+
+In the meantime, I must advise my clients to plan for the UNIX/XENIX
+environment because of its greater potential for meeting institutional
+needs, as described in my earlier statement of institutional
+requirements.
+
+I hope this clarifies our apparent disagreement.  It seems quite clear
+that both UNIX and CP/M will be around for a very long time because both
+will provide good value to significant segments of the market.
+
+Best - Stef
+
+**********
+
+Subject:   Re:  CPM vs **NIX--Re: More on the CP/M vs Unix talk
+∂17-Jun-81  1237	Dave Farber &lt;farber@udel-ee> 	Re:  CPM vs **NIX--Re: More on the CP/M vs Unix talk   
+Date:      17 Jun 81 8:44:28-EDT (Wed)
+From:      Dave Farber &lt;farber@udel-ee>
+To:        AFITGORDON at Bbnb
+cc:        Ime-Tecom at Office-2, STEF at Darcom-Ka, Farber at Udel,
+cc:        [Zwiterion]: at Bbnb, INFO-CPM at Mit-Mc, POURNE at Mit-Mc,
+cc:        WANCHO at Darcom-Ka, Labhart at Office-2, Hewitt at Office-2,
+cc:        SAD at Sri-Kl, EBoyd at Office-2, Christina at Office-2,
+cc:        TECOM-HQ at Office-2, TBowerman at Darcom-Ka,
+cc:        TECOM-C3I at Office-2, STEFADDR.OA-DRDAR at Darcom-Ka,
+cc:        STEFADDR.ADPSC at Darcom-Ka, AFITGORDON at Bbnb
+Via:  UDel-EE; 17 Jun 81 9:08-EDT
+
+Let me answer your message in pieces. First of all Unix runs on
+a larger class of systems than just the 11. It runs on a Ahlmahl,
+on the Z8000, on the Univ 1110, on the 68000, on the Tandum,
+on the Prime and will soon run on the 8086 and the IAPX286 as well
+as probably on the new HP 32 bit system. Thats a fair number.
+
+As to CP/M being an old system, I am speaking to the architecture
+of the system NOT to its age. While Unix is not up to current "best"
+ideas in system organization, it is much better than CP/Ms. (If you
+want a better orgnaization try RMX86). 
+
+More latter.
+
+Dave
+
+
+Subject: Re: "UNIX" on a micro
+∂17-Jun-81  1210	Gray at UCLA-SECURITY (Terry Gray) 	Re: UNIX on a micro
+Date: 17 Jun 1981 0942-PDT (Wednesday)
+From: Gray at UCLA-SECURITY (Terry Gray)
+In-reply-to: Your message of 15 June 1981 16:13-EDT
+To: gumby at MIT-AI
+CC: apollo at mit-ai,info-micro at mit-mc,info-cpm at mit-mc
+
+There are actually several 'Unix-like' systems for micros...
+Some with good, some with bad reputations.  I haven't used any
+of them myself, but consensus seems to be that OMNIX and OS1 are
+losers, and Cromix and MARC are winners.  All of these are
+Z80 or 8080/Z80 based.  For 68xx fans, there is Uniflex.
+
+Cromix is offered by Cromemco, and I assume therefore that
+it is intended only to run on Cromemco machines.  Their earlier
+operating system, CDOS, was more-or-less compatible with CPM 1.4,
+but I don't know if there is any hope of running CPM2.2 stuff.
+For more info: Cromemco, 280 Bernardo Ave, Mountain View, CA 94040.
+  415 964-7400
+
+MARC has some very interesting possibilities... it boots up under any
+CPM system, it does have a CPM emulator (probably 1.4), and has
+hard disk support.  It runs on 8080/Z80s.  For more info,
+contact: Vortex Technology, POB 2284, Culver City, CA 90230
+  213 645-7200
+
+Uniflex, for 68xx machines (I'm not sure which are supported), is a
+product of Technical Systems Consultants.  I don't have their
+address handy.
+
+--Terry Gray
+-------
+
+
+**********
+
+Subject: Re: Shall we set up a new group Re: CPM vs **NIX?
+∂18-Jun-81  1645	AFITGORDON at BBNB 	Re: Shall we set up a new group Re: CPM vs **NIX? 
+Date: 18 Jun 1981 1905-EDT
+From: AFITGORDON at BBNB
+To:   BHUBER at USC-ECL, STEF at DARCOM-KA
+cc:   [Zwiterion]:, JMcHugh at USC-ECL, INFO-CPM at MIT-MC,
+cc:   Farber at UDEL, AFITGORDON
+
+In response to the message sent  18 JUN 1981 1517-PDT from BHUBER@USC-ECL
+
+Hi, All,
+
+        I concur with the idea about creating a new list, but I,  too,
+feel  that  the commentaries have run their course.  I am preparing my
+"final" set of comments now, and will be ready to move  on  to  others
+very  shortly.   For  instance, with the emphasis on CP/M and UNIX, NO
+ONE (except me, now) has mentioned Ada and the  work  being  done  (no
+where  near  release) by over 70 major firms (including IBM, Goodyear,
+Ford Aerospace, and I forget who else) on the Ada Language  Integrated
+Computer  Environment  (ALICE)  and  the  potential  extension  of its
+concepts into other areas (including Office Automation)!
+
+	
+					Rick Conn
+-------
+
+
+**********
+
+∂19-Jun-81  0046	Robert E. Spivack &lt;PHOTOG at MIT-MC>    
+Date: 19 June 1981 03:44-EDT
+From: Robert E. Spivack &lt;PHOTOG at MIT-MC>
+To: INFO-CPM at MIT-MC
+
+with all this talk about Xerox 820 and IBM, don't forget about
+Hewlett Packard.  The HP/125 will be a HP2621 terminal wit a sngle
+board computer in it and two 5 1/4 disc drives.  Naturally the
+syste will have an HP-IB interface bus (think of all those
+printers and plotters an esoteric electronic gear you can hook up
+anybod want a $50,000 laser printer on their micro??)
+also, watch for a POCKET COMPUTER from their calculator product group
+'nuff said.
+
+Subject: MARC  [pseudo UNIX-CP/M]
+
+Date: 26 May 1981 0404-PDT (Tuesday)
+From: Lauren Weinstein
+To:   Keith Petersen, W8SDZ
+
+MARC is the operating system for 8080/Z80 that boots up under 
+CP/M (initially) then looks like UNIX.  It was developed by Ed 
+Ziemba (EPZ@AI), and will include the BDS C compiler for $275.  
+I'll be the one selling it.  It is a REAL winner, and is a dream 
+on both floppies and hard disk systems -- on the latter it is a 
+NECESSITY.  Talk to Ed if you want the real nitty-gritty.  There 
+is a CP/M emulator that automatically runs for CP/M programs, 
+though we expect people will start writing using the MARC asm 
+interface since it is infinitely superior to CP/M's...
+
+--Lauren
+
+*****************************************************************************
+
+   MARC is a new operating  system for 8080/Z80 systems which  is
+booted up under  an existing CP/M  system (either  single-density
+1.4 or any  version 2.X  CP/M).  MARC then  absorbs the  existing
+CP/M Basic  I/O  System (BIOS)  to  become a  separate  operating
+system completely independent from CP/M itself.
+
+   MARC is  patterned closely  after the  extremely popular  UNIX
+operating system.  But  MARC is  not UNIX.  MARC  is designed  to
+provide the  basic functionality,  in  terms of  user  interface,
+filesystem, and many other system features of UNIX.
+
+   No bank switching  memories are required.   Most any  8080/Z80
+system with at least 48K of memory can successfully run MARC.
+
+   MARC transparently supports the vast majority of existing CP/M
+programs, without  any  changes  required.   In  particular,  any
+programs which  access CP/M  system calls  via the  standard  low
+memory calling sequence will generally run under MARC.
+
+   The  only   other   consideration   regarding   CP/M   program
+compatibility relates to program  size.  MARC is somewhat  larger
+than  CP/M,  but   it  allows  user   programs  to  overlay   the
+"unnecessary" segments of  itself during  execution.  VERY  large
+programs may require special considerations and not be executable
+without some modification.
+
+   When  a  CP/M  program  is  installed  under  MARC,  the  user
+specifies that  it  is a  CP/M  type command.   From  then,  MARC
+automatically takes  the proper  actions to  emulate CP/M  system
+calls  whenever   that  program   is  executed   --  no   further
+specifications are required after initial installation.
+
+   Alternatively,  the  user  may  activate  the  CP/M   emulator
+directly -- in which case some special features (such as  command
+completion and  the  like)  are  available  for  use  within  the
+simulated CP/M environment.
+
+   The hierachical (tree-structured) MARC filesystem requires  an
+efficient disk  format, therefore  it differs  considerably  from
+those of  CP/M.   However, MARC  includes  a variety  of  utility
+commands to allow the simple transfer of files between CP/M disks
+and MARC disks -- so one will always be able to take advantage of
+any CP/M software which might be of interest.
+
+
+The main features of MARC are:
+
+1) Unix-like hierarchical filesystem,  with full  ownership/group
+   and  selectable  protection   modes  for   every  file.    The
+   filesystem is a large structured  tree.  Users may create  new
+   nodes and  subnodes as  desired,  allowing for  efficient  and
+   convenient organization of  files.  The user  can at any  time
+   set his or  her "current" directory  to any node  in the  tree
+   (subject to protections along the way).
+
+   Each file  in  the system  has  an owner,  a  group  identity,
+   various  protections,  and   the  creation/last   modification
+   time/dates for the file.
+
+   If the system has a realtime clock, MARC can use it to provide
+   full updating of date/time once a second.  Even if there isn't
+   a clock available, manual entry  of this information at  login
+   will be used throughout the session for setting file  creation
+   and modification dates/times.
+
+   Other  information,  such  as  special  execution   priviledge
+   information, and  various other  data, is  also supported  for
+   each file.
+
+2) Full user/group protections.  Users login to MARC with a  name
+   and password,  and  are  automatically  connected  to  "their"
+   portion of the filesystem tree by default.  File  protections,
+   sharing, etc.  are  based upon  the  user's identity  and  the
+   "group" identity associated with the user.
+
+3) Unix-like user interface.  MARC's user interface is  patterned
+   after  the  popular  Unix  command  interpreter  (called   the
+   "shell").  Full I/O  indirection is  supported (meaning  that,
+   when desired, program input and output can be taken and placed
+   in files instead of to/from the terminal).
+
+   Another feature is the ability  to use "wildcards" (i.e.  "*")
+   in the parameters given to ANY command.
+
+   Many other features,  such as "shell  files" (which allow  for
+   execution of a predetermind sequence of commands) and  "pipes"
+   (which permit programs to pass  data to/from each other in  an
+   organized manner) are also implemented.
+
+4) User-customizable terminal  modes  and  control  codes.   MARC
+   allows the user to select the operations and characters to  be
+   used for aborting  a program or  output pause/resume, and  for
+   many others.  Of  course, items  such as "number  of lines  on
+   screen" and such are also completely selectable.  All of these
+   modes may be set interactively  during a session, or the  user
+   may  also  elect  to   have  their  selections   automatically
+   initialized during login. (In fact, each user may specify  any
+   number   of   actions   including   initializations,   program
+   executions, etc.  to take  place automatically  whenever  they
+   login.)
+
+5) "Clean" assembly language interface.  MARC is oriented  around
+   a complete  set  of  system calls,  accessible  from  assembly
+   language or native higher level languages (such as the BDS "C"
+   compiler). These include routines for all aspects of  terminal
+   and disk I/O (including BOTH byte and sector oriented I/O), as
+   well as most every  other function a user  would care to  have
+   available.  The disk I/O calls in particular are simple to use
+   -- the user need not  be concerned about "file control  block"
+   formats and calculations for  figuring file "extents" --  MARC
+   handles such  items internally  and automatically.  (The  MARC
+   filesystem doesn't even use the concept of extents.)
+
+   There is  no  restriction to  using  the MARC  systems  calls.
+   CP/M-style system calls are transparently handled as well.
+
+6) Utilities.  Included are:
+
+        -- programs to manage disks
+        -- a text formatting package
+        -- a simple (but effective) assembler
+        -- a lineprinter output program
+        -- a text editor patterned after the Unix "ed" editor 
+        -- and many more...
+
+   The vast libraries  of CP/M software  are still available  for
+   use under  MARC  ...  with  the added  features  of  the  MARC
+   filesystem, user interface, and many other benefits even  when
+   working with CP/M programs.
+
+7) MARC comes with a special version of the BDS C compiler  which
+   has been specifically designed for  use with MARC.  This is  a
+   subset of the UNIX  C compiler, and includes  a vast array  of
+   I/O library  routines and  features oriented  toward the  MARC
+   user.  It includes a  subroutine librarian program, a  linking
+   loader. Also  included are  a set  of floating  point  library
+   routines, automatic execution and overlay capability, features
+   for generating  ROMable  code, calling  of  assembly  language
+   subroutines, etc.
+
+8) MINCE display editor.   As another OPTION,  MARC is  available
+   with the  MINCE  CRT-oriented display  editor.   This  editor,
+   featuring the ability to  edit multiple files  simultaneously,
+   in up to two  separate windows, is  patterned upon the  widely
+   successful  EMACS  editor,  in  use  on  largescale  computers
+   throughout the world.
+
+Subject: AFITGORDEN@BBNB's comparison of CP/M and UNIX
+∂18-Jun-81  1654	decvax!duke!unc!smb at Berkeley		AFITGORDEN@BBNB's comparison of CP/M and UNIX
+Date: 16 Jun 1981 20:58:12-PDT
+From: decvax!duke!unc!smb at Berkeley
+To: duke!decvax!ucbvax!INFO-CPM@MIT-AI
+
+I'm fascinated -- 25K bytes to conclude that CP/M has more proven tools
+than UNIX???  The two greatest virtues of UNIX are its wide range of
+tools, and the methods the operating system provides to combine them.
+No screen editor?  I thought vi came out several years ago.  No ability
+for an individual user to have a tailored command set?	Version 7 PWB,
+and 32V UNIX systems allow a settable search path for commands (no, it
+does not search "up the tree"), and even on V6 systems it's easy to
+have a single private command library.	Transportability? UNIX runs on
+many different machines made by many different vendors; CP/M is
+restricted to the 8080 and Z-80.  I could go on, but I prefer to keep
+this short.  However, I have the distinct impression that AFITGORDON
+has little or no experience with UNIX or with the UNIX user community.
+
+**********
+
+Mail-from: BERKELEY
+Received-Date: 18-Jun-81 2113-EDT
+Date: 17 Jun 1981 05:32:26-PDT
+From: mhtsa!harpo!nrh at Berkeley
+
+Pfui!  UNIX has had screen editors for some time! (VI at UCB, E at rand &
+Interactive Systems Corp in CA.  As for there being one standard version
+of CP/M, I notice that YOUR version was modified (or doesn't that count?)
+
+As for electronic mail, again, at least three systems: unix "mail",
+RAND's "msg", and harvard's "post".
+
+**********
+
+∂18-Jun-81  1952	decvax!duke!unc!bch at Berkeley		CPM vs **NIX (Usenet participation)
+Date: 18 Jun 1981 07:48:56-PDT
+From: decvax!duke!unc!bch at Berkeley
+To: duke!decvax!ucbvax!INFO-CPM@MIT-AI
+Subject: CPM vs **NIX (Usenet participation)
+
+There are a number of us on the usenet who have been following the
+cp/m- **nix discussion curiously and with some horror.	Unfortunately,
+because of the nature of the gateway between the usenet and the
+arpanet, we cannot participate directly in this novel dialog unless
+some kind soul is willing to rebroadcast messages we mail to
+INFO-CPM@MIT-MC.  We feel we can add significantly to this discussion
+since at least one of our number (unc!smb) has installed **nix on an
+IBM system.
+
+Frankly, I have always considered cp/m to be something less than an
+operating system in that it has absolutely no process/task management
+beyond the timed multiple user support offered by MP/M.  Resource
+management, beyond this, is restricted to disk space conservation.  Any
+significant operating system functions such as parallel processes and
+process control involve actually zapping the os on the fly as in
+DESPOOL.
+
+**NIX, on the other hand, provides a full complement of process
+scheduling mechanisms which allow users great flexibility in their use
+of the system.	For example,  I am currently editing a message to be
+sent on (through several other unix systems) to whomever is out there
+to read it.  At the same time, I am waiting for mail from whomever
+chooses to send to me (an alarm will sound on my terminal if it comes
+in \while/ I am entering this.	Should I choose, I can push the editing
+session into the background, respond to the message, and recall this
+editing session all with process management commands.  When I complete
+the message I will drop it off to the system to be sent on at an
+appropriate time, more than likely in the middle of the night when I am
+not signed on.	Further, I can submit processes to be executed hours,
+days, or weeks from now without intervention on my own part.  The basis
+for all of this is built in to the **nix operating system.  I do not
+believe these capabilities exist in cp/m.
+
+As afitgordon pointed out, any software written for one os can be (in
+some sense) transported to another (this may involve a complete
+rewrite, but...)  Thus, it is not valid to compare operating systems on
+the basis of the software written to run under them.  It \is/ valid to
+compare operating systems on the basis of what the functions of an
+operating system are supposed to be: i.e. resource management and
+task/process scheduling.  Byron Howes University of North Carolina
+
+**********
+
+∂18-Jun-81  2224	AFITGORDON at BBNB	Response to Berkeley (1)
+Date: 19 Jun 1981 0113-EDT
+From: AFITGORDON at BBNB
+Subject: Response to Berkeley (1)
+To:   decvax!duke!unc!smb at BERKELEY
+cc:   duke!decvax!ucbvax at BERKELEY, info-cpm at MC
+
+Hi, All,
+
+	Discussion  seems  to have been renewed!  Marvelous!  It looks
+like some real UNIX hackers (system programmer types) have gotten into
+the act!  Welcome!
+
+	In response to the first irate UNIX hacker (name unknown) [msg
+dted  16  Jun at 20:58:12-PTD from duke!decvax!unc!smb at Berkeley], I
+wonder what he read!?!	First of all, I assume he is referring to  the
+message  of  15  Jun  at 12:31 EDT from AFITGORDON since it is 27,700+
+chars and he made reference to a 25K file.
+
+	The  following	answers his accusations in order (the order in
+his message):
+
+	1.  He claims that I said that "CP/M has more proven tools
+	    than  UNIX".   What  I  said  was  "I  have  not  seen
+	    comparable	field-proven  software	on  the  NEW  UNIX
+	    systems" (pg 7), which is not saying the  same  thing;
+	    to	be exact, I was hoping it would invite information
+	    which would increase my own knowledge on  the  subject
+	    of UNIX tools.
+
+	2.  I did NOT say that UNIX has "No screen editor"; what I
+	    said  was  "Are  there any screen oriented editors and
+	    formatters?"  (pg 3).
+
+	3.  I  did NOT say that UNIX had "No ability for ...  user
+	    to have a tailored	command  set";	what  I  said  was
+	    "special work environments, each with their own set of
+	    commands, can be easily created" (pg 4, par  1.)   and
+	    "specialized   shells   or	even  menu-driven  command
+	    environments can be created with ease" (pg 4, par 2.).
+
+	4.  I	did   NOT   say   that	 UNIX	does  NOT  support
+	    transportability; what I said was "Both UNIX ....	an
+	    CP/M  are  generally adequate, extensible, and support
+	    transportable  software"  (pg  7,	2nd   full   par).
+	    Further,  I  am aware of Bell's portability ideas from
+	    "Portability of C Programs and the UNIX System", BSTJ,
+	    Jul-Aug  78,  Vol  57, No 6, Part 2, ISSN0005-8580, by
+	    Johnson and Ritchie.
+
+	5.  Finally,  your impression is correct concerning my use
+	    of UNIX.  I have touched it just a few times,  and	do
+	    NOT have extensive experience with it.  We are running
+	    UNIX on our PDP 11/60 at AFIT, and I  am  involved	on
+	    its  committee and have touched it only once.  My data
+	    in these messages (as I  have  already  stated)  comes
+	    from  the  Bell  System  Technical Journal I have been
+	    quoting and our own UNIX manuals.
+
+	Appearantly,  this message has stemmed from the sender reading
+all sorts of things into my message.  He has been trying to put  words
+into my mouth while we are saying the same thing all along!
+
+	The purpose of my messages  has  been  to  pass  data,	and  I
+encourage  your  responses  concerning data (with references) on UNIX.
+But let's not launch any personal, critical attacks  based  upon  what
+you are reading into what I am saying as opposed to what I am actually
+saying.  Your message only provided a minimum of new info  on  V7  PWB
+and 32V (UNIX-32 for VAX?), and the rest of it repeated what I already
+said (agreeing with me, by the way).  If you do not feel that you have
+agreed	with me, cite the page and paragraph in which I said something
+contrary to your views.
+
+	If  you  or  anyone else wishes to review the entire dialog, I
+have been maintaining a reading file of what I considered  to  be  the
+critical messages (both sides) and will be happy to transmit it to you
+(preferably FTP it).
+
+
+					Rick Conn
+-------
+
+
+**********
+
+∂18-Jun-81  2244	AFITGORDON at BBNB	CP/M Versions and Transportability
+Date: 19 Jun 1981 0141-EDT
+From: AFITGORDON at BBNB
+Subject: CP/M Versions and Transportability
+To:   mhtsa!harpo!nrh at BERKELEY
+cc:   info-cpm at MC
+
+Hi
+
+	Thanks for the data re UNIX editors and mail systems.  Can you
+provide references?
+
+	As for your comment  about  standardization  of  CP/M,	in  my
+27,000+  char  msg  of 15 June, I claimed that the command interpreter
+(re page 2) was NOT part of the kernal [command interpreter = shell of
+UNIX and CCP of CP/M].	My CP/M system differs from others in the CCP,
+NOT the BDOS (which is where CP/M transportability is  enabled).   The
+world  of  marketed software for CP/M is still open to me, and only my
+user (console) interface is different.
+
+
+					Rick Conn
+-------
+
+
+**********
+
+∂18-Jun-81  2322	AFITGORDON at BBNB	Response to Berkeley (3) -- Byron Howes
+Date: 19 Jun 1981 0218-EDT
+From: AFITGORDON at BBNB
+Subject: Response to Berkeley (3) -- Byron Howes
+To:   decvax!duke!unc!bch at BERKELEY
+cc:   info-cpm at MC
+
+Greetings,
+
+	In reply to Byron Howes message of 18  June,  from  a  systems
+programming   point   of   view,  I  concur  almost  completely.   The
+multiprogramming attributes of UNIX  give  it  many  capabilities  and
+features   not	 found	in  CP/M.   And  UNIX  is  definitely  a  more
+sophisticated OS!  I have already outlined such feelings before.
+
+	My  thrust,  however,  is  in  the  direction  of  a  multiple
+processor CP/M environment (re bottom of the next to the last  par  on
+Page  8 of my 27,700+ message of 15 June).  In this environment, I see
+no "user-level" function that he can do which I can't if I wanted  to.
+For  instance,	to be notified of incoming mail while I am doing other
+things can be done by letting one  of  the  slaves  "ring"  me	on  an
+alternate  terminal  or  display  while  I am working with the master.
+When the message comes in, I leave the master's keyboard and go to the
+slave's.   As  for  after-hours transmission and scheduled processing,
+MP/M already supports  SCHED  which  permits  this,  and  my  multiple
+processor  environment could do this also (with one slave dedicated to
+batch jobs and scheduled processing of other kinds).
+
+	As  for  transportability  of software, I still feel that CP/M
+has an advantage over UNIX.  Look at it this way:  if I  were  a  UNIX
+user  and  wanted  to  run  Word  Star	under  UNIX,  I  would have to
+disassemble Word Star and its overlays into  assembly  language  (Word
+Star  is available conventionally only in binary!), decode the meaning
+of the program (decidedly non-trivial), and translate into C  or  some
+other	form   transportable   to   my	 UNIX	environment.	CP/M's
+transportability is on the binary level!
+
+	On  the other hand, if I were a CP/M user and wanted to run wc
+under CP/M, I would get the source to wc in C and compile it using one
+of  the  C  compilers that run under CP/M.  Yes, I may have to do some
+translation of the source for inter-compiler compatability and I  will
+have  to  have	a library of functions used by wc that are implemented
+under CP/M (like putc, getc, etc.).
+
+	Under CP/M (once my C library is built), I need only translate
+C source code and compile and link in order to use the world of  UNIX-
+compatable  software;  under UNIX, I need to reconstruct programs from
+their binary forms, and for programs like Word	Star  (over  80  K  of
+binary	on  disk,  incl  overlays), the problem of transportability to
+UNIX is definitely non-trivial.
+
+	Mince  (similar  to EMACS) is an editor written in BDS C which
+stands as an example.  I suspect that Mince was only  patterned  after
+EMACS  (not  copied),  but  isn't  copying  of	the public-domain UNIX
+software possible?
+
+
+					Rick Conn
+-------
+
+
+**********
+
+∂19-Jun-81  0508	decvax!duke!unc!wm at Berkeley	UNIX vs. CPM
+Date: 19 Jun 1981 04:25:54-PDT
+From: decvax!duke!unc!wm at Berkeley
+To: duke!decvax!ucbvax!INFO-CPM@MIT-AI
+Subject: UNIX vs. CPM
+
+
+There are a couple of screen oriented editors available under UNIX,
+namely vi (visual editor) which comes with 4bsd, and ned,
+from RAND.  Two other comments:  As regards UNIX being new and
+unproven vs. CPM being established and proven I think you will
+find that the reverse is true, UNIX has been around for a long time.
+The only thing unproven about it is the new versions being written
+for micros.  But 90+% of the code is independent of this, especially
+the utilities.	A big point was also made of the tools available under
+CPM.  The author has obviously not been on a UNIX system for a long
+time.  As far as I know there is nothing available under CPM comparable
+to make, awk, sed, diction, grep, (v)troff, yacc, and lex, which either
+alone (or especially when combined using pipes) I find VERY useful
+both for system work AND on a day to day basis.  Several months ago we
+received a cataloging system we were to use in keeping track of papers
+being reviewed for publication in the proceedings of a conference.
+It was written in FORTRAN, and the listing was more than an inch thick.
+A trial compilation produced 2 to 5 errors per page of code both
+from the UNIX FORTRAN compiler and the IBM H FORTRAN compiler.
+Rather than convert it, I and one other person rewrote it into
+a better and more flexible system using make, awk, sed, sort, nroff,
+tbl and col.  This took about 7 hours (total) from me and 2 for him,
+and contained not a single line of code in any conventional high
+level language, just two or three pages of scripts for the various
+utilities (mostly make).  At the time I had 3 months experience
+on UNIX and had never used any of the mentioned tools except nroff.
+None of this would have been possible on CPM, and in fact the main
+thing going for CPM is that it was the only fairly standardized
+operating system available for micros, UNTIL NOW.
+(END OF FLAME)
+				wm at unc
+
+Subject: The Promised Commentary  ( AFITGORDON )
+ ∂23-Jun-81  0729	AFITGORDON at BBNB 	The Promised Commentary  
+Date: 23 Jun 1981 0021-EDT
+From: AFITGORDON at BBNB
+To:   unix-cpm at UDEL
+Via:  Bbnb; 23 Jun 81 0:13-EDT
+
+Once again, hello everyone,
+
+
+        From the way the discussion has been going, I believe we  have
+virtually  exhausted  the  information  exchange  between the hackers.
+What has been accomplished?  In a  nutshell,  the  UNIX  hackers  have
+learned  more  about CP/M and the CP/M hackers have learned more about
+UNIX.  The UNIX hackers are still UNIX hackers and  the  CP/M  hackers
+are  still CP/M hackers; some UNIX hackers may start playing with CP/M
+and some CP/M hackers may start playing with UNIX.
+
+        In  terms  of the original problem, I feel that enough sources
+of information and human views  have  been  expressed  to  give  those
+wishing to make a wise choice a clear direction to go in order to gain
+more information.  In my opinion, neither option  is  especially  bad.
+As  a  systems programmer, I feel that if you take one option and find
+something that you really want which is available under the  other,  a
+good  systems programmer or team of systems programmers could probably
+implement it for you.
+
+        I  firmly  believe that experience (esp hands-on, and not just
+reading about it) counts, and you can't really know what to expect  or
+how much you will like a particular OS without working with it first.
+
+        At  my  last  assignment,  I  designed  a  text  editing   and
+formatting  system on a CDC 6500/6600 Dual, coded it, and then trained
+some 40 secretaries in its use.  The coding involved  writing  FORTRAN
+Extended  programs (about 5 simple, short ones), while the majority of
+the coding involved using  CYBER  Command  Language  (Interactive  Job
+Control  Language)  to  put  together  other  CYBER programs (editors,
+formatters, file utilities).  Some caught on  quickly  and  loved  it;
+others  never  caught  on.  A key point I learned from this experience
+was that the human interface MUST be  as  simple  and  easy-to-use  as
+possible.   I  (as  a hacker) was AMAZED at the difficulty some of the
+women had in learning that 'I' inserted lines after the  current  line
+and  'IB'  inserted  lines  before the current line.  The same people,
+when given Word Star with its on-screen help info and  only  5  simple
+editor  commands,  were  using it proficiently in a matter of minutes!
+The tools make all the difference, NOT the OS.
+
+        When  you  select an operating system for an office automation
+environment, the human interface and tools are definitely important in
+the decision, but so is the question of support.  Berkeley (I believe)
+and I are currently in a hacker's environment; the  tools  and  people
+necessary  to  do  software  debugging  and  development  are  readily
+available.  The automated office, however, frequently doesn't  possess
+such  people  and tools.  The environment in the original question was
+one involving engineers, and the support problem may not occur.  In  a
+"typical"   environment,   however,   support   should  be  definitely
+considered.
+
+        One  thing I have noted recently is that both Xerox (the Xerox
+820) and IBM (nnknown to me) have both announced personal computers to
+be  marketed shortly.  In both cases, CP/M (or CP/M-compatable) is the
+bases of their operating systems.  With this new committment from  two
+large  corporations to CP/M, the support problem (especially for their
+software base) may be significantly reduced.  Also, I wonder why  they
+chose CP/M.  Can anyone answer this question with authority?
+
+        Well, that's all I have for now.  Any comments?
+
+	
+					Rick Conn
+-------
+
+Subject:   Reasons for use of cpm
+ ∂23-Jun-81  0809	Dave Farber &lt;farber@udel> 	Reasons for use of cpm 
+Date:      23 Jun 81 7:31:58-EDT (Tue)
+From:      Dave Farber &lt;farber@udel>
+To:        unix-cpm at Udel
+
+While I have no direct contact with IBM or Xerox on this  set  of
+issues,  I  can do an educated guess . To develope a Unix for the
+z80  or  the  8088  is  not  a  trivial  task.  Contrary  to  the
+"transportability'  statements of anyone, to develope a top level
+commecial grade unix for a processor costs between  $500,000  and
+$700,000  and  takes  about  a  year.  Also  there  are  the very
+difficult for companies to handle propietary nature of Unix which
+means  that internal devlopement of unix is very difficult duw to
+the future restrictions imposed on the implementors. So  at  this
+time,  if  I were IBM or Xerox aiming at the home market, I would
+opt for CPM.  This whole issue is much more complicated when  the
+often mentioned 8086/8088 Unix of Microsoft and others arrives.
+
+Dave
+
+Subject: [ners: Software Functionality and Portability - The "C" lan...]
+ ∂23-Jun-81  1709	STEF at DARCOM-KA 	[ners: Software Functionality and Portability - The ''C'' lan...] 
+Date: 23 Jun 1981 1708-PDT
+Sender: STEF at DARCOM-KA
+From: STEF at DARCOM-KA
+Reply-To: UNIX-CPM at UDEL
+To: "[ka]&lt;STEF>UNIX-CPM.LST;2":
+Message-ID: &lt;[DARCOM-KA]23-Jun-81 17:08:05.STEF>
+
+This item missed the main list.  It exposes yet another view.   Stef
+	
+Begin forwarded message
+
+Subject: Software Functionality and Portability - The "C" language
+
+Date: 18 Jun 1981 0750-PDT
+From: ners - - Sender: ADPSC at USC-ISI
+To: [ISI]&lt;ADPSC>ADDR.ADPSC;9:, 
+Cc: fbb, Farber at UDEL-EE
+
+The following is an article from a recent Computerworld
+publication discussing one company's views concerning the
+functionality and portability of software.
+
+
+*******************************************************************
+In a time when advances in hardware outstrip the ability to
+program that same hardware, when there is a severe programmer
+shortage and when increased programmer productivity is a rallying
+cry, there are compelling reasons for language and operating
+system standards.
+
+BBN Computer Corp's decision to stay with a single language(the C
+language) and operating system(UNIX) for the C/70 computer it
+introduced last year was based on developing software and
+hardware systems suited to a wide range of specific consulting
+and research applications.  This experience brought out the need
+for a language and operating system mix that provides portability
+without sacrificing broad functionality.  The C language and UNIX
+operating system combine effectively to satisfy these
+requirements, the firm said.
+
+BBN's professional services groups expend a lot of time and
+effort in building software and hardware tools to address
+applications for a diverse customer base - familiar situation to
+most information system technicians.  Choosing from a wide
+variety of languages, operating systems and hardware for each
+application was clearly inefficient since different employee
+groups were unable to share tools and much effort was duplicated.
+
+However, a standard language and operating system allows tools to
+be exchanged between different professional groups and adapted to
+particular needs.  The effort devoted to redeveloping outmoded
+utilities is thus reduced and programmer productivity is
+maximized.
+
+Portability is the key to software investment protection and
+software is portable only when it conforms to recognized standard
+specifications.  The language is the crucial element in
+determining the longevity and utlity range of any piece of
+software.  So, BBN looked for a language specifically suited to
+systems programming and application development with the
+objective of optmizing a user-programmable system.
+
+Several languages were examined before BBN decided on C. While
+FORTRAN and COBOL had the advantage of conforming to ANSI
+standards, the firm's technicians regarded both as specialized
+languages - FORTRAN for scientific research and COBOL for
+business systems.  LISP was also considered but was deemed
+unsuitable for programming because of the high memory level and
+execution time required.  What BBN wanted was a subtle language
+that could be adapted to a wide range of progamming tasks.
+
+The C language appreaed to meet these specifications.  Principal
+features include economy of expression, modern control flow and
+data structures and a good set of operators.  Thorough
+documentation and explicit parameter definition also contributed
+to accepting C as a standard conforming language.
+
+Unlike FORTRAN, COBOL or LISP, C is not specialized for any
+particular application area, and this generality makes it more
+convenient for many tasks than the more highly specialized
+languages.  C's machine independence also eliminates any
+conversion effort requiredwhen transferring software from one
+machine to another.
+
+It was a short step to UNIX from C. The UNIX operting originated
+at Bell Laboratories and was rewritten in the C language later.
+Since C has been closely asssociated with UNIX since its design
+and implementation the decision to standardize on C mandated the
+choice of UNIX as the operating system.
+
+*END MSG Message-ID: &lt;[USC-ISI]18-Jun-81 07:50:09.ADPSC>
+End forwarded message
+		
+
+Subject: UNIX TOOLS
+ ∂23-Jun-81  1806	Keith B Petersen &lt;W8SDZ@MIT-MC> 	UNIX TOOLS  
+Date: 23 June 1981 20:25-EDT
+From: Keith B Petersen &lt;W8SDZ@MIT-MC>
+To: UNIX-CPM at UDEL
+Via:  Mit-Mc; 23 Jun 81 20:16-EDT
+
+The following is a message received from RCPM (Remote CP/M)
+system in Chicago.  Ted Chapin saw Rick Conn's original
+long message comparing UNIX and CP/M.  While Tom Chapin is
+not a participant in our net dialog, I thought his comments
+worthy of forwarding.  Any replies should be addressed to
+W8SDZ@MC.  I will forward to Tom.
+
+---inserted message---
+
+Richard Conn has written a very interesting comparison of CP/M
+and UNIX.  Although my experience is only with CP/M, there are
+a few things that should be added to his report.
+
+First, while UNIX is proprietary to Bell Labs (and licensed by
+Western Electric) it is "escaping" into the public domain.  An
+active users group called the "Software Tools" group has grown
+up around the book of that title written by Kernihan and Plau-
+ger.  The book described the programming of some UNIX-like
+tools in RATFOR.  RATFOR is a FORTRAN preprocessor that has a
+syntax resembling 'C'.  The users group has greatly expanded
+and enhanced the RATFOR tools to include many of the UNIX tools
+such as a shell, screen editors, pipes, etc., and transported
+the system to many different computers.  See the article in the
+September 1980 Communications of the ACM, "A Virtual Operating
+System".  You can get information on the Software Tools Group
+from Debbie Scherrer, Lawrence Berkeley Laborotory, Univ. of
+California, Berkeley, CA. 94720.  This approach embeds UNIX-
+like tools in a host operating system. Another step in this
+direction was the publication of the article "A Portable Dir-
+ectory System" in the April 1981 Journal of the ACM.  This adds
+a UNIX-like directory structure to the software tools environment.
+
+Another source of UNIX-like systems are those that were written
+independently of any UNIX systems and hence are not subject to
+Western Electric licensing.  A complete 'C' compiler was written
+by a programmer at the Mark Williams Company in Chicago.  The
+first system is for the PDP-11, the second for the Z8000.  Bill
+Plauger's company, Whitesmith's in New York has also written a
+'C' compiler and UNIX like system which they can sell indepen-
+dently of W.E. licensing.
+
+As far as CP/M editors go,  I have heard very good reports of
+an editor called MINCE, (Mince is not complete EMACS) that is
+sold by a small company called Mark of the Unicorn started by
+people who recently graduated from MIT.  They also sell a text
+formatter called AMETHYST that is like SCRIBE that runs on the
+DEC-20.  See the review in Dr. Dobbs Journal, April 1981.
+
+                        Ted Shapin.  June 19, 1981.
+
+
+Subject: Ada, ALE, ALICE, and MARC?
+ ∂24-Jun-81  0357	AFITGORDON at BBNB 	Ada, ALE, ALICE, and MARC?    
+Date: 24 Jun 1981 0646-EDT
+From: AFITGORDON at BBNB
+To:   unix-cpm at UDEL
+Via:  Bbnb; 24 Jun 81 6:36-EDT
+
+
+        Re  the  message of 23 June about the Computerworld article on
+BBN's UNIX and C, WOW!  Deja vu!  I have been  recently  (for  over  a
+year  now)  involved  in  DoD's  Ada  effort, and I have just finished
+reviewing some contractor proposals to Rome Air Dev Center  concerning
+the  creation  of  an  ALE  (Ada  Language  Environment) or ALICE (Ada
+Language Integrated Computer Environment).  The Computerworld  article
+almost  reads like the summary of the contractors' proposals, with the
+difference that you substitute Ada for C and ALICE or ALE for UNIX.
+
+        The  ALE/ALICE  concept is NOT to provide a new OS to the user
+under which to develop his Ada programs,  but  rather  to  provide  an
+operating  environment which will run on a large variety of OS's (over
+70 major firms, including IBM,  Goodyear  Aerospace,  Ford  Aerospace,
+etc,  participated  in the recent ALE conferences).  There seems to be
+an analogy here between Tymshare's AUGMENT and ALICE; both  provide  a
+common  set  of tools (compilers [ALICE only], debuggers [ALICE only],
+editors, file utilities, etc).  The Ada  rationale  is  based  on  the
+concept  of  providing  a  common language to replace (future projects
+only) the hundreds of languages currently in use thru DoD, while ALICE
+extends  this  to  include  a  common set of tools.  This allows us to
+educate Ada programmers in Ada the language and ALICE  the  tool  set,
+and  the  Ada  programmer  becomes  a very flexible asset which can be
+transported  national-wide  and  be  brought  up   on   geographically
+different  systems  with  different OS's and not have to learn the OS-
+particular attributes of the systems.   Granted,  Ada  was  originally
+intended  to  meet the needs of the embedded computer world, but it is
+so general, extensible (re packages and the "extended" features of the
+language  such  as  generic  instantiation),  and flexible that it may
+generally be applied across the board (my opinion)  to  meet  a  wider
+variety  of needs, including those currently met by C.  Also, like the
+UCSD Pascal microengine, projects are underway (re CMU) to create "Ada
+machines"  which  are  directly  implemented  to  support  Ada  at the
+microcomputer level.
+
+        MARC  seems  to  be parallel to ALICE in concept.  I feel that
+MARC may be a good direction in which  to  go  since  it  provides  an
+environment  which implements the valued UNIX Shell command structure,
+supports C (as does CP/M), and still provides the necessary  hooks  to
+run  CP/M.   Going  in  the  direction of UNIX burns the CP/M bridges,
+going in the direction of CP/M places a toll on the UNIX bridges,  but
+going in the direction of MARC opens all the bridges.
+
+					Rick
+-------
+
+Subject: Xerox, IBM, and CP/M for Office Automation
+ ∂24-Jun-81  0444	AFITGORDON at BBNB 	Xerox, IBM, and CP/M for Office Automation   
+Date: 24 Jun 1981 0703-EDT
+From: AFITGORDON at BBNB
+To:   unix-cpm at UDEL
+Via:  Bbnb; 24 Jun 81 6:53-EDT
+
+
+        Re Dave Farber's message of 23 June, I think Dave brought up a
+very good point.  UNIX development costs would  be  higher  than  CP/M
+costs  if  the  target  processor  is an 8080/Z80.  Since the majority
+(90%+) of UNIX is written in C, problems would arise in  bootstrapping
+up  UNIX  (provided  in  source).   Among  these problems would be the
+creation of the machine-dependent interface, the writing or  modifying
+of  a C compiler on the development OS thru which to compile UNIX, and
+the media transportability  problem  from  the  C/UNIX  world  to  the
+development environment to the target environment.  CP/M, on the other
+hand, only requires that a new BIOS (Basic I/O System, which  provides
+the machine-dependent drivers for CP/M) be created for the target.
+
+        I feel, however, that Xerox and IBM  are  not  aiming  at  the
+"home"  market,  but  at  the  "personal computer" market.  The latter
+(which includes the "home" market as a  subset)  is  being  used  with
+increasing frequency by small businesses for automated office support.
+Accounting, word processing, data base  manipulation,  and  electronic
+mail  are just some of the applications in this environment, and these
+applications are similar to those required by the automated office  in
+general.   Hence, Xerox and IBM COULD be further aiming at this market
+and set of applications, and  could  significantly  add  to  the  CP/M
+software base for office automation.
+
+                                        Rick
+-------
+
+Subject: More on the Xerox 820 and its Target
+ ∂24-Jun-81  1609	AFITGORDON at BBNB 	More on the Xerox 820 and its Target    
+Date: 24 Jun 1981 1855-EDT
+From: AFITGORDON at BBNB
+To:   unix-cpm at UDEL
+Via:  Bbnb; 24 Jun 81 18:48-EDT
+
+
+        The  June  15  issue  of  "Information  Systems  News"  has an
+interesting cover article on the Xerox 820 and the  yet-to-be-released
+IBM  machine  entitled  "Xerox  Hurls  Micro  Challenge  to IBM."  The
+following is a synopsis  of  the  main  points  (my  opinion)  of  the
+article.
+
+        The 820 is intended to function as "a word processor, personal
+computer  or  small  business system."  Price is $2,995 in single-unit
+quantities,  available  immediately.    Xerox   called   the   820   a
+"marketshare  product,"  and stated as its market goal to capture 25%-
+30% of the personal computer market by 1985.
+
+        Current  statistics show some 60,000 personal computers in use
+in "large" U.S.  corporations  (according  to  the  president  of  the
+Office Products Division of Xerox), and the number is expected to grow
+to 800,000 by 1985 (making Xerox' goal at 200,000+).  These statistics
+are backed by independent sources as well.
+
+        The  820  is  stated  to  be  an  "entry-level   product   for
+secretaries   and   professional  people."   Xerox  plans  to  develop
+applications in-house  and  encourage  3rd-party  software  houses  to
+supply  more  CP/M  software.  Programs currently offered with the 820
+include word processing, communications, records processing, sort  and
+data   entry,  letter  writing,  and  dictionary  packages.   Ethernet
+communications is also supported, and all of these run under CP/M!
+
+        Again, IBM is also going to use CP/M, and in a nutshell, these
+new office automation systems will be available (the 800  family,  not
+just  the  820)  in  the $6,000 price range, and provide a significant
+impact  on  the  $11,000-$20,000  word   processing   systems   (IBM's
+Displaywriter and Wang's Wangwriter).
+
+                                        Rick
+-------
+
+Subject: SIGPLAN/SIGOA and WWB/UNIX
+ ∂24-Jun-81  1721	AFITGORDON at BBNB 	SIGPLAN/SIGOA and WWB/UNIX    
+Date: 24 Jun 1981 2002-EDT
+From: AFITGORDON at BBNB
+To:   unix-cpm at UDEL
+Via:  Bbnb; 24 Jun 81 19:51-EDT
+
+
+        I just received Vol 16, No 6, June 81 issue of  ACM's  SIGPLAN
+notices,  and  the entire issue is devoted to the proceedings of ACM's
+SIGPLAN (Special Interest Group in Programming Languages)/ SIGOA  (SIG
+in Office Automation) Symposium on Text Manipulation held in Portland,
+OR, in June.  I just wanted to call  this  issue  to  your  attention,
+since  it  contains much information on a variety of projects going on
+and a large number of references.
+
+        Included  are descriptions of editors and other OA tools being
+designed by people at Yale, Cornell, Tektronix, MIT, BBN,  Bell  Labs,
+IBM,  and  Stanford,  to name a few.  Several of these tools run under
+UNIX, and there are articles on PEN, JANUS, and EMACS.  It looks  like
+an excellent issue for those intereswg;r|	84(hQ↓↓↓α↓↓↓↓∀≠?7C/#↔Iα∞K∪Mβ6{Iα←⊗KS↔K~⊃βe∧c?K'v#¬↓α≡C↔KKJ↓βπQαα↔3b↓α3π↔_4+7.sS'?w→α↑↑∩zV:&B↓"←KO#↔I∨~α←?KZα↔;≡AαV:MAβπMε{CC?≡+⊃βSzαB↑	⎇*:&aε3?H4WβK?∨⊗77↔↔→%1β∞s⊃α%π;πMβ>{;∪↔⊗K;≥βN1βπ;N{;∃βFMβ#.K⊃β}1↓βSFKM↓β⊗+≠?K(h+π;"↓β∂πr↓βCK␈3'∪∃αβ¬↓β∨K;?C≡KM↓β}1↓βSF)βS?}cMβπ6'3π⊗c∃βWv#↔IβO!9↓α&C∀4+∂∪S'∂f)∨MβNs≠?KnS'?rβ←πMπ∪πS#/⊃βO//#∂#ebβπ;⊃π##∃β⊗+≠↔K.s∂∃βW+OQ↓ε;π[∀hSS#∃εWS#␈∪Mβπv!βS#*β;π7*β?→β
+βCπC/⊃βπQ∧∪↔31ph(4)α↓↓↓↓α↓↓↓↓α↓↓↓↓α↓↓↓↓α↓↓↓↓α↓↓↓↓α↓↓↓↓α↓↓↓α⊗K∂,4Ri555ji44(hP2OW⊗S↔∂QRαα∪N3↔∂'→β'9¬*:&axh)=∪16+WriaE↓β↓eQHL
+~&R&lt;zJ∩>rβπQα∀∩:	L→α∪'∞c↔∂S~β'9α,r&a⎇h*∪π&)i↓I*α+W9β	eaEβ	QAEl*∩P4T3K?5Rαε~&$:>J∩|qβπQ∧∩
+:λhRS=iα↓βW;OA7∂CjβπQα,"⊗04U3'¬iαα;∪Y↓IY∧SW9↓C	↓EIS↓]6⊗% 4(4TC%1α/3↔Kg}s∃04Ph)↓↓α↓↓↓↓¬;∃β←/∪∃β∪O≠∂WO≡K;≥β&C∃αVtJaβ[~↓α∞A|i↓βK.∪';:↓β≠'f)↓βS}#πe↓εP4*2&Q1αβπ;⊃αβ¬β∨}{⊃βG.+OS'}qβ∂πn)βWAr↓αeεs?]βO!∨Mβ⊗+↔9β⊗+∂?∨vKk↔⊃π##πPhSS#↔⊗)βπK*β¬β[∂∪'↔SJβ?→β&K≠≠↔⊗+;Qα,r&aβ∨KOS↔o→β≠3}S';:βπ?/!1βπv!α%∨6(4+.+9↓β∂≠OW7Ns≥↓β&CπQ↓π##∃α~β∂?7εK3↔K~β?9β&C↔O∃π≠gOS.kMβπ⊗)β↔c∞≠S3eπ##∀4W≠π7∃αi5βSFQβ'~aβS#/Iβ∂?oβ'3∃ε+cπ∂&ceβSF)βOπn)β3πv;Wπ∨*βπ;⊃π##↔K*↓βπK(h+;=αβ∪'πf+∂SMα↓#πMαβ←'SB↓α~>∃"Jε9b↓α
+ε≤J1↓ε+S9Jq↓α3}{/';:βπQβ&C∃α∞αz44+.s['K}s7↔;"aβ'QεCπMβ∂!β3↔∂≠QβSG∪↔∃β&Kπ3↔∨#Mβ?2α9↓∧K∃β&C↔K∃ε#'≠≠/∪↔;PhS∪'πf+∂SMαβ≠3?∂#';≥αβπ7?v9βS#*αV:&BβOgO&+7Mβ∂→β←↔fa⎇↓αN1βO=bβS#'~β∂?Wf 4+∪.;Kπ∪*βS#∃εK;S↔∩jV:&BβS??bβSKπw≠C?K&'3O#eβ∂∂βπ'fKS'↔~p4(4R↓↓↓↓α↓↓↓↓α↓↓↓↓α↓↓↓↓α↓↓↓↓α↓↓↓↓α↓αK'≡X4(4RQ)))RQ)))Ph(4*∨++↔∨!i↓↓¬∪∃i↓∧→α∪'∞c↔∂S~β'9α,r&a|hQ=I2j+W9kAE↓↓βIU`&&[∃α∨∪?∂//⊃↓s∪∨∪?∂//∩βW∪.ay&⊗)i↓α~α∪'πf+∂SMεK9αVtJa⎇hR∪πS+Q↓↓↓α↓↓IY∧SW9↓C	↓EIS⊃EiE~j⊗∩QαB≠K%Hh*≠K}ii↓↓α↓↓α∪∂3∃α∂⊗{∂/↔∩↓s∪∂⊗{∂/↔∀βW∪↔cp4*S{Q↓↓↓α↓↓↓α2&R≡⎇∩∩>9εQα⊗sλ4+≡→i↓↓α↓↓↓↓π+;'an≠C5β∂!αW∪.`4(4R↓↓↓α&C∃α?wKaβ;/9αβ≡{7C'f+I↓#V≠%β&{↔Mβv{QβO/βC?K"βOSπ&K4+7+;∂SN{;M9αα'Qβ∞cO=βneβ#∂3∃βO}k∃βS⊗{W3*β←'SBβS#∃α;W;ON;;↔⊃8h+Sgε)84(hQ↓↓↓¬##∃↓lIβO←O#∂!β&yβS#*β∂?7εK3↔Ibβ≠?Iπ≠C↔∂N3g';:β∪↔≠∂+3P4V#'K↔∨#?K'/→βS=εc??-εK;S=αC≠?Iα≠';∂g+∪∃β6K3↔MJβ∪?↔~β;?QεCC3JβS&lt;4Say7SOβ∃β≠Nc↔;πn+M9↓¬##↔O*βπK∃α;OgO&+5≥βNs∂3W&)β≠'f+M9↓¬##∀4WβK?f+5β←O#!β;␈!β#π6K;≥↓lIβ';&+K∂↔π!βS#/≠∃β'~βS#π"βg?Uε≠π;;␈ 4+K.≠?;≠N;WK∃ε	βCK};Kπ5?→β↔;6KK?;n+;Q↓F);≥9bβ∪'≠6+K↔;"βOSπ h+OS↔+∂SW⊗+M1βNqβ∂π≡)βS#*β≠'3*βpl=length field is different) without
+changing the source .
+
+    You also want to be concerned about the support library.  For
+example, Onyx does not yet support the dbm() hashed-access i/o
+package.
+
+    The moral of the story is that you should never assume that
+"portable" means zero-effort.  The Bell Labs people have cleverly
+defined portable as meaning that the importation of an existing
+piece of code costs "very much" less than writing your own
+version.  This could still involve a fair amount of effort.
+
+    My baseline demonstration of this was transporting our Mail
+Relay system (MMDF) which is multi-process and has rather a large
+amount of code, over to the Onyx.  The original system involved
+over 1 person-year to create.  It runs on regular V6 and V6
+Unix's.
+
+      So the question is how much effort it took to transport it
+to The Onyx V7 Unix -- supposedly an exact emulation of V7 Unix.
+
+    The system call interface is, in fact, faithful.  The
+anomolies in the language/compiler/etc. required three weeks of
+effort to get past.  There is probably another 1-2 weeks of
+effort that will be required to finish the job.
+
+    That is not zero effort.  It also is a lot less than a
+complete rewrite.
+
+Dave
+
+
+**********
+
+Subject: Onyx dialect of C
+ ∂26-Jun-81  1535	CSVAX.mark at Berkeley 	Onyx dialect of C    
+Date: 26 Jun 1981 14:00:07-PDT
+From: CSVAX.mark at Berkeley
+To: unix-cpm at udel
+Cc: dcrocker at udel, onyx.ernie at Berkeley
+Via:  Berkeley; 26 Jun 81 17:16-EDT
+
+In all fairness, the compiler Dave refers to (zcc) is NOT the Onyx
+C compiler.  That compiler came from McLure of UNIDOT.  It's a complete
+rewrite, so of course it has different bugs and a slightly different
+interpretation of the language.  He seems to believe that the C book is
+the standard language, rather than the v7 C compiler.  It's also a pretty
+buggy compiler, at least the version we have.  There are problems with the
+preprocessor (but you can say -PP [undocumented] to get the real preprocessor)
+and certain things aren't implemented: static functions (they ran out of
+bits in the symbol table), structures passed to/from functions by value
+(thus libdbm won't work) and no enums.  (The latter two are not in the C book).
+
+Onyx now has their own port of pcc which produces better code than zcc,
+and accepts (well, almost) the full v7 dialect of C.  (It can't seem to
+initialize floating point numbers.)  The major thing that zcc is good for
+is speed of compilation - pcc is real slow because it's disk I/O bound,
+and we all know how slow the Onyx disks are.  The other nice thing about
+pcc is that since Ernie Rael of Onyx ported it, he seems to fix bugs
+pretty fast.
+
+As to dialects of C, there are many, even based on the Bell compilers.
+Ignoring the rest of the world (whitesmiths, mclure, etc) the Bell
+dialects can all be viewed as "versions" of the compilers.  There was
+the v6 version, the pwb version, the phototypesetter version, the
+C book version, the v7 version, and although Bell hasn't released any
+since then, the language continues to evolve.  Berkeley's Vax compiler
+keeps up with the times, and has the following changes since v7:
+
+(1) a new type, "void", can be used to make lint happy:
+	(void) getchar();	/* Ignore the next character */
+(2) structure fields are even more fussy - they must be fully qualified.
+    For this, you get the ability to have the same field name on two
+    different structures, even if the offsets are different.
+(3) [Berkeley only] identifiers are no longer 8 chars max significance,
+    a string table is kept so all chars count.  This was put in for the
+    Vax Pascal system, and affects EVERYTHING that knows the symbol table
+    format.  There has been no indication that Bell will buy this back.
+
+Subject:  Costs of implementing UNIX
+ ∂01-Jul-81  0203	Schauble.Multics at MIT-Multics 	Costs of implementing UNIX 
+Date:  1 July 1981 04:35 edt
+From:  Schauble.Multics at MIT-Multics
+To:  unix-cpm at UDEL
+Via:  Mit-Multics; 1 Jul 81 4:36-EDT
+
+Dave Farbers recent message estimates the costs of developing a
+commercial grade UNIX for a new processor at $500,000 to $700,000.
+This is about what I would have guessed to be. Can Dave or someone
+provide a little more information about this implementation process
+and what it involves?? In particular, what are the future
+restrictions imposed on the implementors? What are the steps involved
+in such an implementation? Where do I go to start?
+
+			Paul
+
+**********
+
+Subject: Porting UNIX to other machines...
+ ∂01-Jul-81  1818	mike at BRL 	Porting UNIX to other machines...    
+Date:  1 Jul 1981 at 2053-EDT
+From: mike at BRL
+To: Schauble.Multics at mit-multics
+cc: unix-cpm at udel
+Via:  Brl; 1 Jul 81 20:53-EDT
+
+Folks -
+ 
+	I don't know if everybody wants to hear about this, but for
+your information, I'll climb up on my soapbox and let fly...
+ 
+		- PORTING UNIX TO A NEW MACHINE -
+ 
+	0)  [It's difficult without a UNIX License & an existing UNIX system]
+	1)  You need a "C" compiler, and an assembler.
+	2)  You need to port the UNIX Kernel to the new machine
+	3)  You need to build all the "C" libraries (user mode)
+	4)  You need to port all the utility programs.
+ 
+Back in the V6 days, the hard part was the "C" compiler and the utility
+programs, as neither was designed with portability or machine independence
+in mind.  With the advent of V7 UNIX, which has already been successfully
+ported to many machines (some of which were probably undeserving), things
+are much easier.  PCC makes the compiler-builder's job much simpler.
+The utilities have been "lint"ed, ensuring fairly good portability.
+ 
+	One assumption is that the target machine has a "reasonable" memory
+management facility.  UNIX *must* have this, because each UNIX process
+can be thought of as &lt;&lt;a virtual processor with no I/O hardware>>.
+(I/O is, of course, done by system-calls).
+ 
+	Another assumption is that the machine is byte addressible.  This
+is not a "hard" requirement, but certainly makes life much simpler, both
+for the compiler and the user routines.  Of course, you can always take
+the cowards way out and use 1 byte per word, but on machines with
+wide words this can result in some real lossages, like 36-bit "bytes"
+on the PDP-10, or 15-bit bytes on Cybers.  Still, old large machines
+DO have memory to burn, so you can get started this way...
+ 
+	I will assume that the "commercial grade" UNIX which Schauble
+spoke of would consist of a "spiffed up" UNIX, something like
+n+1 BSD VM/UNIX, or Perdue UNIX, or BRLNET UNIX, or Pentagon UNIX, or ....
+A good many sites in the "real world" (commercial, military, guv'mnt)
+depend on these UNIX variants, so I think they qualify.
+Certainly, straight V7 has proven to be a good starting point for a
+commercial UNIX system.  After all, it's good enough for BBN, XENICS,
+DYNIX, ONYX, Amdahl UTS, and a host of others...
+ 
+	(My comments thus far have assumed that the project in question
+was going to be a PORT of "true" (ie. licensed) UNIX.  Building a "look-
+alike" system is a similar, but different problem.)
+ 
+	As far as the cost of all this stuff goes, there are a lot of
+factors to consider:
+	1) Niceness of machine instruction set.
+	   ---> affects ease of doing PCC and Library conversions
+	2) Niceness of machine architecture
+	   ---> affects ease of porting Kernel & building I/O drivers
+	3) Availibility of experienced UNIX personnel.
+	   ---> affects ease of getting UNIX done!!!
+ 
+It is hard to stress the personnel aspect enough.  If you have a good
+PCC wizard, getting a resonable PCC up is a matter of &lt;&lt; 1 month.
+If you have a good Kernel wizard, getting most of the kernel up is a
+matter of &lt;&lt; 1 month.  The libraries require a good (target machine)
+assembly language & C coder (for "good" read "patient"), and ~~ 2 months.
+The utilities require a patient person familiar with the UNIX utilities
+and the C language, and perhaps 3 months.
+ 
+Fortunately, if a group of 3 people with (moderately) orthogonal skills
+is availible, a great deal of the development can be overlapped, and
+results can be achieved fast.  A running UNIX should probably only take
+such a team &lt;&lt; 3 months, and the system should be self-sufficient
+on the new machine shortly thereafter.
+ 
+	CC	******** ++++++++ ........
+	Kernel	    ******** ++++++++ ........
+	Lib & Util	******** ++++++++ ........
+ 
+		* = initial development
+		+ = major shakedown
+		. = the inevitable minor bugs
+ 
+Doing this kind of a project with more than about 3 people is likely to
+be suicidal, as co-ordination eats away any time gained by extra bodies.
+ 
+	Sooo, back to the COST.  Assuming some organization has
+a UNIX license & a UNIX machine, and already owns 1 of the target machine,
+and can hire the "right" 3 people, the project should cost their salaries
+over a period of, say, 1 year PLUS the cost of producing any additional
+documentation desired & sales literature.  Say, $100K for total salary.
+You figure out the rest (& add in overhead figures).  $0.5M may not
+be too far off, as a good estimate, but a really anxious bunch
+could get by for a lot less, and still produce a good result.
+ 
+	A lot of people have said a great variety of things concerning
+the ease of porting the UNIX kernel itself to other machines.  These
+fall into several categories:
+	1)  UNIX is no good at optimizing multi-bus architectures
+	2)  The processor is not general enough for UNIX
+	3)  The system is too fast for UNIX...
+	4)  ...
+Rubbish!  The UNIX Kernel implements a clean, efficient user/system
+interface, which can be used on nearly any machine (see above) that
+qualifies, and will certainly run the hardware to it's limits!
+(Ask our hardware wizards, who curse UNIX's demands on the hardware).
+ 
+	I'll step off my soapbox now, and wish anybody who is
+interested in trying to port UNIX the best of luck!  If you are allowed
+to talk, I'd like to hear about any new porting projects.
+[I also volunteer my advice on Kernel issues, if anybody wants it].
+ 
+			UNIX Forever!!!!	(a long time, anyways)
+			-Mike Muuss
+			Ballistic Research Laboratory
+ 
+Anybody need help porting a kernel?
+-------
+
+Subject:  [WMACGREGOR: The Economics of Workstations]
+ ∂29-Jun-81  0952	Frank J Wancho &lt;FJW@MIT-MC> 	[WMACGREGOR: The Economics of Workstations]   
+Date: 29 June 1981 12:24-EDT
+From: Frank J Wancho &lt;FJW@MIT-MC>
+To: UNIX-CPM at UDEL
+cc: FJW at MIT-MC
+Via:  Mit-Mc; 29 Jun 81 12:16-EDT
+
+Date: 29 Jun 1981 0905-EDT
+From: WMACGREGOR at BBNA
+To:   works at MIT-AI
+cc:   BTHOMAS at BBND, SCHANTZ at BBND
+Re:   The Economics of Workstations
+
+     The commercial success of the personal workstation is largely a
+matter of economics.  Irrespective of the technical merits of the
+various machines, they complicate installation planning by introducing
+a new type of capital expenditure which typically cannot be financed
+the same way as large, centralized computing centers of the past.
+This may be an advantage or a disadvantage, depending on your point of
+view.
+
+     On the negative side, the incremental cost of placing one new
+user on a personal workstation is very large--the cost of the
+workstation plus a local network interface and cabling, at least.  For
+centralized systems, the cost of adding one user to the community is
+the price of a terminal and a terminal port (which is often dial-up,
+and amortized over many users).  Certainly there are many hidden costs
+involved in either case, for example, the degradation of performance
+of the centralized system as the user community expands; nonetheless
+the capital expense of the physical equipment represents a fundamental
+barrier, an "activation potential" if you will, for new users.
+
+     Are we making good use of the technology?  From one point of
+view, the development of personal workstations has been directed
+towards increasing the computing power available to individual users
+(the "KA-10 in your office" philosophy), at roughly constant or even
+increasing capital cost per user.  Can comparison shopping in the
+small systems marketplace, a highly competitive part of the economy,
+be a better idea in some cases?
+
+     In particular, I remember one reader of this list commenting to
+the effect that he wasn't interested in small systems (e.g., micros
+with 16-bit address spaces).  I use an H89 (Z80 based system, 48K
+bytes of RAM, 5" floppies) at home, and for the sake of comparison I
+ran the Baskett test on this machine.  I transliterated the program
+into C for the C/80 compiler as directly as possible (almost token for
+token), and even on the "small" system the object code is only of
+modest size.  The execution time was 542 seconds, as opposed to about
+40 seconds for the Perq.  This Z80 machine runs at a 2 MHz. clock,
+which can easily be doubled to 4 MHz. reducing the run time to 270
+seconds, about 6 times slower than the Perq.
+
+     I do not mean to suggest that we should all be using CP/M and
+8-bit micros.  But neither does it seem wise to pass over these "small
+workstations" as being insufficiently powerful; they can be extremely
+cost effective.  The question is not whether these systems should be
+used at all, but how they might be integrated into larger
+environments.  Suppose a user can afford to pay $3000 (about twice the
+cost of a terminal) for a VT-103 (a VT-100 terminal plus LSI-11
+processor).  What functions can we place in this device to improve
+performance?  How should it be integrated into the network of personal
+machines and shared hosts?  Could we, for instance, support a window
+package for the VT-100?  (In fact, we can; examples already exist.)
+
+     From my experiences at BBN, it is clear that the economics of
+personal workstations can be very complicated.  Two troubling effects
+that may be general phenomena are the sharing of one "personal"
+machine by several people (and corresponding problems of data
+security, authentication, etc., which have been pretty much ignored in
+the "personal" workstation model), and the inability of low budget
+projects to get into the game at all (it is difficult for people on
+different projects to share the same machine, for many reasons).
+
+     I would be interested to learn how others are resolving these
+issues, whether in software or by direct administrative control.
+
+  - Bill
+
+
+Subject:  [BENSON: Tools for personal workstations]
+ ∂30-Jun-81  0419	Frank J Wancho &lt;FJW@MIT-MC> 	[BENSON: Tools for personal workstations]
+Date: 30 June 1981 07:00-EDT
+From: Frank J Wancho &lt;FJW@MIT-MC>
+To: UNIX-CPM at UDEL
+Via:  Mit-Mc; 30 Jun 81 6:48-EDT
+
+I am forwarding this particular msg to this group mainly for the
+comments about UNIX in the second and fourth paragraphs...--Frank
+--------------------
+
+Date: 29 Jun 1981 1232-MDT
+From: Eric Benson &lt;BENSON at UTAH-20>
+To:   mike at RAND-UNIX
+cc:   Rivanciw.DHQ at UDEL, JWalker at BBNA, WorkS at MIT-ML
+Re:   Tools for personal workstations
+
+Mike's response (more like a Bronx cheer) forces me to clarify some of the
+points I was trying to make:
+
+First, I could not say that the design of Unix is not simple, clean and
+well-integrated from top to bottom.  In fact, I only objected to one thing,
+certainly not a central point, which is the cryptic command names (cat, mv,
+rm, sh, ls, grep).  These are almost as mnemonic as PDP-10 opcode names.
+(Jrst enough for some, I suppose.)
+
+Second, Emacs is no Mies van der Rohe creation.  The implementation is at
+three levels, MIDAS, TECO, and Emacs keyboard input, the first two of which
+are incompatible with each other and sane human beings.  The single
+character commands are also cryptic, but there is readily accesible online
+documentation for them.  Common editing commands are often used in rapid
+succesion, necessitating brevity.  (Although I believe I saw an editor
+described in Software P & E using the Tops-20 COMND JSYS which looked
+somewhat interesting for novices.)  Mike (apparently) objects to the use of
+extra shift keys for commands.  This is required because there is no
+"insert mode" in Emacs; what you see is what you get.  That is what
+distinguises it from every other editor I have used, and is the most
+important aspect of its design.  Also, by not requiring special editing
+keys or other input devices such as a mouse, a good typist can remain in
+registration when entering commands.
+
+Unix was designed when CPU power, memory, address space and terminal
+bandwidth were scarce resources.  Its popularity (in academic circles) is
+due to its accessibility, portability and malleability.  I only hope
+in extolling its virtues we do not overlook its shortcomings.
+
+-- Eric
+
+P.S. Sorry for getting a little off the topic of personal workstations per
+se, but I believe this is relevant to system design.
+====================
+
+
+Subject: EMACS -vs- UNIX
+ ∂30-Jun-81  1741	mike at BRL 	EMACS -vs- UNIX  
+Date: 30 Jun 1981 at 2026-EDT
+From: mike at BRL
+To: WorkS at mit-ml, unix-cpm at udel
+cc: Rivanciw.DHQ at udel, benson at utah-20
+Via:  Brl; 30 Jun 81 20:29-EDT
+
+Folks -
+ 
+	"Eric Benson's message implicitly compares the Emacs design with UNIX.
+In his words, Emacs is elegant, UNIX arcane."
+ 
+	Both this comparison and the conclusion disturb me.  Comparing
+an editor (which can be thought of as having 3 levels) with an operating
+system (which has many levels of complexity) is kind of off-the-wall,
+but lets play along...
+ 
+	INTENT:  The intent of EMACS (as I see it) was to provide a
+"what-you-see-is-what-you-get" screen editor which behaved similarly
+over a wide range of terminal keyboards (and terminals), and to permit
+construction of Macros to implement higher-level features (LISP indenting,
+etc).  The intent of UNIX was to provide a powerful, plesant, and consistent
+environment for Computer Science types to experiment and build tools in.
+ 
+In a word, the intent of UNIX is "Software Tools", whereas the intent of
+EMACS is "Software TOOL".  Humm.
+ 
+	USER INTERFACE:  Everybody will be quick to agree that EMACS has
+a simple to learn user interface, at least to gain "novice" status.
+The more intricate commands become more obscure, and less mnemonic.
+(Everybody agrees that Meta-Control-single←character can get obscure).
+"What-you-see-is-what-you-get" is Motherhood and Apple Pie for screen
+editors, and EMACS definitely succeeds here.
+ 
+The UNIX user interface is designed to save typing while remaining
+reasonably mnemonic.  A remarkable number of "Advanced" users
+can't type very well, so this is laudable.  Unfortunately, this means
+users take a while longer getting used to the command abbreviations.
+There exist variants of the UNIX Shell (command interpreter) which
+accept abbrviated commands and do other nice, user-helpful things
+(although the "standard" (dumb) shells are more common).
+ 
+Initial EMACS and UNIX users face much the same problem...
+LOTS OF SQUINTY LITTLE COMMANDS.
+ 
+	UNDERLYING STRUCTURE:  As I understand it, EMACS can be thought of as
+having 3 layers:  The user interface/screen control stuff, the Macro level
+commands, and the macro implementation level (Typically TECO).  Certainly,
+the top level is easy to use.  The Macro level can usually be learned and
+profitably USED by ordinary mortals, but the macro implementation level
+(TECO or whatnot) requires a Wizard to get good results.
+ 
+UNIX can be thought of as a number of levels, nested:
+	The terminal driver & line protocol (control/s/q & "cooked" editing).
+	The Shell (command interpreter)
+	Programs (System commands & User programs have identical status)
+	The I/O Library (Buffering & simple file mgmt)
+	The System-Calls (Direct requests made to the UNIX Kernel)
+While each of these levels may have some overlap and inconsistencies,
+the general "clean" philosophy of having only one mechanism to accomplish
+one result is generally evident, and a real pleasure!
+[More on this some other day]
+ 
+"UNIX productivity must be thought of, not in terms of lines of code
+written per unit time, but in terms of lines of code NOT REQUIRED..."
+ 
+	CONCLUSIONS:  I feel that EMACS is one of the better screen editors
+around, mostly because of the "macro" facility which permits powerful
+features to be built on top, and I feel that UNIX is definitely the
+best operating system that has surfaced to date, because of the consistent
+system-call interface, and the "Software Tools" approach to commands.
+ 
+	HENCE, I think that all UNIXs should have an EMACS, and everybody
+should run UNIX!
+				-Mike Muuss
+				Ballistic Research Laboratory
+ 
+PS:  There exist EMACSs small enough to fit on an 11/34, and UNIX runs
+     on everything these days, so this is less of a pipe-dream than it
+     may seem!
+-------
+
+Subject:   [The Moderator:  Software tools - EMACS and UNIX]
+ ∂11-Jul-81  0041	Mike at BRL 	[The Moderator:  Software tools - EMACS and UNIX]   
+Date:      11 Jul 81 3:09:44-EDT (Sat)
+From:      Mike at BRL
+To:        unix-cpm.EE at UDel
+Via:  Brl; 11 Jul 81 3:22-EDT
+
+For Your Information ---
+
+----- Forwarded message # 1:
+
+Mail-from: daemon Sun Jul  5 11:05:56 1981  
+Mail-from: ARPAnet host mit-ml rcvd at Sun Jul  5 11:05:41 
+Date:  5 Jul 1981 1000-EDT
+From: The Moderator &lt;WorkS-REQUEST at MIT-AI>
+Subject: Software tools - EMACS and UNIX
+To: WorkS at MIT-AI
+
+
+There are (at least) two editors entitled EMACS on the Berkeley
+VM/UNIX VAX system.  The one by James Gosling of CMU seems to
+be favored.  It has a LISP-like language for extension.  It is
+missing features of various sorts, however.
+                                   -- CSVAX.fateman at Berkeley
+
+
+  A point of information: There exists an excellent, if not fully
+mature, EMACS for the VAX running Berkeley UNIX or VMS+EUNICE.
+  The basic editing level is written entirely in C (zero lines of
+machine code), the macro level is an embedded lisp-like language
+called MLISP (which is INFINITELY more comprehensable than TECO
+macros!), and the top level is the usual EMACS
+double-bucky-coke-bottle command language.
+  Inquiries sould go to GOSLING@CMUA, but I think he is on summer
+vacation or some such.
+                               -- Dave Dyer &lt;DDYER at USC-ISIB>
+-------
+
+
+
+----- End of forwarded messages
+
+
+∂20-Jul-81  2139	MMD  
+Subject:  Multi-user, etc., revisited
+ ∂16-Jul-81  0212	Frank J. Wancho &lt;FJW at MIT-MC> 	Multi-user, etc., revisited
+Date: 16 July 1981 05:13-EDT
+From: Frank J. Wancho &lt;FJW at MIT-MC>
+To: INFO-MICRO at MIT-MC, INFO-CPM at MIT-MC
+
+In the last few months it seems a number of multi-user systems have
+come out of the woodwork and are demanding our attention.  My office
+has been investigating several systems and are aware of several
+others, mainly through advertising in the various trade magazines.
+
+What we'd like to do is build up a better base of information on the
+schemes available and of those, which ones actually exist, in use at a
+customer's site - not a prototype.
+
+I would like to hear first-, and possibly, second-hand information in
+those two catagories: what is actually available, and of those,
+end-user descriptions of the system features and failings.
+
+The major criteria is that the system must provide an environment
+capable of running any program designed to run under CP/M 1.4 or 2.2
+with a shared hard disk and be capable of spooling output to at least
+one shared printer.
+
+We are already aware of and in the process of evaluating Micro-Mike's
+JOESHARE, and Action Computer Enteprise's DPC/OS and MuSYS's MuDOS.
+We are only aware of OSM's ZEUS system and Micromation's M/NET from
+seeing them demonstrated at the West Coast Computer Faire.
+
+Since then we have come across many others apparently capable of
+handling the basic requirement (with the secondary advantage of being
+able to share files as well - currently a limitation of the Micro-Mike
+system).
+
+Again, we would like to hear from end-users of any of these systems
+with mail addressed directly to FJW@MC - and NOT to these lists.  I
+will consolidate the replies and send out a pointer later.
+
+Thanks,
+Frank
+
+</pre>
+</body>
+</html>

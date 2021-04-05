@@ -1,0 +1,11 @@
+Date:     16 November 1981 2248-est
+From:     Brian N. Hess              <Hess.Unicorn at MIT-Multics>
+Subject:  DECUS C compiler
+Cc:       Lauren at UCLA-Security
+
+It's pretty worthless.  That is to say, we don't like it because it
+doesn't compile Mince (our ersatz EMACS) at all.  For $695, who can
+afford to NOT use the Whitesmith's C compiler?  (Both DECUS and
+Whitesmith's run under RT, RSX, and RSTS.)
+
+                              Brian
