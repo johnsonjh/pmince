@@ -1,6 +1,8 @@
 # Portable MINCE
 
-**Portable MINCE**<sup>†</sup> ("the Software") exists solely for the socially beneficial purposes of scholarship, historic preservation, research, and education. The Software is distributed **without cost**, **AS IS**, and without warranty of any kind, express or implied, including, but not limited to, the warranties of merchantability, fitness for a particular purpose, and non-infringement.
+**Portable MINCE**<sup>†</sup> ("the Software") exists solely for the socially beneficial purposes of scholarship, historic preservation, research, and education.
+
+The Software is distributed **without cost**, **AS IS**, and without warranty of any kind, express or implied, including, but not limited to, the warranties of merchantability, fitness for a particular purpose, and non-infringement.
 
 The **Portable MINCE** authors make no warranty or representation regarding the accuracy, currency, completeness, authenticity, reliability, or usefulness of the Software.
 
