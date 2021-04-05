@@ -45,6 +45,8 @@
 * Translation of line-endings at run time (*use* `dos2unix` *as* *a* *workaround*).
 * Translation of `PgUp`/`PgDn`/`Home`/`End`/cursor control/arrow keys.
 * Build with GCC `-fno-common` and reduce `-Wall` warnings.
+* Support crash recovery (by parsing `mince.swp`) in case of unclean exit.
+* Add support for external filters, such as hexadecimal mode (via `xxd`).
 * Support for automatic terminal resizing (_by catching and handling **SIGWINCH**_).
 * Allow building **MINCE** binaries with various extensions; produce verified/tested configurations.
 * Build and support MOTU **Scribble**, **Pencil**, and **Crayon** in similar fashion.
