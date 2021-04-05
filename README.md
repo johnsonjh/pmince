@@ -23,20 +23,18 @@
 
 ## Tested configurations
 
-* GNU/**Linux**
-  * x86\_64 (AMD64)
-    * **RHEL** 8.3, **GNU C 8.4.1** (*Red Hat 8.4.1-1*)
-    * **CentOS** 8 (Stream), **GNU C 10.2.1** (*Red Hat SCL 10.2.1-7*)
-    * **Fedora** 33, **GNU C 10.2.1** (*Red Hat 10.2.1-9*)
-    * **Fedora** 33, **Intel oneAPI DPC++ 2021.2.0** (*2021.2.0.20210317*)
-  * ARMv7HF (ARM32-GNUEABI)
-    * **Raspbian** (Buster) 10, **GNU C 8.3.0** (*Raspbian 8.3.0-6+rpi1*)
-  * ARM64 (AArch64)
-    * **Debian** (Bullseye) 11, **GNU C 10.2.1** (*Debian 10.2.1-6*)
-    * **FreeBSD** 13.0-RC4, **FreeBSD clang 11.0.1** (*llvmorg-11.0.1-0-g43ff75f2c3fe*)
-* Apple/**Darwin**
-  * x86\_64 (AMD64)
-    * **macOS** (Big Sur) 11.3 Beta 6, **Xcode 12.4** (*clang-1200.0.32.29*)
+* x86\_64 (AMD64)
+  * **RHEL** 8.3, GNU C 8.4.1
+  * **CentOS** 8 (Stream), GNU C 10.2.1 (*SCL*)
+  * **Fedora** 33, GNU C 10.2.1
+  * **Fedora** 33, Intel oneAPI DPC++ 2021.2.0 (*20210317*)
+  * **macOS** (Big Sur) 11.3 Beta 6, Xcode 12.4 (*clang-1200.0.32.29*)
+  * **OpenBSD** 6.8, OpenBSD clang 10.0.1
+* ARMv7HF (ARM32)
+  * **Raspbian** (Buster) 10, GNU C 8.3.0 (*6+rpi1*)
+* ARM64 (AArch64)
+  * **Debian** (Bullseye) 11, GNU C 10.2.1
+  * **FreeBSD** 13.0-RC4, FreeBSD clang 11.0.1 (*g43ff75f2c3fe*)
 
 ## Roadmap
 
