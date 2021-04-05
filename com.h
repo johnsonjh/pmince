@@ -17,7 +17,13 @@
 #include <sys/poll.h>
 #endif
 #if SYSV || DNIX
+#ifdef __FreeBSD__
+#include <termios.h>
+#include <sys/param.h>
+#include <sys/ioctl.h>
+#else
 #include <termio.h>
+#endif
 #define ORWF O_RDWR | O_NOCTTY
 #define OROF O_RDONLY | O_NOCTTY
 #define OWOF O_WRONLY | O_CREAT | O_TRUNC | O_NOCTTY
@@ -127,7 +133,11 @@ struct regs {
 };
 
 #if SVR4 || SYSV || DNIX
+#ifdef __FreeBSD__
+struct termios old, new;
+#else
 struct termio old, new; /* Terminal control structures. */
+#endif
 #else
 struct sgttyb old, new;
 #endif

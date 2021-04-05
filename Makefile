@@ -26,6 +26,22 @@ CFEXTRA=-pipe
 
 #########################################################################
 
+ifeq ($(OS), freebsd)
+	CFL=-O2 -fcommon $(CFEXTRA)
+	CC?=clang
+	SYSTYPE=SYSV
+	OPTIONS=-D$(SYSTYPE)=1 -DRUNOPTS=1 -DUSEDIRENT=1 -DNOBUFF=1
+	CFLAGS+=$(CFL) $(OPTIONS)
+	RM=rm -f
+	TEST=test
+	SIZE=size
+	STRIP=strip
+	MKDIR=mkdir -p
+	CP=cp -f
+	OBJE=.o
+	MINCE_CONFIGURED=1
+endif
+
 ifeq ($(OS), darwin)
 	CFL=-O2 -fcommon $(CFEXTRA)
 	CC?=clang
@@ -81,7 +97,7 @@ all: osconf depend mince$(OEXT) strip
 #########################################################################
 
 coffwrap$(OEXT): coffwrap.c version.h
-	$(CC) $(CFLAGS) $? -o $@
+	$(CC) $(CFLAGS) coffwrap.c -o $@
 
 #########################################################################
 
