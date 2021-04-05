@@ -129,6 +129,6 @@ The **Portable MINCE** distribution contains files collected and distributed by 
 
 When the **AUG** was an active organization, membership was restricted to Amethyst, MINCE, and Scribble license holders, per an agreement between **Mark of the Unicorn, Inc.** and the **Amethyst Users Group**.
 
-However, **AUG** is now defunct (since at least 1994), and the **AUG** archives have been made publicly available and openly distributed (since at least 1985) by many organizations, including the *Massachusetts Institute of Technology* *CPMUG Repository* via *MIT-MC*, *SIMTEL-20*, *SIG/M*, *PC/Blue*, *Walnut Creek CD-ROM*, *Software Tools of Australia*, *Oakland University* via the *Oak Repository*, *Demon Internet* FTP, and many others.
+However, **AUG** is now defunct (since at least 1994), and the **AUG** archives have been publicly available and openly distributed (since at least 1985) by many organizations, including the *Massachusetts Institute of Technology* *CPMUG Repository* via *MIT-MC*, *SIMTEL-20*, *SIG/M*, *PC/Blue*, *Walnut Creek CD-ROM*, *Software Tools of Australia*, *Oakland University* via the *Oak Repository*, *Demon Internet* FTP, and many others.
 
 The **AUG** archives included in the **Portable MINCE** distribution contains **only** data that was historically publicly available and openly distributed.
