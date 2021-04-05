@@ -18,11 +18,11 @@ If you wish to use these copyrighted Materials for any purposes beyond "*fair us
 
 ## COM
 
-**CCOM80** is derived from **COM** 3.0, Copyright © 1984-2008 by Jim Cathey, Edmund Ramm, Charlie Gibbs, and Willi Kusche.
+**CCOM80** is derived from **COM** 3.0, Copyright © 1984-2008 by *Jim* *Cathey*, *Edmund* *Ramm*, *Charlie* *Gibbs*, and *Willi* *Kusche*.
 
 The majority of **COM** is **public domain software**, however,
 
-* **CCOM80** may incorporate or adapt some *Z-80* simulation routines by Charlie Gibbs and Willi Kusche, which are **freely redistributable, but may not be sold**.
+* **CCOM80** may incorporate or adapt some *Z-80* simulation routines by Charlie Gibbs and Willi Kusche. These routines are **freely redistributable, but may not be sold**.
 * **CCOM80** may incorporate or adapt some **CP/M** simulation routines from *RunCPM*, Copyright © 2017 by Mockba the Borg, released under the **MIT license**.
 
 ```text
@@ -51,9 +51,9 @@ SOFTWARE.
 
 ## coffwrap
 
-The included `coffwrap` tool is an approximation of a tool by the same name by Sequent Computer Systems and distributed with their **DYNIX** and **DYNIX/ptx** operating systems. This reimplementation is similar only in name and purpose, and contains no Sequent Computer Systems source code.
+The included `coffwrap` tool is an approximation of a tool by the same name by *Sequent Computer Systems* and distributed with their **DYNIX** and **DYNIX/ptx** operating systems. This reimplementation is similar only in name and purpose, and contains no *Sequent Computer Systems* source code.
 
-* `coffwrap` is derived from `bin2c`, Copyright © 2015 by Ondrej Novak, released under the **MIT license**.
+* `coffwrap` is derived from `bin2c`, Copyright © 2015 by *Ondrej* *Novak*, released under the **MIT license**.
 
 ```text
 The MIT License (MIT)
