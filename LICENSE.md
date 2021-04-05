@@ -8,7 +8,7 @@ All product names, brand names, logos, service marks, trademarks, and registered
 
 The **Portable MINCE** authors could find no evidence of the trademark being actively used in commerce by **Mark of the Unicorn, Inc.** after March 1983, or by any distributor, licensee, or reseller after December 1994. Thus, it is our belief that the use of the term "**MINCE**" by **Portable MINCE** is legally permissible and does not constitute trademark infringement. Furthermore, the **Portable MINCE** authors make no claims to the term "**MINCE**".
 
-## MINCE, DIFF, Scribble, Pencil, Crayon
+## MINCE/DIFF/Scribble/Pencil/Crayon
 
 **MINCE** (version 2.6), **DIFF** (version 1.1), **Scribble** (version 1.3), **Pencil** (version 1.3), and **Crayon** (version 1.3), along with any associated documentation (the "Materials"), are Copyright © 1980-1982 by **Mark of the Unicorn, Inc.** These Materials are provided in accordance with Title 17 U.S.C. Section 107, and distributed without profit, in original and unmodified form, for non-commercial research and educational purposes, for use by those who have expressed a prior general interest in receiving the Materials.
 
