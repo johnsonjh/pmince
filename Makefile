@@ -91,8 +91,8 @@ all: osconf depend mince$(OEXT) strip
 		true :
 	@$(TEST) -x ./mince$(OEXT) 2>/dev/null && \
 		printf '\n%s\n' \
-		" ** MINCE ($(ROWS) rows, cols $(COLS)) build successful **" \
-		" ** Run \"make compress\" or \"make install\" now **"
+		" $(MAKE) ** MINCE ($(ROWS) rows, cols $(COLS)) build successful **" \
+		" ** Run \"$(MAKE) compress\" or \"$(MAKE) install\" now **"
 
 #########################################################################
 
@@ -192,11 +192,14 @@ upx: compress
 compress: strip mince$(OEXT)
 	upx -q -q --exact --strip-relocs=0 --overlay=copy --ultra-brute \
 		mince$(OEXT) || true :
-	@printf '\n%s\n' " ** You may now procced with \"make install\" **"
+	@printf '\n%s\n' " ** You may now proceed with \"$(MAKE) install\" **"
 
 #########################################################################
 
 osconf:
+ifeq ($(MAKE),)
+	$(error Error: MAKE variable is not set)
+endif
 ifeq ($(MINCE_CONFIGURED), 1)
 	$(info Configured for $(OS))
 else
