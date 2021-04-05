@@ -8,21 +8,23 @@ All product names, brand names, logos, service marks, trademarks, and registered
 
 The **Portable MINCE** authors could find no evidence of the trademark being actively used in commerce by **Mark of the Unicorn, Inc.** after March 1983, or by any distributor, licensee, or reseller after December 1994. Thus, it is our belief that the use of the term "**MINCE**" by **Portable MINCE** is legally permissible and does not constitute trademark infringement. Furthermore, the **Portable MINCE** authors make no claims to the term "**MINCE**".
 
-# MINCE, DIFF, Scribble, Pencil, Crayon
+## MINCE, DIFF, Scribble, Pencil, Crayon
 
 **MINCE** (version 2.6), **DIFF** (version 1.1), **Scribble** (version 1.3), **Pencil** (version 1.3), and **Crayon** (version 1.3), along with any associated documentation (the "Materials"), are Copyright © 1980-1982 by **Mark of the Unicorn, Inc.** These Materials are provided in accordance with Title 17 U.S.C. Section 107, and distributed without profit, in original and unmodified form, for non-commercial research and educational purposes, for use by those who have expressed a prior general interest in receiving the Materials.
 
-The **Portable MINCE** authors claim **no** affiliation, endorsement, or sponsorship whatsoever by the originators of the Materials. 
+The **Portable MINCE** authors claim **no** affiliation, endorsement, or sponsorship whatsoever by the originators of the Materials.
 
 If you wish to use these copyrighted Materials for any purposes beyond "*fair use*", you **MUST** locate and obtain permission from the current copyright owner.
 
-# COM
+## COM
 
 **CCOM80** is derived from **COM** 3.0, Copyright © 1984-2008 by Jim Cathey, Edmund Ramm, Charlie Gibbs, and Willi Kusche.
 
 The majority of **COM** is **public domain software**, however,
- * **CCOM80** may incorporate or adapt some *Z-80* simulation routines by Charlie Gibbs and Willi Kusche, which are **freely redistributable, but may not be sold**.
- * **CCOM80** may incorporate or adapt some **CP/M** simulation routines from *RunCPM*, Copyright © 2017 by Mockba the Borg, released under the **MIT license**.
+
+* **CCOM80** may incorporate or adapt some *Z-80* simulation routines by Charlie Gibbs and Willi Kusche, which are **freely redistributable, but may not be sold**.
+* **CCOM80** may incorporate or adapt some **CP/M** simulation routines from *RunCPM*, Copyright © 2017 by Mockba the Borg, released under the **MIT license**.
+
 ```text
 MIT License
 
@@ -47,11 +49,12 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
-# coffwrap
+## coffwrap
 
 The included `coffwrap` tool is an approximation of a tool by the same name by Sequent Computer Systems and distributed with their **DYNIX** and **DYNIX/ptx** operating systems. This reimplementation is similar only in name and purpose, and contains no Sequent Computer Systems source code.
 
 * `coffwrap` is derived from `bin2c`, Copyright © 2015 by Ondrej Novak, released under the **MIT license**.
+
 ```text
 The MIT License (MIT)
 
@@ -77,7 +80,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ```
 
-# BD Software C
+## BD Software C
 
 **Portable MINCE** includes libraries and other materials from **BDS C**, by *Leor Zolman* of *BD Software*. **BDS C** is **public domain software**.
 
@@ -88,9 +91,10 @@ Leor Zolman
 9/20/2002
 ```
 
-# L2 Linker
+## L2 Linker
 
 **Portable MINCE** includes the **L2 (New) Linker** for **BDS C**, written between 1980 and 1981, by Scott W. Layson.  The **L2 (New) Linker** is **public domain software**.
+
 ```text
 L2 New Linker for BDS C
 
@@ -101,6 +105,6 @@ Written 1980 by Scott W. Layson
 This code is in the public domain.
 ```
 
-# AUG (Amethyst Users Group) data
+## AUG (Amethyst Users Group) data
 
 The **Portable MINCE** distribution contains files collected and distributed by "**AUG**", the *Amethyst Users Group*. When the **AUG** was an active organization, membership was restricted to Amethyst, MINCE, and Scribble license holders, per an agreement between **MOTU** and the **AUG**. However, **AUG** is now defunct (since at least 1994), and the **AUG** archives have been publicly available and openly distributed (since at least 1985) by many organizations, including the *Massachusetts Institute of Technology* *CPMUG Repository* via *MIT-MC*, *SIMTEL-20*, *SIG/M*, *PC/Blue*, *Walnut Creek CD-ROM*, *Software Tools of Australia*, the *Oakland University* *Oak Repository*, *Demon Internet*, and others.
