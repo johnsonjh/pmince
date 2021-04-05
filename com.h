@@ -27,7 +27,7 @@
 #define OROF O_RDONLY
 #define OWOF O_WRONLY | O_CREAT | O_TRUNC
 #else
-#error Must select system type that resolves to DNIX, SYSV, or BSD.
+#error System type must be one of: CYGW, NEXT, DNIX, SYSV, BSD.
 #endif
 #include <fcntl.h>
 #include <signal.h>

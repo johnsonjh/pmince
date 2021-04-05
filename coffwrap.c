@@ -1,7 +1,7 @@
-#include "version.h"
 #include <errno.h>
 #include <stdio.h>
 #include <string.h>
+#include "version.h"
 
 int main(int argc, char **argv) {
 
@@ -32,27 +32,30 @@ int main(int argc, char **argv) {
              CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
              SOFTWARE.
 
-           */
-          "\n"
-          "Usage:\n"
-          "        coffwrap <file> <identifier> <name>\n"
-          "\n",
+			*/
+          "\nUsage:\n"
+          "        coffwrap <file> <identifier> <name>\n\n",
           stderr);
     return 1;
   } else {
     FILE *f = strcmp(argv[1], "-") == 0 ? stdin : fopen(argv[1], "rb");
-    if (f == NULL) {
+
+	if (f == NULL) {
       fprintf(stderr, "Can't open input file '%s'", argv[1]);
       return errno;
     }
-    printf("/* coffwrap %s: %s (%s) */\n", VERSION, argv[3], argv[2]);
+
+	printf("/* coffwrap %s: %s (%s) */\n", VERSION, argv[3], argv[2]);
     printf("char %s_name[%d] = {\"%s\"};\n", argv[2], strlen(argv[2]), argv[3]);
     printf("unsigned char %s[] = {\"", argv[2]);
-    int i = fgetc(f);
+
+	int i = fgetc(f);
     int cnt = 0;
     unsigned int size = 0;
-    while (i != -1) {
+
+	while (i != -1) {
       size++;
+
       if (i >= 32 && i != '"' && i != '\\' && i < 128) {
         putchar(i);
         cnt++;
