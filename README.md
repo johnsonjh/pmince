@@ -33,6 +33,7 @@
     * **Raspbian** (Buster) 10, **GNU C 8.3.0** (*Raspbian 8.3.0-6+rpi1*)
   * ARM64 (AArch64)
     * **Debian** (Bullseye) 11, **GNU C 10.2.1** (*Debian 10.2.1-6*)
+    * **FreeBSD** 13.0-RC4, **FreeBSD clang 11.0.1** (*llvmorg-11.0.1-0-g43ff75f2c3fe*)
 * Apple/**Darwin**
   * x86\_64 (AMD64)
     * **macOS** (Big Sur) 11.3 Beta 6, **Xcode 12.4** (*clang-1200.0.32.29*)

@@ -41,12 +41,16 @@ int main(int argc, char **argv) {
     FILE *f = strcmp(argv[1], "-") == 0 ? stdin : fopen(argv[1], "rb");
 
 	if (f == NULL) {
-      fprintf(stderr, "Can't open input file '%s'", argv[1]);
+      fprintf(stderr, "Can't open input file '%s'\n", argv[1]);
       return errno;
     }
 
-	printf("/* coffwrap %s: %s (%s) */\n", VERSION, argv[3], argv[2]);
-    printf("char %s_name[%d] = {\"%s\"};\n", argv[2], strlen(argv[2]), argv[3]);
+    if (strlen(argv[2]) > 13) {
+      fprintf(stderr, "Error: filename too long.\n");
+      return 1;
+    }
+    printf("/* coffwrap %s: %s (%s) */\n", VERSION, argv[3], argv[2]);
+    printf("char %s_name[13] = {\"%s\"};\n", argv[2], argv[3]);
     printf("unsigned char %s[] = {\"", argv[2]);
 
 	int i = fgetc(f);
