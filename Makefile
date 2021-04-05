@@ -16,6 +16,8 @@ endif
 #                              Configuration                            #
 #########################################################################
 
+COLS?=80
+ROWS?=24
 PREFIX=/usr/local
 PBIN=bin
 CFEXTRA=-pipe
@@ -25,12 +27,10 @@ CFEXTRA=-pipe
 #########################################################################
 
 ifeq ($(OS), darwin)
-	COLS?=80
-	ROWS?=24
 	CFL=-O2 -fcommon $(CFEXTRA)
 	CC?=clang
 	SYSTYPE=BSD
-	OPTIONS=-D$(SYSTYPE)=1 -DZ80=1 -DRUNOPTS=1 -DUSEDIRENT=1 -DNOBUFF=1
+	OPTIONS=-D$(SYSTYPE)=1 -DRUNOPTS=1 -DUSEDIRENT=1 -DNOBUFF=1
 	CFLAGS+=$(CFL) $(OPTIONS)
 	RM=rm -f
 	TEST=test
@@ -45,17 +45,15 @@ endif
 #########################################################################
 
 ifeq ($(OS), linux)
-	COLS?=80
-	ROWS?=24
 	CFL=-O2 -fcommon $(CFEXTRA)
 	CC?=gcc
 	SYSTYPE=SYSV
-	OPTIONS=-D$(SYSTYPE)=1 -DZ80=1 -DRUNOPTS=1 -DUSEDIRENT=1
+	OPTIONS=-D$(SYSTYPE)=1 -DRUNOPTS=1 -DUSEDIRENT=1
 	CFLAGS+=$(CFL) $(OPTIONS)
 	RM=rm -f --
 	TEST=test
 	SIZE=size --
-	STRIP=strip --
+	STRIP=strip
 	MKDIR=mkdir -p --
 	CP=cp -f --
 	OBJE=.o
@@ -69,10 +67,12 @@ endif
 
 #########################################################################
 
-all: osconf depend coffwrap$(OEXT) mince$(OEXT) strip
-	@printf '\r%s\n' "" || true
+all: osconf depend mince$(OEXT) strip
+	@printf '\r%s\n' "" || \
+		true
 	@$(TEST) -x ./mince$(OEXT) 2>/dev/null && \
-		$(SIZE) ./mince$(OEXT) 2>/dev/null || true
+		$(SIZE) ./mince$(OEXT) 2>/dev/null || \
+		true
 	@$(TEST) -x ./mince$(OEXT) 2>/dev/null && \
 		printf '\n%s\n' \
 		" **** MINCE ($(ROWS) rows, cols $(COLS)) build successful ****"
@@ -80,7 +80,7 @@ all: osconf depend coffwrap$(OEXT) mince$(OEXT) strip
 #########################################################################
 
 coffwrap$(OEXT): coffwrap.c version.h
-	$(CC) $(COFFWRAP) $? -o $@
+	$(CC) $(CFLAGS) $? -o $@
 
 #########################################################################
 
@@ -102,17 +102,17 @@ dir$(OBJE): com.h dir.c Makefile
 
 #########################################################################
 
-mince_com.c: mince80/mince.com
-	./coffwrap$(OEXT) $? mince_com mince.com >./$@
+mince_com.c: coffwrap$(OEXT) mince80/mince.com
+	./coffwrap$(OEXT) mince80/mince.com mince_com mince.com >./$@
 
 #########################################################################
 
-mince_swp.c: mince80/mince.swp
-	./coffwrap$(OEXT) $? mince_swp mince.swp >./$@
+mince_swp.c: coffwrap$(OEXT) mince80/mince.swp
+	./coffwrap$(OEXT) mince80/mince.swp mince_swp mince.swp >./$@
 
 #########################################################################
 
-fakefs_mince$(OBJE): fakefs.c mince_com$(OBJE) mince_swp$(OBJE) Makefile
+fakefs_mince$(OBJE): fakefs.c mince_com$(OBJE) mince_swp$(OBJE)
 	$(CC) $(CFLAGS) -DMINCE -c fakefs.c -o $@
 
 #########################################################################
@@ -138,14 +138,12 @@ mince$(OEXT): ccpu$(OBJE) console$(OBJE) dir$(OBJE) disass$(OBJE) \
 
 #########################################################################
 
-mince80/mince.swp: ccom$(OEXT)
-	@$(TEST) -x ./termset
+mince80/mince.swp: termset ccom$(OEXT)
 	@$(shell printf '%s\n' "export RM=\"$(RM)\" && \
 		export ROWS=$(ROWS) && \
 		export COLS=$(COLS) && \
-		./termset" "$(OEXT)")
-	@$(TEST) -f mince80/mince.swp
-
+		env sh ./termset" "$(OEXT)")
+	@$(TEST) -s mince80/mince.swp
 
 #########################################################################
 
@@ -156,8 +154,24 @@ clean:
 
 #########################################################################
 
-strip:
-	$(STRIP) mince$(OEXT) || true
+strip: mince$(OEXT)
+	$(STRIP) \
+		mince$(OEXT) \
+		|| \
+			true
+	$(STRIP) \
+		mince$(OEXT) \
+		--remove-section=.note.gnu.build-id \
+		--remove-section=.note.ABI-tag \
+		--remove-section=.gnu.hash \
+		--remove-section=.gnu.version \
+		--remove-section=.gnu.version_r \
+		--remove-section=.eh_frame_hdr \
+		--remove-section=.eh_frame \
+		--remove-section=.comment \
+		--remove-section=.gnu.build.attributes \
+		|| \
+			true
 
 #########################################################################
 
@@ -166,7 +180,7 @@ ifeq ($(MINCE_CONFIGURED), 1)
 	$(info Configured for $(OS))
 else
 ifeq ($(OS),)
-	$(error Error: OS detection failed; review Makefile)
+		$(error Error: OS detection failed; review Makefile)
 endif
 	$(error Error: No configuration for OS $(OS); review Makefile)
 endif

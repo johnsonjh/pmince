@@ -53,76 +53,68 @@
 /* Mnemonics for 8080 opcodes 00 through 3F */
 
 char mnop008[] = {
-	"NOP$        LXI  p,a$   STAX p$     INX  p$     "      /* 00-03 */
-	"INR  q$     DCR  q$     MVI  q,n$   RLC$        "      /* 04-07 */
-	"EXAF$       DADx p$     LDAX p$     DCX  p$     "      /* 08-0B */
-	"INR  q$     DCR  q$     MVI  q,n$   RRC$        "      /* 0C-0F */
-	"DJNZ n$     LXI  p,a$   STAX p$     INX  p$     "      /* 10-13 */
-	"INR  q$     DCR  q$     MVI  q,n$   RAL$        "      /* 14-17 */
-	"JR   n$     DADx p$     LDAX p$     DCX  p$     "      /* 18-1B */
-	"INR  q$     DCR  q$     MVI  q,n$   RAR$        "      /* 1C-1F */
-	"JRNZ n$     LXI  p,a$   ShD a$      INX  p$     "      /* 20-23 */
-	"INR  q$     DCR  q$     MVI  q,n$   DAA$        "      /* 24-27 */
-	"JRZ  n$     DADx p$     LhD a$      DCX  p$     "      /* 28-2B */
-	"INR  q$     DCR  q$     MVI  q,n$   CMA$        "      /* 2C-2F */
-	"JRNC n$     LXI  p,a$   STA  a$     INX  p$     "      /* 30-33 */
-	"INR  q$     DCR  q$     MVI  q,n$   STC$        "      /* 34-37 */
-	"JRC  n$     DADx p$     LDA  a$     DCX  p$     "      /* 38-3B */
-	"INR  q$     DCR  q$     MVI  q,n$   CMC$        "      /* 3C-3F */
+    "NOP$        LXI  p,a$   STAX p$     INX  p$     " /* 00-03 */
+    "INR  q$     DCR  q$     MVI  q,n$   RLC$        " /* 04-07 */
+    "EXAF$       DADx p$     LDAX p$     DCX  p$     " /* 08-0B */
+    "INR  q$     DCR  q$     MVI  q,n$   RRC$        " /* 0C-0F */
+    "DJNZ n$     LXI  p,a$   STAX p$     INX  p$     " /* 10-13 */
+    "INR  q$     DCR  q$     MVI  q,n$   RAL$        " /* 14-17 */
+    "JR   n$     DADx p$     LDAX p$     DCX  p$     " /* 18-1B */
+    "INR  q$     DCR  q$     MVI  q,n$   RAR$        " /* 1C-1F */
+    "JRNZ n$     LXI  p,a$   ShD a$      INX  p$     " /* 20-23 */
+    "INR  q$     DCR  q$     MVI  q,n$   DAA$        " /* 24-27 */
+    "JRZ  n$     DADx p$     LhD a$      DCX  p$     " /* 28-2B */
+    "INR  q$     DCR  q$     MVI  q,n$   CMA$        " /* 2C-2F */
+    "JRNC n$     LXI  p,a$   STA  a$     INX  p$     " /* 30-33 */
+    "INR  q$     DCR  q$     MVI  q,n$   STC$        " /* 34-37 */
+    "JRC  n$     DADx p$     LDA  a$     DCX  p$     " /* 38-3B */
+    "INR  q$     DCR  q$     MVI  q,n$   CMC$        " /* 3C-3F */
 };
 
 /* Mnemonics for Z-80 opcodes 00 through 3F */
 
 char mnop00z[] = {
-	"NOP$        LD   p,a$   LD   (p),A$ INC  p$     "      /* 00-03 */
-	"INC  q$     DEC  q$     LD   q,n$   RLCA$       "      /* 04-07 */
-	"EX   AF,AF$ ADD  h,p$   LD   A,(p)$ DEC  p$     "      /* 08-0B */
-	"INC  q$     DEC  q$     LD   q,n$   RRCA$       "      /* 0C-0F */
-	"DJNZ n$     LD   p,a$   LD   (p),A$ INC  p$     "      /* 10-13 */
-	"INC  q$     DEC  q$     LD   q,n$   RLA$        "      /* 14-17 */
-	"JR   n$     ADD  h,p$   LD   A,(p)$ DEC  p$     "      /* 18-1B */
-	"INC  q$     DEC  q$     LD   q,n$   RRA$        "      /* 1C-1F */
-	"JR   NZ,n$  LD   p,a$   LD   (a),HL$INC  p$     "      /* 20-23 */
-	"INC  q$     DEC  q$     LD   q,n$   DAA$        "      /* 24-27 */
-	"JR   Z,n$   ADD  h,p$   LD   HL,(a)$DEC  p$     "      /* 28-2B */
-	"INC  q$     DEC  q$     LD   q,n$   CPL$        "      /* 2C-2F */
-	"JR   NC,n$  LD   p,a$   LD   (a),A$ INC  p$     "      /* 30-33 */
-	"INC  q$     DEC  q$     LD   q,n$   SCF$        "      /* 34-37 */
-	"JR   C,n$   ADD  h,p$   LD   A,(a)$ DEC  p$     "      /* 38-3B */
-	"INC  q$     DEC  q$     LD   q,n$   CCF$        "      /* 3C-3F */
+    "NOP$        LD   p,a$   LD   (p),A$ INC  p$     " /* 00-03 */
+    "INC  q$     DEC  q$     LD   q,n$   RLCA$       " /* 04-07 */
+    "EX   AF,AF$ ADD  h,p$   LD   A,(p)$ DEC  p$     " /* 08-0B */
+    "INC  q$     DEC  q$     LD   q,n$   RRCA$       " /* 0C-0F */
+    "DJNZ n$     LD   p,a$   LD   (p),A$ INC  p$     " /* 10-13 */
+    "INC  q$     DEC  q$     LD   q,n$   RLA$        " /* 14-17 */
+    "JR   n$     ADD  h,p$   LD   A,(p)$ DEC  p$     " /* 18-1B */
+    "INC  q$     DEC  q$     LD   q,n$   RRA$        " /* 1C-1F */
+    "JR   NZ,n$  LD   p,a$   LD   (a),HL$INC  p$     " /* 20-23 */
+    "INC  q$     DEC  q$     LD   q,n$   DAA$        " /* 24-27 */
+    "JR   Z,n$   ADD  h,p$   LD   HL,(a)$DEC  p$     " /* 28-2B */
+    "INC  q$     DEC  q$     LD   q,n$   CPL$        " /* 2C-2F */
+    "JR   NC,n$  LD   p,a$   LD   (a),A$ INC  p$     " /* 30-33 */
+    "INC  q$     DEC  q$     LD   q,n$   SCF$        " /* 34-37 */
+    "JR   C,n$   ADD  h,p$   LD   A,(a)$ DEC  p$     " /* 38-3B */
+    "INC  q$     DEC  q$     LD   q,n$   CCF$        " /* 3C-3F */
 };
 
 /* Mnemonics for opcodes 40 through 7F are easy - 76 is HLT */
 /*  (HALT for Z-80), and all others are MOV (LD for Z-80). */
 
-char mnop408[] = {
-	"MOV  q,r$"
-};
+char mnop408[] = {"MOV  q,r$"};
 
-char mnop40z[] = {
-	"LD   q,r$"
-};
+char mnop40z[] = {"LD   q,r$"};
 
-char mnop768[] = {
-	"HLT  (Svc #n)$"
-};
+char mnop768[] = {"HLT  (Svc #n)$"};
 
-char mnop76z[] = {
-	"HALT (Svc #n)$"
-};
+char mnop76z[] = {"HALT (Svc #n)$"};
 
 /* Mnemonics for 8080 opcodes 80 through BF */
 
 char mnop808[] = {
-	"ADD  r$  ADC  r$  SUB  r$  SBB  r$  "  /* 80-9F */
-	"ANA  r$  XRA  r$  ORA  r$  CMP  r$  "  /* A0-BF */
+    "ADD  r$  ADC  r$  SUB  r$  SBB  r$  " /* 80-9F */
+    "ANA  r$  XRA  r$  ORA  r$  CMP  r$  " /* A0-BF */
 };
 
 /* Mnemonics for Z-80 opcodes 80 through BF */
 
 char mnop80z[] = {
-	"ADD  A,r$ADC  A,r$SUB  r$  SBC  A,r$"  /* 80-9F */
-	"AND  r$  XOR  r$  OR   r$  CP   r$  "  /* A0-BF */
+    "ADD  A,r$ADC  A,r$SUB  r$  SBC  A,r$" /* 80-9F */
+    "AND  r$  XOR  r$  OR   r$  CP   r$  " /* A0-BF */
 };
 
 /*
@@ -131,22 +123,22 @@ char mnop80z[] = {
 */
 
 char mnopC08[] = {
-	"RNZ$        POP  p$     JNZ  a$     JMP  a$     "      /* C0-C3 */
-	"CNZ  a$     PUSH p$     ADI  n$     RST  0$     "      /* C4-C7 */
-	"RZ$         RET$        JZ   a$     ILLEGAL$    "      /* C8-CB */
-	"CZ   a$     CALL a$     ACI  n$     RST  1$     "      /* CC-CF */
-	"RNC$        POP  p$     JNC  a$     OUT  n$     "      /* D0-D3 */
-	"CNC  a$     PUSH p$     SUI  n$     RST  2$     "      /* D4-D7 */
-	"RC$         EXX$        JC   a$     IN   n$     "      /* D8-DB */
-	"CC   a$     ILLEGAL$    SBI  n$     RST  3$     "      /* DC-DF */
-	"RPO$        POP  p$     JPO  a$     XTh$        "      /* E0-E3 */
-	"CPO  a$     PUSH p$     ANI  n$     RST  4$     "      /* E4-E7 */
-	"RPE$        PCh$        JPE  a$     XCHG$       "      /* E8-EB */
-	"CPE  a$     ILLEGAL$    XRI  n$     RST  5$     "      /* EC-FF */
-	"RP$         POP  p$     JP   a$     DI$         "      /* F0-F3 */
-	"CP   a$     PUSH p$     ORI  n$     RST  6$     "      /* F4-F7 */
-	"RM$         SPh$        JM   a$     EI$         "      /* F8-FB */
-	"CM   a$     ILLEGAL$    CPI  n$     RST  7$     "      /* FC-FF */
+    "RNZ$        POP  p$     JNZ  a$     JMP  a$     " /* C0-C3 */
+    "CNZ  a$     PUSH p$     ADI  n$     RST  0$     " /* C4-C7 */
+    "RZ$         RET$        JZ   a$     ILLEGAL$    " /* C8-CB */
+    "CZ   a$     CALL a$     ACI  n$     RST  1$     " /* CC-CF */
+    "RNC$        POP  p$     JNC  a$     OUT  n$     " /* D0-D3 */
+    "CNC  a$     PUSH p$     SUI  n$     RST  2$     " /* D4-D7 */
+    "RC$         EXX$        JC   a$     IN   n$     " /* D8-DB */
+    "CC   a$     ILLEGAL$    SBI  n$     RST  3$     " /* DC-DF */
+    "RPO$        POP  p$     JPO  a$     XTh$        " /* E0-E3 */
+    "CPO  a$     PUSH p$     ANI  n$     RST  4$     " /* E4-E7 */
+    "RPE$        PCh$        JPE  a$     XCHG$       " /* E8-EB */
+    "CPE  a$     ILLEGAL$    XRI  n$     RST  5$     " /* EC-FF */
+    "RP$         POP  p$     JP   a$     DI$         " /* F0-F3 */
+    "CP   a$     PUSH p$     ORI  n$     RST  6$     " /* F4-F7 */
+    "RM$         SPh$        JM   a$     EI$         " /* F8-FB */
+    "CM   a$     ILLEGAL$    CPI  n$     RST  7$     " /* FC-FF */
 };
 
 /*
@@ -155,22 +147,22 @@ char mnopC08[] = {
 */
 
 char mnopC0z[] = {
-	"RET  NZ$    LD   p,(SP)$JP   NZ,a$  JP   a$     "      /* C0-C3 */
-	"CALL NZ,a$  LD   (SP),p$ADD  A,n$   RST  0$     "      /* C4-C7 */
-	"RET  Z$     RET$        JP   Z,a$   ILLEGAL$    "      /* C8-CB */
-	"CALL Z,a$   CALL a$     ADC  A,n$   RST  8$     "      /* CC-CF */
-	"RET  NC$    LD   p,(SP)$JP   NC,a$  OUT  n,A$   "      /* D0-D3 */
-	"CALL NC,a$  LD   (SP),p$SUB  A,n$   RST  10$    "      /* D4-D7 */
-	"RET  C$     EXX$        JP   C,a$   IN   A,n$   "      /* D8-DB */
-	"CALL C,a$   ILLEGAL$    SBC  A,n$   RST  18$    "      /* DC-DF */
-	"RET  PO$    LD   p,(SP)$JP   PO,a$  EX   (SP),p$"      /* E0-E3 */
-	"CALL PO,a$  LD   (SP),p$AND  A,n$   RST  20$    "      /* E4-E7 */
-	"RET  PE$    JP   (p)$   JP   PE,a$  EX   DE,p$  "      /* E8-EB */
-	"CALL PE,a$  ILLEGAL$    XOR  A,n$   RST  28$    "      /* EC-FF */
-	"RET  P$     LD   p,(SP)$JP   P,a$   DI$         "      /* F0-F3 */
-	"CALL P,a$   LD   (SP),p$OR   A,n$   RST  30$    "      /* F4-F7 */
-	"RET  M$     LD   SP,h$  JP   M,a$   EI$         "      /* F8-FB */
-	"CALL M,a$   ILLEGAL$    CP   A,n$   RST  38$    "      /* FC-FF */
+    "RET  NZ$    LD   p,(SP)$JP   NZ,a$  JP   a$     " /* C0-C3 */
+    "CALL NZ,a$  LD   (SP),p$ADD  A,n$   RST  0$     " /* C4-C7 */
+    "RET  Z$     RET$        JP   Z,a$   ILLEGAL$    " /* C8-CB */
+    "CALL Z,a$   CALL a$     ADC  A,n$   RST  8$     " /* CC-CF */
+    "RET  NC$    LD   p,(SP)$JP   NC,a$  OUT  n,A$   " /* D0-D3 */
+    "CALL NC,a$  LD   (SP),p$SUB  A,n$   RST  10$    " /* D4-D7 */
+    "RET  C$     EXX$        JP   C,a$   IN   A,n$   " /* D8-DB */
+    "CALL C,a$   ILLEGAL$    SBC  A,n$   RST  18$    " /* DC-DF */
+    "RET  PO$    LD   p,(SP)$JP   PO,a$  EX   (SP),p$" /* E0-E3 */
+    "CALL PO,a$  LD   (SP),p$AND  A,n$   RST  20$    " /* E4-E7 */
+    "RET  PE$    JP   (p)$   JP   PE,a$  EX   DE,p$  " /* E8-EB */
+    "CALL PE,a$  ILLEGAL$    XOR  A,n$   RST  28$    " /* EC-FF */
+    "RET  P$     LD   p,(SP)$JP   P,a$   DI$         " /* F0-F3 */
+    "CALL P,a$   LD   (SP),p$OR   A,n$   RST  30$    " /* F4-F7 */
+    "RET  M$     LD   SP,h$  JP   M,a$   EI$         " /* F8-FB */
+    "CALL M,a$   ILLEGAL$    CP   A,n$   RST  38$    " /* FC-FF */
 };
 
 /*
@@ -179,8 +171,8 @@ char mnopC0z[] = {
 */
 
 char mnopCB0[] = {
-	"RLC  r$ RRC  r$ RL   r$ RR   r$ "      /* CB00-CB1F */
-	"SLA  r$ SRA  r$ ILLEGAL$SRL  r$ "      /* CB20-CB3F */
+    "RLC  r$ RRC  r$ RL   r$ RR   r$ " /* CB00-CB1F */
+    "SLA  r$ SRA  r$ ILLEGAL$SRL  r$ " /* CB20-CB3F */
 };
 
 /*
@@ -188,9 +180,7 @@ char mnopCB0[] = {
 **  these are the same for both the 8080 and the Z-80.
 */
 
-char mnopCB4[] = {
-	"BIT  br$RES  br$SET  br$"
-};
+char mnopCB4[] = {"BIT  br$RES  br$SET  br$"};
 
 /*
 ** Mnemonics for 8080 opcodes ED40 through ED7F
@@ -198,22 +188,22 @@ char mnopCB4[] = {
 */
 
 char mnopE48[] = {
-	"IN   q,(C)$ OUT  (C),q$ DSBB p$     SBCD a$     "      /* ED40-ED43 */
-	"NEG$        RETN$       IM0$        MOV  I,A$   "      /* ED44-ED47 */
-	"IN   q,(C)$ OUT  (C),q$ DADC p$     LBCD a$     "      /* ED48-ED4B */
-	"ILLEGAL$    RETI$       ILLEGAL$    MOV  R,A$   "      /* ED4C-ED4F */
-	"IN   q,(C)$ OUT  (C),q$ DSBB p$     SDED a$     "      /* ED50-ED53 */
-	"ILLEGAL$    ILLEGAL$    IM1$        MOV  A,I$   "      /* ED54-ED57 */
-	"IN   q,(C)$ OUT  (C),q$ DADC p$     LDED a$     "      /* ED58-ED5B */
-	"ILLEGAL$    ILLEGAL$    IM2$        MOV  A,R$   "      /* ED5C-ED5F */
-	"IN   q,(C)$ OUT  (C),q$ DSBB p$     SHLD a$     "      /* ED60-ED63 */
-	"ILLEGAL$    ILLEGAL$    ILLEGAL$    RRD$        "      /* ED64-ED67 */
-	"IN   q,(C)$ OUT  (C),q$ DADC p$     LHLD a$     "      /* ED68-ED6B */
-	"ILLEGAL$    ILLEGAL$    ILLEGAL$    RLD$        "      /* ED6C-ED6F */
-	"IN   q,(C)$ OUT  (C),q$ DSBB p$     SSPD a$     "      /* ED70-ED73 */
-	"ILLEGAL$    ILLEGAL$    ILLEGAL$    ILLEGAL$    "      /* ED74-ED77 */
-	"IN   q,(C)$ OUT  (C),q$ DADC p$     LSPD a$     "      /* ED78-ED7B */
-	"ILLEGAL$    ILLEGAL$    ILLEGAL$    ILLEGAL$    "      /* ED7C-ED7F */
+    "IN   q,(C)$ OUT  (C),q$ DSBB p$     SBCD a$     " /* ED40-ED43 */
+    "NEG$        RETN$       IM0$        MOV  I,A$   " /* ED44-ED47 */
+    "IN   q,(C)$ OUT  (C),q$ DADC p$     LBCD a$     " /* ED48-ED4B */
+    "ILLEGAL$    RETI$       ILLEGAL$    MOV  R,A$   " /* ED4C-ED4F */
+    "IN   q,(C)$ OUT  (C),q$ DSBB p$     SDED a$     " /* ED50-ED53 */
+    "ILLEGAL$    ILLEGAL$    IM1$        MOV  A,I$   " /* ED54-ED57 */
+    "IN   q,(C)$ OUT  (C),q$ DADC p$     LDED a$     " /* ED58-ED5B */
+    "ILLEGAL$    ILLEGAL$    IM2$        MOV  A,R$   " /* ED5C-ED5F */
+    "IN   q,(C)$ OUT  (C),q$ DSBB p$     SHLD a$     " /* ED60-ED63 */
+    "ILLEGAL$    ILLEGAL$    ILLEGAL$    RRD$        " /* ED64-ED67 */
+    "IN   q,(C)$ OUT  (C),q$ DADC p$     LHLD a$     " /* ED68-ED6B */
+    "ILLEGAL$    ILLEGAL$    ILLEGAL$    RLD$        " /* ED6C-ED6F */
+    "IN   q,(C)$ OUT  (C),q$ DSBB p$     SSPD a$     " /* ED70-ED73 */
+    "ILLEGAL$    ILLEGAL$    ILLEGAL$    ILLEGAL$    " /* ED74-ED77 */
+    "IN   q,(C)$ OUT  (C),q$ DADC p$     LSPD a$     " /* ED78-ED7B */
+    "ILLEGAL$    ILLEGAL$    ILLEGAL$    ILLEGAL$    " /* ED7C-ED7F */
 };
 
 /*
@@ -222,22 +212,22 @@ char mnopE48[] = {
 */
 
 char mnopE4z[] = {
-	"IN   q,(C)$ OUT  (C),q$ SBC  HL,p$  LD   (a),p$ "      /* ED40-ED43 */
-	"NEG$        RETN$       IM   0$     LD   I,A$   "      /* ED44-ED47 */
-	"IN   q,(C)$ OUT  (C),q$ ADC  HL,p$  LD   p,(a)$ "      /* ED48-ED4B */
-	"ILLEGAL$    RETI$       ILLEGAL$    LD   R,A$   "      /* ED4C-ED4F */
-	"IN   q,(C)$ OUT  (C),q$ SBC  HL,p$  LD   (a),p$ "      /* ED50-ED53 */
-	"ILLEGAL$    ILLEGAL$    IM   1$     LD   A,I$   "      /* ED54-ED57 */
-	"IN   q,(C)$ OUT  (C),q$ ADC  HL,p$  LD   p,(a)$ "      /* ED58-ED5B */
-	"ILLEGAL$    ILLEGAL$    IM   2$     LD   A,R$   "      /* ED5C-ED5F */
-	"IN   q,(C)$ OUT  (C),q$ SBC  HL,p$  LD   (a),p$ "      /* ED60-ED63 */
-	"ILLEGAL$    ILLEGAL$    ILLEGAL$    RRD$        "      /* ED64-ED67 */
-	"IN   q,(C)$ OUT  (C),q$ ADC  HL,p$  LD   p,(a)$ "      /* ED68-ED6B */
-	"ILLEGAL$    ILLEGAL$    ILLEGAL$    RLD$        "      /* ED6C-ED6F */
-	"IN   q,(C)$ OUT  (C),q$ SBC  HL,p$  LD   (a),p$ "      /* ED70-ED73 */
-	"ILLEGAL$    ILLEGAL$    ILLEGAL$    ILLEGAL$    "      /* ED74-ED77 */
-	"IN   q,(C)$ OUT  (C),q$ ADC  HL,p$  LD   p,(a)$ "      /* ED78-ED7B */
-	"ILLEGAL$    ILLEGAL$    ILLEGAL$    ILLEGAL$    "      /* ED7C-ED7F */
+    "IN   q,(C)$ OUT  (C),q$ SBC  HL,p$  LD   (a),p$ " /* ED40-ED43 */
+    "NEG$        RETN$       IM   0$     LD   I,A$   " /* ED44-ED47 */
+    "IN   q,(C)$ OUT  (C),q$ ADC  HL,p$  LD   p,(a)$ " /* ED48-ED4B */
+    "ILLEGAL$    RETI$       ILLEGAL$    LD   R,A$   " /* ED4C-ED4F */
+    "IN   q,(C)$ OUT  (C),q$ SBC  HL,p$  LD   (a),p$ " /* ED50-ED53 */
+    "ILLEGAL$    ILLEGAL$    IM   1$     LD   A,I$   " /* ED54-ED57 */
+    "IN   q,(C)$ OUT  (C),q$ ADC  HL,p$  LD   p,(a)$ " /* ED58-ED5B */
+    "ILLEGAL$    ILLEGAL$    IM   2$     LD   A,R$   " /* ED5C-ED5F */
+    "IN   q,(C)$ OUT  (C),q$ SBC  HL,p$  LD   (a),p$ " /* ED60-ED63 */
+    "ILLEGAL$    ILLEGAL$    ILLEGAL$    RRD$        " /* ED64-ED67 */
+    "IN   q,(C)$ OUT  (C),q$ ADC  HL,p$  LD   p,(a)$ " /* ED68-ED6B */
+    "ILLEGAL$    ILLEGAL$    ILLEGAL$    RLD$        " /* ED6C-ED6F */
+    "IN   q,(C)$ OUT  (C),q$ SBC  HL,p$  LD   (a),p$ " /* ED70-ED73 */
+    "ILLEGAL$    ILLEGAL$    ILLEGAL$    ILLEGAL$    " /* ED74-ED77 */
+    "IN   q,(C)$ OUT  (C),q$ ADC  HL,p$  LD   p,(a)$ " /* ED78-ED7B */
+    "ILLEGAL$    ILLEGAL$    ILLEGAL$    ILLEGAL$    " /* ED7C-ED7F */
 };
 
 /*
@@ -246,329 +236,322 @@ char mnopE4z[] = {
 */
 
 char mnopEA[] = {
-	"LDI$ CPI$ INI$ OUTI$"  /* EDA0-EDA3 */
-	"                    "  /* EDA4-EDA7 (illegal) */
-	"LDD$ CPD$ IND$ OUTD$"  /* EDA8-EDAB */
-	"                    "  /* EDAC-EDAF (illegal) */
-	"LDIR$CPIR$INIR$OTIR$"  /* EDB0-EDB3 */
-	"                    "  /* EDB4-EDB7 (illegal) */
-	"LDDR$CPDR$INDR$OTDR$"  /* EDB8-EDBB */
+    "LDI$ CPI$ INI$ OUTI$" /* EDA0-EDA3 */
+    "                    " /* EDA4-EDA7 (illegal) */
+    "LDD$ CPD$ IND$ OUTD$" /* EDA8-EDAB */
+    "                    " /* EDAC-EDAF (illegal) */
+    "LDIR$CPIR$INIR$OTIR$" /* EDB0-EDB3 */
+    "                    " /* EDB4-EDB7 (illegal) */
+    "LDDR$CPDR$INDR$OTDR$" /* EDB8-EDBB */
 };
 
 /* Mnemonic for illegal instructions */
-char mnopilg[] = {
-	"ILLEGAL$"
-};
+char mnopilg[] = {"ILLEGAL$"};
 
-static char illegal2[] = { "ILLEGAL FOR CP/M" };
+static char illegal2[] = {"ILLEGAL FOR CP/M"};
 
-char *svcmnemonics[64] = {
-	"WARMSTART",            /* BIOS 01 */
-	"CONSTATUS",            /* BIOS 02 */
-	"CONINPUT",             /* BIOS 03 */
-	"CONOUTPUT",            /* BIOS 04 */
-	"LISTOUT",              /* BIOS 05 */
-	"PUNCH",                /* BIOS 06 */
-	"READER",               /* BIOS 07 */
-	"HOME",                 /* BIOS 08 */
-	"SETDISK",              /* BIOS 09 */
-	"SETTRACK",             /* BIOS 0A */
-	"SETSECTOR",            /* BIOS 0B */
-	"SETDMA",               /* BIOS 0C */
-	"READDISK",             /* BIOS 0D */
-	"WRITEDISK",            /* BIOS 0E */
-	"LISTSTATUS",           /* BIOS 0F */
-	"SECTORTRAN",           /* BIOS 10 */
+char *svcmnemonics[64] = {"WARMSTART",  /* BIOS 01 */
+                          "CONSTATUS",  /* BIOS 02 */
+                          "CONINPUT",   /* BIOS 03 */
+                          "CONOUTPUT",  /* BIOS 04 */
+                          "LISTOUT",    /* BIOS 05 */
+                          "PUNCH",      /* BIOS 06 */
+                          "READER",     /* BIOS 07 */
+                          "HOME",       /* BIOS 08 */
+                          "SETDISK",    /* BIOS 09 */
+                          "SETTRACK",   /* BIOS 0A */
+                          "SETSECTOR",  /* BIOS 0B */
+                          "SETDMA",     /* BIOS 0C */
+                          "READDISK",   /* BIOS 0D */
+                          "WRITEDISK",  /* BIOS 0E */
+                          "LISTSTATUS", /* BIOS 0F */
+                          "SECTORTRAN", /* BIOS 10 */
 
-	"SYSTEM RESET",         /* BDOS 00 */
-	"CONSOLE INPUT",        /* BDOS 01 */
-	"CONSOLE OUTPUT",       /* BDOS 02 */
-	"READER INPUT",         /* BDOS 03 */
-	"PUNCH OUTPUT",         /* BDOS 04 */
-	"LIST OUTPUT",          /* BDOS 05 */
-	"DIRECT CONSOLE I/O",   /* BDOS 06 */
-	"GET IOBYTE",           /* BDOS 07 */
-	"SET IOBYTE",           /* BDOS 08 */
-	"PRINT STRING",         /* BDOS 09 */
-	"READ CONSOLE BUFFER",  /* BDOS 0A */
-	"GET CONSOLE STATUS",   /* BDOS 0B */
-	"GET VERSION NUMBER",   /* BDOS 0C */
-	"RESET DISK SYSTEM",    /* BDOS 0D */
-	"SELECT DISK",          /* BDOS 0E */
-	"OPEN FILE",            /* BDOS 0F */
-	"CLOSE FILE",           /* BDOS 10 */
-	"SEARCH FOR FIRST",     /* BDOS 11 */
-	"SEARCH FOR NEXT",      /* BDOS 12 */
-	"DELETE FILE",          /* BDOS 13 */
-	"READ SEQUENTIAL",      /* BDOS 14 */
-	"WRITE SEQUENTIAL",     /* BDOS 15 */
-	"MAKE FILE",            /* BDOS 16 */
-	"RENAME FILE",          /* BDOS 17 */
-	"RETURN LOGIN VECTOR",  /* BDOS 18 */
-	"RETURN CURRENT DISK",  /* BDOS 19 */
-	"SET DMA ADDRESS",      /* BDOS 1A */
-	"GET ALLOC ADDRESS",    /* BDOS 1B */
-	"WRITE PROTECT DISK",   /* BDOS 1C */
-	"GET R/O VECTOR",       /* BDOS 1D */
-	"SET FILE ATTRIBUTES",  /* BDOS 1E */
-	"GET DISK PARMS",       /* BDOS 1F */
-	"GET/SET USER CODE",    /* BDOS 20 */
-	"READ RANDOM",          /* BDOS 21 */
-	"WRITE RANDOM",         /* BDOS 22 */
-	"COMPUTE FILE SIZE",    /* BDOS 23 */
-	"SET RANDOM RECORD",    /* BDOS 24 */
-	"RESET DRIVE",          /* BDOS 25 */
-	"WRITE RANDOM (ZERO)",  /* BDOS 26 */
-	illegal2,
-	illegal2,
-	illegal2,
-	illegal2,
-	illegal2,
-	illegal2,
-	illegal2,
-	illegal2,
-	illegal2
-};
+                          "SYSTEM RESET",        /* BDOS 00 */
+                          "CONSOLE INPUT",       /* BDOS 01 */
+                          "CONSOLE OUTPUT",      /* BDOS 02 */
+                          "READER INPUT",        /* BDOS 03 */
+                          "PUNCH OUTPUT",        /* BDOS 04 */
+                          "LIST OUTPUT",         /* BDOS 05 */
+                          "DIRECT CONSOLE I/O",  /* BDOS 06 */
+                          "GET IOBYTE",          /* BDOS 07 */
+                          "SET IOBYTE",          /* BDOS 08 */
+                          "PRINT STRING",        /* BDOS 09 */
+                          "READ CONSOLE BUFFER", /* BDOS 0A */
+                          "GET CONSOLE STATUS",  /* BDOS 0B */
+                          "GET VERSION NUMBER",  /* BDOS 0C */
+                          "RESET DISK SYSTEM",   /* BDOS 0D */
+                          "SELECT DISK",         /* BDOS 0E */
+                          "OPEN FILE",           /* BDOS 0F */
+                          "CLOSE FILE",          /* BDOS 10 */
+                          "SEARCH FOR FIRST",    /* BDOS 11 */
+                          "SEARCH FOR NEXT",     /* BDOS 12 */
+                          "DELETE FILE",         /* BDOS 13 */
+                          "READ SEQUENTIAL",     /* BDOS 14 */
+                          "WRITE SEQUENTIAL",    /* BDOS 15 */
+                          "MAKE FILE",           /* BDOS 16 */
+                          "RENAME FILE",         /* BDOS 17 */
+                          "RETURN LOGIN VECTOR", /* BDOS 18 */
+                          "RETURN CURRENT DISK", /* BDOS 19 */
+                          "SET DMA ADDRESS",     /* BDOS 1A */
+                          "GET ALLOC ADDRESS",   /* BDOS 1B */
+                          "WRITE PROTECT DISK",  /* BDOS 1C */
+                          "GET R/O VECTOR",      /* BDOS 1D */
+                          "SET FILE ATTRIBUTES", /* BDOS 1E */
+                          "GET DISK PARMS",      /* BDOS 1F */
+                          "GET/SET USER CODE",   /* BDOS 20 */
+                          "READ RANDOM",         /* BDOS 21 */
+                          "WRITE RANDOM",        /* BDOS 22 */
+                          "COMPUTE FILE SIZE",   /* BDOS 23 */
+                          "SET RANDOM RECORD",   /* BDOS 24 */
+                          "RESET DRIVE",         /* BDOS 25 */
+                          "WRITE RANDOM (ZERO)", /* BDOS 26 */
+                          illegal2,
+                          illegal2,
+                          illegal2,
+                          illegal2,
+                          illegal2,
+                          illegal2,
+                          illegal2,
+                          illegal2,
+                          illegal2};
 
-char *
-decode(ppc, zilog, operands)
-unsigned char *ppc;
-int zilog;                      /* TRUE for Zilog Mnemonics. */
-int operands;                   /* TRUE to do operands too. */
+char *decode(ppc, zilog, operands) unsigned char *ppc;
+int zilog;    /* TRUE for Zilog Mnemonics. */
+int operands; /* TRUE to do operands too. */
 {
-	static char outbuf[40];
-	unsigned char opcode, prefix;
-	char *table;
+  static char outbuf[40];
+  unsigned char opcode, prefix;
+  char *table;
 
-	prefix = 0;
-	opcode = *ppc;
-	if (opcode == 0xDD || opcode == 0xFD) { /* IX/IY prefix? */
-		prefix = opcode;
-		opcode = ppc[1];
-	}
-	if (opcode < 0x40) {
-		table = zilog ? mnop00z : mnop008;
-		table = &table[opcode * 12];
-	} else if (opcode >= 0xC0) {
-		if (opcode == 0xED) {
-			opcode = ppc[1];
-			if (opcode < 0x40) {            /* ED00-ED3F? */
-				table = mnopilg;        /* It's illegal. */
-			} else if (opcode < 0x80) {     /* ED40-ED7F? */
-				table = zilog ? mnopE4z : mnopE48;
-				table = &table[(opcode & 0x3F) * 12];
-			} else if (opcode < 0xA0 || opcode > 0xBB) {
-				table = mnopilg;        /* It's illegal. */
-			} else {                        /* ED80-ED9F. */
-				table = &mnopEA[(opcode & 0x1F) * 5];
-				if (*table == ' ')
-					table = mnopilg; /* It's illegal. */
-			}
-		} else if (opcode == 0xCB) {
-			opcode = ppc[1];
-			if (prefix)             /* IX/IY with displacement? */
-				opcode = ppc[3];
-			if (opcode < 0x40)      /* Opcode CB00-CB3F? */
-				table = &mnopCB0[(opcode & -8)];
-			else                    /* Opcode CB40-CBFF. */
-				table = &mnopCB4[((opcode >> 3) & 0x18) - 8];
-		} else {                        /* Opcode C0-FF excluding CB and ED. */
-			table = zilog ? mnopC0z : mnopC08;
-			table = &table[(opcode - 0xC0) * 12];
-		}
-	} else if (opcode >= 0x80) {
-		table = zilog ? mnop80z : mnop808;
-		table = &table[((opcode >> 3) & 7) * 9];
-	} else {                        /* It's $40-$7F. */
-		if (opcode == 0x76)     /* Halt is a special case. */
-			table = zilog ? mnop76z : mnop768;
-		else
-			table = zilog ? mnop40z : mnop408;
-	}
-	tdecode(table, outbuf, prefix, opcode, ppc, zilog, operands);
-	return outbuf;
+  prefix = 0;
+  opcode = *ppc;
+  if (opcode == 0xDD || opcode == 0xFD) { /* IX/IY prefix? */
+    prefix = opcode;
+    opcode = ppc[1];
+  }
+  if (opcode < 0x40) {
+    table = zilog ? mnop00z : mnop008;
+    table = &table[opcode * 12];
+  } else if (opcode >= 0xC0) {
+    if (opcode == 0xED) {
+      opcode = ppc[1];
+      if (opcode < 0x40) {        /* ED00-ED3F? */
+        table = mnopilg;          /* It's illegal. */
+      } else if (opcode < 0x80) { /* ED40-ED7F? */
+        table = zilog ? mnopE4z : mnopE48;
+        table = &table[(opcode & 0x3F) * 12];
+      } else if (opcode < 0xA0 || opcode > 0xBB) {
+        table = mnopilg; /* It's illegal. */
+      } else {           /* ED80-ED9F. */
+        table = &mnopEA[(opcode & 0x1F) * 5];
+        if (*table == ' ')
+          table = mnopilg; /* It's illegal. */
+      }
+    } else if (opcode == 0xCB) {
+      opcode = ppc[1];
+      if (prefix) /* IX/IY with displacement? */
+        opcode = ppc[3];
+      if (opcode < 0x40) /* Opcode CB00-CB3F? */
+        table = &mnopCB0[(opcode & -8)];
+      else /* Opcode CB40-CBFF. */
+        table = &mnopCB4[((opcode >> 3) & 0x18) - 8];
+    } else { /* Opcode C0-FF excluding CB and ED. */
+      table = zilog ? mnopC0z : mnopC08;
+      table = &table[(opcode - 0xC0) * 12];
+    }
+  } else if (opcode >= 0x80) {
+    table = zilog ? mnop80z : mnop808;
+    table = &table[((opcode >> 3) & 7) * 9];
+  } else {              /* It's $40-$7F. */
+    if (opcode == 0x76) /* Halt is a special case. */
+      table = zilog ? mnop76z : mnop768;
+    else
+      table = zilog ? mnop40z : mnop408;
+  }
+  tdecode(table, outbuf, prefix, opcode, ppc, zilog, operands);
+  return outbuf;
 }
 
-void
-tdecode(table, outbuf, prefix, opcode, ppc, zilog, operands)
-char *table, *outbuf;
+void tdecode(table, outbuf, prefix, opcode, ppc, zilog, operands) char *table,
+    *outbuf;
 unsigned char prefix, opcode, *ppc;
 int zilog, operands;
 {
-	char key, *cp;
-	int reg;
+  char key, *cp;
+  int reg;
 
-	while ((key = *table++) != '$') {
-		switch (key) {
-		case 'b':       /* Bit operand. */
-			*outbuf++ = ((opcode & 0x38) >> 3) + '0';
-			key = ',';
-			break;
+  while ((key = *table++) != '$') {
+    switch (key) {
+    case 'b': /* Bit operand. */
+      *outbuf++ = ((opcode & 0x38) >> 3) + '0';
+      key = ',';
+      break;
 
-		case 'r':       /* Register. */
-			reg = opcode & 7;
-areg:
-			key = "BCDEHLMA"[reg];
-			if (reg == 6) { /* Memory */
-				if (prefix >= 0xDD) {
-					*outbuf++ = '(';
-					*outbuf++ = 'I';
-					*outbuf++ = (prefix == 0xDD) ? 'X' : 'Y';
-					*outbuf++ = '+';
-					if (operands)
-						outbuf += mysprintf(outbuf, "%02X", ppc[2]);
-					else {
-						*outbuf++ = 'N';
-						*outbuf++ = 'N';
-					}
-					key = ')';
-				} else {
-					if (zilog) {
-						*outbuf++ = '(';
-						*outbuf++ = 'H';
-						*outbuf++ = 'L';
-						key = ')';
-					}
-				}
-			}
-			if (prefix >= 0xDD && reg >= 4 && reg < 6) { /* IX/IY? */
-				if (prefix == 0xDD)
-					*outbuf++ = 'X';
-				else
-					*outbuf++ = 'Y';
-			}
-			break;
+    case 'r': /* Register. */
+      reg = opcode & 7;
+    areg:
+      key = "BCDEHLMA"[reg];
+      if (reg == 6) { /* Memory */
+        if (prefix >= 0xDD) {
+          *outbuf++ = '(';
+          *outbuf++ = 'I';
+          *outbuf++ = (prefix == 0xDD) ? 'X' : 'Y';
+          *outbuf++ = '+';
+          if (operands)
+            outbuf += mysprintf(outbuf, "%02X", ppc[2]);
+          else {
+            *outbuf++ = 'N';
+            *outbuf++ = 'N';
+          }
+          key = ')';
+        } else {
+          if (zilog) {
+            *outbuf++ = '(';
+            *outbuf++ = 'H';
+            *outbuf++ = 'L';
+            key = ')';
+          }
+        }
+      }
+      if (prefix >= 0xDD && reg >= 4 && reg < 6) { /* IX/IY? */
+        if (prefix == 0xDD)
+          *outbuf++ = 'X';
+        else
+          *outbuf++ = 'Y';
+      }
+      break;
 
-		case 'q':       /* Register in bits 3-5 */
-			reg = (opcode >> 3) & 7;
-			goto areg;
-			break;
+    case 'q': /* Register in bits 3-5 */
+      reg = (opcode >> 3) & 7;
+      goto areg;
+      break;
 
-		case 'p':       /* Register pair in bits 4-5 */
-			reg = (opcode >> 4) & 3;
-			switch (reg) {
-			case 0: /* BC */
-				key = 'B';
-				if (zilog) {
-					*outbuf++ = key;
-					key = 'C';
-				}
-				break;
+    case 'p': /* Register pair in bits 4-5 */
+      reg = (opcode >> 4) & 3;
+      switch (reg) {
+      case 0: /* BC */
+        key = 'B';
+        if (zilog) {
+          *outbuf++ = key;
+          key = 'C';
+        }
+        break;
 
-			case 1: /* DE */
-				key = 'D';
-				if (zilog) {
-					*outbuf++ = key;
-					key = 'E';
-				}
-				break;
+      case 1: /* DE */
+        key = 'D';
+        if (zilog) {
+          *outbuf++ = key;
+          key = 'E';
+        }
+        break;
 
-			case 2: /* HL (or IX or IY) */
-				switch (prefix) {
-				case 0xDD:
-					key = 'X';
-					if (zilog)
-						*outbuf++ = 'I';
-					break;
+      case 2: /* HL (or IX or IY) */
+        switch (prefix) {
+        case 0xDD:
+          key = 'X';
+          if (zilog)
+            *outbuf++ = 'I';
+          break;
 
-				case 0xFD:
-					key = 'Y';
-					if (zilog)
-						*outbuf++ = 'Y';
-					break;
+        case 0xFD:
+          key = 'Y';
+          if (zilog)
+            *outbuf++ = 'Y';
+          break;
 
-				default:
-					key = 'H';
-					if (zilog) {
-						*outbuf++ = key;
-						key = 'L';
-					}
-					break;
-				}
-				break;
+        default:
+          key = 'H';
+          if (zilog) {
+            *outbuf++ = key;
+            key = 'L';
+          }
+          break;
+        }
+        break;
 
-			case 3: /* P (or SP) */
-				if (opcode > 0xF0) {
-					key = 'P';
-					if (zilog) {
-						*outbuf++ = 'A';
-						key = 'F';
-					}
-				} else { /* Must be SP. */
-					key = 'S';
-					if (zilog) {
-						*outbuf++ = key;
-						key = 'P';
-					}
-				}
-				break;
-			}
-			break;
+      case 3: /* P (or SP) */
+        if (opcode > 0xF0) {
+          key = 'P';
+          if (zilog) {
+            *outbuf++ = 'A';
+            key = 'F';
+          }
+        } else { /* Must be SP. */
+          key = 'S';
+          if (zilog) {
+            *outbuf++ = key;
+            key = 'P';
+          }
+        }
+        break;
+      }
+      break;
 
-		case 'h':       /* HL or IX or IY */
-			switch (prefix) {
-			case 0xDD:
-				*outbuf++ = 'I';
-				key = 'X';
-				break;
+    case 'h': /* HL or IX or IY */
+      switch (prefix) {
+      case 0xDD:
+        *outbuf++ = 'I';
+        key = 'X';
+        break;
 
-			case 0xFD:
-				*outbuf++ = 'I';
-				key = 'Y';
-				break;
+      case 0xFD:
+        *outbuf++ = 'I';
+        key = 'Y';
+        break;
 
-			default:
-				*outbuf++ = 'H';
-				key = 'L';
-				break;
-			}
-			break;
+      default:
+        *outbuf++ = 'H';
+        key = 'L';
+        break;
+      }
+      break;
 
-		case 'x':       /* ' ' or X or Y */
-			switch (prefix) {
-			case 0xDD:
-				key = 'X';
-				break;
+    case 'x': /* ' ' or X or Y */
+      switch (prefix) {
+      case 0xDD:
+        key = 'X';
+        break;
 
-			case 0xFD:
-				key = 'Y';
-				break;
+      case 0xFD:
+        key = 'Y';
+        break;
 
-			default:
-				key = ' ';
-				break;
-			}
-			break;
+      default:
+        key = ' ';
+        break;
+      }
+      break;
 
-		case 'n':
-			reg = ppc[1];
-			if (prefix && opcode >= 0x36)
-				reg = ppc[3];
-			if (operands) {
-				outbuf += mysprintf(outbuf, "%02X", reg);
-				key = *--outbuf; /* Tacky! */
-			} else
-				*outbuf++ = key = 'N';
-			break;
+    case 'n':
+      reg = ppc[1];
+      if (prefix && opcode >= 0x36)
+        reg = ppc[3];
+      if (operands) {
+        outbuf += mysprintf(outbuf, "%02X", reg);
+        key = *--outbuf; /* Tacky! */
+      } else
+        *outbuf++ = key = 'N';
+      break;
 
-		case 'a':
-			if (operands) {
-				if (*ppc == 0xED || prefix)
-					outbuf += mysprintf(outbuf, "%02X%02X", ppc[3], ppc[2]);
-				else
-					outbuf += mysprintf(outbuf, "%02X%02X", ppc[2], ppc[1]);
-				key = *--outbuf; /* Tacky! */
-			} else {
-				*outbuf++ = 'N';
-				*outbuf++ = 'N';
-				*outbuf++ = 'N';
-				key = 'N';
-			}
-			break;
-		}
-		*outbuf++ = key;
-	}
-	*outbuf++ = 0;
+    case 'a':
+      if (operands) {
+        if (*ppc == 0xED || prefix)
+          outbuf += mysprintf(outbuf, "%02X%02X", ppc[3], ppc[2]);
+        else
+          outbuf += mysprintf(outbuf, "%02X%02X", ppc[2], ppc[1]);
+        key = *--outbuf; /* Tacky! */
+      } else {
+        *outbuf++ = 'N';
+        *outbuf++ = 'N';
+        *outbuf++ = 'N';
+        key = 'N';
+      }
+      break;
+    }
+    *outbuf++ = key;
+  }
+  *outbuf++ = 0;
 }
 
 #if 0
