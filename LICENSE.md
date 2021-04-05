@@ -4,7 +4,7 @@
 
 All product names, brand names, logos, service marks, trademarks, and registered trademarks are the property of their respective owners. All company, product, and service names used in the Software are for identification purposes only. Use of these names, brands, and marks does not imply endorsement.
 
-* <sup>†</sup>The MINCE trademark, USSN *73576514*, USRN *1404754*, was **cancelled** by the USPTO on May 19th 2007, due to the failure of the registrant to timely file an acceptable Section 8 declaration with the USPTO.
+* <sup>†</sup>The **MINCE** trademark, _USSN **73576514**_, _USRN **1404754**_, was **cancelled** by the USPTO on May 19th 2007, due to the failure of the registrant to timely file an acceptable Section 8 declaration.
 
 The **Portable MINCE** authors could find no evidence of the trademark being actively used in commerce by **Mark of the Unicorn, Inc.** after March 1983, or by any distributor, licensee, or reseller after December 1994. Thus, it is our belief that the use of the term "**MINCE**" by **Portable MINCE** is legally permissible and does not constitute trademark infringement. Furthermore, the **Portable MINCE** authors make no claims to the term "**MINCE**".
 
@@ -125,10 +125,10 @@ This code is in the public domain.
 
 ## AUG (Amethyst Users Group) data
 
-The **Portable MINCE** distribution contains files collected and distributed by "**AUG**", the *Amethyst Users Group*. 
+The **Portable MINCE** distribution contains files collected and distributed by "**AUG**", the _**Amethyst Users Group**_. 
 
-When the **AUG** was an active organization, membership was restricted to Amethyst, MINCE, and Scribble license holders, per an agreement between **Mark of the Unicorn, Inc.** and the **Amethyst Users Group**.
+When the **AUG** was an active organization, membership was restricted to **Amethyst**, **MINCE**, and **Scribble** license holders, per an agreement between _**Mark of the Unicorn, Inc.**_ and the _**Amethyst Users Group**_.
 
-However, **AUG** is now defunct (since at least 1994), and the **AUG** archives have been publicly available and openly distributed (since at least 1985) by many organizations, including the *Massachusetts Institute of Technology* *CPMUG Repository* via *MIT-MC*, *SIMTEL-20*, *SIG/M*, *PC/Blue*, *Walnut Creek CD-ROM*, *Software Tools of Australia*, *Oakland University* via the *Oak Repository*, *Demon Internet* FTP, and many others.
+However, **AUG** is now defunct (since at least 1994), and the **AUG** archives have been publicly available and openly distributed (since at least 1985) by many organizations, including the *Massachusetts Institute of Technology* _**CPMUG**_ *Repository* via *MIT-MC*, _**SIMTEL**_-*20*, _**SIG/M**_, _**PC/Blue**_, _**Walnut Creek**_ *CD-ROM*, *Software Tools of Australia*, *Oakland University* via the _**Oak Repository**_, *Demon Internet*, and many others.
 
-The **AUG** archives included in the **Portable MINCE** distribution contains **only** data that was historically publicly available and openly distributed.
+The **AUG** archives included in the **Portable MINCE** distribution contains **only** data that was known to be previously publicly available and openly distributed.
