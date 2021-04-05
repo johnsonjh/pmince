@@ -2,7 +2,7 @@
 # shellcheck disable=SC2211,SC2046,SC2059,SC2086,SC2015,SC2154
 
 set -e 2> /dev/null || \
-	true
+	true :
 
 OEXT="${1}" && \
 	export OEXT
@@ -139,11 +139,12 @@ printf \
 	send -- "8\\r\\n"\n\
 	sleep 0.1;\n\
 	expect eof;\n' \
-	>> "${EXSCR:?}" && \
-	chmod +x "${EXSCR:?}"
+	>> "${EXSCR:?}";
+	chmod +x "${EXSCR:?}" || \
+	true :;
 
-test -x "${EXSCR:?}" && \
-	"${EXSCR:?}" || {
+test -f "${EXSCR:?}" && \
+	/usr/bin/env expect "${EXSCR:?}" || {
 	printf '%s\n' "Error: Expect session failed."
 	${RM} "${EXSCR:?}"
 	exit 1

@@ -159,7 +159,7 @@ mince80/mince.swp: termset ccom$(OEXT)
 	@$(shell printf '%s\n' "export RM=\"$(RM)\" && \
 		export ROWS=$(ROWS) && \
 		export COLS=$(COLS) && \
-		env sh ./termset" "$(OEXT)")
+		/usr/bin/env sh ./termset" "$(OEXT)")
 	@$(TEST) -s mince80/mince.swp
 
 #########################################################################

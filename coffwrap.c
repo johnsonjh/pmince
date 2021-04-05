@@ -95,7 +95,7 @@ int main(int argc, char **argv) {
       i = fgetc(f);
     }
     fclose(f);
-    printf("\"};\n");
-    printf("int %s_size = %u;\n", argv[2], size);
+    printf("\\032\\000\"};\n");
+    printf("int %s_size = %u;\n", argv[2], size+2);
   }
 }
