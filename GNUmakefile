@@ -86,10 +86,10 @@ endif
 all: osconf depend mince$(OEXT) strip
 	@printf '\r%s\n' "" || \
 		true :
-	@$(TEST) -x ./mince$(OEXT) 2>/dev/null && \
+	@$(TEST) -f ./mince$(OEXT) 2>/dev/null && \
 		$(SIZE) ./mince$(OEXT) 2>/dev/null || \
 		true :
-	@$(TEST) -x ./mince$(OEXT) 2>/dev/null && \
+	@$(TEST) -f ./mince$(OEXT) 2>/dev/null && \
 		printf '\n%s\n' \
 		" ** MINCE ($(ROWS) rows, cols $(COLS)) build successful **" \
 		" ** Run \"$(MAKE) compress\" or \"$(MAKE) install\" now **"
