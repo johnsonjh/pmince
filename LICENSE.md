@@ -1,16 +1,24 @@
 # Portable MINCE
 
-**Portable MINCE**<sup>†</sup> ("the Software") exists solely for the socially beneficial purposes of scholarship, historic preservation, research, and education. The Software is distributed **without cost**, **AS IS**, and without warranty of any kind, express or implied, including, but not limited to, the warranties of merchantability, fitness for a particular purpose, and non-infringement. The **Portable MINCE** authors make no warranty or representation regarding the accuracy, currency, completeness, authenticity, reliability, or usefulness of the Software.
+**Portable MINCE**<sup>†</sup> ("the Software") exists solely for the socially beneficial purposes of scholarship, historic preservation, research, and education. The Software is distributed **without cost**, **AS IS**, and without warranty of any kind, express or implied, including, but not limited to, the warranties of merchantability, fitness for a particular purpose, and non-infringement.
 
-All product names, brand names, logos, service marks, trademarks, and registered trademarks are the property of their respective owners. All company, product, and service names used in the Software are for identification purposes only. Use of these names, brands, and marks does not imply endorsement.
+The **Portable MINCE** authors make no warranty or representation regarding the accuracy, currency, completeness, authenticity, reliability, or usefulness of the Software.
+
+All product names, brand names, logos, service marks, trademarks, and registered trademarks are the property of their respective owners.
+
+All company, product, and service names used in the Software are for identification purposes only. Use of these names, brands, and marks does not imply endorsement.
 
 * <sup>†</sup>The **MINCE** trademark, _USSN **73576514**_, _USRN **1404754**_, was **cancelled** by the USPTO on May 19th 2007, due to the failure of the registrant to timely file an acceptable Section 8 declaration.
 
-The **Portable MINCE** authors could find no evidence of the trademark being actively used in commerce by **Mark of the Unicorn, Inc.** after March 1983, or by any distributor, licensee, or reseller after December 1994. Thus, it is our belief that the use of the term "**MINCE**" by **Portable MINCE** is legally permissible and does not constitute trademark infringement. Furthermore, the **Portable MINCE** authors make no claims to the term "**MINCE**".
+The **Portable MINCE** authors could find no evidence of the trademark being actively used in commerce by **Mark of the Unicorn, Inc.** after March 1983, or by any distributor, licensee, or reseller after December 1994.
+
+Thus, it is our belief that the use of the term "**MINCE**" by **Portable MINCE** is legally permissible and does not constitute trademark infringement. Furthermore, the **Portable MINCE** authors make no claims to the term "**MINCE**".
 
 ## MINCE / DIFF / Scribble / Pencil / Crayon
 
-**MINCE** (version 2.6), **DIFF** (version 1.1), **Scribble** (version 1.3), **Pencil** (version 1.3), and **Crayon** (version 1.3), along with any associated documentation (the "Materials"), are Copyright © 1980-1982 by **Mark of the Unicorn, Inc.** These Materials are provided in accordance with Title 17 U.S.C. Section 107, and distributed without profit, in original and unmodified form, for non-commercial research and educational purposes, for use by those who have expressed a prior general interest in receiving the Materials.
+**MINCE** (version 2.6), **DIFF** (version 1.1), **Scribble** (version 1.3), **Pencil** (version 1.3), and **Crayon** (version 1.3), along with any associated documentation (the "Materials"), are Copyright © 1980-1982 by **Mark of the Unicorn, Inc.**
+
+These Materials are provided in accordance with Title 17 U.S.C. Section 107, and distributed without profit, in original and unmodified form, for non-commercial research and educational purposes, for use by those who have expressed a prior general interest in receiving the Materials.
 
 The **Portable MINCE** authors claim **no** affiliation, endorsement, or sponsorship whatsoever by the originators of the Materials.
 
