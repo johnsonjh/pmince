@@ -79,11 +79,11 @@ endif
 #########################################################################
 
 .SUFFIXES: $(OBJE)
-.PHONY: all clean osconf dep depend strip compress upx install cf.LF
+.PHONY: all clean osconf strip compress upx install 
 
 #########################################################################
 
-all: osconf depend mince$(OEXT) strip
+all: osconf mince$(OEXT) strip
 	@printf '\r%s\n' "" || \
 		true :
 	@$(TEST) -f ./mince$(OEXT) 2>/dev/null && \
@@ -96,17 +96,11 @@ all: osconf depend mince$(OEXT) strip
 
 #########################################################################
 
-cf.Lf:
-	printf '%s\n' \
-		"$(CFLAGS) $(ROWS) $(COLS)" | \
-		cmp -s - cf.L || \
-		printf '%s\n' \
-		"$(CFLAGS) $(ROWS) $(COLS)" \
-		> cf.L
+cflags.L: osconf
 
 #########################################################################
 
-coffwrap$(OEXT): coffwrap.c version.h cf.L
+coffwrap$(OEXT): coffwrap.c version.h cflags.L
 	$(CC) $(CFLAGS) coffwrap.c -o $@
 
 #########################################################################
@@ -150,22 +144,22 @@ embed$(OBJE): com.c com.h
 #########################################################################
 
 ccom$(OEXT): ccpu$(OBJE) com$(OBJE) console$(OBJE) dir$(OBJE) \
-	disass$(OBJE) fakefs$(OBJE) cf.L
+	disass$(OBJE) fakefs$(OBJE)
 	$(CC) $(CFLAGS) ccpu$(OBJE) com$(OBJE) console$(OBJE) dir$(OBJE) \
 		disass$(OBJE) fakefs$(OBJE) -o $@
 
 #########################################################################
 
-mince$(OEXT): ccpu$(OBJE) console$(OBJE) dir$(OBJE) disass$(OBJE) \
-	fakefs_mince$(OBJE) embed$(OBJE) mince_com$(OBJE) \
-	mince_swp$(OBJE) cf.L
+mince$(OEXT): ccpu$(OBJE) console$(OBJE) dir$(OBJE) \
+	disass$(OBJE) fakefs_mince$(OBJE) embed$(OBJE) mince_com$(OBJE) \
+	mince_swp$(OBJE)
 	$(CC) $(CFLAGS) ccpu$(OBJE) console$(OBJE) dir$(OBJE) \
 		disass$(OBJE) fakefs_mince$(OBJE) embed$(OBJE) \
 		mince_com$(OBJE) mince_swp$(OBJE) -o $@
 
 #########################################################################
 
-mince80/mince.swp: cf.L termset ccom$(OEXT)
+mince80/mince.swp: cflags.L termset ccom$(OEXT)
 	@$(shell printf '%s\n' "export RM=\"$(RM)\" && \
 		export ROWS=$(ROWS) && \
 		export COLS=$(COLS) && \
@@ -206,10 +200,14 @@ compress: strip mince$(OEXT)
 
 #########################################################################
 
-osconf: cf.Lf
+osconf:
 ifeq ($(MAKE),)
 	$(error Error: MAKE variable is not set)
 endif
+	@printf '%s\n' "$(ROWS) $(COLS) $(CC) $(CFLAGS)" | \
+		/usr/bin/env cmp -s - cflags.L || { \
+		printf '%s\n' "$(ROWS) $(COLS) $(CC) $(CFLAGS)" \
+		> cflags.L; }; printf '%s\n' ""
 ifeq ($(MINCE_CONFIGURED), 1)
 	$(info Configured for $(OS))
 else

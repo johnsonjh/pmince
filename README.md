@@ -19,7 +19,7 @@
   * C compiler (`gcc`, `clang`, etc.)
   * GNU `make`
   * Tcl `expect`
-  * POSIX `env`, `sh`, and `sed`
+  * POSIX `cmp`, `env`, `sed`, and `sh`
 
 ## Tested configurations
 
