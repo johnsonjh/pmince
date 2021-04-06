@@ -24,7 +24,7 @@
 ## Tested configurations
 
 * i686 (IA32)
-  * **Linux**, GNU C 10.2.0
+  * **Debian** (Sid) 11, GNU C 10.2.0
 * x86\_64 (AMD64)
   * **RHEL** 8.3, GNU C 8.4.1
   * **CentOS** 8 (Stream), GNU C 10.2.1 (*SCL*)
@@ -37,8 +37,9 @@
 * ARM64 (AArch64)
   * **Debian** (Bullseye) 11, GNU C 10.2.1
   * **FreeBSD** 13.0-RC4, FreeBSD clang 11.0.1 (*g43ff75f2c3fe*)
+  * **FreeBSD** 13.0-RC5, GNU C 9.3.0
 * RISC-V (RV64)
-  * **Linux**, GNU C 10.2.0
+  * **Debian** (Sid) 11, GNU C 10.2.0
 
 ## Roadmap
 
