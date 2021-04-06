@@ -26,7 +26,7 @@
 * [Command Summary](doc/scomm.doc)
 * [Introduction](doc/prgintro.doc)
 * [Character Set](doc/ascii.txt)
-* **MINCE** Manual (*Version 2.5 and 2.6 Addendum*)
+* **MINCE** Manuals
   * [*1* *of* *4*]: [Getting Started](manual/MINCE_Install_Guide.pdf)
   * [*2* *of* *4*]: [User Guide](manual/MINCE_User_Guide.pdf)
   * [*3* *of* *4*]: [Version 2.6 Addendum](manual/MINCE_Addendum.pdf)
