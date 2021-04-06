@@ -23,14 +23,14 @@
 
 ## Usage
 
-* [Command Summary](doc/scomm.doc)
 * [Introduction](doc/prgintro.doc)
+* [Command Summary](doc/scomm.doc)
 * [Character Set](doc/ascii.txt)
 * **MINCE** Manuals
-  * [*1* *of* *4*]: [Getting Started](manual/MINCE_Install_Guide.pdf)
-  * [*2* *of* *4*]: [User Guide](manual/MINCE_User_Guide.pdf)
-  * [*3* *of* *4*]: [Version 2.6 Addendum](manual/MINCE_Addendum.pdf)
-  * [*4* *of* *4*]: [Internal Documentation](manual/MINCE_Internal_Documentation.pdf)
+  * [Getting Started](manual/MINCE_Install_Guide.pdf)
+  * [User Guide](manual/MINCE_User_Guide.pdf)
+  * [Addendum: Version 2.6](manual/MINCE_Addendum.pdf)
+  * [Internal Documentation](manual/MINCE_Internal_Documentation.pdf)
 
 ## Tested configurations
 
