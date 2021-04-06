@@ -30,6 +30,7 @@
   * **CentOS** 8 (Stream), GNU C 10.2.1 (*SCL*)
   * **Fedora** 33, GNU C 10.2.1
   * **Fedora** 33, Intel oneAPI DPC++ 2021.2.0 (*20210317*)
+  * **Fedora** 34 Beta, AMD clang 11.0.0 (AOCC-2.3.0, Build #85, 2020\_11\_10)
   * **macOS** (Big Sur) 11.3 Beta 6, Xcode 12.4 (*clang-1200.0.32.29*)
   * **OpenBSD** 6.8, OpenBSD clang 10.0.1
 * ARMv7HF (ARM32)

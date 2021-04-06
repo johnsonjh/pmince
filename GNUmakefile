@@ -42,6 +42,8 @@ ifeq ($(OS), openbsd)
 	MINCE_CONFIGURED=1
 endif
 
+#########################################################################
+
 ifeq ($(OS), freebsd)
 	CFL=-O2 -fcommon $(CFEXTRA)
 	CC?=clang
@@ -57,6 +59,8 @@ ifeq ($(OS), freebsd)
 	OBJE=.o
 	MINCE_CONFIGURED=1
 endif
+
+#########################################################################
 
 ifeq ($(OS), darwin)
 	CFL=-O2 -fcommon $(CFEXTRA)
