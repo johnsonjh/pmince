@@ -36,6 +36,7 @@
 
 * **i686** (IA32)
   * **Debian** (Sid) 11, GNU C 10.2.0
+  * **Haiku** (Walter) 55027, GNU C 8.3.0 (*20190524*)<sup>†</sup>
 * **x86**\_**64** (AMD64)
   * **RHEL** 8.3, GNU C 8.4.1
   * **CentOS** 8 (Stream), GNU C 10.2.1
@@ -52,6 +53,8 @@
   * **FreeBSD** 13.0-RC5, GNU C 9.3.0
 * **RISC-V** (RV64)
   * **Debian** (Sid) 11, GNU C 10.2.0
+
+* <sup>†</sup>*Build not yet fully integrated.*
 
 ## Roadmap
 
