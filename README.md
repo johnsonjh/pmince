@@ -27,10 +27,10 @@
 * [Introduction](doc/prgintro.doc)
 * [Character Set](doc/ascii.txt)
 * **MINCE** Manual
-  * [Getting Started](manual/MINCE_Install_Guide.pdf) [*1* of *4*]
-  * [User Guide](manual/MINCE_User_Guide.pdf) [*2* of *4*]
-  * [Version 2.6 Addendum](manual/MINCE_Addendum.pdf) [*3* of *4*]
-  * [Internal Documentation](manual/MINCE_Internal_Documentation.pdf) [*4* of *4*]
+  * [*1* of *4*]: [Getting Started](manual/MINCE_Install_Guide.pdf)
+  * [*2* of *4*]: [User Guide](manual/MINCE_User_Guide.pdf)
+  * [*3* of *4*]: [Version 2.6 Addendum](manual/MINCE_Addendum.pdf)
+  * [*4* of *4*]: [Internal Documentation](manual/MINCE_Internal_Documentation.pdf)
 
 ## Tested configurations
 
