@@ -12,9 +12,11 @@ All company, product, and service names used in the Software are for identificat
 
 The **Portable MINCE** authors could find no evidence of the trademark being actively used in commerce by **Mark of the Unicorn, Inc.** after March 1986, or by any distributor, licensee, or reseller after December 1994.
 
-Thus, it is our belief that the use of the term "**MINCE**" by **Portable MINCE** is legally permissible and does not constitute trademark infringement. Furthermore, the **Portable MINCE** authors make no claims to the term "**MINCE**".
+Thus, it is our belief that the use of the term "**MINCE**" by **Portable MINCE** is legally permissible and does not constitute trademark infringement.
 
-* <sup>†</sup>The **MINCE** trademark, _USSN **73576514**_, _USRN **1404754**_, was **cancelled** by the USPTO on May 19th 2007, due to the failure of the registrant to timely file an acceptable Section 8 declaration.
+Furthermore, the **Portable MINCE** authors make no claims to the term "**MINCE**".
+
+* <sup>†</sup>The [MINCE trademark](legal/73576514.pdf), _USSN **73576514**_, _USRN **1404754**_, was **cancelled** by the USPTO on May 19th 2007, due to the failure of the registrant to timely file an acceptable Section 8 declaration.
 
 ## MINCE / DIFF / Scribble / Pencil / Crayon
 

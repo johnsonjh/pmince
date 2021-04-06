@@ -21,25 +21,36 @@
   * Tcl `expect`
   * POSIX `cmp`, `env`, `sed`, and `sh`
 
+## Usage
+
+* [Short Command Summary](doc/scomm.doc)
+* [Program Introduction](doc/prgintro.doc)
+* [US-ASCII Character Set](doc/ascii.txt)
+* _**MINCE** Manual_
+  * [1 of 4: Getting Started](manual/MINCE_Install_Guide.pdf)
+  * [2 of 4: User Guide](manual/MINCE_User_Guide.pdf)
+  * [3 of 4: Version 2.6 Addendum](manual/MINCE_Addendum.pdf)
+  * [4 of 4: Internal Documentation](manual/MINCE_Internal_Documentation.pdf)
+
 ## Tested configurations
 
-* i686 (IA32)
+* **i686** (IA32)
   * **Debian** (Sid) 11, GNU C 10.2.0
-* x86\_64 (AMD64)
+* **x86**\_**64** (AMD64)
   * **RHEL** 8.3, GNU C 8.4.1
-  * **CentOS** 8 (Stream), GNU C 10.2.1 (*SCL*)
+  * **CentOS** 8 (Stream), GNU C 10.2.1
   * **Fedora** 33, GNU C 10.2.1
   * **Fedora** 33, Intel oneAPI DPC++ 2021.2.0 (*20210317*)
-  * **Fedora** 34 Beta, AMD clang 11.0.0 (AOCC-2.3.0, Build #85, 2020\_11\_10)
-  * **macOS** (Big Sur) 11.3 Beta 6, Xcode 12.4 (*clang-1200.0.32.29*)
-  * **OpenBSD** 6.8, OpenBSD clang 10.0.1
-* ARMv7HF (ARM32)
+  * **Fedora** 34 Beta, AMD AOCC 2.3.0 (*20201110*)
+  * **macOS** (Big Sur) 11.3 Beta 6, Xcode 12.4 (*1200.0.32.29*)
+  * **OpenBSD** 6.8, Clang 10.0.1
+* **ARMv7HF** (ARM32)
   * **Raspbian** (Buster) 10, GNU C 8.3.0 (*6+rpi1*)
-* ARM64 (AArch64)
+* **ARM64** (AArch64)
   * **Debian** (Bullseye) 11, GNU C 10.2.1
-  * **FreeBSD** 13.0-RC4, FreeBSD clang 11.0.1 (*g43ff75f2c3fe*)
+  * **FreeBSD** 13.0-RC4, Clang 11.0.1 (*g43ff75f2c3fe*)
   * **FreeBSD** 13.0-RC5, GNU C 9.3.0
-* RISC-V (RV64)
+* **RISC-V** (RV64)
   * **Debian** (Sid) 11, GNU C 10.2.0
 
 ## Roadmap
@@ -48,17 +59,18 @@
 * End-user configuration system, customizable via file or environment variables.
 * Avoid main input busywait/spin-loop to reduce idle CPU usage.
 * Translation of line-endings at run time (*use* `dos2unix` *as* *a* *workaround*).
-* Translation of `PgUp`/`PgDn`/`Home`/`End`/cursor control/arrow keys.
+* Translation of `PgUp` / `PgDn` / `Home` / `End` / cursor control / arrow keys.
 * Build with GCC `-fno-common` and reduce `-Wall` warnings.
 * Support crash recovery (by parsing `mince.swp`) in case of unclean exit.
 * Add support for external filters, such as hexadecimal mode (via `xxd`).
 * Support for automatic terminal resizing (_by catching and handling **SIGWINCH**_).
 * Allow building **MINCE** binaries with various extensions; produce verified/tested configurations.
-* Build and support MOTU **Scribble**, **Pencil**, and **Crayon** in similar fashion.
+* Build and integrate **Scribble**, **Pencil**, and **Crayon**.
   * Automatic setup for **ANSI**/**ASME** _**Y14.1**_ (*US*) and *ISO*-_**216**_ (*EU*) paper types.
   * End-user run time switching between different printer defintions.
   * Support for rendering (*NEC*, *Epson*, *Diablo*, etc.) proportional font printer output.
-  * **Ghostscript**/**ImageMagick** for printer output conversion to *PDF*, *PostScript*, etc.
+  * **Ghostscript** / **ImageMagick** for conversion of Crayon output to *PDF*, *PostScript*, etc.
+  * Automate **Scribble** formatting to (*n*)*roff* / *groff*, (*X*)*HTML*, *TeX* / *LaTeX*, etc. (utilizing **Pandoc** or similar tools for conversion).
 * Add Motorola **68000** CPU core, to support **MINCE-68K**.
   * Automatically invoke **MINCE-68K** version for large input files.
   * End-user configuration of default **MINCE** flavor (**MINCE-80** or **MINCE-68K**).
