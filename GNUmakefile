@@ -381,6 +381,11 @@ install: osconf mince$(OEXT) strip
 	    false; };
 
 hpkg: osconf version.h mince$(OEXT) strip
+	@if [ "$(OS)" != "haiku" ]; then \
+		printf '\n\n%s\n\n' \
+		" **** Error: hpkg target is only for Haiku OS ****"; \
+		exit 1; \
+	fi
 	$(TEST) -d ./hpkg || \
 	    $(MKDIR) ./hpkg
 	printf '%s\n' \
