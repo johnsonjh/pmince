@@ -17,7 +17,7 @@
 #include <sys/poll.h>
 #endif
 #if SYSV || DNIX
-#if defined(__FreeBSD__) || defined(__OpenBSD__)
+#if defined(__FreeBSD__) || defined(__OpenBSD__) || defined(__HAIKU__)
 #include <termios.h>
 #include <sys/param.h>
 #include <sys/ioctl.h>
@@ -133,7 +133,7 @@ struct regs {
 };
 
 #if SVR4 || SYSV || DNIX
-#if defined(__FreeBSD__) || defined(__OpenBSD__)
+#if defined(__FreeBSD__) || defined(__OpenBSD__) || defined(__HAIKU__)
 struct termios old, new;
 #else
 struct termio old, new; /* Terminal control structures. */

@@ -3,6 +3,9 @@
 #include <string.h>
 #include "version.h"
 
+int i, cnt;
+unsigned int size;
+
 int main(
   int argc,
   char **argv
@@ -90,11 +93,11 @@ int main(
       argv[2]
     );
 
-    int i = fgetc(
+    i = fgetc(
       f
     );
-    int cnt = 0;
-    unsigned int size = 0;
+    cnt = 0;
+    size = 0;
 
     while (
       i != -1
@@ -193,4 +196,5 @@ int main(
       size+2
     );
   }
+  return 0;
 }
