@@ -52,6 +52,7 @@
   - **Fedora** 34 Beta, AMD AOCC 2.3.0 (_20201110_)
   - **macOS** (Big Sur) 11.3 Beta 6, Xcode 12.4 (_1200.0.32.29_)
   - **OpenBSD** 6.8, Clang 10.0.1
+  - **Haiku** 55029, GNU C 8.3.0 (_20190524_)
 - **ARMv7HF** (ARM32)
   - **Raspbian** (Buster) 10, GNU C 8.3.0 (_6+rpi1_)
 - **ARM64** (AArch64)
