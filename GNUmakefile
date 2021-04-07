@@ -13,7 +13,7 @@ ifndef $(OS)
 endif
 
 #############################################################################
-#                                Configuration                              #
+#                               Configuration                               #
 #############################################################################
 
 PENV=/usr/bin/env
@@ -25,6 +25,8 @@ CFEXTRA=-pipe
 #CFEXTRA+=-Ofast -fomit-frame-pointer -march=native \
 #		-fstack-protector-strong -D_FORTIFY_SOURCE=2
 
+#############################################################################
+#                   Solaris/OpenIndiana/illumos Configuration               #
 #############################################################################
 
 ifeq ($(OS), sunos)
@@ -44,6 +46,8 @@ ifeq ($(OS), sunos)
 	MINCE_CONFIGURED=1
 endif
 
+#############################################################################
+#                             Haiku OS Configuration                        #
 #############################################################################
 
 ifeq ($(OS), haiku)
@@ -72,10 +76,12 @@ ifeq ($(OS), haiku)
 	MV=mv -f --
 	OBJE=.o
 	MINCE_CONFIGURED=1
-	EXTRA_MESSAGES="\ \*\*\ Haiku\ detected\!\ Create\ a\ Haiku\ \
-		       Package\ with\ \"$(MAKE)\ hpkg\"\ \*\*"
+	EXTRA_MESSAGES="\ \*\*\*\*\ Haiku\ detected\!\ Create\ a\ Haiku\ \
+		       Package\ with\ \"$(MAKE)\ hpkg\"\ \*\*\*\*"
 endif
 
+#############################################################################
+#                             OpenBSD Configuration                         #
 #############################################################################
 
 ifeq ($(OS), openbsd)
@@ -96,6 +102,8 @@ ifeq ($(OS), openbsd)
 endif
 
 #############################################################################
+#                             FreeBSD Configuration                         #
+#############################################################################
 
 ifeq ($(OS), freebsd)
 	CFL=-O2 -fcommon $(CFEXTRA)
@@ -115,6 +123,8 @@ ifeq ($(OS), freebsd)
 endif
 
 #############################################################################
+#                        Darwin/macOS/OSX Configuration                     #
+#############################################################################
 
 ifeq ($(OS), darwin)
 	CFL=-O2 -fcommon $(CFEXTRA)
@@ -133,6 +143,8 @@ ifeq ($(OS), darwin)
 	MINCE_CONFIGURED=1
 endif
 
+#############################################################################
+#                            GNU/Linux Configuration                        #
 #############################################################################
 
 ifeq ($(OS), linux)
@@ -166,14 +178,14 @@ all: osconf mince$(OEXT) strip
 	@$(TEST) -f ./mince$(OEXT) 2>/dev/null && \
 	    $(TEST) -f ./fallback.L 2>/dev/null && \
 	    printf '\n%s\n' \
-	    "  *** Expect failed! 80 rows, 24 cols defaults used! ***" \
-		"   **** Expect is required for non-default configurations ****" \
-	    " ** MINCE (Failsafe: 80 rows, cols 24) build successful **" || \
+	    " **** Expect failed! 80 rows, 24 cols defaults used! ****" \
+		" **** Expect is required for non-default configurations ****" \
+	    " **** MINCE (Default: 80 rows, cols 24) build successful ****" || \
 	    printf '\n%s\n' \
-	    " ** MINCE ($(ROWS) rows, cols $(COLS)) build successful **"
+	    " **** MINCE ($(ROWS) rows, cols $(COLS)) build successful ****"
 	@$(TEST) -f ./mince$(OEXT) 2>/dev/null && \
 	    printf '\n%s\n' \
-	    " ** Run \"$(MAKE) compress\" or \"$(MAKE) install\" now **" \
+	    " **** Run \"$(MAKE) compress\" or \"$(MAKE) install\" now ****" \
 	    "$(EXTRA_MESSAGES)"
 
 #############################################################################
@@ -338,7 +350,7 @@ compress: strip mince$(OEXT)
 	upx -q -q --exact --strip-relocs=0 --overlay=copy --ultra-brute \
 	    mince$(OEXT) || true
 	@printf '\n%s\n'  \
-	    " ** You may now proceed with \"$(MAKE) install\" **"
+	    " **** You may now proceed with \"$(MAKE) install\" ****"
 
 #############################################################################
 
@@ -375,9 +387,9 @@ install: osconf mince$(OEXT) strip
 	    true
 	$(CP) mince$(OEXT) $(PREFIX)/$(PBIN)/mince$(OEXT)
 	@$(TEST) -x $(PREFIX)/$(PBIN)/mince$(OEXT) && \
-	    printf '\n%s\n' " ** Installation successful! **" || true
+	    printf '\n%s\n' " **** Installation successful! ****" || true
 	@$(TEST) -x $(PREFIX)/$(PBIN)/mince$(OEXT) || { \
-	    printf '\n%s\n' " ** Installation failed, try manually!"; \
+	    printf '\n%s\n' " **** Installation failed, try manually! ****"; \
 	    false; };
 
 hpkg: osconf version.h mince$(OEXT) strip
