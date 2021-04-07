@@ -15,7 +15,7 @@
 
 ## Building
 
-* Build requirements:
+* Required:
   * C compiler (`gcc`, `clang`, *etc*.)
   * GNU `make`
   * POSIX `cmp`, `env`, and `sh` (*Bourne* *shell*)
