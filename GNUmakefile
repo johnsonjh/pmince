@@ -320,7 +320,7 @@ com.h: version.h
 
 #############################################################################
 
-install: mince$(OEXT) strip
+install: osconf mince$(OEXT) strip
 	$(TEST) -d $(PREFIX) || \
 	    $(MKDIR) $(PREFIX)
 	$(TEST) -d $(PREFIX)/$(PBIN) || \
