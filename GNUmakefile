@@ -271,7 +271,7 @@ clean:
 
 #############################################################################
 
-strip: mince$(OEXT)
+strip: osconf mince$(OEXT)
 	$(STRIP) \
 	    mince$(OEXT) \
 	    2>/dev/null \
