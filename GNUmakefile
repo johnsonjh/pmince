@@ -9,7 +9,7 @@
 ifndef $(OS)
  OS=$(shell uname -s 2>/dev/null | \
 	tr '[:upper:]' '[:lower:]' 2>/dev/null || \
-	true :)
+	true)
 endif
 
 #############################################################################
@@ -34,6 +34,7 @@ ifeq ($(OS), sunos)
 	OPTIONS=-D$(SYSTYPE)=1 -DRUNOPTS=1 -DUSEDIRENT=1
 	CFLAGS+=$(CFL) $(OPTIONS)
 	RM=rm -f
+	RMDIR=rmdir
 	TEST=test
 	SIZE=size
 	STRIP=strip
@@ -46,21 +47,33 @@ endif
 #############################################################################
 
 ifeq ($(OS), haiku)
+	UTME=$(shell date +%s)
+	MVER=$(shell grep -o '\".*\"' ./version.h 2>/dev/null | \
+	    tr -d '\"' 2>/dev/null)
+	MARH=$(shell uname -p | sed 's/^x86$$/x86_gcc2/')
+	MARU=$(shell whoami 2>/dev/null)
 	PENV=/bin/env
 	PREFIX=/system/non-packaged
 	CFL=-O2 -fcommon $(CFEXTRA)
-	CC?=gcc
+	CC=$(shell setarch `uname -p` sh -c "command -v cc" 2>/dev/null || \
+	    sh -c "command -v cc" 2>/dev/null || \
+	    sh -c "command -v gcc" 2>/dev/null || \
+	    printf '%s\n' "cc")
 	SYSTYPE=SYSV
-	OPTIONS=-D$(SYSTYPE)=1 -DRUNOPTS=1 -DUSEDIRENT=1
+	OPTIONS=-D$(SYSTYPE)=1 -DRUNOPTS=1 -DUSEDIRENT=1 -DNOBUFF=1
 	CFLAGS+=$(CFL) $(OPTIONS)
 	RM=rm -f --
+	RMDIR=rmdir
 	TEST=test
 	SIZE=size --
 	STRIP=strip
 	MKDIR=mkdir -p --
 	CP=cp -f --
+	MV=mv -f --
 	OBJE=.o
 	MINCE_CONFIGURED=1
+	EXTRA_MESSAGES="\ \*\*\ Haiku\ detected\!\ Create\ a\ Haiku\ \
+		       Package\ with\ \"$(MAKE)\ hpkg\"\ \*\*"
 endif
 
 #############################################################################
@@ -72,6 +85,7 @@ ifeq ($(OS), openbsd)
 	OPTIONS=-D$(SYSTYPE)=1 -DRUNOPTS=1 -DUSEDIRENT=1
 	CFLAGS+=$(CFL) $(OPTIONS)
 	RM=rm -f
+	RMDIR=rmdir
 	TEST=test
 	SIZE=size
 	STRIP=strip
@@ -90,6 +104,7 @@ ifeq ($(OS), freebsd)
 	OPTIONS=-D$(SYSTYPE)=1 -DRUNOPTS=1 -DUSEDIRENT=1
 	CFLAGS+=$(CFL) $(OPTIONS)
 	RM=rm -f
+	RMDIR=rmdir
 	TEST=test
 	SIZE=size
 	STRIP=strip
@@ -108,6 +123,7 @@ ifeq ($(OS), darwin)
 	OPTIONS=-D$(SYSTYPE)=1 -DRUNOPTS=1 -DUSEDIRENT=1 -DNOBUFF=1
 	CFLAGS+=$(CFL) $(OPTIONS)
 	RM=rm -f
+	RMDIR=rmdir
 	TEST=test
 	SIZE=size
 	STRIP=strip
@@ -126,6 +142,7 @@ ifeq ($(OS), linux)
 	OPTIONS=-D$(SYSTYPE)=1 -DRUNOPTS=1 -DUSEDIRENT=1
 	CFLAGS+=$(CFL) $(OPTIONS)
 	RM=rm -f --
+	RMDIR=rmdir
 	TEST=test
 	SIZE=size --
 	STRIP=strip
@@ -138,14 +155,14 @@ endif
 #############################################################################
 
 .SUFFIXES: $(OBJE)
-.PHONY: all clean osconf strip compress upx install 
+.PHONY: all clean osconf strip compress upx install hpkg
 
 #############################################################################
 
 all: osconf mince$(OEXT) strip
-	@printf '\r%s\n' "" || true :
+	@printf '\r%s\n' "" || true
 	@$(TEST) -f ./mince$(OEXT) 2>/dev/null && \
-	    $(SIZE) ./mince$(OEXT) 2>/dev/null || true :
+	    $(SIZE) ./mince$(OEXT) 2>/dev/null || true
 	@$(TEST) -f ./mince$(OEXT) 2>/dev/null && \
 	    $(TEST) -f ./fallback.L 2>/dev/null && \
 	    printf '\n%s\n' \
@@ -156,7 +173,8 @@ all: osconf mince$(OEXT) strip
 	    " ** MINCE ($(ROWS) rows, cols $(COLS)) build successful **"
 	@$(TEST) -f ./mince$(OEXT) 2>/dev/null && \
 	    printf '\n%s\n' \
-	    " ** Run \"$(MAKE) compress\" or \"$(MAKE) install\" now **"
+	    " ** Run \"$(MAKE) compress\" or \"$(MAKE) install\" now **" \
+	    "$(EXTRA_MESSAGES)"
 
 #############################################################################
 
@@ -285,7 +303,16 @@ clean:
 	    *.cob \
 	    *.obj \
 	    *.ovr \
-	    *.alm
+	    *.alm \
+	    mince.hpkg \
+	    ./hpkg/mince.hpkg \
+	    ./hpkg/bin/*
+	$(RMDIR) -p ./hpkg/bin 2>/dev/null || \
+	    true
+	$(RM) ./hpkg/.PackageInfo \
+	    ./hpkg/*
+	$(RMDIR) -p hpkg 2>/dev/null || \
+	    true
 
 #############################################################################
 
@@ -293,7 +320,7 @@ strip: osconf mince$(OEXT)
 	$(STRIP) \
 	    mince$(OEXT) \
 	    2>/dev/null \
-	    || true :
+	    || true
 	$(STRIP) \
 	    mince$(OEXT) \
 	    --remove-section=.note.gnu.build-id \
@@ -301,7 +328,7 @@ strip: osconf mince$(OEXT)
 	    --remove-section=.comment \
 	    --remove-section=.gnu.build.attributes \
 	    2>/dev/null \
-	    || true :
+	    || true
 
 #############################################################################
 
@@ -309,7 +336,7 @@ upx: compress
 
 compress: strip mince$(OEXT)
 	upx -q -q --exact --strip-relocs=0 --overlay=copy --ultra-brute \
-	    mince$(OEXT) || true :
+	    mince$(OEXT) || true
 	@printf '\n%s\n'  \
 	    " ** You may now proceed with \"$(MAKE) install\" **"
 
@@ -345,12 +372,45 @@ install: osconf mince$(OEXT) strip
 	    $(MKDIR) $(PREFIX)/$(PBIN)
 	$(TEST) -f $(PREFIX)/$(PBIN)/mince$(OEXT) && \
 	    $(RM) $(PREFIX)/$(PBIN)/mince$(OEXT) || \
-	    true :
+	    true
 	$(CP) mince$(OEXT) $(PREFIX)/$(PBIN)/mince$(OEXT)
 	@$(TEST) -x $(PREFIX)/$(PBIN)/mince$(OEXT) && \
-	    printf '\n%s\n' " ** Installation successful! **" || true :
+	    printf '\n%s\n' " ** Installation successful! **" || true
 	@$(TEST) -x $(PREFIX)/$(PBIN)/mince$(OEXT) || { \
 	    printf '\n%s\n' " ** Installation failed, try manually!"; \
-	    false :; };
+	    false; };
+
+hpkg: osconf version.h mince$(OEXT) strip
+	$(TEST) -d ./hpkg || \
+	    $(MKDIR) ./hpkg
+	printf '%s\n' \
+	    "name \"mince\"" \
+	    "version $(MVER)-$(UTME)" \
+	    "architecture \"$(MARH)\"" \
+	    "summary \"Portable MINCE\"" \
+	    "description \"MINCE Is Not Completely EMACS\"" \
+	    "packager \"$(MARU)\"" \
+	    "vendor \"https://github.com/johnsonjh/pmince\"" \
+	    "copyrights \"Various Authors\"" \
+	    "licenses \"ISC\"" \
+	    "provides { mince = $(MVER)-$(UTME) }" \
+	    > ./hpkg/.PackageInfo
+	$(TEST) -d ./hpkg/bin || \
+	    $(MKDIR) ./hpkg/bin
+	$(TEST) -x ./mince$(OEXT) && \
+	    $(MV) ./mince$(OEXT) ./hpkg/bin/mince$(OEXT)
+	@$(TEST) -d ./hpkg/bin && \
+	    cd ./hpkg && \
+	    package create -v -b mince.hpkg
+	@$(TEST) -d ./hpkg && \
+	    $(TEST) -f ./hpkg/mince.hpkg && \
+	    cd ./hpkg && \
+	    package add -v mince.hpkg bin && \
+	    $(MV) mince.hpkg ..
+	@$(TEST) -f ./mince.hpkg && \
+	    package list mince.hpkg && \
+	    ls -la mince.hpkg && \
+	    printf '%s\n' \
+	    " **** Package \"mince.hpkg\" created successfully! ****"
 
 #############################################################################

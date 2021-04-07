@@ -43,6 +43,9 @@ char *argv[];
 
   filename = 0;
   progname = *argv;
+#ifdef NOBUFF
+      regp->miscflags |= NOBUFFER;
+#endif
   while (--argc > 0) {
     argp = *++argv;
     if (*argp == '-') {
