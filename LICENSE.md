@@ -137,7 +137,7 @@ This code is in the public domain.
 
 ## AUG (Amethyst Users Group) data
 
-The **Portable MINCE** distribution contains files collected and distributed by "**AUG**", the _**Amethyst Users Group**_. 
+The **Portable MINCE** distribution contains files collected and distributed by "**AUG**", the _**Amethyst Users Group**_.
 
 When the **AUG** was an active organization, membership was restricted to **Amethyst**, **MINCE**, and **Scribble** license holders, per an agreement between _**Mark of the Unicorn, Inc.**_ and the _**Amethyst Users Group**_.
 
