@@ -54,7 +54,7 @@
 * **RISC-V** (RV64)
   * **Debian** (Sid) 11, GNU C 10.2.0
 
-* <sup>†</sup>*Build not yet fully integrated.*
+ <sup>†</sup> *Build not yet fully integrated.*
 
 ## Roadmap
 
