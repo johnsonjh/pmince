@@ -43,7 +43,8 @@ void setupstdin(regp) struct regs *regp;
   signal(SIGUSR1, u1catcher);
   signal(SIGUSR2, u2catcher);
 #if SYSV || DNIX
-#if defined(__FreeBSD__) || defined(__OpenBSD__)
+#if defined(__FreeBSD__) || \
+    defined(__OpenBSD__)
   ioctl(0, TIOCGETA, &old);
 #else
   ioctl(0, TCGETA, &old);
@@ -55,7 +56,8 @@ void setupstdin(regp) struct regs *regp;
   new.c_oflag &= ~(OCRNL | ONLCR);
   new.c_lflag &= ~(ICANON | ISIG | ECHO | ECHOE | ECHOK | ECHONL);
   if (!(regp->miscflags & NOIOCTL)) {
-#if defined(__FreeBSD__) || defined(__OpenBSD__)
+#if defined(__FreeBSD__) || \
+	defined(__OpenBSD__)
     ioctl(0, TIOCSETA, &new);
 #else
     ioctl(0, TCSETA, &new);
@@ -77,7 +79,8 @@ void setupstdin(regp) struct regs *regp;
 
 void restorestdin() {
 #if SYSV || DNIX
-#if defined(__FreeBSD__) || defined (__OpenBSD__)
+#if defined(__FreeBSD__) || \
+	defined (__OpenBSD__)
   ioctl(0, TIOCSETA, &old);
 #else
   ioctl(0, TCSETAW, &old);
@@ -99,7 +102,8 @@ void stdinlineon(regp) struct regs *regp;
   new.c_iflag |= (ICRNL | IXON);
   new.c_oflag |= ONLCR;
   new.c_lflag |= (ICANON | ECHO | ECHOE | ECHOK | ECHONL);
-#if defined(__FreeBSD__) || defined(__OpenBSD__)
+#if defined(__FreeBSD__) || \
+  defined(__OpenBSD__)
   ioctl(0, TIOCSETA, &new);
 #else
   ioctl(0, TCSETAW, &new);
@@ -123,7 +127,8 @@ void stdinlineoff(regp) struct regs *regp;
   new.c_iflag &= ~(ICRNL | IXON);
   new.c_oflag &= ~ONLCR;
   new.c_lflag &= ~(ICANON | ECHO | ECHOE | ECHOK | ECHONL);
-#if defined(__FreeBSD__) || defined(__OpenBSD__)
+#if defined(__FreeBSD__) || \
+    defined(__OpenBSD__)
   ioctl(0, TIOCSETA, &new);
 #else
   ioctl(0, TCSETAW, &new);
@@ -170,7 +175,8 @@ int myrdchk(fd) int fd;
     new.c_cc[VMIN] = 0;
     new.c_cc[VTIME] = 0;
     new.c_lflag &= ~ICANON;
-#if defined(__FreeBSD__) || defined(__OpenBSD__)
+#if defined(__FreeBSD__) || \
+	defined(__OpenBSD__)
     ioctl(fd, FIONREAD, &i);
     if (!i)
       return 0;
@@ -187,7 +193,8 @@ int myrdchk(fd) int fd;
     while (i < 0 && errno == EINTR);
 #if SYSV
     new.c_cc[VMIN] = 1;
-#if defined(__FreeBSD__) || defined(__OpenBSD__)
+#if defined(__FreeBSD__) || \
+	defined(__OpenBSD__)
     ioctl(fd, TIOCSETA, &new); 
 #else
     ioctl(fd, TCSETAW, &new);
