@@ -131,7 +131,8 @@ all: osconf mince$(OEXT) strip
 	@$(TEST) -f ./mince$(OEXT) 2>/dev/null && \
 	    $(TEST) -f ./fallback.L 2>/dev/null && \
 	    printf '\n%s\n' \
-	    "  *** Expect failed! 80 rows, 24 cols failsafe used! ***" \
+	    "  *** Expect failed! 80 rows, 24 cols defaults used! ***" \
+		"   **** Expect is required for non-default configurations ****" \
 	    " ** MINCE (Failsafe: 80 rows, cols 24) build successful **" || \
 	    printf '\n%s\n' \
 	    " ** MINCE ($(ROWS) rows, cols $(COLS)) build successful **"
