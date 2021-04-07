@@ -43,6 +43,8 @@
   - **Debian** (Sid) 11, GNU C 10.2.0
   - **Haiku** (Walter) 55027, GNU C 2.95.3 (_Haiku-20170720_)
 - **x86**\_**64** (AMD64)
+  - **OpenIndiana** 20210407 (Hipster) 5.11 (illumos-7687d0d881), GNU C 3.4.3
+    (_csl-sol210-3_4-20050802_)
   - **RHEL** 8.3, GNU C 8.4.1
   - **CentOS** 8 (Stream), GNU C 10.2.1
   - **Fedora** 33, GNU C 10.2.1
