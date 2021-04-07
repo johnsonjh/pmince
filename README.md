@@ -41,7 +41,7 @@
 
 - **ix86** (IA32)
   - **Debian** (Sid) 11, GNU C 10.2.0
-  - **Haiku** (Walter) hrev55027, GNU C 2.95.3 (_20170720_)
+  - **Haiku** hrev55027, GNU C 2.95.3 (_20170720_)
 - **x86**\_**64** (AMD64)
   - Solaris/**OpenIndiana** 20210407 (Hipster), SunOS/**illumos** 5.11, GNU C 3.4.3 (_20050802_)
   - **RHEL** 8.3, GNU C 8.4.1
