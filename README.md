@@ -19,6 +19,7 @@
   * C compiler (`gcc`, `clang`, *etc*.)
   * GNU `make`
   * POSIX `cmp`, `env`, and `sh` (*Bourne* *shell*)
+
 * Optional:
   * Tcl `expect` and POSIX `sed`
     * Needed to override default terminal configuration (24 cols, 80 rows).
