@@ -37,7 +37,7 @@
 
 ## Tested configurations
 
-* **i686** (IA32)
+* **ix86** (IA32)
   * **Debian** (Sid) 11, GNU C 10.2.0
   * **Haiku** (Walter) 55027, GNU C 2.95.3 (*Haiku-20170720*)
 * **x86**\_**64** (AMD64)
