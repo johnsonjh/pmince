@@ -1,3 +1,4 @@
+termset linguist-vendored
 pwriter80/*.mss linguist-vendored
 *.mss linguist-vendored
 .mss linguist-vendored
