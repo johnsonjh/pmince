@@ -57,6 +57,7 @@
   - **Haiku** 55029, GNU C 8.3.0 (_20190524_)
   - **macOS** (Big Sur) 11.3 Beta 6, GNU C 10.2.0 (_Homebrew GCC 10.2.0_4_)
   - **macOS** (Big Sur) 11.3 Beta 6, Xcode 12.4 (_1200.0.32.29_)
+  - **NetBSD** 9.1, GNU C 7.5.0 (_nb4-20200810_)
   - **OpenBSD** 6.8, Clang 10.0.1
   - **RHEL** 8.3, GNU C 8.4.1
   - **Solaris**/**OpenIndiana** 20210407 (Hipster), SunOS/**illumos** 5.11, GNU C 3.4.3 (_20050802_)
