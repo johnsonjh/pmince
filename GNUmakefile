@@ -105,6 +105,27 @@ ifeq ($(OS), haiku)
 endif
 
 #############################################################################
+#                            NetBSD Configuration                           #
+#############################################################################
+
+ifeq ($(OS), netbsd)
+	CFL=-O2 -fcommon $(CFEXTRA)
+	CC?=cc
+	SYSTYPE=SYSV
+	OPTIONS=-D$(SYSTYPE)=1 -DRUNOPTS=1 -DUSEDIRENT=1
+	CFLAGS+=$(CFL) $(OPTIONS)
+	RM=rm -f
+	RMDIR=rmdir
+	TEST=test
+	SIZE=size
+	STRIP=strip
+	MKDIR=mkdir -p
+	CP=cp -f
+	OBJE=.o
+	MINCE_CONFIGURED=1
+endif
+
+#############################################################################
 #                             OpenBSD Configuration                         #
 #############################################################################
 
