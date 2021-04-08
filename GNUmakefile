@@ -2,6 +2,22 @@
 #                           Portable MINCE Makefile                         #
 #############################################################################
 
+# For most systems, no configuration should be needed.  If you encounter any
+# problems with any supported configuration, please report the bug at GitHub
+# https://github.com/johnsonjh/pmince/issues/new/choose or send an e-mail to
+# the maintainer, Jeffrey H. Johnson, at trnsz@pobox.com. PGP mail accepted.
+
+# For all supported platform types, running make (or gmake) should just work.
+# There are some excpetions, such as Windows + Cygwin; see below for details.
+
+# If you wish to change the terminal configuration, Tcl's "expect" is needed.
+# Compile with: "ROWS=nn COLS=nn make". Values 8 - 254, inclusive, are valid.
+
+# Some systems support creating packages.  On these systems instructions will
+# shown if the build proccess was successful.  Also, some systems support UPX
+# for binary conpression.  UPX reduces the size of binary by ~90%, but causes
+# an increase in memory usage, and may not be 100% reliable on all platforms.
+
 #############################################################################
 #                           Detect Operating System                         #
 #############################################################################
@@ -12,11 +28,11 @@ ifndef $(OS)
 	true)
 endif
 
-# Override OS?
+# Override OS?  (Needed for Windows/Cygwin)
 #OS=CYGW
 
 #############################################################################
-#                               Configuration                               #
+#                             Common Configuration                          #
 #############################################################################
 
 PENV=/usr/bin/env
@@ -29,7 +45,7 @@ CFEXTRA=-pipe
 #		-fstack-protector-strong -D_FORTIFY_SOURCE=2
 
 #############################################################################
-#             Microsoft Windows NT: MSYS2+Cygwin Configuration              #
+#              Microsoft Windows NT: MSYS2+Cygwin Configuration             #
 #############################################################################
 
 ifeq ($(OS), CYGW)
@@ -71,7 +87,7 @@ ifeq ($(OS), sunos)
 endif
 
 #############################################################################
-#                             Haiku OS Configuration                        #
+#                            Haiku OS Configuration                         #
 #############################################################################
 
 ifeq ($(OS), haiku)
