@@ -1,0 +1,5 @@
+pwriter80/*.mss linguist-vendored
+*.mss linguist-vendored
+.mss linguist-vendored
+GNUmakefile linguist-vendored
+Makefile linguist-vendored
