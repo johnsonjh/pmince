@@ -101,8 +101,7 @@ Review the [Makefile](/GNUmakefile) for more information.
 - User-configurable key bindings and remapping.
   - Allow user configuration _without_ requiring full recompilation.
   - Normalize key bindings and mappings between **MINCE** flavors.
-- Support for **RSX-11**, (**Open**)**VMS**, **Windows**, and **OS/2** operating
-  systems.
+- Support for **RSX-11**, (**Open**)**VMS**, and **OS/2** operating systems.
 
 ## Original Authors
 
