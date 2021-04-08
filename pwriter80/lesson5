@@ -135,5 +135,4 @@ text buffer without saving it.  You do not want to alter the file
 "lesson5" for the next person.  We'll learn more about text
 buffers and additional features available with C--Y and multiple
 buffers in Lesson 7.
- the plus in
-the mode line has gone off.  Type an M
+

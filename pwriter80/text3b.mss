@@ -22,4 +22,4 @@ briefly tell you about each.
 
 
 Don Cochran]
-@COMMENT{TEXT3B.MSS}@END(ENUMERATE)ŠWhat makes @VALUE(SUM
+@COMMENT{TEXT3B.MSS}

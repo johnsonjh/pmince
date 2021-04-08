@@ -21,4 +21,4 @@ family of related software.  Let me briefly tell you about each.
 
 Don Cochran]
 @COMMENT{TEXT3A.MSS}
-tore!)Š@Closing[Cordially,ŠŠŠDon Cochran]Š@COMMENT{------------------------------------------------------------ŠŠTEXT3B.MSS}
+

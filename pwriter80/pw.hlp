@@ -106,6 +106,4 @@ Insert File:    Enter C-X I  {echo line asks for file to insert}
 
 
 
-t} repeats the command that follows by {digit}
-
-<C-X
+

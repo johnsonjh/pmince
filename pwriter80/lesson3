@@ -179,6 +179,4 @@ out "C--X  C--R".  If you want, go to lesson4 by entering:
 	C--X  C--R 
 
 and answering "lesson4" when asked, 'File to Read <CR>:'.
-n via a
-C--X C--F command, pieces of the buffer will be paged in as you
-need them.  This means that C--V's will occ
+

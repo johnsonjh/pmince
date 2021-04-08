@@ -26,4 +26,4 @@ itself secret or valuable, detection is not as important as
 prevention.  Theft of off-line media (e.g. backup tapes) is
 almost as easy to detect, ...
 
-@COMMENT{TEXT6.MSS}maintaining computer room security.  T
+@COMMENT{TEXT6.MSS}

@@ -34,6 +34,4 @@ rarely, but they are there if you need them.
 Have you removed the Command Summary card from your User Manual
 yet? This card is handy to keep near your keyboard.  It provides
 a very quick reference to all of Perfect Writer's commands.
-r forward one 'word'.  This
-relationship holds true for a great many of Perfect Writer's
-commands, not just those tha
+

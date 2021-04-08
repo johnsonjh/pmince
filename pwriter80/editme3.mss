@@ -12,4 +12,4 @@ This is sentence FOUR; where does it go?
 This is the last paragraph, which is going to be placed at the
 beginning of the text.  That will be a trick.  Actually, it is
 simple:  Mark the boundaries, 'Wipe' the region, move the cursor,
-and 'Yank' it back!ser Manualäyet
+and 'Yank' it back!

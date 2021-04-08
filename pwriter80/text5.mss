@@ -19,5 +19,4 @@ Centerville, IL  60601)
 
 @NEWPAGE
 
-@COMMENT{TEXT5.MSS}ter(Be sure to see our other software!)
-@Cl
+@COMMENT{TEXT5.MSS}

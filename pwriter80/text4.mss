@@ -37,8 +37,4 @@ each showing a different document.
 We hope this very brief description encourages you to take a
 closer look at all the numerous features of @VALUE(SUM).
 
-@COMMENT{TEXT4.MSS}he advanced features you would expect to find
-in expensive word processors, such as:
-
-@BEGIN(ENUMERATE)
-The full
+@COMMENT{TEXT4.MSS}

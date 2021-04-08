@@ -20,4 +20,4 @@ next word.
 
 Again, you don't have to learn all the commands at once.  A few
 to start will serve you well for a long time.
-ion commands possess the sameä
+

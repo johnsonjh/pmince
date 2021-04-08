@@ -22,4 +22,4 @@ Don Cochran]
 
 @COMMENT{TEXT2.MSS}
 
-erely,ŠŠŠDon Cochran]Š@COMMENT{---------------------------------
+
