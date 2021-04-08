@@ -1,0 +1,176 @@
+/* MINCE.GBL - This is the global variables and constants for
+	MINCE, to be included in each source file. */
+
+/*	#include	<stdio.h>		*/	/* Unix only */
+/*	#include	"[1,1]std.h"	*/	/* RSX only */
+/*	#include	"term.h"		*/	/* Unix only */
+
+/*	#define	UNIX		1	*/	/* Unix only */
+/*	#define	RSX		1	*/	/* Whitesmiths C compiler for RSX */
+#define	CPM			1		/* CP/M only */
+#define	CPM68K		1		/* CP/M-68K version: ALCYON compiler */
+#define	LARGE		1		/* C mode and Save mode */ /* RPH */
+#define	TYPE_AHEAD	1		/* type ahead is detectable */
+#define	SUSER		1		/* single user systems (paging messages) */
+#ifdef LARGE
+/* extra goodies: KEYPAD editor and LISPMODE hacks - RPH */
+/* #define KEYPAD		1		/* keypad editor */ /* RPH */
+#define LISPMODE	1		/* lispmode code */
+#define FLASHER		1		/* paren flash & paren scan code */
+#define KBMACRO		1		/* keyboard macro hacks */
+#define STRIDE		1 /* is STRIDE 400 series (has RT clock and MU bios) */
+#define GENHEAD		1		/* header generating hacks */
+#define WY50		1		/* Wyse WY50 function key support */
+#define AUTOMODE	1		/* automatic processing of -*- mode hack */
+/* #define ELECTRIC	1		/* Electrify C and LISP modes */
+#endif
+
+
+	/* Universal global declarations */
+
+#ifdef CPM68K
+#include	<stdio.h>				/* ALCYON CP/M-68K supplied one */
+#endif
+
+#define	TRUE		(-1)
+#define	FALSE	0
+#define	NULL		0
+#define	INPUT	0
+#define	OUTPUT	1
+#define	UPDATE	2
+#define	HOME		0,0
+#define	FORWARD	(-1)
+#define	BACKWARD	0
+
+	/* MINCE globals */
+#define	MODEMAX	20
+#define	STRMAX	40
+#define	MAXMODES	4
+#define	BUFFSMAX	7
+#define	BUFNAMMAX	9
+
+#ifdef CPM
+#define	FILMAX	15
+#define	SWAPFNAM	"mince.swp"
+#define	SWAP1FNAM	"a:mince.swp"
+#else
+#define	FILMAX	35
+#define	INITTABS	5
+#define	PREFLINE	10
+#define	FILLINIT	65
+#define	INDENTINIT	0
+#endif
+#ifdef FLASHER
+#include "syntax.h"
+SynTab(NormSyn)
+SynTab(CSyn)
+#ifdef LISPMODE
+SynTab(LispSyn)
+#endif
+SynTab(CurSyn)
+#endif
+#ifdef ELECTRIC
+#include "electric.h"
+AbrevTab(NormAbr)
+AbrevTab(CAbr)
+#ifdef LISPMODE
+AbrevTab(LispAbr)
+#endif
+AbrevTab(CurAbr)
+#endif
+
+	int mark, arg, argp, lcol, psstart, sstart, send, cnt, tmp;
+	int altpnt, altstart, sendp, topp, divide, altbuff;
+	int (*functs[3*128])(), (*lfunct)(), fillwidth, indentcol;
+	char strarg[STRMAX], mode[MODEMAX], namearg[BUFNAMMAX];
+	int stat_col, abort, cmnd, cbuff, del_buff, tmark;
+	struct cbuffer {
+		int bbuff, bmark;
+		char bname[BUFNAMMAX], fname[FILMAX], bmodes[MAXMODES];
+		} buffs[BUFFSMAX];
+#ifdef AUTOMODE
+	struct {
+		int mtab,mfill,mindent;
+		} mvars[BUFFSMAX]; /* structure to hold mode vars */
+#endif
+#ifdef KBMACRO
+/********** keyboard macro hack ***********/
+	int remember;	/* remember flag */
+#define MAXKBMACL 1024		/* lots of space for kb macro */
+/* struct to hold keyboard macro (just like a queue) */
+	struct {
+		char *kbhead,*kbtail,*kbtop,*kbbottom,kbspace[MAXKBMACL];
+		} kbmacro;
+	int KBexecuting;	/* flag to indicating we are executing */
+	int GAbort;		/* global abort flag */
+/*********** end of keyboard macro hack ************/
+#endif
+#ifdef CPM
+	int pnt_row;
+#endif
+
+	/* TTY globals */
+#define	NUL	'\0'
+#define	BELL	'\7'
+#define	BS	'\10'
+#define	TAB	'\11'
+#define	LF	'\12'
+#define	CR	'\15'
+#define	ESC	'\33'
+#define	DEL	'\177'
+
+#ifdef CPM
+#define	NL	'\212'
+#define	ROWMAX	60
+#define	COLMAX	132
+#define	KBBUFMAX	80
+#else
+#define	NL	'\12'
+#define	ROWMAX	24
+#define	COLMAX	79
+#endif
+
+	int prow, pcol, srow, scol, tabincr, tlrow;
+	char clrcol[ROWMAX], tline[COLMAX+1];
+#ifdef CPM
+	char *lindex;
+	struct {
+		char *head, *tail, *bottom, *top, space[KBBUFMAX];
+		} kbdq;
+#endif
+
+	/* special swap file header terminal globals */
+#ifdef CPM
+#define	NOPAD	0				/* values for padp */
+#define	CHARPAD	1				/* pad with characters */
+#define	DELAYPAD	2				/* pad with wait loop */
+#define	FIRST	255
+#define	SECOND	0
+	struct termdesc {				/* 128 byte terminal descriptor */
+		char ctrlz;
+		char nrows, ncols, rowbias, colbias;
+		char rowfirstp, compp, binaryp;
+		char padp, padchar;
+		char nhclpad, ncleolpad, ncpospad, ncleowpad;
+		struct str {
+			char idx;					/* index into space */
+			char len;					/* length */
+			} hcl, cleol, cleow, cpos1, cpos2, cpos3, bell, init, deinit;
+		char strspc[72];
+
+	struct portdesc {
+		char biosp, dataport, statport, datamask, readymask, polarity;
+		} inport, outport;
+
+	char prefrow, fillinit, tabinit, indentinit, mhz;
+	int delaycnt, npages, swapbase;
+#else
+	int prefrow;
+#endif
+		} terminal;
+
+	/* spare area - patches */
+int spare[10];
+
+/* END OF MINCE.GBL - Global variable definitions for Mince. */
+

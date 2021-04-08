@@ -1,0 +1,57 @@
+    This is the code for `KMince'.  There are several submit (.sub)
+files I used to build the system on my machine.  You may need to edit
+these files for your system.  My system is setup with three disk
+drives:
+
+      A: - the system and boot disk (a floppy)
+      B: - the user disk (another floppy)
+and   E: - a RAMDISK for fast scratch space.  (I use the E: drive to
+hold commonly used programs and files, like the C compiler.)
+
+     I solved the too-long-command-line problem mentioned in the
+notes that comes with Mince for CP/M-68K, by putting all but one of
+the object files (.o) into a library with the AR68 program.  The
+submit file ADDLIB.SUB will put one or more object files into the
+library.  You need to be carefull of the order of the files - see
+MINCELIB.LST for the correct order.
+
+    The submit file CM.SUB will compile one module.  It is really
+just a slight variation of the C.SUB file supplied with CP/M-68K.
+The submit file CML.SUB will link up a copy of mince.  It is setup to
+generate an non-relocatable .68K file with a start address of $500.
+
+    You may need to change KEYPAD.C to select which type of terminal
+you are using.  Also, you will have to modify the swap file (using
+CONFIG.68K) to include the escape sequences to turn on and off the
+alternitive keypad modes for your terminal.  For most VT52 clone
+terminals the sequences are ESC-= to turn on the keypad and ESC-> to
+turn it off.  The turn on sequence should be part of the terminal
+initialize sequence and the turn off sequence should be part of the
+terminal reset sequence.  If your terminal is not covered by one the
+terminals already set up, you should be able to modify one the
+existing files to suit.  The files H19KEYS.C, VI50KEYS.C, VT100KEY.C,
+VT52KEYS.C and Z29KEYS.C do not get compiled by themselves.  One of
+them gets included into KEYPAD.C when it gets compiled.
+
+    Presently five main kinds of terminals are supported:
+
+      H19KEYS.C  - H/Z-19's
+      VI50KEYS.C - Visual 50's
+      VT100KEY.C - VT100's and look alikes (VT101, VT102, VT125, GiGi's)
+      VT52KEYS.C - VT52 clones, mainly InfoTon types
+      Z29KEYS.C  - H/Z-29's (a different flaver of VT52).
+
+Most popular smart terminals are either VT100 (ANSI) or VT52 clones.
+So, between the VT52KEYS.C and VT100KEY.C files you should not have
+alot of trouble building a KMince system.
+
+      The KMINCE.DOC file is a brief manual describing the KMince
+keypad and other features KMince provides.  All of Mince's normal
+commands and key bindings are still there.  Kmince just adds some
+extra goodies.
+
+     If you have trouble, send me a message.  My ARPANet address is
+Heller%UMass-CS@CSNet-Relay.
+
+				Robert Heller
+

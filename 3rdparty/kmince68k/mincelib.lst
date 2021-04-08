@@ -1,0 +1,14 @@
+rw-rw-rw- 0/0   9744 bindings.o
+rw-rw-rw- 0/0   9004 comm1.o
+rw-rw-rw- 0/0   7208 comm2.o
+rw-rw-rw- 0/0  13508 comm3.o
+rw-rw-rw- 0/0   6368 keypad.o
+rw-rw-rw- 0/0   4108 flasher.o
+rw-rw-rw- 0/0   5620 proghead.o
+rw-rw-rw- 0/0  14624 vbuff1.o
+rw-rw-rw- 0/0  13704 vbuff2.o
+rw-rw-rw- 0/0  17712 support.o
+rw-rw-rw- 0/0   8172 term.o
+rw-rw-rw- 0/0   2124 util.o
+rw-rw-rw- 0/0   3100 cpm68k.o
+

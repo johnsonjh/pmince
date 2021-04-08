@@ -1,0 +1,368 @@
+
+
+
+
+		     The KMince Keypad Editor		     ___ ______ ______ ______
+	    (A description of the keypad extensions to Mince)
+
+			   Robert Heller
+
+			Media Research Ltd.
+
+			211 Grantwood Drive
+
+			   Amherst, MA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		  (C) Copyright 1985, Robert Heller
+
+			  All Rights Reserved
+
+
+
+		    Preface and Acknowledgements		    _______ ___ ________________
+
+
+    KMince is a conversion from the Keymacs Keypad Editor[1], written
+by Andrew S. Cromarty and friends at the University of Massachusetts
+at Amherst as an extension to Unix Emacs.  The Keymacs Keypad Editor
+is written in MockLisp.  Since Mince does not have a MockLisp
+interpreter, KMince is written in C.  It is mostly a translation from
+the MockLisp code.
+ 
+
+
+
+			1. Introduction			_  ____________
+
+
+     This document describes the "KMince" Keypad Editor extension to
+the Mince text editor.  This is mostly a reference manual.  For a
+tutorial, see reference 1.
+
+     There is a separate manual for Mince, written by the people at
+Mark of the Unicorn.  It will be assumed that you have at least gone
+through the lesson (primer) section of the Mince manual.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    - 1 -
+
+
+			2. The Keypad			_  ___ ______
+
+
+     Most of the "smart" terminals have a numeric keypad (usually on
+the right side of the keyboard).  There are two main styles of of
+keypad layouts, which probably look like the one shown in Figure 1 or
+Figure 2, or Fig1 and Fig2 layouts for short.  (Some terminals may
+have a slightly different keyboard designs;  refer to whichever
+figure most closely resembles your terminal's keyboard.)
+
+--------------------------------------------------------------------------
+
+  +---------------+---------------+---------------+
+  |               |       ^       |               |
+  |       7       |       8       |       9       |
+  +---------------+---------------+---------------+
+  |      <--      |               |      -->      |
+  |       4       |       5       |       6       |
+  +---------------+---------------+---------------+
+  |               |       v       |               |
+  |       1       |       2       |       3       |
+  +---------------+---------------+---------------+
+  |               |               |               |
+  |       0       |       .       |     enter     |
+  +---------------+---------------+---------------+
+
+    Figure 2.1: The "Fig1" Keypad  (For H19, Z19, VT52, etc. terminals).
+
+
+  +---------------+---------------+---------------+---------------+
+  |               |               |               |               |
+  |     PF1       |     PF2       |     PF3       |     PF4       |
+  |               |               |               |               |
+  +---------------+---------------+---------------+---------------+
+  |               |               |               |               |
+  |       7       |       8       |       9       |       -       |
+  |               |               |               |               |
+  +---------------+---------------+---------------+---------------+
+  |               |               |               |               |
+  |       4       |       5       |       6       |       ,       |
+  |               |               |               |               |
+  +---------------+---------------+---------------+---------------+
+  |               |               |               |               |
+  |       1       |       2       |       3       |               |
+  |               |               |               |               |
+  +---------------+---------------+---------------+     enter     |
+  |                               |               |               |
+  |               0               |       .       |               |
+  |                               |               |               |
+  +---------------+---------------+---------------+---------------+
+
+     Figure 2.2: The "Fig2" Keypad  (For VT100, VT103, etc. terminals).
+
+
+
+
+				- 2 -
+ The Keypad
+
+     The Fig1 layout is a very regular layout:  there are 3 columns
+and four rows of same size and shape keys.  (The Fig2 layout is not
+quite as regular - there are some extra keys and some of the keys are
+misshapen.)  Four of the keys in the keypad are special:  these are
+the "Up" (8-key), "Down" (2-key), "Right" (6-key) and "Left" (4-key).
+On some terminals (such as H19's and Z19's) there are actually arrows
+printed on these keys.  Other terminals might have a set of four
+arrow keys elsewhere on the keyboard.  These keys will function just
+like the keypad keys, that is the "Up-Arrow" key will behave much
+like the 8-key on the keypad.
+
+     The keypad is set up to operate according to the chart in Figure
+3.  The function of any key in the keypad can be determined by
+combining the row function with the column function.  For example,
+the 7-key is left one character.  There are some special cases.  Up a
+word does not make sense, so the 5-key is up a page (previous page).
+Search down also does not make sense, so the period key is down a
+page (next page).  
+
+--------------------------------------------------------------------------
+
+
+                                   left   up/down  right
+                                       \     |    /
+                                        \    |   /
+                          characters -->  7  8  9
+                          words      -->  4  5  6
+                          lines      -->  1  2  3
+                          search     -->  0  . ent
+
+           Figure 2.3: The "Golden Chart" for the keypad editor.
+
+--------------------------------------------------------------------------
+
+      Other special cases (more or less) are the 1-key and 3-key.
+Left a line may not make immediate sense.  The 1-key does a beginning
+of line, that is it moves the cursor to the "left" end of the line.
+The 3-key is simular:  right a line is end of line, that is the
+"right" end of the line.
+
+      The keypad has two modes:  normal and shifted.  Only the upper
+(central for Fig2 keypad) three rows have a shifted mode.  On H19 and
+Z19 type keypads the shift function is entered with the shift keys on
+the main keyboard.  For the Fig2 type keypads, there is a "virtual"
+shift key, the comma key on the keypad.  It takes two key-strokes:
+the keypad comma key and then the "shifted" keypad key.  The shifted
+functions are destructors, that is they "destroy" or change things.
+For example a "shifted" 7-key deletes characters to the left.  The
+"shifted" 2, 5 and 8 keys do special things: shift 2 is yank from the
+kill buffer, shift 5 is set mark and shift 8 is delete region to kill
+buffer.  The "shifted" 1-key deletes to beginning of line and the
+"shifted" 3-key deletes to end of line.
+
+
+
+
+
+
+			          - 3 -
+
+
+			3. Other Features			_  _____ ________
+
+
+
+      KMince as some extra features.  These are the "-*-" feature and
+a modification of how tab columns, fill width and indentation column
+are handled.
+
+3.1 The "-*-" Feature
+
+       When you find a file (^X^F), including the initial file
+(specified on the Mince command line), KMince will look for a string
+between a set of "-*-" on the first line of the file.  This string is
+checked for mode names (C, save, fill and/or page) and/or column
+parameters (tab:n, fillw:n and/or indent:n).  It uses this
+information to setup modes and tab columns/fill width/ and indent
+column.  For example if you have a line like
+
+/* -*-c,save,tab:4,indent:4-*- KMince mode info */
+
+as the first line of a C source code file, KMince will automatically
+sets up the buffer used for this file to be in C and save modes, with
+tab columns set to 4 and the indentation column to 4.  This is very
+handy if you have lots of C files and/or enter and exit Mince often.
+In this version, ^X-i (^X-I) is bound to a function to scan for
+and act on the -*- header.
+
+3.2 The Column Parameters
+
+     The "column" parameters are the tab columns, fill width and the
+indentation column.  In regular Mince, these three parameters are
+global, that is they affect all buffers.  In KMince, these parameters
+are "bound" to each buffer, that is each buffer has its own tab
+columns, fill width and indentation column.
+
+--------------------------------------------------------
+Experimental Goodies:
+
+1) Keyboard bacros:  ^X-( is bound to a function to "remember" upto
+   1024 characters worth of Mince command sequence.  ^X-) turns this
+   "remembering" off and makes the "remembered" sequence
+   available for use.  ^X-e (and ^X-E) are bound to a function which
+   will execute this sequence.
+
+2) Program header generation:  ^X-^P is bound to a function which
+   will generate a "program header".  This header contains a mode
+   line (ie -*-...-*-) and a box comment containing the file name
+   with a short description (prompted for) and space for creation
+   and modification dates.  An option copyright notice is also
+   generated.  The user supplies a profile (PROFILE.HED or
+   A:PROFILE.HED) to get author name and copyright format.  The
+   first line of this file is the author name and the rest of the
+   file is the copyright notice text.  There are 3 (4 if LISPMODE
+   is on) modes: C (for C programs), S (for AS68 source), and
+   other (other random files).  If LISPMODE is on, there is also
+   a LISP mode.  
+				 - 4 -
+
+
+			   4. References			   _  __________
+
+
+[1] "The Keymacs Keypad Editor Primer and Reference Manual", by
+    Andrew S. Cromarty, Dept. Computer & Information Science
+    University of Massachusetts at Amherst; 1981 and 1982.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    - 5 -
+

@@ -1,0 +1,2 @@
+d:lo68 -r -u_nofloat -o mince.68k d:s.o mince.o mincelib d:time.o d:subslib.lib d:clib
+
