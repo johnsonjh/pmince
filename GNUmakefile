@@ -453,6 +453,8 @@ install: osconf mince$(OEXT) strip
 	    printf '\n%s\n' " **** Installation failed, try manually! ****"; \
 	    false; };
 
+#############################################################################
+
 hpkg: osconf version.h mince$(OEXT) strip
 	@if [ "$(OS)" != "haiku" ]; then \
 		printf '\n\n%s\n\n' \
