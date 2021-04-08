@@ -1,0 +1,184 @@
+                 Lesson 3: Reading and Writing Files
+
+      In this lesson, we introduce you to Perfect Writer's use of
+computer "files".  Your computer's filing system is similar to
+the one you or I use.  If you want to look at an old report, what
+do you do?  You pull out the file from the filing drawer and put
+it on your desk.  To find a particular spot in the report, you
+page through it on your desk.  You might change it or add
+something to it, then put it back into the file drawer.
+
+      The operations are similar on the computer system.  The
+only differences are the ways in which the "file drawers",
+"files", and "pages" work, and in the terms used.  In this sense,
+you can think of the disk drive as the filing cabinet and each of
+the flexible "floppy disks" as a removable filing drawer.  The
+unfortunate property of these disks is that they are only useful
+when put into the disk drive, which is not true of filing drawers
+and cabinets!  On each of the disks, as in each of the drawers,
+are many files.  You can see what files you have in a drawer
+either by leafing through them, or by looking at the short label
+on the front of the file drawer.  There is a label space on each
+flexible disk which is similar to the one on the whole drawer,
+but how can you find out the names on each of the files?  There
+is a computer program to do this for you.  Just try typing "DIR"
+to the computer system when you aren't using Perfect Writer, and
+it will list the names of the files.  Most files have two names,
+like "THISFILE.MSS", that is, a file name, then a dot, and then
+an extension.  The first part (the filename) can't be longer than
+eight characters, and the second part (the extension) can be up
+to three characters long.  For Perfect Writer the extension
+".MSS" (standing for ManuScript Source) is always used for
+document files.  This is a lot more limited than what you can
+write on a file folder, so you can now understand why some
+computer files seem to have such cryptic names.
+
+      What is the analogy of getting the file out and putting it
+on your desk?  To Perfect Writer, this is called "reading" a
+file.  Perfect Writer has an unusual way of manipulating it,
+though.  Just as you would probably not mark up the originals of
+a report in your file folder, Perfect Writer does not usually
+change the contents of the file on the floppy disk.  You would
+make a photocopy of your work, mark it up or change it, and then
+perhaps retype it and replace what was originally in the file
+folder.  Perfect Writer does something similar: it "reads in" a
+copy of that file, and then lets you modify that copy.  
+
+      There is a command in Perfect Writer to save the work that
+you've been doing as the original again.  This is analogous to
+putting your new work back into the file, and back into the file
+drawer.  To Perfect Writer this is known as "writing" the file. 
+
+      In Perfect Writer, the part which performs the function of
+the working desk while we manipulate the file is the "buffer". 
+Files are "read in" to the buffer, and they are "written out"
+back to the computer filing system.  The computer terminal screen
+is a sort of window into that buffer, and we can move the window
+around with the control commands you have learned in previous
+lessons.  
+
+      Here are the commands:
+
+	      C--X  C--F:      Find the file in the computer
+                               filing system and read it into the
+	                       Perfect Writer buffer.
+      
+	      C--X  C--W:      Write the file out from the Perfect
+			       Writer buffer back into the computer
+	                       filing system.
+
+      The C--X commands are a set of commands which we need to be
+certain we want to type, so that there can be few mistakes when
+using them.  Remember the "C--X C--C" command?  It has the
+possibility of letting you out of Perfect Writer without having
+saved the work you've been doing.  Therefore it's a little harder
+to type.  The easiest way to remember what the C--X means is to
+imagine that these specialized commands are part of the
+"eXtended" command set.
+
+      The "C--X C--F" command, in order to read a file, must know
+which file you want to read.  When used, it will ask, in the echo
+line (the last line on the screen), for the name of the file you
+wish to read into Perfect Writer's buffer: 
+
+      File to Find <CR>:
+
+Similar things happen with the "C--X C--W" command.  In general,
+we will want to write out the buffer back to the same file we
+read it in from, but occasionally, we will want to save it in a
+new file.  (This is particularly true of a form letter that we
+modify slightly for a particular recipient, and do not want to
+change the original for.)  After you type "C--X C--W", Perfect
+Writer will ask:
+
+      File to Write <CR>:
+
+You can again type in the name of the file into which the text is
+to be written, followed by a carriage-return.  
+
+      Since writing files back out to the same place they were
+read from is such a common operation, Perfect Writer allows you
+to avoid typing the entire file name each time you give the C--X
+C--W command.  Rather than typing out the file name, just type a
+carriage-return.  Perfect Writer will write the buffer out to the
+computer filing system under whatever name was last used in
+either a C--X C--F or C--X C--W command.  How do you know where
+it will go without always remembering the file name you last
+used?  Perfect Writer displays that file name in the "mode line". 
+It looks something like:
+
+    Perfect Writer Version 1.02 (Fill) main  A:-NAME.ME -0%-
+
+and the phrase "A:-NAME.ME" says what the default file name
+will be if we do not specify it.  (You may have noticed the "B:"
+alongside the file name.  This is due to the fact that computers,
+like people, have many filing cabinets.  Just as you would tell
+someone that a file is in the "right-hand" filing cabinet, you
+must tell the computer which disk drive to look for the file in
+or to store it in.  The computer disk drives you will be using
+are named "A", "B", etc.)
+
+      Some files get quite large.  Computer files are no
+exception.  Computer users just measure them in thousands of
+characters rather than in inches of paper.  If you had a very
+large file to look at, you would never fit each page of paper
+side-by-side on your desk so that you could see all of them at
+any instant.  Instead, you would probably keep 5 or so pages
+spread out on your desk, and keep the rest in stacks,
+occasionally removing or adding a page on a stack.
+
+      Similarly, many thousands of characters cannot all fit into
+your computer at once.  Therefore, your buffers of text may not be
+completely residing in memory at once.  Perfect Writer has a
+special file on disk (not related to the other files we've been
+talking about) which is similar to the stacks of paper you would
+keep on your desk.  As you use each new page (thousand
+characters) of the text buffer you are editing, Perfect Writer
+will pull it out of the "stack of pages" by reading it from its
+special "swap file".
+
+      If you go back to old pages or add new text to pages, they
+will generally be in memory rather than on the stack in the page
+file.  But, occasionally, the computer's memory will fill up, as
+would your desk if you kept looking at more and more pages.  So,
+occasionally, Perfect Writer must write some of its old pages
+back to disk in order to make room for new ones.
+
+      You will know this is happening by the click or buzz at the
+disk drives.  There will also be a message printed at the lower
+right of the screen" "Swapping..." which means that Perfect
+Writer is exchanging a page on disk for a page in memory.  This
+message will go away when the swap is complete.  This swapping is
+part of the virtual memory architecture used by Perfect Writer to
+allow you to edit a document that is larger than your computer's
+memory. 
+
+      Why do you need to know all this?  Well, occasionally you
+may have to wait for this page swapping to happen.  Why?  The
+computer stops listening to the terminal keyboard for a short
+time when it swaps pages.  In particular, when you are just
+beginning to work on a buffer of text which you read in via a
+C--X C--F command, pieces of the buffer will be paged in as you
+need them.  This means that C--V's will occasionally take a
+little longer than usual and produce the "Swapping..." message. 
+Once read in, though, the pages you use most (e.g. modify or go
+back to) will remain, and "page waits" will be less frequent.
+
+      If you stop using the keyboard for a little while, Perfect
+Writer may spend a little time "cleaning up" while you are idle. 
+It will swap out pages you have modified, so that any page
+swapping which is done while you are actually doing work later
+will occur a little faster.  Don't worry about this too much;
+when you start typing on the keyboard again, the intermittent
+house cleaning noises will go away.
+
+      Don't worry about trying out the commands you have learned
+in this lesson.  In the next lesson, you will get a chance to try
+out "C--X  C--R".  If you want, go to lesson4 by entering:
+
+	C--X  C--R 
+
+and answering "lesson4" when asked, 'File to Read <CR>:'.
+n via a
+C--X C--F command, pieces of the buffer will be paged in as you
+need them.  This means that C--V's will occ

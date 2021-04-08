@@ -1,0 +1,103 @@
+		 LEARNING TO USE PERFECT WRITER
+
+	You are looking at the TEACHING DISK that we've designed
+to teach you how to use Perfect Writer through several self-study
+lessons.  This TEACHING DISK is designed for the person who has no
+previous experience with word processing.
+	Perfect Writer commands are generally given by holding
+the CONTROL key (sometimes labelled CTRL or CTL) or hitting the
+ESCAPE key (sometimes labelled ESC or ALT).  Rather than write
+out ESCAPE or CONTROL each time we want you to give a command,
+we'll use the following abbreviations:
+
+ C--<char>      means hold the CONTROL key down and type a character.
+ M--<char>      means type the ESCAPE key, release it, then type the
+               character. (The "M" stands for "Meta-command"; ESC is a
+               substitute for the imaginary "meta-shift" key.)
+Thus, C--F would be hold the control key and type F.  You will often be
+asked to type characters to see how they work.
+
+>> Now type C--V (View next screen) to move to the next screen. (go
+   ahead, do it by depressing the control key and V together). From
+   now on, you'll be expected to do this whenever you finish reading
+   the screen.
+
+Note that there is an overlap when going from screen to screen; this
+   provides some continuity when moving through the file.
+
+The first thing that you need to know is how to move around from place
+   to place in the file.  You already know how to move forward a
+   screen, with C--V.  To move backwards a screen, type C--Z.
+
+Try typing C--Z and then C--V to move back and forth a few times.
+
+SUMMARY
+-------
+The following commands are useful for viewing screenfuls:
+
+        C--V     Move forward one screenful
+        C--Z     Move backward one screenful
+        C--L     'Refresh' the current screen.
+
+Try C--L now.  (You'll notice that it centers the screen where the
+   cursor currently is.)
+
+
+	Perfect Writer is an easy-to-use word processor.  You
+should be able to teach yourself how to use it by reading through
+the following seven lessons.  The lessons are designed to be read
+by you at your own pace and convenience while sitting at a
+computer.  The contents of the lessons are as follows:
+
+          Lesson 1: Getting Started
+	            This lesson shows you how to type in text,		   
+		    the commands used to move the cursor around         
+                    and delete and insert text.
+
+          Lesson 2: Moving Around Faster
+                    This lesson introduces commands for moving
+		    around the text faster.
+
+          Lesson 3: Reading and Writing Files
+                    This lesson explains the computer file system
+                    and how Perfect Writer uses it to store text.
+		    Commands for reading and writing files are
+		    demonstrated.  At this point, the user will
+		    be able to use Perfect Writer effectively for
+		    simple document preparation.
+
+          Lesson 4: Searching
+                    This lesson introduces the search and
+		    replace commands.
+
+          Lesson 5: Copying and Moving Text 
+		    This lesson introduces the delete and restore
+		    commands.  Several examples of text movement
+		    are provided.
+
+          Lesson 6: Word Processing Commands
+                    This lesson explains the command used for
+                    "filling" paragraphs of text, and the commands
+                    used to set parameters which control this 
+                    operation.  Commands which change the case of
+                    words are also explained.
+
+          Lesson 7: Multiple Files and Dual Window Display
+                    This lesson shows how to use the dual window
+		    display and multiple editing buffers.
+
+	When you are finished with this introduction to the
+Teaching Disk, enter: 
+			C--X  C--R 
+
+and answer 'lesson1' when asked, "File to Read <CR>:"   This
+will take you directly to Lesson 1.  If you want to exit and come
+back later, then enter:
+			C--X  C--C
+
+When you wish to restart with Lesson 1, then simply enter:
+
+			A>pw lesson1 <CR>
+from CP/M.t 
+		    This lesson introduces the delete and restore
+		    commands.  Several examples of text

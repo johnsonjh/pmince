@@ -1,0 +1,621 @@
+
+       []============================================[]
+       []                LEARN  CP/M                 []
+       []============================================[]
+
+
+
+
+	Your computer is like a video tape machine.  For it to do
+something interesting you have to run programs on it.  The
+programs used by your computer are called "software".  To run the
+software programs on your computer you have to know how to
+operate your computer (just as to run video programs on your
+video tape machine would require that you know how to operate
+it).  CP/M is the "operating system" of your computer.  When you
+know how to use it, you will know how to operate your computer. 
+Many people think that computers are difficult to use, but as you
+will soon learn, this is not true.  In fact, using CP/M (which
+stands for Control Program Monitor) makes operating your computer
+very easy.
+
+
+	The CP/M operating system lets you load programs into
+your computer and run them.  It serves as the control panel on
+your computer.  The CP/M operating system lets you control what
+happens with your computer's disk drives where programs, data,
+and other information are stored.  With CP/M you can copy disks,
+erase and rename files, list the contents of disks, and much
+more.  
+
+
+.................................................................
+
+In a nutshell -->  CP/M lets you operate your computer
+
+.................................................................
+
+
+
+
+
+
+
+
+
+What does CP/M look like?
+
+	The CP/M operating system is supplied to you on a diskette. 
+In order to use it you need to put the CP/M system diskette in disk
+drive A (the main disk drive).  CP/M identifies itself to you by
+the command-prompt:
+
+A>
+
+which appears on the screen when you insert the CP/M operating
+system diskette.  This prompt indicates that you have turned on
+CP/M and are logged onto drive "A" of your computer system.  The
+CP/M operating system is ready to receive your commands.
+
+
+
+
+
+
+What can you do with CP/M?
+
+	In this lesson we will present the major CP/M commands
+which you will find useful in using your computer.  On your CP/M
+diskette there are several "utility" programs stored in separate
+files as well as a "system" where several command programs that
+do not have file names but which are part of the CP/M system are
+kept.  The "system" commands which we will learn are:
+.................................................................
+.--> In a nutshell, the commands you need to know are:          .
+_________________________________________________________________
+.                                                               .
+. DIR     Provides a DIRectory of files on a diskette.          .
+. TYPE    TYPEs the contents of a document file on the screen.  .
+. ERA     ERAses the file specified.                            .
+. REN     RENames the file specified.                           .
+.................................................................
+
+
+
+
+
+..........................................................................
+.-->  The "utility" programs you need to know are:                       .
+__________________________________________________________________________
+.                                                                        .
+STAT    Provides STATistics on the space available on a diskette.        .
+PIP     Lets you copy files on a diskette.                               .
+COPY    Lets you COPY a diskette.                                        .
+FORMAT  Lets you FORMAT a diskette.                                      .
+SYSGEN  Copies the CP/M "system" to a specified diskette {SYStem GENerator}.
+...........................................................................
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------
+.................................................................
+	
+DIR (DIRectory)
+
+	Whats on a diskette?  To find out what files are on a
+diskette you use the DIR command.  Simply enter:
+
+A>dir <CR>        {Note: the "<CR>" means you need to press the
+                  ENTER or Carriage Return key after typing the 
+                  command}
+
+This command causes the names of all files located on a diskette to be
+displayed.  For example, the command:
+
+A>dir  <CR>
+
+will produce a listing of all files on the diskette in disk drive A.
+
+
+A>dir
+A: FORMAT   COM : COPY     COM : SYSGEN   COM : STAT     COM
+A: PIP      COM : ED       COM : SUBMIT   COM : 
+
+To display the files on the diskette in drive B, you would enter
+the command:
+
+A>dir b:  <CR>
+
+If the Perfect Writer program diskette were on drive B: the
+directory would look like:
+
+B>dir b:
+B: MENU     COM : PW       COM : PF       COM : PP       COM
+B: PF       DAT : PWCONFIG COM : PFCONFIG COM : WRTBIND  COM
+B: PWBIND   COM : PW       SYM : 
+
+If you want to have the directory printed, use the command form:
+A>dir b:  CONTROL--P  <CR>
+
+
+
+.................................................................
+-----------------------------------------------------------------
+
+EXECUTE PROGRAM
+
+	To run a program in CP/M you only need to type the
+filename of the command program (the COM extension to the
+filenames in the directories above indicate the file is a
+"COMmand" program and can be executed by typing its filename
+without the "COM" extension).  For example, to run Perfect
+Writer would require that you enter the filename of the program.  
+
+	The CP/M command you use first in working with Perfect
+Writer is the "MENU.COM" program."  The command form is:
+
+A>menu  <CR>
+
+That is, following the CP/M command-prompt "A>", type "menu" (for
+the Perfect Writer 'menu' program), followed by a carriage return. 
+CP/M transfers the Perfect Writer menu program into machine
+memory and surrenders system control to it.  From this point you
+have left CP/M and would now be operating within the Perfect
+Writer word processor.  The Perfect Writer menu program allows
+you to exit directly to CP/M when you have finished with your
+word processing work.  In addition, the Perfect Writer word
+processor allows you to both rename and erase a file.  These
+tasks can also be accomplished with CP/M system commands.
+
+
+
+
+
+
+
+
+
+.................................................................
+-----------------------------------------------------------------
+REN (Rename)
+
+	REN provides a quick and easy way of changing the name of
+a file.  For example, using this command you could change the
+name of the file located on the diskette in disk drive A called
+"oldname.mss" to "newname.mss."
+
+
+A>ren newname.mss = oldname.mss  <CR>
+             ^             ^
+      replacement    name to be replaced
+
+
+Note that in the above command the old [or original] file name is
+placed to the right of the equal sign, and the new name is placed
+to the left.  Following a name change, only the new (or
+replacement) file name will appear on the disk directory.
+
+
+
+
+
+
+	To change the name of a file located on the diskette in
+drive B, use the command form:
+
+
+A>ren b:newname.mss = b:oldname.mss  <CR>
+
+Note that we needed to specify the disk drive the where the file
+was located with the prefix "b:".  This format for specifying a
+file (attaching a prefix identifying the drive where it is
+located) is used with all CP/M commands.
+
+
+
+
+
+
+
+.................................................................
+-----------------------------------------------------------------
+
+ERA (Erase)
+
+	You will often want to free-up diskette space by deleting
+old, unwanted files.  The CP/M command to do this is ERA.  For
+example, the command:
+
+A>era b:thisfile.mss  <CR>
+
+results in "thisfile.mss" on the diskette in drive B to be
+erased.  Clearly, you will want to use this command cautiously.
+ERA can also erase groups of files.  For example, the command
+
+A>era *.mss  <CR>
+
+causes all files on the diskette in drive A with names ending in
+'mss' to be erased.  The asterick "*" is used as a wild card to
+represent everything. 
+
+
+
+ Finally, to erase all files on a disk, use the command form:
+
+
+A>era *.*  <CR>
+
+
+Before erasing all the files on the diskette, CP/M will ask:
+
+
+		Erase all files (Y/N)?
+
+This confirmation is requested to insure that you are aware that
+you will erase all the files on the diskette.  Since this action
+is so dramatic in its results, CP/M tries to provide you with
+protection.
+ 
+
+
+.................................................................
+-----------------------------------------------------------------
+
+TYPE (Display File)
+
+	TYPE allows you to quickly inspect a document file (by
+type-ing it) without having to enter Perfect Writer.  For
+example, the command:
+
+A>type thisfile.mss  <CR>
+
+causes the contents of "thisfile.mss", which is located on drive
+A, to be scrolled across the screen.  To temporarily halt the
+scroll, type:
+		   CONTROL--S
+
+Hit any key to continue.  To end the display, type:
+
+			   CONTROL--C
+
+
+______________________________________________________________________
+
+......................................................................
+
+		      CP/M COMMAND PROGRAMS
+	       ...................................
+
+
+	Your computer has limited disk storage which you need to
+keep track of.  In order to effectively organize and store
+programs and data you need to have complete statistics on what
+files and space is occupied on each diskette.  The CP/M command
+program that provides you with this information is "STAT".
+
+STAT (STATistics)
+
+	The STAT command displays the vital 'statistics' of a
+diskette, that is, how storage space has been allocated among
+files, and how much free storage space remains on a given
+diskette.  For example, the command:
+
+
+ A>stat  <CR>
+
+
+causes CP/M to examine the diskette in drive A and respond with
+the message, for example:
+
+	      A:R/W, SPACE : 20k
+
+
+indicating that on the diskette in drive A 20K bytes of free
+storage remain (this would be roughly equivalent to 15 or 20
+pages of double spaced text.  As well, this space is designated
+"read-write" (R/W), meaning you can read or write to it (in
+contrast to R/O which indicates "read only".  A diskette would be
+read only if it had a tape on its write protect notch.).
+
+	To examine a diskette on drive B, type:
+
+
+			A>stat b:  <CR>
+
+
+CP/M will respond with the message:
+
+
+		       B: R/W, SPACE: 142K
+
+
+indicating that available "read-write" space totals 142K bytes.
+
+	STAT will display how much space a particular file
+occupies.  The Command form is:
+
+
+		 A>stat b:thisfile.mss  <CR>
+
+CP/M will respond with (for example):
+
+RECS   BYTS   EX   ACC   D   FILENAME.TYPE
+ 7      4K    1    R/W   B    THISFILE.MSS
+
+In this display:
+
+	"RECS"    indicates the number of 128 byte records used
+		  by the file.
+	"BYTS"    means the length of the file in bytes.
+	"EX"      indicates the number of 'logical extents' taken
+		  up by the file.  (A logical extent consists of
+		  16K bytes of disk space.)
+	"ACC"     stands for the "accessibility of the
+		  file--whether it is 'read-only' or 'read-write'".
+	"D"	  is the drive name.
+
+STAT will also display statistics of any identifiable group of
+files.  For example, the command
+
+
+		      A>stat *.com  <CR>
+
+
+will display the amount of space occupied by all the files on
+drive A whose names have the extension "com"--e.g., stat.com,
+pip.com, pw.com, etc.
+
+	Finally, STAT will display the status of all files on a
+diskette.  Use the command form:
+
+
+		       A>stat *.*  <CR>
+
+
+STAT will respond with a display like this:
+{Again, note the use of '*' as a wild card.}
+
+
+Recs   Bytes  Ext Acc
+ 171    22k    2  R/W A:MENU.COM
+ 268    34k    3  R/W A:PW.COM
+  41     6k    1  R/W A:PW.HLP
+ 520    66k    5  R/W A:PW.SWP
+
+
+
+
+.................................................................
+-----------------------------------------------------------------
+
+PIP (File Copying)
+
+	PIP, or 'Peripheral Interchange Program', is the CP/M
+utility program used for copying individual files and programs
+from one location to another. 
+
+	To copy a file from one diskette to another, use the
+command form:
+
+                 A>pip b: = a:thisfile.mss  <CR>
+                       ---   --------------
+                        ^           ^
+               {destination}      {source} 
+
+NOTE:  Disk drive B: is the destination and disk drive A: is the
+source.  Also note that the file name didn't have to be repeated
+since it remained the same at its destination.
+ 
+
+Here, PIP is instructed to copy  "THISFILE.MSS", located on drive
+A to drive B.  Note that, as with the REN command, the
+destination (drive B) is placed to the left of the equals sign,
+while the source (drive A) is placed to the right.
+
+Filenames can be changed during copying, as in this command:
+
+    A>pip b:thatfile.mss = a:thisfile.mss  <CR>
+
+	Here PIP copies "thisfile.mss" on drive A to drive B,
+simultaneously changing its name to "THATFILE.MSS".  Two copies
+of the same file now exist, each with a different name.  To copy
+an entire disk, use the command form:
+
+    A>pip b:=a:*.*  <CR>
+
+PIP will copy the entire contents of the diskette on drive A to
+the diskette on drive B, leaving the contents of drive A
+untouched.  (Again, note the use of the '*' as a wild card).
+
+	When executing this copy routine, it is best to use an
+empty diskette as the destination, since there must be enough
+space to receive the material being transferred.  In addition,
+when copying an entire diskette it will probably be faster to use
+the COPY utility described below.
+
+	Final Note:  Though PIP can be used to copy all files and
+programs on a diskette, it will not copy the CP/M system itself.  To
+transfer the CP/M system, use SYSGEN (see below).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FORMAT  (FORMATs a blank diskette)
+
+	When you open a box of new diskettes the first thing you
+have to do is to format the new diskettes so that they can be
+used on your computer.  This is simply accomplished by entering
+the command:
+                 A>format
+
+CP/M will respond with a message identifying the FORMAT utility
+and asking:
+
+           Format disk in which drive:
+
+You simply enter the drive name where the blank disk has been
+inserted and press the carriage return key.
+
+CP/M will respond letting you know that it is formatting....
+
+When the formatting process is complete, you can format another
+diskette or exit the FORMAT utility and return to CP/M.  
+
+
+COPY (COPYing a diskette)
+
+	It is important to get in the habit of making backup
+copies of your important diskettes.  Usually the easiest way to
+do this is by using the COPY utility program.  All you need to do
+is to have the main CP/M system diskette in drive A and enter:
+
+
+	A>copy
+
+	The COPY program varies among the different versions of
+the CP/M operating system used by different computers.  You will
+need to look at the exact way your system COPY utility works. 
+Typically, the utility program will ask you the source disk drive
+(where you will have the disk you want copied) and the
+destination disk drive (where you will have an empty 'formatted'
+diskette).  
+ 
+
+
+SYSGEN (CP/M SYStem GENerator)
+
+	SYSGEN is a special program used to copy the CP/M
+operating system from one diskette to another, a task that PIP
+does not perform.  Because this is the case, when making backup
+disks of Perfect Writer you may want to use both PIP and SYSGEN
+together, to insure that the resulting backup diskette can be
+used to start-up (or boot-up) your computer system diskette.
+
+	The typical command routine for SYSGEN is as follows:
+
+
+     Type:  A>sysgen  <CR>
+
+
+	This calls up the SYSGEN program, which, when loaded and
+ready to execute commands, responds with:
+
+			 SYSGEN VER X.X
+
+	    SOURCE DRIVE NAME (OR RETURN TO SKIP)  A.
+
+Here SYSGEN identifies itself (i.e., "SYSGEN VERSION x.x") and
+asks for the name of the "source drive" from which the CP/M
+program is to be copied.  For this example, drive 'A' has been
+typed.  SYSGEN responds with:
+
+		  SOURCE ON A THEN TYPE RETURN
+
+This command-prompt requests that you put the diskette containing
+CP/M onto drive A (or onto whatever drive you have previously
+specified will be the "source").  When you have completed this,
+type <CR>.  SYSGEN responds with:
+
+			FUNCTION COMPLETE
+
+which means that SYSGEN has copied the CP/M "system" from the
+source diskette to machine memory.  It is now ready to transfer
+it to whatever new diskette you specify.  It asks you for the
+"destination":
+
+	 DESTINATION DRIVE NAME:  b
+
+For this example, drive 'B' has been typed.  SYSGEN responds:
+
+		DESTINATION ON B THEN TYPE RETURN
+
+Again, this command-prompt allows you time to insert a
+destination diskette on drive B, if you have not already done so. 
+Then type <CR>.  SYSGEN now copies the CP/M "system" from machine
+memory to the destination diskette on drive B, displaying the
+message:
+
+			FUNCTION COMPLETE
+
+followed immediately by:
+
+	 DESTINATION DRIVE NAME (OR RETURN TO REBOOT).
+
+meaning that SYSGEN is ready to repeat the copying process again,
+if you wish.  To terminate the copying process hit <CR>.  SYSGEN
+returns you to CP/M control:
+
+       A>
+
+
+
+LOG (or transfer to another drive)
+
+	There will be times when you wish to 'log' to another
+drive (for example, to initialize a diskette that you have just
+put in a disk drive).  To accomplish this, type:
+
+
+	  A>b:  <CR>
+
+
+CP/M logs you to drive 'B', simultaneously changing the
+command-prompt to:
+
+          B>
+
+To return to A, type:
+
+	  B>a:  <CR>
+
+.................................................................
+
+Control--C   (Initializing a disk)
+
+	When changing or adding diskettes it is important to inform
+the CP/M system, through a process called 'initializing'', that a
+new or different diskette is now being used.  For example, to
+initialize a new diskette that has just been placed on drive B, log
+to drive B by typing:
+
+
+	  A>b:  <CR>
+
+
+CP/M switches you to drive B:
+
+
+          B>
+
+
+Tell CP/M that a new, or different diskette has been inserted on
+drive B by typing:
+
+	CONTROL--C  <CR>
+         {while holding down the Control key, press "C"}
+
+Log back to drive A:
+
+
+	  B>a:   <CR>	
+
+*****   THAT'S  ALL  THERE  IS  TO  USING  CP/M  *****g' to another
+drive (for example, to initialize a diskette that y

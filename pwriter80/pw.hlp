@@ -1,0 +1,111 @@
+HELP DIRECTORY   ESC..{number from below} then ESC..V
+
+  1  MOVING THE CURSOR            7  UTILITIES
+  3  DELETE COMMANDS              8  INDENTATION
+  4  SEARCHING                    9  MODE SELECTION
+  5  FILE COMMANDS               10  CAPITALIZATION
+  6  BUFFER COMMANDS             10  REPEAT COMMAND
+  6  MULTIPLE WINDOWS            11  COPYING and MOVING
+               'ESC..' indicates press and release the ESC key 
+                 'C-'  indicates press and hold the Control key
+
+<C-X 1 Quit Help; ESC..V Next Screen; ESC..9 ESC..Z Top of Menu>
+
+=================================================================
+MOVING THE CURSOR
+   C-F Forward Character       C-B Backward Character
+ESC..F Forward Word         ESC..B Backward Word
+   C-A Front of Line           C-E End of Line
+ESC..A Front of Sentence    ESC..E End of Sentence
+   C-P Previous Line           C-N Next Line
+ESC..P Front of Paragraph   ESC..N End of Paragraph
+   C-Z Scroll Up               C-V Scroll Down
+ESC..< Front of Document    ESC..> End of Document
+
+<C-X 1 Quit Help; ESC..V Next Screen; ESC..9 ESC..Z Top of Menu>               =================================================================
+DELETE COMMANDS                      C-Y Yankback Deletion
+ <DEL> Previous Character     ESC..<DEL> Previous Word
+   C-D Next Character           ESC..D   Next Word
+   C-K To End of Line           ESC..C-K Entire Line
+ESC..K Sentence Forward       ESC..H C-W Paragraph
+TO DELETE REGION  1. At Front enter C-@ to Set Mark
+                  2. Move Cursor to End of Region and type C-W
+
+<C-X 1 Quit Help; ESC..V Next Screen; ESC..9 ESC..Z Top of Menu>               ==================================================================
+SEARCHING    C-S Forward Search      C-R Reverse Search
+  ESC..R Search & Replace
+ESC..C-R Search & Replace with Query
+        C-G Cancel                . Exit to Entry Point
+          ! Replace All           , Replace & Query Again
+          Y Replace & Continue    N No Replacement & Continue
+
+<C-X 1 Quit Help; ESC..V Next Screen; ESC..9 ESC..Z Top of Menu>               =================================================================
+
+FILE COMMANDS
+C-X C-R Read File                 C-X C-F Find File
+C-X C-S Save File                 C-X C-W Write File
+ 
+
+
+BUFFER COMMANDS
+C-X C-B Buffer Directory          C-X C-K Delete Buffer
+C-X C-B   Switch Buffers
+MULTIPLE WINDOW DISPLAY
+C-X C-2 Two Windows                 C-X 1 One Window
+C-X C-O Other Window                C-X ^ Grow Window
+
+<C-X 1 Quit Help; ESC..V Next Help Screen; ESC..Z Previous Help Screen>        =========================================================================
+UTILITIES
+     C-T Transpose Characters     ESC..T Transpose Words
+   C-X = Where am I              C-X C-C Quit
+ ESC..Q  Reform Paragraph            C-G "Go Back" or Cancel
+ESC..C-W Turn On "+"             C-X C-X Swap Point and Mark
+    C-Y  Yankback                    C-L Refresh Screen
+ ESC..S  Center Line                 C-Q Quote Entry
+  C-X S  Call Speller             ESC..? Call Help File
+
+<C-X 1 Quit Help; ESC..V Next Screen; ESC..9 ESC..Z Top of Menu>               ==================================================================
+INDENTATION
+C-X . Set Indent Column    C-X F Fill Column Setting
+C-X <TAB> Set Tab            C-O Open Line  
+ESC..J Open Subsequent Indented Line Same as Current
+ESC..O Open Leading Indented Line Same as Current
+
+<C-X 1 Quit Help; ESC..V Next Screen; ESC..12 ESC..Z Top of Menu>              =================================================================
+MODE SELECTION  {C-X M  Add Mode        C-X <CR>  Delete Mode}
+NORMAL     Words do not wrap.
+SAVE       Automatically saves file after every 512 charcters.
+FILL       Turns on word wrap (automatic carraige return).
+VIEW       Allows viewing file without insertion and deletion.
+OVERWRITE  Editing commands overwrite and cursor moves vertically.
+SPELL      Allows for correction of misspelled words.
+
+CAPITALIZATION
+ESC..U Uppercase Word       ESC..L Lowercase Word
+ESC..C Capitalize Word   
+REPEAT COMMAND
+ESC..{digit} repeats the command that follows by {digit}
+
+<C-X 1 Quit Help; ESC..V Next Screen; ESC..12 ESC..Z Top of Menu>              ===================================================================
+COPYING & MOVING
+Copy Region  1. With the cursor at front of region to be copied enter:
+                ESC..<SPACE BAR>   {echo line responds "Mark Set"}
+             2. Move cursor to end of region to be copied and enter:
+                ESC..W  {"+" sign appears in mode line} 
+             3. Position cursor at destination and type: C-Y
+Delete Region:  Complete steps 1 and 2 above and then enter: C-W
+Write Region:   Complete steps 1 and 2 above and then enter:
+               C-X R {echo line asks for file to write region to}
+Insert File:    Enter C-X I  {echo line asks for file to insert}
+
+<C-X 1 Quit Help; ESC..V Next Screen; ESC..12 ESC..Z Top of Menu>              ===================================================================
+(C) 1982 Perfect Software, Inc. All rights reserved.
+
+
+
+
+
+
+t} repeats the command that follows by {digit}
+
+<C-X

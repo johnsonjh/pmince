@@ -1,0 +1,89 @@
+		       Lesson 4: Searching
+
+      The first command we will learn in this lesson is the
+"search" command, "C--S".  Suppose someone has given you a draft
+for corrections, and somewhere in the middle has marked a phrase
+to be changed.  It's easy enough to see it on paper, because the
+place is marked in red ink or the like.  But it requires extra
+work to find it on the computer.
+
+      Certainly we could scan through the file looking for the
+marked place using C--V's, but it might take a while. Instead, we
+can use the computer to search through the file, looking for the
+proper place.
+
+	(You might want to look back at the paper copy of this
+lesson for just a little while now, since C--V's will not work
+while we're in the middle of a search.)  Enter a C--V now.  Try
+the search command now.  Type:
+
+      C--S
+
+Perfect Writer will respond to the C--S by printing "Search for
+<ESC>:" in the echo line at the bottom of the screen.  Now type
+in the word:
+
+		      search
+
+You will see it echoed at the bottom of the screen.  After you
+have entered the word or string of words to search for, type the
+Escape key.  This tells Perfect Writer to begin searching.
+
+      A forward search begins at the character the cursor is on,
+continues until the searched-for item is found, and when it is,
+positions the cursor just after it.  So, when you hit the Escape
+key, you should have seen the cursor jump to one of the
+occurrences of the word "search" in this lesson.  It should still
+be there now, unless you've had to type C--V's to read more. If
+so, try it again.  Type:
+
+      C--S   search  [Escape]
+
+      Now just try typing:
+
+      C--S  [Escape]
+
+That is, do not type in any character string (word or words) to
+be searched for; just hit the Escape key right after the C--S. 
+You should notice the cursor jump to the next occurrence of the
+word "search".  When you do not give the C--S command a new
+character string to look for, it searches for whatever you told
+it last time.
+
+      What happens if there is no character string exactly like
+the one you type for C--S?  Try it and see.  Do a search for
+a misspelled word.  That is, do a search for "Control" but end it
+with "el".  If there is no exact match of the word between the
+cursor and the end of the text, as you see, Perfect Writer will
+cause the terminal to beep and will print the phrase "Not Found"
+at the right of the echo line.  The cursor will then stop at the
+closest match.
+
+      As you may have observed from the action of the search
+command, it is a forward search.  In addition,  there is a
+"backward" search as well.  It is used to search backwards in the
+text from the current cursor position.  The command is called
+"Reverse search for [ESC]", and is performed by C--R.  All
+of the features of C--R are identical to C--S, except
+that, since it searches through the text in reverse, it leaves
+the cursor before the closest item that matches the string,
+rather than after it.  Notice that the character string to be
+searched for is saved and is the same one for both C--R and
+C--S.  So, you may find yourself typing "C--S", a
+string, and the Escape, and then, if you hear a beep, typing
+"C--R Escape" because you know the string is in the text
+somewhere.
+
+      Before leaving this Lesson experiment with the search
+command.  If you want to continue with the next lesson then
+enter:
+	C--X C--F  lesson5.mss
+
+Otherwise exit Perfect Writer by typing:
+
+	C--X C--C
+
+and answer yes to the "Abandon Modified Buffers?" question.  Do
+not save your modifications.
+earch.  In addition,  there is a
+"backward" search as well.  It is used to search backwards 

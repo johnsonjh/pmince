@@ -1,0 +1,155 @@
+                  Lesson 6: Text Processing Commands
+
+        This lesson introduces commands which operate upon words,
+sentences, and paragraphs.  For this lesson you should have some
+text to play around with, and it should have a few paragraphs. 
+The text of this lesson is an ideal example, but you may want to
+use some text that you have been working on and are familiar
+with.  Read the file into Perfect Writer (after you've entered
+the editor) with C--X C--R.  (If you decide you want to use this
+lesson text, read in "lesson6".)
+
+        The first three commands we will learn are M--U, M--L,
+and M--C.  All three work on words.  M--U stands for "Uppercase
+word".  M--L stands for "Lowercase word".  M--C stands for
+"Capitalize word".  Try each of these on some words.    For
+example, if you had the word "Macpherson" and positioned the
+cursor on the "p", an M--C would  produce "MacPherson", an M--L
+would leave the word unchanged, and an M--U would create
+"MacPHERSON".  The word casing commands would have left the
+cursor on the space following the word.  
+
+    	Another set of useful commands allow you to transpose
+characters or words.  Often typing mistakes result in characters
+typed in the wrong order, such as "tpye" instead of "type".  To
+correct this simply place the cursor on the second of the
+transposed characters and enter C--T.  Try this now on the 
+"tpye" example.  You can also correct transposed words with the
+M--T command.  Practice this command on text this.  Place the
+cursor between "text this" and enter M--T.  The result will
+be "this text" with the cursor at the end of "text".
+
+        The next command we will learn deals with sentences.  It
+is M--K, the "Delete sentence" (or "Kill sentance) command.  M--K
+is similar to C--K; it saves what it kills in case you want to do
+a C--Y later.  Also, just as a C--K typed in the middle of a line
+only kills forward to the end of the line, an M--K, if typed in
+the middle of a sentence, will only kill from that point to the
+end of the sentence.  (If you are in the middle of a sentence and
+want to kill it all, beginning to end, type M--A (beginning of
+sentence, learned in Lesson 2) then M--K.)
+
+        M--K can be fooled by abbreviations because they have
+periods in them and hence look just like ends of sentences.  But
+better too little deleted than too much.  If M--K ever stops
+before you want it to, just type it again, and the "rest" of the
+sentence will disappear.  Try a few M--K's and then a Control
+Y to restore it all.  You may notice that the last M--K will
+not delete the two spaces after sentence punctuation.  It truly
+only deletes from where the cursor is to the next end-of-sentence
+which follows it.  You may have to clean up the extra spaces
+manually.
+
+        The rest of the commands we will learn about in this
+lesson deal with entire paragraphs of text.  The two simplest
+commands are M--P and M--N.  They move to the beginning and end,
+respectively, of whatever paragraph you are in.  (You can
+remember these commands because they look very similar to M--<
+and M-->, which we learned in Lesson 2.)  If you are inbetween
+two paragraphs and not really "in" either one, M--P will move to
+the beginning of the preceding paragraph and Escape N will move
+to the end of the following one.
+
+        Try these a few times, at various places in the text. You
+may notice the cursor stop in places you didn't think were
+paragraphs, for example in the middle of lists or in front of
+indented examples.  So, what makes a paragraph?  As far as these
+and all other Perfect Writer paragraph commands are concerned, a
+paragraph begins:
+
+	(1) A blank line.
+
+	(2) A line started by hitting the TAB key.
+
+        (3) A line started with a commercial at-sign ("@@").  This
+            is for compatibility with Perfect Writers "Document
+            design" commands.
+
+        Another command for dealing with paragraphs of text is
+M--Q.  M--Q "fills" entire paragraphs of text, rearranging words
+and lines so that the right-hand margin is consistent.  It allows
+you to keep the text neat.  When modifying a previously existing
+paragraph you may add or delete words without worrying about
+existing margins, because M--Q can fix them up when you're done.
+
+        Try filling a few paragraphs.  (To make M--Q work on a
+particular paragraph, position the cursor anywhere in it, then
+type the M--Q.)  If M--Q doesn't do anything to the text, then
+the paragraphs are already as well filled as they can be.  Try
+inserting some extra text into a line and doing another M--Q.  If
+you notice M--Q joining any paragraphs together, this is because
+they were not separated properly.  M--Q uses the same
+paragraphing rules as M--P and Escape N do.  If you want to make
+certain of how much text you are about to fill with M--Q, you can
+check to see where the edges are by tpying M--P, then M--N, then
+(if you're satisfied that the boundaries are correct) M--Q.
+
+        Of course, no harm is done if M--Q joins two groups of
+text which you desired as separate paragraphs.  You can easily
+position yourself to where you want the new paragraph to occur
+and insert the proper separator (either a blank line or a leading
+tab).  Then just M--Q the second new paragraph.  Similarly, to
+join and refill two paragraphs, merely delete the separator
+characters and use M--Q.  This can be particularly useful for
+modifying memoranda, manuals, or legal documents, where text is
+frequently repositioned to change paragraph structure and
+coherence.
+
+        You may have wondered how M--Q knows where the right
+margin is supposed to be.  There is a default margin column,
+which you can set yourself if you choose.  The command to do this
+is "C--X F".  That is, type a C--X, and then an "F".  (This
+command stands for "Fill column".)
+
+        There are two ways to use C--X F.  One is with a
+universal repeat.  Type:
+
+        C--U 70 C--X F
+
+and you will see a message in the echo line saying "Fill Column =
+70".  Try setting the fill column to something between 75 and 80
+and do an M--Q.  The other way to set the fill column is "by
+eye". Move the cursor to somewhere in the middle of a line, and
+type C--X F without a repeat count.  You will see a new fill
+column setting appear in the echo line.  Type an M--Q again and
+notice where the new right margin is.  If you enter C--X F and
+repeat with C--U, it will set the fill column to that number.  If
+you do not, it will set the fill column to wherever the cursor is
+at the time.
+
+        Another useful command is "C--X ." (That is, a C--X,
+followed by a period.)  This command sets the paragraph
+indentation column, and is used to make an entire paragraph be
+indented away from the left edge of the screen.  This command is
+analogous to setting the left margin on a typewriter, but this
+margin is used only by the Text-filling commands.  Type:
+
+        C--U 10 C--X .
+
+and you will see the message "Indent Column = 10" appear in the
+echo line.  Type an M--Q and look at the results.
+
+        The "C--X ." command is useful for making narrower
+paragraphs, perhaps for example text or quotes.  To make one,
+make the indent column larger and the fill column smaller, then
+type the text and fill it with M--Q.  Then, return the fill and
+indent columns to their original positions.  (The standard
+settings are usually set by "C--U 0 C--X ." and "C--U 65 C--X
+F".)
+
+	If you want to continue with the next Teaching Disk,
+select option  E  from the Main Selection Menu and enter
+"lesson7" when asked the name of file to edit.  Use the C--X 
+C--C  command to exit.
+riod.)  This command sets the paragraph
+indentation column, and is used to make an enti

@@ -1,0 +1,222 @@
+                    Lesson 2: Moving Around Faster
+
+	In this lesson we will be learning how to move the cursor
+around faster.  As before, it is not possible to do any editing
+while a lesson file is in the computer because whatever you type
+will alter the lesson file.  Therefore, we need to use the Dual
+Display Windows.
+	To use the Dual Display windows enter the TWO WINDOW command:
+		C--X  2        
+	Then create a scratch pad by entering:
+		C--X  C--F  and answering 'scratch1.pad' when
+asked for the "File to Read <CR>:".  As before, this will provide
+you with a blank editing buffer in the top screen while allowing
+you to scroll the lesson in the bottom window with the commands:
+		C--X  C--V   {Scroll other window down}
+		C--X  C--Z   {Scroll other window up}
+	The TWO WINDOWS command divides the screen into two equal
+size windows.  Since the top window needs less space we will
+increase the size of the bottow window.  Enter the OTHER WINDOW 
+command:
+		C--X  O  	{the letter "O"}	
+
+    Use the META REPEAT command and the ENLARGE WINDOW command
+(C--X  ^) to increase the size of the bottow window by 4
+lines.  Enter:
+			M--4     C--X  ^
+and then return to the top window with the OTHER WINDOW command:
+	C--X  O
+
+      Let's begin by typing on the keyboard.  Type the following
+text on to the screen using Perfect Writer.  Since the text is
+poetry of a sort, be sure to break the lines (type carriage
+returns) at the proper places.  Use the DELETE key to correct
+some of the mistakes as you type it in.
+
+	Blackbird singing in the dead of night.
+	Take these broken wings and learn to fly.
+	All your life
+	You were only waiting for this moment to arise.
+	Blackbird fly, Blackbird fly
+	Into the light of the dark black night.
+		by the Beatles
+
+    Now let's go back and make certain that the text is perfect. 
+This should be a good chance to review using C--P (Previous
+line), C--N (Next line), C--B (Backward character), C--F (Forward
+character), and C--D (Delete character).  It won't take long to
+make it perfect -- it's easy to turn a draft copy into a final
+document if you don't have to retype the whole thing every time
+there's a change!
+
+     In this lesson, we are going to change the text you just
+typed in and perfected.  Changing this verse could be a real
+chore if all we had were the commands we learned in Lesson 1. 
+Moving one character at a time is slow, especially if we can see
+the place we want to get to in order to make a change.
+
+
+     For example, how would you change the last word on the
+previous line?  Typing C--P and lots of C--F's could take a
+while.  To illustrate a new command, let's change the word
+"night" to "dawn".  Type some C--P's to position yourself on the
+proper line.  Now type a C--E.  C--E is the END OF LINE command,
+which moves the cursor to the end of the line.  Now type in
+enough DELETEs to erase the word "night" (Perhaps you will want
+to type some C--B's to pass over the punctuation first.) and then
+type in "dawn".
+
+
+     Now, suppose we wanted to change the word "Take" at the
+beginning of the second line to the word "Wear".  We could type
+some C--B's, but this would take a few too many keystrokes.
+Instead, there is a command which moves to the beginning of the
+line: C--A.  An easy way to remember that a C--A moves to the
+beginning of the line is that "A" is at the beginning of the
+alphabet, or that it is on the far left of the keyboard and the
+cursor moves to the far left of the line.  So, go ahead now and
+type a C--A, a C--N, and then type four C--D's to delete the word
+"Take" and then insert the word "Wear" by simply typing it.  Now
+type enough C--N's to get back to the bottom of the text.  Notice
+that if you keep typing C--N's, you still stop at the last line
+you entered. Similarly, if you type C--P's when you are at the
+beginning of your text, you will just stay in the same place.
+
+
+      Now that we're at the end of the text, what if we noticed
+that we wanted to change the first line.  We could type a lot of
+C--P's, one at a time. This is easy enough but may be more
+time-consuming for longer "distances".  The command C--U (for
+"Universal repeat count") will allow us to make the jump with
+less typing.  Type the C--U.  You will notice a message at the
+bottom of the screen saying "Argument:" appear, along with the
+number "4".  Type a "6" (The number in the message will change to
+"6" also.),  since the line we want is six lines above where the
+cursor is now. Then type a C--P.  Six C--P commands in a row will
+automatically get executed.  If we decided that this wasn't where
+we wanted to be, we could have typed "C--U  6  C--N", and gone
+down six lines just as easily.  C--U repeats anything. Anything? 
+Yes.  Type "C--U 10 *".  Ten stars will appear in your text.  Now
+type a C--U, then type the number ten, and then type the DELETE
+key.  They will all go away again.  C--U really does repeat
+anything.
+
+     Why did the number four appear as the "Universal" repeat
+count each time before we typed in our number?  If we hadn't
+typed a number, whatever character (control or otherwise) typed
+subsequently would have been repeated four times.  This is the
+default value.
+
+	In addition to moving by characters, Perfect Writer has
+commands that allow you to move the cursor by words at a time. 
+To move forward a word at a time use the FORWARD WORD command: 
+M--F.  Do that now.  Type an "M--F" and see what happens on the
+screen.  Try it again a few times.  The M--F command stands for
+"move Forward a word".  Let's change the word "singing" to
+"whistling".  Move to the top line of the screen (in whatever
+method is most convenient for you now), to the first line of
+text, on the left-hand edge (use C--A to do this).  Use the M--F
+command to skip past the word "Blackbird", and then use it again
+to skip past the word "singing".  What the M--F command does is
+to move to the end of whatever word is in front of it.  If you
+were in the middle of a word and typed M--F, you would go to the
+end of that word.
+
+     To delete the word, you could type many DELETE's.  But as you
+might have guessed, there is an M--command to do that, too.  To
+delete words, use the M--DELETE command.  Type the Escape key,
+then type the DELETE key, and the word "singing" will disappear.
+Now type in "whistling".
+
+     Let's also change the word "dead" to "dark".  To do that,
+move past the next two words (only TWO, the words "in" and "the")
+with the M--F command.  Now let's delete the word "dead", by
+using the M--D command.  As you can now see, there are parallel
+commands for C--F (M--F), DELETE (M--DELETE), and C--D (M--D),
+all of which work on words rather than characters.  Now that
+we've deleted the word with M--D, let's type in the word "dark".
+
+      But look at the screen!  Since we didn't type a space
+before the next word, the last two are run together.  Why did the
+space between the words get deleted with M--D, but not with
+M--DELETE before?  Just like the M--F command, the M--D command
+only knows about deleting to the end of the next word.  So, if
+you are in front of a space which itself is in front of the next
+word, M--D will delete the space, too, since all Perfect Writer
+does is to delete until it reaches the end of the next word.
+
+     Let's fix up the missing space by typing C--B's until
+the cursor is on top of the "d" in "dark", and then typing a
+space.  You may have noticed that we didn't mention an M--B
+(to go with C--B) above.  Well, surely enough there is one.
+Type that now, and notice that the cursor jumps backward across
+the word "the".  Let's delete that word (either with C--D's
+or M--D) and type in the words "this lonely".  Just so you
+know that you've gotten everything right this lesson, the first
+line should now read "Blackbird whistling in this lonely dark of
+dawn".  If it's not correct, take a minute to fix it up now
+using some of the commands you've learned in this lesson.
+
+     Now let's change the word "fly" in the second line to
+"travel".  One easy way to do this would be to notice that the
+word "fly" is at the end of the next line, almost below where we
+are now.  It could be reached by typing a C--N and a C--E. 
+Another way would be to see that it is the eleventh word after
+the ones we just typed in, and that it can be reached by typing
+C--U 10 M--F.  However you get there, delete the word using
+either M--D or M--DELETE, and insert the word "travel".  If you
+used the M--DELETE command, you might have to type the period at
+the end of the line in again, since it may have been eaten up in
+the backward deletion of the word.
+
+   Suppose we wanted to insert the name of the poem, "Blackbird",
+in the line with the author's name?  We could type some C--N's to
+get to the last line, but there is a quicker way.  Type "M-->"
+(the Escape key, then a greater-than symbol). This, as you see,
+puts the cursor at the end of all the text. Now type a C--P, to
+position the cursor at the beginning of the proper line, and
+insert a comma and the title.  There is a command to move as far
+as possible in the other direction, too. Type "M--<", and you
+will move the cursor to the beginning of the text.
+
+     There are two more quick-motion commands which you may find
+useful.  These are M--A and M--E.  They are similar to C--A and
+C--E, except that they move to the beginning and end of sentences
+rather than lines.  Now you have a reasonably complete set of
+parallels for the control commands you learned in Lesson1:
+
+        C--F       Forward Character
+        M--F       Forward Word
+
+        C--B       Backward Character
+        M--B       Backward Word
+
+        C--D       Delete Forward Character
+        M--D       Delete Forward Word
+
+        DELETE      Delete Backward Character
+        M--DELETE   Delete Backward Word
+
+        C--A       Beginning of Line
+        M--A       Beginning of Sentence
+
+        C--E       End of Line
+        M--E       End of Sentence
+
+        M--<       Beginning of Text
+        M-->       End of Text
+
+     Experiment with these commands for a little while, until you
+are used to what they do and are able to remember most of them.
+
+     When you are done and want to leave Perfect Writer, type
+"C--X   C--C", as you did in Lesson 1.  You'll learn more about
+what this and some of the other C--X commands are used for in the
+next lesson.
+
+	If you want to go to the next lesson, just select option 
+E  from the Main Selection Menu and enter "lesson3" when asked
+for the name of file to edit.d Character
+        M--F       Forward Word
+
+        C--B       Ba

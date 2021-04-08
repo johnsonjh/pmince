@@ -1,0 +1,307 @@
+		   Lesson 7: Multiple Buffers
+
+      You may remember the word "buffer" from Lesson 3, when we
+learned how to read and write files from the text buffer.  As you
+recall, we said that the buffer was a place for storing the text
+while we manipulated it, and that files were copied into it and
+replaced from it.
+
+      Perfect Writer has more than one buffer for manipulating
+text.  This can be handy when you are working on several files at
+once.  For example, this training manual is made up of several
+lessons, and if we wanted to edit two or three of them, making
+changes to one based upon the others, it would be nice to be able
+to read them all into Perfect Writer at the same time.  Each file
+we choose to use could be read into one of Perfect Writer's
+buffers.
+
+      Look at the mode line at the bottom of the screen.  Notice
+the portion that says "lesson7: lesson7".  In the mode line,
+"lesson7" is the buffer name.  Since we have multiple buffers for
+storing text, they must be named in some way, just like files or
+disc drives.  Buffer names may be from one to eight characters
+long.  "lesson7" is the one you get automatically when you start
+Perfect Writer up.  Each of these buffers of text also has a
+filename associated with it.  In this case, the filename is
+"lesson7".  We talked about filenames in Lesson 3.
+
+      There is a command which will list on the screen what
+buffers of text currently exist.  This command is C--X C--B, the
+"Buffers Directory" command.    Try it now.   Type:
+	  C--X C--B  
+
+You should see a display at the top of the screen, overwriting
+whatever text was there before.  The text is not gone, just
+momentarily not displayed; this is an exception to the rule that
+what you see on the screen is what is in your document.  Take a
+quick look at the display line with the buffer list on it.  It
+has the name, "name", and the file name, "lesson7", and a number,
+which tells you how many characters are in the buffer of text. 
+Type a C--L now to redisplay the screen.  The buffer list has
+been replaced by the original text again.
+
+      There is a command to create a new buffer, the C--X B
+command.  It stands for "Switch Buffers", and looks similar to
+the C--X C--B command, so you can remember them both fairly
+easily. Try this command now.  Type:
+
+      C--X B 
+
+Perfect Writer will ask you for the name of a buffer to use, by
+displaying a message in the echo line.  Type in the name "other",
+followed by a carriage-return.  Perfect Writer will ask you if
+you want to create a new text buffer.  We do, so type a "Y" to
+answer yes.  Now the screen is devoid of text.  Look at the mode
+line, and notice that the buffer name is now "other".  We moved
+into a brand new text buffer, which has no characters in it. 
+Notice also that the filename in the mode line associated with
+this buffer is called "NAME.ME".  This is so that if you
+mistakenly type a C--X C--W command to write the file without
+giving a filename, the text will be stored in a conspicuously
+named file.  Type a few characters just so the buffer isn't
+empty.
+
+      Now type a C--X C--B again to see a new list of the text
+buffers.  Notice that the list now shows two buffers.  Going to a
+new text buffer did not delete the old one; it is just waiting
+for whenever you want to go back to it.  Do that now; type:
+	   C--X B  name  <CR>
+
+The Lesson 7 text will appear again.  Note that C--X B didn't ask
+you if you wanted to create a new buffer, because one by that
+name already existed.  Type the C--X C--B command again, to list
+the buffers.  Notice that there is an asterisk beside the "other"
+buffer.  This means the same thing as the star on the mode line
+does: the text buffer hasn't been written out to a file since it
+has been modified.
+
+      Now go to another new buffer, called "lesson5".  Type:
+
+      C--X B
+
+Perfect Writer responds in the echo line:  "Switch to Buffer [CR]: "
+
+      Enter:  lesson5 [CR]  (The "Y" is in answer to the question
+asking if we want to create a new buffer.)  Now that you're in
+the "lesson5" buffer, read in the file containing Lesson 5. 
+Type:
+
+      C--X C--R  lesson5  <CR>
+
+The text will appear (if you got the file name right) and the
+mode line will now have a section saying "lesson5: lesson5". Type
+a C--X C--B again to get a buffer directory listing, if you like.
+
+      It is usually quite useful to have the buffer name be the
+same as the first half of the file name which Perfect Writer
+uses.  We just accomplished that by creating a buffer with a name
+appropriate to the file we were about to read in.  But Perfect
+Writer can do this automatically for us.  The command C--X C--F
+(for "Find File") will read in a file, in the same manner as C--X
+C--R, but will automatically create a buffer of the appropriate
+name for it.  Try it now.  Type:
+
+      C--X C--F
+
+	Perfect Writer will respond:  "File to Read [CR]:"
+
+      Enter:  lesson4  <CR>
+
+The mode line will now say "lesson4: lesson4", and the text of
+Lesson 4 should be on the screen.
+
+      The C--X C--F Find File command does just a little more
+than automatically selecting a "nice" buffer name.  It will look
+through all the Perfect Writer buffers you have to see if the
+file you want to find has already been read into a text buffer
+before.  If so, it just switches to that buffer, rather than
+creating a new one and reading in the file.  This is usually what
+you want; if you had made changes to a buffer containing a file
+and then did a Find File, you would want to see the modified
+version. Try it now.  Type:
+
+      C--X C--F  lesson5  <CR>
+
+Note that this puts you back in the "lesson5" buffer.  Try:
+
+      C--X C--F  name.me  <CR>
+
+This puts you into the buffer called "other", with its original
+file name.  So, C--X C--F always does an automatic C--X B command
+for you, either to a buffer which contains the file name you
+want, or to a new buffer into which it reads the file.  It
+effectively prevents you from ever having to remember whether of
+not you had read in a file.  Just use C--X C--F all the time.
+
+      With all these buffers it would useful to be able to view
+more than one buffer at a time.  Perfect Writer has a split
+screen feature which allows you to view the contents of two
+buffers simultaneously.  This feature allows you to compare the
+contents of separate buffers on the same screen.  The split
+screen is created by the "Two Window" command C--X 2.  When you
+enter this command the screen is divided into 2 parts with a line
+across the middle.  When this command is given the screen will be
+divided into two windows but both windows will contain the same
+buffer, with the cursor in the top window.   Give the Two Window
+command now.  Enter:
+
+	C--X 2
+
+You can switch the cursor from the top window to the bottom
+window with the Other Window command "C--X O {the letter O stands
+for Other}.  Do that now, go to the Other window on the buffer by
+entering: C--X O  {Enter the letter 'o'}
+
+The cursor has now switched to the other window.  The value of
+the split-screen feature is that it allows you to see two
+different buffers on the screen at the same time.  So lets read a
+different buffer into this bottom window with the Find File
+command, C--X C--F.  Begin by listing the Buffer Directory. 
+Enter:
+
+	C--X  C--B
+
+This provides a directory of current file buffers.  Read a
+different file into the lower window with the Find File command,
+C--X  C--F.  Let's read in file buffer "lesson4".  Type:
+
+	C--X  C--F  lesson4  <CR>     
+
+The "lesson4" buffer is now viewed in the bottom window while the
+"other" buffer is viewed through the top window.  It is possible
+to switch to the other buffer using the other buffer command,
+C--X  O.  Do that now, type:   
+
+	C--X  O
+
+The cursor is now in the top window where the "other" buffer is
+viewed.  It is possible to scroll through the bottom window,
+while the cursor is in the top window, with the view Next Screen
+(Other Window) command, C--X  C--V.  Try this command now, enter:
+		
+		C--X  C--V
+
+The file in the bottom buffer has been moved or scrolled up one
+screenful (which is now about 10 lines because the size of the
+screen has been divided).  It is also possible to scroll back
+down a screenful in the other window with the view Previous
+Screen (Other Window) command, C--X  C--Z.  Use this command to
+return the bottom screen to its original position, enter:  
+
+		C--X  C--Z
+
+The window on the bottom screen has returned to its original
+position at the beginning of the file.  To return to the One
+Window display, enter the One Window command, C--X 1.  Do that
+now.  Enter:
+		     C--X 1
+
+The bottom screen display has been cleared and the full one
+window screen is used for the current buffer file.
+
+      Do a C--X C--B to see what text buffers and files you have
+again.  There are certainly a lot of unneeded buffers, so let's
+get rid of some of those old buffers.  The command to do this is
+C--X K (for "Kill buffer").  Type:
+
+      C--X K  lesson4  <CR>
+
+This will delete the buffer called "lesson4", which contains the
+file "lesson4".  Be sure to remember the difference between a
+buffer and file.   C--X K and C--X B work with buffer names,
+while C--X C--F, C--X C--R, and C--X C--W all work with file
+names.  Do a C--X C--B again, and notice that the buffer named
+"lesson4" is no longer there.  Now type:
+
+	C--X  C--B 
+
+	Then type:
+
+	C--X  K  other  <CR>
+
+This command is intended to delete the buffer called "other",
+which just happens to be the one on your screen now.  Perfect
+Writer will not delete a buffer which we are currently working
+on, and so it asks us which buffer we would like to go to
+instead.  Type "name" followed by a <carriage-return>, and
+Perfect Writer will then switch you back to the "name" buffer
+(which has the Lesson 7 text in it), and try to delete the
+"other" buffer.
+
+      But there is another message at the bottom of the screen:
+Perfect Writer will ask you if you are sure that you want to kill
+the buffer, because it has some text (those few characters) in it
+which has not been written out to (i.e., saved on disk) since the
+changes were made. (Remember the star in the C--X C--B listing
+and at the right end of the mode line now?)  Answer "Y" for yes,
+and let Perfect Writer delete the buffer.  You can check this out
+with a C--X C--B listing if you like.
+
+      What advantages does using several buffers have besides
+allowing you to look at several files back and forth?  It allows
+you to move or copy text from one buffer to the other as well. 
+In Lesson 5, we used the delete region command (or C--W wiping or
+M--W copying mechanism) to move or copy text from one place to
+another in a file.  This method works on multiple files in
+separate buffers as well.  You can delete text in one buffer, do
+a C--X B command to another buffer, and Yankback the deleted text
+in the new buffer.  If you are using the split screen feature
+then you can delete text in one window, switch to the Other
+Window, and Yankback the deleted text into the separate buffer in
+the other window.
+
+      Let's work through an entire example in detail.  This is a
+chance for us to review some of the many commands that you have
+learned in Lessons 5, 6, and 7.  The task is to take the first
+paragraph of this text, Lesson 7, and make it the first paragraph
+of Lesson 5.  The buffer which we are now in, "name", contains
+the file "lesson7".  The other buffer, "lesson5", contains the
+file "lesson5".
+
+      (1) M--< to the beginning of lesson7.
+
+      (2) C--N down to the first line of the paragraph.
+
+      (3) M--Space or the Mark Set command your computer uses
+	    to set the mark at the beginning of the first line.
+
+      (4) M--N to get to the end of the paragraph.
+
+      (5) C--W to wipe out the paragraph.
+
+      (6) C--X 2 to create Two Windows.
+
+      (7) C--X O to switch to Other buffer.
+
+      (8) C--X B lesson5 <CR> to go to buffer "lesson5".
+      
+      (9) M--< to the beginning of that buffer.
+
+      (10) C--N down to the line before the start of the first
+	     paragraph.
+
+      (11) C--Y to yank the text back.  It should now be the
+           first paragraph of Lesson 5.
+
+      (12) C--X 1  to see the results.
+
+Don't forget that the text is still yankable again; you may want
+to go back to the other buffer and copy it back in with a C--Y.
+
+      We have learned some commands in this lesson which you
+might not use quite at first.  Sooner or later, though, you will
+be using them regularly.  If you get into the habit of using C--X
+C--F to read in a file initially, you will find it easier to use
+the multiple buffers later when you need to.  Experiment some
+more with buffers and moving text back and forth among them using
+the split screen display.  When you exit Perfect Writer with the
+C--X C--C command, be sure NOT to write out the buffers, so that
+Lessons 5 and 7 are intact for the next person to use them.
+
+	This lesson concludes our series on the use of Perfect
+Writer to edit text files (as well as computer programs).  You
+are now ready to use a very powerful word processor.
+ yank the text back.  It should now be the
+           first paragraph of Lesson 5.
+
+      (12) C--X 1

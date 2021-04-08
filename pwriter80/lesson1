@@ -1,0 +1,337 @@
+                    Lesson 1: Getting Started
+
+      Perfect Writer is a powerful user friendly word processor
+especially designed for personal computers.  In many ways, it
+makes your computer similar to a modern office typewriter. During
+this first lesson, you should be getting used to typing on your
+computer.
+
+	In this set of lessons we will be learning how to edit a
+file.  When you start up Perfect Writer you are presented with
+the Main Selection Menu.  In order to edit a file you select
+option  E  from this menu.  Perfect Writer responds by asking you
+for the name of the file you wish to edit.  If you are creating a
+new file simply type a carriage return (Perfect Writer will
+supply a default file name, "NAME.ME").  However, if you are
+editing an existing document file, then you will have to provide
+the file name followed by a carriage return.  
+
+      When you are finished Perfect Writer will begin to run, and
+you will notice some buzzing over at the disc drives.  Your
+terminal screen will be blanked in preparation for your typing. 
+A single line will appear at the bottom of your screen, something
+like:
+	  Perfect Writer 1.0 (Fill) name: NAME.ME  -0%-
+
+which tells you that Perfect Writer is ready.
+
+	Let's practice starting up Perfect Writer now.  Be sure
+you remember what you need to do to get back to here.  You might
+want to write a note for yourself if you're unsure.  Begin by
+entering:
+		C--X  C--C
+
+then enter from CP/M the following command:
+
+		A>menu <CR>
+
+When the Main Selection menu is presented, enter:  E
+
+followed by 'lesson1' when asked for the file to edit.
+TYPING AT THE COMPUTER KEYBOARD
+	
+It is not possible to let you practise editing at the
+keyboard while a file is in the computer because whatever you
+type will alter the file.  However, Perfect Writer has Dual
+Display Windows that will allow you to continue reading the
+Teaching Disk while practising what you learn in another window.  
+	To use the two windows enter the TWO WINDOW command:
+		C--X  2          {C--X  1  will return you to one window}
+	Then call up a new file by entering:
+		C--X  C--F  and answering 'scratch.pad' when asked
+for the "File to Read <CR>:".  This will provide you with a blank
+editing buffer in the top screen while allowing you to scroll the
+lessons in the bottom window with the:
+		C--X  C--V   {Scroll other window down}
+		C--X  C--Z   {Scroll other window up}
+
+	The TWO WINDOWS command divides the screen into two equal
+size windows.  Since the top window needs less space we will
+increase the size of the bottow window.  Enter the OTHER WINDOW 
+command:
+           
+	   C--X  O   {letter "O"}     [you'll need to type C--V to scroll up]	
+	Use the META REPEAT command (or Escape Key followed by a
+digit for the number of repetitions) and the ENLARGE WINDOW
+command (Control--X  ^) to increase the size of the bottow window
+by 4 lines.  Enter:
+			M--4     C--X  ^
+
+and then return to the top window with the OTHER WINDOW command:
+  
+  C--X  O      [when cursor is in top window type C--X  C--V to scroll up] 
+
+      Let's begin by typing on the keyboard.  Type the four
+words:
+	      This is a test.
+
+	Notice that as you typed, what you were typing appeared
+at the top of the screen.  At the end of the line you typed,
+right after the period, is a solid or blinking box or underline. 
+This is called the "cursor".  It is an indicator of where you are
+in your text.  It functions just like the carriage of an ordinary
+typewriter, showing you where the next thing you type will
+appear.
+
+      The next thing you type will be a carriage-return.  As on
+an electric typewriter, hitting the carriage-return key puts you
+at the beginning of the next line.  After the carriage-return,
+type another line:
+
+      I am testing this word processor.
+
+and follow it with another carriage-return.  Now you have a
+two-line document.
+
+      Notice that the line at the bottom of the screen has not
+changed position throughout this typing.  The entire screen of a
+computer does not move or scroll the same way that a paper would
+in a typewriter.  Only the top portion of the screen will scroll
+upward, if you type enough text.  This area is called the
+"window".  Imagine it as a small viewing area onto a large
+document, and the name will make sense.  Let's type a little
+more, in order to demonstrate the word wrap feature.   Type:
+
+  It's not much different from using a typewriter except that when
+  you go past the right margin Perfect Writer automatically enters
+  a carriage return.
+
+Enter a carriage return to get to the beginning of the next line.
+
+      We could go on typing lines of text, but sooner or later we
+would make a mistake.  Let's make one now, on purpose.  Type just
+the two words:
+                But typewriterz
+
+and stop there.  So much for our "error".  The "z" in
+"typewriterz" should have been an "s".  What do we normally do on
+a typewriter if we type a wrong letter?  We use the erase key if
+it's a modern office typewriter, or else get the bottle of
+white-out.  Perfect Writer has an erase key, too.  Type the key
+labelled "DEL" or "DELETE" or "BACK SPACE".  Observe that the
+"z" in "typewriterz" has disappeared from the screen, and
+the cursor has moved backward a space, to right after the "r". 
+Type an "s" now, and the word "typewriters" will become correct. 
+It truly IS very much like using a typewriter.
+
+	Suppose we realize that we had forgotten to type some
+word before the word "typewriters".  Just hit the DELETE key
+enough times to erase the word "typewriters".  (Go ahead and do
+that now, delete "typewriters".)  Next type:
+
+	   most typewriters
+
+and stop.  The line now reads "But most typewriters" and the
+cursor is right after the "s" is "typewriters".
+      We have seen that all text we type is entered at the
+cursor; now we have also seen that text we delete is deleted at
+the cursor as well.
+      What if, as before, we discovered a word missing, only on
+the FIRST line this time?  For example, let's suppose we wanted
+to change the sentence reading "This is a test." to "This is only
+a test." by adding the word "only".  You certainly could type the
+DELETE key enough times to erase all the way back, but it would
+be an awful waste of time if we had to do it that way.
+
+      The way we modify or add text in Perfect Writer is to "go"
+to the place in the text where we want text to be added or
+changed, and then type in whatever text we want there.  In order
+to "go" somewhere, we move the cursor to that place on the
+screen. To get to the first line of text, we will move the cursor
+up five lines, one at a time.
+
+     To make Perfect Writer move the cursor to the previous line,
+enter the PREVIOUS LINE command:  
+		
+		C--P
+
+     Now let us go up four more lines, to the first line. Hold
+down the control key again, and type "P" four times while holding it.
+Again, the cursor will jump up a line each time.
+
+     Now that we are on the correct line for the change we wish
+to make, we can move around on that line to get to the correct
+place.  We can move backwards on that line with the BACKWARD
+CHARACTER command:
+		     C--B
+
+Hold down the control key.  Now watch the screen and press the
+"B" key several times, while still holding the control key. You
+will see the cursor move backwards, that is, to the left, one
+character position for each time you press the "B" key.
+
+     We now want to move forward to the place after the word
+"is", in order to insert the word "only".  Hold down the control
+key, and type the letter "F" several times.  "Control--F" is the
+command for "FORWARD CHARACTER", i.e., move the cursor forward
+one character.  While still holding down the control key, type
+F's until the cursor is under the word "a".  If you type the
+Control--F too many times, simply type Control--B's until you get
+to the right place.  What you are doing now is an important form
+of interaction with Perfect Writer - issuing commands to move to
+"the right place", or "until the right thing has happened".
+
+     Now the cursor is at the "a", and we wish to put the word
+"only" there.  Simply type the four letters o, n, l, and y.  You
+will watch Perfect Writer move the rest of the line over to make
+room for the new text and you now have on that line:
+
+	    This is onlya test.
+
+with the cursor still under the "a".  Immediately, we perceive a
+problem: there is no space between "only" and "a".  This is
+simply because we did not enter one.  Hit the space bar.  Now we
+have:
+	   	  This is only a test.
+
+with the cursor still on the "a".  We have now fixed the text we
+wished to.  Note that in order to type in the new word, "only",
+we did not have to say anything special, we just moved the cursor
+to the right place, and started typing.  Whenever we type a
+non-control character, it goes into the text at the position of
+the cursor, and moves the cursor over one to the right.
+
+     Now we must get back to the end of the document, where we
+had left off when we decided to add the word "only" to the first
+line.  We can do this by going to the Next Line, and the Next
+Line, until we are where we want to be.  We do this with the
+NEXT LINE command:
+         		C--N
+
+Enter the NEXT LINE command five times.  We are now on the right
+line.  You will find that you are in the middle of the line,
+because Perfect Writer tries to keep you in the same "column"
+when going between lines.  Type a few Control F's to get to the
+end of the line.  
+      Now let's finish the sentence "But most typewriters are
+old-fashioned."  Enter the words:
+
+ 	    are old-fashioned.
+
+and surely enough, your entire text appears correct before you:
+
+ This is only a test.
+ I am testing this word processor.
+ It's not much different from using a typewriter except that when 
+ you go past the right margin Perfect Writer automatically enters
+ a carriage return.
+ But most typewriters are old-fashioned.
+
+     If you haven't already done so, type a carriage-return after
+the last sentence.  Now the text has seven lines in it, and the
+last one is a blank line.  Now type a "Control--P" to move up to
+the previous line.  The cursor is now at the "B" in "But".
+
+	What if we wanted to change "But most typewriters" to
+"Most word processors"?  We have to erase the first three words,
+then insert the new text.  So far, the only way you know to
+delete text is to use the DELETE key.  But if you were to hit it
+now, it would delete the character you just entered, that is, the
+newline.  We could, of course, type some Control F's to get the
+cursor past the words, and then type some DELETEs.  But this
+would be cumbersome.  Instead, Perfect Writer has a DELETE NEXT
+CHARACTER command: "Control--D". Hold down the control key and
+type "D" enough to get rid of the words "But most typewriters".
+Notice that, as usual, the entire line is "swallowed up" and
+moves to the left as the characters disappear.
+
+  Now type "Most word processors" to insert those words at the
+beginning of the line. Type a space after "processors" if you
+happened to delete the one to the right of "typewriters" earlier.
+
+      Take a look at the "mode line" at the bottom of the screen
+again.  The percentage mark is no longer zero, as it was when we
+started.  This number just says roughly how far through the file
+the cursor is.  It's not too useful when you can see your entire
+document on the screen as we can now, but for large text files,
+it's handy to know where you are.  If you want more information
+you could enter the LOCATION command:
+
+	C--X  =
+
+Enter this command now and observe what happens.  Perfect Writer
+displays information on the file you are editing in the "echo
+line", the line just below the mode line.  The information
+displays the Point in the text where the cursor is, how long the
+file is in characters, what column the cursor is in, and what
+line the cursor is on.
+
+Again look at the mode line.  You'll see an asterisk at the right
+edge of the mode line which appeared there when you started
+typing.  This asterisk means that the text which is on the screen
+is different from what you started with.  It turns on in order to
+tell you that your text has not been saved anywhere, and that if
+you leave Perfect Writer without saving it, your work will be
+lost.  We'll learn about saving the text we type in Lesson 3.  To
+review what we've learned in Lesson 1 return to the OTHER WINDOW
+and go back to ONE WINDOW mode by entering:
+
+		C--X  O  and then    C--X  1
+
+     You have just learned ten important Perfect Writer commands:
+     DELETE        Delete previous character.
+     Control--D    Delete next character.
+     Control--F    Forward character.
+     Control--B    Backward character.
+     Control--N    Next line.
+     Control--P    Previous line.
+     Control--X Control--C
+                   Quit the editor.
+     Control--X 2  Create Two Windows.
+     Control--X 1  Use One Window.
+     Control--X =  Status line.	
+
+      You have also learned some basic Perfect Writer vocabulary:
+
+cursor:		The indicator which shows where you are about to
+		insert or delete text on the screen.
+
+window:		The area which covers most of the screen, and
+                which displays twenty to twenty-five lines of
+                the text which you are currently editing.
+
+mode line:	The line at the bottom of the screen which tells
+		you  (1) how far through the text you are and (2)
+		whether the text on the screen has been changed
+		since it was last saved.  There are other pieces
+		of information which the mode line provides;
+		more about those in Lessons 3 and 7.
+
+      Practice using the commands in this lesson until you are
+thoroughly familiar with them.  They are very important and
+useful commands.  With these commands, and one or two others, you
+can do just about anything you will ever be called upon to do.
+All the other commands just make it easier to do more complex
+things, but you can always move around and type in text with
+these.
+
+      You may want to continue experimenting with the things you
+have just learned: when you are done, you will have to leave the
+editor: this is done as follows: type a "Control X" followed by a
+"Control C" (C for "Command level").  This is not an easy command
+to type or remember.  That is reasonable, though, because you may
+be editing for hours, and you will only type it once.  Hold down
+the control key, and type an "X" and a "C" while holding it.
+Perfect Writer will respond:
+
+     Abandon modified document(s)?
+
+because you have done work that you have not saved.  That's O.K.
+for now.  Type "Y".  Perfect Writer will return you to the Main
+Selection Menu.
+
+	If you want to continue with the Teaching Disk then
+select option  E  and enter "lesson2".
+With these commands, and one or two others, you
+can do just about anything you will ever be called upon to do.
+All the
