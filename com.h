@@ -20,7 +20,9 @@
 #if defined(__FreeBSD__) || \
 	defined(__OpenBSD__) || \
 	defined(__HAIKU__) || \
-	defined(__OR1K__)
+	defined(__OR1K__) || \
+	defined(__MINGW64__) || \
+	defined(__MINGW32__)
 #include <termios.h>
 #include <sys/param.h>
 #include <sys/ioctl.h>
@@ -139,7 +141,9 @@ struct regs {
 #if defined(__FreeBSD__) || \
 	defined(__OpenBSD__) || \
 	defined(__HAIKU__) || \
-	defined(__OR1K__)
+	defined(__OR1K__) || \
+	defined(__MINGW64__) || \
+	defined(__MINGW32__)
 struct termios old, new;
 #else
 struct termio old, new; /* Terminal control structures. */
@@ -290,7 +294,9 @@ void flushconout();
 void listout();
 static void buflistout();
 void flushlistout();
+#ifndef CYGW
 static char *itoa();
+#endif
 int myatoi();
 char *decode();
 void tdecode();

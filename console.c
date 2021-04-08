@@ -568,6 +568,7 @@ void flusher(signum) int signum;
     flushlistout(gregp, 0);
 }
 
+#ifndef CYGW
 static char *itoa(val, radix, leadfill, ndigits) int val, radix, leadfill,
     ndigits;
 {
@@ -611,6 +612,7 @@ static char *itoa(val, radix, leadfill, ndigits) int val, radix, leadfill,
   }
   return buf; /* No field width, return minimum number. */
 }
+#endif
 
 /*
 ** Provide our own atoi() function because the standard one uses ctype

@@ -12,6 +12,9 @@ ifndef $(OS)
 	true)
 endif
 
+# Override OS?
+#OS=CYGW
+
 #############################################################################
 #                               Configuration                               #
 #############################################################################
@@ -24,6 +27,27 @@ PBIN=bin
 CFEXTRA=-pipe
 #CFEXTRA+=-Ofast -fomit-frame-pointer -march=native \
 #		-fstack-protector-strong -D_FORTIFY_SOURCE=2
+
+#############################################################################
+#             Microsoft Windows NT: MSYS2+Cygwin Configuration              #
+#############################################################################
+
+ifeq ($(OS), CYGW)
+	CFL=-O2 -fcommon $(CFEXTRA)
+	CC=gcc
+	SYSTYPE=CYGW
+	OPTIONS=-D$(SYSTYPE)=1 -DRUNOPTS=1 -DUSEDIRENT=1
+	CFLAGS+=$(CFL) $(OPTIONS)
+	RM=rm -f
+	RMDIR=rmdir
+	TEST=test
+	SIZE=size
+	STRIP=strip
+	MKDIR=mkdir -p
+	CP=cp -f
+	OBJE=.o
+	MINCE_CONFIGURED=1
+endif
 
 #############################################################################
 #                   Solaris/OpenIndiana/illumos Configuration               #
