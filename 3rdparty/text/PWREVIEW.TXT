@@ -1,0 +1,337 @@
+            CREATIVE COMPUTING VOL. 9, NO. 6 / JUNE 1983 / PAGE 55
+
+   --------------------------------------------------------------------------
+
+   Perfect Writer                                                 Bud Stolker
+
+   Perfect Writer
+
+   A standard cliche for reviewers of word processing software is to claim
+   that "Soft-Star Super Perfect Word-Master Letter-Writer' (substitute your
+   favorite name) is so easy to learn that "I wrote this review in the first
+   hour I used it.' Somehow such claims never ring true. Any word processor
+   sophisticated enough to handle the needs of today's users deserves
+   careful study.
+
+   Because Computer Services Corp. of Amrrica states in its full-page
+   display ads that its Perfect Writer is simple enough for unskilled users,
+   I had hoped to learn it quickly. I wanted to exercise my imperative as a
+   reviewer to use the software to write this evaluation. After all, I can
+   turn a cliche with the best of them. It automatically footnotes; I wanted
+   to provide you with some pithy postscripts. It can format verse; I wanted
+   to paeon Perfect-Writer poetically.
+
+   Alas, it was not to be. Though Perfect Writer is easy enough to learn,
+   mastery requires considerable time and practice. Installing the program
+   on your computer can be difficult. For my machine it was impossible.
+   While ultimately I found Perfect Writer to be a superb work, the finest
+   total microcomputer software package I have yet encountered, I cannot
+   recommend it without several strong reservations.
+
+   Advanced Features
+
+   At the outset let me say that I am impressed. This is a significant
+   product--a major achievement in microcomputer software. The advanced
+   features of Perfect Writer belie its modest price. For $289 you get a
+   well integrated series of programs that incorporates an editor, draft
+   printer, fancy print formatter, and a set of configuration programs that
+   fit the programs to any large-scale CP/M-compatible computer. You get a
+   series of lesson files, some for beginners and some for advanced users,
+   that set a standard of excellence other software authors would be wist to
+   study. A padded silk-screened binder with integral pocket encloses a
+   325-page typeset user's manual and a separate, illustrated command
+   summary printed on sturdy card stock.
+
+   When the author says the user's guide is free of jargon and arcane
+   "computerese,' he's not kidding. His step-by-step explanations, supported
+   by dozens of illustrations and diagrams, instruct the user in plain,
+   concise English that makes studying this book a pleasure.
+
+   The package includes a document design program that can invoke over 30
+   predefined formats (business letter salutations, indented quotations,
+   itemized lists, etc.), providing total control over text output, either
+   according to your specifications or its own default instructions. Perfect
+   Writer can automatically create a table of contents that lists and
+   numbers chapters, sections and subsections, headings, paragraphs, and
+   appendices. It even includes page numbers in the contents. Further it can
+   generate na alphabetized index of words and topics, complete with page
+   numbers. It can insert footnotes anywhere in a document that you specify,
+   renumbering them automatically as you add new ones. You can refer to
+   items mentioned previously in the text, and Perfect Writer will
+   automatically calculate the page on which they appear, and insert the
+   page reference for you.
+
+   All these features are standard equipment. Optional extras for Perfect
+   Writer include a spelling checker, a mailing list system, and a file
+   manager that can sort, merge, and extract data in a variety of formats.
+   Each of these additional products is $189.
+
+   The company is willing to support its customers and its software, judging
+   by my brief conversations with a support specialist, and in any case
+   offers a moneyback guarantee if you are not completely satisfied. What
+   more could you possibly want?
+
+   Two things that I want come to mind immediately. One is a computer with
+   enough memory and disk storage to satisfy the need of Perfect Writer for
+   lots of room. The other is a dealer or resident technician to install the
+   program on my dream computer. The Perfect Writer advertisement does not
+   specify what size machine is required to run this software. Nor was the
+   technician I phoned sure, although he seemed otherwise knowledgeable. As
+   it turned out, my 48K Vector Graphic computer is too small for Perfect
+   Writer, though the technician claimed to have heard "scattered reports'
+   of 48K machines running the software. A more realistic minimum is a
+   genuine 56K machine (some CP/Ms reclaim several kilobytes for their own
+   use; these won't do) and dual disk drives with at least 150K storage
+   disk--250K per disk is preferable. That is more muscle than my own
+   machine, with a mere 180K of storage on two disk drives, can muster.
+
+   Unaware that Perfect Writer was too big for my machine, I encountered
+   considerable frustration trying to get the program to run. I wound up
+   using a friend's much larger computer to evaluate Perfect Writer. Yet
+   even with Gerry's expertise as a savvy senior software engineer and his
+   intimate knowledge of his own system, we had trouble configuring the
+   software. More on that later.
+
+   Comfortable to Use
+
+   Within an hour of sitting down at the terminal, I was comfortable with
+   most of the cursor controls. Within five hours I had methodically plowed
+   through the lesson files and tried every command at least once. By the
+   end of a long day I was able to sling text from file to file like a pro.
+   Interestingly, I found two days later that I had forgotten most of the
+   commands--a classic case of too much too soon.
+
+   Although the documentation referred to an on-screen help file, none ever
+   appeared. Nor could I find such a file in the disk directory. This was a
+   minor oversight, and presumably by now a "help' command is part of the
+   package. That would be a big help to beginners like me, though using
+   Perfect Writer should become second nature with practice. The command
+   structure is logical and comsistent. The editor offers satisfactory
+   prompting for the more complex operations, as long as you know how to
+   enter the higher level command modes in the first place.
+
+   Popular word processors like WordStar and Electric Pencil frequently
+   favor a compass arrangement for cursor control: the "east' key moves the
+   cursor right; the "north' key moves the cursor up, and so forth. Perfect
+   Writer, on the other hand, assigns the most commonly used instructions
+   mnemonically: control-F for forward one character, control-B for
+   backward. The next higher level of commands employs the same mnemonics,
+   but uses the escape key for so-called "Meta' commands: Escape-F moves the
+   cursor forward one word; escape-B goes back a word. Commands used even
+   less frequently require both an escape and a control character.
+
+   In this regard Perfect Writer bears a strong resemblance to EMACS, a
+   venerable screen editor developed at MIT in the early 1970's The EMACS
+   design philosophy has merit even today, despite the extra keystrokes
+   sometimes required. Multiple key commands that broaden the repertoire of
+   available functions adapt well to computers with definable keys. With
+   Perfect Writer it is easy to configure any key to deliver any command.
+
+   Flexibility and Safety
+
+   The function-and level-oriented mnemonics, whili requiring the user more
+   or less to memorize commands, also provide for greater flexibility and
+   safety. Because less frequently used (and more potentially damaging)
+   commands require a multiple command sequence, you are less likely to blow
+   an entire editing session with an injudicious keystroke. Many is the file
+   I have lost while using Electric Pencil I by typing a control-O ("exit to
+   operating system and destroy buffer') at the wrong time. Quitting Perfect
+   Writer requires a control-X, control-C; then a final verification that
+   you do, indeed, intend to end the session.
+
+   Other control-X sequences signal other major operations, such as opening
+   and closing files, entering and leaving split-screen windows, and moving
+   text between files. You can even lock out the edit commands so that you
+   can review the text without fear of inadvertently changing it.
+
+   At every critical point, Perfect Writer prompts you for verification. The
+   editor reserves two lines at the bottom or the screen for command prompts
+   and status information. With such a sophisticated editor, this feature is
+   not only desirable but necessary. The ability of Perfect Writer to
+   manipulate text files is awesome, and it is possible to blunder on a
+   grand scale. The author of the program wisely provides several ways to
+   make a graceful recovery from gross errors, allowing you to recall text
+   that you have deleted, to cancel the last command entered, or if all else
+   fails, to abandon your temporary text buffers and try again with the
+   original files.
+
+   When it comes to managing files, Perfect Writer takes an unconventional
+   yet elegant approach. A "virtual memory' scheme enables you to work on
+   files larger than the memory capacity of your machine. It simply swaps
+   data between disk and memory when it thinks you are not looking. If you
+   haven't typed anything for several seconds, the editor briefly flashes a
+   "swapping' message and activates the disk drive. While this sounds like a
+   perfect way to lose characters by typing while the disk drive is running,
+   I found that the swap process works very well indeed. Unless you start to
+   type in the split second that the drive first activates, Perfect Writer
+   can handle your keystrokes and interleave its own disk file maintenance.
+   Try as I might, I was unable to drop more than a character or two, and
+   even that required fast reflexes. I was working with a fast 8' disk
+   system, however. Swapping could be an annoyance on slower 5-1/4' drives.
+   The delay time between last keystroke and start of disk file maintenance
+   is easily adjustable to suit your preference.
+
+   You can access up to seven lengthy text files at a time, and display
+   portions of any two of them in split screen windows whose sizes you can
+   adjust as you move text around. The split screen enables you to move a
+   sentence, or several chapters for that matter, from one file to another.
+   Simply mark the beginning and end of the text, "delete' it into a buffer
+   file, point to the spot in the other file at which you want to insert ti,
+   and "yank' it back from the buffer. With paragraphs it is even easier,
+   since Perfect Writer recognizes paragraphs as basic units of text. Place
+   the cursor anywhere in the paragraph, and Perfect Writer automatically
+   figures out how much text should be moved.
+
+   A typical command sequence for moving a paragraph to a different file
+   (escape-H, control-W, control-X, O, control-Y) is straightforward, though
+   it sounds complicated. True, you'd better pay full attention to opening
+   both files, setting up the split screen text window, and marking the
+   appropriate text in both files. But consider the alternatives. You could
+   merge the two files (assuming you had enough working space), delete the
+   excess data, edit and then save an updated file. Or you could extract the
+   information, kill the excess, merge it with the new file, edit and save
+   the new file, and delete what was left from memory. Then you might want
+   to load in the old file, erase the text that you have lifted, and resave
+   that file.
+
+   You get the picture. Perfect Writer can save a great deal of work.
+
+   It operates with ease in situations that show up the shortcomings of less
+   powerful software. With a high-capacity disk system, say half a megabyte
+   or more, each of the seven open text files can be larger than 64K, the
+   practical limit of random access memory in 8-bit machines. And you don't
+   need to know or care how the computer manages all that information.
+   Advanced filehandling routines do the work without a crash, without a
+   complaint, without even a dropped character.
+
+   Installation A Problem
+
+   So why am I so hesitant to recommend Perfect Writer? For one thing, it
+   can be difficult or impossible to imstall without considerable effort and
+   research. For another, its rich command vocabulary makes it more
+   complicated for the casual user than a less flexible word processor. And
+   it works efficiently only on the largest CP/M systems.
+
+   Installing the screen editor and file handler can be quite simple if you
+   are using a standard terminal. The chatty and helpful configuration
+   program explains the process, offers a comprehensive list of terminals
+   that it "knows,' tests the cursor control features you select, and then
+   sets up a file that takes into account your preference in screen
+   formatting and disk file management.
+
+   Gerry and I found a bug in the Heathkit terminal installation. The Heath
+   option that we selected tested out correctly, but when we tried to run
+   the program, the main menu appeared on the screen and immediately erased
+   itself. Because the installation program allows you to edit any command
+   for any terminal, we had no trouble changing "clear screen' to "clear to
+   end of screen.' That solved the problem. A user who is not technically
+   oriented might have had trouble, though, since the installation program
+   does not test for this particular feature. It tests for everything else,
+   and therefore can lull you into a false sense of security.
+
+   And that's one trouble with Perfect Writer. It is advertised as easy to
+   use. The ads say "you're off and running in no time.' Not so. You had
+   better know your system--and CP/M--thoroughly before trying to install
+   these programs. Printer configuration is the really hard part. We tried
+   to set up Perfect Writer to use Gerry's Spinwriter, one of the standard
+   machines supported by the Perfect Printer module. The first time we tried
+   to bring up the printer, Gerry's Votrax speech synthesizer spoke up
+   instead. Several hours later, after poring through the manual and trying
+   repeatedly to make the Spinwriter print, we gave up for the night.
+
+   The following evening we set up the Spinwriter as a "vanilla' printer:
+   one with no underlining, boldfacing, proportional spacing or other fancy
+   features. That made it easy to patch in. The printer worked impressively,
+   even though we were using slow, inefficient, and unsophisticated CP/M
+   printer output routine (the "list device'). The Perfect Writer print
+   module gave us several unexpected features in this mode. It was smart
+   enough to back over text and retype characters when necessary for
+   boldface, underlining, and italics. It reserved whole extra lines into
+   which to drop superscripts and subscripts. The ability of this clever
+   software to maximize the capabilities of a dumb machine is a real bonus
+   for people with inexpensive printers.
+
+   Not For The Faint of Heart
+
+   Heartened, we again tried to select the special Spinwriter driver routine
+   for high speed output with all the extra Spinwriter features. Again we
+   failed. Gerry found the problem. The Perfect Writer people neglected to
+   take into account one of the most sophisticated features of the printer:
+   a special printer status line can be hardwired to the computer to make
+   the Spinwriter perform at maximum efficiency. Perfect Writer doesn't
+   support this.
+
+   We could have fixed the problem by tearing apart the printer and flipping
+   switches on a hidden circuit board. Then the printer would have been able
+   to use a software status routine. We couldn't make this change because we
+   didn't have the extra-cost Spinwriter service manual with all the
+   necessary information. In any case, such a job is not for the faint of
+   heart.
+
+   This difficult installation process is the weakest link of Perfect
+   Writer. While the publishers have addembled a superb total package, they
+   have made a critical marketing error in ignoring of understanding the
+   complexity of the installation process.
+
+   Computer Services Corporation has targeted its ads to the new cadre of
+   noncomputer people who can effectively use Perfect Writer: small business
+   owners, managers, authors, grantsmen, pool typists. The manual is written
+   for naive users who need know nothing about CP/M or their computer. The
+   price is attractive, but for $289 retail price, what dealer in his right
+   mind is going to spend several hours installing a custom version of
+   Perfect Writer? And what alternative does that leave the unskilled end
+   user except to go find a capable software engineer like Gerry, or return
+   the package for a frfund?
+
+   I strongly recommend that Perfect Writer be installed by a dealer. Only
+   the most dedicated computer users or those with common system
+   configurations should attempt to patch in Perfect Writer without
+   professional support.
+
+   I further believe that Perfect Writer is for use only by folks with the
+   most brawny CP/M systems. At least 56K, high-density disk storage, and an
+   80-character video display are all musts. I got far enough into the
+   installation process on my own machine to see how Perfect Writer performs
+   on an older 16-line by 64-column screen: not well. The last few items in
+   the main menu appear only temporarily before being erased by the initial
+   command prompt.
+
+   A 40-character Apple screen would not support this menu at all. Anything
+   less than a full 24-line display would suffer, too, because of the need
+   to display two (and sometimes three) status lines on screen in addition
+   to your main text and perhaps a second text window as well.
+
+   To be sure, the blame for our installation woes cannot fall squarely on
+   the shoulders of the Perfect Writer people. They have carried the
+   configuration programs to a level of extreme simplicity. Still, it is not
+   enough. Certainly the software author can not be held accountable for the
+   fact that every CP/M system is a little different. And it is certainly
+   not his problem that my Vector with its memory-limiting ROMs doesn't have
+   the guts for such powerful programs, though he certainly could have told
+   me what hardware his program requires.
+
+   Complicated But Bug-Free
+
+   Despite these problems, I think the program itself is terrific. It is the
+   best of its type, bar none. And lo and behold, the editor itself seems
+   completely bug-free. It is not for everyone. The command structure
+   requires some study and requires more keystrokes than other text editors.
+   Whether or not you need such a complex system is a personal decision.
+
+   It is a little too complicated for writing grocery lists.
+
+   I can wholeheartedly recommend Perfect Writer for people who want its
+   power and flexibility, and who have adequate machines on which to run it.
+   Today that means CP/M-compatible systems. But the real strength of the
+   program lies in its transportability to larger 16-bit computers, such as
+   the IBM PC, that can tap its full potential. A Unix-type version is
+   inevitable, I suppose, and that should be a piece of software to be
+   spoken of in reverential tones.
+
+   When today's hardware catches up with the kind of software foreshadowed
+   by Perfect Writer, perhaps microcomputers will have truly arrived as
+   powerful silent partners that quietly do our bidding, enhancing our
+   efforts and amplifying our achievements. Certainly Perfect Writer points
+   the way.
+
+   --------------------------------------------------------------------------

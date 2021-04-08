@@ -1,0 +1,87 @@
+Perfect Writer
+
+   Many many years ago, I was involved with the Perfect Writer
+   software product from Perfect Software. This was a word processor for CP/M
+   and MS-DOS (pre-windows) machines.
+
+   You can download a copy for CP/M here. As further aside, Perfect
+   Writer itself would not have been possible without Mince and Scribble
+   from Mark of the Unicorn, which was in turn dependent on the excellent
+   BDS C compiler from Leor Zolman. Thanks, Leor!
+
+   Sometimes people ask if they can “recover” old Perfect Writer files.
+
+ > Barry Dobyns,
+ > Hello
+ > Thanks for having your resume' on line (Impressive, by the way). I
+ > have encountered an interesting challenge. A man here in San Antonio
+ > stopped by today to buy at an older "486" I reformatted and loaded w/
+ > Windows 98 SE. An excellent writer of Spanish poetry & short "human
+ > interest" stories; he relates that he wrote a volume of original pieces
+ > in "Perfect Writer" on an old "286" (which died on him), using the old
+ > 5 1/2" floppies to store it. Now he is searching for a way to read and
+ > convert to Corel Word Perfect, or to MS Word/ Winword. Finding a 5
+ > 1/2" Floppy Drive, is my first challenge. 2nd would be being sure that
+ > it would be compatible with the 486.
+ >
+ > My question then would be; is it even possible to attempt? (providing
+ > of course, that the discs have not been damaged or data corrupted, and
+ > I can obtain a 5 1/2" drive) Or will he be limited to finding an older
+ > used computer w/ CP/M? Any information would be greatly appreciated.
+ > Thank you.
+ > Cordially,
+ > ...
+
+   Perfect Writer files are plain text files (unlike, say, Microsoft Word
+   files) – so no special translator program is necessary. The formatting
+   commands appear as plain text embedded in the document as well. Here’s
+   what I’d recommend as a plan of action:
+
+   1) Find a 5 1/2″ drive to read the floppies (if they are ms-dos floppies).
+   You probably already identified this as the first step. Happily, nearly
+   any 486/pentium (1,2,3,4) is still compatible with 5 1/2″ drives, if you
+   can find one. I’ve got one on one of my PIII machines in the basement. I
+   keep moving the same old disk drive over (it started on a 286, i think) to
+   new machines when I upgrade. Change the bios setup to tell it you’ve got a
+   1.2M 5 1/2″ instead of a 1.44M 3.5″. And write protect them before you 
+   start – you don’t want to erase one by accident.
+
+   If the floppies are CP/M ones, you may want to try and use xenocopy
+   which can read many CP/M floppies on your PC.
+
+   2) then depending on whether your friend included formatting commands in
+   his masterpieces or not you have a some choices. Formatting commands in
+   Perfect Writer look a
+   little bit like HTML (although it pre-dates it by more than a decade).
+   They’re always an @ sign followed by a command word, and then the target
+   enclosed in delimiters. For example in HTML you would say <i>yikes</i> to
+   italicize, in Perfect Writer you would say @i(yikes) or perhaps
+   @begin(i)yikes@end(i)
+
+   3) If there’s no formatting included in his masterpieces, then you’re
+   nearly done. Copy the files off the old floppies onto new 3.5″ ones, and
+   rename them all to .TXT files. you can open them in any word processor and
+   be happy.
+
+   4) If there’s embedded formatting then you can rename them to .txt and
+   leave the formatting in, and let your associate open them in a word
+   processor and then fix up the formatting himself.
+
+   5) If you want to preserve the formatting my recommendation is to convert
+   it to HTML. You can either do this manually in a text editor (even Notepad
+   is sufficient), or with an automated program. You’ll have to write the
+   program yourself. I did this myself once many years ago for some old
+   documents of my own. What I did was to write some editor macros for emacs
+   to do the conversion. I didn’t even save the macros at the time, which
+   shows how little value I placed on them. Today, I’d probably do it the
+   same way if I had to again – or perhaps write a simple program in Perl or
+   awk to do it.
+
+   In Conclusion, you’ve got a pretty easy task ahead of you, provided the
+   floppies themselves are still readable (sometimes a challenge with old
+   floppies).
+
+   Good Luck!
+
+   This entry was posted on December 2, 2004, 1:09 pm and is filed under
+   History. 
