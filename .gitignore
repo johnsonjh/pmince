@@ -1,0 +1,5 @@
+*.o
+*.s
+*.L
+mince
+*.hpkg
