@@ -57,7 +57,7 @@ See the [Makefile](/GNUmakefile) for more information.
   - **Fedora** 33, Intel oneAPI DPC++ 2021.2.0 (_20210317_)
   - **Fedora** 34 Beta, AMD AOCC 2.3.0 (_20201110_)
   - **Haiku** 55029, GNU C 8.3.0 (_20190524_)
-  - **macOS** (Big Sur) 11.3 Beta 6, GNU C 10.2.0 (_Homebrew GCC 10.2.0_4_)
+  - **macOS** (Big Sur) 11.3 Beta 6, GNU C 10.2.0 (_Homebrew GCC 10.2.0-4_)
   - **macOS** (Big Sur) 11.3 Beta 6, Xcode 12.4 (_1200.0.32.29_)
   - **NetBSD** 9.1, GNU C 7.5.0 (_nb4-20200810_)
   - **OpenBSD** 6.8, Clang 10.0.1
