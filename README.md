@@ -51,6 +51,7 @@
   - **Fedora** 33, Intel oneAPI DPC++ 2021.2.0 (_20210317_)
   - **Fedora** 34 Beta, AMD AOCC 2.3.0 (_20201110_)
   - **macOS** (Big Sur) 11.3 Beta 6, Xcode 12.4 (_1200.0.32.29_)
+  - **macOS** (Big Sur) 11.3 Beta 6, GNU C 10.2.0 (_Homebrew GCC 10.2.0_4_)
   - **OpenBSD** 6.8, Clang 10.0.1
   - **Haiku** 55029, GNU C 8.3.0 (_20190524_)
 - **ARMv7HF** (ARM32)
