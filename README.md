@@ -26,7 +26,7 @@
   - Tcl `expect` and POSIX `sed`
     - Needed to override default terminal configuration (24 cols, 80 rows).
 
-See the [Makefile](/GNUmakefile) for more information.
+Review the [Makefile](/GNUmakefile) for more information.
 
 ## Usage
 
@@ -62,7 +62,8 @@ See the [Makefile](/GNUmakefile) for more information.
   - **NetBSD** 9.1, GNU C 7.5.0 (_nb4-20200810_)
   - **OpenBSD** 6.8, Clang 10.0.1
   - **RHEL** 8.3, GNU C 8.4.1
-  - **Solaris**/**OpenIndiana** 20210407 (Hipster), SunOS/**illumos** 5.11, GNU C 3.4.3 (_20050802_)
+  - **Solaris**/**OpenIndiana** 20210407 (Hipster), SunOS/**illumos** 5.11, GNU
+    C 3.4.3 (_20050802_)
   - **Windows** 10.0-21343 (Insider), GNU C 10.2.0 (_Cygwin 3.2.0_)
 - **RISC-V** (RV64)
   - **Debian** (Sid) 11, GNU C 10.2.0
