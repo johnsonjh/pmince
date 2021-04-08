@@ -106,8 +106,8 @@ void stdinlineon(regp) struct regs *regp;
   new.c_oflag |= ONLCR;
   new.c_lflag |= (ICANON | ECHO | ECHOE | ECHOK | ECHONL);
 #if defined(__FreeBSD__) || \
-  defined(__OpenBSD__) || \
-  defined(__NetBSD__)
+    defined(__OpenBSD__) || \
+    defined(__NetBSD__)
   ioctl(0, TIOCSETA, &new);
 #else
   ioctl(0, TCSETAW, &new);
