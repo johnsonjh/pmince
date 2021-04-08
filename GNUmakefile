@@ -368,16 +368,19 @@ clean:
 	    mince$(OEXT) \
 	    mince_com.* \
 	    *.exe \
-	    mince_swp.* \
-	    mince80/mince.swp \
-	    mince68k/mince.swp \
+	    ./mince_swp.* \
+	    ./mince80/mince.swp \
+	    ./mince68k/mince.swp \
 	    mince_68k.* \
 	    *.core \
 	    *.cob \
 	    *.obj \
 	    *.ovr \
 	    *.alm \
-	    mince.hpkg \
+		./pwriter80/functs.dsc \
+		./pwriter80/functs.txt \
+		./pwriter80/pw.swp \
+		mince.hpkg \
 	    ./hpkg/mince.hpkg \
 	    ./hpkg/bin/*
 	$(RMDIR) -p ./hpkg/bin 2>/dev/null || \
