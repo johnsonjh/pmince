@@ -19,6 +19,7 @@
 #if SYSV || DNIX
 #if defined(__FreeBSD__) || \
 	defined(__OpenBSD__) || \
+	defined(__NetBSD__) || \
 	defined(__HAIKU__) || \
 	defined(__OR1K__) || \
 	defined(__MINGW64__) || \
@@ -140,6 +141,7 @@ struct regs {
 #if SVR4 || SYSV || DNIX
 #if defined(__FreeBSD__) || \
 	defined(__OpenBSD__) || \
+	defined(__NetBSD__) || \
 	defined(__HAIKU__) || \
 	defined(__OR1K__) || \
 	defined(__MINGW64__) || \
