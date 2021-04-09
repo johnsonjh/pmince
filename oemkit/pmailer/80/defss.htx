@@ -1,0 +1,273 @@
+			Subset Definition Module
+     You will frequently not want to deal with all the records in a data base,
+but with only with some group of them that shares a common characteristic.
+You might, for instance, wish to make a list of all customers more than 
+60 days past due, or all companies in New York.  This module allows you 
+to specify the characteristics that define any subset.  Subset definition
+is accomplished by filling out one (or two) data entry screens with the 
+features that the subset members share, and, optionally, specifying some 
+relational operator which will define how each member will be compared
+to the subset definition.  You will be asked to provide a description
+of the subset so that you can use it in subsequent modules (like the 
+list module or word processor).  When the subset is used; each member
+of the data will be compared to the subset definition field by field to 
+determine if the member belongs in the subset.
+
+     At this level, you may add another subset to those already defined,
+review or revise an existing subset, or delete a subset.
+
+
+
+
+
+
+			Subset Description
+     You must provide a brief description here of the subset being defined
+so that it can be used by subsequent processors.  There, the subset description
+will be displayed as an option in a menu of all subsets available.
+     Type the description, followed by a carriage return; or hit ESCape
+to return to the top level menu.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			Subset to Review/Revise
+     You have chosen to review/revise a subset that has already been defined.
+You must select that subset from the list of subset descriptions in the 
+menu presented here.  These subset descriptions were entered at the time
+the subset was defined.  After you select a subset to review/revise, you
+will be given the option of changing the subset description.     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			Changing The Subset Description
+     You are about to review/revise a subset that has already been defined.
+The subset description will be used subsequently to refer to this subset.
+If you wish to change the description which was entered at the time the
+subset was defined, say yes and you will be asked to enter a new description.
+Otherwise say no.
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+			New Subset Description
+     You have chosen to change the description of a subset that was previously
+defined.  This description will be used in subsequent programs so that you
+may refer to the subset.  Type the new description here followed by return, 
+or hit ESC if you do not want to change the subset description.  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			   Subset Deletion
+     You have chosen to delete a subset definition.  You must select the
+subset you wish to delete from the menu of subset descriptions presented
+here.  After you select a subset, you will be asked to confirm by typing
+'y' that you do in fact want to delete that subset.  If you do not want
+to delete a subset, hit ESCape.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    Subset Definition
+     The subset is defined by filling out one or two data display screens
+with the features which subset members share.  A data field in the subset
+definition which is left blank will match any member data field.  When you
+are finished defining the subset, be sure to save it (with the bottom option).
+     It is sometimes desirable to specify that a subset member must be
+less than or more than a certain value--e.g. the subset of accounts more
+than 30 days past due or the subset of events before a certain date.  The
+facility to establish such relational operators is provided through the 
+Control R Key (see the Control R Help Screen for more information).
+    Usually, all of the features which define the subset can be specified
+with one screen.  In these cases, only the primary subset selection criteria
+need be used.  If, however, you wish to specify an upper and a lower limit for
+some item, you will alxo need to specify the limit subset selection criteria.
+         Option		     |		    Result
+ ----------------------------|------------------------------------------------
+  Display Subset Definition  |  Print out the fields that have been specified
+ 			     | 	so far in defining the subset.
+  Define Primary Subset      |  Display the primary data entry screen and 
+     Selection Criteria      | 	allow criteria specification.
+  Define Limit Subset Select |  Allow definition of the limit subset criteria.
+     Selection Criteria      |
+  Save Subset                |  Record this subset in the list of subsets
+			Discarding a Subset Definition
+     You have just defined some part of a subset and attempted to ESCape from 
+this section without saving the subset.  If you do escape at this point, the
+input you made will be lost.  If you do wish to discard that input, then select
+Discard; else select Save.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		   Subset Selection Criteria Definition
+     Fill out the data entry screen with the fields which define the
+subset.  Relational operators may be specified with the Control R key.
++o specify all balances greater than 100, for instance, put 100 in the desired 
+data field; hit Control R and select Greater Than.  To specify all events 
+before May 4, 1980; put 5/4/80 in the desired date template; hit Control R 
+and specify Less Than.
+     The special characters '*' and '?' are provided for string matching.
+The '*' will match any string, and the '?' will match any character.  See
+Chapter 5.2.1.
+     Subsets can be defined relative to the date they are extracted with
+the Control T option.  (Chapter 5.2.
+
+     Key             |         Result
+---------------------|----------------------------------
+ Printing Character  |    Enter character in data field
+ Control R           |    Specify Relational Operator
+  *                  |    Match any string
+  ?                  |    Match any character (but not empty field)
+ Control T           |    Match with Today's Date (at extraction time) + offset
+ Return,Tab,Down Arr.|    Move to the next data field
+ CTLB,Up Arrow       |    Move to the previous data field
+ ESC		     |	  End Subset Member definition
+		    Relational Operator Specification
+     You have chosen to specify a relational operator for the field or 
+template at the cursor.  When a data base member is compared to the selection 
+criteria being defined, the field in the member must bear the relationship
+you specify here to the field in the selection criteria for a member to be
+in the subset.  If, for example, you wish to specify all members with balances
+greater than 100, you should put 100 in the appropriate selection criteria 
+data display screen field and specify "Greater Than" here.
+
+     Note that you may specify relational operators for the Date and Time 
+templates.  The relations for the templates have the expected meaining--
+for a date or time to be "less than" another means that it is earlier.
+If you want a relational operator to apply to a template, be sure to 
+position the cursor in the first field of the template before selecting
+Control R.
+
+     The relational operator option can be used in conjunction with the 
+limit subset selection criteria to specify subsets which fall within a
+range of values.  To specify all dates in the third quarter of 1980,
+for instance, put "6/1/80" in the primary selection criteria with a
+relational operator of greater than or equal and "8/31/80" in the limit
+subset criteria with a relational operator of less than or equal.
+
+	      Extraction by Date Relative to Extraction Time
+     It is frequently convenient to be able to extract a subset of members
+which have been updated in the past day (or week or month).  You may want
+to enter telephone requests for information as they are received throughout
+the day, and then generate mail for all or them at the end of the day.  Or
+you may want to make a list at the end of each month of all orders received
+during that month.
+
+     The Control T option will allow you to define such subsets.  You have  
+selected the Control T option, and now you must specify an "offset", in days   
+from the date the subset is extracted.  When the subset is extracted, this
+number of days will be added to the current date and inserted in the subset
+selection criteria date template.  If you just want to match with the     
+extraction date, then you should enter 0.  If you want to specify all 
+dates during the past week, then you should specify "-7" and then use the 
+Control R option to specify Greater Than.
+
+     Enter the offset from the extraction date here in days followed by
+Return, or hit ESCape to escape.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

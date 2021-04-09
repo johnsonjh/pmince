@@ -1,0 +1,425 @@
+		   Current Data Base Disk Drive
+     You must enter here the single letter identifier [e.g. A,B,C etc.]
+of the disk drive on which the data base to be generated or recofigured   
+resides. Type in the letter followed by return.  It does not matter whether 
+you use an upper case or lower case letter.
+
+     Note that you can execute the gendb program (and any other
+LEVERAGE program)  with the data base disk drive as an argument--
+e.g. "gendb b".
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    			Data Base Definition
+     With this program, you can customize the data base screen and field
+configuration to your own needs.  In addition, you may re-configure data
+bases that have already been defined in order, for example, to add new 
+fields or to improve the clarity of the screen layout.  
+     Anytime you modify an existing data base by adding or deleting any
+fields, the data base will automatically be re-initialized and any data
+on the data base disk will be lost.  Therefore, it is important that you
+have at least one backup of a data base before you add or delete a field.
+After you add or delete a field from the data base, you must run the 
+"movedb" program in order to retrieve the old data base.
+     The data base need not be re-initialized if you are only adding or  
+deleting lines or characters from the screen in order to improve clarity.
++-------------------------------------------------------------------------+
+|         Option            |               Purpose			  |
+|---------------------------|---------------------------------------------|
+| Create New Data Base      | Define data display form by which data base |
+|			    |   is represented.				  |
+| Modify Existing Data Base | Read in old data base screen and allow      |
+|                           |   modifications.                            | 
+| Re-initialize Data Base   | Selectively reinitialize a part of an	  |
+|   Subsystem		    |	existing data base.			  |
++-------------------------------------------------------------------------+
+		  	Subsystem to Re-Initialize 
+     You have chosen to re-initialize a LEVERAGE subsystem.  Re-initializing
+means, essentially, recreating any files used by the subsystem.  This 
+capability is frequently convenient when used in conjunction with the
+"movedb" program in order to re-initialize a subsystem before copying
+from another data base.  In addition, you might want to reinitialize
+a subsystem whose files somehow become mangled.
+
+NOTE:  ANY DATA USED BY THE SUBSYSTEM WILL BE DESTROYED ON REINITIZATION.
+
++---------------------------------------------------------------+
+|    Subsystem      |            Files Involved       		|
+|-------------------|-------------------------------------------|
+| Members           |      database,hashtab			|
+| Subsets           |      ss.sav,sslist.sav,ssdesc.sav		|
+| List Formats      |      listform.sav,lfrmdesc.sav		|
+| Mail Formats      |      mailform.sav,mfrmdesc.sav		|
++---------------------------------------------------------------+
+
+
+
+
+
+		     Data Display Screen Definition
+     All that you must do to define a data base to fit your particular
+needs is to fill in the data display screen with a data entry form
+which contains room form all the fields you wish to store, in addition
+to any descriptive information necessary to describe the fields to the
+end user.  Special purpose "templates" are provided for common data
+types like names, address, dates and phone numbers.  All LEVERAGE sub-    
+systems the templatever possible because theyn 
+     There are certain limitations on the total number of fields you may 
+define, their combined length and the combined length of the tags for all
+fields.  It is possible to see how close you are to these limits by
+selecting the "Display Screen Definition" option.
+       Option         |                   Purpose
+----------------------|--------------------------------------------------
+Define Data Display   | Specification of screen layout, including definition
+  Screen	      |    of templates, logical fields and their tags.
+Display Screen        | Print out a list of each data display screen element 
+  Definition          |    that has been defined so far and a list of the 
+		      |    tags of each field; indicate how much space 
+		      |    remains.
+Set System Parameters | Specify any system parameters which will differ from
+		      |	   defaults [e.g.-disk configuration].
+Save Screen Definition| The screen you have just defined will be saved. 
+		Discarding a Data Display Screen Definition
+    You have defined or modified a data display screen, and attempted to
+ESCape from this level without saving the new screen.  If you wish to
+discard the input you have just made to the screen, select DISCARD.
+Otherwise, select Save (and be sure to save your work before ESCaping
+from a definition level).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		      Data Entry Screen Definition
+     The data entry screen consists of two primary types of information:
+(1) data entry fields in which the information about the member will be 
+entered and displayed and (2) data description characters which indicate 
+to the user what each data entry field should contain.  To put data 
+description characters onto the entry screen, merely position the cursor 
+with the arrows and type in any characters.  To create data entry fields,
+use either the Control B key to make a single field or the Control T key
+to make a template.  You may edit the screen by inserting and deleting
+lines and fields, but consult the manual for restrictions.
+==> HIT ESCape WHEN YOU ARE FINISHED DEFINING THE SCREEN <==
+       Key         |	                 Effect
+-------------------|-----------------------------------------------------
+   Control F, B    |  Move cursor forward, backward.
+   Control N, P    |  Move cursor to next, previous line.
+   Control I       |  Insert a field at cursor
+   Control T       |  Insert a template at cursor
+   Control D       |  Delete a line at cursor
+   Control A       |  Insert a line at cursor
+   Control S       |  Delete the logical field or template at cursor
+   Control Q       |  Get this message
+   Control X       |  Reset Screen
+   ESC		   |  Return to higher level
+			  Template Insertion
+     A template is a collection of data entry fields that can conveniently
+be referred to as a group.  Use of a template is recommended wherever
+appropriate because (1) Standard data entry of equivalent data types is
+maintained.  (2) Templates are automatically reformatted on output.  (3)
+Templates are occasionally useful as sort keys.  To insert a template at 
+the cursor position,  merely select the desired template.  The following 
+templates are supplied by the system:
+
++-----------------------------------------------------------------------+
+| Template  |                   Components	      	                |
+|-----------|-----------------------------------------------------------|
+|  Date	    |	Month, Day and Year		       			|
+|  Time	    |	Hour, Minute, AM, PM		        		|
+|  Address  |   Street, City, State, Zip and Country   			|
+|  Name	    |	First, Middle and Last Name and addressing information  |
+|  Phone    |   Area Code and Phone Number	       			|
+|  S.S. #   |   Social security number 					|
+|  Money    |   Dollars and cents                                       |
++-----------------------------------------------------------------------+
+
+
+[Use arrows to position cursor, 'x' to select option and ESC to escape] 
+			Template Tag
+     You must provide the system with a "tag" by which the template
+you have just selected will be known.  The tag must begin with a letter
+and may contain only letters and numbers.  It is recommended that 
+upper-case letters be avoided.  Do not use a tag which has been used
+before in any context.  Try to select a tag which is suggestive of 
+the template being inserted (eg - "dtenter" for date entered, "officeph"
+for office phone).  The individual logical fields comprising the template
+may subsequently be referred to by appending the template tag with a period
+and the name of the template field (eg--dtenter.day for the day field
+of the date entered template).  Hit the return key after you have
+entered the tag, or use ESC to Escape.
+
+
+
+
+
+
+
+
+
+
+
+			Field Types
+     The logical field type is used by the program to perform type
+checking on the data being entered by the user.  If you wish to restrict
+the types of data that can be entered in a field, then you should 
+select the appropriate field type.
+     The status field is a special case of a logical field--it can 
+assume only two values (on or off).  A status field is represented 
+on the data entry screen as one space between square brackets 
+(i.e. [ ]).  When the status field is turned on, and 'x' appears 
+between the brackets.
+
++---------------------------------------------------------------------------+
+|   Field Type   |  Characters Allowed         |       Examples             |
+|----------------|-----------------------------|----------------------------|
+|  Alphabetic    |    non-digits only	       |  first name, city	    |
+|  Alphanumeric  |    anything printable       |  street address, comment   |
+|  Numeric       |    digits only              |  year, balance due, class  |
+|  Status        |    Blank or 'x'             |  AM, PM, Member Status     |
++---------------------------------------------------------------------------+ 
+
+
+
+
+			    Field Tag
+     You must provide the system with a "tag" by which the logical field
+you have just selected will be known.  The tag must begin with a letter
+and may contain only letters and numbers.  Tags will be in lower case
+letters only.  Do not use a tag which has been used before in any context.  
+Try to select a tag which is suggestive of the logical field being inserted 
+(eg - "company" for the company name, "baldue" for balance due).   
+
+     Hit the return key after you have entered the tag, or use ESC to Escape.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			   Field Length
+     The field length is the maximum length of the data item that will
+be entered into the field.  The data entered may (and usually will)
+be shorter than the field length, so you should set the field length
+to the length of the longest data item expected in the field.  The
+data is stored on the disk in fields only as long as the data itself,
+so no disk space is wasted by having fields that are much longer than
+the data which is usually found in them.  But the logical field will oc-
+cupy as many spaces on the screen as it is long, so screen space may be     
+wasted by making a field too long.  In addition, the data is stored in 
+RAM in fields as long as the field length.
+
+
+Minimum Value=1.
+Maximum Value=Number of Spaces Left on Line.
+
+
+Hit Return after length is entered, or use ESC to Escape.
+
+
+
+
+
+			Numeric Data Field Limits
+    You have selected a numeric data entry field of 4 positions or less,
+and you must specify limits on the data to be entered.  The program will
+guarantee that all data input is within these limits.  If you do not care
+what values the data input assumes, then specify limits which cannot be
+exceeded (like -9999 for a lower limit and 9999 for an upper limit).
+
+    Hit return after entering the limit, or use ESC to Escape.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			System Parameter Definition
+      In this section, you may adjust the system paramters to (1) reflect the
+configuration of your particular computer system; (2) determine other 
+parameters of the data base being generated.  Further information about
+each option can be obtained by selecting the option and consulting its
+help file.
+     The default system is configured for a system with 2 floppy disk drives, 
+A and B.  The programs will reside on drive A, the data base and temporary 
+sort files will be on drive B.  If you have a hard disk system, you will      
+probably want to reconfigure this and should consult the manual.  [This 
+directory structure will be fully utilized under Unix-like environments].
+
+        Option            |                 Effect   
+--------------------------|---------------------------------------------------
+Display System Parameters | Print out the current system parameters.  
+Set Program Directory     | Set the directory where the programs will be found
+Set Sort Directory        | Set the directory on which to put temp. sort files
+Set Maxmimum Number of    | Set estimate of data base size (data bases can grow
+  Member Expected         |   larger than this estimate without ill-effect).
+Set Data Base Update      | Set the number of new entries which can be made 
+  Interval		  |   between data base back-up.
+
+
+			Program Directory
+     If you are using a CP/M or CDOS system, then all references to
+a "directory" should be interpreted as referring to a single letter
+disk drive designation.  You should specify here the drive on which
+the programs will reside.  Unless you have a hard disk, you will
+probably want to leave this parameter at its default value--the
+A drive.
+
+     If you have a hard disk, you will probably want to reconfigure
+the system to put the programs on the hard disk drive and all the data
+bases except one on drive B.  (Under CP/M and CDOS, only one data base 
+can reside on a hard disk). 
+
+     The directory structure was developed to take advantage of the
+flexibility of Unix-like file systems, and users who wish to take
+full advantage of this facility are urged to upgrade to a Unix-like
+system.
+
+
+
+
+
+
+			   Sort Directory
+     If you are using a CP/M or CDOS system, then all references to
+a "directory" should be interpreted as referring to a single letter
+disk drive designation.  
+     When the list program must perform a sort of a large data base, it 
+may not have enough room in core to do the sort.  In this case, the 
+list program will overlay an external sort routine (a "heap" sort for
+those who care about such things).  The external sort program uses
+a number of temporary intermediate files in the course of processing.
+It puts these files on the "sort directory".  The default sort directory
+is the B disk.  If you are using a hard disk drive, you will want to
+make that the sort directory.  Also, if you data base becomes too
+large to allow room for sort files, then you will have to put the
+sort directory on another disk.
+
+
+     The directory structure was developed to take advantage of the
+flexibility of Unix-like file systems, and users who wish to take
+full advantage of this facility are urged to upgrade to a Unix-like
+system.
+
+
+
+			  Help Directory
+     If you are using a CP/M or CDOS system, then all references to
+a "directory" should be interpreted as referring to a single letter
+disk drive designation.  You should specify here the drive on which
+the help files will reside.  If you have a hard disk, or plan a data
+base which will be larger than the room available on the data base
+disk, then you will want to change the default directory; otherwise
+you should probably leave it alone.
+
+     The directory structure was developed to take advantage of the
+flexibility of Unix-like file systems, and users who wish to take
+full advantage of this facility are urged to upgrade to a Unix-like
+system.
+
+
+
+
+
+
+
+
+
+
+		    Maximum Number of Members Expected
+     The value is used by the system only to set the number of "buckets"
+in the hash table directory.  Since the data base can grow arbitrarily
+larger than the number of buckets in the directory, the user should not
+be too concerned about setting this parameter unless she plans to have
+a huge data base.  In addition, there is very little system degradation
+from having a hash table directory somewhat larger than the actual data
+base size, so the user who is planning a small data base should also not
+be too concerned about adjusting this value.
+     You will note that the data base size displayed may be somewhat larger 
+than the value you enter.  This is because the hash table size must be a
+prime number, so the system selects the next prime number after the value
+you specify.
+
+
+
+
+
+
+
+
+
+
+			  Data Base Update Interval
+     As new members are added to the data base, they are written directly
+to the disk and entries are made in the hash table.  If, however, the
+system fails while new members are being added, it is possible that
+some data may be lost because the data base file was not properly closed.
+To guard against disastrous losses of a large number of new entries,
+the system closes and re-opens the data base file after a certain number
+of new entries.  This number, the data base update interval, is set by
+default to 5.  If you wish to change it, type in the new interval 
+followed by Return; else hit ESCape to escape.
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,163 @@
++---------------------------------------------------------------------------+
+|   Option       |                      Result                              |
+|----------------|----------------------------------------------------------|
+| Add New Member |   A blank data entry screen will be displayed, data      |
+|                |      entered into it can be stored as a new member       |
+| Revise/Update  |   You will be asked to input the member ID of the        |
+|                |      existing member to be reviewed or updated.          |
+| Delete Member  |   You will be asked to input a member ID and then shown  |
+|                |      a data display screen and given the opportunity     |
+|                |      to delete the member displayed                      |
++---------------------------------------------------------------------------+
+
+				+------------------------------------+
+		  		|     Key     |       Effect         |
+    ACCESSING                   |-------------|----------------------|
+    INDIVIDUAL                  |    Space    | Move Down 1 Option   |
+    MEMBERS			|  Down Arrow |       " "            |
+				|      x      | Select Option        |
+				|   Up Arrow  | Move Up 1 Option     |
+				|     ESC     | Exit This Section    |
+				|  Control Q  | Display this message |
+  				+------------------------------------+
+
+                       Adding a New Member
+     To enter a new member into the system, simply fill in the screen
+form with the data available.  All data is entered at the cursor 
+position.  Data being entered can be edited with the left and right 
+arrow keys.  Illegal characters will sound the bell.
+ +-----------------------------------------------------------------+
+ |          Key          |                 Effect		   |
+ |-----------------------|-----------------------------------------|
+ | Any printing char.    |  Enter character at cursor position.    |
+ | Space                 |  Clear status field.                    |
+ | Left Arrow, Control H |  Move cursor left one position.         |
+ | Right Arr., Control L |  Move cursor right one position.	   |
+ | Return,Tab,Down Arrow |  Move to the next field.                |
+ | Up Arrow, Control B   |  Move to the previous field.            | 
+ | Control E             |  Record member.                         |
+ | Control X             |  Reset screen.                          |
+ | Control S	         |  Enter next serial number.		   | 
+ | Control T             |  Enter Today's date (in date field).    |
+ | Control C             |  Copy the field from the previous entry.|
+ | Control P             |  Print the member on the printer.       |
+ | Control Q             |  Display this screen.                   |
+ | ESC                   |  Exit without updating member.          |
+ +-----------------------------------------------------------------+
+                      Member ID for Review or Update
+     In order to access a data base member, you must type in its "Member ID".
+The Member ID is comprised of the first four letters of the first field on
+the data display screen, or of the first initial and first three letters
+of the last name if the first field is a person's name.  After you enter
+the Member ID, you will be shown a data display screen of the first member
+with that ID; or you will be told that there are no members with that ID.
+If there is more than one member with the same ID, you will be able to 
+access subsequent members with the Control O option.
+     It makes no difference whether you type the characters in upper or
+lower case.  After you type in the Member ID, hit RETURN to enter it;
+or hit ESCape to abort.  
+
+
+
+
+
+
+
+
+
+
+
+                    Revising an Existing Member
+     If this is not the member you want to review, then use the   
+Control O key to find antother member with the same Member ID.      
+     All information is entered at the cursor position.
+ +-----------------------------------------------------------------+
+ |          Key          |                 Effect		   |
+ |-----------------------|-----------------------------------------|
+ | Control O             |  Find Other member with same member ID. | 
+ | Any printing char.    |  Enter character at cursor position.    |
+ | Space                 |  Clear status field.                    |
+ | Left Arrow, Control H |  Move cursor left one position.         |
+ | Right Arr., Control L |  Move cursor right one position.	   |
+ | Return,Tab,Down Arrow |  Move to the next field.                |
+ | Up Arrow, Control B   |  Move to the previous field.            | 
+ | Control E             |  Record member.                         |
+ | Control X             |  Reset screen.                          |
+ | Control S	         |  Enter next serial number.		   | 
+ | Control T             |  Enter Today's date (in date field).    |
+ | Control C             |  Copy the field from the previous entry.|
+ | Control P             |  Print the member on the printer.       |
+ | Control Q             |  Display this screen.                   |
+ | ESC                   |  Exit without updating member.          |
+ +-----------------------------------------------------------------+
+                      Member ID for Deletion
+     In order to delete a data base member, you must type in its "Member ID".
+The Member ID is comprised of the first four letters of the first field on
+the data display screen, or of the first initial and first three letters
+of the last name if the first field is a person's name.  After you enter
+the Member ID, you will be shown a data display screen of the first member
+with that ID; or you will be told that there are no members with that ID.
+If you wish to delete that member, you must hit Control D; if you wish
+to delete another member with the same ID, you must use the Control O
+option to access it.
+     It makes no difference whether you type the characters in upper or
+lower case.  After you type in the Member ID, hit RETURN to enter it;
+or hit ESCape to abort.  
+
+
+
+
+
+
+
+
+
+
+                      Deleting a Member
+     If this is the member you want to delete, type Control D.  If not,
+use Control O to find another member with the same member ID or ESC to
+abort deletion.
+
+
+     +---------------------------------------------------------+
+     |   Key     |                Effect                       |
+     |-----------|---------------------------------------------|
+     | Control D |   Delete the member displayed               |
+     | Control O |   Find another member with same member ID   |
+     | ESC       |   Do not delete any members                 |
+     +---------------------------------------------------------+
+
+
+
+      
+
+
+
+
+
+
+
+                      Discarding Data Entry 
+     You have inserted new data into the data display screen and
+then attempted to escape.  If you escape at this point, the data
+you entered will be lost.  If you desire to save this data, then 
+select the save option.  If you desire to escape and discard the 
+data you have input, select discard.  To return to the data display
+screen, hit ESCape.
+
+
+				+------------------------------------+	  
+		  		|     Key     |      Result          |
+                                |-------------|----------------------|
+                                |    Space    | Move Down 1 Option   |
+				|  Down Arrow |       " "            |
+				|      x      | Select Option        |
+				|   Up Arrow  | Move Up 1 Option     |
+				|     ESC     | Return to data entry |
+				|  Control Q  | Display this message | 
+ 				+------------------------------------+
+
+
+
+
+

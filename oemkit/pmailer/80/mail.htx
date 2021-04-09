@@ -1,0 +1,213 @@
+			 Printer Form Selection   
+     In order to generate letters or other documents, or labels or envelopes,
+you must select a "Printer Form".  For details about what constitutes a 
+printer form and how to define one, see Chapter 7 of the manual.
+     At this point, you must select the printer form you want to use.  
+A standard printer form for single unit letters, documents or envelopes
+is supplied by the system.  To define a new printer form, select the 
+"Define Printer Form" option of the LEVERAGE system menu.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		         Mail Target Selection
+     You may select any combination of the following dispositions for the 
+forms to be generated.  Hit ESCape when you have finished selecting targets.
+
+1.   CRT.  Forms will be printed on this CRT as they are generated.    
+
+2.   Printer.  Forms will be printed on the hardcopy unit as it they
+     are generated.
+
+3.   File.  You will be asked to specify a file name, and the forms
+     will be put in that file as they are generated.  You will have
+     the option of starting a new file or adding to an existing file.
+     Thus, you can collect output of the same type of printer form in     
+     a single file for subsequent printing.  
+
+     CRT output only is initially enabled as a list target.  The targets
+can be enabled and disabled in a toggle-switch fashion by selecting the
+appropriate menu option.  Whether a target is currently activated is 
+indicated after the menu option.
+
+
+=> Hit ESCape when you are finished selecting list targets <=
+
+			   Output File Name
+     You have chosen to put the output of the mail program into a file.
+You must specify here the name of that file.  You will then be given the
+opportunity to specify whether you want to start a new file or add to
+an existing file.   
+
+     Type the name of the output file here followed by Return; or hit
+ESCape to escape.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			 Output FIle Disposition
+     You have chosen to put the output from the mail program into a 
+file.  If you want to collect output of one printer form into a single
+file, then you should select the "Append" option.  Otherwise, a new
+file will be created and any data in any file with the same name will
+be lost.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                             The Input File
+     Before you run this program, you must have created a file containing 
+a letter, document or address specification.  Type the name of this file 
+followed by Return, or hit ESC to escape.  If the file is on a disk other
+than the data base disk, then you must specify that disk in the file name.
+     The following "word processing" commands may be used in the input file.
+For details on how to construct an input file and sample input files, see  
+chapter 4.
++-----------------------------------------------------------------------------+
+|         Command              |                 Effect                       |
+|------------------------------|----------------------------------------------|
+| {format}                     | Start formatting the letter into paragraphs, |
+|                              |   using left and right margins.              |
+| {unformat}                   | Stop formatting.                             |
+| |  [vertical bar]            | Syllabicate word to allow hyphenation        |
+|			       |    (only when formatting is enabled).        |
+| {paragraph}                  | Begin a new paragraph.                       |
+| {newline}                    | Skip a line.                                 |
+| {LOGICAL-FIELD-TAG}          | Insert the contents of the logical field.    |
+| {TEMPLATE-TAG}               | Format and insert the template.              |
+| {salutation(TEMPLATE-TAG)}   | Format a name template and insert into the   |
+|                              |     heading of the letter.                   |
++-----------------------------------------------------------------------------+
+			Recipient Selection
+     The mail program works by merging the information from the data base
+into the input file you specified.  You must specify here how the data    
+base members to be merged will be selected.  If the recipients share
+some common characteristics, you can specify a subset.  If you want to 
+have the subset sorted, then you should use the list program to produce 
+a sort image.  
+       Option         |                     Effect
+----------------------|------------------------------------------------
+Select by Individual  |  You will be asked to input the member ID for each
+  Member ID           |     recipient.  Then you will be shown a data display
+		      |     screen for each member with that member ID.  If
+		      |     you want to send to the member displayed, hit 'y';
+		      |     else hit 'n'.  Hit ESCape when you are finished.
+Select by Subset      |  You will be shown a menu of all subsets that have
+		      |     been defined and asked which subset to send to. 
+Select by Sort Image  |  You will be asked to input the name of a sort image
+		      |     file (generated by the list program) from which to
+		      |     generate mail recipients.
+Send to Recipients    |  Mail will be generated to the same recipients as the
+  of Previous Run     |     last mail run.  Use, for example, to address
+                      |     envelopes to go with letters.  [This option
+		      |     is only available after the first mail run].
+                      Member ID for Mail Recipients
+     In order to send mail to a data base member, you must type in its 
+"Member ID".  The Member ID is comprised of the first four letters of the 
+first field on the data display screen, or of the first initial and first 
+three letters of the last name if the first field is a person's name.  
+After you enter the Member ID, you will be shown a data display screen of 
+the first member with that ID; or you will be told that there are no members 
+with that ID.  If the member displayed is the one you want to send to, then
+type 'y'; else type 'n' to see other members with the same member ID.
+
+     It makes no difference whether you type the characters in upper or
+lower case.  After you type in the Member ID, hit RETURN to enter it;
+or hit ESCape to abort.  
+
+
+
+
+
+
+
+
+
+
+			  Recipient Selection
+     If the member displayed is the one to which you wish to send mail,
+then hit 'y'; else hit 'n' and you will be shown any other members with
+the same member ID.  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			   Sort Image File
+     If you wish to generate mail in sorted order, then you must first
+sort the recipients with the list program, specifying a "sort image"
+file for a target.  If you have already generated a sort image file,
+then you should type the name of that file here, followed by Return.
+     The most common reason for sorting mail recipients is to take advantage
+of reduced postal rates for mail sorted by zip code.  You might also want
+to sort the recipients in order to maintain a more orderly output, it is
+much easier to locate a particular member if the recipients are in some
+sort of order.
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    Subset Selection
+     You have chosen to send mail to a subset of data base members.  You
+must select the subset you wish to send to from the subsets displayed
+in the menu.  To define a new subset, select the "Define Subset" option
+of the LEVERAGE system menu.
+

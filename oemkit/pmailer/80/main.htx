@@ -1,0 +1,24 @@
++--------------------------------------------------------------------+
+|        Option            |                 Purpose                 |
+|--------------------------+-----------------------------------------|
+| Access Individual Member |  Add new members to the data base;      |
+|			   |    revise and delete existing members.  |
+| Generate List/Report     |  Produce reports from data base, extract|
+|			   |    subsets, produce sort images.        |
+| Generate Mail            |  Format and print letters, envelopes    |
+|		 	   |	and lables.                          |
+| Define Subset            |  Specify characteristics of some group  |
+|                          |    members for listing or mailing.      |
+| Define List Format       |  Specify format of list/report.  Revise |
+|                          |    existing formats.                    |
+| Define Printer Form      |  Specify forms for use by mail system.  |
++--------------------------------------------------------------------+
+
+  		  		      Key     |      Result           
+			         -------------+---------------------- 
+				     Space    | Move Down 1 Option    
+    Top Level System Menu 	       x      | Select Option         
+				    Up Arrow  | Move Up 1 Option      
+				      ESC     | Exit Program          
+				   Control Q  | Display this message  
+

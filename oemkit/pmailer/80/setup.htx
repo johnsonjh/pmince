@@ -1,0 +1,69 @@
+                        Setting Today's Date
+      The date shown at the top of the menu is the date that this
+data base was last accessed.  If you want to change the date,
+select "Change Date" by hitting a space and then the character 'x'.
+If the date is correct, merely hit 'x'.
+
+     For details on menus in general, see Chapter 0.4.3.
+ 
+
+				+------------------------------------+
+		  		|     Key     |      Result          |
+                                |-------------|----------------------|
+                                |    Space    | Move Down 1 Option   |
+				|  Down Arrow |       " "            |
+				|      x      | Select Option        |
+				|   Up Arrow  | Move Up 1 Option     |
+				|     ESC     | Escape               |
+				|  Control Q  | Display this message | 
+ 				+------------------------------------+
+
+
+
+
+			Date Specification
+     You have chosen to set the current date, and you should type in the
+month, day and year here.  Use numbers for each component of the date,
+and hit Return after you have entered each component.  If today is 
+July 4, 1981, for instance, you should enter 7 for the month, 4 for
+the day and 81 for the year.
+
+    If you do not want to specify the date, hit ESCape to escape.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			Current Data Base Disk Drive
+     You must enter here the single letter identifier [e.g. A,B,C etc.]
+of the disk drive in which the data base currently resides.  Type in
+the letter followed by return.  It does not matter whether you use
+an upper case or lower case letter.
+
+     Note that you can execute the LEVERAGE program with the data base
+disk drive as an argument--e.g. "leverage a" to access a data base on
+disk A.
+
+     Note also that the LEVERAGE program must be executed from the
+disk on which it resides.  You may NOT, for example, run a LEVERAGE   
+program on the "A" disk from the "B" disk by typing "a:leverage".
+
+
+
+
+
+
+
+
+
+

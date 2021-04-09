@@ -1,0 +1,400 @@
+			Printer Form Definition
+     In order to use the mail system, you must first define a printer form
+for each type of letter, envelope and label form you wish to use.  You
+will only have to define the printer form once, and it will be available
+anytime you use the mail system.  You will be asked to supply a description 
+of each printer form, and these descriptions will be available in a menu 
+when the mail system is used.
+
+     In general, the printer form definition describes precisely the type of 
+form being used, its dimensions, print spacing, and margins (for letter forms).
+At this level, you may add a new printer form, review and/or revise an existing
+form or delete a form.
+
+
+
+
+
+
+
+
+
+
+
+			Printer Form Description
+     You must supply a description for each new printer form you define.
+This description will become part of a menu of printer forms available
+anytime you use the mail system.  Each format should have a different
+which identifies it effectively.  For example, if you are defining 
+one across, one inch high lables, you could describe the printer for
+as "One-Across One Inch High Labels".
+     Type the printer form description here followed by Return; or hit
+ESCape to escape.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			Printer Form to Review/Revise
+     You have chose to review and/or revise an existing printer form.  You
+must select the printer form you wish to review from the menu of printer forms.
+The descriptions are those provided when the forms were defined.  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		     Changing Printer Form Descriptions
+     You have chosen to review/revise a printer form which has already been
+defined.  A description was provided for the format when it was defined--
+the description will be used in the mail program as an option in a menu 
+to identify this printer form.  If you wish to change the description which
+was previously supplied, say yes and you will be given the opportunity to
+provide a new printer form description.  If you are happy with the description
+as it stands, then say no.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+			New Printer Form Description 
+     You have chosen to provide a new description for this printer form.
+The description will be used as an option in a menu in the mail program
+to identify this format.  Type the new description followed by a Return;
+or hit ESCapte if you do not wish to enter a new description.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			Printer Form Deletion
+     If you no longer need a printer form, or if you have already defined
+the maximum number of formats and need room for another (an unlikely
+event), you may delete one by merely selecting the appropriate option from
+the menu and confirming your selection. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			  Printer Form Definition
+     At this point, you must specify the features of the printer form being
+defined.  Some of the features are not relevant to certain format types--
+the margins are not relevant to envelopes, for instance.  You must define
+only those features which are relevant to the format being defined.
+     It may be helpful occasionally to display the current printer form
+definition in order to determine which features need to be defined.
+     When you are finished defining the printer form, be sure to save it
+(with the bottom option).
+
++----------------------------------------------------------------------------+
+|     Option          | 	       Comment                  |   Default  |
+|---------------------|-----------------------------------------|------------|
+| Display Printer Form| Print out the features of this format.  |    n/a     |
+| Set Left Margin     | For Letters Only.                       |    15      |
+| Set Right Margin    | For Letters Only--used with '|' feature.|    70      |
+| Set Default Salut.  | Used when name is unavailable.          | Dear Person|
+| Set Contin. Forms   | Indicates continuous (attached) forms.	|  (Disabled)|
+| Set Label Dimens.   | Number of labels across and label size. |    None    |
+| Save Printer Form   | Save printer format and catologue.      |    n/a     |
++----------------------------------------------------------------------------+
+
+
+			Discard Input to Printer Form 
+     You have added a new printer form or made changes to an existing one  
+without having saved your input.  After making changes or addition which
+you would like to keep, you should select the "Save Printer Form Definition"
+option (at the bottom of the menu) before escaping from this level.  If 
+you made changes or additions which you would like to discard, then you 
+should say so here and they will not be saved; otherwise you should 
+specify that the input should be saved, and , in the future, be sure
+to save your work before you escape.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                             Left Margin
+     The left margin need only be defined for letter formats.  The entire
+letter will be printed with the left margin you specify, regardless of 
+whether or not the text is being formatted.  You must specify the margin
+in TENTH's of an inch--an inch and a half margin, for instance, would be
+input as 15.  (Measuring the margins in absolute terms instead of a number
+of spaces guarantees consistency when using different pitches).
+
+     Enter the Left Margin here followed by Return; or use ESC to escape.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                         Right Margin
+     The right margin need only be defined for letter formats, and it
+is only used when the formatting option is enabled with the {format} 
+command.  When formatting is enabled, each line will be filled to the 
+right margin you specify, and words sticking off the end of a line will 
+be hyphenated if they contain the '|' character.
+
+     Enter the margin you desire followed by Return, or use ESC to
+escape.
+
+
+
+
+
+
+
+
+
+						
+
+
+
+
+		        Continuous Forms Option
+     If the forms you are defining are connected to each other so that
+they can run through the printer without the need to reload after each
+form, then you should specify the Continuous Forms option.  All labels
+are continuous forms [by default], as is conventional pinfeed computer
+paper.  Envelopes and letterhead paper are also available which are
+temporarily attached to pinfeed paper so that they can be run through
+printers.  Use of such continuous forms is recommended because throughput
+can be increased significantly.
+
+     If you select continuous forms, you will be asked to specify the 
+size of each form.
+
+
+
+
+
+
+
+
+
+
+
+                             Page Size 
+     If you are using continuous paper or continuous envelopes or labels,
+you must specify the length of each page or envelope.  You should measure
+the distance between the top edge of one form and the top of the one 
+beneath it.  This measurement should be entered here in NUMBER of LINES.
+If you are using a standard printer with 6 lines to the inch, you should
+multiply the measurement by 6.  So, if you are using 11 inch long paper,
+you should enter 66.
+
+    Enter the page size you desire followed by return, or hit ESC to escape.
+
+
+
+
+
+
+
+
+
+
+
+
+
+			  Number of Labels Across
+     You must enter how many labels there are across the page.  If there
+is more than one label across, then you will be asked to specify the 
+distance between adjacent labels.  Forms with labels more than one
+across will speed throughput when a "line printer" is being used instead
+of a letter quality printer.
+
+     Enter the number of labels across and then hit Return; or hit ESCape
+to escape.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+	          Horizontal Distance Between Adjacent Labels
+     This number represents the number of character spaces between the 
+LEFT edge of one label and the LEFT edge of the next.  You should first 
+measure the distance between the left edge of one label and the left edge 
+of an adjacent label in INCHES.  Then, multiply this number by the number 
+of CHARACTERS PER INCH that your printer is set for.  (Standard print
+spacing is 10 characters per inch; some printers allow for other spacings,  
+particularly 12 characters per inch).   The result is the Horizontal
+Distance Between Adjacent Labels.
+     As an example, assume you are using labels which are 2 inches wide
+with a gap of .1 inch between labels with a printer set at 10 characters
+per inch.  The distance between the left edge of one label and the left
+edge of the next one is 2.1 inches.  You should multiply this by the print
+spacing (10 characters per inch) and enter the number 21 as the Horizontal
+Distance Between Adjacent Labels.
+
+
+
+
+
+
+
+
+		    Vertical Distance Between Labels
+     You should measure the distance between the top edge of one label and
+the top edge of the label beneath it.  [DO NOT measure the distance between 
+the bottom edge of one label and the top edge of the next one].  You should
+enter the measurement here expressed in NUMBER of LINES.  If you are using
+a standard printer with 6 lines to an inch, then you should multiply the
+number of inches by 6.  Thus, for 1 inch high labels, you should enter 6.
+Hit Return after entry, or hit ESCape to escape.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			 Default Salutation
+     The default salutation is used when the "{salutation}" command is
+invoked in letter formatting and the name for a recipient is unavailable
+This can occur when, for instance, the name of a contact is not known for 
+a particular company when the company is initially enetered.  You may
+select any of the default salutations offered in the menu, or you may
+define one of you own.  You will probably want to define your own default
+salutation when you are sending letters to a well defined group of 
+recipients--e.g. "Dear Cromemco Dealer".
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			Default Salutation
+     You have chosen to define your own default salutation, and you should
+enter that salutation here.  You might want to specify the group of recip-
+ients to which the letter is being sent (e.g. "Dear Cromemco Dealer", or
+"Dear Independent Voter"), or you might want to say something like 
+"Dear Friend".
+
+     Enter your default salutation followed by Return; or hit ESCape to 
+escape.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

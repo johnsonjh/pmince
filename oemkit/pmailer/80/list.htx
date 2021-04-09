@@ -1,0 +1,98 @@
+                        List Format Selection
+     To generate a list, you must specify three things: the list format,
+the subset to be listed, and the list targets.  Here you must select the
+list format from the menu of formats that have been defined.  To define a
+new list format or to revise an existing format, ESCape from this program
+and select the "Define List Format" option
+     There are four components to the list format: (1) the list heading
+format; (2) the page format [which includes the page size and the 
+bottom margin];  3) the list member format and (4) the sort keys 
+[which include the subheadings].  The format components are described 
+fully in the list format definition module.    
+
+
+
+
+
+
+
+
+
+
+
+
+			List Subset Selection
+     Here you must select the subset you wish to list.  You have a choice 
+of listing all of the members in the data base or any subset of them that 
+you have defined.  To define a subset, ESCape from this program and select 
+the "Define Subsets" option.
+     In generating a list, the system checks each data base member to see
+if it is in the specified subset and extracts the sort keys of the members
+in that subset.  It then sorts these keys.  After the keys are sorted, the 
+list will be directed to the specified targets.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			List Target Selection
+     You may select any combination of the following dispositions for the 
+list to be generated.  Hit ESCape when you have finished selecting targets.
+
+1.   CRT.  List will be printed on this CRT as it is generated.
+
+2.   Printer.  List will be printed on the hardcopy unit as it is generated.
+
+3.   File.  List will be stored in a disk file for subsequent review and
+     printout.  You will be asked to specify the file name.
+
+4.   Sort Image.  The sort order of the list will be saved in a disk
+     file.  If this option is selected, then the sort order will be
+     available to other programs (such as the mail generating program).
+
+     CRT output only is initially enabled as a list target.  The targets
+can be enabled and disabled in a toggle-switch fashion by selecting the
+appropriate menu option.  Whether a target is currently activated is 
+indicated after the menu option.
+
+=> Hit ESCape when you are finished selecting list targets <=
+
+
+			List Target Disk File Name
+     If you wish to store the list output on the disk, you must give the
+disk file a name so that it can be accessed later.  Type in the name
+and then hit return, or hit Escape to abort disk file targetting.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			Sort Image Disk File Name
+     If you wish to save the sort order, then you must supply a name for 
+the disk file in which the sort image will be stored.  Type the name followed
+by Return, or hit ESCape to abort sort image targetting.
+
+

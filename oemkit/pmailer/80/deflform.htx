@@ -1,0 +1,754 @@
+			List Format Definition
+     With this program you will be able to specify precisely the format of
+a "list".  After defining the format once, it will be available anytime
+you want to generate a list.  The list format is flexible enough to allow 
+the definition of arbitrary forms ranging from W-2 Forms and Payroll checks
+to dunning notices, in addition to the more traditional lists of employees
+or vendors or customers.   In the list generation program, the list definition 
+will be used in conjuction with a subset definition to produce lists of 
+arbitrary variety.
+     In defining a list, you may specify a heading and up to 5 sort keys
+and subheadings; in addition to the format of each member that will be listed.
+ 
++----------------------------------------------------------------------------+
+|       Option              |           Purpose                              |
+|---------------------------|------------------------------------------------|
+| Add a List Definition     |  Define another list format                    |
+| Review/Revise a List      |  Retrieve a list definition that has already   |
+|   Definition              |   been defined; allow review and revisions     |
+| Delete a List Definition  |  Delete a list definition no longer needed     |
++----------------------------------------------------------------------------+ 
+     
+Use 'x' to select option; ESCape to return to system menu.  
+     
+                            Format Description
+     Each list format you define must be given a brief description.  This 
+description will be subsequently be used to identify the list definition
+in this program and in the list generation program.  Type the description
+followed by a carriage return; or hit ESC to escape to higher level.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		   List Format Review/Revision
+     To review or revise an existing format definition, select the desired
+definition from those in the menu.  The menu options are the descriptions
+provided when the format was defined.  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			Changing Format Descriptions
+     You have chosen to review/revise a list format that has already been
+defined.  If you want to change the description which was assigned to the
+format, then say yes and you will be asked to enter a new format description.
+If you want only to review the format or change some part of the definition,
+then say no.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			New Format Description
+     You have chosen to provide a new description for a list format
+that has already been defined.  The description will be used in 
+subsequent programs to identify the list format as an option in 
+a menu.  Type the description followed by a carriage return; or
+hit ESCape if you do not wish to enter a new description.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			List Format Deletion
+     If you no longer need a list format, or if you have already defined the 
+maximum number of formats and to make room for another; you may delete one by 
+merely by selecting the appropriate option from the menu.  The menu options 
+displayed are the descriptions provided when the format was defined.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			Format Definition and Review
+     There are four components in a list format definition: (1) List Heading;
+(2) Page Heading; (3) Member Format; and (4) Sort Keys.  The list heading will 
+be inserted at the top of each list; the page heading will be inserted at the
+top of each page; the member format defines which fields of each member being
+listed should be printed and in what format.  The sort keys serve two related 
+functions; they specify by which fields the members will be sorted and they
+allow the definition of subheadings which are printed in the list each time 
+the corresponding sort key changes.  When you are finished defining the list 
+format, be sure to save it (with the bottom option).
+      Option            |               Purpose				      
+ -----------------------|---------------------------------------------------- 
+  Display List Format   |   Print out the components of this list format      
+                        |     that have been defined so far.                  
+  Define List Heading   |   Define the heading that will appear at the        
+  			|     top of the list (optional).		      
+  Define Member Format  |   Define the format that each member to be listed   
+                        |     will assume.				      
+  Specify Sort Keys     |   Specify by which fields the members will be	      
+ 			|     sorted; and, optionally, the subheading 	      
+ 			|     that will accompany each sort key. 	      
+  Save List Format      |   Write the list format to the disk so that it      
+   			|     can be used by subsequent programs.             
+			Discarding a List Format
+     You have just defined or changed some component(s) of a list format,
+and then ESCaped from the list format definition level without saving the
+format to the disk.  You must save the format after you make any changes 
+that you want to keep.  If you wish to save the format definition, say 
+so here.  If you want to continue defining this list format, then hit 
+ESCape and you will be back in the format definition menu.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			List Format Block Definition
+     The list and page headings, member format and subheadings are composed 
+of a "list format block"--i.e. a series of list format fields which are strung 
+together.  At this level you must specify exactly which list format fields
+will constitute the list format block being defined.  You may add or delete
+a list format field, change one that has been defined or insert a new field 
+into the list format block.  Flexible formatting can be accomplished by 
+specifying the length and positioning of the list format fields; by specifying 
+boldface and/or underlined output fields and by inserting pre-defined "string" 
+output fields.           
+
+     In order to change, insert or delete a list format field, you must
+provide a list format field number.  To review the list format field numbers,
+ESCape to the menu level whose first option is "Display List Format 
+Definition", display the definition, then return here.
++----------------------------------------------------------------------------+
+|    Option              |              Purpose				     |
+|------------------------|---------------------------------------------------|
+| Add a Format Field     |  Add a format field after those already defined   |
+| Change a Format Field  |  Change a format field already defined            |
+| Insert a Format Field  |  Insert a format field before one already defined |
+| Delete a Format Field  |  Delete a format field already defined            |
++----------------------------------------------------------------------------+
+			Change List Format Field
+     You have selected the change format field option.  If you want to 
+change a format field (i.e.--delete a field and insert another in its 
+place), then type the number of the field to change and hit return;
+else hit ESCape.  To review the format field numbers, ESCape to the
+menu whose first option is "Display List Format"; then return to this
+point.
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		     Insert a List Format Field
+     To insert a format field among those already defined; you must specify
+before which field you want to insert a new field.  To review format field
+numbers, you can escape back to the level at which Display List Format is
+the first option, get a display,  and then return to this section.   
+
+     Type the number of the field before which you want to insert another
+field and then hit Return; or hit escape to exit.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			Delete A List Format Field  
+     To delete a format field; type its number here followed by return.
+To review format field numbers; ESCape to the menu whose first option is
+"Display Format Definition", then return here.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			Sort Key Definition
+     You may define up to 5 "keys" by which the members will be sorted.  A sort
+key is either a single field or a template.  When a list is generated, the sort
+keys are extracted from each member to be listed, and then the members are    
+sorted by the keys in the order they were defined (ie--sorted first by Key #1,
+then Key #2 and so on).
+     Associated with each sort key is a subheading format.  The subheading,
+if one is defined, will be generated each time the associated sort key changes
+value in the list.
+     At this level, you can add a new sort key, change one that has already
+been defined, insert a new key before an existing one or delete a sort key.
+
+
+
+
+
+
+
+
+
+
+
+
+			   Change a Sort Key
+     To change a sort key, you must specify its number.  If you want to review 
+the current sort key numbers, ESCape to the menu whose first option is 
+"Display List Format"; display the format and then return to this point.
+Type the sort key number here followed by return; or hit ESCape to exit this
+section.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			   Delete Sort Key
+     To delete a sort key, you must specify its number.  To review sort
+key numbers, ESCape to the menu whose first option is "Display Format 
+Definition"; display the definition then return to this section.  Type
+the number of the sort key to delete here and then hit return; or use
+ESCape to get out of this section.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    Sort Key Definition
+     Sort keys are comprised of two elements: the field or template which
+will comprise the sort keys itself, and the definition of a subheading which
+will be generated in the list each time the value of the sort key changes.  
+Each of these elements must be defined independently; and at this point you
+must select which of them you wish to define or revise.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			   Sort Key Type
+     You may specify either a single logical field or a template as a sort
+key.  If you select a logical field; the list will be sorted by that field
+either numerically (if the field was defined as numeric) or alphabetically
+(otherwise).  If you select a template to sort by, then the list will be
+sorted by the logical fields comprising that template in the appropriate 
+order.  Dates are sorted by year, by month then by day; times by AM/PM, 
+by hour then by minute; names by last name, first name then middle name.
+     Note that you might occasionally want to specify explicitly the
+logical fields of a template as sort keys.  You might, for instance,
+want to sort by date and use the name of the month a subheading.  This
+would not be possible if the date template were used as a sort key, since
+the subheading would be generated each time the date's day field changed.
+You can achieve the desired effect merely by specifying the month as one
+sort key and the day as another, and defining an appropriate subheading
+for the month key.
+
+
+
+
+
+
+
+			Logical Field Sort Key
+     You have specified that a logical field will serve as a sort key.
+You must type the tag of the logical field here, followed by return.
+To review logical field tags, see the tag.txt file generated by the
+gendb program.  Type ESCape to escape to a higher level.
+
+     Note that the tag of a logical field which is part of a template
+must be entered as <template-tag>.<field-tag>, otherwise the tag is
+merely entered as it was defined in gendb.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			Template Sort Key
+     You have specified that a template should serve as a sort key.
+You must type the tag of that template here followed by return.
+Note that a template tag does not contain any period ('.').  
+
+     To escape to a higher level, hit ESCape.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			 List Format Field Type
+     The list and page headings, member format, and subheadings are composed 
+of a string of "list format fields", one of which you are defining now.  The 
+table below indicates what each list forat field type contains, and in what 
+context it is most useful.
+
++-----------------------------------------------------------------------------+
+|  Field Type   |          List Format Field Contents        |    Uses        |
+|---------------|--------------------------------------------|----------------|
+| Logical Field | The contents of the logical field of the   | Member Format, |
+|               |   member being listed.                     |   Subheadings  |
+| Template      | The contents of the template of the member | Member Format, |
+|               |   being listed; formatted as appropriate.  |    Subheadings |
+| String        | A string "constant" which is defined here; | Anywhere       |
+|               |   as part of the format defintion.         |                |
+| Subset Name   | The subset description.		     | Headings       |
+| Date          | The date the list is generated.            | Headings       |
+| Page Number   | The current page number will be output     | Page Heading   |
++-----------------------------------------------------------------------------+
+
+
+
+
+		       String List Format Field Definintion
+     You have selected the string type format field, and you must define
+here what the string will contain.   You may include any printing character
+in the string, including the Carriage Return to start a new line.  Whatever
+characters you type will be output in the appropriate place in the list
+in order to facilitate formatting.  
+    Type the format string here, followed by ESCape.  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			Logical Field List Format Field
+    You have selected an list format field which will be taken from
+a logical field of the member being listed.  You must type the tag here
+of the logical field from which the format field will be composed; followed
+by a Return.  To review the format field tags; see the tag.txt file.
+Note that to specify a single field of a template, you must say
+"<template-tag>.<logical-field-tag>". 
+
+            
+
+
+
+
+
+
+
+
+[To ESCape to a higher level without specifying a field tag, hit ESCape] 
+
+
+
+
+
+			   Template List Format Field 
+     You have selected an list format field which will be taken from
+a template of the member being listed.  The template will be formatted
+appropriately on output--e.g.  dates will appear as <month> <day>, 19<year>;
+times as <hour>:<minute> <AM or PM>.
+     You must specify here the tag of the template that is to be inserted
+into the output field, followed by a Return.  (Note that the template tag
+does not include a period). 	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			List Format Field Characteristics
+     There are several characteristics of an list format field for which the
+system supplies default values.  You may, if you wish, specify here values
+for these characteristics other than the default values.  If you do not
+wish to change the default values, simply hit ESCape now.  When you are 
+finished specifying output field characteristics, hit ESCape.  Whether
+a mode is currently active is indicated after its menu option.
+
+I. Underline Mode.  You may specify that any field be underlined on 
+output by specifying this option.  Both underlining and boldface mode
+options work in a "toggle switch" fashion, so to turn off a mode merely
+select it again.
+
+III. Field Length.  The default value for the field length is exactly the
+length of the item from which the field is composed.  The default length
+for logical fields, for example, is the length of the logical field of 
+the member being listed.  For templates, it is the length of the template 
+after being formatted.  You will want to specify a field length if, for
+instance, you wish to format the output in columns.
+==> HIT ESCape when you are finished specifying characteristics <==
+
+
+
+			List Format Field Length         
+     You have chosen to set the list format field length.  You must enter  
+the length here in number of spaces.  When you set the length of a list    
+format field, the field will always be output at the specified length.   
+If the data in the field is shorter than the length you specify, then
+the field will be padded with blanks.  If it is longer, then it will be
+truncated.
+     After you specify the field length, you will be asked to choose a
+positioning mode.  
+     Type the value of the list format field length here measured in
+number of spaces, and then hit Return; or hit ESCape if you do not wish 
+to set the length of this field.
+
+
+
+
+
+
+
+
+
+
+
+		  	  Positioning Mode
+     Whenever you set the length of a list format field, you must also specify
+how the field is to be positioned within the allocated length.  Select
+the positioning mode desired, or hit ESCape if you do not wish to set the
+field length.     
+
+I. Centered.  If the data to be inserted in the list format field is shorter
+than the length you specify, the data will be centered within a field
+of the length specified.
+
+II. Left Justified. The data will be begin at the leftmost position in
+a field of the length specified.  If the data is longer than the maximum
+length, it will be truncated to that length.  If the data is shorter than
+the maximum length, blank space will be added to the end of the field to 
+make it as long as the minimum length.
+
+III. Right Justified.  The data will be positioned in the rightmost end of
+the field of the length specified.  If the data is longer than the maximum
+length specified, it will be truncated to the minimum length.  If the data 
+is shorter than the maximum field length, blank space will be added to the 
+left of the data to make it as long as the minimum length.
+
+
+			   Sort Key Insertion
+     You have selected to insert a sort key before one that is already
+defined.  This will mean that the new sort key will be sorted before
+the one before which it is inserted.  If you are currently sorting 
+by the city field, for example, and want to sort by state also, then
+you would insert the state sort key before the city sort key.
+
+     To review sort key numbers, ESCape several levels and display
+the list format definition.  
+
+     Type the number of the sort key before which the new key will
+be inserted followed by Return, or hit ESCape to escape.
+
+
+
+
+
+
+
+
+
+
+
+			Page Format Definition
+     There are three components of a page format: (1) the page length;
+(2) the bottom margin and (3) the page heading format.  You may adjust
+any of these three components independently of the others.  The  
+components are described briefly below; for more detailed information,
+consult the help file for the option in question.
+
+
++-----------------------------------------------------------------------+
+|      Option           |              Usage			     	|
+|-----------------------|-----------------------------------------------|
+| Page Size             |  The length of one page on the printer,    	|
+|		        |    measured in number of lines.            	|
+| Bottom Margin         |  The amount of blank space to be left at   	|
+| 			|    the bottom of the page (assuming that   	|
+|			|    the list starts at the top of the page) 	|
+|			|    measured in number of lines.	     	|
+| Page Heading Format   |  The format of the heading that will appear	|
+|   Block		|    at the top of each page.  The format is	|
+|			|    composed of a number of "format fields"    |
+|			|    which the user can define.			|
++-----------------------------------------------------------------------+
+
+			    Page Size
+     In order to use page headings, you must specify how many lines 
+long the page is.  If you are using a standard printer, there will
+be 6 lines to the inch, so you should measure the length of one page 
+in inches, multiply by six and enter the result here.  If you are 
+using standard 11 inch long paper, for example, you would enter 66.
+     You can adjust how much of the page will be used by the listing 
+by setting the Bottom Margin parameter.  The page heading will appear 
+at the top of each page of the listing.
+     Enter the page size here, followed by Return; or hit ESCape to 
+escape.
+
+
+
+
+
+
+
+
+
+
+
+
+			    Bottom Margin
+     The bottom margin is the amount of space that will be left blank at
+the bottom of the page.  If you want to have a top margin and a bottom margin,
+then you should set the bottom margin to the sum of the top and bottom margins
+and start the listing at the top margin.
+
+     The bottom margin, like the page size, must be entered in number of 
+printer lines.  If you are using a standard printer, there will
+be 6 lines to the inch, so you should measure the length of one page 
+in inches, multiply by six and enter the result here.  If you are 
+using standard 11 inch long paper, for example, you would enter 66.
+
+      
+     
+
+
+
+
+
+
+
+
+
+			    Sort Direction
+     The Leverage sorting algorithm typically produces a sort in
+ascending order--that is, the smallest (or earliest in the alphabet)
+items are listed first.  When sorting by numeric fields, or date or 
+time templates, you may choose to have the members sorted in reverse 
+order by specifying a descending sort.  You would want to do this if, 
+for instance, you wished to get a list of sorted by date with the most
+recent dates first.  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                     List Format Field Definition
+      You have selected the option of adding, changing or inserting a 
+list format field.  The list format block and field number of the
+field being added, changed or inserted is indicated in the upper
+left corner of the screen.  You can specify either what the contents
+of the field will be or enable any of 3 characteristics of the field.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

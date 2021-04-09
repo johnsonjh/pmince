@@ -1,0 +1,13 @@
+			Current Data Base Disk Drive
+     You must enter here the single letter identifier [e.g. A,B,C etc.]
+of the disk drive in which the data base currently resides.  Type in
+the letter followed by return.  It does not matter whether you use
+an upper case or lower case letter.
+
+     Note that you can execute the LEVERAGE program with the data base
+disk drive as an argument--e.g. "leverage a" to access a data base on
+disk A.
+
+     Note also that the LEVERAGE program must be executed from the
+disk on which it resides.  You may NOT, for example, run a LEVERAGE   
+program on the "A" disk from the "B" disk by typing "a:leverage".

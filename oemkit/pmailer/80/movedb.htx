@@ -1,0 +1,79 @@
+                      Directory of Old Data Base
+     In order to copy data from another data base, you must specify
+the "directory" in which that data base resides.  (In the case of CP/M
+based systems, the directory is merely the single letter designation
+of a disk drive -- e.g. A, B, etc).
+
+     The "dbfetch" program should be used (1) when a field has been 
+added or deleted from the data base with the "gendb" program or (2) 
+when you wish to copy data from any other data base (including pre-
+packaged data bases available from Urban Software).  The program 
+works by comparing the tag of each field of the current data base with
+each the tags of the one being copied, and copying data between the
+fields that match.
+
+
+
+
+
+
+
+
+
+
+	          Subsystem to Copy from Old Data Base
+     You must specify here exactly what you want to copy from the old data
+base.  Note that any data copied from the old data base is ADDED to existing
+data.  If you want to delete the data in your current data base before copying
+in new data, then use the "Reinitialization" option in the "gendb" program.
+
+
+
+
+
+
+				+------------------------------------+	  
+		  		|     Key     |      Result          |
+                                |-------------|----------------------|
+                                |    Space    | Move Down 1 Option   |
+				|  Down Arrow |       " "            |
+				|      x      | Select Option        |
+				|   Up Arrow  | Move Up 1 Option     |
+				|     ESC     | Escape               |
+				|  Control Q  | Display this message | 
+ 				+------------------------------------+
+
+
+                       Subset of Members to Copy
+     You have chosen to copy records from one data base to another.  You
+have the option of copying any subset of records that has been defined in
+the database into which the records will be copied.  If you want to copy
+the whole data base, then select the "All Members" option.  If you want to
+copy a subset which is defined in the source data base but not in the target
+data base, then Escape from this level and copy the subset definitions
+from the source data base to the target data base.
+          
+     The record copy utility first compares each tag of the source data base
+with the tags of the target data base.  For each field whose tags match,
+data will be copied from the field of the source record to the corresponding 
+field of the target record.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
