@@ -1,0 +1,62 @@
+    The following SBASIC program will allow you to create different
+sized PW.SWP files.  After compiling, put it and a copy of an old
+PW.SWP file together on a disk in drive a.  Put a disk without a PW.SWP
+(and enough room to hold the new one) in drive B.
+
+var num,I,J = integer
+var abyte,fsize = char
+files S(1),S(1)
+create "B:PW.SWP"
+open #1; "A:PW.SWP"
+open #0; "B:PW.SWP"
+print "File size (64 is normal)";
+input num
+let fsize = chr(num)
+for I = 0H to 7BH
+   read #1; abyte
+   write #0; abyte
+next I
+read #1; abyte
+write #0; fsize
+for I = 7DH to 3FFH
+   read #1; abyte
+   write #0; abyte
+next I
+let abyte = chr(0)
+for I = 1 to fsize
+   for J = 0H to 3FFH
+      write #0; abyte
+   next J
+   print I;"K";chr(0DH);
+next I
+close #0
+close #1
+print "Done."
+end
+
+   The idea behind the program is simple: It allows you to replace byte
+number 7C (Hex) of the file (the size parameter) with a new value, copying
+all else of the first K directly, then building the file to that size.
+
+    The above grew out of personal necessity for a larger swap file.  It
+is based on careful study of SWP files for both PW and MINCE.  The
+program can easily be modified to change the other personal preference
+params of a SWP file -- just change the FOR loops to allow editing a
+different byte.  The other params are:
+
+cursor start line: 75H
+fill column: 76H
+tab spacing: 77H
+indent column: 78H
+CPU clock rate: 79H
+Delay count: 7AH (low order byte) 7BH (high order byte)
+File size (as in above program): 7CH
+
+    Hope this helps all of those who've been trying to get PWCONFIG.
+Note that the above program doesn't check values -- read the PW manual
+to find out what's acceptable.  (The one thing it doesn't mention is
+that PW likes SWP files to be in multiples of 8K)
+
+                                     Chip Weems
+                                     COINS Dept., UMass/Amherst
+

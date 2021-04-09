@@ -1,0 +1,35 @@
+PERFECT WRITER TIP
+by Paul Bobbin, KUB, May/June 1987
+
+(An interesting method of printing PW documents)
+
+Perfect Writer can be used without formatting, and is especially
+useful in writing letters, reports and one page documents.  I
+have a disk on which I have erased PF.COM leaving lots of room
+for other files.  From the KUB library I have added D.COM,
+DO.COM, which I renamed GO.COM, PIP.COM, LIST.COM.
+
+To print a file I type GO P (short for print) filename.ext.  This
+prints the file EXECUTING any imbedded commands, such as BOLD
+FACE, italics, etc.  If I type GO L filename.ext, I will get a
+printout which PRINTS the control codes but does NOT execute
+them.  Two small submit files do all the work and in addition
+they update my file D.DIR each time after printing.
+
+Having an updated C>DIR means you can call up the directory
+without leaving PW, then extract a paragraph or a macro file. 
+For instance, to print in two columns, the escape codes for my
+printer are difficult, so I have a `MAC' file.  This file, which
+is inserted after the first column, tells the printer to go to
+the end of the page, back-up 66 lines, reset the margins, turn on
+the justify and continue printing.
+
+Here are the two P.SUB and L.SUB files:  Replace the commas with
+a <cr>.
+
+  PIP LST:=$1,ERA B:D.DIR,B:A:D $$F,A:,D B:
+
+  LIST $1,ERA B:D.DIR,B:A:D $$F,A:,D B:
+
+OK Word Stars, can you do that!
+
