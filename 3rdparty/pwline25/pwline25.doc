@@ -1,0 +1,23 @@
+1 Yes, you can configure your PERFECT WRITER to have 25 lines on a Kaypro '84.
+2 And talk about easy! Just use any program like superzap, sodu, patch, etc.,
+3 and open up the PW.SWP file. The SECOND BYTE OF CODE, "18" should be changed
+4 to "19" ... viola! You now have 23 lines of text, with line 24 and 25 used
+5 for the various messages PW generates.
+6        Ain't it nice when something's easy?
+7
+8     Use this message to check whether your patch was successful... it has
+9     23 lines, which should just fit in one screen of a 25 line PW program.
+10
+11           Jon Trott
+12           4707 N. Malden
+13           Chicago, IL 60640
+14
+15
+16   A final request: if you have any information on further enhancements
+17   which can be made on the best of all CPM word processors (PW, of course)
+18   please write me at the above address... I have created a "Wordstar-ized"
+19   version of Perfect Writer which uses many WS commands for those of us
+20   unwilling to learn a whole new command set. See PWLKWS23.ARK on this
+21   system....
+22
+23   "Jesus Christ is the only significance." - Dietrich Bonhoeffere any program like
