@@ -1,6 +1,6 @@
 # MINCE
 
-- **_MINCE Is Not Completely EMACS_**
+- **_MINCE Is Not Complete(ly) EMACS_**
 
 ## Overview
 
