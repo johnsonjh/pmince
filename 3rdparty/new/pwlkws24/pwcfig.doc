@@ -1,0 +1,74 @@
+	    PWCFIG -- The Configuration Program for Perfect Writer
+
+Perfect Writer for Kaypros did NOT come with a configuration program, since of
+course (???!!!?) PW was already configured for the Kaypro. Numerous public
+domain versions have come and gone, but this one is the smallest (and most
+simple to use) of those I've seen. I prefer it to the commercial version, of
+which I have a copy.
+
+Keeping things short, here's how it works:
+
+Type 'pwcfig' at the prompt, and a menu appears like this [default values
+listed to the right are mine]....
+
+
+		      Configuration Parameters
+
+		1. Preferred cursor row:	10
+		2. Default fill column:		78
+		3. Default tab column width:	 8
+		4. Default indent column:	 0
+		5. CPU clock speed (MHz):	 4
+		6. Keyboard idle delay: 	300
+		7. Swap File Length (1K pages): 200
+		8. Default Mode:		Fill
+		9. Update swap file on disk
+		10. Exit swap file update
+
+1. Scrolling up or down, where would you like the cursor to end up after
+screen refesh has finished? (Default is 10 -- I leave it that way.)
+
+2. The right margin number where text will automatically wrap around to a new
+line.... default is 65. I go for 78 myself.
+
+3. How big do you want your tabs to be when you hit the tab key? 8 is the
+default.
+
+4. Default left margin.... zero, of course.
+
+5. This has to do with how quick your machine is. Old Kaypros are 2.5, '84s
+are 4, and special speed-up chips from Advent and Micro-C offer anywhere from
+5 to 8 MHz. 4 is the default, and you can get away with that even on the old
+Kaypros.
+
+6. How long PW waits between keystrokes before 'swapping' goes on in PW.SWP
+overlay. Leave it 300.
+
+7. Want to make your swap file big enough for some really hefty manuscripts?
+You can go to 200+ Kilobytes, which I have done. Default is a paltry 64K.
+
+8. Write Mode that PW defaults to on startup. It's Fill, and I leave it that
+way. Normal's nice if you're a programmer or making up some complex charts.
+
+9. Updates PW.SWP with your changes when you're done tinkering with 1-8.
+
+10. Exit to CPM.....
+
+				   ** ** **
+
+Most important functions (to me, at least): 
+
+Being able to alter the size of the swap file is important for those people
+who do work on very large files (or many medium sized files simultaneously).
+If for nothing else, this program is invaluable for that. I also like having
+things out to the right edge of my screen, thus the 78 value for the fill
+column [a la 'right margin'].
+
+
+- Documentation, Jon Trott / 4707 N. Malden / Chicago IL / 60640, 11/17/89
+
+- Program 'PWCFIG' unknown author (to me, that is -- I found this on an old
+disk via a second hand Kaypro, and went as far as to open up the program code
+with Patch18a to search for the author's name. No John Hancock listed in
+program code, even. Date program was created was there: 6/5/83.)
+

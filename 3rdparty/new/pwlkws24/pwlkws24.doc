@@ -1,0 +1,532 @@
+..use wordstar to print this document
+.h1 == Perf*Star ==  Manual   - Jon Trott -                           Page #
+			First edition: October 5, 1986
+		Second edition: January, 1987 (or thereabouts)
+	       Third (this) revised edition: November 12, 1989
+
+                       ////			   \\\\
+		      <<<<  P E R F E C T  S T A R  >>>>
+                       \\\\			   ////
+
+		    -------------------------------------
+		 How to Make Perfect Writer Act Like Wordstar
+		    -------------------------------------
+
+	In brief, the following is one of two parts: the first [this file] an
+explanation on how to create a version of Perfect Writer that responds to the
+same basic commands (cursor movement, blocking, and file management) Wordstar
+responds to; the second, FUNCTS.TXT, the actual file accessed by the Perfect
+Writer companion program, PWBIND.COM to redefine PW's key commands. If you do
+have PWBIND, and are a Wordstar fan who'd at least like to check out Perfect
+Writer's ability without learning a whole new command set, go ahead and
+download this library.  Kaypro computers (until '84) had bundled copies of
+both Wordstar and Perfect Writer, and Kaypro 1's still do.  So. . .
+
+
+		 ['Wordstar' Copyright 1983, 1987, Micropro]
+	    ['Perfect Writer' Copyright 1982 by Perfect Software]
+
+.pa
+
+
+
+
+
+
+
+		    ______________________________________
+
+\\\\
+ >>>>	PPPPPPP   EEEEEEEE  RRRRRRR   FFFFFFFF
+////	PP    PP  EE        RR    RR  FF
+\\\\	PP    PP  EE        RR    RR  FF
+ >>>>	PPPPPPP   EEEEEE    RRRRRRR   FFFFFF
+////	PP        EE        RR  RR    FF
+\\\\	PP        EE        RR   RR   FF
+ >>>>	PP        EEEEEEEE  RR    RR  FF
+////
+\\\\        	             SSSSSS   TTTTTTTT     AA     RRRRRRR
+ >>>>	                    SS    SS     TT       AAAA    RR    RR
+////	                    SS           TT      AA  AA   RR    RR
+\\\\	                     SSSSSS      TT     AA    AA  RRRRRRR
+ >>>>	                          SS     TT     AAAAAAAA  RR  RR
+////	                    SS    SS     TT     AA    AA  RR   RR
+\\\\	                     SSSSSS      TT     AA    AA  RR    RR
+ >>>>
+////
+				  Jon Trott
+				4707 N. Malden
+			      Chicago, IL  60640
+				(312) 989-2080
+
+			       October 5, 1986
+			      November 12, 1989
+.pa
+
+			    BUT FIRST, WHY BOTHER?
+			    ---------------------
+
+	Why would anyone want to "mess up" a perfectly (pun intentional) good
+program like Perfect Writer by redefining its editing commands to another
+almost totally incompatible word processor?  It doesn't make much sense,
+unless, of course, that program is the almost universally known Wordstar.  In
+other words, veteran Perfect Writer users will find this idea worse than
+useless; it is for the majority of users who learned Wordstar and might want to
+give that "second" program a serious look.
+
+	So what can Perfect Writer do that Wordstar can't?
+
+* It can edit up to seven files at the same time, with a split screen giving
+  two files screen visibility.
+* It is more memory resident than Wordstar, so sometimes runs faster.
+* It has the glorious feature of YANKBACK, the ability to retrieve a hunk (or
+  hunks) of text just deleted. (Though WS4 supposedly also has this, PW's
+  doesn't chew up big hunks of your computer's memory, and is not nearly as
+  "limited" in the number of characters it can retrieve.)
+* It allows the quick movement of the cursor to and from the beginning of
+  paragraphs and sentences as well as lines and words.
+* It allows the renaming of the file being editing.
+
+	There's more, but that ought to be enough to intrigue anyone with an
+unused copy of Perfect Writer in their master diskette collection.
+
+
+		FILES YOU NEED TO ACCOMPLISH THE "CONVERSION"
+		--------------------------------------------
+
+PW.COM (Perfect Writer program)
+PW.SYM (file of symbols used in new key definitions)
+PW.SWP (PW's 'overlay' file containing the actual key definitions)
+PW.HLP (Perfect Writer Help file - special version included in this file
+        should only be used AFTER running pwbind; use the generic version from
+        your master disk for the actual conversion and use this version
+        afterward; it reads more like 'Wordstar.')
+PWBIND.COM (program that uses "functs.txt" to create new pw.com)
+Altered version of FUNCTS.TXT (THE ONLY FILE YOU GET IN THIS LIBRARY)
+
+	All the files listed above (except for my version of FUNCTS.TXT) are
+located on the master copy of the Perfect Writer Installation Disk.  Copy them
+all to a blank disk, then simply type "pwbind" and hit return. Your new
+"Wordstar-ized" Perfect Writer will then be ready to go. And remember, there
+is one other file you need to actually RUN Perfect Writer, its big "overlay,"
+PW.SWP.  The additional file, MENU.COM, is handy but not necessary to run
+Perfect Writer.  One final problem: I've created this file for PW version
+1.20, and have had no opportunity to see if it works correctly on version
+1.03.  I suspect it will, but if anyone verifies this (either way) please let
+me know.
+
+.pa
+			       WHAT I DONE DID
+			       ---------------
+
+	For those of us more used to Wordstar, but in possession of Perfect
+Writer thanks to Kaypro's generosity, wouldn't it be nice to be able to use
+both of these powerful programs?  The main drawback to such a thought, of
+course, is that two more different approaches to word processing could hardly
+be imagined.  In other words, to use Perfect Writer means learning a whole new
+set of commands.
+
+	Or does it?  Thanks to a special feature of Perfect Writer, its
+commands can to a limited degree be altered.  In short this is accomplished by
+editing the file "FUNCTS.TXT" enclosed with the Perfect Writer master disks,
+then calling up the program "PWBIND.COM" (If your machine had it included on
+the diskettes).  The latter will automatically search for the former, as well
+as the files "PW.SYM," "PW.SWP," and "PW.HLP."
+
+	What I have done is to offer a version of FUNCTS.TXT which has already
+been edited to re-create Wordstar's "cursor diamond," block commands, and
+"quick" commands, in the Perfect Writer environment.  If you place this
+version of FUNCTS.TXT on the same disk with the above files, along with
+PW.COM, the result should be a "wordstarized" version of Perfect Writer.
+
+			   ////               \\\\
+			  <<<< The ^Q Commands >>>>
+			   \\\\               ////
+
+	What I've done is to redefine the ESCAPE, or what PW calls the "Meta
+key," as ^Q. This allows the redefining of many keys to Wordstar standards.
+There are many commands here simply unavailable in Wordstar, such as ^QE,
+beginning of sentence, ^QX, end of sentence, ^QV, end of paragraph, and ^QZ,
+beginning of paragraph. I tried to define these commands within the "diamond"
+idea of Wordstar's cursor movements, but with varying success (a diamond can
+only be so big). You can, instead of striking ^Q, hit the ESC key. That's how
+Perfect Writer was originally configured, and offers a sort of hybrid feel for
+those interested. 
+
+			   ////                \\\\
+			  <<<< The ^K Commands >>>>
+			   \\\\                ////
+
+	My move here was to redefine the "eXtended" command key, ^X, to ^K.
+The message "eXtended" will still appear at the bottom of your screen if you
+hit ^K and pause before striking the second key.  An obvious difference will
+immediately become apparent between PW and ws when you attempt your first
+"blocking" command.
+
+	For instance, ^KB in Wordstar creates a visible marker at the cursor
+position.  Perfect Writer, on the contrary, merely displays the message "Mark
+Set" at the bottom-of-screen "status line."  And whereas WS with ^KK displays
+the block in reverse video, PW displays nothing but a small "+" by the status
+line.  That disappears when you move your cursor!  In brief, this is because
+of Perfect Writer's method of block editing, which centers around its yankback
+command.  PW "yanks" deleted text (over one letter) into a temporary buffer.
+They can be retrieved by issuing a Yankback command, in my version, ^KV, ^KC,
+and ^@.  This does mean my redefinitions are subtly different than
+Wordstar's, at least in their actual function.  I have not found them hard to
+get used to.
+
+	Do keep in mind that this file was double-checked, but only on a
+Kaypro 2 Kaypro II, and Kaypro IV. The single-key "Yankback" command may cause
+problems if your computer is configured to use that command key for something
+else. In Perfstar, it's fine to yank section after section of text, except for
+the important fact that if you expect to yankback one piece of text, don't
+delete another one first.  Otherwise, the first chunk of verbiage will be
+gone... UNLESS you hit ^KO before every new deletion.  Then (and only then!)
+can you "stack up" deletions and then yankback the whole pile when you're
+through. The "+" sign will come on the status line every time the ^KO command
+is issued.
+
+			 Looking At the Command Sets
+			 ===========================
+
+	So let's see what we have for a command set. Below is the help file
+for Perfect Writer, which, by the way, is automatically updated with the
+correct new commands when you run PWBIND as described at the beginning of this
+document. Accessed with a simple ^J [just like Wordstar] it is shut off again
+by hitting ESC-1. HOWEVER!!! I also have enclosed this customized version of
+PW.HLP in this library, because it is more recognizable to a 'Wordstar' user
+than that created by PWBIND. Therefore, I suggest you use a scratch version of
+pw.hlp for the conversion, but AFTER you're done, replace it with the one I've
+enclosed here. Either way, a version of pw.hlp must be on the disk when you do
+the conversion.
+
+	My comments run throughout the next section in order to explain
+[somewhat] what's going on. The comments do NOT appear in the customized
+PW.HLP file when it is called from within Perf*Star. I've put them here
+because I'd rather overdocument than underdocument, and rather avoid
+frustrating those souls brave enough to attempt this installation! 
+
+.pa
+		    <<< The PW.HLP File with Comments >>>
+
+^Q  is 'M-', the Meta Command Prefix 
+^K  is 'X-', the Xtended Command Prefix
+'^'  indicates a control character 
+
+-- 
+Hitting ^Q will cause the message "Meta:" to appear at the bottom of the
+screen, as hitting ^K will cause the message "eXtended:" to appear. 
+--
+
+ <^Q! Quit Help; ^N Next Help Screen; ^Z Previous Help Screen>
+===============================================================  
+MOVING THE CURSOR  
+^D Forward Character             ^H Backward Character  
+^F Forward Word                  ^A Backward Word  
+^Q^S Front of Line               ^Q^D End of Line  
+^Q^E Front of Sentence           ^Q^X End of Sentence
+^E Previous Line                 ^X Next Line  
+^W Front of Paragraph            ^V End of Paragraph  
+^R Scroll Up                     ^C Scroll Down  
+^Q^R Front of Document           ^Q^C End of Document 
+
+--
+I was very happy with this basic WS layout. These are the commands used the
+most (at least in my editing), and ALL of them are either WS or WS-like. And
+remember -- you can make things really fly by using ESC instead of ^Q. ESC-E
+and ESC-X get used by me a lot....  
+-- 
+
+<^Q! Quit Help; ^N Next Help Screen; ^Z Previous Help Screen>
+=============================================================== 
+DELETE COMMANDS             ^@ Yankback Deletion
+<DEL> Previous Character    ^Q^K Previous Word
+^G Next Character           ^T   Next Word
+^Q^Y To End of Line         ^Y Entire Line
+^Q^T Sentence Forward       ^K^P ^K^Y Paragraph
+^Q\ Surrounding Whitespace  ^\ Leading Whitespace
+^Q; Surrounding Greyspace   ^Q^Z Global Trailing Whitespace 
+TO DELETE REGION  1. At Front enter ^K^B to Set Mark 
+		  2. Move Cursor to End of Region and type ^K^Y  
+
+-- 
+G, T, Y, and ^QY are WS commands. ^KP-KY is a spiffy shortcut to delete a
+whole paragraph; just using ^@ or ^2 brings it back wherever you want it. The
+various whitespace and greyspace commands? I never use 'em, but they do clean
+up a document if you're careful. The ^QT command, by the way, I came up with
+before WS4 used the same one as their "delete to [keyboard input]" command.
+Braggart? Okay....  
+-- 
+.pa
+
+<^Q! Quit Help; ^N Next Help Screen; ^Z Previous Help Screen>
+=============================================================== 
+SEARCHING
+^Q^F Forward Search        ^Q^B Reverse Search 
+^Q^G Search & Replace    
+^Q^A Search & Replace with Query 
+	     ^G Cancel               . Exit to Entry Point  
+              ! Replace All          , Replace & Query Again    
+              Y Replace & Continue   N No Replacement & Continue
+
+--
+Similar, very similar, to WS. Between ^QG and ^QA, ^QA is the safest, as you
+can always tell it to replace all merely by hitting the '!' after you're sure
+its replacing the right stuff.
+--
+
+<^Q! Quit Help; ^N Next Help Screen; ^Z Previous Help Screen>
+===============================================================
+FILE COMMANDS
+^K^Z Read File                 ^K^N Find File
+^K^S Save File                 ^K^D Write File
+
+BUFFER COMMANDS
+^K^T Buffer Directory         ^Q. Delete Buffer
+^Q,   Switch Buffers
+
+MULTIPLE WINDOW DISPLAY
+^Q^@ Two Windows              ^Q! One Window
+^Q# Other Window              ^Q^^ Grow Window
+
+-- 
+There are some subtleties here. ^KS does the same thing as in WS. ^KD allows
+you to rename the file before saving. That's important, since PW does --NOT--
+keep a backup file. ^KN calls another file, and the file you're in disappears.
+However, it is still there. Just use the switch buffer command ESC- ,[comma]
+to get the other file back. Or open another window (ESC-2) and have one file
+on top, the other on the bottom. Okay, now about ^KZ; be careful. It dumps the
+file you're in, though it warns you first with 'is this okay?' Only when you
+say 'yes' will it get the second file you ask for.
+
+^KT gives the 'buffer directory' which lists the files currently loaded into
+PW's swap file. The swap file concept is the main difference between PW and
+WS, and consists of a basically 'empty' 64k file that 'holds' the text
+currently being worked on. Buffers which have been saved back to disk are
+marked with an '*'.
+
+Windows. Use the ESC key here to really whip along. ESC-2 opens a second
+window. You can hit ^KR to open a new file or read in an existing file to the
+bottom window. Then hit ESC-3 to 'hop' back and forth between windows, copying
+text from one to the other. ESC-4 will 'grow' whatever window the cursor is
+in, one line at a time. ESC-1 closes the window the cursor is not in.
+--
+.pa
+<^Q! Quit Help; ^N Next Help Screen; ^Z Previous Help Screen>
+===============================================================
+ARGUMENTS
+^Q^Q Universal Argument (followed by digits)
+^Q Meta Prefix (followed by digits)
+After specifying argument count, give command to be executed
+
+--
+Just as in Wordstar, ^QQ allows the repetition of a command or letter. Perfect
+Writer also allows ^Q[number between 1-9] to accomplish the same thing, but
+since I've re-assigned ^Q1 through ^Q4 as the window commands (see above) that
+is not the case in Perf*Star. 5,7-9 still work.....
+--
+
+<^Q! Quit Help; ^N Next Help Screen; ^Z Previous Help Screen>
+===============================================================
+UTILITIES
+^QH Transpose Characters     ^Q^W Transpose Words
+^Q<SP> Echo Location         ^K^Q Quit
+^B  Reform Paragraph         ^_ "Go Back" or Cancel
+^KO Turn On "+"              ^QP Swap Point and Mark
+^@  Yankback                 ^Q/ Refresh Screen
+^QO  Center Line             ^P Quote Next Character
+^QL  Call Speller            ^J Call Help File
+
+-- 
+^QU flips the character at the cursor with the character behind it, while ^QW
+does the same for whole words. ^Q<spacebar> offers your location in the file
+being edited, while ^QL calls Perfect Speller [don't use it is my advice].
+Wordstar-like commands include ^KQ, ^QP, ^J (help), and ^P (echoes next cntrl
+character to the file). Further commands; after using ^KF to read your disk
+(read "PWDIR.DOC" on installing that as a feature), ^QH will clean up the
+screen residue left over. Centering in WS is ^OC -- my closest try is ^QO
+(ESC-O is really nice). 
+
+^KO deserves less cryptic of a mention. It is used for times you'd like to
+make multiple deletions, but keep ALL of them for eventual "yankback." Before
+each new deletion, but after you've already ^KB'd and ^KK'd, hit ^KO to tell
+Perf*Star to keep the previous deletion and the next one as well. When you
+yank them back using ^KY,KC,KV, or simply ^2, how wonderful. There they both
+are. The only drawback: the pieces of text are retrieved with the LAST deleted
+one being the FIRST on the stack.
+--
+
+<^Q! Quit Help; ^N Next Help Screen; ^Z Previous Help Screen>
+===============================================================
+WHITESPACE AND INDENTATION
+^Q[ Set Indent Column      ^Q] Fill Column Setting
+^Q: Set Tab
+^6 Indent Rest of Line Same As Current
+^Q<TAB> Open Subsequent Indented Line Same As Current
+^Q^N Open Leading Indented Line Same As Current
+^Q<CR> Open Line          ^Q^V Drop Line Vertically
+^QI Indent Region         ^QU Undent Region
+.pa
+--
+These commands are all but foreign to Wordstar; offering powerful editing
+procedures, they allow you to manipulate white space far more easily than I
+ever thought possible prior to Perfect Writer.
+
+Setting margins in PW is not as nice as WS, there's no way around it. To alter
+the columns permanently, use the enclosed program PWCONFIG.COM. To do it on
+the fly, go to the left margin, hit ^QQ, type in the number you want for the
+right margin, and hit the space bar. It will take a few seconds, then zip out
+to where your right margin is supposed to be. Then, before moving the cursor,
+use ^Q] to set the margin there. For the left margin, you can either do
+likewise, then hit ^Q[ (NOT ^Q^[ !!!), or simply move the cursor out with the
+spacebar manually and hit ^Q[.
+
+^Q[ is for that occasion when you might be doing a list of numbers that are
+equally stretched across the screen. It varies the size a tab can be; just put
+the cursor out from the left margin the number of spaces you want tabs to go,
+then hit ^Q[. ^6 inserts a new line indented exactly how the present one
+is. I've never used this feature, but someone might! ESC-<TAB> does the same
+thing, but moves the cursor to the new line.
+
+In the downright esoteric department are the last few commands. I'm sure
+they're explained in the Perfect Writer Manual, which most of us got with our
+Kaypros. I've NEVER used any of the following: ^QN, ^QI, or ^QU. I have,
+however, used both ESC-RET (it neatly opens up the line you're on while
+leaving the cursor in the same spot) and ESC-V which drop the end of the line
+off, but indents it exactly where the cursor is.
+--
+
+<^Q! Quit Help; ^N Next Help Screen; ^Z Previous Help Screen>
+===============================================================
+CASE CONVERSIONS
+^U Uppercase Word       ^L Lowercase Word
+^O Capitalize Word      ^] Toggle Case of Character
+
+--
+Very handy, ^U turns the entire word into UPPERCASE, ^O Just the first letter,
+and L all lowercase. ^] toggles the case of a single character.
+--
+
+<^Q! Quit Help; ^N Next Help Screen; ^Z Previous Help Screen>
+===============================================================
+MODE SELECTION  {^Q+  Add Mode        ^Q-  Delete Mode}
+NORMAL     Words do not wrap.
+SAVE       Automatically saves file after every 512 characters.
+FILL       Turns on word wrap (automatic carriage return).
+VIEW       Allows viewing file without insertion and deletion.
+OVERWRITE  Editing commands overwrite and cursor moves vertically.
+SPELL      Allows for correction of misspelled words.
+
+.pa
+--
+The PW Manual is incredibly cryptic about describing these modes; their
+descriptions above are adequate, EXCEPT for 'overwrite' mode. I have always
+preferred WS's 'insert on' so I don't like overwriting stuff anyway. But
+strange things happen with overwrite mode, and I frankly don't understand why.
+For one thing, it seems to partially alter the set of commands defined by
+Perf*Star. Leave it 'normal' or 'fill.'
+--
+
+<^Q! Quit Help; ^N Next Help Screen; ^Z Previous Help Screen>
+===============================================================
+COPYING & MOVING
+Copy Region  1. With the cursor at front of region to be copied enter:
+                ^K^B  {echo line responds "Mark Set"}
+             2. Move cursor to end of region to be copied and enter:
+                ^K^K  {"+" sign appears in mode line} 
+             3. Position cursor at destination and type: ^@
+Delete Region:  Complete steps 1 and 2 above and then enter: ^K^Y
+Write Region:   Complete steps 1 and 2 above and then enter:
+               ^K^W {echo line asks for file to write region to}
+Insert File:    Enter ^K^R  {echo line asks for file to insert}
+
+<^Q! Quit Help; ^N Next Help Screen; ^Z Previous Help Screen>
+=============================================================
+(C) 1982 Perfect Software, Inc. All rights reserved.
+
+--
+I love copying and moving with Perf*Star. Hit ^KB per Wordstar command, then
+go to the block's end and hit ^KY. Wait! I thought I had to hit ^KK first?! Oh
+no, not with Perf*Star. The block disappears. Want it back? Hit ^2 -- there it
+is.
+--
+
+ 			  Confessing My Shortcomings
+			  --------------------------
+
+	Before moving on, I should note the obvious: my changes to Perfect
+Writer are not overwhelming, and do not include many multiple key commands of
+Wordstar's which you (and I) wish were possible to include. They are not
+possible using PWBIND.COM because this program ONLY ALLOWS THE SWAPPING OF
+ALREADY EXISTING DEFINITIONS. For instance, Perfect Writer is not as screen
+oriented as Wordstar. So the ^O prefix -- which calls Wordstar's Onscreen
+command set -- is absent here.
+
+	I could have gone into greater detail about those commands which
+aren't found in Wordstar, yet are implemented here. I didn't feel it necessary
+to explain all the intricacies, however, because you will immediately notice
+most differences upon your first few uses of "Perf*Star." One thing I will
+note: many of PW's commands are "smarter" than Wordstar's. One example: When
+WS is issued the ^QD command (end of line) it responds once. If the command is
+given twice, WS ignores the second command until the cursor is moved down a
+line, up a line, etc. Good ol' PerfStar will jump to the next end of line at
+each ^QD given it, and this holds true for many commands. Try it and see.
+
+		     THE ^KF COMMAND AND "PW DIRECTORIES"
+
+	The ^KF in Wordstar offers a listing of files currently on the disk.
+Perfect Writer's generic version offers no equivalent command. BUT.... two
+different public domain files offer a way around this dilemma: PFCTDIR.LBR and
+PWDIR120.LBR. The older file, PWDIR, takes less expertise to install, but
+messes over the help overlay AND the Perfect Speller program. The newer, which
+springboards off the old, is more a pain. I enclose an .asm version of it
+anyway, which includes its own documentation. If you do NOT install it, ^KF
+will simply produce a version number message at the bottom of your screen.
+
+	       THE CONSTRUCTION AND DESTRUCTION OF "FUNCTS.TXT"
+
+	Already the wheels are turning, and you are thinking of improvements
+on my work. Good stuff, and please send me any successful attempts! I myself
+was double-minded over a few commands, where they should be assigned.
+However, a few words of warning from one who learned the hard way:
+
+	Please, don't alter FUNCTS.TXT with anything but Perfect Writer. And
+even then, you must first hit the command ^Q (the word "eXtended" will appear
+at the bottom of your screen) and then a "+"; the message "Name of Mode" will
+appear. Type in "NORMAL" and hit return. This "normal" mode is the only mode
+the file should be edited in, unless of course, you want to risk all.
+
+	Second, make yourself a set-aside copy of my FUNCTS.TXT.  An edit of
+this file fails far more often than it succeeds, and in case of failure, it's
+easiest to return to your original file. If you want to see what the file
+looked like before I hacked it, there should be a copy of the original on one
+of PW's master disks. It is also fully listed in the Perfect Writer manual,
+starting on page 352, appendix C. In fact, as a writer myself, I suggest you
+read the Perfect Writer manual for an almost enjoyable experience. A computer
+software manual that's actually well written!
+
+	Third, a few technical notes: you must not change anything about the
+file other than the first word in the second line (that's "Fill" in "Fill
+Mode") and the various definitions in the 3rd and 4th columns. (That's can,
+not must; I'd leave "fill" alone.)  NONE OF THE NUMBERS IN COLUMN ONE, AND
+NONE OF THE NAMES IN COLUMN TWO, MAY BE ALTERED AT ALL.
+
+				 A FINAL WORD
+
+	If anyone knows of anything out there in the wonderful world of BBS's,
+user groups, etc., that would be of use to a Perfect Writer fan, please write
+or call me. And let me know how your experiences are with =Perf*Star= ; it's
+the only satisfaction I'll get out of this!
+
+		       /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+				  Jon Trott
+				4707 N. Malden
+			      Chicago, IL  60640
+			  (312) 989-2080 [office #]
+
+				 Jesus Rules!
+		       \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+
+		     ----  P E R F E C T   S T A R  ----
+				  << FINI >>
+

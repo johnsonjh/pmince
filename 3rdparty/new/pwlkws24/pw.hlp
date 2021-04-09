@@ -1,0 +1,114 @@
+C-Q  is 'M-', the Meta Command Prefix
+C-K  is 'X-', the Xtended Command Prefix
+        'C-'  indicates a control character
+
+<^Q! Quit Help; ^N Next Help Screen; ^Z Previous Help Screen>
+===============================================================
+MOVING THE CURSOR
+^D Forward Character      ^H Backward Character
+^F Forward Word           ^A Backward Word
+^QS Front of Line         ^QD End of Line
+^QE Front of Sentence     ^QX End of Sentence
+^E Previous Line          ^X Next Line
+^W Front of Paragraph     ^V End of Paragraph
+^R Scroll Up              ^C Scroll Down
+^QR Front of Document    ^QC End of Document
+
+<^Q! Quit Help; ^N Next Help Screen; ^Z Previous Help Screen>
+===============================================================
+DELETE COMMANDS             ^@ Yankback Deletion
+<DEL> Previous Character    ^Q^K Previous Word
+^G Next Character           ^T   Next Word
+^QY To End of Line          ^Y Entire Line
+^QT Sentence Forward        ^KP ^KY Paragraph
+^Q\ Surrounding Whitespace  ^\ Leading Whitespace
+^Q; Surrounding Greyspace   ^QZ Global Trailing Whitespace
+TO DELETE REGION  1. At Front enter ^KB to Set Mark
+                  2. Move Cursor to End of Region and type ^KY
+
+<^Q! Quit Help; ^N Next Help Screen; ^Z Previous Help Screen>
+===============================================================
+SEARCHING
+^QF Forward Search              ^QB Reverse Search
+^QG Search & Replace
+^QA Search & Replace with Query
+          ^G Cancel             . Exit to Entry Point
+          ! Replace All         , Replace & Query Again
+          Y Replace & Continue  N No Replacement & Continue
+
+<^Q! Quit Help; ^N Next Help Screen; ^Z Previous Help Screen>
+===============================================================
+FILE COMMANDS
+^KZ Read File                 ^KN Find File
+^KS Save File                 ^KD Write File
+
+BUFFER COMMANDS
+^KU Buffer Directory          ^Q. Delete Buffer
+^Q,   Switch Buffers
+
+MULTIPLE WINDOW DISPLAY
+^Q2 Two Windows                ^Q1 One Window
+^Q3 Other Window               ^Q4 Grow Window
+
+<^Q! Quit Help; ^N Next Help Screen; ^Z Previous Help Screen>
+===============================================================
+ARGUMENTS
+^Q^Q Universal Argument (followed by digits)
+^Q Meta Prefix (followed by digits)
+After specifying argument count, give command to be executed
+
+<^Q! Quit Help; ^N Next Help Screen; ^Z Previous Help Screen>
+===============================================================
+UTILITIES
+^QH Transpose Characters      ^QW Transpose Words
+^Q<SP> Echo Location          ^KQ Quit
+^B Reform Paragraph           ^_ "Go Back" or Cancel
+^KO  Turn On "+"              ^QP Swap Point and Mark
+^@   Yankback                 ^Q/ Refresh Screen
+^QO  Center Line              ^P Quote Next Character
+^QL  Call Speller             <NL> Call Help File
+
+<^Q! Quit Help; ^N Next Help Screen; ^Z Previous Help Screen>
+===============================================================
+WHITESPACE AND INDENTATION
+^Q[ Set Indent Column        ^Q] Fill Column Setting
+^Q: Set Tab
+^^ Indent Rest of Line Same As Current
+^Q<TAB> Open Subsequent Indented Line Same As Current
+^QN Open Leading Indented Line Same As Current
+^Q<CR> Open Line            ^QV Drop Line Vertically
+^QI Indent Region           ^QU Undent Region
+
+<^Q! Quit Help; ^N Next Help Screen; ^Z Previous Help Screen>
+===============================================================
+CASE CONVERSIONS
+^U Uppercase Word       ^L Lowercase Word
+^O Capitalize Word      ^] Toggle Case of Character
+
+<^Q! Quit Help; ^N Next Help Screen; ^Z Previous Help Screen>
+===============================================================
+MODE SELECTION  {^Q+  Add Mode        ^Q-  Delete Mode}
+NORMAL     Words do not wrap.
+SAVE       Automatically saves file after every 512 charcters.
+FILL       Turns on word wrap (automatic carraige return).
+VIEW       Allows viewing file without insertion and deletion.
+OVERWRITE  Editing commands overwrite and cursor moves vertically.
+SPELL      Allows for correction of misspelled words.
+
+<^Q! Quit Help; ^N Next Help Screen; ^Z Previous Help Screen>
+===============================================================
+COPYING & MOVING
+Copy Region  1. With the cursor at front of region to be copied enter:
+                ^K^B  {echo line responds "Mark Set"}
+             2. Move cursor to end of region to be copied and enter:
+                ^K^K  {"+" sign appears in mode line} 
+             3. Position cursor at destination and type: ^@
+Delete Region:  Complete steps 1 and 2 above and then enter: ^K^Y
+Write Region:   Complete steps 1 and 2 above and then enter:
+               ^K^W {echo line asks for file to write region to}
+Insert File:    Enter ^K^R  {echo line asks for file to insert}
+
+<^Q! Quit Help; ^N Next Help Screen; ^Z Previous Help Screen>
+=============================================================
+(C) 1982 Perfect Software, Inc. All rights reserved.
+

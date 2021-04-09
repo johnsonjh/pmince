@@ -1,0 +1,388 @@
+(C) 1982 Perfect Software, Inc. All rights reserved.
+Fill Mode is the default mode.
+char	name	function 	description
+0	C-@	MYANK    	Yank Kill Buffer.
+1	C-A	BWORD    	Backward Word.
+2	C-B	MFILLPAR    	Fill Paragraph.
+3	C-C	MNEXTPAG 	View Next Screen.
+4	C-D	MNEXTCHA    	Forward Character.
+5	C-E	MPREVLIN  	Previous Line.
+6	C-F	FWORD    	Forward Word.
+7	C-G	MDELCHAR 	Deletes Next Character.
+8	C-H	MPREVCHA    	Backwards one character.
+9	<TAB>	MINSERT    	Inserts the character at the point.
+10	<NL>	MHELP    	Call Help Information Onto Screen.
+11	C-K	MCTRLX    	eXtended Command Prefix.
+12	C-L	MLOWWORD    	Lowercase Word.
+13	<CR>	MNEWLIN    	Carriage Return.
+14	C-N	MNXTOTHR    	View other window's next screen.
+15	C-O	MCAPWORD	Capitalize Word.
+16	C-P	MQUOTE  	Quote Character.
+17	C-Q	MMETA   	Meta Prefix.
+18	C-R	MPREVPAG   	View Previous Screen.
+19	C-S	MPREVCHA    	Backwards one character.
+20	C-T	MDELWORD    	Kill Forward Word.
+21	C-U	MUPWORD    	Uppercase Word.
+22	C-V	MFPARA    	Forward Paragraph.
+23	C-W	MBPARA    	Back Paragraph.
+24	C-X	MNEXTLIN	Next Line.
+25	C-Y	MDELELIN    	Kill Entire Line.
+26	C-Z	MPRVOTHR    	View other window's previous screen.
+27	C-[	MMETA   	Meta Prefix.
+28	C-\	MDELINDE    	Delete Indentation on current line.
+29	C-]	MTOGLC    	Toggle case of character at point.
+30	C-^	MINDREST	Indent rest of line same as this.
+31	C-_	MABORT    	Cancel the current prefix.
+32	<SP>	MINSERT    	Inserts the character at the point.
+33	!	MINSERT    	Inserts the character at the point.
+34	"	MINSERT    	Inserts the character at the point.
+35	#	MINSERT    	Inserts the character at the point.
+36	$	MINSERT    	Inserts the character at the point.
+37	%	MINSERT    	Inserts the character at the point.
+38	&	MINSERT    	Inserts the character at the point.
+39	'	MINSERT    	Inserts the character at the point.
+40	(	MINSERT    	Inserts the character at the point.
+41	)	MINSERT    	Inserts the character at the point.
+42	*	MINSERT    	Inserts the character at the point.
+43	+	MINSERT    	Inserts the character at the point.
+44	,	MINSERT    	Inserts the character at the point.
+45	-	MINSERT    	Inserts the character at the point.
+46	.	MINSERT    	Inserts the character at the point.
+47	/	MINSERT    	Inserts the character at the point.
+48	0	MINSERT    	Inserts the character at the point.
+49	1	MINSERT    	Inserts the character at the point.
+50	2	MINSERT    	Inserts the character at the point.
+51	3	MINSERT    	Inserts the character at the point.
+52	4	MINSERT    	Inserts the character at the point.
+53	5	MINSERT    	Inserts the character at the point.
+54	6	MINSERT    	Inserts the character at the point.
+55	7	MINSERT    	Inserts the character at the point.
+56	8	MINSERT    	Inserts the character at the point.
+57	9	MINSERT    	Inserts the character at the point.
+58	:	MINSERT    	Inserts the character at the point.
+59	;	MINSERT    	Inserts the character at the point.
+60	<	MINSERT    	Inserts the character at the point.
+61	=	MINSERT    	Inserts the character at the point.
+62	>	MINSERT    	Inserts the character at the point.
+63	?	MINSERT    	Inserts the character at the point.
+64	@	MINSERT    	Inserts the character at the point.
+65	A	MINSERT    	Inserts the character at the point.
+66	B	MINSERT    	Inserts the character at the point.
+67	C	MINSERT    	Inserts the character at the point.
+68	D	MINSERT    	Inserts the character at the point.
+69	E	MINSERT    	Inserts the character at the point.
+70	F	MINSERT    	Inserts the character at the point.
+71	G	MINSERT    	Inserts the character at the point.
+72	H	MINSERT    	Inserts the character at the point.
+73	I	MINSERT    	Inserts the character at the point.
+74	J	MINSERT    	Inserts the character at the point.
+75	K	MINSERT    	Inserts the character at the point.
+76	L	MINSERT    	Inserts the character at the point.
+77	M	MINSERT    	Inserts the character at the point.
+78	N	MINSERT    	Inserts the character at the point.
+79	O	MINSERT    	Inserts the character at the point.
+80	P	MINSERT    	Inserts the character at the point.
+81	Q	MINSERT    	Inserts the character at the point.
+82	R	MINSERT    	Inserts the character at the point.
+83	S	MINSERT    	Inserts the character at the point.
+84	T	MINSERT    	Inserts the character at the point.
+85	U	MINSERT    	Inserts the character at the point.
+86	V	MINSERT    	Inserts the character at the point.
+87	W	MINSERT    	Inserts the character at the point.
+88	X	MINSERT    	Inserts the character at the point.
+89	Y	MINSERT    	Inserts the character at the point.
+90	Z	MINSERT    	Inserts the character at the point.
+91	[	MINSERT    	Inserts the character at the point.
+92	\	MINSERT    	Inserts the character at the point.
+93	]	MINSERT    	Inserts the character at the point.
+94	^	MINSERT    	Inserts the character at the point.
+95	_	MINSERT    	Inserts the character at the point.
+96	`	MINSERT    	Inserts the character at the point.
+97	a	MINSERT    	Inserts the character at the point.
+98	b	MINSERT    	Inserts the character at the point.
+99	c	MINSERT    	Inserts the character at the point.
+100	d	MINSERT    	Inserts the character at the point.
+101	e	MINSERT    	Inserts the character at the point.
+102	f	MINSERT    	Inserts the character at the point.
+103	g	MINSERT    	Inserts the character at the point.
+104	h	MINSERT    	Inserts the character at the point.
+105	i	MINSERT    	Inserts the character at the point.
+106	j	MINSERT    	Inserts the character at the point.
+107	k	MINSERT    	Inserts the character at the point.
+108	l	MINSERT    	Inserts the character at the point.
+109	m	MINSERT    	Inserts the character at the point.
+110	n	MINSERT    	Inserts the character at the point.
+111	o	MINSERT    	Inserts the character at the point.
+112	p	MINSERT    	Inserts the character at the point.
+113	q	MINSERT    	Inserts the character at the point.
+114	r	MINSERT    	Inserts the character at the point.
+115	s	MINSERT    	Inserts the character at the point.
+116	t	MINSERT    	Inserts the character at the point.
+117	u	MINSERT    	Inserts the character at the point.
+118	v	MINSERT    	Inserts the character at the point.
+119	w	MINSERT    	Inserts the character at the point.
+120	x	MINSERT    	Inserts the character at the point.
+121	y	MINSERT    	Inserts the character at the point.
+122	z	MINSERT    	Inserts the character at the point.
+123	{	MINSERT    	Inserts the character at the point.
+124	|	MINSERT    	Inserts the character at the point.
+125	}	MINSERT    	Inserts the character at the point.
+126	~	MINSERT    	Inserts the character at the point.
+127	<DEL>	MRDELCHA    	Delete Previous Character.
+128	M-C-@	MTWOWIND    	Two Window Mode.
+129	M-C-A	MQRYRPLC    	Query Replace.
+130	M-C-B	MINCRSEA    	Reverse Search.
+131	M-C-C	MTOEND    	End of buffer.
+132	M-C-D	MFLINE    	End of Line.
+133	M-C-E	MBSENT    	Beginning of sentence.
+134	M-C-F	MINCSEAR	Forward Search.
+135	M-C-G	MREPLACE    	Global Replace.
+136	M-C-H	MSWAPCHA    	Transpose Character.
+137	M-<TAB>	MINDNL    	Indent Subsequent New Line Same As This.
+138	M-<NL>	MNOTIMPL    	'Unknown command'. 
+139 	M-C-K	MRDELWOR    	Kill Previous Word.
+140	M-C-L	MGOSPELL    	Call The Spelling Checker From PW.
+141	M-<CR>	MOPENLIN    	Open line.
+142	M-C-N	MOPENIND    	Indent Leading New Line Same As This.
+143	M-C-O	MCNTRLIN    	Center Line.
+144	M-C-P	MSWAPMRK    	Swap Point and Mark.
+145	M-C-Q 	MARG    	Universal Argument Prefix.
+146	M-C-R	MTOSTART    	Beginning of Buffer.
+147	M-C-S	MBLINE    	Point to beginning of line.
+148	M-C-T	MDELSENT	Kill Sentence.
+149	M-C-U	MUNDNTRG    	Undent Region.
+150	M-C-V	MDROPLIN    	Drop remainder of line vertically.
+151	M-C-W	MSWAPWOR    	Transpose Word.
+152	M-C-X	MFSENT    	Forward Sentence.
+153	M-C-Y	MDELLIN 	Kill Line.
+154	M-C-Z	MTRIMWHI    	Globally Delete Trailing Whitespace.
+155	M-C-[	MNOTIMPL    	'Unknown command'.
+156	M-C-\	MNOTIMPL    	'Unknown command'.
+157	M-C-]	MNOTIMPL    	'Unknown command'.
+158	M-C-^	MGROWWIN    	Grow current window.
+159	M-C-_	MNOTIMPL    	'Unknown command'.
+160	M-<SP>	MPRINTPO    	Print Current Position.
+161	M-!	MONEWIND    	One Window Mode.
+162	M-"	MNOTIMPL    	'Unknown command'.
+163	M-#	MSWPWIND    	Switch to other window.
+164	M-$	MNOTIMPL    	'Unknown command'.
+165	M-%	MNOTIMPL    	'Unknown command'.
+166	M-&	MNOTIMPL    	'Unknown command'.
+167	M-'	MWHATVER    	Displays Disk Directory.
+168	M-(	MNOTIMPL    	'Unknown command'.
+169	M-)	MNOTIMPL    	'Unknown command'.
+170	M-*	MNOTIMPL    	'Unknown command'.
+171	M-+	MADDMODE    	Add Mode To Mode List.
+172	M-,	MSWITCHT	Switch to another buffer.
+173	M--	MDELMODE    	Delete Mode from Mode List.
+174	M-.	MKILLBUF	Delete Buffer.
+175	M-/	MNEWDSP    	Scroll-Redisplay.
+176	M-0	MARGDGT    	Numeric Digit Argument Prefix.
+177	M-1	MONEWIND    	One Window Mode.
+178	M-2	MTWOWIND    	Two Window Mode.
+179	M-3	MSWPWIND    	Switch to other window.
+180	M-4	MGROWWIN    	Grow current window.
+181	M-5	MARGDGT    	Numeric Digit Argument Prefix.
+182	M-6	MARGDGT    	Numeric Digit Argument Prefix.
+183	M-7	MARGDGT    	Numeric Digit Argument Prefix.
+184	M-8	MARGDGT    	Numeric Digit Argument Prefix.
+185	M-9	MARGDGT    	Numeric Digit Argument Prefix.
+186	M-:	MSETTABS    	Set Tab Stops.
+187	M-;	MCLOSEWH    	Close Up Whitespace Including <NL>.
+188	M-<	MSWITCHT	Switch to another buffer.
+189	M-=	MADDMODE    	Add Mode To Mode List.
+190	M->	MKILLBUF	Delete Buffer.
+191	M-?	MNEWDSP    	Scroll-Redisplay.
+192	M-@	MNOTIMPL    	'Unknown command'.
+193	M-A	MQRYRPLC    	Query Replace.
+194	M-B	MINCRSEA    	Reverse Search.
+195	M-C	MTOEND  	End of buffer.
+196	M-D	MFLINE    	End of Line.
+197	M-E	MBSENT    	Beginning of sentence.
+198	M-F	MINCSEAR	Forward Search.
+199	M-G	MREPLACE    	Global Replace.
+200	M-H	MSWAPCHA    	Transpose Character.
+201	M-I	MINDNTRG    	Indent Region.
+202	M-J	MUNDNTRG    	Undent Region.
+203	M-K	MRDELWOR    	Kill Previous Word.
+204	M-L	MGOSPELL    	Call The Spelling Checker From PW.
+205	M-M	MOPENLIN    	Open line.
+206	M-N	MOPENIND    	Indent Leading New Line Same As This.
+207	M-O	MCNTRLIN    	Center Line.
+208	M-P	MSWAPMRK    	Swap Point and Mark.
+209	M-Q	MARG    	Universal Argument Prefix.
+210	M-R	MTOSTART	Beginning of buffer.
+211	M-S	MBLINE    	Point to beginning of line.
+212	M-T	MDELSENT	Kill Sentence.
+213	M-U	MUNDNTRG    	Undent Region.
+214	M-V	MDROPLIN    	Drop remainder of line vertically.
+215	M-W	MSWAPWOR    	Transpose Word.
+216	M-X	MFSENT    	Forward Sentence.
+217	M-Y	MDELLIN 	Kill Line.
+218	M-Z	MTRIMWHI    	Globally Delete Trailing Whitespace.
+219	M-[	MSETINDE    	Set Indent Column.
+220	M-\	MDELWHIT    	Delete Whitespace.
+221	M-]	MSETFILL    	Set Fill Column.
+222	M-^	MGROWWIN    	Grow current window.
+223	M-_	MNOTIMPL    	'Unknown command'.
+224	M-`	MNOTIMPL    	'Unknown command'.
+225	M-a	MQRYRPLC    	Query Replace.
+226	M-b	MINCRSEA    	Reverse Search.
+227	M-c	MTOEND  	End of buffer.
+228	M-d	MFLINE    	End of Line.
+229	M-e	MBSENT    	Beginning of sentence.
+230	M-f	MINCSEAR	Forward Search.
+231	M-g	MREPLACE    	Global Replace.
+232	M-h	MSWAPCHA    	Transpose Character.
+233	M-i	MINDNTRG    	Indent Region.
+234	M-j	MNOTIMPL    	'Unknown command'.
+235	M-k	MRDELWOR    	Kill Previous Word.
+236	M-l	MGOSPELL    	Call The Spelling Checker From PW.
+237	M-m	MOPENLIN    	Open line.
+238	M-n	MOPENIND    	Indent Leading New Line Same As This.
+239	M-o	MCNTRLIN    	Center Line.
+240	M-p	MSWAPMRK    	Swap Point and Mark.
+241	M-q	MARG    	Universal Argument Prefix.
+242	M-r	MTOSTART	Beginning of buffer.
+243	M-s	MBLINE    	Point to beginning of line.
+244	M-t	MDELSENT	Kill Sentence.
+245	M-u	MUNDNTRG    	Undent Region.
+246	M-v	MDROPLIN    	Drop remainder of line vertically.
+247	M-w	MSWAPWOR    	Transpose Word.
+248	M-x	MFSENT    	Forward Sentence.
+249	M-y	MDELLIN 	Kill Line.
+250	M-z	MTRIMWHI    	Globally Delete Trailing Whitespace.
+251	M-{	MNOTIMPL    	'Unknown command'.
+252	M-|	MNOTIMPL    	'Unknown command'.
+253	M-}	MNOTIMPL    	'Unknown command'.
+254	M-~	MNOTIMPL    	'Unknown command'.
+255	M-<DEL>	MNOTIMPL    	'Unknown command'.
+256	X-C-@	MNOTIMPL    	'Unknown command'.
+257	X-C-A	MNOTIMPL    	'Unknown command'.
+258	X-C-B	MSETMRK 	Sets the mark at the point.
+259	X-C-C	MYANK    	Yank Kill Buffer.
+260	X-C-D	MFILEWRI    	Write File.
+261	X-C-E	MNOTIMPL    	'Unknown command'.
+262	X-C-F	MWHATVER    	Displays Disk Directory.
+263	X-C-G	MNOTIMPL    	'Unknown command'.
+264	X-C-H	MNOTIMPL    	'Unknown command'.
+265	X-<TAB>	MNOTIMPL    	'Unknown command'.
+266	X-<NL>	MNOTIMPL    	'Unknown command'.
+267	X-C-K	MCOPYRGN    	Copy Region to Kill Buffer.
+268	X-C-L	MNOTIMPL    	'Unknown command'.
+269	X-<CR>	MNOTIMPL    	'Unknown command'.
+270	X-C-N	MFINDFIL    	Find File.
+271	X-C-O	MMAKEDEL	Turn on + in Mode Line.
+272	X-C-P	MMRKPARA    	Mark Whole Paragraph.
+273	X-C-Q	MEXIT    	Exit Perfect Writer.
+274	X-C-R	MINSSFI    	Insert File.
+275	X-C-S	MFILESAV    	Save File.
+276	X-C-T	MNOTIMPL    	'Unknown command'.
+277	X-C-U	MLSTBUFF    	List Buffers.
+278	X-C-V	MYANK    	Yank Kill Buffer.
+279	X-C-W	MWRTRGN    	Write Region to file.
+280	X-C-X	MEXIT   	Exit Perfect Writer.
+281	X-C-Y	MDELRGN     	Delete Region.
+282	X-C-Z	MFILEREA   	Read File.
+283	X-C-[	MNOTIMPL    	'Unknown command'.
+284	X-C-\	MNOTIMPL    	'Unknown command'.
+285	X-C-]	MNOTIMPL    	'Unknown command'.
+286	X-C-^	MNOTIMPL    	'Unknown command'.
+287	X-C-_	MNOTIMPL    	'Unknown command'.
+288	X-<SP>	MNOTIMPL    	'Unknown command'.
+289	X-!	MNOTIMPL    	'Unknown command'.
+290	X-"	MNOTIMPL    	'Unknown command'.
+291	X-#	MNOTIMPL    	'Unknown command'.
+292	X-$	MNOTIMPL    	'Unknown command'.
+293	X-%	MNOTIMPL    	'Unknown command'.
+294	X-&	MNOTIMPL    	'Unknown command'.
+295	X-'	MNOTIMPL    	'Unknown command'.
+296	X-(	MNOTIMPL    	'Unknown command'.
+297	X-)	MNOTIMPL    	'Unknown command'.
+298	X-*	MNOTIMPL    	'Unknown command'.
+299	X-+	MNOTIMPL    	'Unknown command'.
+300	X-,	MNOTIMPL    	'Unknown command'.
+301	X--	MNOTIMPL    	'Unknown command'.
+302	X-.	MNOTIMPL    	'Unknown command'.
+303	X-/	MNOTIMPL    	'Unknown command'.
+304	X-0	MNOTIMPL    	'Unknown command'.
+305	X-1	MNOTIMPL    	'Unknown command'.
+306	X-2	MNOTIMPL    	'Unknown command'.
+307	X-3	MNOTIMPL    	'Unknown command'.
+308	X-4	MNOTIMPL    	'Unknown command'.
+309	X-5	MNOTIMPL    	'Unknown command'.
+310	X-6	MNOTIMPL    	'Unknown command'.
+311	X-7	MNOTIMPL    	'Unknown command'.
+312	X-8	MNOTIMPL    	'Unknown command'.
+313	X-9	MNOTIMPL    	'Unknown command'.
+314	X-:	MNOTIMPL    	'Unknown command'.
+315	X-;	MNOTIMPL    	'Unknown command'.
+316	X-<	MNOTIMPL    	'Unknown command'.
+317	X-=	MNOTIMPL    	'Unknown command'.
+318	X->	MNOTIMPL    	'Unknown command'.
+319	X-?	MNOTIMPL    	'Unknown command'.
+320	X-@	MNOTIMPL    	'Unknown command'.
+321	X-A	MNOTIMPL    	'Unknown command'.
+322	X-B	MSETMRK 	Sets the mark at the point.  
+323	X-C	MYANK    	Yank Kill Buffer.
+324	X-D	MFILEWRI    	Write File.
+325	X-E	MNOTIMPL    	'Unknown command'.
+326	X-F	MWHATVER    	Displays Disk Directory.
+327	X-G	MNOTIMPL    	'Unknown command'.
+328	X-H	MNOTIMPL    	'Unknown command'.
+329	X-I	MNOTIMPL    	'Unknown command'.
+330	X-J	MNOTIMPL    	'Unknown command'.
+331	X-K	MCOPYRGN    	Copy Region to Kill Buffer.
+332	X-L	MNOTIMPL    	'Unknown command'.
+333	X-M	MNOTIMPL    	'Unknown command'.
+334	X-N	MFINDFIL    	Find File.
+335	X-O	MMAKEDEL	Turn on + in Mode Line.
+336	X-P	MMRKPARA    	Mark Whole Paragraph.
+337	X-Q	MEXIT   	Exit Perfect Writer.
+338	X-R	MINSSFI    	Insert File.
+339	X-S	MFILESAV    	Save File.
+340	X-T	MNOTIMPL    	'Unknown command'.
+341	X-U	MLSTBUFF    	List Buffers.
+342	X-V	MYANK    	Yank Kill Buffer.
+343	X-W	MWRTRGN    	Write Region to file.
+344	X-X	MEXIT   	Exit Perfect Writer.
+345	X-Y	MDELRGN     	Delete Region.
+346	X-Z	MFILEREA   	Read File.
+347	X-[	MNOTIMPL    	'Unknown command'.
+348	X-\	MNOTIMPL    	'Unknown command'.
+349	X-]	MNOTIMPL    	'Unknown command'.
+350	X-^	MNOTIMPL    	'Unknown command'.
+351	X-_	MNOTIMPL    	'Unknown command'.
+352	X-`	MNOTIMPL    	'Unknown command'.
+353	X-a	MNOTIMPL    	'Unknown command'.
+354	X-b	MSETMRK     	Sets the mark at the point.
+355	X-c	MYANK    	Yank Kill Buffer.
+356	X-d	MFILEWRI    	Write File.
+357	X-e	MMAKEDEL    	Turn on + in modeline.
+358	X-f	MWHATVER    	Displays Disk Directory.
+359	X-g	MNOTIMPL    	'Unknown command'.
+360	X-h	MNOTIMPL    	'Unknown command'.
+361	X-i	MNOTIMPL    	'Unknown command'.
+362	X-j	MNOTIMPL    	'Unknown command'.
+363	X-k	MCOPYRGN    	Copy Region to Kill Buffer.
+364	X-l	MNOTIMPL    	'Unknown command'.
+365	X-m	MNOTIMPL    	'Unknown command'.
+366	X-n	MFINDFIL    	Find File.
+367	X-o	MMAKEDEL	Turn on + in Mode Line.
+368	X-p	MMRKPARA    	Mark Whole Paragraph.
+369	X-q	MEXIT   	Exit Perfect Writer.
+370	X-r	MINSSFI    	Insert File.
+371	X-s	MFILESAV    	Save File.
+372	X-t	MNOTIMPL    	'Unknown command'.
+373	X-u	MLSTBUFF    	List Buffers.
+374	X-v	MYANK       	Yank Kill Buffer. 
+375	X-w	MWRTRGN    	Write Region to file.
+376	X-x	MEXIT   	Exit Perfect Writer.
+377	X-y	MDELRGN     	Delete Region.
+378	X-z	MFILEREA   	Read File.
+379	X-{	MNOTIMPL    	'Unknown command'.
+380	X-|	MNOTIMPL    	'Unknown command'.
+381	X-}	MNOTIMPL    	'Unknown command'.
+382	X-~	MNOTIMPL    	'Unknown command'.
+383	X-<DEL>	MNOTIMPL    	'Unknown command'.
+
