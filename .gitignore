@@ -3,3 +3,8 @@
 *.L
 mince
 *.hpkg
+ccom
+coffwrap
+mince80/mince.swp
+mince_com.c
+mince_swp.c
