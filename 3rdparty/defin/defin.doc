@@ -1,0 +1,43 @@
+DEFIN.DOC
+
+This is the description of the DEFIN.COM program which was
+written by Steve Willett.
+
+This is a filter program which takes an input file and copies
+it to an output file with the following modifications:
+
+   1.  All seventh bits are first set low.
+
+   2.  After that all characters which are neither printable
+       nor a carriage return or a line feed are replaced
+       with a "~" (tilde).
+
+This file treats the input file as an untyped (non text) file
+and therefore ignores the ^Z (end of file) marker in CPM text
+files.  Therefore it will automatically undo the FIN stop which
+is in a Perfect Writer FIN file.  In addition it will probably
+stick some garbage at the end of the file which was beyond the
+^Z in the last record it reads.
+
+To use it just type DEFIN.  The program prompts you for an input
+file name and an output file name.  It will display on the screen
+the contents of the output file as it writes it.  After DEFIN is
+done, you can use Perfect Writer to edit your new output file.
+
+The new output file will probably have lots fo tildes in it!  They
+represent all the control characters and other special characters
+which were inserted in the file by Perfect Formatter.  In addition
+there will be odd characters imbedded in the tildes - most printers
+use printable characters with non-printable characters for their
+commands.
+
+You can now use Perfect Writer's Search and Replace functions to
+clean up your file.  Try going through it and replacing all "~~"'s
+with "~".  This will shorten all those long strings of tildes.  You
+will have to recreate all the style and environment commands you had
+in the original document, however, since these were converted by
+Perfect Formatter into printer commands.
+
+Good luck!
+Steve Willett
+
