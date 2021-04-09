@@ -1,0 +1,81 @@
+@STYLE(linewidth 41 characters)@BEGIN(text)
+A HOMEGROWN PWCONFIG
+
+    Have you found yourself changing the tab spacing every time
+you get into Perfect Writer?  Do you run up against the message
+"Swap File Full" every now and then?  Have you looked longingly
+at the description of the PWCONFIG program in appendix A of the
+Perfect Writer manual, wishing that Kaypro had included it in the
+software package?  Then the following program may be just the
+thing for you.
+
+    I found myself desperately in need of a larger swap file
+when I tried to edit a big file that I had transferred to my
+Kaypro from another computer.  There was just simply no way that
+a 95K file was going to fit in the 64K swap file that came with
+Perfect Writer.  So, necessity being the mother of invention, I
+wrote my own PWCONFIG.  After many hours of studying a hex dump
+of the swap file I was finally able to decipher most of the
+interesting parts.  All of the basic configuration information is
+contained in the first 1K of the swap file.  The remainder of the
+file is just there to reserve storage space on the disk.  This is
+why a "64K" swap file is actually 65K long.
+
+    Of the first 1K, all but the first 128 bytes is a table that
+defines the keys that must be pressed for each command.  The
+PWBIND program that comes with Perfect Writer allows you to
+change this part of the file.  The missing PWCONFIG is used to
+change the values in the first 128 bytes.  Of these, the first
+117 bytes simply tell Perfect Writer how to interface with the
+Kaypro hardware and operating system.  The next 8 bytes contain
+the good stuff.  These are the bytes that specify the "personal
+preference" parameters described in appendix A, including the
+size of the swap file.
+
+    All that a homegrown version of PWCONFIG has to do is:
+@BEGIN(enumerate)
+Copy the first 117 bytes of an old swap file to a new one.
+
+Let you type in your own choices for the next 8 bytes
+
+Copy the remainder of the first 1K of the old swap file to the
+new one.
+
+Pad the remainder of the new file to the appropriate length.
+@END(enumerate)
+
+    The SBASIC program that follows is a very simple one that
+does just that.  In order to conserve newsletter space I have
+left out the code that checks the values entered by the user.  If
+you are reasonably careful, you can use the program as-is.  If
+you are a dealer who wants a novice-proof version to give to
+customers, you may want to add the data checks.  The swap file
+should be a multiple of 8K between 24 and 248 (inclusive).  On
+the Kaypro, the size of the disk actually limits the size of the
+swap file.  By the time you put PW.COM, PW.SWP, PW.HLP and a few
+other things on the disk, the swap file is limited to about 128K. 
+The absolute maximum (having just PW.COM and PW.SWP on the disk)
+is 152K.  The cursor display line must be between 1 and 24.  Tab
+spacing, fill column and indent column should all be between 0
+and 79.  Additionally, the indent column should be less than the
+fill column.  The delay count can be any valid integer, but the
+range between 100 and 1000 is a reasonable limit.  The clock rate
+is probably best left at 4, although the Kaypro actually runs at
+about 2.  If you feel particularly adventurous you can experiment
+with changing it.
+
+    To run the program after it's compiled, put it and a copy of
+your old PW.SWP together on a disk in drive A.  Put a disk
+without a PW.SWP file (but enough empty space to hold the new
+file) in drive B.  Run the program and answer the questions.  It
+takes a while to build a large swap file but the program will
+indicate its progress by displaying the number of K it has
+written so far.
+@END(text)
+
+@FLUSHLEFT(Chip Weems
+Computer and Information Science Dept.
+Graduate Research Center A-305
+University of Massachusetts
+Amherst, MA 01003)
+

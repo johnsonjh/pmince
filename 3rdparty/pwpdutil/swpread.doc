@@ -1,0 +1,63 @@
+SWPREAD  	    VERS. 1 IN KAYPRO II S-BASIC	  MAY 6, 1984
+
+	 TO READ AND SAVE TEXT FROM PERFECT WRITER SWAP FILE
+
+	     Inspired by Edmund Bolles (KUGRAM 2:2, 1984)
+
+Have you ever lost a text file you were editing due to failure to get
+it saved?  Most users of word processors can recall one or more such
+disasters.  A power failure, disk drive failure, disk full or bad
+sector, keyboard dead due to static shock--these and other causes can
+prevent saving your work.  With most text editors the file was forever
+lost, but with Perfect Writer virtually all of it is in the swap file
+(PW.SWP) on the edit disk.  The problem was getting it out--until now.
+
+Edmund Bolles showed how to easily read PW.SWP and save it in a new
+file (SWAP.MSS) which can be edited.  The text available in PW.SWP may
+be not quite complete and require considerable editing, but it is far
+better than nothing.
+
+SWPREAD includes several enhancements of the Bolles program, mainly:
+
+1. Execution halts to give self-documentation and to permit changing
+disks.  This allows the program to be kept on a separate disk and
+never moved.
+
+2. Better rejection of unwanted characters (ASCII over 159) which are
+very troublesome when numerous (cursor movement may be extremely slow
+and unpredictable).  Some unwanted characters may remain.
+
+3. Does not reject TABs (ASCII 9).
+
+4. Adds EOF (end-of-file, ASCII 26) to SWAP.MSS, needed to prevent an
+error message and possible failure when it is read by Perfect Writer.
+
+5. Eliminates brief repetitions which usually occur about every 1000
+bytes in PW.SWP.  These repetitions are generally 16-24 characters
+long.  They are preceded by ^M (ASCII 13) and are followed by one or
+two ^M.  SWPREAD discards any characters between two ^M within 30
+characters of each other.  It also discards the ^M, along with many
+other "garbage" characters.
+
+6. Runs twice as fast.  
+
+				NOTES
+
+SWPREAD is set to read only 62k of PW.SWP.  This is to prevent
+accidentally trying to read beyond the end of the usual 64k PW.SWP.  
+If your PW.SWP is smaller than 64k, use caution, because reading
+beyond its end will cause you to have to start over.
+
+If your PW.SWP is larger than 64k and you wish to read more than 62k
+of it, increase the 62 on line 32 of SWPREAD.BAS and re-compile it.
+
+Do not be concerned that SWPREAD displays your text to the screen in a
+form that looks very different from what you wrote.  Carriage returns,
+TABs, and paragraphs will reappear when you edit SWAP.MSS.
+
+SWPREAD.BAS contains several remarks intended to aid its readability. 
+Unexpectedly, a few of these had to be located somewhat illogically in
+order for the program to compile.
+
+Don Davis, 5603 Bull Creek Rd., Austin, TX 78756
+

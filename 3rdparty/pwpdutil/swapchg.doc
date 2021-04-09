@@ -1,0 +1,65 @@
+	  PERFECT WRITER SWAP FILE CHANGE PROGRAM, SWAPCHG
+
+This wonderful program by Chip Weems allows you to easily create
+Perfect Writer PW.SWP files of any usable size.  The standard size
+is 64k, but larger sizes are necessary if you want to edit a file
+larger than about 55k and you do not wish to break it into smaller
+files.
+
+For the Kaypro II (disk space 191k), some maximum usable sizes are
+the following:
+-------------------------------------------------------------------
+CONTENTS OF EDIT DISK (BESIDES PW.SWP):	       FIN	PW.SWP
+PW.COM  PF.*   PP.COM  PW.HLP  MENU.COM	      FILES    MAX SIZE
+
+  x	  x	  x	  x	   x		yes	  64k
+  x	  x	  x	  x			yes	  80k
+  x	  x	  x				yes	  88k
+  x			  x			no	 144k
+  x						no	 152k
+
+		       - - - NOTES - - -
+
+1. The swap file size must be a multiple of 8, as shown (actual
+space occupied is 1k greater).
+
+2. PF.* means PF.COM and PF.DAT.
+
+3. FIN files are not required for editing or "quick printing."  They
+ARE required for "formatted printing" (underlining, boldface, sub-
+and superscripts, and other advanced formatting features).
+
+4. If PF.* and PP.COM are omitted, formatting and printing your
+files must be done with a another disk containing these files.
+
+5. To use Perfect Writer without the MENU: After the prompt B> type
+A:PW followed by the name of your file.  (Assumes Edit disk in A,
+your writings disk in B, with B the "logged" disk.)
+---------------------------------------------------------------------
+
+USE: Type SWAPCHG, hit RETURN and follow directions.  SWAPCHG
+displays its progress while running and signals completion with
+"Done."
+
+Note that PW.SWP files for version 1.20 of Perfect Writer are not
+compatible with PW.SWP files from earlier versions.  When using
+SWAPCHG you must use a PW.SWP which is correct for your version of
+Perfect Writer.  Otherwise you will get later a PW error message
+about "bad version."  
+
+Chip Weems wrote the original SBASIC source for this program,
+sometimes called PWSWPCHG (KUG Bulletin Board, 5/21/83).  I made
+it twice as fast and easier to use and named it SWAPCHG.
+
+Chip Weems also wrote a longer, more general "Homegrown PWCONFIG"
+(KUGRAM Aug/Sept 1983, p. 16).  In addition to doing what SWAPCHG
+does, it can set the default values of the cursor start line, fill
+column, tab spacing, indent column, CPU clock rate, and delay count. 
+He sent me an extended "novice-proof" version in August 1983.  I
+have added a "$LINES" command to double its speed and made it
+available under the name PWCONFG3.  Chip's KUGRAM discussion is in
+PWCONFG3.DOC.
+
+Thanks to Chip Weems and Bill Pierce for helpful consultions.
+Don Davis, 5603 Bull Creek Rd., Austin, Texas 78756  4/10/84.
+

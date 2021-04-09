@@ -1,0 +1,54 @@
+:			  NEW-SWP.COM
+
+This program creates a new PW.SWP file for you.
+
+Permissible Swap File sizes are 8, 16, 24, 32, 40, 48, 56, 64,
+72, 80, 88, 96, 104, 112, 120, 128, 136, 144 and 152K (plus 1K
+more in every case to take care of the configuration data stored
+there).
+
+PIP the NEW-SWP.COM file onto a formatted (Blanked) disk.  Put
+that disk in B.  Put your PW-Edit disk in A.  Press RESET.  When
+you get the A> prompt, type B:<CR>.  When you get the B> prompt,
+type NEW-SWP <CR>.  A menu will come up.  Answer the questions
+(standard answers are given as suggestions).  The machine will
+then start building the new PW.SWP file for you, reporting
+progress in K.  It took 14 minutes to compile a 128K PW.SWP in my
+standard Kaypro II.
+
+When completed, PIP onto the disk PW.COM and anything else you
+want, and have left room for.  My 128K disk has Smartkey and some
+Definition files.  
+
+
+A point to remember is that use of a LARGER THAN 64K Swap file
+commits you to make two more disks with the same size file.  One
+of them will carry PF.COM and the other will carry PP.COM.  You
+will have to switch disks to format, and to print.  You will also
+wait a lot longer for things to happen.  In the event that you
+also want to use Perfect Speller, you will need a fourth disk
+with PS.COM, DICTNARY.SPL and AFFIXTAB.SPL on it, as well.
+
+The cursor display line must be between 1 and 24.  Tab spacing,
+fill column and indent column should be between 0 and 79.  The
+indent column should be less than the fill column.  The delay
+count can be any valid integer, but the range 100 to 1000 is a
+reasonable one.  The clock rate can be 4, even though Kaypro II
+runs at 2. This was typed using my 128K PW-Edit disk, which was
+set at 128, 10, 65, 8, 0, 4 and 300 (answers to questions).
+
+The first 117 bytes tell Perfect Writer how to interface with
+Kaypro, and are simply copied from your disk.  The next 8 bytes
+are answered by the questions above.  The balance of the first
+1024 bytes are copied from your disk.  Then the NEW-SWP program
+goes to work padding out the rest of the Swap File to the length
+you have specified.  It works.
+
+
+
+From KUGRAM Vol 1 No 4			Disked by George M. Myers
+by Chip Weems					3/25/84 
+Computer and Information Science Dept 
+Graduate Research Center A-305 
+University of Masachusetts, Amherst, MA 01003
+

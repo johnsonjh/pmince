@@ -1,0 +1,35 @@
+			  READ-SWP.DOC
+
+This program retrieves your text from a Swap file and writes it
+on a new file called SWAP.MSS, which can then be read and edited
+by Perfect Writer.
+
+You NEED this utility right after you try to write to a disk and
+get a bad disk message.  Perhaps the disk was full, or had a
+"Write Protect" tape on it, or you neglected to Warm Boot after
+changing disks.  Whatever the reason, put this disk in drive B:,
+put your PW Edit disk in drive A: and press RESET.  At the A>
+prompt, type B:<CR>.  At the B> prompt, type READ-SWP <CR>.  The
+program will write a new file, SWAP.MSS, on this disk, so make
+sure that YOU HAVE EMPTY SPACE ON THE DISK to receive it (at
+least 64K). 
+
+Paging through a PW.SWP file is a little like sorting garbage. 
+Your file is in there someplace, usually right at the front.  But
+so is a lot of other junk.  This program copies about 10 pages at
+a time, then gives you an opportunity to get out of the routine,
+if you want to.  You see on the screen the data that's going into
+SWAP.MSS.  
+
+When you've got your file back, use PW EDIT, with its 2-window
+feature, to edit the file, yanking out only what you want to keep.
+
+PIP the edited data file over to a data disk, verify that you've
+got what you want, then ERA B:SWAP.MSS to make room to correct
+your next mistake.  
+
+from KUGRAM, Vol 2, No 2		typed by George M. Myers
+by Edmund Blair Bolles			25 March 84
+414 Amsterdam Avenue, #4N
+New York, NY 10024
+

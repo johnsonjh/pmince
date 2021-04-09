@@ -1,0 +1,181 @@
+Documentation for PCTEXT
+        1983 R. Friedrich, 1101 Woodcrest Dr., Garland, TX 75040
+
+DESCRIPTION:  A multi-column text utility for Perfect Writer.
+
+INTRODUCTION
+	Perfect Writer lacks capabilites of writing and moving text in
+parallel columns.  PCtext overcomes this deficiency by rewriting user
+prepared column text for Perfect Calc, loading text in designated parallel
+columns. 
+
+	The only code used in this program is the Perfect Calc "GOTO" code:
+a right arrow bracket followed by a column designation, as illustrated by
+the following tutorial.
+
+TUTORIAL
+
+>a
+Head each column block
+with the column
+desgination, and type
+your text the desired
+width.  If righthand
+justification is not
+needed, the simplest
+procedure is to set the
+"fill" column as the
+right margin.  For
+example, this column was
+>b
+set to fill to column
+24. This is achieved by
+typing: <ESC>24 CTL-X F. 
+This short line length
+was chosen to illustrate
+the text in three
+columns.
+>c
+   Every time you want
+to change column
+designations, simply
+type a line with the
+GOTO code.   All columns
+will start on the same
+line until a new ">a" is
+entered.  ">a" starts a
+new column bock on the
+line following the
+longest column of the
+preceding block.
+>a
+>b
+   If you want to leave
+the "a" column blank,
+you must enter ">a"
+anyway, just to reset
+the block starting line. 
+However, if you want to
+skip any other column,
+it is not nencessary to
+type the "GOTO" code for
+that column.
+>a
+
+If you want a line or a paragraph to extend past the column boundries, 
+Perfect Calc will display it only if there is nothing in the adjacent
+column(s) to obstruct it.
+
+>a
+  After preparing the
+column format with
+"GOTO" codes, write the
+text to disk, exit the
+word proecessor, and
+load PCtext.  The
+program will ask you the
+names of the file to
+read, and the file to
+write. 
+>c
+(Here we skipped ">b".)
+PCtext will boot out
+when done.  Then load
+Perfect Calc with the
+new file written by
+PCtext.  When PC is done
+reading the file, you
+will need to set column
+widths to your liking
+(CTL-X,w).
+>a
+-------------------------------------------------------------------------
+>a
+Once the text is in the
+spreadsheet, you can
+copy and move it all you
+want until you get the
+layout that suits you.
+>b
+You can then save the PC
+file as you have revised
+it, or send it to the
+printer, or save it on
+disk as dispayed (CTL-X
+CTL-P).
+>c
+  Let's take a look at
+what we've done so far.
+
+            ************************************************
+
+Head each column block    set to fill to column        Every time you want  
+with the column           24. This is achieved by   to change column        
+desgination, and type     typing: <ESC>24 CTL-X F.  designations, simply    
+your text the desired     This short line length    type a line with the    
+width.  If righthand      was chosen to illustrate  GOTO code.   All columns
+justification is not      the text in three         will start on the same  
+needed, the simplest      columns.                  line until a new ">a" is
+procedure is to set the                             entered.  ">a" starts a 
+"fill" column as the                                new column bock on the  
+right margin.  For                                  line following the      
+example, this column was                            longest column of the   
+                                                    preceding block.        
+                             If you want to leave 
+                          the "a" column blank,   
+                          you must enter ">a"     
+                          anyway, just to reset   
+                          the block starting line.
+                          However, if you want to 
+                          skip any other column,  
+                          it is not nencessary to 
+                          type the "GOTO" code for
+                          that column.
+
+If you want a line or a paragraph to extend past the column boundries,     
+Perfect Calc will display it only if there is nothing in the adjacent      
+column(s) to obstruct it.                                                  
+
+  After preparing the                               (Here we skipped ">b".) 
+column format with                                  PCtext will boot out    
+"GOTO" codes, write the                             when done.  Then load   
+text to disk, exit the                              Perfect Calc with the   
+word proecessor, and                                new file written by     
+load PCtext.  The                                   PCtext.  When PC is done
+program will ask you the                            reading the file, you   
+names of the file to                                will need to set column 
+read, and the file to                               widths to your liking   
+write.                                              (CTL-X,w).              
+-------------------------------------------------------------------------  
+Once the text is in the   You can then save the PC    Let's take a look at  
+spreadsheet, you can      file as you have revised  what we've done so far. 
+copy and move it all you  it, or send it to the 
+want until you get the    printer, or save it on
+layout that suits you.    disk as dispayed (CTL-X
+                          CTL-P).                
+
+               ********************************************
+
+You  can  produce  neat  looking      type codes  (underscoring,  back
+columns by  first subjecting the      spacing, etc.).   If you want to
+text to  Perfect  Formatter. Set      include  these   in  your  final
+style parameters to 0 left, top,      printed   document,   try    the
+and  bottom  margins,  and  line      following  approach:  Write  the
+width   to  desired  number   of      spread  sheet  display  to  disk
+characters.  Also turn off  page      (CTL-X CTL-P), then modify  that
+footing.                              file with your word processor to
+   Write  the formatted text  to      add the  formatting codes.  With
+disk;  in  other words, print to      Perfect  Writer you will want to
+device:  "file". Then enter  the      reformat in the flushleft  mode.
+new file with the word processor      Also  remember that any  special
+to tighten up double spaces, and      type  modes  which  would  carry
+insert    column     designation      over to  the following line must
+codes.  Then load  the file into      be terminated  at the end of the
+PCtext to rewrite it for Perfect      line and reopened  on  the  next
+Calc.                                 line,  lest both columns of text
+   One  caution  must be  raised      be subjected to the special type
+when   using   the    formatter:      command.                        
+Perfect Calc cannot read special                                      
+
+
+
