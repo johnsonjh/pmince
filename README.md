@@ -103,7 +103,8 @@ Review the [Makefile](/GNUmakefile) for more information.
   - Allow user configuration _without_ requiring full recompilation.
   - Normalize key bindings and mappings between **MINCE** flavors.
 - Support for **RSX-11**, (**Open**)**VMS**, and **OS/2** operating systems.
-- Create packages: **NFPM** / **FPM**, **Homebrew** _tap_ / _cask_, **pkgsrc**, etc.
+- Create packages: **NFPM** / **FPM**, **Homebrew** _tap_ / _cask_, **pkgsrc**,
+  etc.
 
 ## Original Authors
 
