@@ -93,15 +93,16 @@ Review the [Makefile](/GNUmakefile) for more information.
   - Automate **Scribble** formatting to (_n_)_roff_ / _groff_, (_X_)_HTML_,
     _TeX_ / _LaTeX_, etc. (utilizing **Pandoc** or similar tools for
     conversion).
-- Add Motorola **68000** CPU core, to support **MINCE-68K**.
+- Add Motorola **68000** CPU core for **CP/M-68K** to support **MINCE-68K**.
   - Automatically invoke **MINCE-68K** version for large input files.
   - End-user configuration of default **MINCE** flavor (**MINCE-80** or
     **MINCE-68K**).
-    - Native execution (_translation_) for **MINCE-68K** for **M68000** systems.
+    - Native execution (_translation_) for **MINCE-68K** on **M68000** systems.
 - User-configurable key bindings and remapping.
   - Allow user configuration _without_ requiring full recompilation.
   - Normalize key bindings and mappings between **MINCE** flavors.
 - Support for **RSX-11**, (**Open**)**VMS**, and **OS/2** operating systems.
+- Create packages: **NFPM** / **FPM**, **Homebrew** _tap_ / _cask_, **pkgsrc**, etc.
 
 ## Original Authors
 
