@@ -1,0 +1,53 @@
+	MENU.COM v 1.1 & 2.1  by Douglas Sears, 6 Nov 85
+
+   This program is designed to be used instead of the Menu program
+supplied with Perfect Writer (trademark of Perfect Software, Inc.),
+versions up to 1.20.  It is smaller, much faster, and has fewer bugs and
+more error-checking (for example, it won't let you specify an illegal
+drive name).  Improvements over v 1.0: (1) full 15-character printer
+device names are allowed (thanks to Robert Tull, the first to spot the
+problem), (2) directory listings larger than 64 files pause after each
+page, and (3) PW.COM etc. are searched for in the usual ZCPR path --
+current drive & user, then A:/current user, then A0:.
+
+   Version 1.1 runs only on the older models of Kaypro II or 4 (the ones
+without graphics, non-glare screens, or half-height drives), because it
+writes directly to the video RAM, for speed.
+
+   Version 2.1 is a little slower, but will run on any CP/M Kaypro. 
+Otherwise, the two versions are identical.
+
+   To avoid the "any other key" message when starting up the menu, you can
+hit a key before the message appears.  Just tap the return key TWICE,
+like this:
+
+	A>menu <CR> <CR>
+
+(The "any other key" message is there so as not to lose any error messages
+the formatter might put out.)
+
+   If, when formatting, you have been avoiding using printer devices
+other than the default because you can't remember the device names, take
+heart!  This speedy-MENU lists the names to choose from, as soon as you
+pick the "Device" option, and points out what the default printer and
+console devices are.  Here's a useful hint: to see what your file will
+look like on the printed page, complete with accurate page breaks, FIRST
+pick the C option for viewing on the console, THEN pick the D option and
+give the name of the printer device you'll be using, then pick G, and
+your file will appear on the screen as if printed (but, of course,
+without underlines, superscripts, etc.).
+
+   Please notice that this is COMMERCIAL software, but in the form of
+"shareware": you get the program by copying it from a friend or a bulletin
+board, not by mail-order.  I am hoping that the lower distribution costs
+of shareware will make it feasible to write good low-cost programs
+specifically for the relatively small number of Kaypro owners.  If you
+like this program, but don't send money, you'll have no one but yourself
+to blame if I give up and join the rest of the programmers who have
+decided that MS/PC-DOS is where you can make a living.
+
+Douglas Sears
+P.O. Box 5285
+Eugene, OR  97405
+USA
+
