@@ -164,4 +164,6 @@ ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT
 OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 ```
 
+## Intended Usage
+
 **This software is not intended for use in medical, life saving, life sustaining, critical control or safety systems, or in nuclear facility applications.**
