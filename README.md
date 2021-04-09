@@ -30,10 +30,10 @@ Review the [Makefile](/GNUmakefile) for more information.
 
 ## Usage
 
-- [Introduction](doc/prgintro.doc)
-- [Command Summary](doc/scomm.doc)
-- [Character Set](doc/ascii.txt)
-
+- Online Documentation
+ - [Introduction](doc/prgintro.doc)
+ - [Command Summary](doc/scomm.doc)
+ - [Character Set](doc/ascii.txt)
 - **MINCE** Manuals
   - [Getting Started](manual/MINCE_Install_Guide.pdf)
   - [User Guide](manual/MINCE_User_Guide.pdf)
