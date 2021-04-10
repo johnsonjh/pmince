@@ -43,7 +43,7 @@ Perfect Writer
    can find one. I’ve got one on one of my PIII machines in the basement. I
    keep moving the same old disk drive over (it started on a 286, i think) to
    new machines when I upgrade. Change the bios setup to tell it you’ve got a
-   1.2M 5 1/2″ instead of a 1.44M 3.5″. And write protect them before you 
+   1.2M 5 1/2″ instead of a 1.44M 3.5″. And write protect them before you
    start – you don’t want to erase one by accident.
 
    If the floppies are CP/M ones, you may want to try and use xenocopy
@@ -84,4 +84,4 @@ Perfect Writer
    Good Luck!
 
    This entry was posted on December 2, 2004, 1:09 pm and is filed under
-   History. 
+   History.
