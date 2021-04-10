@@ -37,7 +37,7 @@ Info from other sources will be added...
 **********
 
 Subject:   new mailing list
-∂20-Jun-81  1251        Dave Farber &lt;farber@udel>    new mailing list  
+∂20-Jun-81  1251        Dave Farber &lt;farber@udel>    new mailing list
 Date:      20 Jun 81 15:34:11-EDT (Sat)
 From:      Dave Farber &lt;farber@udel>
 To:        unix-cpm at Udel
@@ -56,7 +56,7 @@ Conn at Mit-Mc, rsm at Brl, mike at Brl, FJW at Mit-Mc
 **********
 
 Subject: UNIX-CPM "proceedings" and "master address list"
- ∂23-Jun-81  1649       STEF at DARCOM-KA       UNIX-CPM ''proceedings'' and ''master address list''    
+ ∂23-Jun-81  1649       STEF at DARCOM-KA       UNIX-CPM ''proceedings'' and ''master address list''
 Date: 23 Jun 1981 1606-PDT
 Sender: STEF at DARCOM-KA
 From: STEF at DARCOM-KA
@@ -780,17 +780,17 @@ UNIX, of course, does.
 --dave
 
 Subject: CPM vs **NIX--Re: More on the CP/M vs Unix talk
-∂16-Jun-81  1411        STEF at DARCOM-KA       CPM vs **NIX--Re: More on the CP/M vs Unix talk    
+∂16-Jun-81  1411        STEF at DARCOM-KA       CPM vs **NIX--Re: More on the CP/M vs Unix talk
 Date: 16 Jun 1981 1302-PDT
 Sender: STEF at DARCOM-KA
 From: STEF at DARCOM-KA
 To: Farber at UDEL-EE
-Cc: INFO-CPM at MIT-MC, AFITGORDON at BBNB, POURNE at MIT-MC, 
-Cc: WANCHO, IME-TECOM at OFFICE-2, Labhart at OFFICE-2, 
-Cc: Hewitt at OFFICE-2, SAD at SRI-KL, EBoyd at OFFICE-2, 
-Cc: Christina at OFFICE-2, TECOM-HQ at OFFICE-2, TBowerman, 
-Cc: TECOM-C3I at OFFICE-2, 
-Cc: "[KA]&lt;STEF>ADDR.OA-DRDAR;2":, 
+Cc: INFO-CPM at MIT-MC, AFITGORDON at BBNB, POURNE at MIT-MC,
+Cc: WANCHO, IME-TECOM at OFFICE-2, Labhart at OFFICE-2,
+Cc: Hewitt at OFFICE-2, SAD at SRI-KL, EBoyd at OFFICE-2,
+Cc: Christina at OFFICE-2, TECOM-HQ at OFFICE-2, TBowerman,
+Cc: TECOM-C3I at OFFICE-2,
+Cc: "[KA]&lt;STEF>ADDR.OA-DRDAR;2":,
 Cc: "[KA]&lt;STEF>ADDR.ADPSC;9":
 Message-ID: &lt;[DARCOM-KA]16-Jun-81 13:02:31.STEF>
 In-Reply-To: &lt;81166.32320.230 @ UDel-EE>
@@ -864,7 +864,7 @@ Best - Stef
 
 **********
 
-∂16-Jun-81  1904        Ime-Tecom at OFFICE-2   Re: CPM vs **NIX--Re: More on the CP/M vs Unix talk 
+∂16-Jun-81  1904        Ime-Tecom at OFFICE-2   Re: CPM vs **NIX--Re: More on the CP/M vs Unix talk
 Date: 16 Jun 1981 1855-PDT
 From: Ime-Tecom at OFFICE-2
 Subject: Re: CPM vs **NIX--Re: More on the CP/M vs Unix talk
@@ -1238,7 +1238,7 @@ Best - Stef
 **********
 
 Subject:   Re:  CPM vs **NIX--Re: More on the CP/M vs Unix talk
-∂17-Jun-81  1237        Dave Farber &lt;farber@udel-ee>         Re:  CPM vs **NIX--Re: More on the CP/M vs Unix talk   
+∂17-Jun-81  1237        Dave Farber &lt;farber@udel-ee>         Re:  CPM vs **NIX--Re: More on the CP/M vs Unix talk
 Date:      17 Jun 81 8:44:28-EDT (Wed)
 From:      Dave Farber &lt;farber@udel-ee>
 To:        AFITGORDON at Bbnb
@@ -1260,7 +1260,7 @@ as probably on the new HP 32 bit system. Thats a fair number.
 As to CP/M being an old system, I am speaking to the architecture
 of the system NOT to its age. While Unix is not up to current "best"
 ideas in system organization, it is much better than CP/Ms. (If you
-want a better orgnaization try RMX86). 
+want a better orgnaization try RMX86).
 
 More latter.
 
@@ -1305,7 +1305,7 @@ address handy.
 **********
 
 Subject: Re: Shall we set up a new group Re: CPM vs **NIX?
-∂18-Jun-81  1645        AFITGORDON at BBNB      Re: Shall we set up a new group Re: CPM vs **NIX? 
+∂18-Jun-81  1645        AFITGORDON at BBNB      Re: Shall we set up a new group Re: CPM vs **NIX?
 Date: 18 Jun 1981 1905-EDT
 From: AFITGORDON at BBNB
 To:   BHUBER at USC-ECL, STEF at DARCOM-KA
@@ -1326,14 +1326,14 @@ Ford Aerospace, and I forget who else) on the Ada Language  Integrated
 Computer  Environment  (ALICE)  and  the  potential  extension  of its
 concepts into other areas (including Office Automation)!
 
-        
+
                                         Rick Conn
 -------
 
 
 **********
 
-∂19-Jun-81  0046        Robert E. Spivack &lt;PHOTOG at MIT-MC>    
+∂19-Jun-81  0046        Robert E. Spivack &lt;PHOTOG at MIT-MC>
 Date: 19 June 1981 03:44-EDT
 From: Robert E. Spivack &lt;PHOTOG at MIT-MC>
 To: INFO-CPM at MIT-MC
@@ -1353,14 +1353,14 @@ Date: 26 May 1981 0404-PDT (Tuesday)
 From: Lauren Weinstein
 To:   Keith Petersen, W8SDZ
 
-MARC is the operating system for 8080/Z80 that boots up under 
-CP/M (initially) then looks like UNIX.  It was developed by Ed 
-Ziemba (EPZ@AI), and will include the BDS C compiler for $275.  
-I'll be the one selling it.  It is a REAL winner, and is a dream 
-on both floppies and hard disk systems -- on the latter it is a 
-NECESSITY.  Talk to Ed if you want the real nitty-gritty.  There 
-is a CP/M emulator that automatically runs for CP/M programs, 
-though we expect people will start writing using the MARC asm 
+MARC is the operating system for 8080/Z80 that boots up under
+CP/M (initially) then looks like UNIX.  It was developed by Ed
+Ziemba (EPZ@AI), and will include the BDS C compiler for $275.
+I'll be the one selling it.  It is a REAL winner, and is a dream
+on both floppies and hard disk systems -- on the latter it is a
+NECESSITY.  Talk to Ed if you want the real nitty-gritty.  There
+is a CP/M emulator that automatically runs for CP/M programs,
+though we expect people will start writing using the MARC asm
 interface since it is infinitely superior to CP/M's...
 
 --Lauren
@@ -1489,7 +1489,7 @@ The main features of MARC are:
         -- a text formatting package
         -- a simple (but effective) assembler
         -- a lineprinter output program
-        -- a text editor patterned after the Unix "ed" editor 
+        -- a text editor patterned after the Unix "ed" editor
         -- and many more...
 
    The vast libraries  of CP/M software  are still available  for
@@ -1812,7 +1812,7 @@ operating system available for micros, UNTIL NOW.
                                 wm at unc
 
 Subject: The Promised Commentary  ( AFITGORDON )
- ∂23-Jun-81  0729       AFITGORDON at BBNB      The Promised Commentary  
+ ∂23-Jun-81  0729       AFITGORDON at BBNB      The Promised Commentary
 Date: 23 Jun 1981 0021-EDT
 From: AFITGORDON at BBNB
 To:   unix-cpm at UDEL
@@ -1879,12 +1879,12 @@ chose CP/M.  Can anyone answer this question with authority?
 
         Well, that's all I have for now.  Any comments?
 
-        
+
                                         Rick Conn
 -------
 
 Subject:   Reasons for use of cpm
- ∂23-Jun-81  0809       Dave Farber &lt;farber@udel>    Reasons for use of cpm 
+ ∂23-Jun-81  0809       Dave Farber &lt;farber@udel>    Reasons for use of cpm
 Date:      23 Jun 81 7:31:58-EDT (Tue)
 From:      Dave Farber &lt;farber@udel>
 To:        unix-cpm at Udel
@@ -1905,7 +1905,7 @@ often mentioned 8086/8088 Unix of Microsoft and others arrives.
 Dave
 
 Subject: [ners: Software Functionality and Portability - The "C" lan...]
- ∂23-Jun-81  1709       STEF at DARCOM-KA       [ners: Software Functionality and Portability - The ''C'' lan...] 
+ ∂23-Jun-81  1709       STEF at DARCOM-KA       [ners: Software Functionality and Portability - The ''C'' lan...]
 Date: 23 Jun 1981 1708-PDT
 Sender: STEF at DARCOM-KA
 From: STEF at DARCOM-KA
@@ -1914,14 +1914,14 @@ To: "[ka]&lt;STEF>UNIX-CPM.LST;2":
 Message-ID: &lt;[DARCOM-KA]23-Jun-81 17:08:05.STEF>
 
 This item missed the main list.  It exposes yet another view.   Stef
-        
+
 Begin forwarded message
 
 Subject: Software Functionality and Portability - The "C" language
 
 Date: 18 Jun 1981 0750-PDT
 From: ners - - Sender: ADPSC at USC-ISI
-To: [ISI]&lt;ADPSC>ADDR.ADPSC;9:, 
+To: [ISI]&lt;ADPSC>ADDR.ADPSC;9:,
 Cc: fbb, Farber at UDEL-EE
 
 The following is an article from a recent Computerworld
@@ -1998,10 +1998,10 @@ choice of UNIX as the operating system.
 
 *END MSG Message-ID: &lt;[USC-ISI]18-Jun-81 07:50:09.ADPSC>
 End forwarded message
-                
+
 
 Subject: UNIX TOOLS
- ∂23-Jun-81  1806       Keith B Petersen &lt;W8SDZ@MIT-MC>      UNIX TOOLS  
+ ∂23-Jun-81  1806       Keith B Petersen &lt;W8SDZ@MIT-MC>      UNIX TOOLS
 Date: 23 June 1981 20:25-EDT
 From: Keith B Petersen &lt;W8SDZ@MIT-MC>
 To: UNIX-CPM at UDEL
@@ -2059,7 +2059,7 @@ DEC-20.  See the review in Dr. Dobbs Journal, April 1981.
 
 
 Subject: Ada, ALE, ALICE, and MARC?
- ∂24-Jun-81  0357       AFITGORDON at BBNB      Ada, ALE, ALICE, and MARC?    
+ ∂24-Jun-81  0357       AFITGORDON at BBNB      Ada, ALE, ALICE, and MARC?
 Date: 24 Jun 1981 0646-EDT
 From: AFITGORDON at BBNB
 To:   unix-cpm at UDEL
@@ -2112,7 +2112,7 @@ going in the direction of MARC opens all the bridges.
 -------
 
 Subject: Xerox, IBM, and CP/M for Office Automation
- ∂24-Jun-81  0444       AFITGORDON at BBNB      Xerox, IBM, and CP/M for Office Automation   
+ ∂24-Jun-81  0444       AFITGORDON at BBNB      Xerox, IBM, and CP/M for Office Automation
 Date: 24 Jun 1981 0703-EDT
 From: AFITGORDON at BBNB
 To:   unix-cpm at UDEL
@@ -2146,7 +2146,7 @@ software base for office automation.
 -------
 
 Subject: More on the Xerox 820 and its Target
- ∂24-Jun-81  1609       AFITGORDON at BBNB      More on the Xerox 820 and its Target    
+ ∂24-Jun-81  1609       AFITGORDON at BBNB      More on the Xerox 820 and its Target
 Date: 24 Jun 1981 1855-EDT
 From: AFITGORDON at BBNB
 To:   unix-cpm at UDEL
@@ -2189,7 +2189,7 @@ Displaywriter and Wang's Wangwriter).
 -------
 
 Subject: SIGPLAN/SIGOA and WWB/UNIX
- ∂24-Jun-81  1721       AFITGORDON at BBNB      SIGPLAN/SIGOA and WWB/UNIX    
+ ∂24-Jun-81  1721       AFITGORDON at BBNB      SIGPLAN/SIGOA and WWB/UNIX
 Date: 24 Jun 1981 2002-EDT
 From: AFITGORDON at BBNB
 To:   unix-cpm at UDEL
@@ -2209,10 +2209,16 @@ designed by people at Yale, Cornell, Tektronix, MIT, BBN,  Bell  Labs,
 IBM,  and  Stanford,  to name a few.  Several of these tools run under
 UNIX, and there are articles on PEN, JANUS, and EMACS.  It looks  like
 an excellent issue for those intereswg;r|       84(hQ↓↓↓α↓↓↓↓∀≠?7C/#↔Iα∞K∪Mβ6{Iα←⊗KS↔K~⊃βe∧c?K'v#¬↓α≡C↔KKJ↓βπQαα↔3b↓α3π↔_4+7.sS'?w→α↑↑∩zV:&B↓"←KO#↔I∨~α←?KZα↔;≡AαV:MAβπMε{CC?≡+⊃βSzαB↑  ⎇*:&aε3?H4WβK?∨⊗77↔↔→%1β∞s⊃α%π;πMβ>{;∪↔⊗K;≥βN1βπ;N{;∃βFMβ#.K⊃β}1↓βSFKM↓β⊗+≠?K(h+π;"↓β∂πr↓βCK␈3'∪∃αβ¬↓β∨K;?C≡KM↓β}1↓βSF)βS?}cMβπ6'3π⊗c∃βWv#↔IβO!9↓α&C∀4+∂∪S'∂f)∨MβNs≠?KnS'?rβ←πMπ∪πS#/⊃βO//#∂#ebβπ;⊃π##∃β⊗+≠↔K.s∂∃βW+OQ↓ε;π[∀hSS#∃εWS#␈∪Mβπv!βS#*β;π7*β?→β
-βCπC/⊃βπQ∧∪↔31ph(4)α↓↓↓↓α↓↓↓↓α↓↓↓↓α↓↓↓↓α↓↓↓↓α↓↓↓↓α↓↓↓↓α↓↓↓α⊗K∂,4Ri555ji44(hP2OW⊗S↔∂QRαα∪N3↔∂'→β'9¬*:&axh)=∪16+WriaE↓β↓eQHL
+βCπC/⊃βπQ∧∪↔31ph(4)α↓↓↓↓α↓↓↓↓α↓↓↓↓α↓↓↓↓α↓↓↓↓α↓↓↓↓α↓↓↓↓α↓↓↓α⊗K∂,4Ri555ji44(hP2OW⊗S↔∂QRα
+α∪N3↔∂'→β'9¬*:&axh)=∪16+WriaE↓β↓eQHL
 ~&R&lt;zJ∩>rβπQα∀∩:     L→α∪'∞c↔∂S~β'9α,r&a⎇h*∪π&)i↓I*α+W9β     eaEβ    QAEl*∩P4T3K?5Rαε~&$:>J∩|qβπQ∧∩
 :λhRS=iα↓βW;OA7∂CjβπQα,"⊗04U3'¬iαα;∪Y↓IY∧SW9↓C  ↓EIS↓]6⊗% 4(4TC%1α/3↔Kg}s∃04Ph)↓↓α↓↓↓↓¬;∃β←/∪∃β∪O≠∂WO≡K;≥β&C∃αVtJaβ[~↓α∞A|i↓βK.∪';:↓β≠'f)↓βS}#πe↓εP4*2&Q1αβπ;⊃αβ¬β∨}{⊃βG.+OS'}qβ∂πn)βWAr↓αeεs?]βO!∨Mβ⊗+↔9β⊗+∂?∨vKk↔⊃π##πPhSS#↔⊗)βπK*β¬β[∂∪'↔SJβ?→β&K≠≠↔⊗+;Qα,r&aβ∨KOS↔o→β≠3}S';:βπ?/!1βπv!α%∨6(4+.+9↓β∂≠OW7Ns≥↓β&CπQ↓π##∃α~β∂?7εK3↔K~β?9β&C↔O∃π≠gOS.kMβπ⊗)β↔c∞≠S3eπ##∀4W≠π7∃αi5βSFQβ'~aβS#/Iβ∂?oβ'3∃ε+cπ∂&ceβSF)βOπn)β3πv;Wπ∨*βπ;⊃π##↔K*↓βπK(h+;=αβ∪'πf+∂SMα↓#πMαβ←'SB↓α~>∃"Jε9b↓α
-ε≤J1↓ε+S9Jq↓α3}{/';:βπQβ&C∃α∞αz44+.s['K}s7↔;"aβ'QεCπMβ∂!β3↔∂≠QβSG∪↔∃β&Kπ3↔∨#Mβ?2α9↓∧K∃β&C↔K∃ε#'≠≠/∪↔;PhS∪'πf+∂SMαβ≠3?∂#';≥αβπ7?v9βS#*αV:&BβOgO&+7Mβ∂→β←↔fa⎇↓αN1βO=bβS#'~β∂?Wf 4+∪.;Kπ∪*βS#∃εK;S↔∩jV:&BβS??bβSKπw≠C?K&'3O#eβ∂∂βπ'fKS'↔~p4(4R↓↓↓↓α↓↓↓↓α↓↓↓↓α↓↓↓↓α↓↓↓↓α↓↓↓↓α↓αK'≡X4(4RQ)))RQ)))Ph(4*∨++↔∨!i↓↓¬∪∃i↓∧→α∪'∞c↔∂S~β'9α,r&a|hQ=I2j+W9kAE↓↓βIU`&&[∃α∨∪?∂//⊃↓s∪∨∪?∂//∩βW∪.ay&⊗)i↓α~α∪'πf+∂SMεK9αVtJa⎇hR∪πS+Q↓↓↓α↓↓IY∧SW9↓C ↓EIS⊃EiE~j⊗∩QαB≠K%Hh*≠K}ii↓↓α↓↓α∪∂3∃α∂⊗{∂/↔∩↓s∪∂⊗{∂/↔∀βW∪↔cp4*S{Q↓↓↓α↓↓↓α2&R≡⎇∩∩>9εQα⊗sλ4+≡→i↓↓α↓↓↓↓π+;'an≠C5β∂!αW∪.`4(4R↓↓↓α&C∃α?wKaβ;/9αβ≡{7C'f+I↓#V≠%β&{↔Mβv{QβO/βC?K"βOSπ&K4+7+;∂SN{;M9αα'Qβ∞cO=βneβ#∂3∃βO}k∃βS⊗{W3*β←'SBβS#∃α;W;ON;;↔⊃8h+Sgε)84(hQ↓↓↓¬##∃↓lIβO←O#∂!β&yβS#*β∂?7εK3↔Ibβ≠?Iπ≠C↔∂N3g';:β∪↔≠∂+3P4V#'K↔∨#?K'/→βS=εc??-εK;S=αC≠?Iα≠';∂g+∪∃β6K3↔MJβ∪?↔~β;?QεCC3JβS&lt;4Say7SOβ∃β≠Nc↔;πn+M9↓¬##↔O*βπK∃α;OgO&+5≥βNs∂3W&)β≠'f+M9↓¬##∀4WβK?f+5β←O#!β;␈!β#π6K;≥↓lIβ';&+K∂↔π!βS#/≠∃β'~βS#π"βg?Uε≠π;;␈ 4+K.≠?;≠N;WK∃ε     βCK};Kπ5?→β↔;6KK?;n+;Q↓F);≥9bβ∪'≠6+K↔;"βOSπ h+OS↔+∂SW⊗+M1βNqβ∂π≡)βS#*β≠'3*βpl=length field is different) without
+ε≤J
+1↓ε+S
+9Jq↓α3}{/';:βπQβ&C∃α∞αz44+.s['K}s7↔;"aβ'QεCπMβ∂!β3↔∂≠QβSG∪↔∃β&Kπ3↔∨#Mβ?2α
+9↓∧K∃β&C↔K∃ε#'≠≠/∪↔;PhS∪'πf+∂SMαβ≠3?∂#';≥αβπ7?v9βS#*αV:&BβOgO&+7Mβ∂→β←↔fa⎇↓αN1βO=bβS#'~β∂?Wf 4+∪.;Kπ∪*βS#∃εK;S↔∩jV:&BβS??bβSKπw≠C?K&'3O#eβ∂∂βπ'fKS'↔~p4(4R↓↓↓↓α↓↓↓↓α↓↓↓↓α↓↓↓↓α↓↓↓↓α↓↓↓↓α↓αK'≡X4(4RQ)))RQ)))Ph(4*∨++↔∨!i↓↓¬∪∃i↓∧→α∪'∞c↔∂S~β'9α,r&a|hQ=I2j+W9kAE↓↓βIU`&&[∃α∨∪?∂//⊃↓s∪∨∪?∂//∩βW∪.ay&⊗)i↓α~α∪'πf+∂SMεK9αVtJa⎇hR∪πS+Q↓↓↓α↓↓IY∧SW9↓C ↓EIS⊃EiE~j⊗∩QαB≠K%Hh*≠K}ii↓↓α↓↓α∪∂3∃α∂⊗{∂/↔∩↓s∪∂⊗{∂/↔∀βW∪↔cp4*S{Q↓↓↓α↓↓↓α2&R≡⎇∩∩>9εQα⊗sλ4+≡→i↓↓α↓↓↓↓π+;'an≠C5β∂!αW∪.`4(4R↓↓↓α&C∃α?wKaβ;/9α
+β≡{7C'f+I↓#V≠
+%β&{↔Mβv{QβO/βC?K"βOSπ&K4+7+;∂SN{;M9αα'Qβ∞cO=βneβ#∂3∃βO}k∃βS⊗{W3*β←'SBβS#∃α;W;ON;;↔⊃8h+Sgε)84(hQ↓↓↓¬##∃↓lIβO←O#∂!β&yβS#*β∂?7εK3↔Ibβ≠?Iπ≠C↔∂N3g';:β∪↔≠∂+3P4V#'K↔∨#?K'/→βS=εc??-εK;S=αC≠?Iα≠';∂g+∪∃β6K3↔MJβ∪?↔~β;?QεCC3JβS&lt;4Say7SOβ∃β≠Nc↔;πn+M9↓¬##↔O*βπK∃α;OgO&+5≥βNs∂3W&)β≠'f+M9↓¬##∀4WβK?f+5β←O#!β;␈!β#π6K;≥↓lIβ';&+K∂↔π!βS#/≠∃β'~βS#π"βg?Uε≠π;;␈ 4+K.≠?;≠N;WK∃ε     βCK};Kπ5?→β↔;6KK?;n+;Q↓F);≥9bβ∪'≠6+K↔;"βOSπ h+OS↔+∂SW⊗+M1βNqβ∂π≡)βS#*β≠'3*βpl=length field is different) without
 changing the source .
 
     You also want to be concerned about the support library.  For
@@ -2248,7 +2254,7 @@ Dave
 **********
 
 Subject: Onyx dialect of C
- ∂26-Jun-81  1535       CSVAX.mark at Berkeley  Onyx dialect of C    
+ ∂26-Jun-81  1535       CSVAX.mark at Berkeley  Onyx dialect of C
 Date: 26 Jun 1981 14:00:07-PDT
 From: CSVAX.mark at Berkeley
 To: unix-cpm at udel
@@ -2293,7 +2299,7 @@ keeps up with the times, and has the following changes since v7:
     format.  There has been no indication that Bell will buy this back.
 
 Subject:  Costs of implementing UNIX
- ∂01-Jul-81  0203       Schauble.Multics at MIT-Multics         Costs of implementing UNIX 
+ ∂01-Jul-81  0203       Schauble.Multics at MIT-Multics         Costs of implementing UNIX
 Date:  1 July 1981 04:35 edt
 From:  Schauble.Multics at MIT-Multics
 To:  unix-cpm at UDEL
@@ -2312,7 +2318,7 @@ in such an implementation? Where do I go to start?
 **********
 
 Subject: Porting UNIX to other machines...
- ∂01-Jul-81  1818       mike at BRL     Porting UNIX to other machines...    
+ ∂01-Jul-81  1818       mike at BRL     Porting UNIX to other machines...
 Date:  1 Jul 1981 at 2053-EDT
 From: mike at BRL
 To: Schauble.Multics at mit-multics
@@ -2320,30 +2326,30 @@ cc: unix-cpm at udel
 Via:  Brl; 1 Jul 81 20:53-EDT
 
 Folks -
- 
+
         I don't know if everybody wants to hear about this, but for
 your information, I'll climb up on my soapbox and let fly...
- 
+
                 - PORTING UNIX TO A NEW MACHINE -
- 
+
         0)  [It's difficult without a UNIX License & an existing UNIX system]
         1)  You need a "C" compiler, and an assembler.
         2)  You need to port the UNIX Kernel to the new machine
         3)  You need to build all the "C" libraries (user mode)
         4)  You need to port all the utility programs.
- 
+
 Back in the V6 days, the hard part was the "C" compiler and the utility
 programs, as neither was designed with portability or machine independence
 in mind.  With the advent of V7 UNIX, which has already been successfully
 ported to many machines (some of which were probably undeserving), things
 are much easier.  PCC makes the compiler-builder's job much simpler.
 The utilities have been "lint"ed, ensuring fairly good portability.
- 
+
         One assumption is that the target machine has a "reasonable" memory
 management facility.  UNIX *must* have this, because each UNIX process
 can be thought of as &lt;&lt;a virtual processor with no I/O hardware>>.
 (I/O is, of course, done by system-calls).
- 
+
         Another assumption is that the machine is byte addressible.  This
 is not a "hard" requirement, but certainly makes life much simpler, both
 for the compiler and the user routines.  Of course, you can always take
@@ -2351,7 +2357,7 @@ the cowards way out and use 1 byte per word, but on machines with
 wide words this can result in some real lossages, like 36-bit "bytes"
 on the PDP-10, or 15-bit bytes on Cybers.  Still, old large machines
 DO have memory to burn, so you can get started this way...
- 
+
         I will assume that the "commercial grade" UNIX which Schauble
 spoke of would consist of a "spiffed up" UNIX, something like
 n+1 BSD VM/UNIX, or Perdue UNIX, or BRLNET UNIX, or Pentagon UNIX, or ....
@@ -2360,11 +2366,11 @@ depend on these UNIX variants, so I think they qualify.
 Certainly, straight V7 has proven to be a good starting point for a
 commercial UNIX system.  After all, it's good enough for BBN, XENICS,
 DYNIX, ONYX, Amdahl UTS, and a host of others...
- 
+
         (My comments thus far have assumed that the project in question
 was going to be a PORT of "true" (ie. licensed) UNIX.  Building a "look-
 alike" system is a similar, but different problem.)
- 
+
         As far as the cost of all this stuff goes, there are a lot of
 factors to consider:
         1) Niceness of machine instruction set.
@@ -2373,7 +2379,7 @@ factors to consider:
            ---> affects ease of porting Kernel & building I/O drivers
         3) Availibility of experienced UNIX personnel.
            ---> affects ease of getting UNIX done!!!
- 
+
 It is hard to stress the personnel aspect enough.  If you have a good
 PCC wizard, getting a resonable PCC up is a matter of &lt;&lt; 1 month.
 If you have a good Kernel wizard, getting most of the kernel up is a
@@ -2381,24 +2387,24 @@ matter of &lt;&lt; 1 month.  The libraries require a good (target machine)
 assembly language & C coder (for "good" read "patient"), and ~~ 2 months.
 The utilities require a patient person familiar with the UNIX utilities
 and the C language, and perhaps 3 months.
- 
+
 Fortunately, if a group of 3 people with (moderately) orthogonal skills
 is availible, a great deal of the development can be overlapped, and
 results can be achieved fast.  A running UNIX should probably only take
 such a team &lt;&lt; 3 months, and the system should be self-sufficient
 on the new machine shortly thereafter.
- 
+
         CC      ******** ++++++++ ........
         Kernel      ******** ++++++++ ........
         Lib & Util      ******** ++++++++ ........
- 
+
                 * = initial development
                 + = major shakedown
                 . = the inevitable minor bugs
- 
+
 Doing this kind of a project with more than about 3 people is likely to
 be suicidal, as co-ordination eats away any time gained by extra bodies.
- 
+
         Sooo, back to the COST.  Assuming some organization has
 a UNIX license & a UNIX machine, and already owns 1 of the target machine,
 and can hire the "right" 3 people, the project should cost their salaries
@@ -2407,7 +2413,7 @@ documentation desired & sales literature.  Say, $100K for total salary.
 You figure out the rest (& add in overhead figures).  $0.5M may not
 be too far off, as a good estimate, but a really anxious bunch
 could get by for a lot less, and still produce a good result.
- 
+
         A lot of people have said a great variety of things concerning
 the ease of porting the UNIX kernel itself to other machines.  These
 fall into several categories:
@@ -2419,21 +2425,21 @@ Rubbish!  The UNIX Kernel implements a clean, efficient user/system
 interface, which can be used on nearly any machine (see above) that
 qualifies, and will certainly run the hardware to it's limits!
 (Ask our hardware wizards, who curse UNIX's demands on the hardware).
- 
+
         I'll step off my soapbox now, and wish anybody who is
 interested in trying to port UNIX the best of luck!  If you are allowed
 to talk, I'd like to hear about any new porting projects.
 [I also volunteer my advice on Kernel issues, if anybody wants it].
- 
+
                         UNIX Forever!!!!        (a long time, anyways)
                         -Mike Muuss
                         Ballistic Research Laboratory
- 
+
 Anybody need help porting a kernel?
 -------
 
 Subject:  [WMACGREGOR: The Economics of Workstations]
- ∂29-Jun-81  0952       Frank J Wancho &lt;FJW@MIT-MC>  [WMACGREGOR: The Economics of Workstations]   
+ ∂29-Jun-81  0952       Frank J Wancho &lt;FJW@MIT-MC>  [WMACGREGOR: The Economics of Workstations]
 Date: 29 June 1981 12:24-EDT
 From: Frank J Wancho &lt;FJW@MIT-MC>
 To: UNIX-CPM at UDEL
@@ -2566,7 +2572,7 @@ se, but I believe this is relevant to system design.
 
 
 Subject: EMACS -vs- UNIX
- ∂30-Jun-81  1741       mike at BRL     EMACS -vs- UNIX  
+ ∂30-Jun-81  1741       mike at BRL     EMACS -vs- UNIX
 Date: 30 Jun 1981 at 2026-EDT
 From: mike at BRL
 To: WorkS at mit-ml, unix-cpm at udel
@@ -2574,32 +2580,32 @@ cc: Rivanciw.DHQ at udel, benson at utah-20
 Via:  Brl; 30 Jun 81 20:29-EDT
 
 Folks -
- 
+
         "Eric Benson's message implicitly compares the Emacs design with UNIX.
 In his words, Emacs is elegant, UNIX arcane."
- 
+
         Both this comparison and the conclusion disturb me.  Comparing
 an editor (which can be thought of as having 3 levels) with an operating
 system (which has many levels of complexity) is kind of off-the-wall,
 but lets play along...
- 
+
         INTENT:  The intent of EMACS (as I see it) was to provide a
 "what-you-see-is-what-you-get" screen editor which behaved similarly
 over a wide range of terminal keyboards (and terminals), and to permit
 construction of Macros to implement higher-level features (LISP indenting,
 etc).  The intent of UNIX was to provide a powerful, plesant, and consistent
 environment for Computer Science types to experiment and build tools in.
- 
+
 In a word, the intent of UNIX is "Software Tools", whereas the intent of
 EMACS is "Software TOOL".  Humm.
- 
+
         USER INTERFACE:  Everybody will be quick to agree that EMACS has
 a simple to learn user interface, at least to gain "novice" status.
 The more intricate commands become more obscure, and less mnemonic.
 (Everybody agrees that Meta-Control-single←character can get obscure).
 "What-you-see-is-what-you-get" is Motherhood and Apple Pie for screen
 editors, and EMACS definitely succeeds here.
- 
+
 The UNIX user interface is designed to save typing while remaining
 reasonably mnemonic.  A remarkable number of "Advanced" users
 can't type very well, so this is laudable.  Unfortunately, this means
@@ -2607,17 +2613,17 @@ users take a while longer getting used to the command abbreviations.
 There exist variants of the UNIX Shell (command interpreter) which
 accept abbrviated commands and do other nice, user-helpful things
 (although the "standard" (dumb) shells are more common).
- 
+
 Initial EMACS and UNIX users face much the same problem...
 LOTS OF SQUINTY LITTLE COMMANDS.
- 
+
         UNDERLYING STRUCTURE:  As I understand it, EMACS can be thought of as
 having 3 layers:  The user interface/screen control stuff, the Macro level
 commands, and the macro implementation level (Typically TECO).  Certainly,
 the top level is easy to use.  The Macro level can usually be learned and
 profitably USED by ordinary mortals, but the macro implementation level
 (TECO or whatnot) requires a Wizard to get good results.
- 
+
 UNIX can be thought of as a number of levels, nested:
         The terminal driver & line protocol (control/s/q & "cooked" editing).
         The Shell (command interpreter)
@@ -2628,28 +2634,28 @@ While each of these levels may have some overlap and inconsistencies,
 the general "clean" philosophy of having only one mechanism to accomplish
 one result is generally evident, and a real pleasure!
 [More on this some other day]
- 
+
 "UNIX productivity must be thought of, not in terms of lines of code
 written per unit time, but in terms of lines of code NOT REQUIRED..."
- 
+
         CONCLUSIONS:  I feel that EMACS is one of the better screen editors
 around, mostly because of the "macro" facility which permits powerful
 features to be built on top, and I feel that UNIX is definitely the
 best operating system that has surfaced to date, because of the consistent
 system-call interface, and the "Software Tools" approach to commands.
- 
+
         HENCE, I think that all UNIXs should have an EMACS, and everybody
 should run UNIX!
                                 -Mike Muuss
                                 Ballistic Research Laboratory
- 
+
 PS:  There exist EMACSs small enough to fit on an 11/34, and UNIX runs
      on everything these days, so this is less of a pipe-dream than it
      may seem!
 -------
 
 Subject:   [The Moderator:  Software tools - EMACS and UNIX]
- ∂11-Jul-81  0041       Mike at BRL     [The Moderator:  Software tools - EMACS and UNIX]   
+ ∂11-Jul-81  0041       Mike at BRL     [The Moderator:  Software tools - EMACS and UNIX]
 Date:      11 Jul 81 3:09:44-EDT (Sat)
 From:      Mike at BRL
 To:        unix-cpm.EE at UDel
@@ -2659,8 +2665,8 @@ For Your Information ---
 
 ----- Forwarded message # 1:
 
-Mail-from: daemon Sun Jul  5 11:05:56 1981  
-Mail-from: ARPAnet host mit-ml rcvd at Sun Jul  5 11:05:41 
+Mail-from: daemon Sun Jul  5 11:05:56 1981
+Mail-from: ARPAnet host mit-ml rcvd at Sun Jul  5 11:05:41
 Date:  5 Jul 1981 1000-EDT
 From: The Moderator &lt;WorkS-REQUEST at MIT-AI>
 Subject: Software tools - EMACS and UNIX
@@ -2691,7 +2697,7 @@ vacation or some such.
 ----- End of forwarded messages
 
 
-∂20-Jul-81  2139        MMD  
+∂20-Jul-81  2139        MMD
 Subject:  Multi-user, etc., revisited
  ∂16-Jul-81  0212       Frank J. Wancho &lt;FJW at MIT-MC>      Multi-user, etc., revisited
 Date: 16 July 1981 05:13-EDT
