@@ -23,7 +23,7 @@ cc: AMETHYST-USERS at MIT-AI
 
 2. Sorry. I will try to be more brief.
 
-3. Too late to do anything about this month's. I could send a 
+3. Too late to do anything about this month's. I could send a
    ready-for-scribble-or-scribe file out every month,
    or just take all the indent out, as you wish. Geez, We're just
    beginning, so i can't be expected to be perfect (yet).
@@ -45,7 +45,7 @@ do local modes in emacs.  -*- Teco-*- is historical.
 
 
 Date: 27 May 1981 at 1938-CDT
-From: awd at UTEXAS-11 
+From: awd at UTEXAS-11
 Subject: This is the June Newsletter for AUG, which just got into the Snail today.   -BADOB (Barry
 Dobyns)
 To: amethyst-users at ai
@@ -57,13 +57,13 @@ To: amethyst-users at ai
 
 
 
-                                          
+
 
                                 Amethyst Users Group
 
                                 The First Newsletter
 
-          
+
 
             This is the first newsletter  for  the  Amethyst Users Group. I
           had not expected to have anything to say so soon, but as it turns
@@ -99,9 +99,9 @@ AI  as  I can read it with my
           machine, and save time and errors.
 
             I would like to  request  that  all correspondence intended for
-          Amethyst Users Group be sent to: 
+          Amethyst Users Group be sent to:
 
-          
+
           Amethyst Users Group
           University Station
           Post Office Box 8173
@@ -124,7 +124,7 @@ AI  as  I can read it with my
 
 
 
-          
+
           Barry A. Dobyns
           1633 Royal Crest #1128
           Austin Texas 78741
@@ -157,17 +157,17 @@ AI  as  I can read it with my
           tell me that  you don't need them or that you think my MINCE will
           grow to over a megabyte.
 
-            
+
 
                                         Modes
 
-          
+
 
             One  of the things that is of interest is  how  automatic  mode
           switching in MINCE  is  to  be  implemented.  I have seen several
           basic ways, and each have their good points and their bad points.
 
-          
+
 
             1.  The first is one that many people support as 'natural' to a
                 CP/M environment. This is to  have  MINCE  set the mode for
@@ -271,11 +271,11 @@ AI  as  I can read it with my
           goes. As soon as Mark of the  Unicorn  adds  overlays,  we can do
           some nf these more exotic things.
 
-            
+
 
                                        Macros
 
-          
+
 
             Another  thing  folks  seem to be interested in is macros. Some
           have suggested that  macros  be  only  a  single  line  long (and
@@ -296,11 +296,11 @@ AI  as  I can read it with my
           of many other  really  good places. Once again, I haven't thought
           on this one much longer than it took to write this.
 
-            
+
 
                                 Command Line Options
 
-          
+
 
             Another good  suggestion  is  loading  more  than one file into
           separate buffers from the original command line. It doesn't sound
@@ -322,11 +322,11 @@ AI  as  I can read it with my
 
 
 
-            
+
 
                               Marks and Kills on a Ring
 
-          
+
 
             I would like to see more than  one  mark  available. Perhaps we
           could have a ring buffer (circular array) of marks, and a command
@@ -334,11 +334,11 @@ AI  as  I can read it with my
           Inspiration  for  this comes from tinkering  with  EMACS,  but  I
           haven't the slightest idea how to begin implementation.
 
-            
+
 
                         M-' Fix up omitted shift key on digit
 
-          
+
 
             Quoted from the EMACS Manual for TWENEX Users:
 
@@ -365,11 +365,11 @@ AI  as  I can read it with my
           implemented just as  described  here with the initialization code
           existing as an overlay to save space.
 
-            
+
 
                                    Bugs and Quirks
 
-          
+
 
             Here are some  bugs/quirks  I  have noted in Scribble/Crayon in
           preparing this letter.
@@ -401,7 +401,7 @@ PageHeading  directive  can  only  appear  once,  or
 
                   CDOS Compatibility
 
-          
+
 
             I  have  done work getting MINCE, SCRIBBLE, and MARC  (more  on
           MARC later...) up on various  versions of CROMEMCO CDOS (TM). The
@@ -426,7 +426,7 @@ PageHeading  directive  can  only  appear  once,  or
           described as incredible.  He  specializes in CDOS systems, and so
           can probably help you out.
 
-          
+
           Robert Gunn
           Gunn Software
           6200 Stillman
@@ -464,11 +464,11 @@ PageHeading  directive  can  only  appear  once,  or
           that the parasitic  booter  can't  tell which drive is the logged
           one when it's run under CDOS.
 
-            
+
 
                                   Comparison Chart
 
-          
+
 
             One of the members of the  mailing list is interested in seeing
           a  MINCE  to  EMACS difference/comparison  chart.  If  anyone  is
@@ -482,11 +482,11 @@ PageHeading  directive  can  only  appear  once,  or
           about  half  a  day  of someone's time. It probably wouldn't take
           much work other than a lot of cut and paste in the editor.
 
-            
+
 
                                 The First Submission
 
-          
+
 
             Of  course,  I have submitted it:  it's  called  MLIST.C.  It's
           basically a very simple mailing label printer, the one I am using
@@ -527,11 +527,11 @@ PageHeading  directive  can  only  appear  once,  or
 
             Here it is:
 
-          
+
           #include bdscio.h
           #define DEL1        0x1f        /* C-<underbar> */
           #define DEL2        0x1e        /* C-<caret> */
-          
+
           main(argc,argv)
           char **argv;
           {
@@ -580,11 +580,11 @@ PageHeading  directive  can  only  appear  once,  or
 
 
 
-            
+
 
                                     Miscellaneous
 
-          
+
 
             I am charging $6.00  annually  for  membership  in the Amethyst
           Users  Group  in  North  America   (USA,   Canada,   Mexico   and
@@ -678,14 +678,14 @@ PageHeading  directive  can  only  appear  once,  or
                travel guide and tell you how your  divorce proceedings
                are going, respectively. Enjoy.
 
-          
+
 
                                     Happy Coding!
 
                                        -Barry
 
-          
-          
+
+
 
 
 
@@ -1040,29 +1040,29 @@ it goes:
 	amethyst is an ersatz emacs and an ersatz scribe for the
 8080 and z80. both are extensible, and are written in bds c.
 the source for thecommand set is provided with amethyst, so that
-users can hack up extensions to fulfill their every desire. it is 
+users can hack up extensions to fulfill their every desire. it is
 hoped that this mailing list, and the actual user's group (which
 is a discrete entity) will create a forum and community in which
-valuable extensions andddevelopments will be shared by all, and 
+valuable extensions andddevelopments will be shared by all, and
 no one will spend time reinventing the wheel, (provided someone
 invents it in the forst place).
-	both mince and scribble (the components of amethyst) can 
+	both mince and scribble (the components of amethyst) can
 run and compile in a 48k cp/m. a cpm compatible operating system is
 nominally required for operation. cdos, sdos, imdos, tpm, oasis, and
 marc all should fit the bill. also one needs a cursor addressable terminal
 but i suspect that one could accomplish some magic in the terminal
 support routines that would do very nicely for a memory mapped
-video board. 
+video board.
 mark of the unicorn, the authors, are ambitiously working on getting
 amethyst  onto other machines that support c. i am given to
 understand that the entire package is very portable, and running
-under one of the new **nix breed of operating systems  is not a 
+under one of the new **nix breed of operating systems  is not a
 difficult task.
 	bds c can run on a modified cpm (org=4300) but i do not
-know if work has been done to get amethyst onto such a system. 
+know if work has been done to get amethyst onto such a system.
 	my personal reccomendation is to have a 64k system, with
-double density drives (persci's  since they're so fast) or a hard 
-disk, and marc or a similar 'new age' os. 
+double density drives (persci's  since they're so fast) or a hard
+disk, and marc or a similar 'new age' os.
 
 
 
@@ -1074,7 +1074,7 @@ a membership in the amethyst users group, so that no one is groping
 in the dark, so to speak. any fees, dues, or charges levied by the
 amethyst users group for membership, publications, or programs & associated
 media reflect the actual cost incurred in the production therof, and
-do not result in the generation of profits. the amethyst users group 
+do not result in the generation of profits. the amethyst users group
 is not connected with this mailing list, except in that there may be
 an overlap in membership & membership in one does not imply membership
 in the other, however it may appear.
@@ -1100,17 +1100,17 @@ From: Barry A. Dobyns <BADOB at MIT-AI>
 Subject: A Letter
 To: AMETHYST-USERS at MIT-AI
 
-							     4 May 1981     
+							     4 May 1981
 
      Dear Amethyst Owner;
-     
+
 	   You have by now heard of the Amethyst Users Group, of which I am
      head. It is the nature of things that everyone eventually gets what he
      wants, and for my sins I was rewarded with charge of the users group.
      Your ideas are by all means welcome, as this is just
      as much your users group. EMACS has benifitted greatly from a healthy
      interaction of its users, and it is hoped that MINCE will be able to
-     follow this tradition. 
+     follow this tradition.
 	   I will put out a written newsletter. I suppose that I will have
      to have something to say first, or else you will be subjected to my
      incessant ramblings (unpleasant at best). The solution is for you to
@@ -1160,21 +1160,21 @@ To: AMETHYST-USERS at MIT-AI
 					P.O. Box 8173
 					University Station
 					Austin, Texas 78741
-					(512) 441-9466     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
+					(512) 441-9466
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 Date: 5 May 1981 02:49-EDT
@@ -1191,16 +1191,16 @@ cc: badob at MIT-AI
 	You are now on the list.
 
 
-  
+
 BADOB@MIT-AI 05/03/81 02:31:50 Re: Amethyst Users Group Mail list
 To: EPZ at MIT-AI, GUMBY at MIT-AI, pga at MIT-ML, bnh at MIT-ML
 To: sk at MIT-ML, leor at MIT-MC, fjw at MIT-MC
 CC: BADOB at MIT-AI
-	you are all now on it. 
+	you are all now on it.
 	Amethyst-users@ai
 
 -barry
-  
+
 Date: 3 May 1981 02:41-EDT
 From: Barry A. Dobyns <BADOB at MIT-AI>
 Subject: info-micro@ai
@@ -1218,13 +1218,13 @@ text editor and a SCRIBE-ish extensible formatter all in C.
 	Austin, Texas 78712
 	(512) 441-9466
 
-	Also it exists as a mailing list, AMETHYST-USERS@AI. if you are 
-interested in either mail to me, or snail to the above address. 
+	Also it exists as a mailing list, AMETHYST-USERS@AI. if you are
+interested in either mail to me, or snail to the above address.
 
 -barry
 
 
-    
+
 Date: 3 May 1981 02:45-EDT
 From: Steven T. Kirsch <SK at MIT-MC>
 Subject: mince crash
@@ -1241,7 +1241,7 @@ backup swap file to my disk and the world was safe for humans.
 Has anyone else encountered a similar problem?
 
 (Oh, I haven't read any of the documentation yet, so it might be in there).
-  
+
 Date: 3 May 1981 03:09-EDT
 From: Barry A. Dobyns <BADOB at MIT-AI>
 Subject: crash! boom! munge!
@@ -1253,15 +1253,15 @@ I have problems with my (perkin elmer fox 1100) hanging from time to time,
 and so i have to twiddle the switches under the access plate to reset the
 machine, but mince hasn't really died on me but for one time...
 
-I had told it C-X C-S, and the lights on my front panel said that things 
+I had told it C-X C-S, and the lights on my front panel said that things
 were progressing ok, and then it hung. Before the 'File Written' prompt.
 I could tell by the lights that it wasn't in cp/m at all, it was down
 below 0x0fff someplace. (i diddled with the switches under the access plate,
 force of habit, but nothing...) Reset. look at the disk, and the file,
 which should have been around 25K or so is 1K long. use disk.c to reconstruct
-the file from the fragmented remains. I was assured that my problem was a 
-random accident related to the tides & other similar phenomena. I am 
-inclined to agree with that prognosis, as my system often hangs when i run my 
+the file from the fragmented remains. I was assured that my problem was a
+random accident related to the tides & other similar phenomena. I am
+inclined to agree with that prognosis, as my system often hangs when i run my
 'slightly crufty' memory boards instead of my 'not as crufty' board.
 
 still, i would be curious to know what it was thet you were doing when the
