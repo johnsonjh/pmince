@@ -1,6 +1,6 @@
 # MINCE
 
-- **_MINCE Is Not Complete(ly) EMACS_**
+- **_MINCE Is Not Complete[ly] EMACS_**
 
 ## Overview
 
@@ -47,23 +47,16 @@ Review the [Makefile](/GNUmakefile) for more information.
 ### Working
 
 - **ARMv7HF** (ARM32)
-
   - **Raspbian** (Buster) 10, GNU C 8.3.0 (_6+rpi1_)
-
 - **ARM64** (AArch64)
-
   - **Debian** (Bullseye) 11, GNU C 10.2.1
   - **FreeBSD** 13.0-RC4, Clang 11.0.1 (_g43ff75f2c3fe_)
   - **FreeBSD** 13.0-RC5, GNU C 9.3.0
-
 - **x86** (IA32)
-
   - **Debian** (Sid) 11, GNU C 10.2.0
   - **Haiku** 55027, GNU C 2.95.3 (_20170720_)
   - **Haiku** 55027, GNU C 8.3.0 (_20190524_)
-
 - **x86**\_**64** (AMD64)
-
   - **CentOS** 8 (Stream), GNU C 10.2.1
   - **Fedora** 33, GNU C 10.2.1
   - **Fedora** 33, Intel oneAPI DPC++ 2021.2.0 (_20210317_)
@@ -77,7 +70,6 @@ Review the [Makefile](/GNUmakefile) for more information.
   - **OpenIndiana** 20210407 (Hipster), SunOS/**illumos** 5.11, GNU C 3.4.3
     (_20050802_)
   - **Windows** 10.0-21343 (Insider), GNU C 10.2.0 (_Cygwin 3.2.0_)
-
 - **RISC-V** (RV64)
   - **Debian** (Sid) 11, GNU C 10.2.0
 
