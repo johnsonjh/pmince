@@ -81,6 +81,7 @@ Review the [Makefile](/GNUmakefile) for more information.
 - **Cray** (VSMP)
   - **UNICOS** (SV1) 10.0.1.2, Cray Standard C 6.6.0.3
   - **UNICOS** (J98) 10.0.0.2, Cray Standard C 6.4.0.0
+    - File I/O is not working on UNICOS, everything else is OK.
 
 ## Roadmap
 
