@@ -31,10 +31,10 @@ Review the [Makefile](/GNUmakefile) for more information.
 ## Usage
 
 - Online Documentation
+
   - [Introduction](doc/prgintro.doc)
   - [Command Summary](doc/scomm.doc)
   - [Character Set](doc/ascii.txt)
-
 
 - **MINCE** Manuals
   - [Getting Started](manual/MINCE_Install_Guide.pdf)
@@ -47,19 +47,23 @@ Review the [Makefile](/GNUmakefile) for more information.
 ### Working
 
 - **ARMv7HF** (ARM32)
+
   - **Raspbian** (Buster) 10, GNU C 8.3.0 (_6+rpi1_)
 
 - **ARM64** (AArch64)
+
   - **Debian** (Bullseye) 11, GNU C 10.2.1
   - **FreeBSD** 13.0-RC4, Clang 11.0.1 (_g43ff75f2c3fe_)
   - **FreeBSD** 13.0-RC5, GNU C 9.3.0
 
 - **x86** (IA32)
+
   - **Debian** (Sid) 11, GNU C 10.2.0
   - **Haiku** 55027, GNU C 2.95.3 (_20170720_)
   - **Haiku** 55027, GNU C 8.3.0 (_20190524_)
 
 - **x86**\_**64** (AMD64)
+
   - **CentOS** 8 (Stream), GNU C 10.2.1
   - **Fedora** 33, GNU C 10.2.1
   - **Fedora** 33, Intel oneAPI DPC++ 2021.2.0 (_20210317_)
@@ -70,7 +74,8 @@ Review the [Makefile](/GNUmakefile) for more information.
   - **NetBSD** 9.1, GNU C 7.5.0 (_nb4-20200810_)
   - **OpenBSD** 6.8, Clang 10.0.1
   - **RHEL** 8.3, GNU C 8.4.1
-  - **OpenIndiana** 20210407 (Hipster), SunOS/**illumos** 5.11, GNU C 3.4.3 (_20050802_)
+  - **OpenIndiana** 20210407 (Hipster), SunOS/**illumos** 5.11, GNU C 3.4.3
+    (_20050802_)
   - **Windows** 10.0-21343 (Insider), GNU C 10.2.0 (_Cygwin 3.2.0_)
 
 - **RISC-V** (RV64)
@@ -81,6 +86,7 @@ Review the [Makefile](/GNUmakefile) for more information.
 - **Cray** (VSMP)
   - **UNICOS** (SV1) 10.0.1.2, Cray Standard C 6.6.0.3
   - **UNICOS** (J98) 10.0.0.2, Cray Standard C 6.4.0.0
+    - File I/O is not working on UNICOS, everything else is OK.
 
 ## Roadmap
 
