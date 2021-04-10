@@ -22,16 +22,16 @@ Name
 ------------------------------------------------------------------
 Address
 ------------------------------------------------------------------
-City				State		Zip
+City                            State           Zip
 ------------------------------------------------------------------
 Telephone AC(    ) 
 ------------------------------------------------------------------
 I Own (only one should apply):
-Complete Amethyst ( )			Mince + Source only ( )
-Mince + Scribble (no source) ( )	Scribble + Source only ( )
+Complete Amethyst ( )                   Mince + Source only ( )
+Mince + Scribble (no source) ( )        Scribble + Source only ( )
 Mince + Scribble (With Source, but BDS C not included) ( )
 Version Numbers:
-BDS C:		Amethyst:	Mince:		Scribble:
+BDS C:          Amethyst:       Mince:          Scribble:
 ------------------------------------------------------------------
 Please Describe the hardware on which you run your Amethyst. (CPU
 type, bus structure, manufacturer, CRT terminal type, or Memory Mapped

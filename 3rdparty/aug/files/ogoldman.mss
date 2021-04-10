@@ -10,11 +10,11 @@ As it is now, that function looks like:
 
 verbatim[ PagePause()
            {            /* pause, get fresh page from user */
-      			    if (PrVPos () != 0) PrFF;
-			    PrFlush();
-			    puts ("Insert fresh page; type any character when ready -->");
-			    getchar();
-		}]
+                            if (PrVPos () != 0) PrFF;
+                            PrFlush();
+                            puts ("Insert fresh page; type any character when ready -->");
+                            getchar();
+                }]
 
 Using Mince (of course), edit the file by adding the line
 

@@ -146,16 +146,16 @@ Format environment. None of the
 telephone numbers are real. Some of the people tell me that they
 aren't very real either.
 begin(format)
-	Allison's Work		454-2086
-	Jerry			859-2921
-	Linda			555-5691
-	Time & Weather		545-1411
-	Andrew's Lab		541-4403
-	Andrew's Home		544-5012
-	Physics Laboratory	541-5659
-	Physics Office		541-8386
-	UNIX 			545-5115
-	SPRINT			545-4443
+        Allison's Work          454-2086
+        Jerry                   859-2921
+        Linda                   555-5691
+        Time & Weather          545-1411
+        Andrew's Lab            541-4403
+        Andrew's Home           544-5012
+        Physics Laboratory      541-5659
+        Physics Office          541-8386
+        UNIX                    545-5115
+        SPRINT                  545-4443
 end(format)
 index(Itemize) 
 These are some of the the things you
@@ -270,7 +270,7 @@ index(Verbatim)
 
 index(Two Tabs)
 index(Sixteen Spaces)
- 		this line started with one space and two tabs.
+                this line started with one space and two tabs.
 
 all of the above lines should be indented the same amount if your
 index(tabstops) are set at every eight spaces (heh, heh)}
