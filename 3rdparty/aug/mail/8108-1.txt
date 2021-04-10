@@ -35,37 +35,37 @@ redundancy to many of you who are on more than one of the mailing lists.
 My thanks for your patience and your help.
 
 BACKGROUND:
-	Things I would like to do with my Apple:
-		Text editing (writing papers, reports, and student evaluations)
-		Programming (my previous experience is with LISP and LOGO)
-		Teach my wife programming in LOGO
-		Games and Puzzles (Sargon chess, backgammon, various "arcade games")
-		Graphics hacking / art work
-		Terminal dial up to larger systems (Cyber and Vax in Amherst
-			area, and MIT-AI if I can obtain an inexpensive connection
-			from Northampton-- this latter would be especially 
-			helpful to me)
-		LISP programming and perhaps even some of my thesis research (AI)
-	    (i am unsure as to the feasibility of some of these things and would
-		appreciate your disabusing me of any unrealistic fantasies)
+        Things I would like to do with my Apple:
+                Text editing (writing papers, reports, and student evaluations)
+                Programming (my previous experience is with LISP and LOGO)
+                Teach my wife programming in LOGO
+                Games and Puzzles (Sargon chess, backgammon, various "arcade games")
+                Graphics hacking / art work
+                Terminal dial up to larger systems (Cyber and Vax in Amherst
+                        area, and MIT-AI if I can obtain an inexpensive connection
+                        from Northampton-- this latter would be especially 
+                        helpful to me)
+                LISP programming and perhaps even some of my thesis research (AI)
+            (i am unsure as to the feasibility of some of these things and would
+                appreciate your disabusing me of any unrealistic fantasies)
 
-	My current system consists of:
-		48k Apple II plus
-		Apple disk drive (5.25 in.) with DOS 3.3
-		Epson MX-80 printer
-		Home color TV (19" with SupRMod modulator)
+        My current system consists of:
+                48k Apple II plus
+                Apple disk drive (5.25 in.) with DOS 3.3
+                Epson MX-80 printer
+                Home color TV (19" with SupRMod modulator)
 
 FANTASY SYSTEM:
     The following is the tentative plan I have for expanding my system.
 It is driven largely by my desire to run the AMETHYST software (MINCE 
 and SCRIBBLE).
-	SOFTCARD Z80 with CPM (so as to be able to run MINCE, etc.)
-	80 column, upper/lower case display
-	2nd disk drive (5.25 in.)
-	16k RAMCARD (to extend to 64k)
-	modem
-	(color monitor?)
-	
+        SOFTCARD Z80 with CPM (so as to be able to run MINCE, etc.)
+        80 column, upper/lower case display
+        2nd disk drive (5.25 in.)
+        16k RAMCARD (to extend to 64k)
+        modem
+        (color monitor?)
+        
 QUESTIONS ON SYSTEM EXPANSION:
 
 0. Is my "fantasy system" feasible? That is, WILL IT WORK??
@@ -117,7 +117,7 @@ QUESTIONS ON SYSTEM EXPANSION:
    Apple?
 
 11. Will Apple Pascal software run on the alternative 16k ram boards (Andromeda,
-	Microsoft RAMCARD, etc.)? Would I really want Apple Pascal anyway?
+        Microsoft RAMCARD, etc.)? Would I really want Apple Pascal anyway?
 
 12. Does anyone have experience with any of the "friction feed" add-ons for
    the MX-80 (such as Orange Micro's, or the one advertised for $15)? 
@@ -183,7 +183,7 @@ The version number of MINCE remained 2.6, however.
 For those who care, Keith Peterson's CRCK program indicates
 that these .CRL files were new: ATERM, CTERM, and LATERM.
 
-	Bill Sholar
+        Bill Sholar
 
 Date: 25 August 1981 2249-EDT (Tuesday)
 From: Bill Sholar <William.Sholar at CMU-10A> 
@@ -196,12 +196,12 @@ Message-Id: <25Aug81 224949 WS70@CMU-10A>
 I have found that when I recompile and relink MINCE or LMINCE, even
 without changing anything, I encounter the following problem:
 
-	MINCE filename seems to occasionally crash the system upon
-		execution;
+        MINCE filename seems to occasionally crash the system upon
+                execution;
 
-	C-X C-R filename seems to work if MINCE is entered without
-		a filename as an argument, but the system crashes as
-		soon as a TAB character needs to be displayed.
+        C-X C-R filename seems to work if MINCE is entered without
+                a filename as an argument, but the system crashes as
+                soon as a TAB character needs to be displayed.
 
 As a test, I recompiled and relinked both MINCE and LMINCE using the
 unchanged sources and .CRL files, and using MC.SUB/LMC.SUB.  Then
@@ -217,5 +217,5 @@ occurred when a TAB should have been displayed on the console.
 Has anyone else had this problem  Comments  Suggestions  I'll
 contact MOU next . . .
 
-	Bill Sholar		<SHOLAR @ CMUA>
+        Bill Sholar             <SHOLAR @ CMUA>
 

@@ -8,15 +8,15 @@ Subject: MINCE with user numbers
 In-reply-to: Your message of Monday, 28 Nov 1983 13:37-PST.
 From: bridger@rand-unix
 
-	Kevin @SU-DSN recently noted the limitation of using the
+        Kevin @SU-DSN recently noted the limitation of using the
 Mince editor in different user areas.  I think Leor's new compiler
 could do the trick:
-	Mince would be helped a lot if it were re-compiled in bds c 1.5,
+        Mince would be helped a lot if it were re-compiled in bds c 1.5,
 which supports user-number file references.  By putting the swap file
 in user 0 and using ZCPR or a similar command processor that uses
 a search path to user 0, you could invoke mince from any user/drive
 and also read/write files from any user/drive.
-	Perhaps MOTU would consider issuing this much of an update?
+        Perhaps MOTU would consider issuing this much of an update?
 --bridger.
 
  2-Dec-83 16:37:13-MST,954;000000000000
@@ -139,6 +139,6 @@ only. I still use the Epson. I hope the Superterm is a more civilized piece
 of hardware under CP/M than the CCS board is. I would have had any problems 
 if the BIOS had handled the interrupts from the card properly.
 
-	Good Luck,
-	Jon
+        Good Luck,
+        Jon
 

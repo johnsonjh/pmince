@@ -78,38 +78,38 @@ Subject: Some Window commands
 
 Here are several commands I've come to enjoy:
 
-	1. M-, ==> point to start-of-window
+        1. M-, ==> point to start-of-window
 
-	2. M-. ==> point to end-of-window
-	
-	The bindings follow the Gosling EMACS; M-, and M-. conveniently
-	mimic the start-of-buffer, end-of buffer pair:  M-< and M->.
+        2. M-. ==> point to end-of-window
+        
+        The bindings follow the Gosling EMACS; M-, and M-. conveniently
+        mimic the start-of-buffer, end-of buffer pair:  M-< and M->.
 
-	3. M-! ==> line-to-start-of-window & point to beginning-of-line
+        3. M-! ==> line-to-start-of-window & point to beginning-of-line
 
-	The trick here is to temporarily reset the preferred row to the top
-	row.
+        The trick here is to temporarily reset the preferred row to the top
+        row.
 
 
-MBeginWind()	/* on  M-, */	
+MBeginWind()    /* on  M-, */   
 {
-	BPntToMrk(sstart);
-	TForce();
-	}
-MEndWind()	/* on M-. */
+        BPntToMrk(sstart);
+        TForce();
+        }
+MEndWind()      /* on M-. */
 {
-	BPntToMrk(send);
-	BMove(-1);
-	TForce();
-	}
-MMoveToTop()	/* 'M-!' ==> line to top of buffer */
+        BPntToMrk(send);
+        BMove(-1);
+        TForce();
+        }
+MMoveToTop()    /* 'M-!' ==> line to top of buffer */
 {
- 	tmp=prefrow;
-	prefrow=0;
-	ScrnRange();
-	prefrow=tmp;
-	ToBegLine();
-	}
+        tmp=prefrow;
+        prefrow=0;
+        ScrnRange();
+        prefrow=tmp;
+        ToBegLine();
+        }
 
-	
-	
+        
+        

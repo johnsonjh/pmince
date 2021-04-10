@@ -4,10 +4,10 @@ Subject: as if i hadn't said enough already...
 To: AMETHYST-USERS at MIT-AI
 
 
-	It seems to me that Tabs are NOT conserved in a @VERBATIM[]
+        It seems to me that Tabs are NOT conserved in a @VERBATIM[]
 environment. someone else want to check that out?
 
-	how about a title page environment? Or a @Citation environment
+        how about a title page environment? Or a @Citation environment
 that has a separate counter from Note, and puts its contents into the
 bibliography?
 
@@ -994,11 +994,11 @@ To: mbarnes at BBNA, devon at MIT-MC
 cc: "(FILE [JCAF;MC:AUG ARCH])" at MIT-AI
 
 
-	congratulations, you are on.
-	archives in mc: jcaf; aug arch
-	please read mc: jcaf; aug let
+        congratulations, you are on.
+        archives in mc: jcaf; aug arch
+        please read mc: jcaf; aug let
 
-	-barry
+        -barry
 
 
 
@@ -1031,13 +1031,13 @@ From: Barry A. Dobyns <BADOB at MIT-AI>
 Subject: archiving, and a query
 To: AMETHYST-USERS at MIT-AI
 
-	we are now archived in mc:jcaf;aug arch
+        we are now archived in mc:jcaf;aug arch
 special thanks to plk@mc for generously providing us space.
 
-	someone wanted to know a bit more about amethyst...
+        someone wanted to know a bit more about amethyst...
 for those of you who are not actual owners of the package here
 it goes:
-	amethyst is an ersatz emacs and an ersatz scribe for the
+        amethyst is an ersatz emacs and an ersatz scribe for the
 8080 and z80. both are extensible, and are written in bds c.
 the source for thecommand set is provided with amethyst, so that
 users can hack up extensions to fulfill their every desire. it is
@@ -1046,7 +1046,7 @@ is a discrete entity) will create a forum and community in which
 valuable extensions andddevelopments will be shared by all, and
 no one will spend time reinventing the wheel, (provided someone
 invents it in the forst place).
-	both mince and scribble (the components of amethyst) can
+        both mince and scribble (the components of amethyst) can
 run and compile in a 48k cp/m. a cpm compatible operating system is
 nominally required for operation. cdos, sdos, imdos, tpm, oasis, and
 marc all should fit the bill. also one needs a cursor addressable terminal
@@ -1058,15 +1058,15 @@ amethyst  onto other machines that support c. i am given to
 understand that the entire package is very portable, and running
 under one of the new **nix breed of operating systems  is not a
 difficult task.
-	bds c can run on a modified cpm (org=4300) but i do not
+        bds c can run on a modified cpm (org=4300) but i do not
 know if work has been done to get amethyst onto such a system.
-	my personal reccomendation is to have a 64k system, with
+        my personal reccomendation is to have a 64k system, with
 double density drives (persci's  since they're so fast) or a hard
 disk, and marc or a similar 'new age' os.
 
 
 
-	the amethyst users group is a non-profit organization,
+        the amethyst users group is a non-profit organization,
 dedicated to the furtherance of the amethyst system. aug is not
 directly connected with, or sponsored by mark of the unicorn, the
 authors of amethyst.mark of the unicorn, however, does retain
@@ -1100,18 +1100,18 @@ From: Barry A. Dobyns <BADOB at MIT-AI>
 Subject: A Letter
 To: AMETHYST-USERS at MIT-AI
 
-							     4 May 1981
+                                                             4 May 1981
 
      Dear Amethyst Owner;
 
-	   You have by now heard of the Amethyst Users Group, of which I am
+           You have by now heard of the Amethyst Users Group, of which I am
      head. It is the nature of things that everyone eventually gets what he
      wants, and for my sins I was rewarded with charge of the users group.
      Your ideas are by all means welcome, as this is just
      as much your users group. EMACS has benifitted greatly from a healthy
      interaction of its users, and it is hoped that MINCE will be able to
      follow this tradition.
-	   I will put out a written newsletter. I suppose that I will have
+           I will put out a written newsletter. I suppose that I will have
      to have something to say first, or else you will be subjected to my
      incessant ramblings (unpleasant at best). The solution is for you to
      contribute things to the cause. If you are working on some project in
@@ -1119,7 +1119,7 @@ To: AMETHYST-USERS at MIT-AI
      about it (as verbose as you wish). Between news letters, if more than
      one person or group appears to be working on the same thing, I will
      try to put them in touch with each other, to speed the process.
-	   I cannot eat the cost of publishing and mailing newsletters and
+           I cannot eat the cost of publishing and mailing newsletters and
      disks, so I will be forced to charge a bit for membership, primarily
      to subsidize mailing you newsletters & such. For the nonce, I will
      charge $6.00 for membership (an annual fee). Disks, when and as they
@@ -1131,7 +1131,7 @@ To: AMETHYST-USERS at MIT-AI
      will put you on. If you have access to the net, i urge you to get on
      this mailing list, as there will no doubt be much more action here
      that i can account for in the monthly letter.
-	   I can distribute in Single Side Single Density IBM 8" format,
+           I can distribute in Single Side Single Density IBM 8" format,
      Tarbell 8" 51 Sector Double Density, Ohio Scientific CP/M 8", and
      pending the return of my 4FDC from the factory (next week, I'm told) I
      should be able to distribute in Cromemco CDOS 5 1/4" Single Density .
@@ -1141,7 +1141,7 @@ To: AMETHYST-USERS at MIT-AI
      able to distribute in RT-11 format also, that is, I have an RT to CPM
      transfer utility that seems to function properly, but I don't have an
      11 to run the resultant copies on, so caveat emptor for RT.
-	   Please pack any disks you send me properly (i.e. in one of those
+           Please pack any disks you send me properly (i.e. in one of those
      nice boxes from INMAC). This point was brought home a few weeks ago
      when some disks that had been improperly packed (but were sent special
      delivery) were FOLDED into my mailbox (special huh?). I should have a
@@ -1154,13 +1154,13 @@ To: AMETHYST-USERS at MIT-AI
      AMETHYST-USERS, so if you have an account on an ITS amchine, and have
      some space to spare, perhaps you could let us archive there.
 
-					Amethyst Users Group
+                                        Amethyst Users Group
 
-					Barry A. Dobyns
-					P.O. Box 8173
-					University Station
-					Austin, Texas 78741
-					(512) 441-9466
+                                        Barry A. Dobyns
+                                        P.O. Box 8173
+                                        University Station
+                                        Austin, Texas 78741
+                                        (512) 441-9466
 
 
 
@@ -1187,8 +1187,8 @@ To: lauren at UCLA-SECURITY, tappan at BBNG, clements at BBNA,
     white at SUMEX-AIM, kenner at NYU
 cc: badob at MIT-AI
 
-	Congratulations !!
-	You are now on the list.
+        Congratulations !!
+        You are now on the list.
 
 
 
@@ -1196,8 +1196,8 @@ BADOB@MIT-AI 05/03/81 02:31:50 Re: Amethyst Users Group Mail list
 To: EPZ at MIT-AI, GUMBY at MIT-AI, pga at MIT-ML, bnh at MIT-ML
 To: sk at MIT-ML, leor at MIT-MC, fjw at MIT-MC
 CC: BADOB at MIT-AI
-	you are all now on it.
-	Amethyst-users@ai
+        you are all now on it.
+        Amethyst-users@ai
 
 -barry
 
@@ -1208,17 +1208,17 @@ To: info-cpm at MIT-MC
 cc: BADOB at MIT-AI
 
 
-	There is now a users group for Amethyst users. Plans include
+        There is now a users group for Amethyst users. Plans include
 a monthly newsletter, and distribution of submitted user extentions.
 Amethyst (for those who don't recall) is a EMACS-ish  extensible
 text editor and a SCRIBE-ish extensible formatter all in C.
 
-	Amethyst Users Group
-	P.O. Box 8173
-	Austin, Texas 78712
-	(512) 441-9466
+        Amethyst Users Group
+        P.O. Box 8173
+        Austin, Texas 78712
+        (512) 441-9466
 
-	Also it exists as a mailing list, AMETHYST-USERS@AI. if you are
+        Also it exists as a mailing list, AMETHYST-USERS@AI. if you are
 interested in either mail to me, or snail to the above address.
 
 -barry

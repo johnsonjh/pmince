@@ -12,5 +12,5 @@ I have seen references to something (from JTL?) that allows people to
 modify the global variables Mince uses. Could someone tell me an easy
 way to get a hold of them?
 
-	thanx,
-	mike
+        thanx,
+        mike

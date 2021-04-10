@@ -36,10 +36,10 @@ CP/M hacking for several years now, so please forgive my ignorance.
 
 I'll be happy to summarize replies if there is any interest.
 
-				Thanks,
-				Paul G. Milazzo
-				Dept. of Computer Science
-				Rice University, Houston, TX
+                                Thanks,
+                                Paul G. Milazzo
+                                Dept. of Computer Science
+                                Rice University, Houston, TX
 
 ARPANET/CSNet: Milazzo@RICE.ARPA
 UUCP:          {convex,cornell,hp-pcd,sun,ut-sally}!rice!milazzo
@@ -61,5 +61,5 @@ Some versions of printf (for example, the one under Unix) don't send out
 that stuff until they see a linefeed, so if you only send prompts without
 linefeeds it will never see the light of day.
 
-						James
+                                                James
 

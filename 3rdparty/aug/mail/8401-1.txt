@@ -16,7 +16,7 @@ modifications (they're not that long), I would be glad to send you a copy.
 restarting with old swap file contents and other things.  All I would need
 is a complete set of sources to Mince and a couple of days of work.  Anyone
 at MOTU listening?
-		-CAL@MIT-OZ
+                -CAL@MIT-OZ
 
 13-Jan-84 16:27:28-MST,463;000000000000
 Return-Path: <Edl@SRI-TSC>
@@ -48,7 +48,7 @@ In-reply-to: Msg of 13 Jan 1984  01:30-EST from Cliff Lasser <CAL%MIT-OZ at MIT-
 I'd like the sources very much.  Are they on-line?  If not, just drop
 a copy in an interdep envelop to Rich $alz, c/o Bill Giuffre East
 Campus. tnx much,
-		rich$
+                rich$
 
 16-Jan-84 11:01:55-MST,699;000000000000
 Return-Path: <@MIT-MC:CAL%MIT-OZ@MIT-MC>
@@ -64,7 +64,7 @@ In-reply-to: Msg of 13 Jan 1984  18:52-EST from Rich $alz <DCB.TECH%MIT-OZ at MI
 I have put the sources for my mince keyboard macros in MIT-MC:FJW;MMODS
 TXT.  They will be there until FJW moves the file over to the Simtel20.  If
 you have any problems with it, don't hesitate to let me know.
-	-Cliff
+        -Cliff
 
 16-Jan-84 14:37:01-MST,416;000000000000
 Return-Path: <BEC.SHAPIN@USC-ECL>

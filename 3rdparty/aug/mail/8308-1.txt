@@ -26,7 +26,7 @@ full source code when you but mince (well, 80% of the code) and are free to
 do what you want except make a profit from it.  contact mark of the
 unicorn folks -- i know they've had a problem getting ibm-pc sources out
 at first...
-	-rich $alz
+        -rich $alz
 23-Aug-83 03:07:00,555;000000000000
 Date: Tue, 23 Aug 1983  03:07 EDT
 Message-ID: <[MIT-OZ].RG.JMTURN.23-Aug-83 03:07:51>
@@ -40,7 +40,7 @@ There is evidently a brand-new FW version which implements
 (tah dah!) control-K! Just though you might like to know.
 He also stated that multi-font (fixed and variable width)
 capabilties will have to wait for the next major release.
-					James
+                                        James
 26-Aug-83 22:38:00,772;000000000000
 Date: 26 August 1983 22:38 EDT
 From: Michael C. Adler <MADLER @ MIT-MC>
@@ -89,13 +89,13 @@ Cc: AMETHYST-USERS @ MIT-MC, bridger@rand-unix
 Subject: MINCE macro commands
 From: bridger@rand-unix
 
-	A "keystroke macro" facility can be added to mince by intercepting
+        A "keystroke macro" facility can be added to mince by intercepting
 the routine that retrieves input from the keyboard input queue and
 diverting it to read from a queue containing the macro.  To make this
 repeatable (with ^U) requires careful attention to the mince console-status
 routine also.
 
-	I've been working on a different approach that's now being tested
+        I've been working on a different approach that's now being tested
 on the KayPro--adding a shellto CP/M that supports downloadable strings
 for the keypad/function keys that are redefinable within the user program.  
 This feature, optionally bound

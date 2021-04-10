@@ -17,7 +17,7 @@ that it sold rather well.  Anyway, I would really appreciate pointers to
 sources for Mince and Scribble - my fried can accept a variety of formats,
 including standard 8" single sided.
 
-	Larry Seiler
-	Seiler@MIT-XX
+        Larry Seiler
+        Seiler@MIT-XX
 -------
 

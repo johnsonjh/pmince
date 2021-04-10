@@ -7,8 +7,8 @@ To: Amethyst-Users at MIT-MC
 Does anyone have the C code for the ModeLine() procedure?  I'd like to
 modify it so that:
 
-	1.  It is highlighted, to easily distinguish it from the text, and
-	2.  Add the EMACS-like -TOP- and -BOT- to the percentage statistic.
+        1.  It is highlighted, to easily distinguish it from the text, and
+        2.  Add the EMACS-like -TOP- and -BOT- to the percentage statistic.
 
 
 Btw, it seems that this list is rather inactive.  Are many people out there
@@ -26,15 +26,15 @@ To: DAN at MIT-ML
 cc: Amethyst-Users at MIT-MC
 
 I don't use mince for the following reasons:
-	a) (the major reason) You can't edit files bigger than your
-	   screen file allows, and I have an osborne (90k disks!).
-	b) It's slower than WordStar (esp when ws is running memory mapped
-	   video).
-	c) ws was the first screen editor that I used, and I'm still in
-	   love with it.
-	d) ws has a document processor built in.
+        a) (the major reason) You can't edit files bigger than your
+           screen file allows, and I have an osborne (90k disks!).
+        b) It's slower than WordStar (esp when ws is running memory mapped
+           video).
+        c) ws was the first screen editor that I used, and I'm still in
+           love with it.
+        d) ws has a document processor built in.
 
-					- Andy
+                                        - Andy
 11-Jul-82 12:27:00,1232;000000000000
 Date: 11 Jul 1982 1127-PDT
 From: STERNLIGHT <STERNLIGHT at USC-ECL>
@@ -103,7 +103,7 @@ Actually, ws (and vedit) /does/ use a swap file -- it's
 <filename-you're-editing>.$$$ I think that this is a
 better way to do it. If mince would do this, I would use it
 for program editing, and leave ws for just text processing.
-					- Andy
+                                        - Andy
 12-Jul-82 08:00:00,1753;000000000000
 Mail-From: PCO-MULTICS received by MIT-MULTICS at 12-Jul-1982 11:02:17-edt
 Date:  12 July 1982 08:00 mst
@@ -199,4 +199,4 @@ I haven't tried munging the mode line itself, but I have played with
 the error messages. I have a version which prints them in inverse
 video. If you are intersted, drop me a line.
 
-	mike
+        mike

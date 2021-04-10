@@ -32,7 +32,7 @@ Message-ID: <[LMI-EARNEST].4/10/85 17:10:17.JMTurn>
 The sources for MINCE run 320 VMS blocks, which is about 160K bytes.
 No idea what that is in lines.
 
-					James
+                                        James
 
 
 22-Apr-85 08:05:44-MST,1382;000000000000
@@ -81,12 +81,12 @@ Received: from MIT-EDDIE by MIT-MC via Chaosnet; 22 APR 85  15:05:05 EST
 Received: by mit-eddie.ARPA (4.12/4.8)  id AA10384; Mon, 22 Apr 85 15:02:12 est
 From: cybvax0!cci-bdc!motu-11!bnh@mit-eddie
 Received: by cybvax0.UUCP (4.12/1.0)
-	id AA01690; Mon, 22 Apr 85 15:02:51 est
+        id AA01690; Mon, 22 Apr 85 15:02:51 est
 Received: by cci-bdc.UUCP (4.12/1.0)
-	id AA00348; Mon, 22 Apr 85 13:13:10 est
+        id AA00348; Mon, 22 Apr 85 13:13:10 est
 Date: Mon, 22 Apr 85 13:13:10 est
 Message-Id: <8504221813.AA00348@cci-bdc.UUCP>
-Reply-To: 	Hess@MIT-Multics.ARPA
+Reply-To:       Hess@MIT-Multics.ARPA
 Apparently-To: cybvax0!mit-eddie!amethyst-users@mit-mc.ARPA
 
 Several people have asked about the possibility of Scribble being

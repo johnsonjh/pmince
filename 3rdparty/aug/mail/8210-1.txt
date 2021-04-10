@@ -4,9 +4,9 @@ To: Amethyst-USERS at MIT-MC
 Subject: horizontal scrolling
 From: bridger at RAND-UNIX
 
-	Does anyone have any experience or suggestions for installing
-horizontal scrolling in mince?		
-				Thanks. bridger
+        Does anyone have any experience or suggestions for installing
+horizontal scrolling in mince?          
+                                Thanks. bridger
 11-Oct-82 12:37:00,532;000000000000
 Date: 11 October 1982 14:37-EDT
 From: Frank J. Wancho <FJW at MIT-MC>
@@ -18,7 +18,7 @@ From: Pearson at SUMEX-AIM
 Subject: MINCE for PC
 To:   amethyst-users-request at MIT-MC
 
-	As an avid user of mince on CPM, and having gotten a Zenith 8/16
+        As an avid user of mince on CPM, and having gotten a Zenith 8/16
 bit machine, I would like to join the mailing list and also learn about
 the availability of MINCE for MS-DOS.  I need to be able to customize
 MINCE, so I am also curious about the C-compiler used.
@@ -36,7 +36,7 @@ The current version of Mince is probably not yet quite what you want...
    available has been customized for the IBM P.C. display.  Soon, there
    will be CP/M-86 and generalized MSDOS versions, we hope...  Or at least
    source code so that you can remove the IBM terminal driver and insert yours.
-			Brian
+                        Brian
 17-Oct-82 07:22:00,645;000000000000
 Date: Sunday, 17 October 1982  09:22-EDT
 Sender: X.GYRO at MIT-OZ
@@ -77,6 +77,6 @@ To: CSL.JLH.Celoni at SU-SCORE
 cc: AMETHYST-USERS at MIT-MC
 
 
-	Dear Father Celoni,
-			The AUG users group disk is in AR0:JCAF; on MIT-MC
+        Dear Father Celoni,
+                        The AUG users group disk is in AR0:JCAF; on MIT-MC
 if that is a help.

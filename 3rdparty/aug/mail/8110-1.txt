@@ -5,14 +5,14 @@ Subject: user's group
 
 
 Mr.'Unicorn',
-	Scott Layson advised me to mail to this account to get info on
+        Scott Layson advised me to mail to this account to get info on
 the Amethyst User's group, which I am willing to join! If this is Scott
 reading this letter, thanks for the diskette with the corrections, if
 you're not Scott, please say thanks to him...  Incidentally, do you
 happen to know how one may use the ftp program to 'borrow' CP/M
 programs that I hear of in your system?
-			Thanks, Dan Conde (of the Unix-Corn)
-			<y:conde@Berkeley>
+                        Thanks, Dan Conde (of the Unix-Corn)
+                        <y:conde@Berkeley>
 
 
 Date: 27 September 1981 23:56-EDT

@@ -24,8 +24,8 @@ the easiest (and poerhaps most kludgy way) is to load up
 DU, and duplicate the entry for mince.swp. just changes the
 user number (the first byte) to whatever user number that you want
 the swap file to show up in.
-					-andy
-		
+                                        -andy
+                
  3-Dec-82 09:29:00,274;000000000000
 Date:  3 Dec 1982 1129-EST
 From: PGA at MIT-OZ
@@ -60,7 +60,7 @@ amount of trouble getting mince and scribble to run.  If there is a
 patient person who wouldn't mind listening to my ravings,would you
 have this person contact me?
 
-	Jurgen at MC
+        Jurgen at MC
 --------------------
 
 He's been added - now, can anyone volunteer to help?  If so, please

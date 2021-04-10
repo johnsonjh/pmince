@@ -2,10 +2,10 @@
 Return-Path: <amethyst-users-request@wsmr-simtel20.army.mil>
 Received: from ucbvax.Berkeley.EDU by WSMR-SIMTEL20.ARMY.MIL with TCP; Mon, 2 Nov 92 02:44:35 MST
 Received: by ucbvax.Berkeley.EDU (5.63/1.43)
-	id AA11788; Mon, 2 Nov 92 01:42:32 -0800
+        id AA11788; Mon, 2 Nov 92 01:42:32 -0800
 Received: from USENET by ucbvax.Berkeley.EDU with netnews
-	for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
-	(contact usenet@ucbvax.Berkeley.EDU if you have questions)
+        for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
+        (contact usenet@ucbvax.Berkeley.EDU if you have questions)
 Date: 26 Oct 92 23:25:45 GMT
 From: sun-barr!cs.utexas.edu!zaphod.mps.ohio-state.edu!uunet.ca!unixbox!dosgate!dosgate![greg.cardelli%canrem.com]@ames.arc.nasa.gov  (greg cardelli)
 Organization: Canada Remote Systems
@@ -22,10 +22,10 @@ World's Largest PCBOARD System - 416-629-7000/629-7044
 Return-Path: <amethyst-users-request@wsmr-simtel20.army.mil>
 Received: from ucbvax.Berkeley.EDU by WSMR-SIMTEL20.ARMY.MIL with TCP; Mon, 2 Nov 92 05:59:59 MST
 Received: by ucbvax.Berkeley.EDU (5.63/1.43)
-	id AA21174; Mon, 2 Nov 92 04:53:28 -0800
+        id AA21174; Mon, 2 Nov 92 04:53:28 -0800
 Received: from USENET by ucbvax.Berkeley.EDU with netnews
-	for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
-	(contact usenet@ucbvax.Berkeley.EDU if you have questions)
+        for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
+        (contact usenet@ucbvax.Berkeley.EDU if you have questions)
 Date: 27 Oct 92 02:21:45 GMT
 From: sun-barr!cs.utexas.edu!zaphod.mps.ohio-state.edu!uunet.ca!unixbox!dosgate!dosgate![rosaria.termini%canrem.com]@ames.arc.nasa.gov  (rosaria termini)
 Organization: Canada Remote Systems
@@ -62,10 +62,10 @@ World's Largest PCBOARD System - 416-629-7000/629-7044
 Return-Path: <amethyst-users-request@wsmr-simtel20.army.mil>
 Received: from ucbvax.Berkeley.EDU by WSMR-SIMTEL20.ARMY.MIL with TCP; Mon, 2 Nov 92 07:29:52 MST
 Received: by ucbvax.Berkeley.EDU (5.63/1.43)
-	id AA26064; Mon, 2 Nov 92 06:18:16 -0800
+        id AA26064; Mon, 2 Nov 92 06:18:16 -0800
 Received: from USENET by ucbvax.Berkeley.EDU with netnews
-	for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
-	(contact usenet@ucbvax.Berkeley.EDU if you have questions)
+        for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
+        (contact usenet@ucbvax.Berkeley.EDU if you have questions)
 Date: 27 Oct 92 03:21:30 GMT
 From: uunet.ca!unixbox!dosgate!dosgate![rosaria.termini%canrem.com]@uunet.uu.net  (rosaria termini)
 Organization: Canada Remote Systems

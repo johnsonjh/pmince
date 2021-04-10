@@ -108,7 +108,7 @@ To: amethyst-users@MIT-AI
 Subject: Query about MINCE,AMETHYST, etc....
 
 To the caretaker of the Unicorn Guild,
-	Hello, I have been told that this account could be
+        Hello, I have been told that this account could be
 used to direct queries on the Unicorn line of editors, and
 formatters. ( Brian Hess at MIT told me.. )
 After hearing rave reviews of your software, I am seriously

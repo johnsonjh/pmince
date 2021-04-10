@@ -2,10 +2,10 @@
 Return-Path: <amethyst-users-request@wsmr-simtel20.army.mil>
 Received: from ucbvax.Berkeley.EDU by WSMR-SIMTEL20.ARMY.MIL with TCP; Sat, 5 Jan 91 05:41:03 MST
 Received: by ucbvax.Berkeley.EDU (5.63/1.42)
-	id AA00516; Fri, 4 Jan 91 17:22:14 -0800
+        id AA00516; Fri, 4 Jan 91 17:22:14 -0800
 Received: from USENET by ucbvax.Berkeley.EDU with netnews
-	for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
-	(contact usenet@ucbvax.Berkeley.EDU if you have questions)
+        for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
+        (contact usenet@ucbvax.Berkeley.EDU if you have questions)
 Date: 5 Jan 91 01:13:02 GMT
 From: magnus.ircc.ohio-state.edu!news@tut.cis.ohio-state.edu  (Ann M. Chozinski)
 Organization: The Ohio State University (IRCC)
@@ -21,10 +21,10 @@ achozi@hpuxa.ircc.ohio-state.edu
 Return-Path: <amethyst-users-request@wsmr-simtel20.army.mil>
 Received: from ucbvax.Berkeley.EDU by WSMR-SIMTEL20.ARMY.MIL with TCP; Mon, 7 Jan 91 18:45:32 MST
 Received: by ucbvax.Berkeley.EDU (5.63/1.42)
-	id AA18132; Mon, 7 Jan 91 17:31:59 -0800
+        id AA18132; Mon, 7 Jan 91 17:31:59 -0800
 Received: from USENET by ucbvax.Berkeley.EDU with netnews
-	for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
-	(contact usenet@ucbvax.Berkeley.EDU if you have questions)
+        for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
+        (contact usenet@ucbvax.Berkeley.EDU if you have questions)
 Date: 8 Jan 91 00:40:13 GMT
 From: mcdchg!heiby@rutgers.edu  (Ron Heiby)
 Organization: Motorola Computer Group, Schaumburg, IL
@@ -62,13 +62,13 @@ floppies just before de-commissioning my CP/M-80 system, just in case.
 In another 5-10 years, I'll probably stop bothering to keep even
 those.
 -- 
-Ron Heiby, heiby@chg.mcd.mot.com	Moderator: comp.newprod
+Ron Heiby, heiby@chg.mcd.mot.com        Moderator: comp.newprod
 "Give me voice mail or give me drugs!"/"Mandatory Drug Testing? Just Say NO!!!"
 12-Jan-91 09:37:05-MST,855;000000000000
 Return-Path: <minsky@media-lab.media.mit.edu>
 Received: from media-lab.media.mit.edu by WSMR-SIMTEL20.ARMY.MIL with TCP; Sat, 12 Jan 91 09:35:55 MST
 Received: by media-lab.media.mit.edu (5.57/DA1.0.2)
-	id AA17900; Sat, 12 Jan 91 00:18:38 EST
+        id AA17900; Sat, 12 Jan 91 00:18:38 EST
 Date: Sat, 12 Jan 91 00:18:38 EST
 From: Marvin Minsky <minsky@media-lab.media.mit.edu>
 Message-Id: <9101120518.AA17900@media-lab.media.mit.edu>
@@ -85,10 +85,10 @@ Does Borland still sell Sprint?
 Return-Path: <amethyst-users-request@wsmr-simtel20.army.mil>
 Received: from ucbvax.Berkeley.EDU by WSMR-SIMTEL20.ARMY.MIL with TCP; Thu, 17 Jan 91 12:12:53 MST
 Received: by ucbvax.Berkeley.EDU (5.63/1.42)
-	id AA11589; Thu, 17 Jan 91 11:05:57 -0800
+        id AA11589; Thu, 17 Jan 91 11:05:57 -0800
 Received: from USENET by ucbvax.Berkeley.EDU with netnews
-	for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
-	(contact usenet@ucbvax.Berkeley.EDU if you have questions)
+        for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
+        (contact usenet@ucbvax.Berkeley.EDU if you have questions)
 Date: 17 Jan 91 17:24:50 GMT
 From: amdahl!netcom!aahz@sun.com  (Dan Bernstein)
 Organization: Netcom- The Bay Area's Public Access Unix System {408 241-9760 guest}
@@ -110,18 +110,18 @@ Yes.  We even support it.
                            --- Aahz
                                @netcom.uucp  (or apple!netcom!aahz)
 
-	"This is the third stage of human social evolution.  First we had 
+        "This is the third stage of human social evolution.  First we had 
 the legs race.  Then we had the arms race.  Now we're going to have the
 brain race.
-	"And, if we're lucky, the final stage will be the human race."
+        "And, if we're lucky, the final stage will be the human race."
 23-Jan-91 17:13:15-MST,1861;000000000000
 Return-Path: <amethyst-users-request@wsmr-simtel20.army.mil>
 Received: from ucbvax.Berkeley.EDU by WSMR-SIMTEL20.ARMY.MIL with TCP; Wed, 23 Jan 91 17:12:58 MST
 Received: by ucbvax.Berkeley.EDU (5.63/1.42)
-	id AA20443; Wed, 23 Jan 91 15:48:57 -0800
+        id AA20443; Wed, 23 Jan 91 15:48:57 -0800
 Received: from USENET by ucbvax.Berkeley.EDU with netnews
-	for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
-	(contact usenet@ucbvax.Berkeley.EDU if you have questions)
+        for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
+        (contact usenet@ucbvax.Berkeley.EDU if you have questions)
 Date: 23 Jan 91 22:10:56 GMT
 From: mcdchg!heiby@rutgers.edu  (Ron Heiby)
 Organization: Motorola Computer Group, Schaumburg, IL
@@ -151,16 +151,16 @@ who already owned a PC.  She is using Word Perfect.  I continually
 hear horrer stories from him about "things she says cannot be done"
 which I know are like "falling off a log" in Sprint.
 -- 
-Ron Heiby, heiby@chg.mcd.mot.com	Moderator: comp.newprod
+Ron Heiby, heiby@chg.mcd.mot.com        Moderator: comp.newprod
 "Wrong is wrong, even when it helps you." Popeye
 24-Jan-91 08:09:33-MST,2777;000000000000
 Return-Path: <amethyst-users-request@wsmr-simtel20.army.mil>
 Received: from ucbvax.Berkeley.EDU by WSMR-SIMTEL20.ARMY.MIL with TCP; Thu, 24 Jan 91 08:09:24 MST
 Received: by ucbvax.Berkeley.EDU (5.63/1.42)
-	id AA11077; Thu, 24 Jan 91 06:52:25 -0800
+        id AA11077; Thu, 24 Jan 91 06:52:25 -0800
 Received: from USENET by ucbvax.Berkeley.EDU with netnews
-	for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
-	(contact usenet@ucbvax.Berkeley.EDU if you have questions)
+        for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
+        (contact usenet@ucbvax.Berkeley.EDU if you have questions)
 Date: 24 Jan 91 11:36:09 GMT
 From: olivea!oliveb!amdahl!netcom!aahz@uunet.uu.net  (Dan Bernstein)
 Organization: Perv
@@ -208,16 +208,16 @@ it would be dead simple to write a Sprint macro......
 "The meek shall inherit the earth -- 6'x6'x3'"
 "Violence is the last refuge of the incompetent."
 "You can have peace.  Or you can have freedom.  Don't ever count on having
-	both at once."
+        both at once."
 "I'm not stupid, I'm not expendable, and I'm not going."
 26-Jan-91 07:11:45-MST,1457;000000000000
 Return-Path: <amethyst-users-request@wsmr-simtel20.army.mil>
 Received: from ucbvax.Berkeley.EDU by WSMR-SIMTEL20.ARMY.MIL with TCP; Sat, 26 Jan 91 07:11:28 MST
 Received: by ucbvax.Berkeley.EDU (5.63/1.42)
-	id AA13959; Sat, 26 Jan 91 06:06:28 -0800
+        id AA13959; Sat, 26 Jan 91 06:06:28 -0800
 Received: from USENET by ucbvax.Berkeley.EDU with netnews
-	for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
-	(contact usenet@ucbvax.Berkeley.EDU if you have questions)
+        for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
+        (contact usenet@ucbvax.Berkeley.EDU if you have questions)
 Date: 25 Jan 91 21:27:02 GMT
 From: ncis.tis.llnl.gov!dog.ee.lbl.gov!hellgate.utah.edu!fcom.cc.utah.edu!cc.utah.edu!cc.usu.edu!slsw2@lll-winken.llnl.gov
 Subject: Sprint
@@ -247,10 +247,10 @@ Logan, Ut.  84321
 Return-Path: <amethyst-users-request@wsmr-simtel20.army.mil>
 Received: from ucbvax.Berkeley.EDU by WSMR-SIMTEL20.ARMY.MIL with TCP; Mon, 28 Jan 91 00:14:05 MST
 Received: by ucbvax.Berkeley.EDU (5.63/1.42)
-	id AA28577; Sun, 27 Jan 91 23:03:47 -0800
+        id AA28577; Sun, 27 Jan 91 23:03:47 -0800
 Received: from USENET by ucbvax.Berkeley.EDU with netnews
-	for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
-	(contact usenet@ucbvax.Berkeley.EDU if you have questions)
+        for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
+        (contact usenet@ucbvax.Berkeley.EDU if you have questions)
 Date: 28 Jan 91 05:51:08 GMT
 From: magnus.ircc.ohio-state.edu!zaphod.mps.ohio-state.edu!think.com!mintaka!ogicse!plains!person@tut.cis.ohio-state.edu  (Brett G. Person)
 Organization: North Dakota State University, Fargo
@@ -290,10 +290,10 @@ uunet!plains!person | person@plains.bitnet | person@plains.nodak.edu
 Return-Path: <amethyst-users-request@wsmr-simtel20.army.mil>
 Received: from ucbvax.Berkeley.EDU by WSMR-SIMTEL20.ARMY.MIL with TCP; Wed, 30 Jan 91 06:32:21 MST
 Received: by ucbvax.Berkeley.EDU (5.63/1.42)
-	id AA15345; Wed, 30 Jan 91 05:27:15 -0800
+        id AA15345; Wed, 30 Jan 91 05:27:15 -0800
 Received: from USENET by ucbvax.Berkeley.EDU with netnews
-	for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
-	(contact usenet@ucbvax.Berkeley.EDU if you have questions)
+        for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
+        (contact usenet@ucbvax.Berkeley.EDU if you have questions)
 Date: 29 Jan 91 15:25:58 GMT
 From: usc!cs.utexas.edu!hellgate.utah.edu!fcom.cc.utah.edu!cc.utah.edu!cc.usu.edu!slsw2@ucsd.edu
 Subject: Re: Sprint
@@ -341,10 +341,10 @@ Logan, Ut.  84321
 Return-Path: <amethyst-users-request@wsmr-simtel20.army.mil>
 Received: from ucbvax.Berkeley.EDU by WSMR-SIMTEL20.ARMY.MIL with TCP; Sat, 5 Jan 91 05:41:03 MST
 Received: by ucbvax.Berkeley.EDU (5.63/1.42)
-	id AA00516; Fri, 4 Jan 91 17:22:14 -0800
+        id AA00516; Fri, 4 Jan 91 17:22:14 -0800
 Received: from USENET by ucbvax.Berkeley.EDU with netnews
-	for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
-	(contact usenet@ucbvax.Berkeley.EDU if you have questions)
+        for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
+        (contact usenet@ucbvax.Berkeley.EDU if you have questions)
 Date: 5 Jan 91 01:13:02 GMT
 From: magnus.ircc.ohio-state.edu!news@tut.cis.ohio-state.edu  (Ann M. Chozinski)
 Organization: The Ohio State University (IRCC)
@@ -360,10 +360,10 @@ achozi@hpuxa.ircc.ohio-state.edu
 Return-Path: <amethyst-users-request@wsmr-simtel20.army.mil>
 Received: from ucbvax.Berkeley.EDU by WSMR-SIMTEL20.ARMY.MIL with TCP; Mon, 7 Jan 91 18:45:32 MST
 Received: by ucbvax.Berkeley.EDU (5.63/1.42)
-	id AA18132; Mon, 7 Jan 91 17:31:59 -0800
+        id AA18132; Mon, 7 Jan 91 17:31:59 -0800
 Received: from USENET by ucbvax.Berkeley.EDU with netnews
-	for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
-	(contact usenet@ucbvax.Berkeley.EDU if you have questions)
+        for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
+        (contact usenet@ucbvax.Berkeley.EDU if you have questions)
 Date: 8 Jan 91 00:40:13 GMT
 From: mcdchg!heiby@rutgers.edu  (Ron Heiby)
 Organization: Motorola Computer Group, Schaumburg, IL
@@ -401,13 +401,13 @@ floppies just before de-commissioning my CP/M-80 system, just in case.
 In another 5-10 years, I'll probably stop bothering to keep even
 those.
 -- 
-Ron Heiby, heiby@chg.mcd.mot.com	Moderator: comp.newprod
+Ron Heiby, heiby@chg.mcd.mot.com        Moderator: comp.newprod
 "Give me voice mail or give me drugs!"/"Mandatory Drug Testing? Just Say NO!!!"
 12-Jan-91 09:37:05-MST,855;000000000000
 Return-Path: <minsky@media-lab.media.mit.edu>
 Received: from media-lab.media.mit.edu by WSMR-SIMTEL20.ARMY.MIL with TCP; Sat, 12 Jan 91 09:35:55 MST
 Received: by media-lab.media.mit.edu (5.57/DA1.0.2)
-	id AA17900; Sat, 12 Jan 91 00:18:38 EST
+        id AA17900; Sat, 12 Jan 91 00:18:38 EST
 Date: Sat, 12 Jan 91 00:18:38 EST
 From: Marvin Minsky <minsky@media-lab.media.mit.edu>
 Message-Id: <9101120518.AA17900@media-lab.media.mit.edu>
@@ -424,10 +424,10 @@ Does Borland still sell Sprint?
 Return-Path: <amethyst-users-request@wsmr-simtel20.army.mil>
 Received: from ucbvax.Berkeley.EDU by WSMR-SIMTEL20.ARMY.MIL with TCP; Thu, 17 Jan 91 12:12:53 MST
 Received: by ucbvax.Berkeley.EDU (5.63/1.42)
-	id AA11589; Thu, 17 Jan 91 11:05:57 -0800
+        id AA11589; Thu, 17 Jan 91 11:05:57 -0800
 Received: from USENET by ucbvax.Berkeley.EDU with netnews
-	for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
-	(contact usenet@ucbvax.Berkeley.EDU if you have questions)
+        for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
+        (contact usenet@ucbvax.Berkeley.EDU if you have questions)
 Date: 17 Jan 91 17:24:50 GMT
 From: amdahl!netcom!aahz@sun.com  (Dan Bernstein)
 Organization: Netcom- The Bay Area's Public Access Unix System {408 241-9760 guest}
@@ -449,18 +449,18 @@ Yes.  We even support it.
                            --- Aahz
                                @netcom.uucp  (or apple!netcom!aahz)
 
-	"This is the third stage of human social evolution.  First we had 
+        "This is the third stage of human social evolution.  First we had 
 the legs race.  Then we had the arms race.  Now we're going to have the
 brain race.
-	"And, if we're lucky, the final stage will be the human race."
+        "And, if we're lucky, the final stage will be the human race."
 23-Jan-91 17:13:15-MST,1861;000000000000
 Return-Path: <amethyst-users-request@wsmr-simtel20.army.mil>
 Received: from ucbvax.Berkeley.EDU by WSMR-SIMTEL20.ARMY.MIL with TCP; Wed, 23 Jan 91 17:12:58 MST
 Received: by ucbvax.Berkeley.EDU (5.63/1.42)
-	id AA20443; Wed, 23 Jan 91 15:48:57 -0800
+        id AA20443; Wed, 23 Jan 91 15:48:57 -0800
 Received: from USENET by ucbvax.Berkeley.EDU with netnews
-	for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
-	(contact usenet@ucbvax.Berkeley.EDU if you have questions)
+        for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
+        (contact usenet@ucbvax.Berkeley.EDU if you have questions)
 Date: 23 Jan 91 22:10:56 GMT
 From: mcdchg!heiby@rutgers.edu  (Ron Heiby)
 Organization: Motorola Computer Group, Schaumburg, IL
@@ -490,16 +490,16 @@ who already owned a PC.  She is using Word Perfect.  I continually
 hear horrer stories from him about "things she says cannot be done"
 which I know are like "falling off a log" in Sprint.
 -- 
-Ron Heiby, heiby@chg.mcd.mot.com	Moderator: comp.newprod
+Ron Heiby, heiby@chg.mcd.mot.com        Moderator: comp.newprod
 "Wrong is wrong, even when it helps you." Popeye
 24-Jan-91 08:09:33-MST,2777;000000000000
 Return-Path: <amethyst-users-request@wsmr-simtel20.army.mil>
 Received: from ucbvax.Berkeley.EDU by WSMR-SIMTEL20.ARMY.MIL with TCP; Thu, 24 Jan 91 08:09:24 MST
 Received: by ucbvax.Berkeley.EDU (5.63/1.42)
-	id AA11077; Thu, 24 Jan 91 06:52:25 -0800
+        id AA11077; Thu, 24 Jan 91 06:52:25 -0800
 Received: from USENET by ucbvax.Berkeley.EDU with netnews
-	for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
-	(contact usenet@ucbvax.Berkeley.EDU if you have questions)
+        for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
+        (contact usenet@ucbvax.Berkeley.EDU if you have questions)
 Date: 24 Jan 91 11:36:09 GMT
 From: olivea!oliveb!amdahl!netcom!aahz@uunet.uu.net  (Dan Bernstein)
 Organization: Perv
@@ -547,16 +547,16 @@ it would be dead simple to write a Sprint macro......
 "The meek shall inherit the earth -- 6'x6'x3'"
 "Violence is the last refuge of the incompetent."
 "You can have peace.  Or you can have freedom.  Don't ever count on having
-	both at once."
+        both at once."
 "I'm not stupid, I'm not expendable, and I'm not going."
 26-Jan-91 07:11:45-MST,1457;000000000000
 Return-Path: <amethyst-users-request@wsmr-simtel20.army.mil>
 Received: from ucbvax.Berkeley.EDU by WSMR-SIMTEL20.ARMY.MIL with TCP; Sat, 26 Jan 91 07:11:28 MST
 Received: by ucbvax.Berkeley.EDU (5.63/1.42)
-	id AA13959; Sat, 26 Jan 91 06:06:28 -0800
+        id AA13959; Sat, 26 Jan 91 06:06:28 -0800
 Received: from USENET by ucbvax.Berkeley.EDU with netnews
-	for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
-	(contact usenet@ucbvax.Berkeley.EDU if you have questions)
+        for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
+        (contact usenet@ucbvax.Berkeley.EDU if you have questions)
 Date: 25 Jan 91 21:27:02 GMT
 From: ncis.tis.llnl.gov!dog.ee.lbl.gov!hellgate.utah.edu!fcom.cc.utah.edu!cc.utah.edu!cc.usu.edu!slsw2@lll-winken.llnl.gov
 Subject: Sprint
@@ -586,10 +586,10 @@ Logan, Ut.  84321
 Return-Path: <amethyst-users-request@wsmr-simtel20.army.mil>
 Received: from ucbvax.Berkeley.EDU by WSMR-SIMTEL20.ARMY.MIL with TCP; Mon, 28 Jan 91 00:14:05 MST
 Received: by ucbvax.Berkeley.EDU (5.63/1.42)
-	id AA28577; Sun, 27 Jan 91 23:03:47 -0800
+        id AA28577; Sun, 27 Jan 91 23:03:47 -0800
 Received: from USENET by ucbvax.Berkeley.EDU with netnews
-	for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
-	(contact usenet@ucbvax.Berkeley.EDU if you have questions)
+        for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
+        (contact usenet@ucbvax.Berkeley.EDU if you have questions)
 Date: 28 Jan 91 05:51:08 GMT
 From: magnus.ircc.ohio-state.edu!zaphod.mps.ohio-state.edu!think.com!mintaka!ogicse!plains!person@tut.cis.ohio-state.edu  (Brett G. Person)
 Organization: North Dakota State University, Fargo
@@ -629,10 +629,10 @@ uunet!plains!person | person@plains.bitnet | person@plains.nodak.edu
 Return-Path: <amethyst-users-request@wsmr-simtel20.army.mil>
 Received: from ucbvax.Berkeley.EDU by WSMR-SIMTEL20.ARMY.MIL with TCP; Wed, 30 Jan 91 06:32:21 MST
 Received: by ucbvax.Berkeley.EDU (5.63/1.42)
-	id AA15345; Wed, 30 Jan 91 05:27:15 -0800
+        id AA15345; Wed, 30 Jan 91 05:27:15 -0800
 Received: from USENET by ucbvax.Berkeley.EDU with netnews
-	for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
-	(contact usenet@ucbvax.Berkeley.EDU if you have questions)
+        for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
+        (contact usenet@ucbvax.Berkeley.EDU if you have questions)
 Date: 29 Jan 91 15:25:58 GMT
 From: usc!cs.utexas.edu!hellgate.utah.edu!fcom.cc.utah.edu!cc.utah.edu!cc.usu.edu!slsw2@ucsd.edu
 Subject: Re: Sprint

@@ -12,11 +12,11 @@ MICRO:<CPM.ARCHIVES> have been moved to PS:<MAIL.ARCHIVES>.
 
 Here are the particulars for AMETHYST-USERS at this moment:
 
-Filename			Type	 Bytes	 Sectors     CRC
+Filename                        Type     Bytes   Sectors     CRC
 
 Directory PS:<MAIL.ARCHIVES>
 
-AMETHYST.ARCHIV.31013		ASCII	 44105  345 = 159H  3D81H
-AMETHYST-ARCHIV.TXT.1		ASCII	 51857  406 = 196H  9D1EH
+AMETHYST.ARCHIV.31013           ASCII    44105  345 = 159H  3D81H
+AMETHYST-ARCHIV.TXT.1           ASCII    51857  406 = 196H  9D1EH
 
 --Frank

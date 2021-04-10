@@ -2,10 +2,10 @@
 Return-Path: <amethyst-users-request@wsmr-simtel20.army.mil>
 Received: from ucbvax.Berkeley.EDU by WSMR-SIMTEL20.ARMY.MIL with TCP; Sun, 26 Nov 89 14:06:21 MST
 Received: by ucbvax.Berkeley.EDU (5.61/1.39)
-	id AA17201; Sun, 26 Nov 89 12:43:14 -0800
+        id AA17201; Sun, 26 Nov 89 12:43:14 -0800
 Received: from USENET by ucbvax.Berkeley.EDU with netnews
-	for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
-	(contact usenet@ucbvax.Berkeley.EDU if you have questions)
+        for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
+        (contact usenet@ucbvax.Berkeley.EDU if you have questions)
 Date: 26 Nov 89 19:25:25 GMT
 From: mcsun!ukc!sys.uea!superman@uunet.uu.net  (System Admin)
 Organization: Democracy & Freedom
@@ -22,10 +22,10 @@ Regards, Friendly hacker. (anon)
 Return-Path: <amethyst-users-request@wsmr-simtel20.army.mil>
 Received: from ucbvax.Berkeley.EDU by WSMR-SIMTEL20.ARMY.MIL with TCP; Tue, 28 Nov 89 11:49:24 MST
 Received: by ucbvax.Berkeley.EDU (5.61/1.40)
-	id AA20611; Tue, 28 Nov 89 10:41:19 -0800
+        id AA20611; Tue, 28 Nov 89 10:41:19 -0800
 Received: from USENET by ucbvax.Berkeley.EDU with netnews
-	for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
-	(contact usenet@ucbvax.Berkeley.EDU if you have questions)
+        for amethyst-users@wsmr-simtel20.army.mil (amethyst-users@wsmr-simtel20.army.mil)
+        (contact usenet@ucbvax.Berkeley.EDU if you have questions)
 Date: 28 Nov 89 05:46:47 GMT
 From: cs.utexas.edu!wuarchive!texbell!vector!attctc!sampson@tut.cis.ohio-state.edu  (Steve Sampson)
 Organization: The Unix(R) Connection, Dallas, Texas

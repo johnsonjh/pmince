@@ -99,12 +99,12 @@ Subject: Mince for Z-100 ZDOS
 To: amethyst-users@MIT-MC.ARPA
 
 
-	I adapted a version of mince for the Z-100.  It was very
+        I adapted a version of mince for the Z-100.  It was very
 easy, but requires the Lattice 'C' compiler.  I will be happy to
 make you a copy if we can do something to keep Brian Hess happy
 (i.e. you buy the IBM-PC version).
 
-	I am replying to the net because my machine does not
+        I am replying to the net because my machine does not
 recognize nyu-cmcl1 as a host.
 
 Bill Pearson
@@ -197,9 +197,9 @@ for mailing them a blank disk and a photocopy of your Westico
 distribution disk.
 
 The usual things people recommend for Mince-replacement are:
-		The FinalWord
-		PMATE
-		VEDIT
+                The FinalWord
+                PMATE
+                VEDIT
  All have semi-customizable keyboard interfaces, none is entirely
 satisfactory EMACS when you're all done (FW mis-implements a few
 functions, as does VEDIT, and you can write your own macros with PMATE
@@ -387,8 +387,8 @@ simply want to re-edit your last file without the delay of copying
 it into the swap file (some of us don't have hard disks - yet).
 Does anyone know of a way to restart Mince from the swap file?
 Could Mark of the Unicorn be convinced to offer this feature?
-	Thanks,
-	Larry
+        Thanks,
+        Larry
 -------
 21-Nov-83 08:41:45-MST,788;000000000000
 Return-Path: <@MIT-MC:SEILER@MIT-XX.ARPA>
@@ -406,8 +406,8 @@ simply want to re-edit your last file without the delay of copying
 it into the swap file (some of us don't have hard disks - yet).
 Does anyone know of a way to restart Mince from the swap file?
 Could Mark of the Unicorn be convinced to offer this feature?
-	Thanks,
-	Larry
+        Thanks,
+        Larry
 -------
 
 25-Nov-83 08:40:32-MST,1071;000000000000
@@ -499,79 +499,79 @@ I have it bound to ^X^D and ^XD.
 
 #include "mince.gbl"
 
-MDired()		/* Read directory to buffer */
+MDired()                /* Read directory to buffer */
 {
-	int cnt, done, a;
-	char *fcb, *dma, drive;
+        int cnt, done, a;
+        char *fcb, *dma, drive;
 
-	arg=0;
-	if ((cmnd & 0x7F) == 4) {
-		*namearg = (bdos(25,0) & 0xFF) + 'a';
-		}
-	else {
-		if (!GetArg("Drive <CR>: ",CR,namearg,BUFNAMMAX)) return;
-		LowCase(namearg);
-		if (*namearg < 'a' || *namearg > 'n') {
-			error("Illegal Drive");
-			return;
-			}
-		}
-	if ((cnt=CFindBuff("-dired"))>0) {
-		BSwitchTo(buffs[cnt].bbuff);
-		BToStart();
-		BMrkToPnt(mark);
-		BToEnd();
-		BDelToMrk(mark);
-		}
-	else {
-		if ((cnt=CMakeBuff("-dired","DIR.DIR"))<0) return;
-		*(buffs[cnt].bmodes)='\0';
-		strcpy(buffs[cnt].fname,"DIR.DIR");
-		BSwitchTo(buffs[cnt].bbuff);
-		}
+        arg=0;
+        if ((cmnd & 0x7F) == 4) {
+                *namearg = (bdos(25,0) & 0xFF) + 'a';
+                }
+        else {
+                if (!GetArg("Drive <CR>: ",CR,namearg,BUFNAMMAX)) return;
+                LowCase(namearg);
+                if (*namearg < 'a' || *namearg > 'n') {
+                        error("Illegal Drive");
+                        return;
+                        }
+                }
+        if ((cnt=CFindBuff("-dired"))>0) {
+                BSwitchTo(buffs[cnt].bbuff);
+                BToStart();
+                BMrkToPnt(mark);
+                BToEnd();
+                BDelToMrk(mark);
+                }
+        else {
+                if ((cnt=CMakeBuff("-dired","DIR.DIR"))<0) return;
+                *(buffs[cnt].bmodes)='\0';
+                strcpy(buffs[cnt].fname,"DIR.DIR");
+                BSwitchTo(buffs[cnt].bbuff);
+                }
 
-	fcb = "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0";
-       	dma = "01234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567";
-					/* 128 bytes */
-	*fcb = *namearg - '`';		/* Disk drive */
-	drive = *namearg & 0x0DF;
-	strcpy(&fcb[1], "???????????");
-	done = 0;
-	CSwitchTo(cnt);
-	bdos(0x1A, dma);		/* Set the dma address */
-	a = 0x0FF & bdos(0x11, fcb);		/* Search for first */
-	bdos(0x1A, 0x80);		/* DMA back to 80H for swap file */
-	while (a != 0x0FF) {
-		if ((dma[(a <<= 5)] != 0x0E5) && !(dma[a+10] & 0x80)) {
-			if (done++ & 3) {
-				BInsert(' '); BInsert(' ');
-				BInsert('|');
-				BInsert(' '); BInsert(' ');
-				}
-			else {
-				BInsert(NL); BInsert(drive);
-				BInsert(':'); BInsert(' ');
-				}
-			FNameIns(&dma[a+1]);
-			}
-		bdos(0x1A, dma);		/* Set the dma address */
-		a = 0x0FF & bdos(0x12, fcb);
-		bdos(0x1A, 0x80);	/* DMA back to 80H for swap file */
-		}
-	BToStart();
-	BMrkToPnt(mark);
-	ScrnRange();
-	}
+        fcb = "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0";
+        dma = "01234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567";
+                                        /* 128 bytes */
+        *fcb = *namearg - '`';          /* Disk drive */
+        drive = *namearg & 0x0DF;
+        strcpy(&fcb[1], "???????????");
+        done = 0;
+        CSwitchTo(cnt);
+        bdos(0x1A, dma);                /* Set the dma address */
+        a = 0x0FF & bdos(0x11, fcb);            /* Search for first */
+        bdos(0x1A, 0x80);               /* DMA back to 80H for swap file */
+        while (a != 0x0FF) {
+                if ((dma[(a <<= 5)] != 0x0E5) && !(dma[a+10] & 0x80)) {
+                        if (done++ & 3) {
+                                BInsert(' '); BInsert(' ');
+                                BInsert('|');
+                                BInsert(' '); BInsert(' ');
+                                }
+                        else {
+                                BInsert(NL); BInsert(drive);
+                                BInsert(':'); BInsert(' ');
+                                }
+                        FNameIns(&dma[a+1]);
+                        }
+                bdos(0x1A, dma);                /* Set the dma address */
+                a = 0x0FF & bdos(0x12, fcb);
+                bdos(0x1A, 0x80);       /* DMA back to 80H for swap file */
+                }
+        BToStart();
+        BMrkToPnt(mark);
+        ScrnRange();
+        }
 
 FNameIns(s)
-	char s[10];
+        char s[10];
 {
-	int i;
+        int i;
 
-	for (i=0; i<11; ) {
-		BInsert(s[i] & 0x7F);
-		if (i++ == 7) BInsert('.');
-		}
-	}
+        for (i=0; i<11; ) {
+                BInsert(s[i] & 0x7F);
+                if (i++ == 7) BInsert('.');
+                }
+        }
 
 

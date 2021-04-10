@@ -53,10 +53,10 @@ Subject: Users' group info
 From: bridger at RAND-UNIX
 Message-ID: <245.387504595@RAND-UNIX>
 
-	Where is archived information on mince & scribble modifications
+        Where is archived information on mince & scribble modifications
 to be found?  I'm in search of experience with adding basic macro capabilities
 A letter to the Texas users' group address has brought no reply.
-			bridger at RAND-UNIX
+                        bridger at RAND-UNIX
 18-Apr-82 16:07:05,169;000000000000
 From: AK@MIT-AI
 Date: 04/18/82 16:07:05
@@ -65,4 +65,4 @@ To: AMETHYST-USERS at MIT-AI
 please add me to the list.
 i am looking in general for mc68000 software.
 thanks.
-	-andrew-
+        -andrew-

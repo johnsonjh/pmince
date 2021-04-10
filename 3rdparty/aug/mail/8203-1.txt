@@ -57,4 +57,4 @@ in display speed.
 There are, I believe, some minor differences in the handling of inverse
 between the Soroc and Datamedia, but I can't be specific.
 
-		--Bill
+                --Bill

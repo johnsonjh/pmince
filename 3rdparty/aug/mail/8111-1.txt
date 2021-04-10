@@ -4,7 +4,7 @@ Subject: AG1 on RCP/M
 To: AMETHYST-USERS at MIT-MC
 
 
-	Thanks to Barry most of the files from the first
+        Thanks to Barry most of the files from the first
 AUG disk are available on my remote CP/M. By "most" I mean
 the ones that are not standard RCP/M or CPMUG software. The
 files are stored in a passworded USER area. The password is
@@ -20,7 +20,7 @@ From: Barry A. Dobyns <BADOB at MIT-AI>
 To: MARK-OF-THE-UNICORN at MIT-AI
 cc: BADOB at MIT-AI, amethyst-users at MIT-MC
 
-	The ad in October byte for SuperSoft's Star-Edit is how mince
+        The ad in October byte for SuperSoft's Star-Edit is how mince
 ads should have appeared. (scribble ads too.) The current ad may be flashy,
 but doesn't say anything about Mince or Scribble themselves.
 

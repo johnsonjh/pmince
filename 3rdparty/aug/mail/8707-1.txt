@@ -2,10 +2,10 @@
 Return-Path: <howell%community-chest.mitre.org@gateway.mitre.org>
 Received: from gateway.mitre.org by SIMTEL20.ARPA with TCP; Wed, 1 Jul 87 10:02:09 MDT
 Received: by gateway.mitre.org (5.54/SMI-2.2)
-	id AA03414; Wed, 1 Jul 87 11:39:09 EDT
+        id AA03414; Wed, 1 Jul 87 11:39:09 EDT
 Return-Path: <howell%community-chest.mitre.org@gateway.mitre.org>
 Received: from localhost by boardwalk.mitre.org (1.1/SMI-2.2)
-	id AA01199; Wed, 1 Jul 87 11:38:52 EDT
+        id AA01199; Wed, 1 Jul 87 11:38:52 EDT
 Message-Id: <8707011538.AA01199@boardwalk.mitre.org>
 To: info-unix@brl.arpa, info-ada@ada20.isi.edu, amethyst-users@simtel20.arpa,
         editor-people@score.stanford.edu, info-amiga@red.rutgers.edu,

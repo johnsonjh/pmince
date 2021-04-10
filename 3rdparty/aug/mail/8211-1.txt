@@ -6,26 +6,26 @@ Cc: bridger at RAND-UNIX, Roger L Long <BYTE at MIT-MC>
 Subject: Catching function key sequences
 From: bridger at RAND-UNIX
 
-	My bios CONIN has an option to enter a countdown loop when an ESC is
+        My bios CONIN has an option to enter a countdown loop when an ESC is
 received.  If the next char is received within that time, it assumes both
 the escape and the follow-on character were sent by a function key.  It then
 discards the ESC and sets the high bit of the follow-on character to signal
 the application program.  If it timesout without receiving anything, the 
 ESC is presumed to have been typed as the escape key and is returned.
-	You could have your editor patch in its own CONIN to do this while
+        You could have your editor patch in its own CONIN to do this while
 it's running, then restore the bios CONIN on exit from the editor.
-	The timing constant is based on the CPU speed and the baud rate for
+        The timing constant is based on the CPU speed and the baud rate for
 the terminal channel and presumes that the follow-on character will be sent
 by the terminal's ROM as soon as the baudrate permits.
-	Let me know if you pursue this.  On reading Roger Long's message,
+        Let me know if you pursue this.  On reading Roger Long's message,
 I see that this technique may need to be extended another character for
 the 3-character sequences from the H-19 alternate keypad.
-	A useful feature of this approach is that it allows the editor
+        A useful feature of this approach is that it allows the editor
 to distinguish between ESC-char sent as separate keystrokes, and a function
 key that transmits the same sequence.  This permits binding the function keys
 to anything without conflicting with bindings chosen for the separate
 keystroke commands.
-				bridger.
+                                bridger.
 27-Nov-82 09:56:00,287;000000000000
 Date: 27 November 1982 11:56-EST
 From: Frank J. Wancho <FJW at MIT-MC>

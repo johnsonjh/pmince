@@ -19,11 +19,11 @@ To: amethyst-users at MIT-MC
     particular, I'm interested in:
 
        - How close to EMACS is the editor interface, barring
-	 fancy macros, multiple buffers, and more exotic features?
+         fancy macros, multiple buffers, and more exotic features?
 
        - What exactly comes with the package?  (Some old ads
-	 indicate you got source code and a C compiler.)
+         indicate you got source code and a C compiler.)
 
     Thanks in advance!
-				    Michael Cain
-				    ...!houxm!5123mec
+                                    Michael Cain
+                                    ...!houxm!5123mec

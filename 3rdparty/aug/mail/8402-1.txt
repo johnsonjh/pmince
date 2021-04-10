@@ -83,9 +83,9 @@ You must recompile to change key bindings, and since you're at CMU I
 suspect you'll want to change Mince's "MIT-like" bindings to
 "Gosling-like" bindings.
 
-				Paul G. Milazzo <milazzo@rice>
-				Dept. of Mathematical Sciences
-				Rice University, Houston, TX
+                                Paul G. Milazzo <milazzo@rice>
+                                Dept. of Mathematical Sciences
+                                Rice University, Houston, TX
 15-Feb-84 08:10:55-MST,1326;000000000000
 Return-Path: <PLK@MIT-MC>
 Received: from MIT-MC by SIMTEL20.ARPA with TCP; Wed 15 Feb 84 08:10:38-MST
@@ -97,7 +97,7 @@ cc: H19-PEOPLE @ MIT-MC, Amethyst-Users @ SIMTEL20
 In-reply-to: Msg of 12 Feb 1984 11:30:53 EST from James.Wendorf at cmu-cs-g
 
 
-	I use MINCE on the H89 and am very happy with the results. I
+        I use MINCE on the H89 and am very happy with the results. I
 run my CPU and terminal at 4 MHz. Speeding up the CPU had the biggest
 effect on speed by cutting the floppy I/O times considerably. I also
 use extended density (1K sectors) to cut down the floppy I/O time
@@ -105,18 +105,18 @@ further.  Recently I added a hard disk, it's faster again by a factor
 of 2. I started out with a 30 second load time for MINCE and am now
 down to under two seconds.
 
-	I have never run 48K, because when I got my H89 kit I
+        I have never run 48K, because when I got my H89 kit I
 piggybacked the last 16K on one of the other banks. I used wirewrap
 sockets with all leads soldered on the lower 4116s except for the chip
 select line. You could probably just piggyback the chips directly,
 4116s are so cheap now that you can experiment with little cost if you
 make a mistake.
 
-	Currently I am contemplating switching to 4164s and running
+        Currently I am contemplating switching to 4164s and running
 a ramdisk system. This should speed up the old H89 even further.
 
-	regards,
-		Paul
+        regards,
+                Paul
 
 21-Feb-84 08:41:40-MST,1155;000000000000
 Return-Path: <JURGEN@MIT-MC>
@@ -140,8 +140,8 @@ Has anyone done anything like this? Any mechanism that allows overstriking
 would probably suffice, or be enough of a help for me to modify Scribble.
 Even an in-line environment of any sort would help.
 
-	Thanks,
-	Jon
+        Thanks,
+        Jon
 
 22-Feb-84 10:29:11-MST,1384;000000000000
 Return-Path: <Hess.Unicorn@MIT-MULTICS.ARPA>
@@ -222,38 +222,38 @@ to use whatever I can afford.
 
 So, in a nutshell (finally):
 
-	- How much EMACS-like, SCRIBE-like are MINCE/SCRIBBLE? 
-	- What are they written in? 
-	- Is source code available? 
-	- Is the documentation excelent? Good? Acceptable? Ghastly? 
-	- How much do they cost with/without source code? 
-	- Is MINCE extensible/customizable? 
-	- Are you satisfied with this products? How much do you use them? 
-	- Do you switch between VAXen/DEC-10/DEC-20 EMACS/SCRIBE and
-	  MINCE/SCRIBBLE a lot? Find it easy? Troublesome? 
-	- What kind of support does the vendor give? 
-	- Under what OS do they run? 
-	- Can you write Environments/Fonts/DeviceDrivers for SCRIBBLE? 
-	  Easily? 
-	- Is this the best one can get when trying to preserve the
-	  EMACS/SCRIBE environment on a micro? 
-	- Finally, do they run under any of the UN*X-like OS floating
-	  around? 
+        - How much EMACS-like, SCRIBE-like are MINCE/SCRIBBLE? 
+        - What are they written in? 
+        - Is source code available? 
+        - Is the documentation excelent? Good? Acceptable? Ghastly? 
+        - How much do they cost with/without source code? 
+        - Is MINCE extensible/customizable? 
+        - Are you satisfied with this products? How much do you use them? 
+        - Do you switch between VAXen/DEC-10/DEC-20 EMACS/SCRIBE and
+          MINCE/SCRIBBLE a lot? Find it easy? Troublesome? 
+        - What kind of support does the vendor give? 
+        - Under what OS do they run? 
+        - Can you write Environments/Fonts/DeviceDrivers for SCRIBBLE? 
+          Easily? 
+        - Is this the best one can get when trying to preserve the
+          EMACS/SCRIBE environment on a micro? 
+        - Finally, do they run under any of the UN*X-like OS floating
+          around? 
 
 
 Thanks a lot for your patience and please reply to me directly as
 I am not in the list. 
 
 
-	Luis Jenkins
-	Dept.  of AI
-	Edinburgh Univ. 
+        Luis Jenkins
+        Dept.  of AI
+        Edinburgh Univ. 
 
-	<lejm%edxa%ucl-cs@isid> or perhaps just
-	<lejm%edxa@ucl-cs>
+        <lejm%edxa%ucl-cs@isid> or perhaps just
+        <lejm%edxa@ucl-cs>
 
-	
-	
+        
+        
 
 --------
 
