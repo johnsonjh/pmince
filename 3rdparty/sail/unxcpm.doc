@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head><link rel="stylesheet" href="/css/u8.css" /><meta charset="utf-8" />
-<title>UNXCPM.MMD[UP,DOC]2 - www.SailDart.org</title>
-</head>
-<body id="u8body">
-<div id="tagline">perm filename UNXCPM.MMD[UP,DOC]2  blob <a href="UNXCPM.MMD[UP,DOC]2_blob">sn#600281</a> filedate 1981-07-20 generic text, type C, neo UTF8</div>
-<pre id="u8lump">COMMENT ⊗   VALID 00025 PAGES
+perm filename UNXCPM.MMD[UP,DOC]2
+filedate 1981-07-20 generic text, type C, neo UTF8
+
+COMMENT ⊗   VALID 00025 PAGES
+
 C REC  PAGE   DESCRIPTION
 C00001 00001
 C00004 00002	This is an archive of the unix-cpm@udel mailing list.
@@ -2735,7 +2732,3 @@ will consolidate the replies and send out a pointer later.
 
 Thanks,
 Frank
-
-</pre>
-</body>
-</html>
