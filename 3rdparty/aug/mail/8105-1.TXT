@@ -1,0 +1,1271 @@
+Date: 28 May 1981 04:45-EDT
+From: Barry A. Dobyns <BADOB at MIT-AI>
+Subject: as if i hadn't said enough already...
+To: AMETHYST-USERS at MIT-AI
+
+
+	It seems to me that Tabs are NOT conserved in a @VERBATIM[]
+environment. someone else want to check that out?
+
+	how about a title page environment? Or a @Citation environment
+that has a separate counter from Note, and puts its contents into the
+bibliography?
+
+-overly verbose
+
+Date: 28 May 1981 04:15-EDT
+From: Barry A. Dobyns <BADOB at MIT-AI>
+Subject: local modes; verbosity; and indentation
+To: SK at MIT-MC
+cc: AMETHYST-USERS at MIT-AI
+
+1. explain more verbosely
+
+2. Sorry. I will try to be more brief.
+
+3. Too late to do anything about this month's. I could send a 
+   ready-for-scribble-or-scribe file out every month,
+   or just take all the indent out, as you wish. Geez, We're just
+   beginning, so i can't be expected to be perfect (yet).
+
+-BADOB
+
+Date: 27 May 1981 22:18-EDT
+From: Steven T. Kirsch <SK at MIT-MC>
+Subject: local modes; verbosity; and indentation
+To: BADOB at MIT-MC
+cc: amethyst-users at MIT-AI
+
+1. Using a Local Modes list at the end of a file is the "right" way to
+do local modes in emacs.  -*- Teco-*- is historical.
+
+2. The newsletter is too verbose.
+
+3. Can you cut the indentation out of the on-line copy?
+
+
+Date: 27 May 1981 at 1938-CDT
+From: awd at UTEXAS-11 
+Subject: This is the June Newsletter for AUG, which just got into the Snail today.   -BADOB (Barry
+Dobyns)
+To: amethyst-users at ai
+
+
+
+
+          Amethyst Users Group                              Newsletter No.1
+
+
+
+                                          
+
+                                Amethyst Users Group
+
+                                The First Newsletter
+
+          
+
+            This is the first newsletter  for  the  Amethyst Users Group. I
+          had not expected to have anything to say so soon, but as it turns
+          out  there  are  a  lot  of  things that  everyone  seems  to  be
+          interested in.
+
+            In addition to this users group, there is a mailing list on the
+MIT-AI,   which  I  administrate
+          (ARPANET is the  Advanced Research Projects Agency NETwork, a DOD
+          run  computer  network  linking  some  150  university,  DOD, and
+          industry  machines). I urge all of  you  who  are  users  of  the
+          ARPANET to have me put  you  on  this mailing list. There will be
+          abstracts of the discussions that the AMETHYST-USERS  generate in
+          each monthly newsletter, but the  discussion-like  forum  of  the
+          mailing list will make it a real  plus  if  you  have  access. If
+          enough  folk  request  it, I will include complete transcripts of
+          AMETHYST-USERS mail in  this  newsletter  each  month, instead of
+          abstracting it (fine with me, since it saves me work). The reason
+          that  I am initially abstracting it is that I suspect it will run
+          to  great  length,  and it will get very bulky (and expensive  to
+          mail). This mailing list is free (not that I would charge, but it
+          has  to  be, since any profit generating activities are  strictly
+          forbidden  on  the  ARPANET,  and although the users group is non
+          profit, I have already had my knuckles rapped for  trying to drum
+          up support for the users group).
+
+            As I worked on this, our first newsletter, I saw that there are
+          going to be a lot of very  verbose  (of  necessity)  comments and
+          suggestions that I  am  going  to  receive  here.  I guess I will
+          publish in full, or at least as much as I can, any relevant info,
+          tips, or ideas that are sent me. If you are an ARPANET user, mail
+AI  as  I can read it with my
+          machine, and save time and errors.
+
+            I would like to  request  that  all correspondence intended for
+          Amethyst Users Group be sent to: 
+
+          
+          Amethyst Users Group
+          University Station
+          Post Office Box 8173
+          Austin TX 78741
+
+           All hate mail to me personally can be sent to the  old  address:
+          (my home address)
+
+
+
+                                        - 1 -
+
+
+
+
+
+
+          Amethyst Users Group                              Newsletter No.1
+
+
+
+
+          
+          Barry A. Dobyns
+          1633 Royal Crest #1128
+          Austin Texas 78741
+
+          Hate mail sent to the P.O. Box  will  be  included  in subsequent
+          issues  of  the  newsletter  (subject  to  edit,  naturally).  My
+          telephone number is  (512)441-9466,  and  feel  free  to  call me
+          anytime, i am usually up until all hours of the night.
+
+            Something that will  no  doubt  take  up  a lot of space in the
+          first few issues  of this news letter will be simple suggestions.
+          I am not the wizard at C  hackery  that some Amethyst owners are,
+          so this issue is full of ideas I have had kicking about, and have
+          not had the time to begin to implement. I throw them out as germs
+          of  ideas  that someone else may also like, perhaps enough to  do
+          the work, or work with me to realize some  of  these things. Your
+          suggestions for extensions are also welcome as  much  work can be
+          avoided  by properly defining the task at hand, and  this  letter
+          can  be  a  forum for  defining  and  determining  the  shape  of
+          extensions yet unborn.
+
+            I   offer  without  apology  some  suggestions  here  that  are
+          blatantly  EMACS-like,  even to the point of lifting descriptions
+          from the EMACS manual. This may seem snobbish to non-EMACS users,
+          but  it is just that I have experience with EMACS. It is probably
+          true that EMACS and PL/1 share the fact that  both  are too large
+          for any one user to ever  expect  to  use all the features of the
+          language.  I am pointing out those features of EMACS that I  tend
+          to use that are not included in the standard  MINCE. Feel free to
+          tell me that  you don't need them or that you think my MINCE will
+          grow to over a megabyte.
+
+            
+
+                                        Modes
+
+          
+
+            One  of the things that is of interest is  how  automatic  mode
+          switching in MINCE  is  to  be  implemented.  I have seen several
+          basic ways, and each have their good points and their bad points.
+
+          
+
+            1.  The first is one that many people support as 'natural' to a
+                CP/M environment. This is to  have  MINCE  set the mode for
+                the buffer based on  the extent of the file in that buffer.
+                This  technique  is  one  that   requires   no   additional
+                information to be included in  the  text  file  itself.  In
+                other  words, a file with the extent  .PL1  would  set  the
+
+
+
+                                        - 2 -
+
+
+
+
+
+
+          Amethyst Users Group                              Newsletter No.1
+
+
+
+                (nonexistent) PL1 mode, and a file with the extent .C would
+                set  the  (nonexistent)  C  mode.  This  is  a  very  clean
+                implementation, and one that poses few problems,  at  least
+                when one is only dealing with source code  of  one  sort or
+                another.
+
+            2.  If your  extent names are not of a nature to provide useful
+                information to MINCE,  fear  not.  I often use extents that
+                are just numbers, increasing as those inevitable  revisions
+                occur. I want my MINCE to automatically increment my extent
+                numbers on C-X C-S operations. Unfortunately, the extent is
+                not going to  provide  useful  information  for SetModes in
+                this  case. A solution to the problem is to include  on  te
+                first line of  a  file a command of the form -*-MODENAME-*-
+                or  something like that. This will horrify some of  you  no
+                doubt. It can  be  included  in  your  source  files  as  a
+                comment, and is  a relatively benign way to do things. This
+                is one of  the ways that EMACS does it, and i suggest it as
+                something  to  mull over. Lots  of  poeple  are  vehemently
+                opposed to this because they see it as 'messy'.
+
+            3.   Another  option is to have an 'init' file  someplace.  For
+                example, my 'system' diskette, in the A drive might contain
+                MINCE, a compiler,  a  linker,  and whatever else I use all
+                the time. My work disk in the  B drive might contain copies
+                of whatever it is I am doing, and  file  that  has  default
+                settings  in  it. A TEXT.INI file might contain information
+                concerning the mode I normally like  to edit text in, how I
+                usually set my tabs, where the indent and fill columns are,
+                and  of course room for expansion. Mince would look  for  a
+                'filename.INI' on the  logged  drive first (so I would have
+                to  enter  MINCE  from  B:),  and  load  these  parameters,
+                superceding any values  set in the .SWP file. Maybe this is
+                too  much  of  a kludge too, and the more I think about it,
+                the  worse  it gets. It may also be possible to put default
+                modes in the .SWP files, but .SWP  files  are  awfully big,
+                and I don't relish  having a lot of them around, whereas an
+                .INI file only need be a few  pages long, if that. This has
+                fundamental problems with hard disk that is  not  split  up
+                into numerous logical  drives,  since MINCE would just pick
+                up on the first .INI file it found. It would work well with
+                MARC or  any **NIX, where your working directory would have
+                the  .INI  file  and  just  a  link  to  MINCE  in  another
+                directory.
+
+            4.  Personally I support a  system  that first checks to see if
+                the extent corresponds to a valid mode,  or if it does not,
+                looks in the  first  line for a modename, or failing all of
+                the above sets the default  mode (from the .SWP file, which
+                means that CONFIG now has to set this sort of thing up, 65K
+                CONFIG here we come....).
+
+
+
+
+                                        - 3 -
+
+
+
+
+
+
+          Amethyst Users Group                              Newsletter No.1
+
+
+
+            There  is another fundamental problem in just what one  expects
+          out  of a Mode. I think everyone expects for a mode  to  redefine
+          basic syntactic movement units (paragraph,  sentence and word) to
+          be more useful  (e.g.  function,  statement,  atom)  in  the  new
+          context.  Many  folks   expect  balancing  of  certain  syntactic
+          delimiters (parentheses in LISP, or curly braces in C).  Matching
+          of Scribble delimiters  in  .MSS  mode would be nice. Some expect
+          indentation to be automatic, others are content to merely  have a
+          pretty  printer bound to M-G (Grind Text, I find it more mnemonic
+          than M-Q), most want both. Should there  be  a rudimentary parser
+          in the mode to check  for  correct  syntax  (and  help  put those
+          semicolons in the  right  place in ALGOL)? Remember that the more
+          we add the bigger this thing gets, and the farther out of hand it
+          goes. As soon as Mark of the  Unicorn  adds  overlays,  we can do
+          some nf these more exotic things.
+
+            
+
+                                       Macros
+
+          
+
+            Another  thing  folks  seem to be interested in is macros. Some
+          have suggested that  macros  be  only  a  single  line  long (and
+          displayed  in the echo line), and others have  suggested  editing
+          macros in  a  buffer,  and then executing them out of the buffer,
+          (shades of  Minibuffers full of TECO code). I would be happy with
+          an 80 character macro buffer (better yet  three or four different
+          macro buffers) to which I could give  a repeat count, as i'm hard
+          pressed to think of many sequences that will require more than 80
+          characters. The advantage I see in having them in regular buffers
+          is that they can be saved like  any  old  file. I haven't thought
+          much about macros or  macro  buffers,  so  i'm ready to hear some
+          input from you about the topic.
+
+            There is a problem in that I can't think of a good place to put
+          macros.  I  don't  want them in my terminal support but since the
+          low level character I/O gets called from everywhere I can't think
+          of many other  really  good places. Once again, I haven't thought
+          on this one much longer than it took to write this.
+
+            
+
+                                Command Line Options
+
+          
+
+            Another good  suggestion  is  loading  more  than one file into
+          separate buffers from the original command line. It doesn't sound
+          too  hard to me, except that I could easily  see  the  .SWP  file
+          overflow if you use this  one  much with those files that seem to
+          grow to excess.
+
+
+
+                                        - 4 -
+
+
+
+
+
+
+          Amethyst Users Group                              Newsletter No.1
+
+
+
+
+            
+
+                              Marks and Kills on a Ring
+
+          
+
+            I would like to see more than  one  mark  available. Perhaps we
+          could have a ring buffer (circular array) of marks, and a command
+          that rotated the ring. Kill rings would be even nicer, of course.
+          Inspiration  for  this comes from tinkering  with  EMACS,  but  I
+          haven't the slightest idea how to begin implementation.
+
+            
+
+                        M-' Fix up omitted shift key on digit
+
+          
+
+            Quoted from the EMACS Manual for TWENEX Users:
+
+                 Another common error  is  to type a special character
+               and miss the  shift  key,  producing  a  digit instead.
+               There is a special  command  for  fixing  this: M-' (^R
+               Upcase Digit), which  fixes the last digit before point
+               in  this  way  (but only if that digit appears  on  the
+               current  line  or  the  previous  line.  Otherwise,  to
+               minimize random  effects  of  accidental  use, M-' does
+               nothing). Once again, the cursor does not  move, so you
+               can use M-' when you notice  the  error and immediately
+               continue   typing.   Because  M-'  needs  to  know  the
+               arrangement of your keyboard, the first time you use it
+               you  must  supply the information by typing the row  of
+               digits 1,2,...,9,0 but holding down the shift key. This
+               tells M-' the correspondence between digits and special
+               characters, which is remembered for the duration of the
+               EMACS. This command is called  M-' because its main use
+               is to replace "7" with a single-quote.
+
+          The  correspondence between digits and characters could be stored
+          in  a .SWP file or a .INI file (above). Of course,  it  could  be
+          implemented just as  described  here with the initialization code
+          existing as an overlay to save space.
+
+            
+
+                                   Bugs and Quirks
+
+          
+
+            Here are some  bugs/quirks  I  have noted in Scribble/Crayon in
+          preparing this letter.
+
+
+
+                                        - 5 -
+
+
+
+
+
+
+          Amethyst Users Group                              Newsletter No.1
+
+
+
+
+            1.  The  -p  option  in Crayon causes the pause to occur before
+                the newline at the end of the page. This causes problems if
+                your printer waits  to  print  a line until it recieves the
+                newline at the end of the  line,  as  mine  does, since you
+                will not get a page number at the bottom of the  page,  but
+                at the top of the next one instead.
+
+PageHeading  directive  can  only  appear  once,  or
+                Scribble tells you that you lose, I didn't see  any note in
+                the manual about this.
+
+                  CDOS Compatibility
+
+          
+
+            I  have  done work getting MINCE, SCRIBBLE, and MARC  (more  on
+          MARC later...) up on various  versions of CROMEMCO CDOS (TM). The
+          verdict is that MINCE and SCRIBBLE choke (do not run at  all)  on
+          all  versions  of  CDOS  before  2.12,  which includes but is not
+          limited  to  0.17,  0.20 and 1.07 CDOSii. MINCE and SCRIBBLE (and
+          compiling and linking with BDS C 1.43 and the L2 linker)  seem to
+          be fully functional in CDOS 2.12 and 2.17. It seems that there is
+          an  incompatibility  in  early CDOS versions in that two  of  the
+          locations in the  BIOS jump table (or two of the BDOS commands, I
+          forget which) are reversed. I have forgotten just how much slower
+          CDOS is than CP/M. I am  getting  the CP/MUG #49 which has a CP/M
+          2.2 BIOS for the 4FDC on  it,  and  I will report on how AMETHYST
+          fares  in this environment. MINCE should be incredible on  PerSci
+          drives.
+
+            If you seem to  have  incredible  problems  getting anything to
+          work under your  CDOS,  and there is no local CDOS wizard who can
+          wave his magic software patch wand, I recommend the following man
+          whom I have  never  met  personally  but  who  has  commanded the
+          respect of a lot of my friends  and  whose  coding  can  only  be
+          described as incredible.  He  specializes in CDOS systems, and so
+          can probably help you out.
+
+          
+          Robert Gunn
+          Gunn Software
+          6200 Stillman
+          Houston, Texas 77027
+          (713) 861-4766
+
+
+
+
+                                        - 6 -
+
+
+
+
+
+
+          Amethyst Users Group                              Newsletter No.1
+
+
+
+          Mr. Gunn doesn't have a AMETHYST yet, but I'm going to go to work
+          on him as soon as  I  can.  In any event his knowledge of CDOS is
+          probably indespensible.
+
+            MARC  is  an  operating  system  soon  to  be marketed  by  BDS
+          Software, which appears to the user to  be a single task UNIX (in
+          other words, many users, but  only  one  at  a  time). There were
+          plans at one time to include MINCE as the system editor for MARC.
+          As I understand it, MARC will come with BDS  C, and assembler, an
+          editor  that  looks  a  lot like the UNIX ED, MINCE, a handful of
+          utilities, and (possibly) a CP/M <-->  MARC transfer utility, and
+          a CP/M emulator for  MARC.  I have gotten MARC (Boot Version B.7,
+          Root Version B.1) up on CDOS 2.12 and 2.17, but in order for MARC
+          not to choke to death, the -R option MUST be specified.  It seems
+          that the parasitic  booter  can't  tell which drive is the logged
+          one when it's run under CDOS.
+
+            
+
+                                  Comparison Chart
+
+          
+
+            One of the members of the  mailing list is interested in seeing
+          a  MINCE  to  EMACS difference/comparison  chart.  If  anyone  is
+          interested  it  seems  to  me that the task could be done up very
+          nicely,  and  easily.  Since  most EMACS installations  have  the
+          manual online someplace, and near the end is a wall chart that is
+          very similar to  the  MINCE  short  command  list,  and  we  have
+          SCOMM.DOC online, so  that  one  only needs to hack the two files
+          into  one.  A  double column command comparison (or  better  yet,
+          three column: ITS EMACS, TWENEX EMACS, MINCE) should  only  waste
+          about  half  a  day  of someone's time. It probably wouldn't take
+          much work other than a lot of cut and paste in the editor.
+
+            
+
+                                The First Submission
+
+          
+
+            Of  course,  I have submitted it:  it's  called  MLIST.C.  It's
+          basically a very simple mailing label printer, the one I am using
+          to keep track  of  the  AUG  membership.  There are no fields, no
+          record sizes, only  record  marks in the data file. Mince is used
+          for  updating  (since  it  has  all the features I need in such a
+          program). Most mailing list systems  I have seen either limit you
+          in the information you can include, or  waste lots of empty space
+          with  half full records of fixed length. Besides, all the ones  I
+          have seen seem to cost  more  than  I  think  they  are  worth. I
+          include  MLIST in the AUG library since it depends  on  MINCE  to
+          make it go.
+
+
+
+                                        - 7 -
+
+
+
+
+
+
+          Amethyst Users Group                              Newsletter No.1
+
+
+
+
+            The  file  format  is  as follows: anything  up  to  the  first
+          delimiter DEL1 is  ignored. I include information on how the file
+          is formatted, and what the file is full of before the  first DEL1
+          delimiter. Everything between DEL1 and DEL2 is printed (CP/M list
+          device)  and  are  followed by enough newlines generated  by  the
+          program to get to the next label.  Everything  between  DEL2  and
+          DEL1 is ignored. I can  keep  telephone  numbers,  dates of valid
+          membership, net addresses, whatever between DEL2 and DEL1. I also
+          include a line with about a dozen hyphens as the last line before
+          DEL1 so that the breaks between entries is easier to see.
+
+            Here it is:
+
+          
+          #include bdscio.h
+          #define DEL1        0x1f        /* C-<underbar> */
+          #define DEL2        0x1e        /* C-<caret> */
+          
+          main(argc,argv)
+          char **argv;
+          {
+                  char ibuf[BUFSIZ];
+                  char line[132];
+                  int ifd, on, lcount, i;
+                  on = i = lcount = 0;
+                  if (argc != 2) {
+                          printf("Usage:\nMlist infile ");
+                          exit();
+                  }
+                  if (fopen(argv[1],ibuf) == -1){
+                          printf ("File open error on %s",argv[1]);
+                          exit();
+                  }
+                  printf ("%s",argv[1]);
+                  while (fgets(line,ibuf) != 0){
+                          lcount++;
+                          if (DEL2 == line[0]){
+                                  if (on) do {
+                                          lcount++;
+                                          fputs("     \n",2);
+                                  }while (lcount <= 12); /*label length*/
+                                  on = 0;
+                          }else if (DEL1 == line[0]) {
+                                  on = 1;
+                                  lcount = 0;
+                          }else if (on){
+                                  fputs(line,2);
+                          }
+                  }
+                  fclose (ibuf);
+          }
+
+
+
+                                        - 8 -
+
+
+
+
+
+
+          Amethyst Users Group                              Newsletter No.1
+
+
+
+
+            
+
+                                    Miscellaneous
+
+          
+
+            I am charging $6.00  annually  for  membership  in the Amethyst
+          Users  Group  in  North  America   (USA,   Canada,   Mexico   and
+          California). I will charge  $14 for annual membership for members
+          in distant lands. Membership privileges include getting your name
+          and  suggestions  in  print,  having this newsletter delivered to
+          your doorstep by your friendly mailman, and  access  to the users
+          group  library.  Initially,  disks,  should   they   ever  become
+          available, will be $6.00 each. I have no idea how much Disks will
+          cost to ship to  anyplace outside of the USA, so you will have to
+          wait until I go to the post office with a packed diskette box and
+          weigh it. If it turns out that I lose money on the users group (I
+          can't afford  to  pay  out of my pocket) I will raise the cost of
+          diskettes, and not the cost of the  membership.  I  will ship you
+          diskettes in diskette mailers that  should  protect them from the
+          worst ravages of the USPS. These  mailers  cost me a little more,
+          but are well worth the price,  since  disks  arrive in one piece,
+          and unfolded. I will not  be  able  to  personally reply to every
+          inquiry that will be made, although I will include it in the next
+          newsletter.  If  you  expect  an  immediate  response,  enclose a
+          self-addressed stamped envelope, it may  not  seem  like  much to
+          you, but if I have to buy twice as many stamps and envelopes each
+          month, this poor boy will be in the lurch.
+
+            If you wrote to me  asking  to  join and forgot to enclose your
+          membership fee (or plain didn't know that there was one, which is
+          probably my fault), you get one (and only one)  free  copy of the
+          next newsletter, to pique  your  interest,  and  oil  your wallet
+          bone.  In  other  words, if you haven't paid your membership fee,
+          this is your free copy. This newsletter will  be  mailed over the
+          ARPANET to AMETHYST-USERS also.
+
+            Please specify the  format that you want (or if you're sending,
+          write  the  the  format on the label). I can distribute in Single
+          Side Single Density  IBM  8"  format, Tarbell 8" 51 Sector Double
+          Density, Ohio Scientific CP/M 8", and Cromemco CDOS 5 1/4" Single
+          Density, and eventually, in N* single  density  (I  just recently
+          got a N* controller board without docs or software, and am trying
+          to scrounge up enough info to get it to fly). Please, if you send
+          me  a  IBM  8" diskette,  do  not  send  me  one  that  you  have
+          reformatted with your single  density  controller,  since I use a
+          controller that has  a  1791  on  it  and  it cannot read the gap
+          information that the 1771 writes  onto  the disk when formatting.
+          If I am to read it it must either be on  a  disk  that  is  still
+          using the factory format, or if you have a Tarbell Single Density
+          controller,  I  can  give  you  a  format program that you should
+
+
+
+                                        - 9 -
+
+
+
+
+
+
+          Amethyst Users Group                              Newsletter No.1
+
+
+
+          replace your current one with, that will format  disks so that we
+          both can read them. I will also offer a transfer service from one
+          of the  above  formats  to  another at about $2.00 per disk, plus
+          diskette and shipping, (i.e. provide your own diskettes for me to
+          copy to and save). I should be able to distribute in RT-11 format
+          also, that is, I have an RT to CPM transfer utility that seems to
+          function properly,  but  I  don't have an 11 to run the resultant
+          copies on, so caveat emptor for RT. Also the RT to  CP/M  utility
+          asks some questions  (about how the directory should be arranged)
+          that i'm not quite sure i can answer correctly, never having used
+          an RT.
+
+            Please  pack any disks you send me properly  (i.e.  in  one  of
+          those nice boxes from INMAC that I will be using). This point was
+          brought  home  some  days  ago  when  some  disks  that  had been
+          improperly packed (but were sent  special  delivery)  were FOLDED
+          into my mailbox (special huh?). Any disk you send  me with useful
+          things on it, I will you one for,  hopefully  with something neat
+          on it (your choice, once there is something to choose from).
+
+            Proofreading this, I  see  that  I  have tended to use a lot of
+          'computerese' and have favored terse technical terms  to  verbose
+          plain-text  circumlocutions.  I sincerely apologize to those  who
+          are lost. The directions for getting there (as they were given to
+          me...) go like this:
+
+                 Go to San Diego and take a left, and keep going until
+               the water is  up  around  your hubcaps. Get out of your
+               car and get a suntan. Play Frisbee. Use the nearest pay
+               phone to call AAA and  your lawyer, who will send you a
+               travel guide and tell you how your  divorce proceedings
+               are going, respectively. Enjoy.
+
+          
+
+                                    Happy Coding!
+
+                                       -Barry
+
+          
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        - 10 -
+
+
+
+-------
+
+Date: 25 May 1981 00:08-EDT
+From: Scott W. Layson <GYRO at MIT-AI>
+Subject: ^X ^S write to temp file and rename
+To: SK at MIT-AI, Tappan at BBNG
+cc: AMETHYST-USERS at MIT-AI
+
+One reason that we gave ^X ^S its current behavior is just what SK
+mentions: if your disk is very small, you can't afford to keep free
+space sufficient to hold your largest file.  Another is that we expected
+by now to have incremental state save working, that would make it possible
+to use the information in the swap file to recover from hardware errors.
+Unfortunately, we ran out of memory before we got there.  Sigh.
+
+-- Scott
+
+Date: 22 May 1981 02:03-EDT
+From: Steven T. Kirsch <SK at MIT-MC>
+Subject:  FJW's nits
+To: GYRO at MIT-AI
+cc: AMETHYST-USERS at MIT-AI
+
+In addition to sending those enhancements to BADOB, can you also put
+them on-line somewhere?
+
+
+Date: 22 May 1981 01:57-EDT
+From: Steven T. Kirsch <SK at MIT-MC>
+Subject:  ^X^S writing to a temp file and rename
+To: Tappan at BBNG
+cc: AMETHYST-USERS at MIT-AI, GYRO at MIT-AI
+
+Making this standard would meet with some objection as some of us only
+have a single 5.25" disk.
+
+
+Date: 21 May 1981 0825-EDT
+From: Dan Tappan <Tappan at BBNG>
+Subject: Re: FJW's nits
+To: GYRO at MIT-AI
+cc: AMETHYST-USERS at MIT-AI, Tappan at BBNG
+In-Reply-To: Your message of 21-May-81 0018-EDT
+
+Why would someone use ^X^W? Actually thats my major gripe about MINCE,
+^X^S does an immediate overwrite of the old file. I lost a fairly large
+file once through a freak disk accident (MINCE started writing the file,
+clobbering the old one, then a disk error occured on the swapping disk,
+making CPM decide it was read-only, which crashed MINCE and lost all
+copies of the file) Using ^X^W would have prevented that (as would
+a slightly more intelligent ^X^S). As soon as I have time I'm going to
+fix ^X^S to write to a temp file and then rename.
+
+Dan
+-------
+
+Date: 21 May 1981 00:18-EDT
+From: Scott W. Layson <GYRO at MIT-AI>
+Subject: FJW's nits
+To: AMETHYST-USERS at MIT-AI
+
+We consider it a feature that Mince recovers well from a full swap file.
+What else should it do?
+
+There are several opinions as to what should be in the other window after
+a ^X 2; the only one we really like would take too much space to
+implement.
+
+Why can't you use your Meta key?  We use ours...  Just like you said,
+change the I/O to do direct port access with 8 bit characters.  It
+works fine (if your hardware cooperates).
+
+Why does anyone use ^X ^W?  I mean, sure, I use it a couple of times
+a week, but ^X ^S is much more convenient for the usual case...  (And
+safer if the ^X gets lost!)
+
+I have code to make meta-<digits> work.  I will send it to Barry.  It's
+not very big, but takes just enough space that the redundant functionality
+was considered wasteful for the standard version.
+
+Other people have complained about ^W/^Y to move text.  We don't have
+q-regs, but a command to move or copy the region to or from a specified
+buffer in one operation would be easy enough.  Somebody write it!
+
+Yeah, we know, framing (choosing exactly what text shall appear on the
+screen) is one of Mince's weak points.  I have code, which I will also
+send to Barry, to scroll the screen up or down by a specified number
+of lines without moving the point.  This helps somewhat.
+
+The @BlankSpace bug has been fixed.
+
+Is ^S insufficient for controlling the -c output?  It seemed fine to me,
+especially since Scribble pauses for a moment to set up between pages.
+
+Scribble itself doesn't know about XON/XOFF for the printer; in fact,
+it doesn't pay attention to the direct I/O either, it just does bios(5,c)
+to get characters out.  Crayon, however, should do the right thing for you.
+The latest Scribble (1.1) is much happier in 56K; 1.0 is truly a memory
+hog.  Cutting Scribble's memory requirements is currently a top-priority
+project.
+
+I think Craig is working on something to let you turn off higher levels
+of sectioning, so you can just have plain numbered paragraphs.
+
+There are a couple of bug fixes in the C compiler since 1.42.  Other
+versions around 1.43 have different bugs; there is in fact only one
+version of the compiler that will successfully compile Scribble, and
+Lifeboat never shipped it.  But it had another bug...
+
+Keep those cards and letters coming, folks!
+
+-- Scott
+--------
+
+Date: 21 May 1981 00:33-EDT
+From: Christopher C. Stacy <CSTACY at MIT-AI>
+Subject:  FJW's nits
+To: GYRO at MIT-AI
+cc: AMETHYST-USERS at MIT-AI
+
+    Date: 21 May 1981 00:18-EDT
+    From: Scott W. Layson <GYRO>
+    To:   AMETHYST-USERS
+    Re:   FJW's nits
+
+
+    Why does anyone use ^X ^W?  I mean, sure, I use it a couple of times
+    a week, but ^X ^S is much more convenient for the usual case...  (And
+    safer if the ^X gets lost!)
+
+I use C-X C-W to write into a file which has another name in Emacs,
+I assume it works the same way in Mince.  What do you mean by
+"safer"?
+
+    Yeah, we know, framing (choosing exactly what text shall appear on the
+    screen) is one of Mince's weak points.  I have code, which I will also
+    send to Barry, to scroll the screen up or down by a specified number
+    of lines without moving the point.  This helps somewhat.
+
+This should be standard in Mince, I think.
+
+Date: 20 May 1981 05:09-EDT
+From: Frank J. Wancho <FJW at MIT-MC>
+Subject:  Random Bugs (nits) and Feature Requests
+To: AMETHYST-USERS at MIT-AI
+cc: FJW at MIT-MC
+
+I have asked Scott if he wanted these "privately" or to the list.
+Although he hasn't seen these items, he said to the list.  So here it
+is.  Bear in mind that I really do like Mince for the reasons I gave
+in a previous msg, but I find some things annoying...  As for
+Scribble, I will acknowledge that it is a preliminary release.
+
+<NIT MODE ON>
+
+On Mince 2.5:
+
+With a 64K SWP file, trying to read in a second file (both about 37K)
+in the other window gives a "Swap file full" message, if you're
+watching at the time and lucky enough to catch it, and then proceeds
+as if nothing happened - that is, until you try to read past a certain
+point in the second file and see the wraparound.
+
+The second window ought to be empty when you first invoke it with ^X2.
+
+Since I have a terminal with a META key, why can I not define it and
+change the I/O to do direct port access and preserve the parity bit
+for this purpose?
+
+Random msgs, like "Unknown command" ought to return the cursor to
+where it was.  Deliberate displays, like from ^X^B ought to gobble up
+the next character and return the display to normal rather than taking
+whatever the next character is as input.  ^G works, though...
+
+If a swap happens to occur just as you typed ^X^W and it comes back to
+see just the ^W...  also, if you type just a CR to the ^X^W prompt,
+the current filename is very briefly displayed with no chance to
+confirm!
+
+The "Swapping" msg writes over a previous "Unknown command" msg and
+leave part of it there.
+
+I miss being able to type <ESC>n or <ESC>nn, etc., instead of the
+rather painful ^Un or ^Unn as a multiplier.
+
+I dearly miss ^Xx<qreg> and ^Xg<qreg> as a neat way to move text
+around as an alternate to ^W/^Y.
+
+If you choose the cursor position for redisplay as 0 (or any number, I
+guess), it *ALWAYS* puts the cursor at that line, even for M-> (an
+empty screen for 0) and ^S/^R.  (Will there ever be an Incremental
+Search???)  I would much prefer being able to specify, say, line 8 for
+^L, and have the equivalent of 90fs%end for things like adding text to
+the end or M->, and also have <ESC>0^L for scooting the current line
+up to the top of the screen...  With a line 0 for any redisplay,
+things are really strange with repetitive ^S's when you are on the
+bottom of the screen and it scoots up one line for the next occurance
+instead of presenting a new screenful...
+
+
+On Scribble 1.0:
+
+You can't seem to type:
+
+@BlankSpace(2 lines)
+
+wherever you want - just once it seems.
+
+When you use the -c feature for previewing, it ought to optionally
+wait for any character input before proceeding to the next screenful.
+(Maybe -c for continuous with short pause, and -t for wait???)
+
+I set up a Direct Pin and Direct Pout and set for Diablo10 and changed
+the sync for XON/XOFF and SCRIBBLE ignored it for a XEROX 1750 (Diablo
+1650) and overran the printer's buffer.  (I know it works ok with WS
+at 1200 baud... because that's what I had to revert to...).  I never
+got to CRAYON because I tried to generate the FIN file and ran out of
+memory in a 56K machine with a 5K document!!!  (I was able to generate
+a FIN file on a 58K machine earlier for Spin10...)
+
+How can I tell SCRIBBLE that I just want plain numbered paragraphs?
+(Not @Enumerate, since I may want unnumbered paragraphs in between.
+"0.0.0.1" from just having @Paragraph w/o any higher level numbering
+isn't exactly what I had in mind...)
+
+
+On documentation:
+
+If you buy AMETHYST, should you also get instructions on how to use
+BDS-C to create whatever - a sample session would greatly help there.
+
+How different is this BDS-C from 1.42 which we also recently got as an
+update from Lifeboat separately?
+
+<NIT MODE OFF>
+
+--Frank
+
+
+Date: 13 MAY 1981 0954-PDT
+From: BHUBER at USC-ECL
+Subject: Amethyst vs Apple CP/M
+To:   Amethyst-Users at MIT-AI
+cc:   BHuber
+
+Is Amethyst et al available now for the Apple Softcard CP/M world?
+BHuber
+-------
+
+Date: 12 May 1981 21:26-EDT
+From: Scott W. Layson <GYRO at MIT-AI>
+Subject: Z-80 optimizations
+To: AMETHYST-USERS at MIT-AI
+
+Leor's compiler currently does no Z-80 optimizations; the only thing
+that can happen differently on a Z-80 is that the 'movmem' library
+routine uses the Z-80 block move instruction.  And if you look
+closely at the problem, it turns out that the compiler really has
+little to gain by using the special Z-80 instructions -- the index
+registers are nearly useless, though admittedly, relative jumps would
+save a few bytes here and there.
+
+Even if the compiler was intelligent about Z-80s, recompilling the command
+set would do little good.  The place where optimizations would
+really make a difference is in the buffer management and redisplay
+code (i.e., the parts for which we don't supply the source), as
+these account for about 2/3 of the final code size and are written
+in such a way that any optimizations in register usage (for example)
+will make a considerable difference.  The command-set code is mostly
+subroutine calls, while the buffer and redisplay code is heavy on
+repetitive pointer-to-structure references and the like.
+
+So don't ask about Z-80 optimization -- Leor has no plans to do it
+anyway.  Sometime in the next few months we may hand-compile the
+buffer and redisplay code into assembler, and THAT will make a
+difference.  Besides, there are plenty of very useful optimizations
+Leor could do that would also make a difference in 8080 code; these,
+I think, would be more worthwhile.
+
+-- Scott Layson
+Mark of the Unicorn
+-------------------
+
+Date: 11 May 1981 07:29-EDT
+From: Barry A. Dobyns <BADOB at MIT-AI>
+Subject: Amethyst Users Group
+To: mbarnes at BBNA, devon at MIT-MC
+cc: "(FILE [JCAF;MC:AUG ARCH])" at MIT-AI
+
+
+	congratulations, you are on.
+	archives in mc: jcaf; aug arch
+	please read mc: jcaf; aug let
+
+	-barry
+
+
+
+Date: 10 May 1981 13:20-EDT
+From: Frank J. Wancho <FJW at MIT-MC>
+Subject:  Z80 Only Version?
+To: AMETHYST-USERS at MIT-AI
+cc: FJW at MIT-MC
+
+I am really quite impressed with MINCE, especially in that it uses the
+LRU algorithm - it appears that I can directly access any part of the
+file without paging the file through memory (unlike WS, WM, and
+others).
+
+What I'd like to know is if I can recompile the command set as is and
+use the Z80 option to gain some optimization for my particular
+environment?  As far as that goes, has it been determined whether or
+not an entire MINCE (and SCRIBBLE) completely compiled with that
+option is any smaller or runs any faster than the regular version?  In
+particular, I am interested in the relative speeds of the searches in
+both cases.  (I sure do miss the Incremental Search commands...and the
+q-regs... - has anyone generated a list of the differences between
+MINCE and EMACS??)
+
+--Frank
+
+
+Date: 6 May 1981 04:39-EDT
+From: Barry A. Dobyns <BADOB at MIT-AI>
+Subject: archiving, and a query
+To: AMETHYST-USERS at MIT-AI
+
+	we are now archived in mc:jcaf;aug arch
+special thanks to plk@mc for generously providing us space.
+
+	someone wanted to know a bit more about amethyst...
+for those of you who are not actual owners of the package here
+it goes:
+	amethyst is an ersatz emacs and an ersatz scribe for the
+8080 and z80. both are extensible, and are written in bds c.
+the source for thecommand set is provided with amethyst, so that
+users can hack up extensions to fulfill their every desire. it is 
+hoped that this mailing list, and the actual user's group (which
+is a discrete entity) will create a forum and community in which
+valuable extensions andddevelopments will be shared by all, and 
+no one will spend time reinventing the wheel, (provided someone
+invents it in the forst place).
+	both mince and scribble (the components of amethyst) can 
+run and compile in a 48k cp/m. a cpm compatible operating system is
+nominally required for operation. cdos, sdos, imdos, tpm, oasis, and
+marc all should fit the bill. also one needs a cursor addressable terminal
+but i suspect that one could accomplish some magic in the terminal
+support routines that would do very nicely for a memory mapped
+video board. 
+mark of the unicorn, the authors, are ambitiously working on getting
+amethyst  onto other machines that support c. i am given to
+understand that the entire package is very portable, and running
+under one of the new **nix breed of operating systems  is not a 
+difficult task.
+	bds c can run on a modified cpm (org=4300) but i do not
+know if work has been done to get amethyst onto such a system. 
+	my personal reccomendation is to have a 64k system, with
+double density drives (persci's  since they're so fast) or a hard 
+disk, and marc or a similar 'new age' os. 
+
+
+
+	the amethyst users group is a non-profit organization,
+dedicated to the furtherance of the amethyst system. aug is not
+directly connected with, or sponsored by mark of the unicorn, the
+authors of amethyst.mark of the unicorn, however, does retain
+a membership in the amethyst users group, so that no one is groping
+in the dark, so to speak. any fees, dues, or charges levied by the
+amethyst users group for membership, publications, or programs & associated
+media reflect the actual cost incurred in the production therof, and
+do not result in the generation of profits. the amethyst users group 
+is not connected with this mailing list, except in that there may be
+an overlap in membership & membership in one does not imply membership
+in the other, however it may appear.
+
+-barry
+
+
+Date: 5 May 1981 05:10-EDT
+From: Christopher C. Stacy <CSTACY at MIT-AI>
+Subject:  mailing list
+To: AMETHYST-USERS at MIT-AI
+
+
+Please remember that any use of the ARPAnet for commercial
+purposes is strictly forbidden.  This will save us all alot
+of headaches.
+
+Cheers,
+Chris
+
+Date: 5 May 1981 03:24-EDT
+From: Barry A. Dobyns <BADOB at MIT-AI>
+Subject: A Letter
+To: AMETHYST-USERS at MIT-AI
+
+							     4 May 1981     
+
+     Dear Amethyst Owner;
+     
+	   You have by now heard of the Amethyst Users Group, of which I am
+     head. It is the nature of things that everyone eventually gets what he
+     wants, and for my sins I was rewarded with charge of the users group.
+     Your ideas are by all means welcome, as this is just
+     as much your users group. EMACS has benifitted greatly from a healthy
+     interaction of its users, and it is hoped that MINCE will be able to
+     follow this tradition. 
+	   I will put out a written newsletter. I suppose that I will have
+     to have something to say first, or else you will be subjected to my
+     incessant ramblings (unpleasant at best). The solution is for you to
+     contribute things to the cause. If you are working on some project in
+     particular, like a C mode, I can publish a note in the news letter
+     about it (as verbose as you wish). Between news letters, if more than
+     one person or group appears to be working on the same thing, I will
+     try to put them in touch with each other, to speed the process.
+	   I cannot eat the cost of publishing and mailing newsletters and
+     disks, so I will be forced to charge a bit for membership, primarily
+     to subsidize mailing you newsletters & such. For the nonce, I will
+     charge $6.00 for membership (an annual fee). Disks, when and as they
+     become available, will also run $6.00 each. These are North American
+     prices, Botswana costs more. If i start to lose money, i will raise
+     the cost of diskettes, but i don't expect to start losing any soon.
+     There is an ARPANET mailing list, which is is free, and is called
+     AMETHYST-USERS at AI. You can send net mail to me, BADOB at AI, and i
+     will put you on. If you have access to the net, i urge you to get on
+     this mailing list, as there will no doubt be much more action here
+     that i can account for in the monthly letter.
+	   I can distribute in Single Side Single Density IBM 8" format,
+     Tarbell 8" 51 Sector Double Density, Ohio Scientific CP/M 8", and
+     pending the return of my 4FDC from the factory (next week, I'm told) I
+     should be able to distribute in Cromemco CDOS 5 1/4" Single Density .
+     I will also offer a transfer service from one of the above formats to
+     another at about $2.00 per disk, plus diskette and shipping, (i.e.
+     provide your own diskettes for me to copy to and save). I should be
+     able to distribute in RT-11 format also, that is, I have an RT to CPM
+     transfer utility that seems to function properly, but I don't have an
+     11 to run the resultant copies on, so caveat emptor for RT.
+	   Please pack any disks you send me properly (i.e. in one of those
+     nice boxes from INMAC). This point was brought home a few weeks ago
+     when some disks that had been improperly packed (but were sent special
+     delivery) were FOLDED into my mailbox (special huh?). I should have a
+     post office box now, which may or may not help matters. Any disk you
+     send me I will send back, hopefully with something neat on it (your
+     choice, once there is something to choose from).
+           As of right now, there is nothing in the library, and while a
+     few people are interested in geting something, i haven't heard of any
+     projects to write anything. Also, there is no archive (per se) for the
+     AMETHYST-USERS, so if you have an account on an ITS amchine, and have
+     some space to spare, perhaps you could let us archive there.
+
+					Amethyst Users Group
+
+					Barry A. Dobyns
+					P.O. Box 8173
+					University Station
+					Austin, Texas 78741
+					(512) 441-9466     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+
+
+Date: 5 May 1981 02:49-EDT
+From: badob@ai
+Sender: SLB0 at MIT-ML
+Subject: Amethyst-Users at AI
+To: lauren at UCLA-SECURITY, tappan at BBNG, clements at BBNA,
+    jp at SU-AI, mmd at SU-AI, dws at LLL-MFE, BHuber at USC-ECL,
+    blue at MIT-MC, plk at MIT-MC, moore at USC-ISIB,
+    white at SUMEX-AIM, kenner at NYU
+cc: badob at MIT-AI
+
+	Congratulations !!
+	You are now on the list.
+
+
+  
+BADOB@MIT-AI 05/03/81 02:31:50 Re: Amethyst Users Group Mail list
+To: EPZ at MIT-AI, GUMBY at MIT-AI, pga at MIT-ML, bnh at MIT-ML
+To: sk at MIT-ML, leor at MIT-MC, fjw at MIT-MC
+CC: BADOB at MIT-AI
+	you are all now on it. 
+	Amethyst-users@ai
+
+-barry
+  
+Date: 3 May 1981 02:41-EDT
+From: Barry A. Dobyns <BADOB at MIT-AI>
+Subject: info-micro@ai
+To: info-cpm at MIT-MC
+cc: BADOB at MIT-AI
+
+
+	There is now a users group for Amethyst users. Plans include
+a monthly newsletter, and distribution of submitted user extentions.
+Amethyst (for those who don't recall) is a EMACS-ish  extensible
+text editor and a SCRIBE-ish extensible formatter all in C.
+
+	Amethyst Users Group
+	P.O. Box 8173
+	Austin, Texas 78712
+	(512) 441-9466
+
+	Also it exists as a mailing list, AMETHYST-USERS@AI. if you are 
+interested in either mail to me, or snail to the above address. 
+
+-barry
+
+
+    
+Date: 3 May 1981 02:45-EDT
+From: Steven T. Kirsch <SK at MIT-MC>
+Subject: mince crash
+To: amethyst-users at MIT-AI
+
+My second day using mince, I gave a demo to my boss.  About 75%
+through the demo, mince (or my H89) crashed (it stopped listening to
+the keyboard so I rebooted).
+
+On restarting Mince, I discovered it was hung (cursor stopped to the
+right of the modeline; keys had no effect).  I did a filecopy of a
+backup swap file to my disk and the world was safe for humans.
+
+Has anyone else encountered a similar problem?
+
+(Oh, I haven't read any of the documentation yet, so it might be in there).
+  
+Date: 3 May 1981 03:09-EDT
+From: Barry A. Dobyns <BADOB at MIT-AI>
+Subject: crash! boom! munge!
+To: SK at MIT-MC
+cc: AMETHYST-USERS at MIT-AI
+
+
+I have problems with my (perkin elmer fox 1100) hanging from time to time,
+and so i have to twiddle the switches under the access plate to reset the
+machine, but mince hasn't really died on me but for one time...
+
+I had told it C-X C-S, and the lights on my front panel said that things 
+were progressing ok, and then it hung. Before the 'File Written' prompt.
+I could tell by the lights that it wasn't in cp/m at all, it was down
+below 0x0fff someplace. (i diddled with the switches under the access plate,
+force of habit, but nothing...) Reset. look at the disk, and the file,
+which should have been around 25K or so is 1K long. use disk.c to reconstruct
+the file from the fragmented remains. I was assured that my problem was a 
+random accident related to the tides & other similar phenomena. I am 
+inclined to agree with that prognosis, as my system often hangs when i run my 
+'slightly crufty' memory boards instead of my 'not as crufty' board.
+
+still, i would be curious to know what it was thet you were doing when the
+loss occured.
+
+-----
+

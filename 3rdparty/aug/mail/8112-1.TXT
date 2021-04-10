@@ -1,0 +1,29 @@
+Date: 19 December 1981 16:31-EST
+From: "Marvin A. Sirbu, Jr." <SIRBU at MIT-MC>
+Subject: IBM PC
+To: AMETHYST-USERS at MIT-MC
+
+I am about to acquire an IBM personal computer to do text editing at
+home (I'm tired of 1200 baud display refresh).  The ideal mode of
+working will be to prepare text with an emacs-like (Mince?)
+ editor on my home computer with scribe formatting commands.  When i
+want to see the final result on a laser printer, I will upload the file
+to the DEC-20 and run it through scribe.  It would be nice of course to
+be able to print drafts locally using a mini-scribe that ran on my
+PC (Scribble?).
+
+I have several questions.
+
+Does Mince/Scribble run on the IBM PC?
+
+Is Scribble enough like Unilogic Scribe that I can upload a file
+to the 20 and run it through Scribe without significant changes?
+
+What is the best file transfer program for uploading/downloading to a
+DEC 20?
+
+Does anyone have any experience with this type of operation?
+
+Any help in answering these questions would be appreciated.
+
+Marvin Sirbu

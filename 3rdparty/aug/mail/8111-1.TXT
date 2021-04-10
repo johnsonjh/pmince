@@ -1,0 +1,29 @@
+Date: 16 November 1981 23:28-EST
+From: Paul L. Kelley <PLK at MIT-MC>
+Subject: AG1 on RCP/M
+To: AMETHYST-USERS at MIT-MC
+
+
+	Thanks to Barry most of the files from the first
+AUG disk are available on my remote CP/M. By "most" I mean
+the ones that are not standard RCP/M or CPMUG software. The
+files are stored in a passworded USER area. The password is
+available to AUG members from Barry (BADOB@MIT-AI). As of
+now the files will be available Monday nights unless a
+special request is made. Mark of the Unicorn may also be
+leaving notes, fixes, etc. there. You are also free to
+leave useful material. The number of the remote CP/M is:
+(617) 862-0781.
+
+Date: 6 October 1981 03:14-EDT
+From: Barry A. Dobyns <BADOB at MIT-AI>
+To: MARK-OF-THE-UNICORN at MIT-AI
+cc: BADOB at MIT-AI, amethyst-users at MIT-MC
+
+	The ad in October byte for SuperSoft's Star-Edit is how mince
+ads should have appeared. (scribble ads too.) The current ad may be flashy,
+but doesn't say anything about Mince or Scribble themselves.
+
+-toodles!
+
+

@@ -1,0 +1,147 @@
+Date: 28 June 1981 14:27-EDT
+From: Scott W. Layson <Gyro at MIT-AI>
+Subject: Screen scrolling
+To: KENNER at RUTGERS
+cc: amethyst-users at MIT-MC
+
+At the very least, you have to:
+
+ -- move the screen marks (in the "scrnmarks") array so that the i-th
+mark still corresponds to the i-th screen row.
+
+ -- increment or decrement a variable, which I think is called "tlrow",
+that tells which screen row is in the current-row buffer.
+
+ -- move the "sstart" mark, that tells where in the buffer the screen
+begins, up or down a line as appropriate.
+
+ -- Set the modified flags on the lines that are being left blank, so
+they will be displayed at the next opportunity.
+
+There may be more, but this is all I can think of offhand.  Good luck!
+
+-- Scott
+
+Date: 25 Jun 1981 0904-EDT
+From: Richard Kenner <KENNER at RUTGERS>
+Subject: Screen scrolling
+To: amethyst-users at MIT-MC
+
+Has anyone looked into what would be involved in doing the following:
+
+I would like to have KbWait perform the following function in addition to
+writing out modified pages:  If the cursor is too close too either the top
+or bottom of the screen, send a "insert line" or "delete line" to the
+terminal (a H19 in this case) as appropriate to keep the cursor in the
+"center area" (say lines 5-15) of the screen.
+
+My question is:  Does anyone know exactly what modifications I have to make
+to the screen status variables when I do this in order to have refresh
+correctly maintain the screen (and write the one line that remains to be
+written)?
+-------
+
+Date: 24 June 1981 23:11-EDT
+From: Steven T. Kirsch <SK at MIT-MC>
+Subject:  Commands to match parens, brackets, braces ...
+To: DWS at LLL-MFE
+cc: Amethyst-Users at MIT-AI
+
+Yes, bruce roberts at BBN has written display matching paren on ).  He
+may also have indent for lisp and forward s-expr.
+
+I dunno if the display matching paren is as slick as the one done at
+SRI for Gosling's Emacs.
+
+
+
+Date: 24 Jun 1981 (Wednesday) 1511-PST
+From: DWS at LLL-MFE
+Subject: Commands to match parens, brackets, braces ...
+To:   Amethyst-Users at MIT-AI
+
+Has anyone written commands to fine matching open and closed
+parens, brackets and braces?  (e.g. Meta-( & co. in EMACS).  If
+not I'll sit down this weekend and give them a try, then supply
+the code.  Looks pretty easy, which in itself tells me that there
+is bound to be some trick required.
+
+-- Dave Smith
+---------
+
+
+
+Date: 19 June 1981 15:04-EDT
+From: Devon S. McCullough <devon at MIT-AI>
+Subject:  mince
+To: BUG-EMACS at MIT-AI, AMETHYST-USERS at MIT-AI
+
+
+
+                     MINCE is not Cthulhu's EMACS
+
+
+
+
+
+ TECO...TECO...HAHA...TECO......
+
+Date: 19 June 1981 04:33-EDT
+From: Barry A. Dobyns <BADOB at MIT-AI>
+To: AMETHYST-USERS at MIT-AI
+
+
+
+the AUG monthly newsletter will not be electronically transmitted
+to this mailing list by myself in the future.
+
+proccedings of this mailing list will not appear in any form in the
+monthly AUG newsletter.
+
+-barry
+
+
+Date: 6 Jun 1981 19:22:02-PDT
+From: Cory.conde at Berkeley
+To: amethyst-users@MIT-AI
+
+Subject: Query about MINCE,AMETHYST, etc....
+
+To the caretaker of the Unicorn Guild,
+	Hello, I have been told that this account could be
+used to direct queries on the Unicorn line of editors, and
+formatters. ( Brian Hess at MIT told me.. )
+After hearing rave reviews of your software, I am seriously
+considering the purchase of the Amethyst package, but I want
+to know if it is compatible with my system.
+
+The ads claim that you must have a cursor addressable terminal,
+but the review in Doctor Dobbs said that it may be customized
+for memory mapped systems. I have an Exidy Sorcerer, with
+its brain damaged 64 by 30 memory mapped screen without
+cursor addressing, but with screen clear, and cursor movement.
+( up, down, left, right only. )
+Could MINCE run on that ? ( also, the keyboard polling
+is rather slow... )
+Also, is SCRIBBLE an 'nroff' style formatter with codes
+like .ce for centering ? ( I hope so... )
+
+Lastly, what really lured me was the inclusion of the
+BDS C compiler ( RAH! ) with the purchase of Amethyst..
+Do I get the real stuff, with the stdio library package and
+the privilege to join the Users' Group ??
+
+Well, sorry to bother you right before summer, but I would like
+some info , and if an 'on-line' brochure is available,I would
+love it. If not, you could send stuff to 
+Daniel Conde
+1145 Pine St., #15
+San Francisco, CA 94109
+
+Thanks,
+Daniel Conde1
+y.conde @ BERKELEY
+
+
+
+

@@ -1,0 +1,23 @@
+Date:     5 January 1982 1826-est
+From:     Brian N. Hess              <Hess.Unicorn at MIT-Multics>
+Subject:  Mince/Scribble/IBM P.C.
+To:       Marvin Sirbu               <SIRBU at MIT-MC>
+Cc:       AMETHYST-USERS at MIT-MC
+In-Reply-To: Your message of December 19th
+
+Yes, we're planning to support the IBM P.C.  Currently, we're waiting
+for a C compiler to be written for us.  Expecting to be able to ship a
+Mince and Scribble on June 1.  (Currently we have a hack Mince written
+in BASIC(!) for the P.C. while we download things onto it.)
+
+Yes, Scribble is enough like Scribe (tm DEC or Unilogic Ltd.) to be able
+to go from the P.C. to the 20, but not vice-versa -- Scribble does not
+support the various technical publication formats and such (i.e. no @make
+command) and lacks some other features of Scribe.  And of course Scribe
+is general enough that any environments which Scribble may have in the
+future which are not in base-level Scribe can be easily fashioned with
+an @make or other short-term hacking on the 20, and then used
+thereafter.
+
+                              Brian
+

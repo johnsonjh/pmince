@@ -1,0 +1,50 @@
+Date: 5 Oct 1981 21:50:39-PDT
+From: Cory.conde at Berkeley
+To: v:AMETHYST-USERS@MIT-AI
+Subject: user's group
+
+
+Mr.'Unicorn',
+	Scott Layson advised me to mail to this account to get info on
+the Amethyst User's group, which I am willing to join! If this is Scott
+reading this letter, thanks for the diskette with the corrections, if
+you're not Scott, please say thanks to him...  Incidentally, do you
+happen to know how one may use the ftp program to 'borrow' CP/M
+programs that I hear of in your system?
+			Thanks, Dan Conde (of the Unix-Corn)
+			<y:conde@Berkeley>
+
+
+Date: 27 September 1981 23:56-EDT
+From: Frank J. Wancho <FJW at MIT-MC>
+Subject:  Soon.. from Mark...
+To: AMETHYST-USERS at MIT-MC
+
+Now that most of you have managed to bring up 2.6 and 1.3, I thought
+you'd might like to know what to look forward to in 4.0 (3.x is the
+equivalent of 2.x for the 16-bitters) and 1.4, according to Mark:
+--------------------
+
+The big new feature will be "state save" and built-in crash recovery.
+"State save" is their name for what happens automatically on ITS (for
+example): exiting to CP/M, then returning to Mince, you will find the
+state of Mince essentially unchanged: all your buffers will still
+exist, and contain the same text (whether modified or not), etc.  A
+couple of random things, like the previous search string, may get lost
+in the process, but "nothing important".  Also, if your hardware or
+Mince should crash while you're editing, you can run the "recover"
+program, which grovels over your old swap file and salvages what it
+can (probably everything except the most recently typed text).
+
+State save is quite definite, but there are some other ideas they are
+tossing around.  One is overlays -- are they worth the trouble?
+Another is an interpreted command language, to make Mince
+interactively extensible.  [Any other ideas?  Comments to the list,
+please. -fjw]
+
+No projected release date yet -- probably 5-6 months at least.
+
+Also in the works is Scribble 1.4, which will have greatly improved
+widow/orphan behavior, more flexible commands, and overlays for
+running in less memory.
+--------------------

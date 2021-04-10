@@ -1,0 +1,221 @@
+Date: 30 August 1981 19:03-EDT
+From: Frank J. Wancho <FJW at MIT-MC>
+To: AMETHYST-USERS at MIT-MC
+
+I have allocated an area in the MC:CPM; directory for Public Domain
+ONLY code which anyone may wish to contribute.  When uploading or
+FTPing a file (from a non-ITS site), simply specify AR9;CPM;fn1 fn2,
+where fn1 and fn2 may each be up to six characters.  Then send a
+msg to this list telling us what the name of the file is and its
+function.
+
+Do NOT include whole pieces of code already available on the
+Amethyst distribution disks.  Rather send directions for updating
+or modifying the code, OR original code.  In other words, don't
+leave entire files around that are already available on the disks.
+
+--Frank
+
+Date: 30 August 1981 09:42-EDT
+From: gai@ai (Glenn Iba)
+Sender: GAI at MIT-AI
+Subject:  Call for advice and info on the Apple/CPM/Amethyst connection
+To: INFO-APPLE at MIT-AI, AMETHYST-USERS at MIT-AI, INFO-CPM at MIT-AI,
+    INFO-MICRO at MIT-AI
+
+Dear Apple users, Amethyst users, and CPM people,
+   I am a new owner of an Apple II plus, and would appreciate help and
+advice from more experienced users. My questions break down into 2 
+groups: (1) questions concerning the system I hope to build
+around my Apple, and (2) general questions about things I don't 
+understand yet. 
+
+My sincere apologies for both the length of this inquiry, and the
+redundancy to many of you who are on more than one of the mailing lists.
+My thanks for your patience and your help.
+
+BACKGROUND:
+	Things I would like to do with my Apple:
+		Text editing (writing papers, reports, and student evaluations)
+		Programming (my previous experience is with LISP and LOGO)
+		Teach my wife programming in LOGO
+		Games and Puzzles (Sargon chess, backgammon, various "arcade games")
+		Graphics hacking / art work
+		Terminal dial up to larger systems (Cyber and Vax in Amherst
+			area, and MIT-AI if I can obtain an inexpensive connection
+			from Northampton-- this latter would be especially 
+			helpful to me)
+		LISP programming and perhaps even some of my thesis research (AI)
+	    (i am unsure as to the feasibility of some of these things and would
+		appreciate your disabusing me of any unrealistic fantasies)
+
+	My current system consists of:
+		48k Apple II plus
+		Apple disk drive (5.25 in.) with DOS 3.3
+		Epson MX-80 printer
+		Home color TV (19" with SupRMod modulator)
+
+FANTASY SYSTEM:
+    The following is the tentative plan I have for expanding my system.
+It is driven largely by my desire to run the AMETHYST software (MINCE 
+and SCRIBBLE).
+	SOFTCARD Z80 with CPM (so as to be able to run MINCE, etc.)
+	80 column, upper/lower case display
+	2nd disk drive (5.25 in.)
+	16k RAMCARD (to extend to 64k)
+	modem
+	(color monitor?)
+	
+QUESTIONS ON SYSTEM EXPANSION:
+
+0. Is my "fantasy system" feasible? That is, WILL IT WORK??
+   I am especially anxious to learn of any interaction effects
+   or incompatibilities of pieces of the system I am considering.
+   Are there components or angles I've overlooked? 
+
+1. Will there be enough slots to put it all together (i count 6)? 
+   Will some of them be wanting to go in the same slot?
+   Will the Apple heat up and/or explode with all those boards plugged in??
+   If so, is it a solution to remove the power supply to outside the Apple
+   casing? Would a good fan be adequate to do the job?
+
+2. Is it worth the bother (and expense). I think I can scrounge up
+   the money, but will I be reasonably satisfied with the final result
+   or will I have only an expensive kludge?
+
+3. Has anyone already tried a similar system? I would be EXTREMELY
+   INTERESTED in corresponding with you to learn how it worked out!!
+
+4. Are people happy with the Amethyst package? What are peoples' experiences
+   with MINCE and SCRIBBLE on the Apple? How does SCRIBBLE fare when
+   combined with the Epson MX-80?
+
+5. Are there radical alternatives I should consider before committing
+   myself further to this project? (eg. selling the Apple and building
+   or acquiring an alternative system?) How serious a constraint is the
+   8 bit processor and 64k address space?? 
+
+6. Any specific recommendations or warnings regarding alternative hardware
+   (such as 80 column boards, 16k ram cards, and modems)? In particular
+   I am curious as to which (if any) of the 80 column boards would impose the
+   least drain on the power supply? 
+
+7. Will a home tv provide adequate resolution for 80 column upper/lower
+   case display? How much additional resolution would I get from a color
+   monitor (for both text and graphics)?
+
+8. Do ALL the 80 column boards automatically provide upper/lower case display?
+   (I'm currently inclined toward the Videx Videoterm)
+
+9. Is the Videx Keyboard Enhancer redundant with the Videoterm board?
+   (if not, is it a reasonable way to upgrade the keyboard?)
+   What is the best way for me to obtain keyboard entry of upper/lower case
+   and other ascii characters (preferably using the shift key)??
+
+10. What should I look for in a modem? Is the Hayes Micromodem II everything
+   its cracked up to be? Are there reasonable 1200 baud modems for the
+   Apple?
+
+11. Will Apple Pascal software run on the alternative 16k ram boards (Andromeda,
+	Microsoft RAMCARD, etc.)? Would I really want Apple Pascal anyway?
+
+12. Does anyone have experience with any of the "friction feed" add-ons for
+   the MX-80 (such as Orange Micro's, or the one advertised for $15)? 
+   What about the dot graphics updrade (do I correctly recall they claimed
+   this will also provide italic fonts?)?
+
+13. How can I get the best prices on equipment I purchase? Are mail order
+   houses generally reliable, or are some of them fly-by-nighters that may
+   take my money and run? Are there ways I can get wholesale prices on
+   single quantity (I expect I'm dreaming, but it can't hurt to ask).
+
+14. Is service a big issue with micro-computer ownership? (I've only had my
+   system for 3 weeks now). Should I be wary of Mail Order houses on this
+   account?
+
+GENERAL INFORMATIONAL QUESTIONS:
+
+1. Could some kind and patient soul please explain to me what is involved
+   in Up and Down Loading? I understand (i think) that they have to do
+   with shipping files (or is it just programs? -- please clarify) back
+   and forth between micros and mainframes. Are the problems primarily due
+   to differences in word size? or are there other more subtle issues that
+   I can't imagine?
+
+2. Has anyone developed a central catalog of software purchased or written
+   by various people who would be willing to share their resources?
+
+3. Any suggestions as to my best means for hooking into MIT-AI from the
+   Northampton/Amherst area? Can I do network hopping through any commercial
+   networks at reasonable prices? Are long distance phone lines reliable
+   for transmitting information, or are they too noisy? Any and all suggestions
+   will be gratefully accepted (and shared with our own Dave McDonald (DDM) who
+   is also located in Amherst).
+
+4. Can one get away with "turning over" diskettes and using the other side?
+   One can cut out a second "write enable" hole, and store things on both
+   sides of a diskette. Is there any danger of information bleed-through
+   from using both sides simultaneously for storage?? Does the risk become
+   greater as the disk surfaces wear away??
+
+Thank you again for your patience and help. My apologies for this inordinately
+long message. I'm very anxious to get on as quickly as possible to expanding
+my system, but I'd like to benefit from all your prior experiences.
+Apologies also for the redundancy entailed in my sending this to the several
+"micro" mailing lists.
+
+
+
+Date: 29 August 1981 0823-EDT (Saturday)
+From: Bill Sholar <William.Sholar at CMU-10A> 
+To: Brian N. Hess <BNH at MIT-ML> 
+Subject:  Bug Fixed
+CC: Amethyst-Users at MIT-MC
+Sender: William.Sholar at CMU-10A
+In-Reply-To:  Brian N. Hess's message of 27 Aug 81 17:05-EST
+Message-Id: <29Aug81 082338 WS70@CMU-10A>
+
+The bug I reported was squashed when MOU released their revised
+MINCE accompanying their SCRIBBLE 1.3 -- change sheet dated 8/24/81.
+
+The version number of MINCE remained 2.6, however.
+
+For those who care, Keith Peterson's CRCK program indicates
+that these .CRL files were new: ATERM, CTERM, and LATERM.
+
+	Bill Sholar
+
+Date: 25 August 1981 2249-EDT (Tuesday)
+From: Bill Sholar <William.Sholar at CMU-10A> 
+To: Amethyst-Users at MIT-MC
+Subject:  a bug?
+Sender: William.Sholar at CMU-10A
+Message-Id: <25Aug81 224949 WS70@CMU-10A>
+
+
+I have found that when I recompile and relink MINCE or LMINCE, even
+without changing anything, I encounter the following problem:
+
+	MINCE filename seems to occasionally crash the system upon
+		execution;
+
+	C-X C-R filename seems to work if MINCE is entered without
+		a filename as an argument, but the system crashes as
+		soon as a TAB character needs to be displayed.
+
+As a test, I recompiled and relinked both MINCE and LMINCE using the
+unchanged sources and .CRL files, and using MC.SUB/LMC.SUB.  Then
+I entered the editor, and tried to load BINDINGS.C.  It appeared to
+load, but when I tried to move to the next page, the system crashed.
+I reset the system and tried again, using COMM1.C, and the system
+crashed after the first words of the first line.  This occurred a
+bunch of times, with different compilations.
+
+The only thing that seems significant is that the crash always 
+occurred when a TAB should have been displayed on the console.
+
+Has anyone else had this problem  Comments  Suggestions  I'll
+contact MOU next . . .
+
+	Bill Sholar		<SHOLAR @ CMUA>
+

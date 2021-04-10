@@ -1,0 +1,28 @@
+Gyro@MIT-AI 07/05/81 13:40:28 Re: Missing(?) Commands
+To: AMETHYST-USERS at MIT-MC
+You are correct: there are no Insert File nor Write Region commands.
+But they're not hard to write, if you're willing to accept the kluge of
+secretly reading into and writing from the kill buffer (the kill buffer
+is available to code as a real buffer; you just can't get it onto the
+screen).
+
+So if you want them, write them!
+
+-- Scott
+
+
+Date: 1 July 1981 23:48-EDT
+From: Frank J. Wancho <FJW at MIT-MC>
+Subject:  Missing(?) Commands
+To: AMETHYST-USERS at MIT-MC
+
+Did I miss something, or is there not an equivalent to M-X Insert
+File and M-X Write Region commands?  (Yes, I know you can read a file
+into another buffer and kill and yank it into where you want it, and
+vice-versa, but that's kludgey.)
+
+As for being able to use my Edit Key, I stand corrected.  By defining
+the console input to be direct port I/O, you are allowed 8-bit
+input...
+
+--Frank
