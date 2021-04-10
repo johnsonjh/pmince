@@ -2,7 +2,8 @@
 
 
 
-		     The KMince Keypad Editor		     ___ ______ ______ ______
+		     The KMince Keypad Editor
+		     ___ ______ ______ ______
 	    (A description of the keypad extensions to Mince)
 
 			   Robert Heller
@@ -54,7 +55,8 @@
 
 
 
-		    Preface and Acknowledgements		    _______ ___ ________________
+		    Preface and Acknowledgements
+		    _______ ___ ________________
 
 
     KMince is a conversion from the Keymacs Keypad Editor[1], written
@@ -67,7 +69,8 @@ the MockLisp code.
 
 
 
-			1. Introduction			_  ____________
+			1. Introduction
+			_  ____________
 
 
      This document describes the "KMince" Keypad Editor extension to
@@ -127,7 +130,8 @@ through the lesson (primer) section of the Mince manual.
 			    - 1 -
 
 
-			2. The Keypad			_  ___ ______
+			2. The Keypad
+			_  ___ ______
 
 
      Most of the "smart" terminals have a numeric keypad (usually on
@@ -247,7 +251,8 @@ buffer.  The "shifted" 1-key deletes to beginning of line and the
 			          - 3 -
 
 
-			3. Other Features			_  _____ ________
+			3. Other Features
+			_  _____ ________
 
 
 
@@ -306,7 +311,8 @@ Experimental Goodies:
 				 - 4 -
 
 
-			   4. References			   _  __________
+			   4. References
+			   _  __________
 
 
 [1] "The Keymacs Keypad Editor Primer and Reference Manual", by
