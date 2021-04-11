@@ -19,8 +19,8 @@
                 as well as the following lines.  This gives rise to  a
                 style that looks like
 
-				  if (foobar) {
-        	                          dothis();
+                                  if (foobar) {
+                                          dothis();
                                           andthis();
                                   }
 
@@ -100,12 +100,12 @@
                       command  line.  You will have to enter the  TERM
                       and   UTIL   libraries   separately   (when   L2
                       complains) and then also re-enter the  DEFF  and
-		      DEFF2 library names (in that order).
+                      DEFF2 library names (in that order).
 
             4.  This is NOT  (sigh...) a very fancy 'C' mode.  It will
                 not take a line like
 
-		if (itistrue()) { do1(); do2();} else { do3(); do4();}
+                if (itistrue()) { do1(); do2();} else { do3(); do4();}
 
                 and  magically transform it  into  "acceptable"  style
                 like

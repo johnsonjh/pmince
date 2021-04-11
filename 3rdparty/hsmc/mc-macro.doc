@@ -11,12 +11,12 @@ comm2.c eventually) made in bindings.c and the starting point is the last
 hack you did to put in the reset function. There is also a rather trivial
 change to the mince.gbl file: change the line
 
-			int spare[7];
+                        int spare[7];
 
 to
 
-			#define NSPARE 14
-			char spare[NSPARE]; .
+                        #define NSPARE 14
+                        char spare[NSPARE]; .
 
 This will just allow us to make other changes without screwing up the
 world later (i.e. if we want to use more of spare for other stuff). We
@@ -31,11 +31,11 @@ and 3)adding the MMakMacro() and MDoMacro() functions.
 
   Add the following lines to finit2():
 
-	int MMakMacro(), MDoMacro();	/* define as functions */
+        int MMakMacro(), MDoMacro();    /* define as functions */
 
-	functs[128+13] = MDoMacro;				/* M-C-M */
+        functs[128+13] = MDoMacro;                              /* M-C-M */
 
-	functs[128+'M']=functs[128+'m'] = MMakMacro;	/* M-M */
+        functs[128+'M']=functs[128+'m'] = MMakMacro;    /* M-M */
 
 in the appropriate places (The last two must follow the loop that
 initializes the functs to MNotImpl). These statements bind the making of
@@ -46,11 +46,11 @@ think of better bindings let me know. These are the ones used by Barry.
 
   Change the line 
 
-			*drv = '\0';
+                        *drv = '\0';
 
 found in the UInit() function to
 
-			*spare = *drv = '\0'; .
+                        *spare = *drv = '\0'; .
 
 This keeps you from making a silly error by executing what ever garbage
 happens to be there initially.
@@ -65,22 +65,22 @@ time around.)
 
 MMakMacro()
 {
-	GetArg("Macro <C-]>: ", '\035', spare, NSPARE);
+        GetArg("Macro <C-]>: ", '\035', spare, NSPARE);
 }
 
 MDoMacro()
 {
-	char *macrop;
-	
-	TSetPoint(TMaxRow() - 1, 0);
-	TCLEOL();
-	for (macrop = spare; *macrop; ++macrop) {
-		TPrntChar(*macrop);
-		if (!QFull(&kbdq))
-			QShove(*macrop, &kbdq);
-		else
-			TBell();
-	}
+        char *macrop;
+        
+        TSetPoint(TMaxRow() - 1, 0);
+        TCLEOL();
+        for (macrop = spare; *macrop; ++macrop) {
+                TPrntChar(*macrop);
+                if (!QFull(&kbdq))
+                        QShove(*macrop, &kbdq);
+                else
+                        TBell();
+        }
 }
 
 That's it. Compile bindings.c at -e7900 and do the usual link. Now you've
@@ -95,7 +95,7 @@ is put into the keyboard command que. If it won't fit the bell rings and
 you'll see how much was actually entered into the que. This part will be
 executed.
 
-						See you, Herb.
+                                                See you, Herb.
 
 P.S. let me know if you run into any trouble with this since I've been a
 bit sketchy.

@@ -1,6 +1,6 @@
-		    Log-In A New Disk For R/W Within MINCE
-				By Herb Schulz
-				   10/14/82
+                    Log-In A New Disk For R/W Within MINCE
+                                By Herb Schulz
+                                   10/14/82
 
 Introduction:
 ------------
@@ -62,107 +62,107 @@ get rid of all functions or sections of functions that involve Page mode. These
 functions are found in the files BINDINGS.C, COMM1.C, COMM3.C and SUPPORT.C.
 For those using my 'C' mode the changes are simpler:
 
-	BINDINGS.C:	Comment out the lines
+        BINDINGS.C:     Comment out the lines
 
-				case 'o':
-					Rebind(MInsert,MOverwrite);
+                                case 'o':
+                                        Rebind(MInsert,MOverwrite);
 
-			from the SetModes() function towards the end of the
-			file. In addition, comment out the MOverwrite() 
-			function declaration in SetModes(). That
-			declaration will only give trouble if L2 has to go
-			into "fixup" mode to link on your machine.
+                        from the SetModes() function towards the end of the
+                        file. In addition, comment out the MOverwrite() 
+                        function declaration in SetModes(). That
+                        declaration will only give trouble if L2 has to go
+                        into "fixup" mode to link on your machine.
 
-	COMM1.C:	Comment out the two remaining functions associated
-			with Page (i.e. Over) mode: 
-				     MOverwrite() and MPFChar().
+        COMM1.C:        Comment out the two remaining functions associated
+                        with Page (i.e. Over) mode: 
+                                     MOverwrite() and MPFChar().
 
-	COMM3.C:	All the Page mode functions in COMM3.C should already
-			be commented out.
+        COMM3.C:        All the Page mode functions in COMM3.C should already
+                        be commented out.
 
-	SUPPORT.C:	Comment out the line
+        SUPPORT.C:      Comment out the line
 
-				if (!strcmp(tmname,"over")) return('o');
+                                if (!strcmp(tmname,"over")) return('o');
 
-			in the function CheckMode().
+                        in the function CheckMode().
 
 Adding The Reset Function:
 ------ --- ----- --------
 
   The additions/changes involve the files MINCE.GBL, BINDING.C and COMM1.C.
 
-	MINCE.GBL:	Comment out the line
+        MINCE.GBL:      Comment out the line
 
-				int spare[10];
+                                int spare[10];
 
-			found near the end of the file and add the lines
+                        found near the end of the file and add the lines
 
-				int dswp, dflt;
-				char drv[2];
-				int spare[7];
+                                int dswp, dflt;
+                                char drv[2];
+                                int spare[7];
 
-			to define the new global variables.
+                        to define the new global variables.
 
-	BINDINGS.C:	The UInit() function found at the end of this file is
-			presently empty. Enter the following code into that
-			function:
+        BINDINGS.C:     The UInit() function found at the end of this file is
+                        presently empty. Enter the following code into that
+                        function:
 
-			  char fcb[36];	/* dummy fcb to find the .SWP file */
+                          char fcb[36]; /* dummy fcb to find the .SWP file */
 
-			  *drv = '\0';	/* null the string initially */
-			  dflt = bdos(25);
-			  setfcb(fcb, SWAPFNAME);
-			  dswp = (bdos(17, fcb) == 0xff) ? 0 : dflt;
+                          *drv = '\0';  /* null the string initially */
+                          dflt = bdos(25);
+                          setfcb(fcb, SWAPFNAME);
+                          dswp = (bdos(17, fcb) == 0xff) ? 0 : dflt;
 
-			to have dflt and dswp initialized.
+                        to have dflt and dswp initialized.
 
-			In addition add code to bind the log-in function
-			to ^X^L. This is done by adding the lines
+                        In addition add code to bind the log-in function
+                        to ^X^L. This is done by adding the lines
 
-				int MResetOne();
-			and
+                                int MResetOne();
+                        and
 
-				functs[256+12] = MResetOne;
+                                functs[256+12] = MResetOne;
 
-			into the "variable" declaration list and the function
-			bindings respectively in the function finit3().
+                        into the "variable" declaration list and the function
+                        bindings respectively in the function finit3().
 
 
-	COMM1.C:	Add the following function to this file:
+        COMM1.C:        Add the following function to this file:
 
-	MResetOne()
-	{
-		int dreq;		/* requested drive */
-	
-		if (!GetArg("Log Which Drive <CR>: ", CR, drv, 2))
-			goto out;
-		
-		if ((dreq = toupper(*drv) - 'A') < 0 || dreq > 15) {
-			Error("Illegal Drive");
-			goto out;
-		}
-		
-		if (dreq == dswp) {
-			Error(".SWP Is There!");
-			goto out;
-		}
-		
-		/*
-		** if dflt == 0 (i.e. A:) .SWP MUST be on A: and dreq = 0 is
-		** already weeded out by previous if (). This will only execute
-		** if dflt != 0 and dreq == dflt. In that case we will
-		** temporarily make A: the default since the bdos(37..) call
-		** will not reset the default drive.
-		*/
-		if (dreq == dflt)
-			bdos(14, 0);
-		
-		/* here's the trick! The undocumented CP/M 2.xx BDOS call */
-		bdos(37, 1 << dreq);
-		
-		bdos(14, dflt);
-	out:	arg = 0;
-	}
+        MResetOne()
+        {
+                int dreq;               /* requested drive */
+        
+                if (!GetArg("Log Which Drive <CR>: ", CR, drv, 2))
+                        goto out;
+                
+                if ((dreq = toupper(*drv) - 'A') < 0 || dreq > 15) {
+                        Error("Illegal Drive");
+                        goto out;
+                }
+                
+                if (dreq == dswp) {
+                        Error(".SWP Is There!");
+                        goto out;
+                }
+                
+                /*
+                ** if dflt == 0 (i.e. A:) .SWP MUST be on A: and dreq = 0 is
+                ** already weeded out by previous if (). This will only execute
+                ** if dflt != 0 and dreq == dflt. In that case we will
+                ** temporarily make A: the default since the bdos(37..) call
+                ** will not reset the default drive.
+                */
+                if (dreq == dflt)
+                        bdos(14, 0);
+                
+                /* here's the trick! The undocumented CP/M 2.xx BDOS call */
+                bdos(37, 1 << dreq);
+                
+                bdos(14, dflt);
+        out:    arg = 0;
+        }
 
 Compiling And Linking:
 --------- --- -------
@@ -201,10 +201,10 @@ haven't put in my 'C' mode mods) let me know. I'll try to figure out what's
 happening and fix it up. You may contact me through CBBS in Chicago
 (1-312-545-8086, 24 Hr.) or write/call
 
-				  Herb Schulz
-			    6008 Forest View Rd, 3C
-			       Lisle, Il. 60532
-				1-312-968-6927 .
+                                  Herb Schulz
+                            6008 Forest View Rd, 3C
+                               Lisle, Il. 60532
+                                1-312-968-6927 .
 
-						     Hope you can use it,
-							    Herb.
+                                                     Hope you can use it,
+                                                            Herb.
