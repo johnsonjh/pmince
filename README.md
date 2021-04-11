@@ -17,11 +17,9 @@
 ## Building
 
 - Required:
-
   - C compiler (`gcc`, `clang`, _etc_.)
   - GNU `make`
   - POSIX `cmp`, `env`, and `sh` (_Bourne_ _shell_)
-
 - Optional:
   - Tcl `expect` and POSIX `sed`
     - Needed to override default terminal configuration (24 cols, 80 rows).
