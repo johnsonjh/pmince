@@ -1,4 +1,4 @@
-Keeping in mind that I'm only an *accidental* "expert" (thus, not *actually* an expert at all) regarding **MINCE**, the following should be considered facts as they reference **verifiable** sources:
+# Notes
 
 ## MINCE 1: 1979
 
