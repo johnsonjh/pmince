@@ -67,6 +67,7 @@ The majority of **COM** is **public domain software**, however,
   **RunCPM** by _Mockba the Borg_
   - These routines are Copyright © 2017 by _Mockba the Borg_, and released under
     the **MIT license**.
+
 ```text
 MIT License
 
@@ -90,10 +91,12 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
+
 - **CCOM80** may incorporate or adapt some **BDOS** simulation routines from
   **CPM** by _Joseph_ _H._ _Allen_ and _Vlad_ _Shurupov_
   - These routines are Copyright © 2016—2021 by _Joseph H. Allen_ and _Vlad_
-  _Shurupov_, and released under the **MIT license**.
+    _Shurupov_, and released under the **MIT license**.
+
 ```text
 MIT License
 
@@ -119,10 +122,11 @@ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 IN THE SOFTWARE.
 ```
 
-## SIM68K 
+## SIM68K
 
 **Portable MINCE** may incorporate or adapt some Motorola **68000** simulation
 routines from **Musashi** by _Karl Stenerud_.
+
 - These routines are Copyright © 1998—2020 by _Karl Stenerud_, and released
   under the **MIT license**.
 
@@ -152,9 +156,9 @@ THE SOFTWARE.
 
 ## coffwrap
 
-The included `coffwrap` tool is an approximation of a tool by the same
-name by _Sequent Computer Systems_, and distributed with their **DYNIX**
-and **DYNIX/ptx** operating systems.
+The included `coffwrap` tool is an approximation of a tool by the same name by
+_Sequent Computer Systems_, and distributed with their **DYNIX** and
+**DYNIX/ptx** operating systems.
 
 This reimplementation is similar only in name and purpose, and contains no
 _Sequent Computer Systems_ source code.
@@ -189,8 +193,8 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ## BD Software C
 
-**Portable MINCE** may incorporate and adapt libraries (and other
-materials) from **BDS C**, by _Leor Zolman_ of _BD Software_.
+**Portable MINCE** may incorporate and adapt libraries (and other materials)
+from **BDS C**, by _Leor Zolman_ of _BD Software_.
 
 **BDS C** is **public domain software**.
 
@@ -209,8 +213,8 @@ Leor Zolman
 
 ## L2 (New) Linker
 
-**Portable MINCE** includes the **L2 (New) Linker** for **BDS C**, by
-_Scott_ _W._ _Layson_.
+**Portable MINCE** includes the **L2 (New) Linker** for **BDS C**, by _Scott_
+_W._ _Layson_.
 
 The **L2 (New) Linker** is **public domain software**.
 
@@ -230,20 +234,19 @@ This code is in the public domain.
 
 ## AUG (Amethyst Users Group) data
 
-The **Portable MINCE** distribution contains files collected and distributed
-by "**AUG**", the _**Amethyst Users Group**_.
+The **Portable MINCE** distribution contains files collected and distributed by
+"**AUG**", the _**Amethyst Users Group**_.
 
 When the **AUG** was an active organization, membership was restricted to
 **Amethyst**, **MINCE**, and **Scribble** license holders, per an agreement
 between _**Mark of the Unicorn, Inc.**_ and the _**Amethyst Users Group**_.
 
-However, **AUG** is now defunct (since at least 1994), and the **AUG** 
-archives have been publicly available and openly distributed (since at least
-1988) by many organizations, including the _Massachusetts Institute of
-Technology_ _**CPMUG**_ _Repository_, _**SIMTEL**_‑_20_, _**SIG/M**_,
-_**PC/Blue**_, _**Walnut Creek**_ _CD‑ROM_, _Software Tools of Australia_,
-_Oakland University_ via the _**Oak Repository**_, _Demon Internet_, and
-many others.
+However, **AUG** is now defunct (since at least 1994), and the **AUG** archives
+have been publicly available and openly distributed (since at least 1988) by
+many organizations, including the _Massachusetts Institute of Technology_
+_**CPMUG**_ _Repository_, _**SIMTEL**_‑_20_, _**SIG/M**_, _**PC/Blue**_,
+_**Walnut Creek**_ _CD‑ROM_, _Software Tools of Australia_, _Oakland University_
+via the _**Oak Repository**_, _Demon Internet_, and many others.
 
 The **AUG** archives included in the **Portable MINCE** distribution contains
 **only** data that was known to be previously publicly available and openly
