@@ -5,22 +5,23 @@
 ## Overview
 
 - **MINCE** is an Emacs-like text editor from **Mark of the Unicorn, Inc.**
-- Versions available for **CP/M-80**, **CP/M-68K**, **ST**/**GEMDOS**,
-  **PC/**DOS**, **PDP/RSX-11**, and **UNIX\*\* systems
+- Versions were available for **CP/M-80**, **CP/M-68K**, **ST**/**GEMDOS**,
+  **PC**/**DOS**, **PDP/RSX-11**, and **UNIX** systems
 
 ## Portable MINCE
 
 - "**Portable MINCE**" is _real_ **MINCE**, plus:
   - **CP/M** system call translation
   - **8080/Z80** CPU emulation
+    - **68000** support planned
 
 ## Building
 
-- Required:
-  - C compiler (`gcc`, `clang`, _etc_.)
-  - GNU `make`
+- **Required**:
+  - ANSI/ISO C compiler (`gcc`, `clang`, _etc_.)
   - POSIX `cmp`, `env`, and `sh` (_Bourne_ _shell_)
-- Optional:
+  - GNU `make`
+- **Optional**:
   - Tcl `expect` and POSIX `sed`
     - Needed to override default terminal configuration (24 cols, 80 rows).
 
@@ -74,7 +75,7 @@ Review the [Makefile](/GNUmakefile) for more information.
 - **Cray** (VSMP)
   - **UNICOS** (SV1) 10.0.1.2, Cray Standard C 6.6.0.3
   - **UNICOS** (J98) 10.0.0.2, Cray Standard C 6.4.0.0
-    - **Issue**: _File I/O is not working on **UNICOS**, everything else is OK._
+    - **Issue**: _File I/O not working on **UNICOS**, everything else is OK._
 
 ## Roadmap
 
@@ -109,9 +110,9 @@ Review the [Makefile](/GNUmakefile) for more information.
 - User-configurable key bindings and remapping.
   - Allow user configuration _without_ requiring full recompilation.
   - Normalize key bindings and mappings between **MINCE** flavors.
-- Support for **RSX-11**, (**Open**)**VMS**, and **OS/2** operating systems.
-- Create packages: **NFPM** / **FPM**, **Homebrew** _tap_ / _cask_, **pkgsrc**,
-  etc.
+- Support for **RSX-11**, **VMS**, and **OS/2** operating systems.
+- Create packages using **NFPM** / **FPM**, **Homebrew** _tap_ / _cask_,
+  **pkgsrc**, etc.
 
 ## Original Authors
 
