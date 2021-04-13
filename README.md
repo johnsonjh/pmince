@@ -5,8 +5,13 @@
 ## Overview
 
 - **MINCE** is an Emacs-like text editor from **Mark of the Unicorn, Inc.**
-- Versions were available for **CP/M‑80**, **CP/M‑68K**, **ST**/**GEMDOS**,
-  **PC**/**DOS**, **PDP/RSX‑11**, and **UNIX** systems
+- Versions were available for many operating sysetms
+  - **CP/M‑80**
+  - **CP/M‑68K**
+  - **ST**/**GEMDOS**
+  - **PC**/**DOS**
+  - **RSX‑11**
+  - **UNIX**
 
 ## Portable MINCE
 
@@ -105,7 +110,6 @@ Review the [Makefile](/GNUmakefile) for more information.
   - Automatically invoke **MINCE‑68K** version for large input files.
   - End-user configuration of default **MINCE** flavor (**MINCE‑80** or
     **MINCE‑68K**).
-    - Native execution (_translation_) for **MINCE‑68K** on **M68000** systems.
 - User-configurable key bindings and remapping.
   - Allow user configuration _without_ requiring full recompilation.
   - Normalize key bindings and mappings between **MINCE** flavors.
