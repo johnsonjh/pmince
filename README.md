@@ -119,7 +119,7 @@ Review the [Makefile](/GNUmakefile) for more information.
   \<[trnsz@pobox.com](mailto:trnsz@pobox.com)\>
 - **MINCE**: Copyright © 1980—1985 by **Mark of the Unicorn, Inc.**
 - **DIFF**: Copyright © 1981 by **Mark of the Unicorn, Inc.**
-- **Scribble**, **Pencil**, **Crayon** _1.3_: Copyright © 1981 by **Mark of the
+- **Scribble**, **Pencil**, **Crayon**: Copyright © 1981 by **Mark of the
   Unicorn, Inc.**
   - **MINCE** / **DIFF** / **Scribble** / **Pencil** / **Crayon**: Authored by
     _Jason_ _T._ _Linhart_, _Scott_ ("_Gyro_") _Layson_ _Burson_, _Craig_ _A._
