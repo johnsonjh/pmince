@@ -49,6 +49,7 @@
 #include <unistd.h>
 
 #include "version.h"
+#include "license.h"
 
 /*
 ** Some interesting CP/M constants.
