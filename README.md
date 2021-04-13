@@ -27,6 +27,7 @@
   - POSIX `cmp`, `env`, and `sh` (_Bourne_ _shell_)
   - GNU `make`
 - **Optional**:
+
   - Tcl `expect` and POSIX `sed`
     - Needed to override default terminal configuration (24 cols, 80 rows).
 
@@ -119,7 +120,7 @@
 
 ## Original Authors
 
-- **Portable MINCE**: Copyright © 2021 *Jeffrey H. Johnson*
+- **Portable MINCE**: Copyright © 2021 _Jeffrey H. Johnson_
   \<[trnsz@pobox.com](mailto:trnsz@pobox.com)\>
 - **MINCE**: Copyright © 1980—1985 by **Mark of the Unicorn, Inc.**
 - **DIFF**: Copyright © 1981 by **Mark of the Unicorn, Inc.**
