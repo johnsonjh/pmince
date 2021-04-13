@@ -71,7 +71,7 @@ The majority of **COM** is **public domain software**, however,
 ```text
 MIT License
 
-Copyright (c) 2017 Mockba the Borg
+Copyright © 2017 Mockba the Borg
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -139,7 +139,7 @@ _Sequent Computer Systems_ source code.
 ```text
 The MIT License (MIT)
 
-Copyright (c) 2015 Ondrej Novak
+Copyright © 2015 Ondrej Novak
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
