@@ -30,7 +30,7 @@
   - Tcl `expect` and POSIX `sed`
     - Needed to override default terminal configuration (24 cols, 80 rows).
 
-Review the [Makefile](/GNUmakefile) for more information.
+- Review the [Makefile](/GNUmakefile) for more information.
 
 ## Usage
 
