@@ -5,12 +5,12 @@
 ## Overview
 
 - **MINCE** is an Emacs-like text editor from **Mark of the Unicorn, Inc.**
-- Versions available for **CP/M-80**, **CP/M-68K**, **ST**/**GEMDOS**, **PC/**DOS**, **PDP/RSX-11**, and
-  **UNIX** systems
+- Versions available for **CP/M-80**, **CP/M-68K**, **ST**/**GEMDOS**,
+  **PC/**DOS**, **PDP/RSX-11**, and **UNIX\*\* systems
 
 ## Portable MINCE
 
-- "**Portable MINCE**" is *real* **MINCE**, plus:
+- "**Portable MINCE**" is _real_ **MINCE**, plus:
   - **CP/M** system call translation
   - **8080/Z80** CPU emulation
 
@@ -118,7 +118,8 @@ Review the [Makefile](/GNUmakefile) for more information.
 - **Portable MINCE** contact:
   _[Jeffrey H. Johnson](https://github.com/johnsonjh/pmince)_
   \<[trnsz@pobox.com](mailto:trnsz@pobox.com)\>.
-- **MINCE** _2.5_, _2.6_, _2.63_: Copyright © 1980-1985 by **Mark of the Unicorn, Inc.**
+- **MINCE** _2.5_, _2.6_, _2.63_: Copyright © 1980-1985 by **Mark of the
+  Unicorn, Inc.**
 - **DIFF** _1.1_: Copyright © 1981 by **Mark of the Unicorn, Inc.**
 - **Scribble**, **Pencil**, **Crayon** _1.3_: Copyright © 1981 by **Mark of the
   Unicorn, Inc.**
