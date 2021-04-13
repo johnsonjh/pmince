@@ -5,13 +5,13 @@
 ## Overview
 
 - **MINCE** is an Emacs-like text editor from **Mark of the Unicorn, Inc.**
-- Versions were available for many operating sysetms
-  - **CP/M‑80**
-  - **CP/M‑68K**
-  - **ST**/**GEMDOS**
-  - **PC**/**DOS**
-  - **RSX‑11**
-  - **UNIX**
+  - Versions were available for many operating sysetms
+    - **CP/M‑80**
+    - **CP/M‑68K**
+    - **ST**/**GEMDOS**
+    - **PC**/**DOS**
+    - **RSX‑11**
+    - **UNIX**
 
 ## Portable MINCE
 
