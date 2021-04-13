@@ -95,7 +95,7 @@ SOFTWARE.
 ## Musashi
 
 **Portable MINCE** may incorporate or adapt some Motorola **68000** simulation
-routines from _Musashi_ by _Karl Stenerud_.
+routines from **Musashi** by _Karl Stenerud_.
 
 - These routines are Copyright © 1998—2001 by _Karl Stenerud_, and released
   under the **MIT license**.
