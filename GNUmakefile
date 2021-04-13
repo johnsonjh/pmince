@@ -255,7 +255,7 @@ cflags.L: osconf
 
 #############################################################################
 
-coffwrap$(OEXT): coffwrap.c version.h cflags.L
+coffwrap$(OEXT): coffwrap.c version.h license.h cflags.L
 	$(CC) $(CFLAGS) \
 	    coffwrap.c \
 	    -o $@
@@ -437,7 +437,7 @@ endif
 
 #############################################################################
 
-com.h: version.h
+com.h: version.h license.h
 
 #############################################################################
 
@@ -458,7 +458,7 @@ install: osconf mince$(OEXT) strip
 
 #############################################################################
 
-hpkg: osconf version.h mince$(OEXT) strip
+hpkg: osconf version.h license.h mince$(OEXT) strip
 	@if [ "$(OS)" != "haiku" ]; then \
 		printf '\n\n%s\n\n' \
 		" **** Error: hpkg target is only for Haiku OS ****"; \

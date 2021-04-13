@@ -1,3 +1,3 @@
-#ifndef VERSION
-#define VERSION "0.13"
+#ifndef LICENSE
+#define LICENSE "PMINCE: Copyright (C) 2021 by Jeffrey H. Johnson <trnsz@pobox.com>\n\nMINCE: Copyright (C) 1980-1985 by Mark of the Unicorn, Inc.\nDIFF: Copyright (C) 1981 by Mark of the Unicorn, Inc.\nSCRIBBLE: Copyright (C) 1981 by Mark of the Unicorn, Inc.\n\nCCOM80: Copyright (C) 2021 by Jeffrey H. Johnson <trnsz@pobox.com>\n    CCOM80 is derived from COM: Copyright (C) 1984-2008 by Jim Cathey,\n        Edmund Ramm, Charlie Gibbs, and Willi Kusche.\n	CCOM80 may incorporate or adapt routines from RunCPM by Mockba the Borg.\n	    These routines are Copyright (C) 2017 by Mockba the Borg."
 #endif
