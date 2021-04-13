@@ -91,10 +91,14 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
+
 ## Musashi
 
-**Portable MINCE** may incorporate or adapt some Motorola **68000** simulation routines from _Musashi_ by _Karl Stenerud_.
-  - These routines are Copyright © 1998—2001 by _Karl Stenerud_, and released under the **MIT license**.
+**Portable MINCE** may incorporate or adapt some Motorola **68000** simulation
+routines from _Musashi_ by _Karl Stenerud_.
+
+- These routines are Copyright © 1998—2001 by _Karl Stenerud_, and released
+  under the **MIT license**.
 
 ```text
 MIT License
