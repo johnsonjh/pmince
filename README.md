@@ -115,7 +115,7 @@ Review the [Makefile](/GNUmakefile) for more information.
 
 ## Original Authors
 
-- **Portable MINCE** contact: Jeffrey H. Johnson
+- **Portable MINCE** contact: *Jeffrey H. Johnson*
   \<[trnsz@pobox.com](mailto:trnsz@pobox.com)\>
 - **MINCE**: Copyright © 1980—1985 by **Mark of the Unicorn, Inc.**
 - **DIFF**: Copyright © 1981 by **Mark of the Unicorn, Inc.**
