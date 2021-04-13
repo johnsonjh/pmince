@@ -1,0 +1,75 @@
+1-Feb-85 08:17:58-MST,3400;000000000000
+Return-Path: <info-cpm-request@AMSAA.ARPA>
+Received: from AMSAA by SIMTEL20.ARPA with TCP; Fri 1 Feb 85 08:17:46-MST
+Received: From brl-tgr.arpa.ARPA by AMSAA via smtp;  1 Feb 85 9:23 EST
+Received: from usenet by BRL-TGR.ARPA id a004431; 1 Feb 85 9:09 EST
+From: Dave Brower <daveb@rtech.arpa>
+Newsgroups: net.micro.cpm
+Subject: RE: MINCE, PERFECT WRITER, backspace w/SCRIBBLE, etc.
+Message-ID: <118@rtech.ARPA>
+Date: 30 Jan 85 00:55:18 GMT
+Xref: seismo net.micro.cpm:3888
+To:       info-cpm@AMSAA.ARPA
+
+> does anyone know how to do this?  In principle, it seems that you
+> should be able to insert into a MINCE-processed file a CTRL-H
+> (backspace), SCRIBBLE it, and then CRAYON it to get overstriking of
+> two characters, but I can't do it.  Can anyone out there help?
+
+The Scribble formatter, from which Perfect Format and the Final Word are
+derived, tokenizes input and strips out 'garbage' characters such as
+CTRL-H.  In practice and principle you can't embed ANY control codes and
+special  characters directly in a .mss file and expect to see them in
+your output.  You really don't want to do thie anyway, since it destroys
+the printer independence that is one of the strong points of the
+scribe-ish formatting model.
+
+The method suggested by Perfect Software's old Berkeley tech support was
+to define one of the extra printer strings, such as the italic on/off to
+include a backspace. You therefore create an 'e' overstruck with a '`'
+with something like:
+
+	e@i(`)
+
+Of course,  this creates some problems justifying things, since the
+width of the grave accent gets counted even though it never really took
+up a space.  You can make justification work if you only need to do a
+few characters:  You include the CTRL-H and the grave-accent directly in
+the italics string, doing the same with other special character and the
+boldface, underline, etc. strings.  But you'd be screwed if you wanted
+to use some of those attributes as originally intended at the same time.
+(And I don't want to think about the proportional spacing implications...)
+
+You'd be in slightly better shape if you have one of the MS-DOS Perfect
+Formats, which handle MUCH larger TOCs and indeces, and have three more
+special printer control string pairs as 'font1,' font2' and 'font3.'  I
+don't know what additional flexibility is provided by The Final Word,
+though it would be worth checking out.  The less said about PW 2.0 the
+better.
+
+Personally, I'd run with a PC Mince and a Perfect Format or a Final Word
+formatter.
+
+I have a number of things from the old 'Amythyst Users Group' that might
+be of interest to diehard Mince hackers, and a (relatively) good 'C'
+mode of my own design.  Reply via mail and I'll try to dredge it out of
+the CP/M archives:  A) If there seems to be enough interest, and  B) I
+can find a machine to read my old Osborne-1  disks.  Yes, I hacked Mince
+with 90k drives, and it was VERY painful.
+
+-Dave Brower
+
+----------------
+Mince, Scribble, Crayon and The Final Word are trademarks of Mark of the
+Unicorn, Inc. (I hope still getting money from PSI and Thorne/EMI.)
+
+Perfect Writer & Perfect Formatter are trademarks of Perfect Software,
+Inc.
+
+Barry A. Dobyns was the Amythyst User's Group and PSI's chief programmer.
+-- 
+
+----------------
+-dB {ucbvax, decvax}!mtxinu!rtech!daveb
+
+"The closer you look, the worse it gets."
