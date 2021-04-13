@@ -29,7 +29,7 @@ to define one of the extra printer strings, such as the italic on/off to
 include a backspace. You therefore create an 'e' overstruck with a '`'
 with something like:
 
-	e@i(`)
+        e@i(`)
 
 Of course,  this creates some problems justifying things, since the
 width of the grave accent gets counted even though it never really took
