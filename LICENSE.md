@@ -91,7 +91,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 - **CCOM80** may incorporate or adapt some **BDOS** simulation routines from
-  **CP/M Emulator** by _Joseph_ _H._ _Allen_ and _Vlad_ _Shurupov_
+  **CPM** by _Joseph_ _H._ _Allen_ and _Vlad_ _Shurupov_
   - These routines are Copyright © 2016—2021 by _Joseph H. Allen_ and _Vlad_
   _Shurupov_, and released under the **MIT license**.
 ```text
