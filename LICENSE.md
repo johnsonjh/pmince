@@ -65,8 +65,11 @@ The majority of **COM** is **public domain software**, however,
 
   - These routines are **freely redistributable, but may not be sold**.
 
+ 
+
 - **CCOM80** may incorporate or adapt some **CP/M‑80** simulation routines from
-  **RunCPM** by _Mockba the Borg_
+  **RunCPM** by _Mockba the Borg_.
+
   - These routines are Copyright © 2017 by _Mockba the Borg_, and released under
     the **MIT license**.
 
@@ -96,6 +99,7 @@ SOFTWARE.
 
 - **CCOM80** may incorporate or adapt some **BDOS** simulation routines from
   **CPM** by _Joseph_ _H._ _Allen_ and _Vlad_ _Shurupov_
+  
   - These routines are Copyright © 2016—2021 by _Joseph H. Allen_ and _Vlad_
     _Shurupov_, and released under the **MIT license**.
 
@@ -126,10 +130,12 @@ IN THE SOFTWARE.
 
 ## SIM68K
 
-**Portable MINCE** may incorporate or adapt some Motorola **68000** simulation
-routines from **Musashi** by _Karl Stenerud_.
+**SIM68K** is derived from CPMSIM, Copyright © 2014-2017 by David W. Schultz.
 
-- These routines are Copyright © 1998—2020 by _Karl Stenerud_, and released
+- **SIM68K** may incorporate or adapt some **68000** simulation routines from
+  **Musashi** by _Karl_ _Stenerud_.
+  
+  - These routines are Copyright © 1998—2020 by _Karl Stenerud_, and released
   under the **MIT license**.
 
 ```text
