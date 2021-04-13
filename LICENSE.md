@@ -38,7 +38,7 @@ Furthermore, the **Portable MINCE** authors make no claims to the term
 
 **MINCE** (version 2.5, 2.6, and 2.63), **DIFF** (version 1.1), **Scribble**
 (version 1.3), **Pencil** (version 1.3), and **Crayon** (version 1.3), along
-with any associated documentation (the "Materials"), are Copyright © 1980-1982
+with any associated documentation (the "Materials"), are Copyright © 1980—1985
 by **Mark of the Unicorn, Inc.**
 
 These Materials are provided in accordance with Title 17 U.S.C. Section 107, and
@@ -55,15 +55,15 @@ owner.
 
 ## COM / CCOM80 / RunCPM
 
-**CCOM80** is derived from **COM** 3.0, Copyright © 1984-2008 by _Jim_ _Cathey_,
+**CCOM80** is derived from **COM** 3.0, Copyright © 1984—2008 by _Jim_ _Cathey_,
 _Edmund_ _Ramm_, _Charlie_ _Gibbs_, and _Willi_ _Kusche_.
 
 The majority of **COM** is **public domain software**, however,
 
-- **CCOM80** may incorporate or adapt some _Z-80_ simulation routines by
+- **CCOM80** may incorporate or adapt some _Z80_ simulation routines by
   _Charlie_ _Gibbs_ and _Willi_ _Kusche_.
   - These routines are **freely redistributable, but may not be sold**.
-- **CCOM80** may incorporate or adapt some **CP/M** simulation routines from
+- **CCOM80** may incorporate or adapt some **CP/M‑80** simulation routines from
   _RunCPM_ by _Mockba the Borg_
   - These routines are Copyright © 2017 by _Mockba the Borg_, and released under
     the **MIT license**.
@@ -180,10 +180,10 @@ When the **AUG** was an active organization, membership was restricted to
 between _**Mark of the Unicorn, Inc.**_ and the _**Amethyst Users Group**_.
 
 However, **AUG** is now defunct (since at least 1994), and the **AUG** archives
-have been publicly available and openly distributed (since at least 1985) by
+have been publicly available and openly distributed (since at least 1988) by
 many organizations, including the _Massachusetts Institute of Technology_
-_**CPMUG**_ _Repository_ via _MIT-MC_, _**SIMTEL**_-_20_, _**SIG/M**_,
-_**PC/Blue**_, _**Walnut Creek**_ _CD-ROM_, _Software Tools of Australia_,
+_**CPMUG**_ _Repository_ via _MIT-MC_, _**SIMTEL**_‑_20_, _**SIG/M**_,
+_**PC/Blue**_, _**Walnut Creek**_ _CD‑ROM_, _Software Tools of Australia_,
 _Oakland University_ via the _**Oak Repository**_, _Demon Internet_, and many
 others.
 
@@ -213,6 +213,6 @@ OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 ## Intended Usage
 
-**This software is not intended for use in medical, life saving, life
+**This software is _NOT_ intended for use in medical, life saving, life
 sustaining, critical control or safety systems, or in nuclear facility
 applications.**
