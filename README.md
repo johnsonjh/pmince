@@ -5,8 +5,8 @@
 ## Overview
 
 - **MINCE** is an Emacs-like text editor from **Mark of the Unicorn, Inc.**
-- Versions were available for **CP/M-80**, **CP/M-68K**, **ST**/**GEMDOS**,
-  **PC**/**DOS**, **PDP/RSX-11**, and **UNIX** systems
+- Versions were available for **CP/M‑80**, **CP/M‑68K**, **ST**/**GEMDOS**,
+  **PC**/**DOS**, **PDP/RSX‑11**, and **UNIX** systems
 
 ## Portable MINCE
 
@@ -47,8 +47,8 @@ Review the [Makefile](/GNUmakefile) for more information.
   - **Raspbian** (Buster) 10, GNU C 8.3.0 (_6+rpi1_)
 - **ARM64** (AArch64)
   - **Debian** (Bullseye) 11, GNU C 10.2.1
-  - **FreeBSD** 13.0-RC4, Clang 11.0.1 (_g43ff75f2c3fe_)
-  - **FreeBSD** 13.0-RC5, GNU C 9.3.0
+  - **FreeBSD** 13.0‑RC4, Clang 11.0.1 (_g43ff75f2c3fe_)
+  - **FreeBSD** 13.0‑RC5, GNU C 9.3.0
 - **x86** (IA32)
   - **Debian** (Sid) 11, GNU C 10.2.0
   - **Haiku** 55027, GNU C 2.95.3 (_20170720_)
@@ -59,14 +59,14 @@ Review the [Makefile](/GNUmakefile) for more information.
   - **Fedora** 33, Intel oneAPI DPC++ 2021.2.0 (_20210317_)
   - **Fedora** 34 Beta, AMD AOCC 2.3.0 (_20201110_)
   - **Haiku** 55029, GNU C 8.3.0 (_20190524_)
-  - **macOS** (Big Sur) 11.3 Beta 6, GNU C 10.2.0 (_Homebrew GCC 10.2.0-4_)
+  - **macOS** (Big Sur) 11.3 Beta 6, GNU C 10.2.0 (_Homebrew GCC 10.2.0‑4_)
   - **macOS** (Big Sur) 11.3 Beta 6, Xcode 12.4 (_1200.0.32.29_)
   - **NetBSD** 9.1, GNU C 7.5.0 (_nb4-20200810_)
   - **OpenBSD** 6.8, Clang 10.0.1
   - **RHEL** 8.3, GNU C 8.4.1
   - **OpenIndiana** 20210407 (Hipster), SunOS/**illumos** 5.11, GNU C 3.4.3
     (_20050802_)
-  - **Windows** 10.0-21343 (Insider), GNU C 10.2.0 (_Cygwin 3.2.0_)
+  - **Windows** 10.0‑21343 (Insider), GNU C 10.2.0 (_Cygwin 3.2.0_)
 - **RISC-V** (RV64)
   - **Debian** (Sid) 11, GNU C 10.2.0
 
@@ -80,11 +80,11 @@ Review the [Makefile](/GNUmakefile) for more information.
 ## Roadmap
 
 - End-user configuration system, customizable via file or environment variables.
-- Avoid main input busywait/spin-loop to reduce idle CPU usage.
-- Translation of line-endings at run time (_use_ `dos2unix` _as_ _a_
+- Avoid main input busywait/spin‑loop to reduce idle CPU usage.
+- Translation of line endings at run time (_use_ `dos2unix` _as_ _a_
   _workaround_).
 - Translation of `PgUp` / `PgDn` / `Home` / `End` / cursor control / arrow keys.
-- Build with GCC `-fno-common` and reduce `-Wall` warnings.
+- Build with GCC `‑fno‑common` and reduce `‑Wall` warnings.
 - Support crash recovery (by parsing `mince.swp`) in case of unclean exit.
 - Add support for external filters, such as hexadecimal mode (via `xxd`).
 - Support for automatic terminal resizing (_by catching and handling
@@ -94,23 +94,22 @@ Review the [Makefile](/GNUmakefile) for more information.
 - Build and integrate **Scribble**, **Pencil**, and **Crayon**.
   - Automatic setup for **ANSI**/**ASME** _**Y14.1**_ (_US_) and _ISO_-_**216**_
     (_EU_) paper types.
-  - End-user run time switching between different printer defintions.
+  - End‑user run time switching between different printer defintions.
   - Support for rendering (_NEC_, _Epson_, _Diablo_, etc.) proportional font
     printer output.
-  - **Ghostscript** / **ImageMagick** for conversion of Crayon output to _PDF_,
-    _PostScript_, etc.
+  - Conversion of Crayon output to _PDF_, _PostScript_, etc.
   - Automate **Scribble** formatting to (_n_)_roff_ / _groff_, (_X_)_HTML_,
     _TeX_ / _LaTeX_, etc. (utilizing **Pandoc** or similar tools for
     conversion).
-- Add Motorola **68000** CPU core for **CP/M-68K** to support **MINCE-68K**.
-  - Automatically invoke **MINCE-68K** version for large input files.
-  - End-user configuration of default **MINCE** flavor (**MINCE-80** or
-    **MINCE-68K**).
-    - Native execution (_translation_) for **MINCE-68K** on **M68000** systems.
+- Add Motorola **68000** CPU core for **CP/M‑68K** to support **MINCE‑68K**.
+  - Automatically invoke **MINCE‑68K** version for large input files.
+  - End-user configuration of default **MINCE** flavor (**MINCE‑80** or
+    **MINCE‑68K**).
+    - Native execution (_translation_) for **MINCE‑68K** on **M68000** systems.
 - User-configurable key bindings and remapping.
   - Allow user configuration _without_ requiring full recompilation.
   - Normalize key bindings and mappings between **MINCE** flavors.
-- Support for **RSX-11**, **VMS**, and **OS/2** operating systems.
+- Support for **RSX‑11**, **VMS**, and **OS/2** operating systems.
 - Create packages using **NFPM** / **FPM**, **Homebrew** _tap_ / _cask_,
   **pkgsrc**, etc.
 
@@ -119,7 +118,7 @@ Review the [Makefile](/GNUmakefile) for more information.
 - **Portable MINCE** contact:
   _[Jeffrey H. Johnson](https://github.com/johnsonjh/pmince)_
   \<[trnsz@pobox.com](mailto:trnsz@pobox.com)\>.
-- **MINCE** _2.5_, _2.6_, _2.63_: Copyright © 1980-1985 by **Mark of the
+- **MINCE** _2.5_, _2.6_, _2.63_: Copyright © 1980—1985 by **Mark of the
   Unicorn, Inc.**
 - **DIFF** _1.1_: Copyright © 1981 by **Mark of the Unicorn, Inc.**
 - **Scribble**, **Pencil**, **Crayon** _1.3_: Copyright © 1981 by **Mark of the
@@ -127,7 +126,7 @@ Review the [Makefile](/GNUmakefile) for more information.
   - **MINCE** / **DIFF** / **Scribble** / **Pencil** / **Crayon**: Authored by
     _Jason_ _T._ _Linhart_, _Scott_ ("_Gyro_") _Layson_ _Burson_, _Craig_ _A._
     _Finseth_, _Brian_ _N._ _Hess_, and _Bill_ _Spitzak_.
-- **CCOM80** (_Derived from **COM** 3.0_): Copyright © 1984-2008 by _Jim_
+- **CCOM80** (_Derived from **COM** 3.0_): Copyright © 1984—2008 by _Jim_
   _Cathey_, _Edmund_ _Ramm_, _Charlie_ _Gibbs_, and _Willi_ _Kusche_.
 - **coffwrap** (_Derived from **bin2c**_): Copyright © 2015 by _Ondrej_ _Novak_.
 
