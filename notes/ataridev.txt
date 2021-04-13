@@ -1,0 +1,15 @@
+        THE MINCE EDITOR DISK CONTAINS THE FOLLOWING FILES:
+        ---------------------------------------------------
+
+PRGINTRO.DOC    Read this file to begin to learn the Mince editor
+LESSON4.DOC
+LESSON6.DOC
+LESSON8.DOC
+MINCE.TTP       The editor program
+MINCE.SWP       Configuration data and buffers for Mince
+CONFIG.TOS      Already done.  Please check manual.
+
+        SPECIAL NOTE--This is a preliminary copy of Mince.  You
+will be receiving your own personally serialized copy and full
+documentation.  Please destroy this preliminary disk when you
+receive your final Mince.
