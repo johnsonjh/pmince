@@ -63,6 +63,7 @@ The majority of **COM** is **public domain software**, however,
 - **CCOM80** may incorporate or adapt some _Z80_ simulation routines by
   _Charlie_ _Gibbs_ and _Willi_ _Kusche_.
   - These routines are **freely redistributable, but may not be sold**.
+
 - **CCOM80** may incorporate or adapt some **CP/M‑80** simulation routines from
   **RunCPM** by _Mockba the Borg_
   - These routines are Copyright © 2017 by _Mockba the Borg_, and released under
