@@ -36,7 +36,7 @@ Furthermore, the **Portable MINCE** authors make no claims to the term
 
 ## MINCE / DIFF / Scribble / Pencil / Crayon
 
-**MINCE** (version 2.6), **DIFF** (version 1.1), **Scribble** (version 1.3),
+**MINCE** (version 2.5, 2.6, and 2.63), **DIFF** (version 1.1), **Scribble** (version 1.3),
 **Pencil** (version 1.3), and **Crayon** (version 1.3), along with any
 associated documentation (the "Materials"), are Copyright © 1980-1982 by **Mark
 of the Unicorn, Inc.**
