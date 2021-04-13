@@ -20,7 +20,7 @@
 - **Required**:
   - ANSI/ISO C compiler (`gcc`, `clang`, _etc_.)
   - POSIX `cmp`, `env`, and `sh` (_Bourne_ _shell_)
-  - GNU `make`  
+  - GNU `make`
 - **Optional**:
   - Tcl `expect` and POSIX `sed`
     - Needed to override default terminal configuration (24 cols, 80 rows).
@@ -111,8 +111,8 @@ Review the [Makefile](/GNUmakefile) for more information.
   - Allow user configuration _without_ requiring full recompilation.
   - Normalize key bindings and mappings between **MINCE** flavors.
 - Support for **RSX-11**, **VMS**, and **OS/2** operating systems.
-- Create packages using **NFPM** / **FPM**, **Homebrew** _tap_ / _cask_, **pkgsrc**,
-  etc.
+- Create packages using **NFPM** / **FPM**, **Homebrew** _tap_ / _cask_,
+  **pkgsrc**, etc.
 
 ## Original Authors
 
