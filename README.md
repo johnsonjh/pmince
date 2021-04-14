@@ -127,8 +127,9 @@
 - **Scribble**, **Pencil**, **Crayon**: Copyright © 1981 by **Mark of the
   Unicorn, Inc.**
   - **MINCE** / **DIFF** / **Scribble** / **Pencil** / **Crayon**: Authored by
-    _Jason_ _T._ _Linhart_, _Scott_ ("_Gyro_") _Layson_ _Burson_, [_Craig_ _A._
-    _Finseth_](https://www.finseth.com/craft/), _Brian_ _N._ _Hess_, and _Bill_ _Spitzak_.
+    _Jason_ _T._ _Linhart_, _Scott_ ("_Gyro_") _Layson_ _Burson_,
+    [_Craig_ _A._ _Finseth_](https://www.finseth.com/craft/), _Brian_ _N._
+    _Hess_, and _Bill_ _Spitzak_.
 - **CCOM80** (_Derived from **COM** 3.0_): Copyright © 1984—2008 by _Jim_
   _Cathey_, _Edmund_ _Ramm_, _Charlie_ _Gibbs_, and _Willi_ _Kusche_.
 - **coffwrap** (_Derived from **bin2c**_): Copyright © 2015 by _Ondrej_ _Novak_.
