@@ -128,7 +128,7 @@ IN THE SOFTWARE.
 
 ## SIM68K
 
-**SIM68K** is derived from CPMSIM, Copyright © 2014-2017 by David W. Schultz.
+**SIM68K** is derived from **CPMSIM**, Copyright © 2014-2017 by David W. Schultz.
 
 - **SIM68K** may incorporate or adapt some **68000** simulation routines from
   **Musashi** by _Karl_ _Stenerud_.
