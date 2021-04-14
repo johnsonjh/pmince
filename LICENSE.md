@@ -96,15 +96,15 @@ SOFTWARE.
 ```
 
 - **CCOM80** may incorporate or adapt some **BDOS** simulation routines from
-  **CPM** by _Joseph_ _H._ _Allen_ and _Vlad_ _Shurupov_
+  **CPM** by _Joseph_ _Allen_ and _Vlad_ _Shurupov_
 
-  - These routines are Copyright © 2016—2021 by _Joseph H. Allen_ and _Vlad_
+  - These routines are Copyright © 2016—2021 by _Joseph Allen_ and _Vlad_
     _Shurupov_, and released under the **MIT license**.
 
 ```text
 MIT License
 
-Copyright © 2016—2021 Joseph H. Allen
+Copyright © 2016—2021 Joseph Allen
 Copyright © 2019 Vlad Shurupov
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
