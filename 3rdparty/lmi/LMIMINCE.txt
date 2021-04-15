@@ -1,0 +1,33 @@
+SYSTEM V/68, Release 2, Version 1.0                          68010 version
+
+This is SYSTEM V/68 (a trademark of Motorola Inc.), derived from UNIX
+System V/M68000, which is a jointly developed product of AT&T Technologies
+and Motorola.  It is targeted at the Motorola VME/10 microcomputer system.
+
+The User's and Administrator's Manuals are on-line, accessible via the
+man(1) command.  External, and more complete, documentation is supplied
+with this product.  Additional copies are available through Motorola's
+Literature Distribution Center.
+
+You are encouraged to read the customer letter accompanying this product
+in its entirety.  It contains pertinent information which is often
+overlooked during preliminary examination of the manuals.
+
+Motorola has made every effort to ensure that the contents of this product,
+including documentation, are up-to-date and complete.  However, no
+responsibility is assumed for omissions or inaccuracies.  Furthermore,
+Motorola reserves the right to make changes to any products herein to
+improve reliability, function, or design.
+
+$ uname -a
+trn10 trn10 sysV/68 r2v1 M68010
+
+$ pdump -f mince
+mince: Valid V/68 object
+
+                           ***FILE HEADER***
+
+  Magic Nscns         Time/Date        Nsyms   Symptr    Opthdr  Flags
+
+0000520     3 Mon Sep  9 17:13:34 1985     0 00000000  0x001c 0x010f
+
