@@ -2,7 +2,6 @@
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/a75be8d288c747ef8c4016e0878a7de4)](https://app.codacy.com/gh/johnsonjh/pmince?utm_source=github.com&utm_medium=referral&utm_content=johnsonjh/pmince&utm_campaign=Badge_Grade_Settings)
 [![TickgitTODOs](https://img.shields.io/endpoint?url=https://api.tickgit.com/badge?repo=github.com/johnsonjh/pmince)](https://www.tickgit.com/browse?repo=github.com/johnsonjh/pmince)
-
 [![LocCount](https://img.shields.io/tokei/lines/github/johnsonjh/pmince.svg)](https://github.com/XAMPPRocky/tokei)
 [![GitHubCodeSize](https://img.shields.io/github/languages/code-size/johnsonjh/pmince.svg)](https://github.com/johnsonjh/pmince)
 
