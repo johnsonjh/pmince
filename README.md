@@ -1,5 +1,7 @@
 # MINCE
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/a75be8d288c747ef8c4016e0878a7de4)](https://app.codacy.com/gh/johnsonjh/pmince?utm_source=github.com&utm_medium=referral&utm_content=johnsonjh/pmince&utm_campaign=Badge_Grade_Settings)
+
 - **_MINCE Is Not Complete[ly] EMACS_**
 
 ## Overview
