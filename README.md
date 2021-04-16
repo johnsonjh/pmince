@@ -5,7 +5,7 @@
 [![LocCount](https://img.shields.io/tokei/lines/github/johnsonjh/pmince.svg)](https://github.com/XAMPPRocky/tokei)
 [![GitHubCodeSize](https://img.shields.io/github/languages/code-size/johnsonjh/pmince.svg)](https://github.com/johnsonjh/pmince)
 
-----
+---
 
 - **_MINCE Is Not Complete[ly] EMACS_**
 
