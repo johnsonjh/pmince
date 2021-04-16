@@ -2,7 +2,8 @@
 
 ## Reporting a Vulnerability
 
-- If you discover a security vulnerability, please email \<[trnsz@pobox.com](mailto:trnsz@pobox.com)\>.
+- If you discover a security vulnerability, please email
+  \<[trnsz@pobox.com](mailto:trnsz@pobox.com)\>.
 
 ```text
 -----BEGIN PGP PUBLIC KEY BLOCK-----
