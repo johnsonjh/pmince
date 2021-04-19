@@ -92,6 +92,9 @@
   - **UNICOS** (SV1) 10.0.1.2, Cray Standard C 6.6.0.3
   - **UNICOS** (J98) 10.0.0.2, Cray Standard C 6.4.0.0
     - **Issue**: _File I/O not working on **UNICOS**, everything else is OK._
+- **Motorola 68000** (M68010)
+  - **SYSTEM V/68** (VME/10) Release 2 Version 1.0, SGS 1.5 (3/13/83)
+    - **Issue**: `"ccpu.c", line 2142: compiler error: switch table overflow`
 
 ## Roadmap
 
