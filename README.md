@@ -124,7 +124,7 @@
   - Automatically invoke **MINCE‑68K** version for large input files.
   - End-user configuration of default **MINCE** flavor (**MINCE‑80** or
     **MINCE‑68K**).
-- User-configurable key bindings and remapping.
+- User-configurable key bindings and mapping.
   - Allow user configuration _without_ requiring full recompilation.
   - Normalize key bindings and mappings between **MINCE** flavors.
 - Support for **RSX‑11**, **VMS**, and **OS/2** operating systems.
