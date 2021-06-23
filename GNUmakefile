@@ -91,18 +91,19 @@ endif
 #############################################################################
 
 ifeq ($(OS), haiku)
-	UTME=$(shell date +%s)
+	UTME=$(shell TZ=UTC date +%s)
 	MVER=$(shell grep -o '\".*\"' ./version.h 2>/dev/null | \
-	    tr -d '\"' 2>/dev/null)
-	MARH=$(shell uname -p | sed 's/^x86$$/x86_gcc2/')
-	MARU=$(shell whoami 2>/dev/null)
+	    tr -d '\"' 2> /dev/null)
+	MARH=$(shell uname -p 2> /dev/null | \
+	    sed 's/^x86$$/x86_gcc2/' 2> /dev/null)
+	qMARU=$(shell whoami 2> /dev/null)
 	PENV=/bin/env
 	PREFIX=/system/non-packaged
 	CFL=-O2 -fcommon $(CFEXTRA)
-	CC=$(shell setarch `uname -p` sh -c "command -v cc" 2>/dev/null || \
-	    sh -c "command -v cc" 2>/dev/null || \
-	    sh -c "command -v gcc" 2>/dev/null || \
-	    printf '%s\n' "cc")
+	CC=$(shell setarch `uname -p` sh -c "command -v cc" 2> /dev/null || \
+	    sh -c "command -v cc" 2> /dev/null || \
+	        sh -c "command -v gcc" 2> /dev/null || \
+	            printf '%s\n' "cc")
 	SYSTYPE=SYSV
 	OPTIONS=-D$(SYSTYPE)=1 -DRUNOPTS=1 -DUSEDIRENT=1 -DNOBUFF=1
 	CFLAGS+=$(CFL) $(OPTIONS)
