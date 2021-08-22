@@ -227,6 +227,27 @@ ifeq ($(OS), linux)
 endif
 
 #############################################################################
+#                            Midipix Configuration                          #
+#############################################################################
+
+ifeq ($(OS), midipix)
+	CFL=-O0 $(CFEXTRA)
+	CC?=gcc
+	SYSTYPE=SYSV
+	OPTIONS=-D$(SYSTYPE)=1 -DRUNOPTS=1 -DUSEDIRENT=1
+	CFLAGS+=$(CFL) $(OPTIONS)
+	RM=rm -f --
+	RMDIR=rmdir
+	TEST=test
+	SIZE=size --
+	STRIP=strip
+	MKDIR=mkdir -p --
+	CP=cp -f --
+	OBJE=.o
+	MINCE_CONFIGURED=1
+endif
+
+#############################################################################
 
 .SUFFIXES: $(OBJE)
 .PHONY: all clean osconf strip compress upx install hpkg

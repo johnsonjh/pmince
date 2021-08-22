@@ -23,7 +23,8 @@
 	defined(__HAIKU__) || \
 	defined(__OR1K__) || \
 	defined(__MINGW64__) || \
-	defined(__MINGW32__)
+	defined(__MINGW32__) || \
+	defined(__midipix__)
 #include <termios.h>
 #include <sys/param.h>
 #include <sys/ioctl.h>
@@ -146,7 +147,8 @@ struct regs {
 	defined(__HAIKU__) || \
 	defined(__OR1K__) || \
 	defined(__MINGW64__) || \
-	defined(__MINGW32__)
+	defined(__MINGW32__) || \
+	defined(__midipix__)
 struct termios old, new;
 #else
 struct termio old, new; /* Terminal control structures. */
