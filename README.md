@@ -83,6 +83,7 @@
   - **OpenIndiana** 20210407 (Hipster), SunOS/**illumos** 5.11, GNU C 3.4.3
     (_20050802_)
   - **Windows** 10.0‑21343 (Insider), GNU C 10.2.0 (_Cygwin 3.2.0_)
+  - **Windows**, [Midipix](https://midipix.org/), GNU C 4.6.4 (_Midipix_)
 - **RISC-V** (RV64)
   - **Debian** (Sid) 11, GNU C 10.2.0
 
