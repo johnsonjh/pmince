@@ -96,7 +96,7 @@ ifeq ($(OS), haiku)
 	    tr -d '\"' 2> /dev/null)
 	MARH=$(shell uname -p 2> /dev/null | \
 	    sed 's/^x86$$/x86_gcc2/' 2> /dev/null)
-	qMARU=$(shell whoami 2> /dev/null)
+	MARU=$(shell whoami 2> /dev/null)
 	PENV=/bin/env
 	PREFIX=/system/non-packaged
 	CFL=-O2 -fcommon $(CFEXTRA)
