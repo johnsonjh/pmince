@@ -505,13 +505,12 @@ void service(tpa) unsigned char *tpa;
   case 7: /* Auxiliary Input. */
   default:
     cp = linebuf;
-    cp += mysprintf(cp, "\nInvalid Service instruction %02X.\n", byte);
-    cp += mysprintf(cp, "Register contents:");
+    cp += mysprintf(cp, "\r\nInvalid Service instruction %02X.", byte);
+    cp += mysprintf(cp, "\r\nRegister contents:");
     write(2, linebuf, cp - linebuf);
     dumpregs(tpa);
     if (regp->trcoptions & TRCCORE)
       docore(tpa, regp);
-    doexit(5);
     break;
   }
 }
@@ -957,13 +956,12 @@ unsigned char *lastregap;
 
   default:
     cp = linebuf;
-    cp += mysprintf(cp, "Invalid BDOS call $%02X.\n", fcode);
-    cp += mysprintf(cp, "Register contents:");
+    cp += mysprintf(cp, "\r\nInvalid BDOS call $%02X.", fcode);
+    cp += mysprintf(cp, "\r\nRegister contents:");
     write(2, linebuf, cp - linebuf);
     dumpregs(tpa);
     if (regp->trcoptions & TRCCORE)
       docore(tpa, regp);
-    doexit(4);
     break;
   }
 }
@@ -1011,8 +1009,8 @@ void illegal(tpa) unsigned char *tpa;
   pc = (regp->pchi << 8) | regp->pclo;
   byte = tpa[pc];
   cp = linebuf;
-  cp += mysprintf(cp, "\nIllegal instruction %02X at %04X.\n", byte, pc);
-  cp += mysprintf(cp, "Register contents:");
+  cp += mysprintf(cp, "\r\nIllegal instruction %02X at %04X.", byte, pc);
+  cp += mysprintf(cp, "\r\nRegister contents:");
   write(2, linebuf, cp - linebuf);
   dumpregs(tpa);
   write(2, "\n", 1);
@@ -1047,13 +1045,13 @@ void dumpregs(tpa) unsigned char *tpa;
   showalts:
     if (!regp->trcreccnt) {
       cp = linebuf;
-      cp += mysprintf(cp, "\n%s-AF' -BC'    -DE'    -HL'    -IX- -IY- -IR-",
+      cp += mysprintf(cp, "\r%s-AF' -BC'    -DE'    -HL'    -IX- -IY- -IR-",
                       regp->marker);
       write(2, linebuf, cp - linebuf);
     }
     cp = linebuf;
     cp += mysprintf(
-        cp, "\n%s%02X%02X %02X%02X>%02X %02X%02X>%02X %02X%02X",
+        cp, "\r%s%02X%02X %02X%02X>%02X %02X%02X>%02X %02X%02X",
         (!regp->trcreccnt && regp->marker && (regp->trcoptions & SHOWALT))
             ? &"   "[3 - strlen(regp->marker)]
             : regp->marker,
@@ -1073,7 +1071,7 @@ void dumpregs(tpa) unsigned char *tpa;
   if (!regp->trcreccnt) {
     cp = linebuf;
     cp += mysprintf(cp,
-                    "\n%s-AF- -BC-    -DE-    -HL-    "
+                    "\r%s-AF- -BC-    -DE-    -HL-    "
                     "-SP- -S0- -S1- -S2- -PC- -op-",
                     (regp->marker && (regp->trcoptions & SHOWALT))
                         ? &"   "[3 - strlen(regp->marker)]
@@ -1083,7 +1081,7 @@ void dumpregs(tpa) unsigned char *tpa;
   cp = linebuf;
   cp += mysprintf(
       cp,
-      "\n%s%02X%02X %02X%02X>%02X %02X%02X>%02X %02X%02X>%02X "
+      "\r\n%s%02X%02X %02X%02X>%02X %02X%02X>%02X %02X%02X>%02X "
       "%02X%02X>",
       (regp->marker && (!regp->trcreccnt || (regp->trcoptions & SHOWALT)))
           ? &"   "[3 - strlen(regp->marker)]
@@ -1094,10 +1092,10 @@ void dumpregs(tpa) unsigned char *tpa;
   cp += mysprintf(cp, "%02X%02X,%02X%02X,%02X%02X ", tpa[sp + 1], tpa[sp + 0],
                   tpa[sp + 3], tpa[sp + 2], tpa[sp + 5], tpa[sp + 4]);
   if (byte == 0xCB || byte == 0xDD || byte == 0xED || byte == 0xFD)
-    cp += mysprintf(cp, "%02X%02X %02X%02X ", regp->pchi, regp->pclo, byte,
+    cp += mysprintf(cp, "%02X%02X %02X%02X \r\n\r\n", regp->pchi, regp->pclo, byte,
                     tpa[pc + 1]);
   else
-    cp += mysprintf(cp, "%02X%02X  %02X  ", regp->pchi, regp->pclo, byte);
+    cp += mysprintf(cp, "%02X%02X  %02X  \r\n\r\n", regp->pchi, regp->pclo, byte);
   write(2, linebuf, cp - linebuf);
   regp->trcreccnt =
       ((regp->trcreccnt + 1) & (regp->trcoptions & SHOWALT ? 0x07 : 0x0F));
