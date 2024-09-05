@@ -422,7 +422,6 @@ strip: osconf mince$(OEXT)
 	$(STRIP) \
 	    mince$(OEXT) \
 	    --remove-section=.note.gnu.build-id \
-	    --remove-section=.gnu.hash \
 	    --remove-section=.comment \
 	    --remove-section=.gnu.build.attributes \
 	    2>/dev/null \
