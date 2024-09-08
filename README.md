@@ -19,6 +19,7 @@
     - **PC**/**DOS**
     - **RSX‑11**
     - **VAX/VMS**
+    * **Wicat MCS**
     - **UNIX**
 
 ## Portable MINCE
