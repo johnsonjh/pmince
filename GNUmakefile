@@ -49,7 +49,7 @@ CFEXTRA=-pipe
 #############################################################################
 
 ifeq ($(OS), CYGW)
-	CFL=-O2 -fcommon $(CFEXTRA)
+	CFL=-std=gnu89 -O2 -fcommon $(CFEXTRA)
 	CC=gcc
 	SYSTYPE=CYGW
 	OPTIONS=-D$(SYSTYPE)=1 -DRUNOPTS=1 -DUSEDIRENT=1
@@ -70,7 +70,7 @@ endif
 #############################################################################
 
 ifeq ($(OS), sunos)
-	CFL=-O2 -fcommon $(CFEXTRA)
+	CFL=-std=gnu89 -O2 -fcommon $(CFEXTRA)
 	CC=gcc
 	SYSTYPE=SYSV
 	OPTIONS=-D$(SYSTYPE)=1 -DRUNOPTS=1 -DUSEDIRENT=1
@@ -99,7 +99,7 @@ ifeq ($(OS), haiku)
 	MARU=$(shell whoami 2> /dev/null)
 	PENV=/bin/env
 	PREFIX=/system/non-packaged
-	CFL=-O2 -fcommon $(CFEXTRA)
+	CFL=-std=gnu89 -O2 -fcommon $(CFEXTRA)
 	CC=$(shell setarch `uname -p` sh -c "command -v cc" 2> /dev/null || \
 	    sh -c "command -v cc" 2> /dev/null || \
 	        sh -c "command -v gcc" 2> /dev/null || \
@@ -126,7 +126,7 @@ endif
 #############################################################################
 
 ifeq ($(OS), netbsd)
-	CFL=-O2 -fcommon $(CFEXTRA)
+	CFL=-std=gnu89 -O2 -fcommon $(CFEXTRA)
 	CC?=cc
 	SYSTYPE=SYSV
 	OPTIONS=-D$(SYSTYPE)=1 -DRUNOPTS=1 -DUSEDIRENT=1 -DNOBUFF=1
@@ -147,7 +147,7 @@ endif
 #############################################################################
 
 ifeq ($(OS), openbsd)
-	CFL=-O2 -fcommon $(CFEXTRA)
+	CFL=-std=gnu89 -O2 -fcommon $(CFEXTRA)
 	CC?=clang
 	SYSTYPE=SYSV
 	OPTIONS=-D$(SYSTYPE)=1 -DRUNOPTS=1 -DUSEDIRENT=1
@@ -168,7 +168,7 @@ endif
 #############################################################################
 
 ifeq ($(OS), freebsd)
-	CFL=-O2 -fcommon $(CFEXTRA)
+	CFL=-std=gnu89 -O2 -fcommon $(CFEXTRA)
 	CC?=clang
 	SYSTYPE=SYSV
 	OPTIONS=-D$(SYSTYPE)=1 -DRUNOPTS=1 -DUSEDIRENT=1
@@ -189,7 +189,7 @@ endif
 #############################################################################
 
 ifeq ($(OS), darwin)
-	CFL=-O2 -fcommon $(CFEXTRA)
+	CFL=-std=gnu89 -O2 -fcommon $(CFEXTRA)
 	CC?=clang
 	SYSTYPE=BSD
 	OPTIONS=-D$(SYSTYPE)=1 -DRUNOPTS=1 -DUSEDIRENT=1 -DNOBUFF=1
@@ -210,7 +210,7 @@ endif
 #############################################################################
 
 ifeq ($(OS), linux)
-	CFL=-O2 -fcommon $(CFEXTRA)
+	CFL=-std=gnu89 -O2 -fcommon $(CFEXTRA)
 	CC?=gcc
 	SYSTYPE=SYSV
 	OPTIONS=-D$(SYSTYPE)=1 -DRUNOPTS=1 -DUSEDIRENT=1
@@ -231,7 +231,7 @@ endif
 #############################################################################
 
 ifeq ($(OS), midipix)
-	CFL=-O0 $(CFEXTRA)
+	CFL=-std=gnu90 -O0 $(CFEXTRA)
 	CC?=gcc
 	SYSTYPE=SYSV
 	OPTIONS=-D$(SYSTYPE)=1 -DRUNOPTS=1 -DUSEDIRENT=1
