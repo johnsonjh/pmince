@@ -227,7 +227,7 @@ FILES
 
 In order to make the text you edit permanent, you must put it in a
 file.  You put your editing in a file by writing or saving the file.
-If you look near the botton of the screen you will see a line that
+If you look near the bottom of the screen you will see a line that
 starts with "Mince Version 2.3 (Normal) prgintro:" and continues with
 the filename PRGINTRO.DOC.  This is the name of the permanent file in
 which the Mince tutorial is stored.  This is the file you are now
@@ -362,3 +362,4 @@ able to give it up.  Initially it may give you trouble. But remember
 that this is the case with any editor, especially one that can do many
 things.
 
+

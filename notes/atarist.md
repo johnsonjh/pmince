@@ -84,7 +84,7 @@
         - If no, repeat procedure**!!!!**
 
   29. Select `#7` _(Install definitions?)_
-  30. Update exsisting swap file?
+  30. Update existing swap file?
 
       - answer `YES`
 
