@@ -342,7 +342,7 @@ unsigned char *where;
   strncpy(fnambuf, name, sizeof fnambuf);
   if (cp = strchr(name, '.')) {
     if (strcmp(cp, tail))
-      strcpy(cp, tail);
+      strcpy(&fnambuf[cp - name], tail);
   } else
     strncat(fnambuf, tail, sizeof(fnambuf) - 1);
   if ((fd = open(fnambuf, 0)) >= 0) {
